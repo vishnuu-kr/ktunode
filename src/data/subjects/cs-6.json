@@ -24,7 +24,7 @@
           },
           {
             "id": "cs-6-pccst602-advanced-computing-systems-01-module-1-instruction-level-parallelism-ilp-and-dynamic-execution-dynamic-scheduling-tomasulo-s-algorithm-architecture-reservation-stations-execution-stages",
-            "title": "Dynamic Scheduling: Tomasulo's Algorithm (architecture, reservation stations, execution stages)",
+            "title": "Dynamic Scheduling: Tomasulo’s Algorithm (architecture, reservation stations, execution stages)",
             "content": "",
             "pyqs": []
           },
@@ -572,14 +572,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-time-complexity",
-            "title": "Time Complexity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-space-complexity",
-            "title": "Space Complexity",
+            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-time-space-complexity",
+            "title": "Time & Space Complexity",
             "content": "",
             "pyqs": []
           },
@@ -597,7 +591,13 @@
           },
           {
             "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-sparse-matrix-tuple-representation",
-            "title": "Sparse Matrix (Tuple Representation)",
+            "title": "Sparse matrix ( Tuple representation )",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-stacks-and-queues",
+            "title": "Stacks and Queues",
             "content": "",
             "pyqs": []
           },
@@ -608,14 +608,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-queues",
-            "title": "Queues",
+            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-multi-stacks",
+            "title": "Multi-Stacks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-multi-stacks",
-            "title": "Multi-Stacks",
+            "id": "cs-6-oecst611-data-structures-01-module-1-basic-concepts-of-data-structures-queues",
+            "title": "Queues",
             "content": "",
             "pyqs": []
           },
@@ -650,14 +650,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-02-module-2-linked-list-and-memory-management-stacks-using-linked-list",
-            "title": "Stacks using Linked List",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-6-oecst611-data-structures-02-module-2-linked-list-and-memory-management-queues-using-linked-list",
-            "title": "Queues using Linked List",
+            "id": "cs-6-oecst611-data-structures-02-module-2-linked-list-and-memory-management-stacks-and-queues-using-linked-list",
+            "title": "Stacks and Queues using Linked List",
             "content": "",
             "pyqs": []
           },
@@ -686,8 +680,14 @@
             "pyqs": []
           },
           {
+            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-trees",
+            "title": "Trees",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-representation-of-trees",
-            "title": "Representation of Trees",
+            "title": "Representation Of Trees",
             "content": "",
             "pyqs": []
           },
@@ -698,8 +698,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-types-and-properties-of-binary-trees",
-            "title": "Types and Properties of Binary Trees",
+            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-types-and-properties",
+            "title": "Types and Properties",
             "content": "",
             "pyqs": []
           },
@@ -734,8 +734,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-graphs-definitions",
-            "title": "Graphs Definitions",
+            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-graphs",
+            "title": "Graphs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-definitions",
+            "title": "Definitions",
             "content": "",
             "pyqs": []
           },
@@ -746,14 +752,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-depth-first-search",
-            "title": "Depth First Search",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-breadth-first-search",
-            "title": "Breadth First Search",
+            "id": "cs-6-oecst611-data-structures-03-module-3-trees-and-graphs-depth-first-search-and-breadth-first-search",
+            "title": "Depth First Search and Breadth First Search",
             "content": "",
             "pyqs": []
           }
@@ -800,6 +800,12 @@
             "pyqs": []
           },
           {
+            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-searching-techniques",
+            "title": "Searching Techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-linear-search",
             "title": "Linear Search",
             "content": "",
@@ -818,20 +824,32 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-hashing-functions-division",
-            "title": "Hashing Functions - Division",
+            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-hashing-functions",
+            "title": "Hashing functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-collision-resolution-linear-probing",
-            "title": "Collision Resolution - Linear Probing",
+            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-division",
+            "title": "Division",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-collision-resolution-open-hashing",
-            "title": "Collision Resolution - Open Hashing",
+            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-collision-resolution",
+            "title": "Collision Resolution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-linear-probing",
+            "title": "Linear probing",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-6-oecst611-data-structures-04-module-4-sorting-and-searching-open-hashing",
+            "title": "Open hashing",
             "content": "",
             "pyqs": []
           }
@@ -1488,7 +1506,7 @@
           },
           {
             "id": "cs-6-pbcst604-fundamentals-of-cyber-security-02-module-2-system-security-network-attacks-and-malware-analysis-host-software-vulnerabilities-malicious-software-taxonomy-viruses-worms-trojan-horses-rootkits-ransomware-logic-bombs",
-            "title": "Host & Software Vulnerabilities: Malicious software taxonomy-Viruses, Worms, Trojan Horses, Rootkits, Ransomware, logic bombs",
+            "title": "Host & Software Vulnerabilities: Malicious software taxonomy—Viruses, Worms, Trojan Horses, Rootkits, Ransomware, logic bombs",
             "content": "",
             "pyqs": []
           },
@@ -1506,7 +1524,7 @@
         "topics": [
           {
             "id": "cs-6-pbcst604-fundamentals-of-cyber-security-03-module-3-web-application-security-and-cloud-paradigms-web-attacks-exploiting-web-applications-sql-injection-sqli-cross-site-scripting-xss-and-cross-site-request-forgery-csrf",
-            "title": "Web Attacks: Exploiting web applications-SQL Injection (SQLi), Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF)",
+            "title": "Web Attacks: Exploiting web applications—SQL Injection (SQLi), Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF)",
             "content": "",
             "pyqs": []
           },
@@ -2186,8 +2204,14 @@
         "title": "Module 1: Design and implement a lexical analyzer using c language to recognize a",
         "topics": [
           {
-            "id": "cs-6-pccsl607-systems-lab-01-module-1-design-and-implement-a-lexical-analyzer-using-c-language-to-recognize-a-design-and-implement-a-lexical-analyzer-using-c-language",
-            "title": "Design and implement a lexical analyzer using C language",
+            "id": "cs-6-pccsl607-systems-lab-01-module-1-design-and-implement-a-lexical-analyzer-using-c-language-to-recognize-a-design-a-lexical-analyzer-using-c-language",
+            "title": "Design a lexical analyzer using C language",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-6-pccsl607-systems-lab-01-module-1-design-and-implement-a-lexical-analyzer-using-c-language-to-recognize-a-implement-a-lexical-analyzer-using-c-language",
+            "title": "Implement a lexical analyzer using C language",
             "content": "",
             "pyqs": []
           },
@@ -2198,14 +2222,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-01-module-1-design-and-implement-a-lexical-analyzer-using-c-language-to-recognize-a-ignore-redundant-spaces-tabs-and-newlines",
-            "title": "Ignore redundant spaces, tabs and newlines",
+            "id": "cs-6-pccsl607-systems-lab-01-module-1-design-and-implement-a-lexical-analyzer-using-c-language-to-recognize-a-ignore-redundant-spaces-tabs-and-newlines-in-the-input",
+            "title": "Ignore redundant spaces, tabs, and newlines in the input",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-01-module-1-design-and-implement-a-lexical-analyzer-using-c-language-to-recognize-a-ignore-comments",
-            "title": "Ignore comments",
+            "id": "cs-6-pccsl607-systems-lab-01-module-1-design-and-implement-a-lexical-analyzer-using-c-language-to-recognize-a-ignore-comments-in-the-input",
+            "title": "Ignore comments in the input",
             "content": "",
             "pyqs": []
           }
@@ -2217,19 +2241,19 @@
         "topics": [
           {
             "id": "cs-6-pccsl607-systems-lab-02-module-2-write-a-lex-program-to-display-the-number-of-lines-words-and-characters-write-a-lex-program-to-display-the-number-of-lines-in-an-input-text",
-            "title": "Write a lex program to display the number of lines in an input text",
+            "title": "Write a LEX program to display the number of lines in an input text",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-02-module-2-write-a-lex-program-to-display-the-number-of-lines-words-and-characters-display-the-number-of-words-in-an-input-text",
-            "title": "Display the number of words in an input text",
+            "id": "cs-6-pccsl607-systems-lab-02-module-2-write-a-lex-program-to-display-the-number-of-lines-words-and-characters-write-a-lex-program-to-display-the-number-of-words-in-an-input-text",
+            "title": "Write a LEX program to display the number of words in an input text",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-02-module-2-write-a-lex-program-to-display-the-number-of-lines-words-and-characters-display-the-number-of-characters-in-an-input-text",
-            "title": "Display the number of characters in an input text",
+            "id": "cs-6-pccsl607-systems-lab-02-module-2-write-a-lex-program-to-display-the-number-of-lines-words-and-characters-write-a-lex-program-to-display-the-number-of-characters-in-an-input-text",
+            "title": "Write a LEX program to display the number of characters in an input text",
             "content": "",
             "pyqs": []
           }
@@ -2240,20 +2264,8 @@
         "title": "Module 3: Generate a yacc specification to recognize a valid arithmetic expressio",
         "topics": [
           {
-            "id": "cs-6-pccsl607-systems-lab-03-module-3-generate-a-yacc-specification-to-recognize-a-valid-arithmetic-expressio-generate-a-yacc-specification-to-recognize-a-valid-arithmetic-expression",
-            "title": "Generate a YACC specification to recognize a valid arithmetic expression",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-6-pccsl607-systems-lab-03-module-3-generate-a-yacc-specification-to-recognize-a-valid-arithmetic-expressio-recognize-operators",
-            "title": "Recognize operators: +, -, *, /",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-6-pccsl607-systems-lab-03-module-3-generate-a-yacc-specification-to-recognize-a-valid-arithmetic-expressio-recognize-parenthesis-in-the-expression",
-            "title": "Recognize parenthesis in the expression",
+            "id": "cs-6-pccsl607-systems-lab-03-module-3-generate-a-yacc-specification-to-recognize-a-valid-arithmetic-expressio-generate-a-yacc-specification-to-recognize-a-valid-arithmetic-expression-using-operators-and-parenthesis",
+            "title": "Generate a YACC specification to recognize a valid arithmetic expression using operators +, -, *, / and parenthesis",
             "content": "",
             "pyqs": []
           }
@@ -2294,14 +2306,14 @@
         "title": "Module 6: Write a program to find first and follow of any given grammar",
         "topics": [
           {
-            "id": "cs-6-pccsl607-systems-lab-06-module-6-write-a-program-to-find-first-and-follow-of-any-given-grammar-write-a-program-to-find-first-of-any-given-grammar",
-            "title": "Write a program to find First of any given grammar",
+            "id": "cs-6-pccsl607-systems-lab-06-module-6-write-a-program-to-find-first-and-follow-of-any-given-grammar-write-a-program-to-find-first-set-of-any-given-grammar",
+            "title": "Write a program to find First set of any given grammar",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-06-module-6-write-a-program-to-find-first-and-follow-of-any-given-grammar-write-a-program-to-find-follow-of-any-given-grammar",
-            "title": "Write a program to find Follow of any given grammar",
+            "id": "cs-6-pccsl607-systems-lab-06-module-6-write-a-program-to-find-first-and-follow-of-any-given-grammar-write-a-program-to-find-follow-set-of-any-given-grammar",
+            "title": "Write a program to find Follow set of any given grammar",
             "content": "",
             "pyqs": []
           }
@@ -2312,8 +2324,14 @@
         "title": "Module 7: Design and implement a recursive descent parser for a given grammar",
         "topics": [
           {
-            "id": "cs-6-pccsl607-systems-lab-07-module-7-design-and-implement-a-recursive-descent-parser-for-a-given-grammar-design-and-implement-a-recursive-descent-parser-for-a-given-grammar",
-            "title": "Design and implement a recursive descent parser for a given grammar",
+            "id": "cs-6-pccsl607-systems-lab-07-module-7-design-and-implement-a-recursive-descent-parser-for-a-given-grammar-design-a-recursive-descent-parser-for-a-given-grammar",
+            "title": "Design a recursive descent parser for a given grammar",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-6-pccsl607-systems-lab-07-module-7-design-and-implement-a-recursive-descent-parser-for-a-given-grammar-implement-a-recursive-descent-parser-for-a-given-grammar",
+            "title": "Implement a recursive descent parser for a given grammar",
             "content": "",
             "pyqs": []
           }
@@ -2349,7 +2367,7 @@
         "topics": [
           {
             "id": "cs-6-pccsl607-systems-lab-10-module-10-implement-intermediate-code-generation-for-simple-expressions-implement-intermediate-code-generation-for-simple-expressions",
-            "title": "Implement Intermediate code generation for simple expressions",
+            "title": "Implement intermediate code generation for simple expressions",
             "content": "",
             "pyqs": []
           }
@@ -2360,32 +2378,20 @@
         "title": "Module 11: Implement the back end of the compiler which takes the three address c",
         "topics": [
           {
-            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-implement-the-back-end-of-the-compiler",
-            "title": "Implement the back end of the compiler",
+            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-implement-the-back-end-of-the-compiler-which-takes-the-three-address-code-as-input",
+            "title": "Implement the back end of the compiler which takes the three address code as input",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-take-three-address-code-as-input",
-            "title": "Take three address code as input",
+            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-produce-assembly-language-instructions-that-can-be-assembled-and-run-using-a-corresponding-assembler",
+            "title": "Produce assembly language instructions that can be assembled and run using a corresponding assembler",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-produce-assembly-language-instructions",
-            "title": "Produce assembly language instructions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-assemble-and-run-instructions-using-a-corresponding-assembler",
-            "title": "Assemble and run instructions using a corresponding assembler",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-generate-target-assembly-instructions-simple-move-add-sub-jump",
-            "title": "Generate target assembly instructions: simple move, add, sub, jump",
+            "id": "cs-6-pccsl607-systems-lab-11-module-11-implement-the-back-end-of-the-compiler-which-takes-the-three-address-c-generate-target-assembly-instructions-including-simple-move-add-sub-jump-operations",
+            "title": "Generate target assembly instructions including simple move, add, sub, jump operations",
             "content": "",
             "pyqs": []
           }
@@ -2426,8 +2432,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-6-pccsl607-systems-lab-14-module-14-setting-host-name-for-virtual-machine-nodes-in-cluster-and-ssh-set-up-ssh-set-up-for-remote-login",
-            "title": "SSH set up for remote login",
+            "id": "cs-6-pccsl607-systems-lab-14-module-14-setting-host-name-for-virtual-machine-nodes-in-cluster-and-ssh-set-up-ssh-set-up-for-remote-login-between-virtual-machine-nodes",
+            "title": "SSH set up for remote login between virtual machine nodes",
             "content": "",
             "pyqs": []
           }

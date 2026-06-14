@@ -59,14 +59,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-narrow-band-fm-and-its-spectrum",
-            "title": "Narrow band FM and its spectrum",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-wide-band-fm-and-its-spectrum",
-            "title": "Wide band FM and its spectrum",
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-narrow-and-wide-band-fm-and-their-spectra",
+            "title": "Narrow and wide band FM and their spectra",
             "content": "",
             "pyqs": []
           },
@@ -83,14 +77,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-pre-emphasis-filtering",
-            "title": "Pre-emphasis filtering",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-de-emphasis-filtering",
-            "title": "De-emphasis filtering",
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-pre-emphasis-and-de-emphasis-filtering",
+            "title": "Pre-emphasis and de-emphasis filtering",
             "content": "",
             "pyqs": []
           },
@@ -125,6 +113,12 @@
             "pyqs": []
           },
           {
+            "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-noise",
+            "title": "Noise",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "ec-5-pcect502-analog-and-digital-communication-01-module-1-block-diagram-of-a-communication-system-external-noise",
             "title": "External noise",
             "content": "",
@@ -149,14 +143,8 @@
         "title": "Module 2: Sampling and quantization",
         "topics": [
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-sampling",
-            "title": "Sampling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-quantization",
-            "title": "Quantization",
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-sampling-and-quantization",
+            "title": "Sampling and Quantization",
             "content": "",
             "pyqs": []
           },
@@ -179,26 +167,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-pcm-transmitter",
-            "title": "PCM Transmitter",
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-pcm-transmitter-and-receiver",
+            "title": "PCM Transmitter and receiver",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-pcm-receiver",
-            "title": "PCM Receiver",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-dpcm-transmitter",
-            "title": "DPCM transmitter",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-dpcm-receiver",
-            "title": "DPCM receiver",
+            "id": "ec-5-pcect502-analog-and-digital-communication-02-module-2-sampling-and-quantization-dpcm-transmitter-and-receiver",
+            "title": "DPCM transmitter and receiver",
             "content": "",
             "pyqs": []
           },
@@ -270,7 +246,7 @@
           },
           {
             "id": "ec-5-pcect502-analog-and-digital-communication-03-module-3-baseband-data-transmission-of-digital-data-through-awgn-channel-geometric-representation-of-signals",
-            "title": "Geometric representation of signals",
+            "title": "Geometric representation of Signals",
             "content": "",
             "pyqs": []
           },
@@ -335,14 +311,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-transmitter",
-            "title": "BPSK transmitter",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-receiver",
-            "title": "BPSK receiver",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-bpsk-transmitter-and-receiver",
+            "title": "BPSK transmitter and receiver",
             "content": "",
             "pyqs": []
           },
@@ -353,14 +323,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-ber-analysis-of-bpsk-in-erfc",
-            "title": "BER analysis of BPSK in erfc",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-ber-analysis-of-qpsk-in-erfc",
-            "title": "BER analysis of QPSK in erfc",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-ber-analysis-of-bpsk-and-qpsk-in-erfc",
+            "title": "BER analysis of BPSK and QPSK in erfc",
             "content": "",
             "pyqs": []
           },
@@ -371,26 +335,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-transmitter",
-            "title": "QPSK transmitter",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-transmitter-and-receiver",
+            "title": "QPSK transmitter and receiver",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qpsk-receiver",
-            "title": "QPSK receiver",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-quadrature-amplitude-modulation",
-            "title": "Quadrature amplitude modulation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-qam-signal-constellation",
-            "title": "QAM signal constellation",
+            "id": "ec-5-pcect502-analog-and-digital-communication-04-module-4-digital-band-pass-modulation-schemes-quadrature-amplitude-modulation-and-signal-constellation",
+            "title": "Quadrature amplitude modulation and signal constellation",
             "content": "",
             "pyqs": []
           }
@@ -410,134 +362,92 @@
         "title": "Module 1: Embedded c fixed",
         "topics": [
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-embedded-c",
-            "title": "Embedded C",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-fixed-width-integer-data-types-in-c99",
-            "title": "Fixed-width integer data types in C99",
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-embedded-c-fixed-width-integer-data-types-in-c99",
+            "title": "Embedded C: Fixed-width integer data types in C99",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-boolean-type",
-            "title": "Boolean type",
+            "title": "boolean type",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-mixing-types",
-            "title": "Mixing types",
+            "title": "mixing types",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-manipulating-bits-in-memory-and-io-ports",
-            "title": "Manipulating bits in memory and IO ports",
+            "title": "manipulating bits in memory and IO ports",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-accessing-memory-mapped-io-using-pointers",
-            "title": "Accessing memory mapped IO using pointers",
+            "title": "accessing memory mapped IO using pointers",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-structures",
-            "title": "Structures",
+            "title": "structures",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-packed-structures",
-            "title": "Packed structures",
+            "title": "packed structures",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-bit-fields",
-            "title": "Bit fields",
+            "title": "bit fields",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-casting-address-of-an-object",
-            "title": "Casting address of an object",
+            "title": "casting address of an object",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-unions",
-            "title": "Unions",
+            "title": "unions.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-review-of-computer-organization",
-            "title": "Review of computer organization",
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-review-of-computer-organization-memory-cpu-io",
+            "title": "Review of computer organization: Memory, CPU, IO",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-memory",
-            "title": "Memory",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-cpu",
-            "title": "CPU",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-io",
-            "title": "IO",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-introduction-to-arm-cortex-m-architecture",
-            "title": "Introduction to Arm Cortex M architecture",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-internal-organization",
-            "title": "Internal organization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-general-purpose-registers",
-            "title": "General purpose registers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-special-registers",
-            "title": "Special registers",
+            "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-introduction-to-arm-cortex-m-architecture-internal-organization-general-purpose-and-special-registers",
+            "title": "Introduction to Arm cortex M architecture: Internal organization-general purpose and special registers",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-instruction-pipelining",
-            "title": "Instruction pipelining",
+            "title": "instruction pipelining",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-memory-model",
-            "title": "Memory model",
+            "title": "memory model",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-01-module-1-embedded-c-fixed-bit-banding",
-            "title": "Bit banding",
+            "title": "bit banding",
             "content": "",
             "pyqs": []
           },
@@ -554,62 +464,50 @@
         "title": "Module 2: Arm assembly language programming loading constants into registers",
         "topics": [
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-arm-assembly-language-programming",
-            "title": "Arm assembly language programming",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-loading-constants-into-registers",
-            "title": "Loading constants into registers",
+            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-arm-assembly-language-programming-loading-constants-into-registers",
+            "title": "Arm assembly language programming: Loading constants into registers",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-loading-memory-data-into-registers",
-            "title": "Loading memory data into registers",
+            "title": "loading memory data into registers",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-storing-data-from-registers-to-memory",
-            "title": "Storing data from registers to memory",
+            "title": "storing data from registers to memory",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-converting-c-assignment-statements-to-assembly",
-            "title": "Converting C assignment statements to assembly",
+            "title": "converting C assignment statements to assembly",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-memory-address-calculations",
-            "title": "Memory address calculations",
+            "title": "memory address calculations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-memory-addressing-examples",
-            "title": "Memory addressing examples",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-translating-c-pointer-expressions-to-assembly",
-            "title": "Translating C pointer expressions to assembly",
+            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-memory-addressing-examples-translating-c-pointer-expressions-to-assembly",
+            "title": "Memory addressing examples: translating C pointer expressions to assembly",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-translating-c-subscript-expressions-to-assembly",
-            "title": "Translating C subscript expressions to assembly",
+            "title": "translating C subscript expressions to assembly",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-translating-structure-references-to-assembly",
-            "title": "Translating structure references to assembly",
+            "title": "translating structure references to assembly",
             "content": "",
             "pyqs": []
           },
@@ -620,38 +518,32 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-data-processing-instructions",
-            "title": "Data processing instructions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-updating-flags-in-apsr",
-            "title": "Updating flags in APSR",
+            "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-data-processing-instructions-updating-flags-in-apsr",
+            "title": "data processing instructions: updating flags in APSR",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-arithmetic-instructions",
-            "title": "Arithmetic instructions",
+            "title": "arithmetic instructions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-bit-manipulation-instructions",
-            "title": "Bit manipulation instructions",
+            "title": "bit manipulation instructions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-shift-instructions",
-            "title": "Shift instructions",
+            "title": "shift instructions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-bit-field-manipulation-instructions",
-            "title": "Bit field manipulation instructions",
+            "title": "bit field manipulation instructions",
             "content": "",
             "pyqs": []
           }
@@ -662,92 +554,74 @@
         "title": "Module 3: Control structures in assembly language instruction sequencing",
         "topics": [
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-control-structures-in-assembly-language",
-            "title": "Control structures in assembly language",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-instruction-sequencing",
-            "title": "Instruction sequencing",
+            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-control-structures-in-assembly-language-instruction-sequencing",
+            "title": "Control structures in assembly language: instruction sequencing",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-conditional-branch-instructions",
-            "title": "Conditional branch instructions",
+            "title": "conditional branch instructions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-translating-if-then-statements-to-assembly",
-            "title": "Translating if-then statements to assembly",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-translating-if-then-else-statements-to-assembly",
-            "title": "Translating if-then-else statements to assembly",
+            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-translating-if-then-and-if-then-else-statements-to-assembly",
+            "title": "translating if-then and if-then-else statements to assembly",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-compound-conditionals",
-            "title": "Compound conditionals",
+            "title": "compound conditionals",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-implementing-loops",
-            "title": "Implementing loops",
+            "title": "implementing loops",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-speeding-up-array-access",
-            "title": "Speeding up array access",
+            "title": "speeding up array access",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-implementing-functions",
-            "title": "Implementing functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-function-call-and-return",
-            "title": "Function call and return",
+            "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-implementing-functions-function-call-and-return",
+            "title": "Implementing functions: function call and return",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-register-usage",
-            "title": "Register usage",
+            "title": "register usage",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-parameter-passing",
-            "title": "Parameter passing",
+            "title": "parameter passing",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-return-values",
-            "title": "Return values",
+            "title": "return values",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-temporary-variables",
-            "title": "Temporary variables",
+            "title": "temporary variables",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-03-module-3-control-structures-in-assembly-language-instruction-sequencing-preserving-registers",
-            "title": "Preserving registers",
+            "title": "preserving registers",
             "content": "",
             "pyqs": []
           }
@@ -758,80 +632,74 @@
         "title": "Module 4: Io programming in assembly interrupts and exceptions",
         "topics": [
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-io-programming-in-assembly",
-            "title": "IO programming in assembly",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-interrupts-and-exceptions",
-            "title": "Interrupts and exceptions",
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-io-programming-in-assembly-interrupts-and-exceptions",
+            "title": "IO programming in assembly: Interrupts and exceptions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-thread-and-handler-modes",
-            "title": "Thread and handler modes",
+            "title": "thread and handler modes",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-entering-the-exception-handler",
-            "title": "Entering the exception handler",
+            "title": "entering the exception handler",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-returning-from-exception-handler",
-            "title": "Returning from exception handler",
+            "title": "returning from exception handler",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-latency-reduction-techniques",
-            "title": "Latency reduction techniques",
+            "title": "latency reduction techniques",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-priorities-and-nested-exceptions",
-            "title": "Priorities and nested exceptions",
+            "title": "priorities and nested exceptions",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-synchronization",
-            "title": "Synchronization",
+            "title": "synchronization",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-transfer-rate-and-latency",
-            "title": "Transfer rate and latency",
+            "title": "transfer rate and latency",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-buffers-and-queues",
-            "title": "Buffers and queues",
+            "title": "buffers and queues",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-double-buffering",
-            "title": "Double buffering",
+            "title": "double buffering",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-polled-waiting-loops",
-            "title": "Polled waiting loops",
+            "title": "polled waiting loops",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-interrupt-driven-io",
-            "title": "Interrupt driven IO",
+            "title": "interrupt driven IO",
             "content": "",
             "pyqs": []
           },
@@ -842,20 +710,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-system-initialization",
-            "title": "System initialization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-memory-layout",
-            "title": "Memory layout",
+            "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-system-initialization-memory-layout",
+            "title": "System initialization: Memory layout",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect524-arm-architecture-and-programming-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-cpu-and-vector-table",
-            "title": "CPU and vector table",
+            "title": "cpu and vector table",
             "content": "",
             "pyqs": []
           },
@@ -887,8 +749,8 @@
         "title": "Module 1: Embedded c fixed",
         "topics": [
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-embedded-c-fixed-width-integer-data-types-in-c99",
-            "title": "Embedded C: Fixed-width integer data types in C99",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-fixed-width-integer-data-types-in-c99",
+            "title": "Fixed-width integer data types in C99",
             "content": "",
             "pyqs": []
           },
@@ -948,19 +810,19 @@
           },
           {
             "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-review-of-computer-organization-memory",
-            "title": "Review of computer organization: Memory",
+            "title": "Review of computer organization - Memory",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-review-of-computer-organization-cpu",
-            "title": "Review of computer organization: CPU",
+            "title": "Review of computer organization - CPU",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-review-of-computer-organization-io",
-            "title": "Review of computer organization: IO",
+            "title": "Review of computer organization - IO",
             "content": "",
             "pyqs": []
           },
@@ -972,7 +834,7 @@
           },
           {
             "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-01-module-1-embedded-c-fixed-internal-organization-general-purpose-and-special-registers",
-            "title": "Internal organization: general purpose and special registers",
+            "title": "Internal organization - general purpose and special registers",
             "content": "",
             "pyqs": []
           },
@@ -1007,8 +869,8 @@
         "title": "Module 2: Arm assembly language programming loading constants into registers load",
         "topics": [
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-load-arm-assembly-language-programming-loading-constants-into-registers",
-            "title": "Arm assembly language programming: Loading constants into registers",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-load-loading-constants-into-registers",
+            "title": "Loading constants into registers",
             "content": "",
             "pyqs": []
           },
@@ -1037,8 +899,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-load-memory-addressing-examples-translating-c-pointer-expressions-to-assembly",
-            "title": "Memory addressing examples: translating C pointer expressions to assembly",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-load-translating-c-pointer-expressions-to-assembly",
+            "title": "Translating C pointer expressions to assembly",
             "content": "",
             "pyqs": []
           },
@@ -1061,8 +923,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-load-data-processing-instructions-updating-flags-in-apsr",
-            "title": "Data processing instructions: updating flags in APSR",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-load-data-processing-instructions",
+            "title": "Data processing instructions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-02-module-2-arm-assembly-language-programming-loading-constants-into-registers-load-updating-flags-in-apsr",
+            "title": "Updating flags in APSR",
             "content": "",
             "pyqs": []
           },
@@ -1097,8 +965,8 @@
         "title": "Module 3: Control structures in assembly language instruction sequencing conditio",
         "topics": [
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-03-module-3-control-structures-in-assembly-language-instruction-sequencing-conditio-control-structures-in-assembly-language-instruction-sequencing",
-            "title": "Control structures in assembly language: instruction sequencing",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-03-module-3-control-structures-in-assembly-language-instruction-sequencing-conditio-instruction-sequencing",
+            "title": "Instruction sequencing",
             "content": "",
             "pyqs": []
           },
@@ -1140,7 +1008,7 @@
           },
           {
             "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-03-module-3-control-structures-in-assembly-language-instruction-sequencing-conditio-implementing-functions-function-call-and-return",
-            "title": "Implementing functions: function call and return",
+            "title": "Implementing functions - function call and return",
             "content": "",
             "pyqs": []
           },
@@ -1181,8 +1049,8 @@
         "title": "Module 4: Io programming in assembly interrupts and exceptions thread and handler",
         "topics": [
           {
-            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-thread-and-handler-io-programming-in-assembly-interrupts-and-exceptions",
-            "title": "IO programming in assembly: Interrupts and exceptions",
+            "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-thread-and-handler-interrupts-and-exceptions",
+            "title": "Interrupts and exceptions",
             "content": "",
             "pyqs": []
           },
@@ -1260,7 +1128,7 @@
           },
           {
             "id": "ec-5-peect525-arm-architecture-programming-and-interfacing-04-module-4-io-programming-in-assembly-interrupts-and-exceptions-thread-and-handler-system-initialization-memory-layout",
-            "title": "System initialization: Memory layout",
+            "title": "System initialization - memory layout",
             "content": "",
             "pyqs": []
           },
@@ -1328,38 +1196,44 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-ecg-electrocardiogram-bioelectric-potential",
-            "title": "ECG (Electrocardiogram) bioelectric potential",
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-various-bioelectric-potentials-concept-only",
+            "title": "Various bioelectric potentials (concept only)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-eeg-electroencephalogram-bioelectric-potential",
-            "title": "EEG (Electroencephalogram) bioelectric potential",
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-ecg-electrocardiogram",
+            "title": "ECG (Electrocardiogram)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-emg-electromyogram-bioelectric-potential",
-            "title": "EMG (Electromyogram) bioelectric potential",
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-eeg-electroencephalogram",
+            "title": "EEG (Electroencephalogram)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-erg-electroretinogram-bioelectric-potential",
-            "title": "ERG (Electroretinogram) bioelectric potential",
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-emg-electromyogram",
+            "title": "EMG (Electromyogram)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-eog-electrooculogram-bioelectric-potential",
-            "title": "EOG (Electrooculogram) bioelectric potential",
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-erg-electroretinogram",
+            "title": "ERG (Electroretinogram)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-egg-electrogastrogram-bioelectric-potential",
-            "title": "EGG (Electrogastrogram) bioelectric potential",
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-eog-electrooculogram",
+            "title": "EOG (Electrooculogram)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-egg-electrogastrogram",
+            "title": "EGG (Electrogastrogram)",
             "content": "",
             "pyqs": []
           },
@@ -1382,6 +1256,12 @@
             "pyqs": []
           },
           {
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-bio-potential-electrodes",
+            "title": "Bio-potential electrodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-microelectrodes",
             "title": "Microelectrodes",
             "content": "",
@@ -1396,6 +1276,12 @@
           {
             "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-needle-electrodes",
             "title": "Needle electrodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect521-biomedical-engineering-01-module-1-introduction-to-bio-bio-potential-amplifiers",
+            "title": "Bio-potential amplifiers",
             "content": "",
             "pyqs": []
           },
@@ -1520,14 +1406,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-02-module-2-heart-and-cardiovascular-system-electro-conduction-system-of-the-heart-emg-signal-acquisition",
-            "title": "EMG signal acquisition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-peect521-biomedical-engineering-02-module-2-heart-and-cardiovascular-system-electro-conduction-system-of-the-heart-emg-signal-analysis",
-            "title": "EMG signal analysis",
+            "id": "ec-5-peect521-biomedical-engineering-02-module-2-heart-and-cardiovascular-system-electro-conduction-system-of-the-heart-emg-signal-acquisition-and-analysis",
+            "title": "EMG signal acquisition and analysis",
             "content": "",
             "pyqs": []
           },
@@ -1586,8 +1466,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-03-module-3-instruments-for-clinical-laboratory-oxymeters-blood-cell-counter-flame-therapeutic-equipments-principles-block-schematic-diagram-working-and-applications",
-            "title": "Therapeutic Equipments: Principles, block schematic diagram, working and applications",
+            "id": "ec-5-peect521-biomedical-engineering-03-module-3-instruments-for-clinical-laboratory-oxymeters-blood-cell-counter-flame-therapeutic-equipments-principles-and-working",
+            "title": "Therapeutic Equipments - Principles and working",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect521-biomedical-engineering-03-module-3-instruments-for-clinical-laboratory-oxymeters-blood-cell-counter-flame-therapeutic-equipments-block-schematic-diagram",
+            "title": "Therapeutic Equipments - block schematic diagram",
             "content": "",
             "pyqs": []
           },
@@ -1683,55 +1569,61 @@
           },
           {
             "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-computed-tomography-principle",
-            "title": "Computed Tomography: Principle",
+            "title": "Computed Tomography - Principle",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-computed-tomography-image-reconstruction",
-            "title": "Computed Tomography: image reconstruction",
+            "title": "Computed Tomography - image reconstruction",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-computed-tomography-scanning-system",
-            "title": "Computed Tomography: scanning system",
+            "title": "Computed Tomography - scanning system",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-computed-tomography-applications",
-            "title": "Computed Tomography: applications",
+            "title": "Computed Tomography - applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-ultrasonic-imaging-systems-basic-pulse-echo-system",
-            "title": "Ultrasonic imaging systems: Basic pulse echo system",
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-ultrasonic-imaging-systems",
+            "title": "Ultrasonic imaging systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-types-of-ultrasonics-systems-a-scan",
-            "title": "Types of Ultrasonics systems: A-Scan",
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-basic-pulse-echo-system",
+            "title": "Basic pulse echo system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-types-of-ultrasonics-systems-b-scan",
-            "title": "Types of Ultrasonics systems: B-Scan",
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-a-scan-ultrasonic-system",
+            "title": "A-Scan ultrasonic system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-types-of-ultrasonics-systems-m-scan",
-            "title": "Types of Ultrasonics systems: M-Scan",
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-b-scan-ultrasonic-system",
+            "title": "B-Scan ultrasonic system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-applications-of-ultrasonics-systems",
-            "title": "Applications of Ultrasonics systems",
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-m-scan-ultrasonic-system",
+            "title": "M-Scan ultrasonic system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-applications-of-ultrasonic-imaging-systems",
+            "title": "Applications of ultrasonic imaging systems",
             "content": "",
             "pyqs": []
           },
@@ -1743,19 +1635,19 @@
           },
           {
             "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-magnetic-resonance-imaging-basic-nmr-components",
-            "title": "Magnetic Resonance Imaging: Basic NMR components",
+            "title": "Magnetic Resonance Imaging - Basic NMR components",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-magnetic-resonance-imaging-biological-effects-of-nmr-imaging",
-            "title": "Magnetic Resonance Imaging: Biological effects of NMR imaging",
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-magnetic-resonance-imaging-biological-effects",
+            "title": "Magnetic Resonance Imaging - Biological effects",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-magnetic-resonance-imaging-advantages-of-nmr-imaging",
-            "title": "Magnetic Resonance Imaging: advantages of NMR imaging",
+            "id": "ec-5-peect521-biomedical-engineering-04-module-4-medical-imaging-systems-basic-principle-only-x-magnetic-resonance-imaging-advantages",
+            "title": "Magnetic Resonance Imaging - advantages",
             "content": "",
             "pyqs": []
           }
@@ -1775,20 +1667,26 @@
         "title": "Module 1: Any one from the following analog modulation schemes",
         "topics": [
           {
-            "id": "ec-5-pcecl508-communication-lab-i-01-module-1-any-one-from-the-following-analog-modulation-schemes-any-one-from-the-following-analog-modulation-schemes",
-            "title": "Any one from the following Analog modulation schemes",
+            "id": "ec-5-pcecl508-communication-lab-i-01-module-1-any-one-from-the-following-analog-modulation-schemes-am-modulation-using-transistors-or-ics",
+            "title": "AM modulation using Transistors or ICs",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-01-module-1-any-one-from-the-following-analog-modulation-schemes-am-modulation-and-detection-using-transistors-or-ics",
-            "title": "AM modulation and detection using Transistors or ICS",
+            "id": "ec-5-pcecl508-communication-lab-i-01-module-1-any-one-from-the-following-analog-modulation-schemes-am-detection-using-transistors-or-ics",
+            "title": "AM detection using Transistors or ICs",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-01-module-1-any-one-from-the-following-analog-modulation-schemes-fm-modulation-and-detection",
-            "title": "FM modulation and detection",
+            "id": "ec-5-pcecl508-communication-lab-i-01-module-1-any-one-from-the-following-analog-modulation-schemes-fm-modulation",
+            "title": "FM modulation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcecl508-communication-lab-i-01-module-1-any-one-from-the-following-analog-modulation-schemes-fm-detection",
+            "title": "FM detection",
             "content": "",
             "pyqs": []
           }
@@ -1799,32 +1697,50 @@
         "title": "Module 2: Hardware experiment any one from the following digital modulation wavef",
         "topics": [
           {
-            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-hardware-experiment-any-one-from-the-following-digital-modulation-waveform-coding-schemes",
-            "title": "Hardware Experiment: Any one from the following Digital modulation & Waveform coding Schemes",
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-of-pcm-signals",
+            "title": "Generation of PCM signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-and-detection-of-pcm-signals",
-            "title": "Generation and Detection of PCM signals",
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-detection-of-pcm-signals",
+            "title": "Detection of PCM signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-and-detection-of-delta-modulated-signals",
-            "title": "Generation and Detection of Delta modulated signals",
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-of-delta-modulated-signals",
+            "title": "Generation of Delta modulated signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-and-detection-of-bpsk",
-            "title": "Generation and Detection of BPSK",
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-detection-of-delta-modulated-signals",
+            "title": "Detection of Delta modulated signals",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-and-detection-of-qpsk",
-            "title": "Generation and Detection of QPSK",
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-of-bpsk",
+            "title": "Generation of BPSK",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-detection-of-bpsk",
+            "title": "Detection of BPSK",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-generation-of-qpsk",
+            "title": "Generation of QPSK",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcecl508-communication-lab-i-02-module-2-hardware-experiment-any-one-from-the-following-digital-modulation-wavef-detection-of-qpsk",
+            "title": "Detection of QPSK",
             "content": "",
             "pyqs": []
           }
@@ -1835,14 +1751,14 @@
         "title": "Module 3: Performance of waveform coding using pcm",
         "topics": [
           {
-            "id": "ec-5-pcecl508-communication-lab-i-03-module-3-performance-of-waveform-coding-using-pcm-performance-of-waveform-coding-using-pcm",
-            "title": "Performance of Waveform Coding Using PCM",
+            "id": "ec-5-pcecl508-communication-lab-i-03-module-3-performance-of-waveform-coding-using-pcm-pulse-shaping",
+            "title": "Pulse Shaping",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-03-module-3-performance-of-waveform-coding-using-pcm-pulse-shaping-and-matched-filtering",
-            "title": "Pulse Shaping and Matched Filtering",
+            "id": "ec-5-pcecl508-communication-lab-i-03-module-3-performance-of-waveform-coding-using-pcm-matched-filtering",
+            "title": "Matched Filtering",
             "content": "",
             "pyqs": []
           },
@@ -1907,8 +1823,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-05-module-5-familiarization-with-software-defined-radio-hardware-and-control-softwa-familiarize-with-gnu-radio-or-similar-software-s-like-simulink-lab-view-that-can-be-used-to-process-the-signals-received-through-the-sdr-hardware",
-            "title": "Familiarize with GNU Radio (or similar software's like Simulink/ Lab-View) that can be used to process the signals received through the SDR hardware",
+            "id": "ec-5-pcecl508-communication-lab-i-05-module-5-familiarization-with-software-defined-radio-hardware-and-control-softwa-familiarize-with-gnu-radio-or-similar-software-like-simulink-labview-that-can-be-used-to-process-the-signals-received-through-the-sdr-hardware",
+            "title": "Familiarize with GNU Radio (or similar software like Simulink/LabView) that can be used to process the signals received through the SDR hardware",
             "content": "",
             "pyqs": []
           },
@@ -1919,8 +1835,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-05-module-5-familiarization-with-software-defined-radio-hardware-and-control-softwa-study-how-signals-can-be-generated-and-spectrum-or-power-spectral-density-of-signals-can-be-analyzed",
-            "title": "Study how signals can be generated and spectrum (or power spectral density) of signals can be analyzed",
+            "id": "ec-5-pcecl508-communication-lab-i-05-module-5-familiarization-with-software-defined-radio-hardware-and-control-softwa-study-how-signals-can-be-generated",
+            "title": "Study how signals can be generated",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcecl508-communication-lab-i-05-module-5-familiarization-with-software-defined-radio-hardware-and-control-softwa-study-how-spectrum-or-power-spectral-density-of-signals-can-be-analyzed",
+            "title": "Study how spectrum (or power spectral density) of signals can be analyzed",
             "content": "",
             "pyqs": []
           },
@@ -1937,20 +1859,20 @@
         "title": "Module 6: Fm reception using sdr",
         "topics": [
           {
-            "id": "ec-5-pcecl508-communication-lab-i-06-module-6-fm-reception-using-sdr-fm-reception-using-sdr",
-            "title": "FM reception using SDR",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-5-pcecl508-communication-lab-i-06-module-6-fm-reception-using-sdr-receive-digitized-fm-signal-for-the-clearest-channel-in-the-lab-using-the-sdr-board",
             "title": "Receive digitized FM signal (for the clearest channel in the lab) using the SDR board",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-06-module-6-fm-reception-using-sdr-set-up-an-lpf-and-fm-receiver-using-gnu-radio",
-            "title": "Set up an LPF and FM receiver using GNU Radio",
+            "id": "ec-5-pcecl508-communication-lab-i-06-module-6-fm-reception-using-sdr-set-up-an-lpf-using-gnu-radio",
+            "title": "Set up an LPF using GNU Radio",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcecl508-communication-lab-i-06-module-6-fm-reception-using-sdr-set-up-an-fm-receiver-using-gnu-radio",
+            "title": "Set up an FM receiver using GNU Radio",
             "content": "",
             "pyqs": []
           },
@@ -1961,8 +1883,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcecl508-communication-lab-i-06-module-6-fm-reception-using-sdr-resample-the-voice-to-make-it-suitable-for-playing-on-computer-speaker-or-playing-on-compute",
-            "title": "Resample the voice to make it suitable for playing on computer speaker or playing on compute",
+            "id": "ec-5-pcecl508-communication-lab-i-06-module-6-fm-reception-using-sdr-resample-the-voice-to-make-it-suitable-for-playing-on-computer-speaker",
+            "title": "Resample the voice to make it suitable for playing on computer speaker",
             "content": "",
             "pyqs": []
           }
@@ -1972,12 +1894,6 @@
         "id": "ec-5-pcecl508-communication-lab-i-07-module-7-fm-transmission-using-sdr",
         "title": "Module 7: Fm transmission using sdr",
         "topics": [
-          {
-            "id": "ec-5-pcecl508-communication-lab-i-07-module-7-fm-transmission-using-sdr-fm-transmission-using-sdr",
-            "title": "FM transmission using SDR",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "ec-5-pcecl508-communication-lab-i-07-module-7-fm-transmission-using-sdr-use-a-wave-file-source",
             "title": "Use a wave file source",
@@ -2012,8 +1928,8 @@
         "title": "Module 1: Introduction basic components of control systems",
         "topics": [
           {
-            "id": "ec-5-pcect503-control-systems-01-module-1-introduction-basic-components-of-control-systems-introduction",
-            "title": "Introduction",
+            "id": "ec-5-pcect503-control-systems-01-module-1-introduction-basic-components-of-control-systems-introduction-to-control-systems",
+            "title": "Introduction to Control Systems",
             "content": "",
             "pyqs": []
           },
@@ -2024,8 +1940,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-01-module-1-introduction-basic-components-of-control-systems-open-loop-and-closed-loop-control-systems-with-examples",
-            "title": "Open-Loop and Closed-Loop Control Systems with examples",
+            "id": "ec-5-pcect503-control-systems-01-module-1-introduction-basic-components-of-control-systems-open-loop-control-systems-with-examples",
+            "title": "Open-Loop Control Systems with examples",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect503-control-systems-01-module-1-introduction-basic-components-of-control-systems-closed-loop-control-systems-with-examples",
+            "title": "Closed-Loop Control Systems with examples",
             "content": "",
             "pyqs": []
           },
@@ -2090,26 +2012,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-first-order-systems-to-unit-impulse-input",
-            "title": "Time response of first order systems to unit impulse input",
+            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-first-order-systems-unit-impulse-input",
+            "title": "Time response of first order systems (unit impulse input)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-first-order-systems-to-step-input",
-            "title": "Time response of first order systems to step input",
+            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-first-order-systems-unit-step-input",
+            "title": "Time response of first order systems (unit step input)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-first-order-systems-to-ramp-input",
-            "title": "Time response of first order systems to ramp input",
+            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-first-order-systems-unit-ramp-input",
+            "title": "Time response of first order systems (unit ramp input)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-second-order-systems-to-step-input",
-            "title": "Time response of second order systems to step input",
+            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-second-order-systems-unit-step-input",
+            "title": "Time response of second order systems (unit step input)",
             "content": "",
             "pyqs": []
           },
@@ -2120,8 +2042,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-under-damped-second-order-system-to-unit-step-signal",
-            "title": "Time response of under damped second order system to unit step signal",
+            "id": "ec-5-pcect503-control-systems-02-module-2-time-domain-analysis-of-control-systems-standard-test-signals-time-response-of-underdamped-second-order-system-to-unit-step-signal",
+            "title": "Time response of underdamped second order system to unit step signal",
             "content": "",
             "pyqs": []
           },
@@ -2180,26 +2102,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-root-locus-techniques",
-            "title": "Root Locus Techniques",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-root-locus-techniques-introduction",
+            "title": "Root Locus Techniques - Introduction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-root-locus-introduction",
-            "title": "Root Locus Introduction",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-properties-of-root-locus",
+            "title": "Properties of Root Locus",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-root-locus-properties",
-            "title": "Root Locus Properties",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-root-locus-construction",
-            "title": "Root Locus Construction",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-construction-of-root-locus",
+            "title": "Construction of Root Locus",
             "content": "",
             "pyqs": []
           },
@@ -2240,32 +2156,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-stability-analysis-using-nyquist-stability-criterion",
-            "title": "Stability analysis using Nyquist stability criterion",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-nyquist-stability-criterion",
+            "title": "Nyquist stability criterion",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-p-controllers",
-            "title": "P controllers",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-p-controllers-introduction",
+            "title": "P Controllers - Introduction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-pi-controllers",
-            "title": "PI controllers",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-pi-controllers-introduction",
+            "title": "PI Controllers - Introduction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-pid-controllers",
-            "title": "PID controllers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-introduction-to-p-pi-and-pid-controllers",
-            "title": "Introduction to P, PI and PID controllers",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-pid-controllers-introduction",
+            "title": "PID Controllers - Introduction",
             "content": "",
             "pyqs": []
           },
@@ -2282,14 +2192,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-lag-compensators-using-bode-plots",
-            "title": "Lag compensators using Bode plots",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-lag-compensators-using-bode-plots-only-design-steps",
+            "title": "Lag compensators using Bode plots (only design steps)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-lead-compensators-using-bode-plots",
-            "title": "Lead compensators using Bode plots",
+            "id": "ec-5-pcect503-control-systems-03-module-3-stability-of-linear-control-systems-concept-of-bibo-stability-lead-compensators-using-bode-plots-only-design-steps",
+            "title": "Lead compensators using Bode plots (only design steps)",
             "content": "",
             "pyqs": []
           }
@@ -3266,8 +3176,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-rectangular-cylindrical-and-spherical-coordinate-systems",
-            "title": "Rectangular, cylindrical and spherical coordinate systems",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-rectangular-coordinate-system",
+            "title": "Rectangular coordinate system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-cylindrical-coordinate-system",
+            "title": "Cylindrical coordinate system",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-spherical-coordinate-system",
+            "title": "Spherical coordinate system",
             "content": "",
             "pyqs": []
           },
@@ -3278,8 +3200,20 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-curl-divergence-and-gradient",
-            "title": "Curl, divergence and gradient",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-curl",
+            "title": "Curl",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-divergence",
+            "title": "Divergence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-gradient",
+            "title": "Gradient",
             "content": "",
             "pyqs": []
           },
@@ -3290,26 +3224,26 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-review-of-gauss-s-law",
-            "title": "Review of Gauss's law",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-gauss-s-law",
+            "title": "Gauss's law",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-review-of-ampere-s-current-law",
-            "title": "Review of Ampere's current law",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-ampere-s-current-law",
+            "title": "Ampere's current law",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-capacitance-of-two-wire-transmission-line-and-coaxial-cable",
-            "title": "Derivation of capacitance of two wire transmission line and coaxial cable",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-capacitance-and-inductance-of-two-wire-transmission-line",
+            "title": "Derivation of capacitance and inductance of two wire transmission line",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-inductance-of-two-wire-transmission-line-and-coaxial-cable",
-            "title": "Derivation of inductance of two wire transmission line and coaxial cable",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-derivation-of-capacitance-and-inductance-of-coaxial-cable",
+            "title": "Derivation of capacitance and inductance of coaxial cable",
             "content": "",
             "pyqs": []
           },
@@ -3326,8 +3260,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-poisson-and-laplace-equations",
-            "title": "Poisson and Laplace equations",
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-poisson-equation",
+            "title": "Poisson equation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-01-module-1-review-of-coordinate-system-laplace-equation",
+            "title": "Laplace equation",
             "content": "",
             "pyqs": []
           },
@@ -3404,20 +3344,26 @@
         "title": "Module 3: Reflection and refraction of plane electromagnetic waves at boundaries",
         "topics": [
           {
-            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries",
-            "title": "Reflection and refraction of plane electromagnetic waves at boundaries",
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-for-normal-incidence",
+            "title": "Reflection and refraction of plane electromagnetic waves at boundaries for normal incidence",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-normal-incidence",
-            "title": "Normal incidence",
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-for-oblique-incidence",
+            "title": "Reflection and refraction of plane electromagnetic waves at boundaries for oblique incidence",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-oblique-incidence-parallel-and-perpendicular-polarization",
-            "title": "Oblique incidence (parallel and perpendicular polarization)",
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-parallel-polarization",
+            "title": "Parallel polarization",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-03-module-3-reflection-and-refraction-of-plane-electromagnetic-waves-at-boundaries-perpendicular-polarization",
+            "title": "Perpendicular polarization",
             "content": "",
             "pyqs": []
           },
@@ -3489,25 +3435,37 @@
           },
           {
             "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-calculation-of-line-impedance-using-smith-chart",
-            "title": "Calculation of line impedance using Smith chart",
+            "title": "Calculation of line impedance using smith chart",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-calculation-of-vswr-using-smith-chart",
-            "title": "Calculation of VSWR using Smith chart",
+            "title": "Calculation of VSWR using smith chart",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-the-hollow-rectangular-waveguide",
-            "title": "The hollow rectangular waveguide",
+            "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-hollow-rectangular-waveguide",
+            "title": "Hollow rectangular waveguide",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-te-and-tm-wave-dominant-mode",
-            "title": "TE and TM wave-dominant mode",
+            "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-te-wave-in-rectangular-waveguide",
+            "title": "TE wave in rectangular waveguide",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-tm-wave-in-rectangular-waveguide",
+            "title": "TM wave in rectangular waveguide",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-5-pcect501-electromagnetics-04-module-4-transmission-line-as-circuit-elements-l-and-c-dominant-mode-in-rectangular-waveguide",
+            "title": "Dominant mode in rectangular waveguide",
             "content": "",
             "pyqs": []
           },
@@ -4092,108 +4050,108 @@
     ]
   },
   {
-    "id": "ec-5-peect 523-sensors-and-actuators",
-    "code": "PEECT 523-SENSORS-AND-ACTUATORS",
-    "name": "PEECT 523 SENSORS AND ACTUATORS",
+    "id": "ec-5-peect523-sensors-and-actuators",
+    "code": "PEECT523-SENSORS-AND-ACTUATORS",
+    "name": "PEECT523 SENSORS AND ACTUATORS",
     "branchId": "ec",
     "semester": 5,
     "modules": [
       {
-        "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co",
+        "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co",
         "title": "Module 1: Introduction to sensors and actuators block diagram of a closed loop co",
         "topics": [
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-control-system",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-control-system",
             "title": "Introduction to Sensors and actuators : Block diagram of a closed loop control System",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensors-and-transducers",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensors-and-transducers",
             "title": "Sensors and Transducers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensors-classification",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensors-classification",
             "title": "Sensors Classification",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensor-characteristics-transfer-function",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensor-characteristics-transfer-function",
             "title": "Sensor Characteristics - Transfer Function",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-calibration",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-calibration",
             "title": "Calibration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-span-full-scale-input",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-span-full-scale-input",
             "title": "Span (Full Scale Input)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-full-scale-output",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-full-scale-output",
             "title": "Full-Scale Output",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-accuracy",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-accuracy",
             "title": "Accuracy",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-precision",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-precision",
             "title": "Precision",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-hysteresis",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-hysteresis",
             "title": "Hysteresis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-nonlinearity",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-nonlinearity",
             "title": "Nonlinearity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-saturation",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-saturation",
             "title": "Saturation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-repeatability",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-repeatability",
             "title": "Repeatability",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-dead-band",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-dead-band",
             "title": "Dead Band",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensitivity",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-sensitivity",
             "title": "Sensitivity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-resolution",
+            "id": "ec-5-peect523-sensors-and-actuators-01-module-1-introduction-to-sensors-and-actuators-block-diagram-of-a-closed-loop-co-resolution",
             "title": "Resolution.",
             "content": "",
             "pyqs": []
@@ -4201,107 +4159,107 @@
         ]
       },
       {
-        "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors",
+        "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors",
         "title": "Module 2: Position and displacement sensors",
         "topics": [
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-position-and-displacement-sensors-potentiometric-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-position-and-displacement-sensors-potentiometric-sensors",
             "title": "Position and Displacement Sensors - Potentiometric Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-capacitive-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-capacitive-sensors",
             "title": "Capacitive Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-lvdt",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-lvdt",
             "title": "LVDT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-hall-effect-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-hall-effect-sensors",
             "title": "Hall Effect Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-pressure-sensors-mercury-pressure-sensor",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-pressure-sensors-mercury-pressure-sensor",
             "title": "Pressure Sensors -Mercury Pressure Sensor",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-bellows",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-bellows",
             "title": "Bellows",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-membranes-and-thin-plates",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-membranes-and-thin-plates",
             "title": "Membranes, and Thin plates",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoresistive-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoresistive-sensors",
             "title": "Piezoresistive Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-capacitive-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-capacitive-sensors",
             "title": "Capacitive Sensors.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-force-strain-and-tactile-sensors-strain-gauges",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-force-strain-and-tactile-sensors-strain-gauges",
             "title": "Force, Strain, and Tactile Sensors - Strain Gauges",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-tactile-sensors-switch-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-tactile-sensors-switch-sensors",
             "title": "Tactile Sensors - Switch Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoelectric-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoelectric-sensors",
             "title": "Piezoelectric Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoresistive-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoresistive-sensors",
             "title": "Piezoresistive Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-capacitive-touch-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-capacitive-touch-sensors",
             "title": "Capacitive Touch Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-acoustic-touch-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-acoustic-touch-sensors",
             "title": "Acoustic Touch Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-optical-touch-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-optical-touch-sensors",
             "title": "Optical Touch Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoelectric-force-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-02-module-2-position-and-displacement-sensors-piezoelectric-force-sensors",
             "title": "Piezoelectric Force Sensors.",
             "content": "",
             "pyqs": []
@@ -4309,71 +4267,71 @@
         ]
       },
       {
-        "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors",
+        "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors",
         "title": "Module 3: Flow sensors",
         "topics": [
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-flow-sensors-ultrasonic-flow-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-flow-sensors-ultrasonic-flow-sensors",
             "title": "Flow Sensors - Ultrasonic Flow Sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-electromagnetic-flow-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-electromagnetic-flow-sensors",
             "title": "Electromagnetic Flow Sensors.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-temperature-sensors-resistance-temperature-detectors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-temperature-sensors-resistance-temperature-detectors",
             "title": "Temperature Sensors - Resistance Temperature Detectors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-thermistors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-thermistors",
             "title": "Thermistors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-thermocouple",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-thermocouple",
             "title": "Thermocouple.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-proximity-sensors-pir-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-proximity-sensors-pir-sensors",
             "title": "Proximity Sensors - PIR sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-ultrasonic-proximity-sensors",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-ultrasonic-proximity-sensors",
             "title": "Ultrasonic proximity sensors.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-smart-sensors-block-diagram",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-smart-sensors-block-diagram",
             "title": "Smart Sensors - Block Diagram",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-difference-between-normal-sensor-smart-sensor",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-difference-between-normal-sensor-smart-sensor",
             "title": "Difference between Normal Sensor & Smart Sensor",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-advantages",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-advantages",
             "title": "Advantages",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-03-module-3-flow-sensors-disadvantages-and-applications",
+            "id": "ec-5-peect523-sensors-and-actuators-03-module-3-flow-sensors-disadvantages-and-applications",
             "title": "Disadvantages and Applications.",
             "content": "",
             "pyqs": []
@@ -4381,89 +4339,89 @@
         ]
       },
       {
-        "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators",
+        "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators",
         "title": "Module 4: Actuators",
         "topics": [
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-actuators-definition-classification-electric-hydraulic-pneumatic-actuators",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-actuators-definition-classification-electric-hydraulic-pneumatic-actuators",
             "title": "Actuators : - Definition- classification-Electric, Hydraulic, Pneumatic actuators.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-hydraulic-system-physical-components-and-typical-circuit",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-hydraulic-system-physical-components-and-typical-circuit",
             "title": "Hydraulic System - Physical Components and typical circuit.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-hydraulic-actuators-linear-actuators",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-hydraulic-actuators-linear-actuators",
             "title": "Hydraulic actuators - Linear actuators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-rotary-actuators-gear-motor-vane-motor",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-rotary-actuators-gear-motor-vane-motor",
             "title": "Rotary actuators - Gear motor, vane motor.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-pneumatic-system-components-and-typical-circuit",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-pneumatic-system-components-and-typical-circuit",
             "title": "Pneumatic System - Components and typical circuit.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-pneumatic-actuators-bellows-actuator",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-pneumatic-actuators-bellows-actuator",
             "title": "Pneumatic Actuators - Bellows actuator",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-flapper-nozzle",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-flapper-nozzle",
             "title": "Flapper-nozzle",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-diaphragm-actuators-for-industrial-control-valves",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-diaphragm-actuators-for-industrial-control-valves",
             "title": "Diaphragm actuators for industrial control valves.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-electric-actuators-solenoids",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-electric-actuators-solenoids",
             "title": "Electric actuators- Solenoids",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-stepper-motors",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-stepper-motors",
             "title": "Stepper motors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-dc-motors",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-dc-motors",
             "title": "DC motors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-dc-servo-motors",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-dc-servo-motors",
             "title": "DC servo motors.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-electro-pneumatic-actuator-rotary-output-actuators",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-electro-pneumatic-actuator-rotary-output-actuators",
             "title": "Electro-Pneumatic actuator; rotary output actuators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-5-peect 523-sensors-and-actuators-04-module-4-actuators-linear-output-actuators",
+            "id": "ec-5-peect523-sensors-and-actuators-04-module-4-actuators-linear-output-actuators",
             "title": "Linear output actuators.",
             "content": "",
             "pyqs": []

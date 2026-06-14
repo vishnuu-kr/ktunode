@@ -11,8 +11,14 @@
         "title": "Module 1: Introduction to logic propositional logic",
         "topics": [
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-introduction-to-logic-propositional-logic",
-            "title": "Introduction to Logic: Propositional Logic",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-introduction-to-logic",
+            "title": "Introduction to Logic",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-propositional-logic",
+            "title": "Propositional Logic",
             "content": "",
             "pyqs": []
           },
@@ -53,8 +59,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-predicates-and-quantifiers",
-            "title": "Predicates and Quantifiers",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-predicates",
+            "title": "Predicates",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-01-module-1-introduction-to-logic-propositional-logic-quantifiers",
+            "title": "Quantifiers",
             "content": "",
             "pyqs": []
           },
@@ -101,8 +113,14 @@
         "title": "Module 2: Fundamental principles of counting the rules of sum and product",
         "topics": [
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-fundamental-principles-of-counting-the-rules-of-sum-and-product",
-            "title": "Fundamental Principles of Counting: The Rules of Sum and Product",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-fundamental-principles-of-counting",
+            "title": "Fundamental Principles of Counting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-02-module-2-fundamental-principles-of-counting-the-rules-of-sum-and-product-the-rules-of-sum-and-product",
+            "title": "The Rules of Sum and Product",
             "content": "",
             "pyqs": []
           },
@@ -149,12 +167,6 @@
         "title": "Module 3: Relations functions and algebraic structures sets",
         "topics": [
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-relations-functions-and-algebraic-structures-sets",
-            "title": "Relations, Functions and Algebraic Structures: Sets",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-relations",
             "title": "Relations",
             "content": "",
@@ -167,14 +179,32 @@
             "pyqs": []
           },
           {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-algebraic-structures",
+            "title": "Algebraic Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-sets",
+            "title": "Sets",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-equivalence-relations",
             "title": "Equivalence Relations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-posets-and-lattices",
-            "title": "Posets and Lattices",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-posets",
+            "title": "Posets",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-lattices",
+            "title": "Lattices",
             "content": "",
             "pyqs": []
           },
@@ -185,8 +215,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-complimented-lattices",
-            "title": "Complimented lattices",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-03-module-3-relations-functions-and-algebraic-structures-sets-complemented-lattices",
+            "title": "Complemented lattices",
             "content": "",
             "pyqs": []
           },
@@ -239,8 +269,14 @@
         "title": "Module 4: Generating function definitions and examples",
         "topics": [
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-generating-function-definitions-and-examples",
-            "title": "Generating Function: Definitions and Examples",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-generating-function",
+            "title": "Generating Function",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-definitions-and-examples",
+            "title": "Definitions and Examples",
             "content": "",
             "pyqs": []
           },
@@ -257,26 +293,44 @@
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-recurrence-relations-first-order-linear-recurrence-relations-with-constant-coefficients-homogeneous-solution",
-            "title": "Recurrence Relations: First-order linear recurrence relations with constant coefficients - homogeneous Solution",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-recurrence-relations",
+            "title": "Recurrence Relations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-recurrence-relations-first-order-linear-recurrence-relations-with-constant-coefficients-non-homogeneous-solution",
-            "title": "Recurrence Relations: First-order linear recurrence relations with constant coefficients - non-homogeneous Solution",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-first-order-linear-recurrence-relations-with-constant-coefficients",
+            "title": "First-order linear recurrence relations with constant coefficients",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-second-order-linear-recurrence-relations-with-constant-coefficients-homogeneous-solution",
-            "title": "Second-order linear recurrence relations with constant coefficients - homogeneous Solution",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-homogeneous-solutions-for-first-order-recurrence-relations",
+            "title": "Homogeneous solutions for first-order recurrence relations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-second-order-linear-recurrence-relations-with-constant-coefficients-non-homogeneous-solution",
-            "title": "Second-order linear recurrence relations with constant coefficients - non-homogeneous Solution",
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-non-homogeneous-solutions-for-first-order-recurrence-relations",
+            "title": "Non-homogeneous solutions for first-order recurrence relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-second-order-linear-recurrence-relations-with-constant-coefficients",
+            "title": "Second-order linear recurrence relations with constant coefficients",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-homogeneous-solutions-for-second-order-recurrence-relations",
+            "title": "Homogeneous solutions for second-order recurrence relations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-2-pcitt205-discrete-mathematical-structures-04-module-4-generating-function-definitions-and-examples-non-homogeneous-solutions-for-second-order-recurrence-relations",
+            "title": "Non-homogeneous solutions for second-order recurrence relations",
             "content": "",
             "pyqs": []
           }
@@ -850,192 +904,108 @@
     "semester": 2,
     "modules": [
       {
-        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu",
-        "title": "Module 1: Computer hardware cpu",
+        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-and-system-boot-mechanics",
+        "title": "Module 1: Computer Hardware and System Boot Mechanics",
         "topics": [
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-computer-hardware-cpu",
-            "title": "Computer Hardware - CPU",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-and-system-boot-mechanics-cpu-architecture-alu-registers-control-unit",
+            "title": "CPU architecture, ALU, registers, control unit",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-memory-memory-hierarchy-registers-cache-ram-virtual-memory",
-            "title": "Memory - Memory hierarchy: registers, cache, RAM, virtual memory",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-and-system-boot-mechanics-memory-hierarchy-registers-cache-memory-profiles-ram-virtual-memory-layouts",
+            "title": "Memory Hierarchy: Registers, Cache memory profiles, RAM, Virtual Memory layouts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-motherboard-computer-peripherals-i-o-devices",
-            "title": "Motherboard - Computer Peripherals - I/O devices",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-and-system-boot-mechanics-peripherals-communication-channels-motherboard-paths-i-o-devices-storage-interfaces-hdd-ssd-buses-firmware-layers",
+            "title": "Peripherals & Communication channels: Motherboard paths, I/O devices, storage interfaces (HDD, SSD), buses, firmware layers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-storage-devices-hdds-ssds-optical-drives",
-            "title": "Storage devices- HDDs, SSDs, optical drives",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-i-o-communication-and-device-management",
-            "title": "I/O communication and device management",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-cpu-interface-cards-buses-firmware-boot-process",
-            "title": "Interface cards - Buses - Firmware - Boot process",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-01-module-1-computer-hardware-and-system-boot-mechanics-machine-boot-process-sequence",
+            "title": "Machine boot process sequence",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers",
-        "title": "Module 2: Binary representation of data and numbers",
+        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-data-encoding-and-isa-execution-cycles",
+        "title": "Module 2: Data Encoding and ISA Execution Cycles",
         "topics": [
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-binary-representation-of-data-and-numbers",
-            "title": "Binary representation of data and numbers",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-data-encoding-and-isa-execution-cycles-binary-representations-of-integers-and-data-types-storage-sizing-blocks-bits-bytes-etc",
+            "title": "Binary representations of integers and data types, storage sizing blocks (bits, bytes, etc.)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-integer-representation",
-            "title": "Integer Representation",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-data-encoding-and-isa-execution-cycles-character-mapping-ascii-and-unicode-encoding-systems",
+            "title": "Character Mapping: ASCII and Unicode encoding systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-data-storage-units-bits-bytes-kilobytes-etc",
-            "title": "Data storage units - bits, bytes, kilobytes, etc.",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-ascii-and-unicode",
-            "title": "ASCII and Unicode",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-cpu-architecture-and-instruction-set-basic-cpu-architecture-alu-registers-control-unit",
-            "title": "CPU Architecture and Instruction Set: Basic CPU architecture - ALU, registers, control unit",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-instruction-format-and-assembly-language-basics-only",
-            "title": "Instruction format and assembly language (basics only)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-binary-representation-of-data-and-numbers-fetch-execute-cycle-and-instruction-execution",
-            "title": "Fetch-execute cycle and instruction execution.",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-02-module-2-data-encoding-and-isa-execution-cycles-instruction-set-architecture-isa-cpu-instruction-formats-assembly-language-fundamentals-fetch-decode-execute-cycle",
+            "title": "Instruction Set Architecture (ISA): CPU instruction formats, assembly language fundamentals, Fetch-Decode-Execute cycle",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software",
-        "title": "Module 3: Computer system software",
+        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-system-platforms-scripting-and-networks",
+        "title": "Module 3: System Platforms, Scripting, and Networks",
         "topics": [
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-computer-system-software-operating-systems",
-            "title": "Computer System Software - Operating Systems",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-system-platforms-scripting-and-networks-platform-control-system-software-and-operating-systems-terminal-commands-in-linux-and-windows",
+            "title": "Platform Control: System Software and Operating Systems, terminal commands in Linux and Windows",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-basic-commands-in-linux-windows",
-            "title": "Basic commands in Linux / Windows",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-system-platforms-scripting-and-networks-scripting-basic-shell-scripting-pipelines-via-bash",
+            "title": "Scripting: Basic shell scripting pipelines via Bash",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-shell-scripting-bash-computer-communications-lan-man-wan",
-            "title": "Shell scripting (bash). Computer Communications - LAN, MAN, WAN",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-client-server-networks",
-            "title": "Client/Server networks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-peer-to-peer-networks",
-            "title": "Peer-to-Peer networks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-topologies",
-            "title": "Topologies",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-basics-of-ip-addresses-dhcp-nat",
-            "title": "Basics of IP addresses, DHCP, NAT",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-network-security-desktop-perimeter",
-            "title": "Network Security (Desktop & Perimeter)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-dns-vpn-routers",
-            "title": "DNS, VPN, Routers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-client-server",
-            "title": "Client-Server",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-computer-system-software-internet-www-web-servers",
-            "title": "Internet, WWW, Web servers.",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-03-module-3-system-platforms-scripting-and-networks-data-communication-network-topologies-lan-man-wan-client-server-vs-p2p-ip-addressing-schemes-dhcp-nat-dns-routers-vpn",
+            "title": "Data Communication: Network topologies (LAN, MAN, WAN), Client-Server vs P2P, IP addressing schemes, DHCP, NAT, DNS, routers, VPN",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont",
-        "title": "Module 4: Web design basics of html css and javascript understanding the web cont",
+        "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-fundamentals",
+        "title": "Module 4: Web Design Fundamentals",
         "topics": [
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-web-design-basics-of-html-css-and-javascript-understanding-the-web-content-delivery",
-            "title": "Web Design (Basics of HTML, CSS, and JavaScript) - Understanding the web content delivery",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-fundamentals-principles-of-content-delivery-frameworks-across-the-internet",
+            "title": "Principles of content delivery frameworks across the internet",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-understanding-html-and-xhtml-connections",
-            "title": "Understanding HTML and XHTML Connections",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-fundamentals-html-architecture-structure-of-html-xhtml-documents-tag-based-structures",
+            "title": "HTML Architecture: Structure of HTML/XHTML documents, tag-based structures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-understanding-cascading-style-sheets",
-            "title": "Understanding Cascading Style Sheets",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-fundamentals-cascading-style-sheets-css-for-semantic-design-and-layouts",
+            "title": "Cascading Style Sheets (CSS) for semantic design and layouts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-basics-of-html-css-and-javascript-understanding-the-web-cont-understanding-javascript",
-            "title": "Understanding JavaScript",
+            "id": "cs-2-gxest203-foundations-of-computing-from-hardware-essentials-to-web-design-04-module-4-web-design-fundamentals-client-side-scripting-javascript-fundamentals-interactive-form-validations",
+            "title": "Client-Side Scripting: JavaScript fundamentals, interactive form validations",
             "content": "",
             "pyqs": []
           }
@@ -1045,8 +1015,8 @@
   },
   {
     "id": "cs-2-gamat201-mathematics-for-information-science-2",
-    "code": "GAMAT201-MATHEMATICS-FOR-INFORMATION-SCIENCE-–-2",
-    "name": "GAMAT201 MATHEMATICS FOR INFORMATION SCIENCE – 2",
+    "code": "GAMAT201-MATHEMATICS-FOR-INFORMATION-SCIENCE---2",
+    "name": "GAMAT201 MATHEMATICS FOR INFORMATION SCIENCE - 2",
     "branchId": "cs",
     "semester": 2,
     "modules": [
@@ -1180,540 +1150,120 @@
     "semester": 2,
     "modules": [
       {
-        "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals",
-        "title": "Module 1: C fundamentals",
+        "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-and-control-flow-structures",
+        "title": "Module 1: C Fundamentals and Control Flow Structures",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-character-set",
-            "title": "Character Set",
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-and-control-flow-structures-lexical-tokens-character-sets-constants-identifiers-keywords-primitive-data-types-int-char-float-double-memory-footprints",
+            "title": "Lexical Tokens: Character sets, constants, identifiers, keywords, primitive data types (int, char, float, double), memory footprints",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-constants",
-            "title": "Constants",
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-and-control-flow-structures-operators-expressions-mathematical-relational-logical-bit-wise-operators-precedence-rules",
+            "title": "Operators & Expressions: Mathematical, relational, logical, bit-wise operators, precedence rules",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-identifiers",
-            "title": "Identifiers",
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-and-control-flow-structures-basic-i-o-standard-unformatted-and-formatted-console-inputs-outputs",
+            "title": "Basic I/O: Standard unformatted and formatted console inputs/outputs",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-keywords",
-            "title": "Keywords",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-basic-data-types",
-            "title": "Basic Data types",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-variables",
-            "title": "Variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-operators-and-its-precedence",
-            "title": "Operators and its precedence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-bit-wise-operators",
-            "title": "Bit-wise operators",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-expressions",
-            "title": "Expressions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-statements",
-            "title": "Statements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-input-and-output-statements",
-            "title": "Input and Output statements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-structure-of-a-c-program",
-            "title": "Structure of a C program",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-simple-programs",
-            "title": "Simple programs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-control-statements",
-            "title": "Control Statements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-if",
-            "title": "if",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-if-else",
-            "title": "if-else",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-nested-if",
-            "title": "nested if",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-switch",
-            "title": "switch",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-while",
-            "title": "while",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-do-while",
-            "title": "do-while",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-for",
-            "title": "for",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-break",
-            "title": "break",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-continue",
-            "title": "continue",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-nested-loops",
-            "title": "nested loops",
+            "id": "cs-2-gxest204-programming-in-c-01-module-1-c-fundamentals-and-control-flow-structures-control-statements-conditional-branching-if-else-switch-loop-mechanisms-while-do-while-for-break-continue",
+            "title": "Control Statements: Conditional branching (if-else, switch), loop mechanisms (while, do-while, for), break, continue",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays",
-        "title": "Module 2: Arrays",
+        "id": "cs-2-gxest204-programming-in-c-02-module-2-data-arrays-and-sorting-mechanics",
+        "title": "Module 2: Data Arrays and Sorting Mechanics",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-arrays",
-            "title": "Arrays",
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-data-arrays-and-sorting-mechanics-one-dimensional-arrays-declaration-memory-allocation-structural-initialization-index-access",
+            "title": "One-Dimensional Arrays: Declaration, memory allocation, structural initialization, index access",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-single-dimensional-arrays",
-            "title": "Single dimensional arrays",
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-data-arrays-and-sorting-mechanics-search-sort-sequential-search-bubble-sort-sorting-algorithm",
+            "title": "Search & Sort: Sequential Search, Bubble Sort sorting algorithm",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-defining-an-array",
-            "title": "Defining an array",
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-data-arrays-and-sorting-mechanics-matrix-processing-two-dimensional-arrays-row-column-iterations-matrix-operations",
+            "title": "Matrix Processing: Two-dimensional arrays, row/column iterations, matrix operations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-array-initialization",
-            "title": "Array initialization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-accessing-array-elements",
-            "title": "Accessing array elements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-enumerated-data-type",
-            "title": "Enumerated data type",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-type-definition",
-            "title": "Type Definition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-two-dimensional-arrays",
-            "title": "Two-dimensional arrays",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-defining-a-two-dimensional-array",
-            "title": "Defining a two-dimensional array",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-programs-for-matrix-processing",
-            "title": "Programs for matrix processing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-programs-for-sequential-search",
-            "title": "Programs for sequential search",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-bubble-sort",
-            "title": "Bubble sort",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-strings",
-            "title": "Strings",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-declaring-a-string-variable",
-            "title": "Declaring a string variable",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-reading-and-displaying-strings",
-            "title": "Reading and displaying strings",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-string-related-library-functions",
-            "title": "String related library functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-02-module-2-arrays-programs-for-string-matching",
-            "title": "Programs for string matching",
+            "id": "cs-2-gxest204-programming-in-c-02-module-2-data-arrays-and-sorting-mechanics-custom-types-user-defined-types-via-typedef-enumerated-enum-data-types",
+            "title": "Custom Types: User-defined types via typedef, Enumerated (enum) data types",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-2-gxest204-programming-in-c-03-module-3-functions",
-        "title": "Module 3: Functions",
+        "id": "cs-2-gxest204-programming-in-c-03-module-3-modular-functions-and-string-processing",
+        "title": "Module 3: Modular Functions and String Processing",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-functions",
-            "title": "Functions",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-modular-functions-and-string-processing-modularization-function-definitions-prototypes-local-vs-global-variables-scope",
+            "title": "Modularization: Function definitions, prototypes, local vs global variables, scope",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-function-definition",
-            "title": "Function definition",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-modular-functions-and-string-processing-parameter-passing-pass-by-value-vs-pass-by-reference-array-data-transfers-into-functions",
+            "title": "Parameter Passing: Pass-by-Value vs Pass-by-Reference, array data transfers into functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-function-call",
-            "title": "Function call",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-modular-functions-and-string-processing-recursion-coding-recursive-processes-memory-overhead-handling",
+            "title": "Recursion: Coding recursive processes, memory overhead handling",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-function-prototype",
-            "title": "Function prototype",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-parameter-passing",
-            "title": "Parameter passing",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-recursion",
-            "title": "Recursion",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-passing-array-to-function",
-            "title": "Passing array to function",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-macros",
-            "title": "Macros",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-defining-and-calling-macros",
-            "title": "Defining and calling macros",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-command-line-arguments",
-            "title": "Command line Arguments",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-structures",
-            "title": "Structures",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-defining-a-structure-variable",
-            "title": "Defining a Structure variable",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-accessing-members",
-            "title": "Accessing members",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-array-of-structures",
-            "title": "Array of structures",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-passing-structure-to-function",
-            "title": "Passing structure to function",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-union",
-            "title": "Union",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-storage-class",
-            "title": "Storage Class",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-storage-classes-associated-with-variables",
-            "title": "Storage Classes associated with variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-automatic-storage-class",
-            "title": "Automatic storage class",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-static-storage-class",
-            "title": "Static storage class",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-external-storage-class",
-            "title": "External storage class",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-03-module-3-functions-register-storage-class",
-            "title": "Register storage class",
+            "id": "cs-2-gxest204-programming-in-c-03-module-3-modular-functions-and-string-processing-strings-string-arrays-processing-actions-without-built-in-library-overrides",
+            "title": "Strings: String arrays, processing actions without built-in library overrides",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers",
-        "title": "Module 4: Pointers",
+        "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-memory-control-and-data-files",
+        "title": "Module 4: Pointers, Memory Control, and Data Files",
         "topics": [
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointers",
-            "title": "Pointers",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-memory-control-and-data-files-pointers-declarations-reference-and-dereference-operations-pointer-arithmetic",
+            "title": "Pointers: Declarations, reference (&) and dereference (*) operations, pointer arithmetic",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-declaration",
-            "title": "Declaration",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-memory-control-and-data-files-advanced-pointers-pointer-to-pointer-arrays-of-pointers-tracking-array-layouts-via-offsets",
+            "title": "Advanced Pointers: Pointer-to-pointer, arrays of pointers, tracking array layouts via offsets",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-operations-on-pointers",
-            "title": "Operations on pointers",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-memory-control-and-data-files-dynamic-memory-allocation-runtime-allocation-via-malloc-calloc",
+            "title": "Dynamic Memory Allocation: Runtime allocation via malloc/calloc",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-passing-pointer-to-a-function",
-            "title": "Passing pointer to a function",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-accessing-array-elements-using-pointers",
-            "title": "Accessing array elements using pointers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-processing-strings-using-pointers",
-            "title": "Processing strings using pointers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointer-to-pointer",
-            "title": "Pointer to pointer",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-array-of-pointers",
-            "title": "Array of pointers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointer-to-function",
-            "title": "Pointer to function",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-pointer-to-structure",
-            "title": "Pointer to structure",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-dynamic-memory-allocation",
-            "title": "Dynamic Memory Allocation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-files",
-            "title": "Files",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-different-types-of-files-in-c",
-            "title": "Different types of files in C",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-opening-a-file",
-            "title": "Opening a file",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-closing-a-file",
-            "title": "Closing a file",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-writing-to-a-file",
-            "title": "Writing to a file",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-reading-from-a-file",
-            "title": "Reading from a file",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-processing-files",
-            "title": "Processing files",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-library-functions-related-to-file",
-            "title": "Library functions related to file",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fseek",
-            "title": "fseek()",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-ftell",
-            "title": "ftell()",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fread",
-            "title": "fread()",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-fwrite",
-            "title": "fwrite()",
+            "id": "cs-2-gxest204-programming-in-c-04-module-4-pointers-memory-control-and-data-files-file-management-core-file-types-code-syntax-for-opening-processing-modifying-and-closing-files",
+            "title": "File Management: Core file types, code syntax for opening, processing, modifying, and closing files",
             "content": "",
             "pyqs": []
           }

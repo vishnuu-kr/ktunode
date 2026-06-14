@@ -431,6 +431,12 @@
         "title": "Module 1: Fundamentals of cyber law and cyber space",
         "topics": [
           {
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-01-module-1-fundamentals-of-cyber-law-and-cyber-space-fundamentals-of-cyber-law-and-cyber-space",
+            "title": "Fundamentals of Cyber Law and Cyber Space",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-01-module-1-fundamentals-of-cyber-law-and-cyber-space-introduction-to-cyber-law",
             "title": "Introduction to cyber law",
             "content": "",
@@ -508,6 +514,12 @@
         "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics",
         "title": "Module 2: Cyber crime and cyber ethics",
         "topics": [
+          {
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-cyber-crime-and-cyber-ethics",
+            "title": "Cyber crime and Cyber Ethics",
+            "content": "",
+            "pyqs": []
+          },
           {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-02-module-2-cyber-crime-and-cyber-ethics-introduction-to-cybercrime",
             "title": "Introduction to cybercrime",
@@ -617,6 +629,12 @@
         "title": "Module 3: Data protection and privacy concerns in cyberspace need to protect data",
         "topics": [
           {
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-03-module-3-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-data-protection-and-privacy-concerns-in-cyberspace",
+            "title": "Data Protection and Privacy Concerns in Cyberspace",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-03-module-3-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-need-to-protect-data-in-cyberspace",
             "title": "Need to protect data in cyberspace",
             "content": "",
@@ -635,8 +653,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-03-module-3-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-data-protection-bill-an-overview",
-            "title": "Data protection bill - an overview",
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-03-module-3-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-data-protection-bill",
+            "title": "Data protection bill",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-03-module-3-data-protection-and-privacy-concerns-in-cyberspace-need-to-protect-data-an-overview",
+            "title": "An overview",
             "content": "",
             "pyqs": []
           },
@@ -695,6 +719,12 @@
         "title": "Module 4: Security policies and information technology act need for an informatio",
         "topics": [
           {
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-security-policies-and-information-technology-act",
+            "title": "Security Policies and Information Technology Act",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-need-for-an-information-security-policy",
             "title": "Need for an Information Security policy",
             "content": "",
@@ -725,8 +755,20 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-penalties-adjudication-and-appeals-under-the-it-act-2000",
-            "title": "Penalties, Adjudication and appeals under the IT Act, 2000",
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-penalties-under-the-it-act-2000",
+            "title": "Penalties under the IT Act, 2000",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-adjudication-under-the-it-act-2000",
+            "title": "Adjudication under the IT Act, 2000",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-4-pecst419-cyber-ethics-privacy-and-legal-issues-04-module-4-security-policies-and-information-technology-act-need-for-an-informatio-appeals-under-the-it-act-2000",
+            "title": "Appeals under the IT Act, 2000",
             "content": "",
             "pyqs": []
           },
@@ -783,7 +825,7 @@
           },
           {
             "id": "cs-4-pccst402-database-management-systems-01-module-1-core-characteristics-architectures-and-conceptual-modeling-conceptual-modeling-er-model-entities-attributes-keys-and-relationship-types-cardinality-ratios-constraints",
-            "title": "Conceptual Modeling: ER Model-Entities, Attributes, Keys, and Relationship types, Cardinality ratios, constraints",
+            "title": "Conceptual Modeling: ER Model—Entities, Attributes, Keys, and Relationship types, Cardinality ratios, constraints",
             "content": "",
             "pyqs": []
           },
@@ -885,7 +927,7 @@
           },
           {
             "id": "cs-4-pccst402-database-management-systems-04-module-4-transaction-processing-recovery-and-modern-database-paradigms-modern-database-paradigms-nosql-databases-types-and-use-cases-redis-cassandra-mongodb-graphdb",
-            "title": "Modern Database Paradigms: NoSQL databases-Types and use cases (Redis, Cassandra, MongoDB, GraphDB)",
+            "title": "Modern Database Paradigms: NoSQL databases—Types and use cases (Redis, Cassandra, MongoDB, GraphDB)",
             "content": "",
             "pyqs": []
           },
@@ -923,50 +965,44 @@
         "title": "Module 2: Creation of database schema",
         "topics": [
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-creation-of-database-schema-using-ddl",
-            "title": "Creation of database schema using DDL",
+            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-creation-of-database-schema",
+            "title": "Creation of database schema",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-create-tables",
-            "title": "Create tables",
+            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-ddl-create-tables",
+            "title": "DDL - Create tables",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-set-constraints",
-            "title": "Set constraints",
+            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-ddl-set-constraints",
+            "title": "DDL - Set constraints",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-enforce-relationships",
-            "title": "Enforce relationships",
+            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-ddl-enforce-relationships",
+            "title": "DDL - Enforce relationships",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-create-indices",
-            "title": "Create indices",
+            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-ddl-create-indices",
+            "title": "DDL - Create indices",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-delete-and-modify-tables",
-            "title": "Delete and modify tables",
+            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-ddl-delete-and-modify-tables",
+            "title": "DDL - Delete and modify tables",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-export-er-diagram-from-the-database",
-            "title": "Export ER diagram from the database",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-verify-relationships-with-the-er-diagram-designed-in-step-1",
-            "title": "Verify relationships with the ER diagram designed in step 1",
+            "id": "cs-4-pccsl408-dbms-lab-02-module-2-creation-of-database-schema-export-er-diagram-from-the-database-and-verify-relationships-with-the-er-diagram-designed-in-step-1",
+            "title": "Export ER diagram from the database and verify relationships (with the ER diagram designed in step 1)",
             "content": "",
             "pyqs": []
           }
@@ -977,32 +1013,14 @@
         "title": "Module 3: Database initialization",
         "topics": [
           {
-            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-database-initialization",
-            "title": "Database initialization",
+            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-database-initialization-data-insert",
+            "title": "Database initialization - Data insert",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-data-insert",
-            "title": "Data insert",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-data-import-to-a-database",
-            "title": "Data import to a database",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-bulk-import-using-ui",
-            "title": "Bulk import using UI",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-bulk-import-using-sql-commands",
-            "title": "Bulk import using SQL Commands",
+            "id": "cs-4-pccsl408-dbms-lab-03-module-3-database-initialization-data-import-to-a-database-bulk-import-using-ui-and-sql-commands",
+            "title": "Data import to a database (bulk import using UI and SQL Commands)",
             "content": "",
             "pyqs": []
           }
@@ -1055,20 +1073,20 @@
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-05-module-5-implementation-of-various-aggregate-functions-order-by-group-by-having-implementation-of-order-by-clause-in-sql",
-            "title": "Implementation of Order By clause in SQL",
+            "id": "cs-4-pccsl408-dbms-lab-05-module-5-implementation-of-various-aggregate-functions-order-by-group-by-having-implementation-of-order-by-clause",
+            "title": "Implementation of Order By clause",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-05-module-5-implementation-of-various-aggregate-functions-order-by-group-by-having-implementation-of-group-by-clause-in-sql",
-            "title": "Implementation of Group By clause in SQL",
+            "id": "cs-4-pccsl408-dbms-lab-05-module-5-implementation-of-various-aggregate-functions-order-by-group-by-having-implementation-of-group-by-clause",
+            "title": "Implementation of Group By clause",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-05-module-5-implementation-of-various-aggregate-functions-order-by-group-by-having-implementation-of-having-clause-in-sql",
-            "title": "Implementation of Having clause in SQL",
+            "id": "cs-4-pccsl408-dbms-lab-05-module-5-implementation-of-various-aggregate-functions-order-by-group-by-having-implementation-of-having-clause",
+            "title": "Implementation of Having clause",
             "content": "",
             "pyqs": []
           }
@@ -1188,7 +1206,7 @@
           },
           {
             "id": "cs-4-pccsl408-dbms-lab-10-module-10-creation-of-packages-and-cursors-creation-of-cursors",
-            "title": "Creation of cursors",
+            "title": "Creation of Cursors",
             "content": "",
             "pyqs": []
           }
@@ -1217,26 +1235,26 @@
         "title": "Module 12: Perform basic crud create read update delete operations on a cassandra",
         "topics": [
           {
-            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-create-operations-on-a-cassandra-table",
-            "title": "Perform Create operations on a Cassandra table",
+            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-basic-create-operation-on-a-cassandra-table",
+            "title": "Perform basic Create operation on a Cassandra table",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-read-operations-on-a-cassandra-table",
-            "title": "Perform Read operations on a Cassandra table",
+            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-basic-read-operation-on-a-cassandra-table",
+            "title": "Perform basic Read operation on a Cassandra table",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-update-operations-on-a-cassandra-table",
-            "title": "Perform Update operations on a Cassandra table",
+            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-basic-update-operation-on-a-cassandra-table",
+            "title": "Perform basic Update operation on a Cassandra table",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-delete-operations-on-a-cassandra-table",
-            "title": "Perform Delete operations on a Cassandra table",
+            "id": "cs-4-pccsl408-dbms-lab-12-module-12-perform-basic-crud-create-read-update-delete-operations-on-a-cassandra-perform-basic-delete-operation-on-a-cassandra-table",
+            "title": "Perform basic Delete operation on a Cassandra table",
             "content": "",
             "pyqs": []
           }
@@ -1247,14 +1265,8 @@
         "title": "Module 13: Write and execute cql queries to retrieve specific data from cassandra",
         "topics": [
           {
-            "id": "cs-4-pccsl408-dbms-lab-13-module-13-write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-write-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
-            "title": "Write CQL queries to retrieve specific data from Cassandra tables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-4-pccsl408-dbms-lab-13-module-13-write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
-            "title": "Execute CQL queries to retrieve specific data from Cassandra tables",
+            "id": "cs-4-pccsl408-dbms-lab-13-module-13-write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-write-and-execute-cql-queries-to-retrieve-specific-data-from-cassandra-tables",
+            "title": "Write and execute CQL queries to retrieve specific data from Cassandra tables",
             "content": "",
             "pyqs": []
           }
@@ -1266,7 +1278,7 @@
         "topics": [
           {
             "id": "cs-4-pccsl408-dbms-lab-14-module-14-create-a-simple-application-using-mongodb-with-python-create-a-simple-application-using-mongodb-with-python",
-            "title": "Create a simple application using Mongodb with python",
+            "title": "Create a simple application using MongoDB with Python",
             "content": "",
             "pyqs": []
           }

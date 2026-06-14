@@ -792,7 +792,7 @@
         "topics": [
           {
             "id": "ee-7-oeeet721-design-of-solar-pv-systems-03-module-3-solar-pv-systems-solar-pv-systems-introduction",
-            "title": "Solar PV Systems Introduction",
+            "title": "Solar PV Systems - Introduction",
             "content": "",
             "pyqs": []
           },
@@ -893,14 +893,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet721-design-of-solar-pv-systems-03-module-3-solar-pv-systems-p-o",
-            "title": "P&O",
+            "id": "ee-7-oeeet721-design-of-solar-pv-systems-03-module-3-solar-pv-systems-p-o-method",
+            "title": "P&O Method",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-7-oeeet721-design-of-solar-pv-systems-03-module-3-solar-pv-systems-incremental-conductance-method",
-            "title": "Incremental conductance method",
+            "title": "Incremental Conductance Method",
             "content": "",
             "pyqs": []
           },
@@ -918,7 +918,7 @@
         "topics": [
           {
             "id": "ee-7-oeeet721-design-of-solar-pv-systems-04-module-4-solar-pv-systems-stand-solar-pv-systems-stand-alone-and-grid-connected",
-            "title": "Solar PV Systems - stand-alone and grid connected",
+            "title": "Solar PV Systems - Stand-alone and grid connected",
             "content": "",
             "pyqs": []
           },
@@ -1289,12 +1289,6 @@
         "title": "Module 1: Analysis of sampled data systems",
         "topics": [
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems-analysis-of-sampled-data-systems",
-            "title": "Analysis of Sampled Data Systems",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ee-7-peeet744-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems-review-of-z-transforms",
             "title": "Review of Z Transforms",
             "content": "",
@@ -1319,20 +1313,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems-data-hold",
-            "title": "Data Hold",
+            "id": "ee-7-peeet744-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems-data-hold-zoh",
+            "title": "Data Hold - ZOH",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems-zero-order-hold-zoh",
-            "title": "Zero Order Hold (ZOH)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet744-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems-first-order-hold-foh",
-            "title": "First Order Hold (FOH)",
+            "id": "ee-7-peeet744-discrete-time-control-systems-01-module-1-analysis-of-sampled-data-systems-data-hold-foh",
+            "title": "Data Hold - FOH",
             "content": "",
             "pyqs": []
           },
@@ -1391,32 +1379,26 @@
         "title": "Module 2: Design of compensators",
         "topics": [
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-compensators",
-            "title": "Design of Compensators",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-direct-design-based-on-root-locus",
             "title": "Direct design based on root locus",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lag-compensator",
-            "title": "Design of Lag Compensator",
+            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lag-compensator-root-locus",
+            "title": "Design of Lag Compensator (root locus)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lead-compensator",
-            "title": "Design of Lead Compensator",
+            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lead-compensator-root-locus",
+            "title": "Design of Lead Compensator (root locus)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lead-lag-compensator",
-            "title": "Design of Lead-Lag Compensator",
+            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lead-lag-compensator-root-locus",
+            "title": "Design of Lead-Lag Compensator (root locus)",
             "content": "",
             "pyqs": []
           },
@@ -1433,20 +1415,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lag-compensator",
-            "title": "Design of Lag Compensator",
+            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lag-compensator-frequency-domain",
+            "title": "Design of Lag Compensator (frequency domain)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lead-compensator",
-            "title": "Design of Lead Compensator",
+            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lead-compensator-frequency-domain",
+            "title": "Design of Lead Compensator (frequency domain)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lag-lead-compensator",
-            "title": "Design of Lag-Lead Compensator",
+            "id": "ee-7-peeet744-discrete-time-control-systems-02-module-2-design-of-compensators-design-of-lag-lead-compensator-frequency-domain",
+            "title": "Design of Lag-Lead Compensator (frequency domain)",
             "content": "",
             "pyqs": []
           },
@@ -1462,12 +1444,6 @@
         "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete",
         "title": "Module 3: Discrete",
         "topics": [
-          {
-            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-discrete-time-state-space-system",
-            "title": "Discrete-time State Space System",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-state-variable-model-of-discrete-data-systems-with-s-h-devices",
             "title": "State variable model of discrete data systems with S/H devices",
@@ -1493,14 +1469,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-transformation-to-canonical-forms",
-            "title": "Transformation to canonical forms",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-phase-variable-form",
-            "title": "Phase variable form",
+            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-transformation-to-canonical-forms-and-phase-variable-form",
+            "title": "Transformation to canonical forms and phase variable form",
             "content": "",
             "pyqs": []
           },
@@ -1511,20 +1481,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-computation-of-state-transition-matrix-using",
-            "title": "Computation of state transition matrix using",
+            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-computation-of-state-transition-matrix-using-cayley-hamilton-theorem",
+            "title": "Computation of state transition matrix using Cayley-Hamilton theorem",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-cayley-hamilton-theorem",
-            "title": "Cayley-Hamilton theorem",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-z-transform-method",
-            "title": "z-transform method",
+            "id": "ee-7-peeet744-discrete-time-control-systems-03-module-3-discrete-computation-of-state-transition-matrix-using-z-transform-method",
+            "title": "Computation of state transition matrix using z-transform method",
             "content": "",
             "pyqs": []
           }
@@ -1534,12 +1498,6 @@
         "id": "ee-7-peeet744-discrete-time-control-systems-04-module-4-design-using-state-space-approach",
         "title": "Module 4: Design using state space approach",
         "topics": [
-          {
-            "id": "ee-7-peeet744-discrete-time-control-systems-04-module-4-design-using-state-space-approach-design-using-state-space-approach",
-            "title": "Design using State Space approach",
-            "content": "",
-            "pyqs": []
-          },
           {
             "id": "ee-7-peeet744-discrete-time-control-systems-04-module-4-design-using-state-space-approach-discretization-of-continuous-time-state-space-equations",
             "title": "Discretization of continuous time state-space equations",
@@ -1640,8 +1598,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet742-energy-management-and-auditing-01-module-1-general-aspects-of-energy-management-and-energy-audit-energy-management-energy-audit-methodologies",
-            "title": "Energy audit methodologies",
+            "id": "ee-7-peeet742-energy-management-and-auditing-01-module-1-general-aspects-of-energy-management-and-energy-audit-energy-management-methodologies-of-energy-audit",
+            "title": "Methodologies of energy audit",
             "content": "",
             "pyqs": []
           },
@@ -1826,8 +1784,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet742-energy-management-and-auditing-03-module-3-energy-management-in-electrical-utilities-boilers-working-principle-boilers-working-principle",
-            "title": "Boilers - working principle",
+            "id": "ee-7-peeet742-energy-management-and-auditing-03-module-3-energy-management-in-electrical-utilities-boilers-working-principle-boilers",
+            "title": "Boilers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-7-peeet742-energy-management-and-auditing-03-module-3-energy-management-in-electrical-utilities-boilers-working-principle-working-principle-of-boilers",
+            "title": "Working principle of boilers",
             "content": "",
             "pyqs": []
           },
@@ -1898,8 +1862,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet742-energy-management-and-auditing-03-module-3-energy-management-in-electrical-utilities-boilers-working-principle-performance-and-saving-opportunities-in-refrigeration-and-air-conditioning-systems",
-            "title": "Performance and saving opportunities in Refrigeration and Air conditioning systems",
+            "id": "ee-7-peeet742-energy-management-and-auditing-03-module-3-energy-management-in-electrical-utilities-boilers-working-principle-performance-and-saving-opportunities-in-refrigeration-systems",
+            "title": "Performance and saving opportunities in Refrigeration systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-7-peeet742-energy-management-and-auditing-03-module-3-energy-management-in-electrical-utilities-boilers-working-principle-performance-and-saving-opportunities-in-air-conditioning-systems",
+            "title": "Performance and saving opportunities in Air conditioning systems",
             "content": "",
             "pyqs": []
           },
@@ -2087,14 +2057,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system-thermal-energy-storage-media",
-            "title": "Thermal energy storage media",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system-storage-media",
+            "title": "Storage media",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system-thermal-energy-containment",
-            "title": "Thermal energy containment",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system-containment",
+            "title": "Containment",
             "content": "",
             "pyqs": []
           },
@@ -2105,14 +2075,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system-potential-energy",
-            "title": "Potential energy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system-pumped-hydro",
-            "title": "Pumped hydro",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-01-module-1-need-and-role-of-energy-storage-systems-in-power-system-potential-energy-pumped-hydro",
+            "title": "Potential energy: Pumped hydro",
             "content": "",
             "pyqs": []
           },
@@ -2141,14 +2105,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-power-to-gas",
-            "title": "Power to Gas",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-hydrogen",
-            "title": "Hydrogen",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-power-to-gas-hydrogen",
+            "title": "Power to Gas: Hydrogen",
             "content": "",
             "pyqs": []
           },
@@ -2159,14 +2117,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-electro-chemical-energy",
-            "title": "Electro chemical energy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-batteries",
-            "title": "Batteries",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-electro-chemical-energy-batteries",
+            "title": "Electro chemical energy: Batteries",
             "content": "",
             "pyqs": []
           },
@@ -2177,26 +2129,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-battery-parameters-soc",
-            "title": "Battery parameters: SoC",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-soc",
+            "title": "SoC",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-battery-parameters-dod",
-            "title": "Battery parameters: DoD",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-dod",
+            "title": "DoD",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-battery-parameters-specific-energy",
-            "title": "Battery parameters: Specific Energy",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-specific-energy",
+            "title": "Specific Energy",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-battery-parameters-specific-power-numerical-examples",
-            "title": "Battery parameters: Specific power (numerical examples)",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-specific-power-numerical-examples",
+            "title": "Specific power (numerical examples)",
             "content": "",
             "pyqs": []
           },
@@ -2207,26 +2159,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-electrostatic-energy",
-            "title": "Electrostatic energy",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-electrostatic-energy-super-capacitors",
+            "title": "Electrostatic energy (Super Capacitors)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-super-capacitors",
-            "title": "Super Capacitors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-electromagnetic-energy",
-            "title": "Electromagnetic energy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-superconducting-magnetic-energy-storage",
-            "title": "Superconducting Magnetic Energy Storage",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-02-module-2-kinetic-energy-mechanical-electromagnetic-energy-superconducting-magnetic-energy-storage",
+            "title": "Electromagnetic energy (Superconducting Magnetic Energy Storage)",
             "content": "",
             "pyqs": []
           },
@@ -2321,14 +2261,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-04-module-4-smart-grid-mobile-storage-system",
-            "title": "Mobile storage system",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-04-module-4-smart-grid-electric-vehicles",
-            "title": "Electric vehicles",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-04-module-4-smart-grid-mobile-storage-system-electric-vehicles",
+            "title": "Mobile storage system: Electric vehicles",
             "content": "",
             "pyqs": []
           },
@@ -2369,14 +2303,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-04-module-4-smart-grid-hybrid-energy-storage-systems-configurations",
-            "title": "Hybrid energy storage systems: configurations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-04-module-4-smart-grid-hybrid-energy-storage-systems-applications",
-            "title": "Hybrid energy storage systems: applications",
+            "id": "ee-7-oeeet723-introduction-to-energy-storage-systems-04-module-4-smart-grid-hybrid-energy-storage-systems-configurations-and-applications",
+            "title": "Hybrid energy storage systems: configurations and applications",
             "content": "",
             "pyqs": []
           }
@@ -2408,8 +2336,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet752-nonlinear-control-systems-01-module-1-introduction-to-nonlinear-systems-examples-of-nonlinear-systems",
-            "title": "Examples of nonlinear systems",
+            "id": "ee-7-peeet752-nonlinear-control-systems-01-module-1-introduction-to-nonlinear-systems-examples",
+            "title": "Examples",
             "content": "",
             "pyqs": []
           },
@@ -2594,8 +2522,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet752-nonlinear-control-systems-03-module-3-frequency-domain-analysis-of-feedback-systems-single-nonlinearity-analysis-relay-dead-zone-and-saturation",
-            "title": "Single nonlinearity analysis: relay, dead zone and saturation",
+            "id": "ee-7-peeet752-nonlinear-control-systems-03-module-3-frequency-domain-analysis-of-feedback-systems-relay-nonlinearity",
+            "title": "Relay nonlinearity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-7-peeet752-nonlinear-control-systems-03-module-3-frequency-domain-analysis-of-feedback-systems-dead-zone-nonlinearity",
+            "title": "Dead zone nonlinearity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-7-peeet752-nonlinear-control-systems-03-module-3-frequency-domain-analysis-of-feedback-systems-saturation-nonlinearity",
+            "title": "Saturation nonlinearity",
             "content": "",
             "pyqs": []
           },
@@ -2819,8 +2759,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-01-module-1-power-quality-phenomenon-harmonics",
-            "title": "Harmonics",
+            "id": "ee-7-peeet751-power-quality-01-module-1-power-quality-phenomenon-harmonics-as-waveform-distortion",
+            "title": "Harmonics (as waveform distortion)",
             "content": "",
             "pyqs": []
           },
@@ -2837,8 +2777,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-01-module-1-power-quality-phenomenon-operating-conflicts-of-grid-connected-renewable-energy-systems",
-            "title": "Operating conflicts of Grid connected Renewable Energy Systems",
+            "id": "ee-7-peeet751-power-quality-01-module-1-power-quality-phenomenon-operating-conflicts-in-grid-connected-renewable-energy-systems",
+            "title": "Operating conflicts in Grid connected Renewable Energy Systems",
             "content": "",
             "pyqs": []
           }
@@ -2897,26 +2837,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effect-of-harmonics-on-transformers",
-            "title": "Effect of harmonics on transformers",
+            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effects-of-harmonics-on-transformers",
+            "title": "Effects of harmonics on transformers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effect-of-harmonics-on-capacitor-banks",
-            "title": "Effect of harmonics on capacitor banks",
+            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effects-of-harmonics-on-capacitor-banks",
+            "title": "Effects of harmonics on capacitor banks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effect-of-harmonics-on-motors",
-            "title": "Effect of harmonics on motors",
+            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effects-of-harmonics-on-motors",
+            "title": "Effects of harmonics on motors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effect-of-harmonics-on-telecommunication-systems",
-            "title": "Effect of harmonics on telecommunication systems",
+            "id": "ee-7-peeet751-power-quality-02-module-2-harmonics-effects-of-harmonics-on-telecommunication-systems",
+            "title": "Effects of harmonics on telecommunication systems",
             "content": "",
             "pyqs": []
           },
@@ -2963,50 +2903,44 @@
         "title": "Module 3: Harmonic indices cf df thd tdd tif din c message weights",
         "topics": [
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices",
-            "title": "Harmonic indices",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices-crest-factor-cf",
+            "title": "Harmonic indices - Crest Factor (CF)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-crest-factor-cf",
-            "title": "Crest Factor (CF)",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices-distortion-factor-df",
+            "title": "Harmonic indices - Distortion Factor (DF)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-distortion-factor-df",
-            "title": "Distortion Factor (DF)",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices-total-harmonic-distortion-thd",
+            "title": "Harmonic indices - Total Harmonic Distortion (THD)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-total-harmonic-distortion-thd",
-            "title": "Total Harmonic Distortion (THD)",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices-total-demand-distortion-tdd",
+            "title": "Harmonic indices - Total Demand Distortion (TDD)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-total-demand-distortion-tdd",
-            "title": "Total Demand Distortion (TDD)",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices-telephone-influence-factor-tif",
+            "title": "Harmonic indices - Telephone Influence Factor (TIF)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-telephone-influence-factor-tif",
-            "title": "Telephone Influence Factor (TIF)",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices-din",
+            "title": "Harmonic indices - DIN",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-din",
-            "title": "DIN",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-c-message-weights",
-            "title": "C-message weights",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-harmonic-indices-c-message-weights",
+            "title": "Harmonic indices - C-message weights",
             "content": "",
             "pyqs": []
           },
@@ -3029,20 +2963,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-ieee-519",
-            "title": "IEEE 519",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-ieee-519-standard",
+            "title": "IEEE 519 standard",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-ieee-1433",
-            "title": "IEEE 1433",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-ieee-1433-standard",
+            "title": "IEEE 1433 standard",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-iec-61000",
-            "title": "IEC 61000",
+            "id": "ee-7-peeet751-power-quality-03-module-3-harmonic-indices-cf-df-thd-tdd-tif-din-c-message-weights-iec-61000-standard",
+            "title": "IEC 61000 standard",
             "content": "",
             "pyqs": []
           },
@@ -3101,8 +3035,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet751-power-quality-04-module-4-mitigation-of-power-quality-problems-design-simple-problems-and-analysis-of-passive-filters-to-reduce-harmonic-distortion",
-            "title": "Design simple problems and analysis of passive filters to reduce harmonic distortion",
+            "id": "ee-7-peeet751-power-quality-04-module-4-mitigation-of-power-quality-problems-design-simple-problems-on-passive-filters",
+            "title": "Design simple problems on passive filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-7-peeet751-power-quality-04-module-4-mitigation-of-power-quality-problems-analysis-of-passive-filters-to-reduce-harmonic-distortion",
+            "title": "Analysis of passive filters to reduce harmonic distortion",
             "content": "",
             "pyqs": []
           },
@@ -3350,8 +3290,8 @@
         "title": "Module 3: Inter change evaluation and power pools",
         "topics": [
           {
-            "id": "ee-7-peeet741-power-system-operation-and-control-03-module-3-inter-change-evaluation-and-power-pools-interchange-evaluation-and-power-pools",
-            "title": "Interchange evaluation and power pools",
+            "id": "ee-7-peeet741-power-system-operation-and-control-03-module-3-inter-change-evaluation-and-power-pools-inter-change-evaluation-and-power-pools",
+            "title": "Inter change evaluation and power pools",
             "content": "",
             "pyqs": []
           },
@@ -3398,14 +3338,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet741-power-system-operation-and-control-03-module-3-inter-change-evaluation-and-power-pools-contingency-analysis",
-            "title": "Contingency Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet741-power-system-operation-and-control-03-module-3-inter-change-evaluation-and-power-pools-detection-of-network-problems",
-            "title": "Detection of Network Problems",
+            "id": "ee-7-peeet741-power-system-operation-and-control-03-module-3-inter-change-evaluation-and-power-pools-contingency-analysis-detection-of-network-problems",
+            "title": "Contingency Analysis: Detection of Network Problems",
             "content": "",
             "pyqs": []
           },
@@ -3515,44 +3449,32 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-types-of-stepper-motors",
-            "title": "Types of stepper motors",
+            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-types-variable-reluctance",
+            "title": "Types - variable reluctance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-variable-reluctance-stepper-motor",
-            "title": "Variable reluctance stepper motor",
+            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-permanent-magnet",
+            "title": "Permanent magnet",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-permanent-magnet-stepper-motor",
-            "title": "Permanent magnet stepper motor",
+            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-hybrid-types-constructional-features",
+            "title": "Hybrid types - constructional features",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-hybrid-stepper-motor",
-            "title": "Hybrid stepper motor",
+            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-principle-of-operation",
+            "title": "Principle of operation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-constructional-features-of-hybrid-stepper-motor",
-            "title": "Constructional features of hybrid stepper motor",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-principle-of-operation-of-stepper-motors",
-            "title": "Principle of operation of stepper motors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-comparison-of-stepper-motor-types",
-            "title": "Comparison of stepper motor types",
+            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-comparison",
+            "title": "Comparison",
             "content": "",
             "pyqs": []
           },
@@ -3611,14 +3533,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-applications-of-stepper-motors",
-            "title": "Applications of stepper motors",
+            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-numerical-problems-on-stepper-motors",
-            "title": "Numerical problems on stepper motors",
+            "id": "ee-7-peeet743-special-electrical-machines-01-module-1-stepper-motors-basic-principle-numerical-problems",
+            "title": "Numerical problems",
             "content": "",
             "pyqs": []
           }
@@ -3630,97 +3552,97 @@
         "topics": [
           {
             "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-synchronous-reluctance-motor-constructional-details",
-            "title": "Synchronous Reluctance Motor - constructional details",
+            "title": "Synchronous Reluctance Motor - Constructional details",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-synchronous-reluctance-motor-principle-of-operation",
-            "title": "Synchronous Reluctance Motor - principle of operation",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-principle-of-operation",
+            "title": "Principle of operation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-synchronous-reluctance-motor-phasor-diagram",
-            "title": "Synchronous Reluctance Motor - phasor diagram",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-phasor-diagram",
+            "title": "Phasor diagram",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-synchronous-reluctance-motor-torque-equation",
-            "title": "Synchronous Reluctance Motor - torque equation",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-torque-equation",
+            "title": "Torque equation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-synchronous-reluctance-motor-applications",
-            "title": "Synchronous Reluctance Motor - applications",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-constructional-details",
-            "title": "Switched Reluctance Motors - constructional details",
+            "title": "Switched reluctance motors - Constructional details",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-principle-of-operation",
-            "title": "Switched Reluctance Motors - principle of operation",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-principle-of-operation",
+            "title": "Principle of operation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-torque-equation",
-            "title": "Switched Reluctance Motors - torque equation",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-torque-equation",
+            "title": "Torque equation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-characteristics",
-            "title": "Switched Reluctance Motors - characteristics",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-characteristics",
+            "title": "Characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-power-converter-circuits",
-            "title": "Switched Reluctance Motors - power converter circuits",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-power-converter-circuits",
+            "title": "Power converter circuits",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-control-of-srm",
-            "title": "Switched Reluctance Motors - control of SRM",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-control-of-srm",
+            "title": "Control of SRM",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-rotor-position-sensors",
-            "title": "Switched Reluctance Motors - rotor position sensors",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-rotor-position-sensors",
+            "title": "Rotor position sensors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-torque-pulsations",
-            "title": "Switched Reluctance Motors - torque pulsations",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-torque-pulsations",
+            "title": "Torque pulsations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-sources-of-noise",
-            "title": "Switched Reluctance Motors - sources of noise",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-sources-of-noise",
+            "title": "Sources of noise",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-noise-mitigation-techniques",
-            "title": "Switched Reluctance Motors - noise mitigation techniques",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-noise-mitigation-techniques",
+            "title": "Noise mitigation techniques",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-switched-reluctance-motors-applications",
-            "title": "Switched Reluctance Motors - applications",
+            "id": "ee-7-peeet743-special-electrical-machines-02-module-2-synchronous-reluctance-motor-constructional-details-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           }
@@ -3732,7 +3654,7 @@
         "topics": [
           {
             "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-pm-brushless-dc-motor-constructional-details",
-            "title": "PM Brushless DC motor - constructional details",
+            "title": "PM Brushless DC Motor - Constructional details",
             "content": "",
             "pyqs": []
           },
@@ -3773,8 +3695,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-pm-brushless-dc-motor-principle-of-operation",
-            "title": "PM Brushless DC motor - principle of operation",
+            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-principle-of-operation",
+            "title": "Principle of operation",
             "content": "",
             "pyqs": []
           },
@@ -3785,20 +3707,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-pm-brushless-dc-motor-applications",
-            "title": "PM Brushless DC motor - applications",
+            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-permanent-magnet-synchronous-motors-construction",
-            "title": "Permanent Magnet Synchronous Motors - construction",
+            "title": "Permanent Magnet Synchronous Motors - Construction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-permanent-magnet-synchronous-motors-principle-of-operation",
-            "title": "Permanent Magnet Synchronous Motors - principle of operation",
+            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-principle-of-operation",
+            "title": "Principle of operation",
             "content": "",
             "pyqs": []
           },
@@ -3809,26 +3731,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-self-control-of-pmsm",
-            "title": "Self-control of PMSM",
+            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-self-control",
+            "title": "Self-control",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-sensor-less-control-of-pmsm",
-            "title": "Sensor-less control of PMSM",
+            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-sensor-less-control",
+            "title": "Sensor-less control",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-permanent-magnet-synchronous-motors-applications",
-            "title": "Permanent Magnet Synchronous Motors - applications",
+            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-comparison-of-pmsm-with-bldc-motors",
-            "title": "Comparison of PMSM with BLDC motors",
+            "id": "ee-7-peeet743-special-electrical-machines-03-module-3-pm-brushless-dc-motor-comparison-with-bldc-motors",
+            "title": "Comparison with BLDC motors",
             "content": "",
             "pyqs": []
           }
@@ -3839,14 +3761,14 @@
         "title": "Module 4: Linear electric machines linear motors different types linear reluctanc",
         "topics": [
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-electric-machines-linear-motors",
-            "title": "Linear Electric Machines - linear motors",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-electric-machines",
+            "title": "Linear Electric Machines",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-different-types-of-linear-motors",
-            "title": "Different types of linear motors",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-motors-different-types",
+            "title": "Linear motors - different types",
             "content": "",
             "pyqs": []
           },
@@ -3863,44 +3785,44 @@
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-comparison-of-linear-motors",
-            "title": "Comparison of linear motors",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-comparison",
+            "title": "Comparison",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-induction-motor-construction",
-            "title": "Linear Induction Motor - construction",
+            "title": "Linear Induction Motor - Construction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-induction-motor-thrust-equation",
-            "title": "Linear Induction Motor - thrust equation",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-thrust-equation",
+            "title": "Thrust Equation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-induction-motor-transverse-edge-and-end-effects",
-            "title": "Linear Induction Motor - transverse edge and end effects",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-transverse-edge-and-end-effects",
+            "title": "Transverse edge and end effects",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-induction-motor-equivalent-circuit",
-            "title": "Linear Induction Motor - equivalent circuit",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-equivalent-circuit",
+            "title": "Equivalent Circuit",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-induction-motor-thrust-speed-characteristics",
-            "title": "Linear Induction Motor - thrust-speed characteristics",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-thrust-speed-characteristics",
+            "title": "Thrust-Speed characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-linear-induction-motor-applications",
-            "title": "Linear Induction Motor - applications",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           },
@@ -3912,43 +3834,37 @@
           },
           {
             "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-ac-series-motor",
-            "title": "AC series motor",
+            "title": "AC series Motor",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-repulsion-motor",
-            "title": "Repulsion motor",
+            "title": "Repulsion Motor",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-hysteresis-motor",
-            "title": "Hysteresis motor",
+            "title": "Hysteresis Motor",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-universal-motor",
-            "title": "Universal motor",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-universal-motor-construction",
+            "title": "Universal Motor - Construction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-single-phase-special-electrical-machines-construction",
-            "title": "Single Phase Special Electrical Machines - construction",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-principle-of-operation",
+            "title": "Principle of operation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-single-phase-special-electrical-machines-principle-of-operation",
-            "title": "Single Phase Special Electrical Machines - principle of operation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-single-phase-special-electrical-machines-applications",
-            "title": "Single Phase Special Electrical Machines - applications",
+            "id": "ee-7-peeet743-special-electrical-machines-04-module-4-linear-electric-machines-linear-motors-different-types-linear-reluctanc-applications",
+            "title": "Applications",
             "content": "",
             "pyqs": []
           }

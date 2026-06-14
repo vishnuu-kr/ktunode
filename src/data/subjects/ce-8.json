@@ -8,7 +8,7 @@
     "modules": [
       {
         "id": "ce-8-pecet864-advanced-design-of-steel-structures-01-module-1-types-of-bolts-bearing-and-high-strength-bolts-prying-force-beam-to-column-connections",
-        "title": "Module 1: Types of bolts, bearing and high strength bolts, prying force, beam to column connections",
+        "title": "Module 1: Types of Bolts, Bearing and High Strength Bolts, Prying Force, Beam to Column Connections",
         "topics": [
           {
             "id": "ce-8-pecet864-advanced-design-of-steel-structures-01-module-1-types-of-bolts-bearing-and-high-strength-bolts-prying-force-beam-to-column-connections-types-of-bolts",
@@ -17,8 +17,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-01-module-1-types-of-bolts-bearing-and-high-strength-bolts-prying-force-beam-to-column-connections-bearing-and-high-strength-bolts",
-            "title": "Bearing and high strength bolts",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-01-module-1-types-of-bolts-bearing-and-high-strength-bolts-prying-force-beam-to-column-connections-bearing-bolts",
+            "title": "Bearing bolts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-01-module-1-types-of-bolts-bearing-and-high-strength-bolts-prying-force-beam-to-column-connections-high-strength-bolts",
+            "title": "High strength bolts",
             "content": "",
             "pyqs": []
           },
@@ -80,11 +86,17 @@
       },
       {
         "id": "ce-8-pecet864-advanced-design-of-steel-structures-02-module-2-structure-and-properties-of-weld-metal",
-        "title": "Module 2: Structure and properties of weld metal",
+        "title": "Module 2: Structure and Properties of Weld Metal",
         "topics": [
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-02-module-2-structure-and-properties-of-weld-metal-structure-and-properties-of-weld-metal",
-            "title": "Structure and properties of weld metal",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-02-module-2-structure-and-properties-of-weld-metal-structure-of-weld-metal",
+            "title": "Structure of weld metal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-02-module-2-structure-and-properties-of-weld-metal-properties-of-weld-metal",
+            "title": "Properties of weld metal",
             "content": "",
             "pyqs": []
           },
@@ -140,7 +152,7 @@
       },
       {
         "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders",
-        "title": "Module 3: Design of plate girders and gantry girders",
+        "title": "Module 3: Design of Plate Girders and Gantry Girders",
         "topics": [
           {
             "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders-design-of-plate-girders-subjected-to-uniformly-distributed-loads",
@@ -155,14 +167,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders-design-of-gantry-girders-introduction",
-            "title": "Design of gantry girders - Introduction",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders-introduction-to-gantry-girders",
+            "title": "Introduction to gantry girders",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders-loading-consideration",
-            "title": "Loading consideration",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders-loading-consideration-for-gantry-girders",
+            "title": "Loading consideration for gantry girders",
             "content": "",
             "pyqs": []
           },
@@ -185,8 +197,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders-limitation-on-vertical-deflection",
-            "title": "Limitation on vertical deflection",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-03-module-3-design-of-plate-girders-and-gantry-girders-limitation-on-vertical-deflection-of-gantry-girders",
+            "title": "Limitation on vertical deflection of gantry girders",
             "content": "",
             "pyqs": []
           },
@@ -200,29 +212,35 @@
       },
       {
         "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures",
-        "title": "Module 4: Design of light gauge steel structures",
+        "title": "Module 4: Design of Light Gauge Steel Structures",
         "topics": [
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-design-of-light-gauge-steel-structures-introduction",
-            "title": "Design of light gauge steel structures - Introduction",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-introduction-to-light-gauge-steel-structures",
+            "title": "Introduction to light gauge steel structures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-types-of-cross-sections",
-            "title": "Types of cross sections",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-types-of-cross-sections-in-light-gauge-steel",
+            "title": "Types of cross sections in light gauge steel",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-materials",
-            "title": "Materials",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-materials-for-light-gauge-steel-structures",
+            "title": "Materials for light gauge steel structures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-local-and-post-buckling-of-thin-elements",
-            "title": "Local and post buckling of thin elements",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-local-buckling-of-thin-elements",
+            "title": "Local buckling of thin elements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-post-buckling-of-thin-elements",
+            "title": "Post buckling of thin elements",
             "content": "",
             "pyqs": []
           },
@@ -239,20 +257,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-tension-members",
-            "title": "Tension members",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-tension-members-in-light-gauge-steel",
+            "title": "Tension members in light gauge steel",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-beams-and-deflection-of-beams",
-            "title": "Beams and deflection of beams",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-beams-in-light-gauge-steel",
+            "title": "Beams in light gauge steel",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-combined-stresses-and-connections",
-            "title": "Combined stresses and connections",
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-deflection-of-beams-in-light-gauge-steel",
+            "title": "Deflection of beams in light gauge steel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-combined-stresses-in-light-gauge-steel",
+            "title": "Combined stresses in light gauge steel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet864-advanced-design-of-steel-structures-04-module-4-design-of-light-gauge-steel-structures-connections-in-light-gauge-steel",
+            "title": "Connections in light gauge steel",
             "content": "",
             "pyqs": []
           }
@@ -290,26 +320,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-type-of-contracts-lump-sum-contracts",
-            "title": "Type of contracts - Lump sum contracts",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-types-of-contracts",
+            "title": "Types of contracts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-type-of-contracts-item-rate-contracts",
-            "title": "Type of contracts - Item rate contracts",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-lump-sum-contracts",
+            "title": "Lump sum contracts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-type-of-contracts-epc-contracts",
-            "title": "Type of contracts - EPC contracts",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-item-rate-contracts",
+            "title": "Item rate contracts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-type-of-contracts-bot-contracts",
-            "title": "Type of contracts - BOT contracts",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-epc-contracts",
+            "title": "EPC contracts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-bot-contracts",
+            "title": "BOT contracts",
             "content": "",
             "pyqs": []
           },
@@ -320,38 +356,50 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-indian-contract-act-1872-layout-and-salient-features",
-            "title": "Indian Contract Act 1872 - Layout and Salient Features",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-indian-contract-act-1872",
+            "title": "Indian Contract Act 1872",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-indian-contract-act-1872-performance-of-contract",
-            "title": "Indian Contract Act 1872 - Performance of Contract",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-layout-of-indian-contract-act-1872",
+            "title": "Layout of Indian Contract Act 1872",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-indian-contract-act-1872-non-performance-of-contract",
-            "title": "Indian Contract Act 1872 - Non-performance of Contract",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-salient-features-of-indian-contract-act-1872",
+            "title": "Salient Features of Indian Contract Act 1872",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-indian-contract-act-1872-breach-of-contract",
-            "title": "Indian Contract Act 1872 - Breach of Contract",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-performance-of-contract",
+            "title": "Performance of Contract",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-indian-contract-act-1872-consequences-and-remedies-of-breach",
-            "title": "Indian Contract Act 1872 - Consequences and Remedies of Breach",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-non-performance-of-contract",
+            "title": "Non-performance of Contract",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-indian-contract-act-1872-liquidated-damages",
-            "title": "Indian Contract Act 1872 - Liquidated Damages",
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-breach-of-contract",
+            "title": "Breach of Contract",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-consequences-and-remedies-of-breach-of-contract",
+            "title": "Consequences and Remedies of Breach of Contract",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet863-contracts-management-01-module-1-introduction-to-contract-management-liquidated-damages",
+            "title": "Liquidated Damages",
             "content": "",
             "pyqs": []
           },
@@ -368,26 +416,32 @@
         "title": "Module 2: Contract documentation",
         "topics": [
           {
-            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-contract-documentation-form-of-agreement",
-            "title": "Contract Documentation - Form of Agreement",
+            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-contract-documentation",
+            "title": "Contract Documentation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-contract-documentation-hierarchy-of-terms-and-conditions",
-            "title": "Contract Documentation - Hierarchy of Terms and Conditions",
+            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-form-of-agreement",
+            "title": "Form of Agreement",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-contract-documentation-typical-structure-of-contract",
-            "title": "Contract Documentation - Typical structure of contract",
+            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-hierarchy-of-terms-and-conditions",
+            "title": "Hierarchy of Terms and Conditions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-contract-documentation-preamble",
-            "title": "Contract Documentation - Preamble",
+            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-typical-structure-of-contract",
+            "title": "Typical structure of contract",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-preamble",
+            "title": "Preamble",
             "content": "",
             "pyqs": []
           },
@@ -398,8 +452,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-preliminaries-and-general-conditions",
-            "title": "Preliminaries and General conditions",
+            "id": "ce-8-pecet863-contracts-management-02-module-2-contract-documentation-preliminaries-and-general",
+            "title": "Preliminaries and General",
             "content": "",
             "pyqs": []
           },
@@ -494,8 +548,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-03-module-3-standard-forms-of-contracts-programme-of-work-submissions-and-approvals",
-            "title": "Programme of Work - Submissions and approvals",
+            "id": "ce-8-pecet863-contracts-management-03-module-3-standard-forms-of-contracts-programme-of-work",
+            "title": "Programme of Work",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet863-contracts-management-03-module-3-standard-forms-of-contracts-submissions-and-approvals",
+            "title": "Submissions and approvals",
             "content": "",
             "pyqs": []
           },
@@ -566,8 +626,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-03-module-3-standard-forms-of-contracts-contract-closure-and-final-settlement",
-            "title": "Contract closure and Final settlement",
+            "id": "ce-8-pecet863-contracts-management-03-module-3-standard-forms-of-contracts-contract-closure-and-final",
+            "title": "Contract closure and Final",
             "content": "",
             "pyqs": []
           }
@@ -584,8 +644,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet863-contracts-management-04-module-4-conflicts-disputes-and-their-causes-conflict-avoidance-and-tiered-dispute-resolution-clauses",
-            "title": "Conflict avoidance and tiered dispute resolution clauses",
+            "id": "ce-8-pecet863-contracts-management-04-module-4-conflicts-disputes-and-their-causes-conflict-avoidance",
+            "title": "Conflict avoidance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet863-contracts-management-04-module-4-conflicts-disputes-and-their-causes-tiered-dispute-resolution-clauses",
+            "title": "Tiered dispute resolution clauses",
             "content": "",
             "pyqs": []
           },
@@ -731,8 +797,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-01-module-1-introduction-classification-of-dynamic-loads-essential-characteristics-logarithmic-decrement-numerical-examples-expected-but-not-derivations",
-            "title": "Logarithmic decrement (Numerical examples expected, but not derivations)",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-01-module-1-introduction-classification-of-dynamic-loads-essential-characteristics-logarithmic-decrement",
+            "title": "Logarithmic decrement",
             "content": "",
             "pyqs": []
           },
@@ -755,8 +821,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-01-module-1-introduction-classification-of-dynamic-loads-essential-characteristics-dynamic-magnification-factor-numerical-examples-expected-but-not-derivations",
-            "title": "Dynamic magnification factor (Numerical examples expected, but not derivations)",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-01-module-1-introduction-classification-of-dynamic-loads-essential-characteristics-dynamic-magnification-factor",
+            "title": "Dynamic magnification factor",
             "content": "",
             "pyqs": []
           }
@@ -785,20 +851,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-response-spectrum",
-            "title": "Response spectrum",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-concept-of-pseudo-acceleration",
-            "title": "Concept of pseudo acceleration",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-concept-of-pseudo-velocity",
-            "title": "Concept of pseudo velocity",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-response-spectrum-concept-of-pseudo-acceleration-and-velocity",
+            "title": "Response spectrum: Concept of pseudo acceleration and velocity",
             "content": "",
             "pyqs": []
           },
@@ -833,8 +887,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-equation-of-motion-for-2-dof-systems",
-            "title": "Equation of motion for 2 DOF systems",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-equation-of-motion-for-mdof-systems",
+            "title": "Equation of motion for MDOF systems",
             "content": "",
             "pyqs": []
           },
@@ -851,8 +905,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-equation-of-motion-for-shear-building",
-            "title": "Equation of motion for shear building",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-02-module-2-base-excited-sdof-system-equation-of-motion-for-shear-buildings",
+            "title": "Equation of motion for shear buildings",
             "content": "",
             "pyqs": []
           },
@@ -892,6 +946,12 @@
         "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-03-module-3-elements-of-earthquake-engineering-plate-tectonics-faults-earthquake-ma",
         "title": "Module 3: Elements of earthquake engineering plate tectonics faults earthquake ma",
         "topics": [
+          {
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-03-module-3-elements-of-earthquake-engineering-plate-tectonics-faults-earthquake-ma-elements-of-earthquake-engineering",
+            "title": "Elements of Earthquake Engineering",
+            "content": "",
+            "pyqs": []
+          },
           {
             "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-03-module-3-elements-of-earthquake-engineering-plate-tectonics-faults-earthquake-ma-plate-tectonics",
             "title": "Plate tectonics",
@@ -1025,8 +1085,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-03-module-3-elements-of-earthquake-engineering-plate-tectonics-faults-earthquake-ma-distribution-of-base-shear-along-height-based-on-equivalent-static-method",
-            "title": "Distribution of base shear along height based on Equivalent static method",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-03-module-3-elements-of-earthquake-engineering-plate-tectonics-faults-earthquake-ma-distribution-of-base-shear-along-height",
+            "title": "Distribution of base shear along height",
             "content": "",
             "pyqs": []
           },
@@ -1055,14 +1115,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductility-of-r-c-structures",
-            "title": "Ductility of R.C structures",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-significance-of-ductility",
-            "title": "Significance of ductility",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductility-of-r-c-structures-significance",
+            "title": "Ductility of R.C structures - significance",
             "content": "",
             "pyqs": []
           },
@@ -1073,32 +1127,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-provisions-as-per-is-13920-2016",
-            "title": "Ductile detailing provisions as per IS-13920 (2016)",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-provisions-as-per-is-13920-2016-for-beams",
+            "title": "Ductile detailing provisions as per IS-13920 (2016) for beams",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-for-beams",
-            "title": "Ductile detailing for beams",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-provisions-as-per-is-13920-2016-for-columns",
+            "title": "Ductile detailing provisions as per IS-13920 (2016) for columns",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-for-columns",
-            "title": "Ductile detailing for columns",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-provisions-as-per-is-13920-2016-for-beam-column-joints",
+            "title": "Ductile detailing provisions as per IS-13920 (2016) for beam-column joints",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-for-beam-column-joints",
-            "title": "Ductile detailing for beam-column joints",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-for-shear-walls",
-            "title": "Ductile detailing for shear walls",
+            "id": "ce-8-pecet865-design-of-earthquake-resistant-structures-04-module-4-response-spectrum-methodrsm-concept-numerical-problems-in-rsm-not-expec-ductile-detailing-provisions-as-per-is-13920-2016-for-shear-walls",
+            "title": "Ductile detailing provisions as per IS-13920 (2016) for shear walls",
             "content": "",
             "pyqs": []
           },
@@ -1149,7 +1197,7 @@
           },
           {
             "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-unity-and-harmony",
-            "title": "Unity and harmony",
+            "title": "Unity and Harmony",
             "content": "",
             "pyqs": []
           },
@@ -1185,7 +1233,7 @@
           },
           {
             "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-accentuation-and-contrast",
-            "title": "Accentuation and contrast",
+            "title": "Accentuation and Contrast",
             "content": "",
             "pyqs": []
           },
@@ -1214,20 +1262,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-linear-organisation",
-            "title": "Linear organisation",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-linear-grouping",
+            "title": "Linear grouping",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-concentric-grouping",
-            "title": "Concentric grouping",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-radial-grouping",
-            "title": "Radial grouping",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-concentric-and-radial-grouping",
+            "title": "Concentric and radial grouping",
             "content": "",
             "pyqs": []
           },
@@ -1256,14 +1298,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-defining-space-with-horizontal-elements",
-            "title": "Defining space with horizontal elements",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-defining-space-with-vertical-elements",
-            "title": "Defining space with vertical elements",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-01-module-1-definition-of-architecture-historical-development-of-architecture-defining-space-with-horizontal-and-vertical-elements",
+            "title": "Defining space with horizontal and vertical elements",
             "content": "",
             "pyqs": []
           },
@@ -1340,8 +1376,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-02-module-2-acoustics-fundamentals-intensity-of-sound-watts-m",
-            "title": "Watts/m²",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-02-module-2-acoustics-fundamentals-intensity-of-sound-watts-per-square-meter",
+            "title": "Watts per square meter",
             "content": "",
             "pyqs": []
           },
@@ -1418,14 +1454,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-02-module-2-acoustics-fundamentals-intensity-of-sound-sound-absorption-materials",
-            "title": "Sound absorption materials",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-02-module-2-acoustics-fundamentals-intensity-of-sound-sound-absorption-fixings",
-            "title": "Sound absorption fixings",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-02-module-2-acoustics-fundamentals-intensity-of-sound-materials-and-fixings-for-sound-absorption",
+            "title": "Materials and fixings for sound absorption",
             "content": "",
             "pyqs": []
           },
@@ -1508,8 +1538,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-03-module-3-thermal-comfort-factors-affecting-thermal-comfort-et-and-cet-charts",
-            "title": "ET and CET Charts",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-03-module-3-thermal-comfort-factors-affecting-thermal-comfort-et",
+            "title": "ET",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-03-module-3-thermal-comfort-factors-affecting-thermal-comfort-cet-charts",
+            "title": "CET Charts",
             "content": "",
             "pyqs": []
           },
@@ -1592,8 +1628,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-03-module-3-thermal-comfort-factors-affecting-thermal-comfort-high-temperature-effects-and-combustibility-of-building-materials-and-structure",
-            "title": "High temperature effects and combustibility of building materials and structure",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-03-module-3-thermal-comfort-factors-affecting-thermal-comfort-high-temperature-effects",
+            "title": "High temperature effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-03-module-3-thermal-comfort-factors-affecting-thermal-comfort-combustibility-of-building-materials-and-structure",
+            "title": "Combustibility of building materials and structure",
             "content": "",
             "pyqs": []
           }
@@ -1628,8 +1670,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet834-fundamentals-of-building-planning-04-module-4-architecture-design-aspect-basic-anthropometrics-spatial-interpretations",
-            "title": "Spatial interpretations",
+            "id": "ce-8-oecet834-fundamentals-of-building-planning-04-module-4-architecture-design-aspect-basic-anthropometrics-special-interpretations",
+            "title": "Special interpretations",
             "content": "",
             "pyqs": []
           },
@@ -1674,13 +1716,13 @@
         "topics": [
           {
             "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-groundwater-origin",
-            "title": "Groundwater - origin",
+            "title": "Groundwater origin",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-groundwater-occurrence",
-            "title": "Groundwater - occurrence",
+            "title": "Groundwater occurrence",
             "content": "",
             "pyqs": []
           },
@@ -1709,50 +1751,62 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-groundwater-reservoirs-aquifer",
-            "title": "Groundwater reservoirs - aquifer",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-groundwater-reservoirs",
+            "title": "Groundwater reservoirs",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-groundwater-reservoirs-aquiclude",
-            "title": "Groundwater reservoirs - aquiclude",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquifer",
+            "title": "Aquifer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-groundwater-reservoirs-aquifuge",
-            "title": "Groundwater reservoirs - aquifuge",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquiclude",
+            "title": "Aquiclude",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-groundwater-reservoirs-aquitard",
-            "title": "Groundwater reservoirs - aquitard",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquifuge",
+            "title": "Aquifuge",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-types-of-aquifers-unconfined-aquifer",
-            "title": "Types of aquifers - unconfined aquifer",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquitard",
+            "title": "Aquitard",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-types-of-aquifers-confined-aquifer",
-            "title": "Types of aquifers - confined aquifer",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-types-of-aquifers",
+            "title": "Types of aquifers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-types-of-aquifers-leaky-aquifer",
-            "title": "Types of aquifers - leaky aquifer",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-unconfined-aquifers",
+            "title": "Unconfined aquifers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-types-of-aquifers-bounded-aquifer",
-            "title": "Types of aquifers - bounded aquifer",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-confined-aquifers",
+            "title": "Confined aquifers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-leaky-aquifers",
+            "title": "Leaky aquifers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-bounded-aquifers",
+            "title": "Bounded aquifers",
             "content": "",
             "pyqs": []
           },
@@ -1769,74 +1823,104 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydrological-characteristics-of-aquifers-porosity",
-            "title": "Hydrological characteristics of aquifers - Porosity",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydrological-characteristics-of-aquifers-and-aquifer-properties",
+            "title": "Hydrological characteristics of aquifers and aquifer properties",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydrological-characteristics-of-aquifers-permeability",
-            "title": "Hydrological characteristics of aquifers - Permeability",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-porosity",
+            "title": "Porosity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydrological-characteristics-of-aquifers-void-ratio",
-            "title": "Hydrological characteristics of aquifers - Void Ratio",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-permeability",
+            "title": "Permeability",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydrological-characteristics-of-aquifers-specific-yield",
-            "title": "Hydrological characteristics of aquifers - Specific Yield",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-void-ratio",
+            "title": "Void Ratio",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydrological-characteristics-of-aquifers-specific-retention",
-            "title": "Hydrological characteristics of aquifers - Specific Retention",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-specific-yield",
+            "title": "Specific Yield",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquifer-parameters-hydraulic-conductivity",
-            "title": "Aquifer parameters - Hydraulic conductivity",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-specific-retention",
+            "title": "Specific Retention",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquifer-parameters-transmissivity",
-            "title": "Aquifer parameters - Transmissivity",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquifer-parameters",
+            "title": "Aquifer parameters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-aquifer-parameters-storativity",
-            "title": "Aquifer parameters - Storativity",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydraulic-conductivity",
+            "title": "Hydraulic conductivity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydraulic-conductivity-determination-lab-tests-permeameter-methods",
-            "title": "Hydraulic Conductivity determination - Lab tests - Permeameter methods",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-transmissivity",
+            "title": "Transmissivity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydraulic-conductivity-determination-field-tests-auger-hole-test",
-            "title": "Hydraulic Conductivity determination - Field tests - Auger Hole test",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-storativity",
+            "title": "Storativity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydraulic-conductivity-determination-field-tests-tracer-test",
-            "title": "Hydraulic Conductivity determination - Field tests - Tracer test",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydraulic-conductivity-determination",
+            "title": "Hydraulic Conductivity determination",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-hydraulic-conductivity-determination-field-tests-pump-test",
-            "title": "Hydraulic Conductivity determination - Field tests - Pump test",
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-lab-tests",
+            "title": "Lab tests",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-permeameter-methods",
+            "title": "Permeameter methods",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-field-tests",
+            "title": "Field tests",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-auger-hole-test",
+            "title": "Auger Hole test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-tracer-test",
+            "title": "Tracer test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-01-module-1-groundwater-pump-test",
+            "title": "Pump test",
             "content": "",
             "pyqs": []
           }
@@ -1847,8 +1931,20 @@
         "title": "Module 2: Groundwater exploration",
         "topics": [
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-groundwater-exploration-remote-sensing-and-gis-applications",
-            "title": "Groundwater exploration - Remote sensing and GIS applications",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-groundwater-exploration",
+            "title": "Groundwater exploration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-remote-sensing-applications-in-groundwater-exploration",
+            "title": "Remote sensing applications in groundwater exploration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-gis-applications-in-groundwater-exploration",
+            "title": "GIS applications in groundwater exploration",
             "content": "",
             "pyqs": []
           },
@@ -1859,44 +1955,62 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-principles-of-electrical-resistivity-method-wenner-method",
-            "title": "Principles of electrical resistivity method - Wenner method",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-principles-of-electrical-resistivity-method",
+            "title": "Principles of electrical resistivity method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-principles-of-electrical-resistivity-method-schlumberger-method",
-            "title": "Principles of electrical resistivity method - Schlumberger method",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-wenner-method",
+            "title": "Wenner method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-subsurface-investigations-test-drilling",
-            "title": "Subsurface investigations - test drilling",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-schlumberger-method",
+            "title": "Schlumberger method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-subsurface-investigations-resistivity-logging",
-            "title": "Subsurface investigations - resistivity logging",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-subsurface-investigations",
+            "title": "Subsurface investigations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-subsurface-investigations-sp-logging",
-            "title": "Subsurface investigations - SP logging",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-test-drilling",
+            "title": "Test drilling",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-subsurface-investigations-radiation-logging",
-            "title": "Subsurface investigations - radiation logging",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-resistivity-logging",
+            "title": "Resistivity logging",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-groundwater-movement-water-table-and-piezometric-level-surface",
-            "title": "Groundwater movement - Water table and Piezometric level (surface)",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-sp-logging",
+            "title": "SP logging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-radiation-logging",
+            "title": "Radiation logging",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-groundwater-movement",
+            "title": "Groundwater movement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-water-table-and-piezometric-level-surface",
+            "title": "Water table and Piezometric level (surface)",
             "content": "",
             "pyqs": []
           },
@@ -1907,8 +2021,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-darcy-s-law-and-its-experimental-verification",
-            "title": "Darcy's law and its experimental verification",
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-darcy-s-law",
+            "title": "Darcy's law",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-02-module-2-groundwater-exploration-experimental-verification-of-darcy-s-law",
+            "title": "Experimental verification of Darcy's law",
             "content": "",
             "pyqs": []
           },
@@ -1937,8 +2057,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-water-wells-types-of-wells",
-            "title": "Water wells - types of wells",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-water-wells",
+            "title": "Water wells",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-types-of-wells",
+            "title": "Types of wells",
             "content": "",
             "pyqs": []
           },
@@ -1949,26 +2075,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-domestic-purpose",
-            "title": "Quality of groundwater - domestic purpose",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater",
+            "title": "Quality of groundwater",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-irrigation-purpose",
-            "title": "Quality of groundwater - irrigation purpose",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-for-domestic-purpose",
+            "title": "Quality of groundwater for domestic purpose",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-industrial-purpose",
-            "title": "Quality of groundwater - industrial purpose",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-for-irrigation-purpose",
+            "title": "Quality of groundwater for irrigation purpose",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-construction-purpose",
-            "title": "Quality of groundwater - construction purpose",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-for-industrial-purpose",
+            "title": "Quality of groundwater for industrial purpose",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-quality-of-groundwater-for-construction-purpose",
+            "title": "Quality of groundwater for construction purpose",
             "content": "",
             "pyqs": []
           },
@@ -1979,26 +2111,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-graphical-representation-of-water-quality-data-interpretation-of-hydrochemical-analysis-data",
-            "title": "Graphical representation of water quality data - Interpretation of hydrochemical analysis data",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-graphical-representation-of-water-quality-data",
+            "title": "Graphical representation of water quality data",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-graphical-representation-of-water-quality-data-hill-piper-trilinear-diagram",
-            "title": "Graphical representation of water quality data - Hill-Piper Trilinear diagram",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-interpretation-of-hydrochemical-analysis-data",
+            "title": "Interpretation of hydrochemical analysis data",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-graphical-representation-of-water-quality-data-durov-s-diagram",
-            "title": "Graphical representation of water quality data - Durov's diagram",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-hill-piper-trilinear-diagram",
+            "title": "Hill-Piper Trilinear diagram",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-graphical-representation-of-water-quality-data-u-s-salinity-diagram",
-            "title": "Graphical representation of water quality data - U.S. Salinity diagram",
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-durov-s-diagram",
+            "title": "Durov's diagram",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-03-module-3-well-design-criteria-u-s-salinity-diagram",
+            "title": "U. S. Salinity diagram",
             "content": "",
             "pyqs": []
           },
@@ -2039,8 +2177,20 @@
         "title": "Module 4: Saline water intrusion in coastal and other aquifers and its prevention",
         "topics": [
           {
-            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention",
-            "title": "Saline water intrusion in coastal and other aquifers and its prevention",
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-saline-water-intrusion-in-coastal-aquifers",
+            "title": "Saline water intrusion in coastal aquifers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-saline-water-intrusion-in-other-aquifers",
+            "title": "Saline water intrusion in other aquifers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-prevention-of-saline-water-intrusion",
+            "title": "Prevention of saline water intrusion",
             "content": "",
             "pyqs": []
           },
@@ -2051,8 +2201,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-methods-and-need-for-artificial-recharge-to-aquifers",
-            "title": "Methods and need for artificial recharge to aquifers",
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-methods-for-artificial-recharge-to-aquifers",
+            "title": "Methods for artificial recharge to aquifers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-need-for-artificial-recharge-to-aquifers",
+            "title": "Need for artificial recharge to aquifers",
             "content": "",
             "pyqs": []
           },
@@ -2063,8 +2219,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-groundwater-development-safe-yield-and-optimal-mining-policy",
-            "title": "Groundwater development - safe yield and optimal mining policy",
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-groundwater-development",
+            "title": "Groundwater development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-safe-yield",
+            "title": "Safe yield",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet835-hydrogeology-04-module-4-saline-water-intrusion-in-coastal-and-other-aquifers-and-its-prevention-optimal-mining-policy",
+            "title": "Optimal mining policy",
             "content": "",
             "pyqs": []
           },
@@ -2441,8 +2609,14 @@
         "title": "Module 2: Water harvesting principles importance and issues",
         "topics": [
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-water-harvesting-principles",
-            "title": "Water harvesting principles",
+            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-water-harvesting",
+            "title": "Water harvesting",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-principles-of-water-harvesting",
+            "title": "Principles of water harvesting",
             "content": "",
             "pyqs": []
           },
@@ -2459,20 +2633,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-water-harvesting-techniques-classification-based-on-source",
-            "title": "Water harvesting techniques - classification based on source",
+            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-water-harvesting-techniques",
+            "title": "Water harvesting techniques",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-water-harvesting-techniques-classification-based-on-storage",
-            "title": "Water harvesting techniques - classification based on storage",
+            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-classification-of-water-harvesting-techniques-based-on-source",
+            "title": "Classification of water harvesting techniques based on source",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-water-harvesting-techniques-classification-based-on-use",
-            "title": "Water harvesting techniques - classification based on use",
+            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-classification-of-water-harvesting-techniques-based-on-storage",
+            "title": "Classification of water harvesting techniques based on storage",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet832-rainwater-harvesting-02-module-2-water-harvesting-principles-importance-and-issues-classification-of-water-harvesting-techniques-based-on-use",
+            "title": "Classification of water harvesting techniques based on use",
             "content": "",
             "pyqs": []
           },
@@ -2561,38 +2741,44 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-methods-of-recharging-subsurface-aquifers-through-recharge-pit",
-            "title": "Methods of recharging subsurface aquifers - through recharge pit",
+            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-methods-of-recharging-subsurface-aquifers",
+            "title": "Methods of recharging subsurface aquifers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharging-subsurface-aquifers-recharge-through-abandoned-hand-pump",
-            "title": "Recharging subsurface aquifers - recharge through abandoned hand pump",
+            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharge-through-recharge-pit",
+            "title": "Recharge through recharge pit",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharging-subsurface-aquifers-recharge-through-abandoned-dug-well-open-well",
-            "title": "Recharging subsurface aquifers - recharge through abandoned dug well/open well",
+            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharge-through-abandoned-hand-pump",
+            "title": "Recharge through abandoned hand pump",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharging-subsurface-aquifers-through-recharge-trench",
-            "title": "Recharging subsurface aquifers - through recharge trench",
+            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharge-through-abandoned-dug-well-open-well",
+            "title": "Recharge through abandoned dug well/open well",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharging-subsurface-aquifers-through-recharge-shafts",
-            "title": "Recharging subsurface aquifers - through recharge shafts",
+            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharge-through-recharge-trench",
+            "title": "Recharge through recharge trench",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharging-subsurface-aquifers-through-recharge-trench-with-bore",
-            "title": "Recharging subsurface aquifers - through recharge trench with bore",
+            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharge-through-shafts",
+            "title": "Recharge through shafts",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet832-rainwater-harvesting-03-module-3-recharging-subsurface-aquifers-methods-of-recharging-subsurface-aquifer-recharge-trench-with-bore",
+            "title": "Recharge trench with bore",
             "content": "",
             "pyqs": []
           }
@@ -2615,38 +2801,38 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-methods-basin-method",
-            "title": "Recharge methods - basin method",
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-methods",
+            "title": "Recharge methods",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-methods-stream-method",
-            "title": "Recharge methods - stream method",
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-basin-recharge-method",
+            "title": "Basin recharge method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-methods-channel-method",
-            "title": "Recharge methods - channel method",
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-stream-recharge-method",
+            "title": "Stream recharge method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-methods-ditch-and-furrow-method",
-            "title": "Recharge methods - ditch and furrow method",
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-channel-ditch-and-furrow-recharge-method",
+            "title": "Channel, ditch and furrow recharge method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-methods-flooding-method",
-            "title": "Recharge methods - flooding method",
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-flooding-recharge-method",
+            "title": "Flooding recharge method",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-methods-recharge-well-method",
-            "title": "Recharge methods - recharge well method",
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-recharge-well-methods",
+            "title": "Recharge well methods",
             "content": "",
             "pyqs": []
           },
@@ -2675,8 +2861,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-planning-of-watershed-management-drainage",
-            "title": "Planning of watershed management - Drainage",
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-planning-of-watershed-management",
+            "title": "Planning of watershed management",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-oecet832-rainwater-harvesting-04-module-4-artificial-recharge-drainage",
+            "title": "Drainage",
             "content": "",
             "pyqs": []
           },
@@ -2774,8 +2966,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-02-module-2-design-and-implementation-of-rural-water-supply-systems-identifying-and-protecting-water-sources-surface-water-groundwater-and-rainwater",
-            "title": "Identifying and protecting water sources: surface water, groundwater, and rainwater",
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-02-module-2-design-and-implementation-of-rural-water-supply-systems-identifying-water-sources-surface-water-groundwater-and-rainwater",
+            "title": "Identifying water sources: surface water, groundwater, and rainwater",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-02-module-2-design-and-implementation-of-rural-water-supply-systems-protecting-water-sources",
+            "title": "Protecting water sources",
             "content": "",
             "pyqs": []
           },
@@ -2828,14 +3026,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-03-module-3-introduction-to-on-concepts-of-on-site-sanitation-importance-of-sanitation-for-public-health-and-environment",
-            "title": "Concepts of on-site sanitation: Importance of sanitation for public health and environment",
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-03-module-3-introduction-to-on-concepts-of-on-site-sanitation",
+            "title": "Concepts of on-site sanitation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-03-module-3-introduction-to-on-design-and-construction-of-basic-on-site-sanitation-systems-pit-latrines-septic-tanks-and-composting-toilets",
-            "title": "Design and construction of basic on-site sanitation systems: pit latrines, septic tanks, and composting toilets",
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-03-module-3-introduction-to-on-importance-of-sanitation-for-public-health-and-environment",
+            "title": "Importance of sanitation for public health and environment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-03-module-3-introduction-to-on-design-of-basic-on-site-sanitation-systems",
+            "title": "Design of basic on-site sanitation systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-03-module-3-introduction-to-on-construction-of-basic-on-site-sanitation-systems-pit-latrines-septic-tanks-and-composting-toilets",
+            "title": "Construction of basic on-site sanitation systems: pit latrines, septic tanks, and composting toilets",
             "content": "",
             "pyqs": []
           },
@@ -2882,8 +3092,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-04-module-4-planning-and-management-of-rural-water-supply-and-sanitation-projects-planning-water-supply-and-sanitation-projects-needs-for-assessment-and-feasibility-studies",
-            "title": "Planning water supply and sanitation projects: needs for assessment and feasibility studies",
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-04-module-4-planning-and-management-of-rural-water-supply-and-sanitation-projects-planning-water-supply-and-sanitation-projects",
+            "title": "Planning water supply and sanitation projects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet867-rural-water-supply-and-onsite-sanitation-systems-04-module-4-planning-and-management-of-rural-water-supply-and-sanitation-projects-needs-assessment-and-feasibility-studies",
+            "title": "Needs assessment and feasibility studies",
             "content": "",
             "pyqs": []
           },
@@ -2969,14 +3185,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet866-urban-transportation-planning-01-module-1-need-for-transportation-planning-types-of-urban-structure-centripetal-grid-linear-directional",
-            "title": "Types of urban structure - centripetal, grid, linear, directional",
+            "id": "ce-8-pecet866-urban-transportation-planning-01-module-1-need-for-transportation-planning-types-and-properties-of-urban-structure",
+            "title": "Types and properties of urban structure",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet866-urban-transportation-planning-01-module-1-need-for-transportation-planning-properties-of-urban-structure",
-            "title": "Properties of urban structure",
+            "id": "ce-8-pecet866-urban-transportation-planning-01-module-1-need-for-transportation-planning-centripetal-urban-structure",
+            "title": "Centripetal urban structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet866-urban-transportation-planning-01-module-1-need-for-transportation-planning-grid-urban-structure",
+            "title": "Grid urban structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet866-urban-transportation-planning-01-module-1-need-for-transportation-planning-linear-urban-structure",
+            "title": "Linear urban structure",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet866-urban-transportation-planning-01-module-1-need-for-transportation-planning-directional-urban-structure",
+            "title": "Directional urban structure",
             "content": "",
             "pyqs": []
           },
@@ -3035,14 +3269,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet866-urban-transportation-planning-02-module-2-transportation-planning-process-elements-stages-of-transportation-planning-process",
-            "title": "Elements/stages of transportation planning process",
+            "id": "ce-8-pecet866-urban-transportation-planning-02-module-2-transportation-planning-process-elements-of-transportation-planning-process",
+            "title": "Elements of transportation planning process",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet866-urban-transportation-planning-02-module-2-transportation-planning-process-goal-objectives-and-constraints-in-transportation-planning",
-            "title": "Goal, objectives and constraints in transportation planning",
+            "id": "ce-8-pecet866-urban-transportation-planning-02-module-2-transportation-planning-process-stages-of-transportation-planning-process",
+            "title": "Stages of transportation planning process",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet866-urban-transportation-planning-02-module-2-transportation-planning-process-goal",
+            "title": "Goal",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet866-urban-transportation-planning-02-module-2-transportation-planning-process-objectives",
+            "title": "Objectives",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet866-urban-transportation-planning-02-module-2-transportation-planning-process-constraints",
+            "title": "Constraints",
             "content": "",
             "pyqs": []
           },
@@ -3233,8 +3485,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet866-urban-transportation-planning-03-module-3-trip-distribution-nodes-and-links",
-            "title": "Nodes and links",
+            "id": "ce-8-pecet866-urban-transportation-planning-03-module-3-trip-distribution-nodes",
+            "title": "Nodes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet866-urban-transportation-planning-03-module-3-trip-distribution-links",
+            "title": "Links",
             "content": "",
             "pyqs": []
           },
@@ -3305,8 +3563,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet866-urban-transportation-planning-04-module-4-transportation-and-land-use-model-equation-system-of-lowry-model",
-            "title": "Model equation system of Lowry model",
+            "id": "ce-8-pecet866-urban-transportation-planning-04-module-4-transportation-and-land-use-model-equation-system",
+            "title": "Model equation system",
             "content": "",
             "pyqs": []
           },
@@ -3323,8 +3581,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet866-urban-transportation-planning-04-module-4-transportation-and-land-use-facilities-for-sustainable-transportation",
-            "title": "Facilities for sustainable transportation",
+            "id": "ce-8-pecet866-urban-transportation-planning-04-module-4-transportation-and-land-use-facilities-of-sustainable-transportation",
+            "title": "Facilities of sustainable transportation",
             "content": "",
             "pyqs": []
           },
@@ -3399,13 +3657,19 @@
           },
           {
             "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-classification-of-valuers",
-            "title": "Classification of valuers",
+            "title": "Classification of Valuers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-valuers-functions-responsibilities",
-            "title": "Valuers' Functions & Responsibilities",
+            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-valuers-functions",
+            "title": "Valuers' Functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-valuers-responsibilities",
+            "title": "Valuers' Responsibilities",
             "content": "",
             "pyqs": []
           },
@@ -3458,8 +3722,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-cost-price-value",
-            "title": "Cost, Price & Value",
+            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-cost",
+            "title": "Cost",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-price-value",
+            "title": "Price & Value",
             "content": "",
             "pyqs": []
           },
@@ -3530,8 +3800,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-valuation-table-use",
-            "title": "Valuation table-use",
+            "id": "ce-8-pecet862-valuation-of-real-properties-01-module-1-role-of-valuer-valuation-table-and-its-use",
+            "title": "Valuation table and its use",
             "content": "",
             "pyqs": []
           }
@@ -3542,8 +3812,14 @@
         "title": "Module 2: Investment",
         "topics": [
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-investment-types",
-            "title": "Investment - Types",
+            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-investment",
+            "title": "Investment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-types-of-investment",
+            "title": "Types of investment",
             "content": "",
             "pyqs": []
           },
@@ -3560,8 +3836,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-net-present-value-npv-by-discounted-cash-flow-method-dcf",
-            "title": "Net present value (NPV) by discounted cash flow method (DCF)",
+            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-net-present-value-npv",
+            "title": "Net present value (NPV)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-discounted-cash-flow-method-dcf",
+            "title": "Discounted cash flow method (DCF)",
             "content": "",
             "pyqs": []
           },
@@ -3572,8 +3854,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-numerical-example-on-npv-and-irr",
-            "title": "Numerical Example on NPV and IRR",
+            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-numerical-examples-on-npv-and-irr",
+            "title": "Numerical examples on NPV and IRR",
             "content": "",
             "pyqs": []
           },
@@ -3596,8 +3878,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-functional-economical-obsolescence",
-            "title": "Functional & Economical obsolescence",
+            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-functional-obsolescence",
+            "title": "Functional obsolescence",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet862-valuation-of-real-properties-02-module-2-investment-economical-obsolescence",
+            "title": "Economical obsolescence",
             "content": "",
             "pyqs": []
           },
@@ -3645,7 +3933,7 @@
           },
           {
             "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-method-of-valuation-for-open-land",
-            "title": "Method of valuation for open land",
+            "title": "Method of Valuation for open land",
             "content": "",
             "pyqs": []
           },
@@ -3698,8 +3986,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-numerical-examples-on-valuation-of-land-with-buildings",
-            "title": "Numerical examples on valuation of land with buildings",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-numerical-examples-on-land-with-buildings",
+            "title": "Numerical examples on land with buildings",
             "content": "",
             "pyqs": []
           },
@@ -3710,8 +3998,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-fsi-for-apartments",
-            "title": "FSI for apartments",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-fsi-for-apartment",
+            "title": "FSI for apartment",
             "content": "",
             "pyqs": []
           },
@@ -3746,8 +4034,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-primary-and-collateral-security",
-            "title": "Primary and collateral security",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-primary-security",
+            "title": "Primary security",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-collateral-security",
+            "title": "Collateral security",
             "content": "",
             "pyqs": []
           },
@@ -3758,38 +4052,38 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-sale",
-            "title": "Sale",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-report-writing-for-sale",
+            "title": "Report writing for Sale",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-purchase",
-            "title": "Purchase",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-report-writing-for-purchase",
+            "title": "Report writing for Purchase",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-mortgage",
-            "title": "Mortgage",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-report-writing-for-mortgage",
+            "title": "Report writing for Mortgage",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-taxation",
-            "title": "Taxation",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-report-writing-for-taxation",
+            "title": "Report writing for Taxation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-insurance",
-            "title": "Insurance",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-report-writing-for-insurance",
+            "title": "Report writing for Insurance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-liquidation",
-            "title": "Liquidation",
+            "id": "ce-8-pecet862-valuation-of-real-properties-03-module-3-building-fsi-plot-coverage-types-of-structure-report-writing-for-liquidation",
+            "title": "Report writing for Liquidation",
             "content": "",
             "pyqs": []
           }
@@ -3818,8 +4112,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-model-code-of-conduct-as-notified-by-mca-under-the-companies-registered-valuers-and-valuation-rules-2017",
-            "title": "Model Code of Conduct as notified by MCA under the Companies (Registered valuers and valuation) Rules 2017",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-model-code-of-conduct-as-notified-by-mca",
+            "title": "Model Code of Conduct as notified by MCA",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-companies-registered-valuers-and-valuation-rules-2017",
+            "title": "Companies (Registered valuers and valuation) Rules 2017",
             "content": "",
             "pyqs": []
           },
@@ -3831,13 +4131,13 @@
           },
           {
             "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-salient-features-of-real-estate-regulation-development-act-2016",
-            "title": "Salient features of Real Estate (Regulation & Development) Act 2016",
+            "title": "Salient features of Real estate (regulation & development) Act 2016",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-transfer-of-property-act",
-            "title": "Transfer of Property Act",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-salient-features-of-transfer-of-property-act",
+            "title": "Salient features of Transfer of Property Act",
             "content": "",
             "pyqs": []
           },
@@ -3848,38 +4148,38 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-indian-easement-act",
-            "title": "Indian Easement Act",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-salient-features-of-indian-easement-act",
+            "title": "Salient features of Indian Easement Act",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-estate-duty-act-of-1953",
-            "title": "Estate Duty Act of 1953",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-estate-duty-act-of-1953-brief-description",
+            "title": "Estate Duty Act of 1953 (brief description)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-wealth-tax-act-of-1957",
-            "title": "Wealth Tax Act of 1957",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-wealth-tax-act-of-1957-brief-description",
+            "title": "Wealth Tax Act of 1957 (brief description)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-gift-tax-act-of-1958",
-            "title": "Gift Tax Act of 1958",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-gift-tax-act-of-1958-brief-description",
+            "title": "Gift Tax Act of 1958 (brief description)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-income-tax-act-of-1964",
-            "title": "Income Tax Act of 1964",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-income-tax-act-of-1964-brief-description",
+            "title": "Income Tax Act of 1964 (brief description)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-rating-laws-of-1866-brief-description-only",
-            "title": "Rating Laws of 1866 (brief description only)",
+            "id": "ce-8-pecet862-valuation-of-real-properties-04-module-4-environment-valuation-rating-laws-of-1866-brief-description",
+            "title": "Rating Laws of 1866 (brief description)",
             "content": "",
             "pyqs": []
           },
@@ -4298,20 +4598,32 @@
         "title": "Module 1: Water quality impurities pollutants and contaminants in water their sig",
         "topics": [
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-water-quality-impurities-pollutants-and-contaminants-in-water",
-            "title": "Water quality: impurities (pollutants and contaminants) in water",
+            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-water-quality",
+            "title": "Water quality",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-significance-of-water-quality-impurities",
-            "title": "Significance of water quality impurities",
+            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-impurities-in-water",
+            "title": "Impurities in water",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-estimation-techniques-for-water-quality-impurities",
-            "title": "Estimation techniques for water quality impurities",
+            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-pollutants-and-contaminants-in-water",
+            "title": "Pollutants and contaminants in water",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-significance-of-impurities-in-water",
+            "title": "Significance of impurities in water",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-01-module-1-water-quality-impurities-pollutants-and-contaminants-in-water-their-sig-estimation-techniques-for-impurities-in-water",
+            "title": "Estimation techniques for impurities in water",
             "content": "",
             "pyqs": []
           },
@@ -4364,14 +4676,32 @@
         "title": "Module 2: Water treatmentaeration and types of aerators",
         "topics": [
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-water-treatment-aeration-and-types-of-aerators",
-            "title": "Water treatment: Aeration and types of aerators",
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-water-treatment",
+            "title": "Water treatment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-purpose-and-mechanism-of-flocculation",
-            "title": "Purpose and mechanism of flocculation",
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-aeration",
+            "title": "Aeration",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-types-of-aerators",
+            "title": "Types of aerators",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-purpose-of-flocculation",
+            "title": "Purpose of flocculation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-mechanism-of-flocculation",
+            "title": "Mechanism of flocculation",
             "content": "",
             "pyqs": []
           },
@@ -4394,8 +4724,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-types-of-flash-mixers-and-flocculators",
-            "title": "Types of flash mixers and flocculators",
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-types-of-flash-mixers",
+            "title": "Types of flash mixers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-types-of-flocculators",
+            "title": "Types of flocculators",
             "content": "",
             "pyqs": []
           },
@@ -4406,8 +4742,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-analysis-of-discrete-and-flocculent-settling",
-            "title": "Analysis of discrete and flocculent settling",
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-analysis-of-discrete-settling",
+            "title": "Analysis of discrete settling",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-analysis-of-flocculent-settling",
+            "title": "Analysis of flocculent settling",
             "content": "",
             "pyqs": []
           },
@@ -4418,14 +4760,38 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-filtration-types-and-design-of-filters",
-            "title": "Filtration: types and design of filters",
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-filtration",
+            "title": "Filtration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-disinfection-chemical-and-non-chemical-methods",
-            "title": "Disinfection: chemical and non-chemical methods",
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-types-of-filters",
+            "title": "Types of filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-design-of-filters",
+            "title": "Design of filters",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-disinfection",
+            "title": "Disinfection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-chemical-methods-of-disinfection",
+            "title": "Chemical methods of disinfection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-02-module-2-water-treatmentaeration-and-types-of-aerators-non-chemical-methods-of-disinfection",
+            "title": "Non-chemical methods of disinfection",
             "content": "",
             "pyqs": []
           }
@@ -4436,8 +4802,14 @@
         "title": "Module 3: Water resources and quality management in india water availability",
         "topics": [
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-03-module-3-water-resources-and-quality-management-in-india-water-availability-water-resources-and-quality-management-in-india-water-availability",
-            "title": "Water resources and quality management in India: Water availability",
+            "id": "ce-8-pecet861-water-and-air-quality-management-03-module-3-water-resources-and-quality-management-in-india-water-availability-water-resources-and-quality-management-in-india",
+            "title": "Water resources and quality management in India",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-03-module-3-water-resources-and-quality-management-in-india-water-availability-water-availability",
+            "title": "Water availability",
             "content": "",
             "pyqs": []
           },
@@ -4484,38 +4856,44 @@
         "title": "Module 4: Air pollution types sources effects on human health vegetation material",
         "topics": [
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-pollution-types",
-            "title": "Air Pollution: Types",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-pollution",
+            "title": "Air Pollution",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-pollution-sources",
-            "title": "Air Pollution: Sources",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-types-of-air-pollution",
+            "title": "Types of air pollution",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-pollution-effects-on-human-health",
-            "title": "Air Pollution: Effects on human health",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-sources-of-air-pollution",
+            "title": "Sources of air pollution",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-pollution-effects-on-vegetation",
-            "title": "Air Pollution: Effects on vegetation",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-effects-of-air-pollution-on-human-health",
+            "title": "Effects of air pollution on human health",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-pollution-effects-on-materials",
-            "title": "Air Pollution: Effects on materials",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-effects-of-air-pollution-on-vegetation",
+            "title": "Effects of air pollution on vegetation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-pollution-global-environmental-issues",
-            "title": "Air Pollution: Global environmental issues",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-effects-of-air-pollution-on-materials",
+            "title": "Effects of air pollution on materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-global-environmental-issues-related-to-air-pollution",
+            "title": "Global environmental issues related to air pollution",
             "content": "",
             "pyqs": []
           },
@@ -4526,14 +4904,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-principles-and-instruments-of-air-sampling-and-pollution-measurement",
-            "title": "Principles and instruments of air sampling and pollution measurement",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-principles-and-instruments-for-air-pollution-measurement",
+            "title": "Principles and instruments for air pollution measurement",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-ambient-air-quality-and-emission-standards",
-            "title": "Ambient air quality and emission standards",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-ambient-air-quality-standards",
+            "title": "Ambient air quality standards",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-emission-standards",
+            "title": "Emission standards",
             "content": "",
             "pyqs": []
           },
@@ -4544,8 +4928,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-act-legislation-and-regulations",
-            "title": "Air Act, legislation and regulations",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-air-act",
+            "title": "Air Act",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-legislation-and-regulations",
+            "title": "Legislation and regulations",
             "content": "",
             "pyqs": []
           },
@@ -4556,8 +4946,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-removal-of-gaseous-pollutants-by-adsorption-absorption-reaction-and-other-methods",
-            "title": "Removal of gaseous pollutants by adsorption, absorption, reaction and other methods",
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-removal-of-gaseous-pollutants-by-adsorption",
+            "title": "Removal of gaseous pollutants by adsorption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-removal-of-gaseous-pollutants-by-absorption",
+            "title": "Removal of gaseous pollutants by absorption",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-removal-of-gaseous-pollutants-by-reaction",
+            "title": "Removal of gaseous pollutants by reaction",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-8-pecet861-water-and-air-quality-management-04-module-4-air-pollution-types-sources-effects-on-human-health-vegetation-material-other-methods-of-gaseous-pollutant-removal",
+            "title": "Other methods of gaseous pollutant removal",
             "content": "",
             "pyqs": []
           },

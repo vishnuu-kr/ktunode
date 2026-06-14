@@ -275,8 +275,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-gain-cmrr-and-slew-rate",
-            "title": "Gain, CMRR and slew rate",
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-gain",
+            "title": "Gain",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-cmrr-and-slew-rate",
+            "title": "CMRR and slew rate",
             "content": "",
             "pyqs": []
           },
@@ -311,14 +317,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-differentiator-and-integrator-circuits",
-            "title": "Differentiator and Integrator circuits",
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-differentiator-circuits",
+            "title": "Differentiator circuits",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-practical-circuits-for-differentiator-and-integrator",
-            "title": "Practical circuits for Differentiator and Integrator",
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-integrator-circuits",
+            "title": "Integrator circuits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pbeet304-analog-electronics-03-module-3-introduction-to-operational-amplifiers-op-practical-circuits",
+            "title": "Practical circuits",
             "content": "",
             "pyqs": []
           },
@@ -401,20 +413,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-square-wave-generator-circuits-using-op-amp",
-            "title": "Square wave generator circuits using Op-Amp",
+            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-square-wave-generator-using-op-amp",
+            "title": "Square wave generator using Op-Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-triangular-wave-generator-circuits-using-op-amp",
-            "title": "Triangular wave generator circuits using Op-Amp",
+            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-triangular-wave-generator-using-op-amp",
+            "title": "Triangular wave generator using Op-Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-ramp-generator-circuits-using-op-amp",
-            "title": "Ramp generator circuits using Op-Amp",
+            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-ramp-generator-using-op-amp",
+            "title": "Ramp generator using Op-Amp",
             "content": "",
             "pyqs": []
           },
@@ -437,14 +449,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-astable-multivibrators-using-555-ic",
-            "title": "Astable multivibrators using 555 IC",
+            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-astable-multi-vibrator-using-555-ic",
+            "title": "Astable multi-vibrator using 555 IC",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-monostable-multivibrators-using-555-ic",
-            "title": "Monostable multivibrators using 555 IC",
+            "id": "ee-3-pbeet304-analog-electronics-04-module-4-active-filters-butterworth-chebyshev-and-bessel-filters-low-pass-filter-monostable-multi-vibrator-using-555-ic",
+            "title": "Monostable multi-vibrator using 555 IC",
             "content": "",
             "pyqs": []
           }
@@ -590,14 +602,20 @@
         "title": "Module 7: Design and testing of voltage regulators zener and series",
         "topics": [
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-07-module-7-design-and-testing-of-voltage-regulators-zener-and-series-design-and-testing-of-zener-voltage-regulator",
-            "title": "Design and testing of Zener voltage regulator",
+            "id": "ee-3-pceel308-analog-electronics-lab-07-module-7-design-and-testing-of-voltage-regulators-zener-and-series-design-and-testing-of-voltage-regulators",
+            "title": "Design and testing of voltage regulators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-07-module-7-design-and-testing-of-voltage-regulators-zener-and-series-design-and-testing-of-series-voltage-regulator",
-            "title": "Design and testing of series voltage regulator",
+            "id": "ee-3-pceel308-analog-electronics-lab-07-module-7-design-and-testing-of-voltage-regulators-zener-and-series-zener-voltage-regulator",
+            "title": "Zener voltage regulator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceel308-analog-electronics-lab-07-module-7-design-and-testing-of-voltage-regulators-zener-and-series-series-voltage-regulator",
+            "title": "Series voltage regulator",
             "content": "",
             "pyqs": []
           }
@@ -608,14 +626,14 @@
         "title": "Module 8: Design and set up of inverting and non",
         "topics": [
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-08-module-8-design-and-set-up-of-inverting-and-non-design-and-set-up-of-inverting-amplifier-using-op-amp",
-            "title": "Design and set up of inverting amplifier using Op-amp",
+            "id": "ee-3-pceel308-analog-electronics-lab-08-module-8-design-and-set-up-of-inverting-and-non-design-and-set-up-of-inverting-amplifier",
+            "title": "Design and set up of inverting amplifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-08-module-8-design-and-set-up-of-inverting-and-non-design-and-set-up-of-non-inverting-amplifier-using-op-amp",
-            "title": "Design and set up of non-inverting amplifier using Op-amp",
+            "id": "ee-3-pceel308-analog-electronics-lab-08-module-8-design-and-set-up-of-inverting-and-non-design-and-set-up-of-non-inverting-amplifier",
+            "title": "Design and set up of non-inverting amplifier",
             "content": "",
             "pyqs": []
           }
@@ -704,20 +722,20 @@
         "title": "Module 13: Waveform generation square triangular and saw tooth waveform generatio",
         "topics": [
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-13-module-13-waveform-generation-square-triangular-and-saw-tooth-waveform-generatio-square-wave-generation-using-op-amp",
-            "title": "Square wave generation using Op-amp",
+            "id": "ee-3-pceel308-analog-electronics-lab-13-module-13-waveform-generation-square-triangular-and-saw-tooth-waveform-generatio-square-waveform-generation-using-op-amps",
+            "title": "Square waveform generation using Op-amps",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-13-module-13-waveform-generation-square-triangular-and-saw-tooth-waveform-generatio-triangular-wave-generation-using-op-amp",
-            "title": "Triangular wave generation using Op-amp",
+            "id": "ee-3-pceel308-analog-electronics-lab-13-module-13-waveform-generation-square-triangular-and-saw-tooth-waveform-generatio-triangular-waveform-generation-using-op-amps",
+            "title": "Triangular waveform generation using Op-amps",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-13-module-13-waveform-generation-square-triangular-and-saw-tooth-waveform-generatio-saw-tooth-wave-generation-using-op-amp",
-            "title": "Saw tooth wave generation using Op-amp",
+            "id": "ee-3-pceel308-analog-electronics-lab-13-module-13-waveform-generation-square-triangular-and-saw-tooth-waveform-generatio-saw-tooth-waveform-generation-using-op-amps",
+            "title": "Saw tooth waveform generation using Op-amps",
             "content": "",
             "pyqs": []
           }
@@ -728,14 +746,14 @@
         "title": "Module 14: Basic comparator and schmitt trigger circuits using op",
         "topics": [
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-14-module-14-basic-comparator-and-schmitt-trigger-circuits-using-op-basic-comparator-circuits-using-op-amp-e-g-lm311",
-            "title": "Basic comparator circuits using Op-amp (e.g., LM311)",
+            "id": "ee-3-pceel308-analog-electronics-lab-14-module-14-basic-comparator-and-schmitt-trigger-circuits-using-op-basic-comparator-circuits-using-op-amp-using-comparator-ics-such-as-lm311",
+            "title": "Basic comparator circuits using Op-amp (using comparator ICs such as LM311)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-14-module-14-basic-comparator-and-schmitt-trigger-circuits-using-op-schmitt-trigger-circuits-using-op-amp",
-            "title": "Schmitt trigger circuits using Op-amp",
+            "id": "ee-3-pceel308-analog-electronics-lab-14-module-14-basic-comparator-and-schmitt-trigger-circuits-using-op-schmitt-trigger-circuits-using-op-amp-using-comparator-ics-such-as-lm311",
+            "title": "Schmitt trigger circuits using Op-amp (using comparator ICs such as LM311)",
             "content": "",
             "pyqs": []
           }
@@ -776,14 +794,14 @@
         "title": "Module 17: Astable and monostable circuit using 555ic",
         "topics": [
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-17-module-17-astable-and-monostable-circuit-using-555ic-astable-multivibrator-using-555-ic",
-            "title": "Astable multivibrator using 555 IC",
+            "id": "ee-3-pceel308-analog-electronics-lab-17-module-17-astable-and-monostable-circuit-using-555ic-astable-circuit-using-555ic",
+            "title": "Astable circuit using 555IC",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel308-analog-electronics-lab-17-module-17-astable-and-monostable-circuit-using-555ic-monostable-multivibrator-using-555-ic",
-            "title": "Monostable multivibrator using 555 IC",
+            "id": "ee-3-pceel308-analog-electronics-lab-17-module-17-astable-and-monostable-circuit-using-555ic-monostable-circuit-using-555ic",
+            "title": "Monostable circuit using 555IC",
             "content": "",
             "pyqs": []
           }
@@ -911,8 +929,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-06-module-6-3-3-phase-power-measurement-using-two-wattmeter-methods",
-            "title": "3-phase power measurement using two-wattmeter methods",
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-06-module-6-3-3-phase-power-measurement-using-two-wattmeter-method",
+            "title": "3-phase power measurement using two-wattmeter method",
             "content": "",
             "pyqs": []
           },
@@ -971,8 +989,14 @@
         "title": "Module 9: Extension of instrument range using instrument transformers ct and pt",
         "topics": [
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-09-module-9-extension-of-instrument-range-using-instrument-transformers-ct-and-pt-extension-of-instrument-range-using-instrument-transformers-ct-and-pt",
-            "title": "Extension of instrument range using instrument transformers (CT and PT)",
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-09-module-9-extension-of-instrument-range-using-instrument-transformers-ct-and-pt-extension-of-instrument-range-using-current-transformer-ct",
+            "title": "Extension of instrument range using Current Transformer (CT)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-09-module-9-extension-of-instrument-range-using-instrument-transformers-ct-and-pt-extension-of-instrument-range-using-potential-transformer-pt",
+            "title": "Extension of instrument range using Potential Transformer (PT)",
             "content": "",
             "pyqs": []
           }
@@ -983,14 +1007,8 @@
         "title": "Module 10: Calibration of 1",
         "topics": [
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-10-module-10-calibration-of-1-calibration-of-1-phase-energy-meter-at-various-power-factors",
-            "title": "Calibration of 1-phase Energy meter at various power factors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-10-module-10-calibration-of-1-phantom-loading-minimum-3-conditions",
-            "title": "Phantom loading (minimum 3 conditions)",
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-10-module-10-calibration-of-1-calibration-of-1-phase-energy-meter-at-various-power-factors-and-phantom-loading-minimum-3-conditions",
+            "title": "Calibration of 1-phase Energy meter at various power factors and phantom loading (minimum 3 conditions)",
             "content": "",
             "pyqs": []
           }
@@ -1044,13 +1062,13 @@
           },
           {
             "id": "ee-3-pceel307-circuits-and-measurements-lab-13-module-13-measurement-of-self-inductance-mutual-inductance-and-coupling-coeffici-measurement-of-mutual-inductance-of-a-1-phase-transformer",
-            "title": "Measurement of mutual inductance of a 1-phase transformer",
+            "title": "Measurement of Mutual inductance of a 1-phase transformer",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceel307-circuits-and-measurements-lab-13-module-13-measurement-of-self-inductance-mutual-inductance-and-coupling-coeffici-measurement-of-coupling-coefficient-of-a-1-phase-transformer",
-            "title": "Measurement of coupling coefficient of a 1-phase transformer",
+            "title": "Measurement of Coupling coefficient of a 1-phase transformer",
             "content": "",
             "pyqs": []
           }
@@ -1062,13 +1080,13 @@
         "topics": [
           {
             "id": "ee-3-pceel307-circuits-and-measurements-lab-14-module-14-measurement-of-capacitance-inductance-frequency-using-ac-bridges-measurement-of-capacitance-using-ac-bridges",
-            "title": "Measurement of capacitance using AC bridges",
+            "title": "Measurement of Capacitance using AC bridges",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceel307-circuits-and-measurements-lab-14-module-14-measurement-of-capacitance-inductance-frequency-using-ac-bridges-measurement-of-inductance-using-ac-bridges",
-            "title": "Measurement of inductance using AC bridges",
+            "title": "Measurement of Inductance using AC bridges",
             "content": "",
             "pyqs": []
           },
@@ -1115,14 +1133,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-16-module-16-determination-of-p-determination-of-fill-factor",
-            "title": "Determination of fill factor",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-16-module-16-determination-of-p-study-of-partial-shading-may-be-included",
-            "title": "Study of partial shading (may be included)",
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-16-module-16-determination-of-p-determination-of-fill-factor-study-of-partial-shading-may-be-included",
+            "title": "Determination of fill factor (study of partial shading may be included)",
             "content": "",
             "pyqs": []
           }
@@ -1193,8 +1205,26 @@
         "title": "Module 20: Simulation of circuits using software platforms like pspicelt spice ma",
         "topics": [
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-20-module-20-simulation-of-circuits-using-software-platforms-like-pspicelt-spice-ma-simulation-of-circuits-using-software-platforms-like-pspice-lt-spice-matlab-multisim-etc",
-            "title": "Simulation of circuits using software platforms like PSpice/LT spice/MATLAB/Multisim etc.",
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-20-module-20-simulation-of-circuits-using-software-platforms-like-pspicelt-spice-ma-simulation-of-circuits-using-pspice",
+            "title": "Simulation of circuits using PSpice",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-20-module-20-simulation-of-circuits-using-software-platforms-like-pspicelt-spice-ma-simulation-of-circuits-using-lt-spice",
+            "title": "Simulation of circuits using LT spice",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-20-module-20-simulation-of-circuits-using-software-platforms-like-pspicelt-spice-ma-simulation-of-circuits-using-matlab",
+            "title": "Simulation of circuits using MATLAB",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-20-module-20-simulation-of-circuits-using-software-platforms-like-pspicelt-spice-ma-simulation-of-circuits-using-multisim",
+            "title": "Simulation of circuits using Multisim",
             "content": "",
             "pyqs": []
           }
@@ -1217,12 +1247,6 @@
         "title": "Module 22: Demo experiments",
         "topics": [
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-22-module-22-demo-experiments-demo-experiments",
-            "title": "Demo Experiments",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ee-3-pceel307-circuits-and-measurements-lab-22-module-22-demo-experiments-measurement-of-energy-using-tod-meter",
             "title": "Measurement of energy using TOD meter",
             "content": "",
@@ -1241,14 +1265,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-22-module-22-demo-experiments-measurement-of-electrical-variables-and-frequency-using-cro",
-            "title": "Measurement of electrical variables and frequency using CRO",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceel307-circuits-and-measurements-lab-22-module-22-demo-experiments-measurement-of-electrical-variables-and-frequency-using-dso",
-            "title": "Measurement of electrical variables and frequency using DSO",
+            "id": "ee-3-pceel307-circuits-and-measurements-lab-22-module-22-demo-experiments-measurement-of-electrical-variables-and-frequency-using-cro-and-dso",
+            "title": "Measurement of electrical variables and frequency using CRO and DSO",
             "content": "",
             "pyqs": []
           },
@@ -1625,8 +1643,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-armature-winding-lap-and-wave",
-            "title": "Armature winding - lap and wave",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-armature-winding",
+            "title": "Armature winding",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-lap-and-wave-winding",
+            "title": "Lap and wave winding",
             "content": "",
             "pyqs": []
           },
@@ -1638,13 +1662,13 @@
           },
           {
             "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-winding-diagram-of-simplex-lap-wound-double-layer-12-slot-4-pole-dc-armature-with-12-commutator-segments",
-            "title": "Winding diagram of simplex lap wound, double layer, 12-slot, 4-pole, DC armature with 12 commutator segments",
+            "title": "Winding diagram of simplex lap wound double layer 12-slot 4-pole DC armature with 12 commutator segments",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-winding-diagram-of-simplex-wave-wound-double-layer-16-slot-6-pole-dc-armature-with-12-commutator-segments-winding-diagram-not-for-evaluation",
-            "title": "Winding diagram of simplex wave wound, double layer, 16-slot, 6-pole, DC armature with 12 commutator segments (winding diagram not for evaluation)",
+            "title": "Winding diagram of simplex wave wound double layer 16-slot 6-pole DC armature with 12 commutator segments (winding diagram not for evaluation)",
             "content": "",
             "pyqs": []
           },
@@ -1661,8 +1685,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-dc-generator-emf-equation",
-            "title": "Numerical problems on DC generator EMF equation",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-emf-equation",
+            "title": "Numerical problems on EMF equation",
             "content": "",
             "pyqs": []
           },
@@ -1679,14 +1703,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-dc-generators",
-            "title": "Numerical problems on DC generators",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-classification-and-steady-state-equations",
+            "title": "Numerical problems on classification and steady-state equations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-dc-shunt-generator-no-load-characteristics",
-            "title": "DC shunt generator no-load characteristics",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-dc-shunt-generator",
+            "title": "DC shunt generator",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-no-load-characteristics",
+            "title": "No-load characteristics",
             "content": "",
             "pyqs": []
           },
@@ -1709,14 +1739,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-dc-shunt-generator-load-characteristics",
-            "title": "DC shunt generator load characteristics",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-load-characteristics",
+            "title": "Load characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-dc-shunt-generator-characteristics",
-            "title": "Numerical problems on DC shunt generator characteristics",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-dc-shunt-generator",
+            "title": "Numerical problems on DC shunt generator",
             "content": "",
             "pyqs": []
           },
@@ -1727,14 +1757,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-cross-magnetising-effect",
-            "title": "Cross magnetising effect",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-demagnetising-effect",
-            "title": "Demagnetising effect",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-cross-magnetising-and-demagnetising-effect-computation-of-ampere-turns-not-required",
+            "title": "Cross magnetising and demagnetising effect (computation of ampere-turns not required)",
             "content": "",
             "pyqs": []
           },
@@ -1757,8 +1781,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-armature-reaction",
-            "title": "Numerical problems on armature reaction",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-armature-reaction-and-commutation",
+            "title": "Numerical problems on armature reaction and commutation",
             "content": "",
             "pyqs": []
           },
@@ -1769,14 +1793,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-losses-in-dc-generator",
-            "title": "Losses in DC generator",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-efficiency-of-dc-generator",
-            "title": "Efficiency of DC generator",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-losses-and-efficiency",
+            "title": "Losses and efficiency",
             "content": "",
             "pyqs": []
           },
@@ -1805,8 +1823,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-parallel-operation-of-dc-shunt-generators",
-            "title": "Numerical problems on parallel operation of DC shunt generators",
+            "id": "ee-3-pceet303-dc-machines-transformers-01-module-1-constructional-details-of-dc-machines-numerical-problems-on-parallel-operation",
+            "title": "Numerical problems on parallel operation",
             "content": "",
             "pyqs": []
           }
@@ -1818,19 +1836,19 @@
         "topics": [
           {
             "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-dc-motor-back-emf",
-            "title": "DC motor back EMF",
+            "title": "DC motor - back emf",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-dc-motor-torque-equation",
-            "title": "DC motor torque equation",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-torque-equation-of-dc-motor",
+            "title": "Torque equation of DC motor",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-dc-motor-back-emf-and-torque",
-            "title": "Numerical problems on DC motor back EMF and torque",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-back-emf-and-torque-equation",
+            "title": "Numerical problems on back emf and torque equation",
             "content": "",
             "pyqs": []
           },
@@ -1847,8 +1865,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-dc-motor-steady-state-equations",
-            "title": "Numerical problems on DC motor steady-state equations",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-classification-and-steady-state-equations",
+            "title": "Numerical problems on classification and steady-state equations",
             "content": "",
             "pyqs": []
           },
@@ -1859,8 +1877,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-dc-motor-characteristics",
-            "title": "Numerical problems on DC motor characteristics",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-characteristics",
+            "title": "Numerical problems on characteristics",
             "content": "",
             "pyqs": []
           },
@@ -1895,8 +1913,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-plugging",
-            "title": "Plugging",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-plugging-concepts-only",
+            "title": "Plugging (concepts only)",
             "content": "",
             "pyqs": []
           },
@@ -1907,20 +1925,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-field-control-of-dc-motors",
-            "title": "Field control of DC motors",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-field-control",
+            "title": "Field control",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-armature-control-of-dc-motors",
-            "title": "Armature control of DC motors",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-armature-control",
+            "title": "Armature control",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-speed-control-of-dc-motors",
-            "title": "Numerical problems on speed control of DC motors",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-speed-control",
+            "title": "Numerical problems on speed control",
             "content": "",
             "pyqs": []
           },
@@ -1931,20 +1949,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-losses-in-dc-motor",
-            "title": "Losses in DC motor",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-losses-and-efficiency-of-dc-motor",
+            "title": "Losses and efficiency of DC motor",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-efficiency-of-dc-motor",
-            "title": "Efficiency of DC motor",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-power-flow-and-efficiency",
+            "title": "Numerical problems on power flow and efficiency",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-power-flow-and-efficiency-of-dc-motor",
-            "title": "Numerical problems on power flow and efficiency of DC motor",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-testing-of-dc-motors",
+            "title": "Testing of DC motors",
             "content": "",
             "pyqs": []
           },
@@ -1973,8 +1991,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-testing-of-dc-motors",
-            "title": "Numerical problems on testing of DC motors",
+            "id": "ee-3-pceet303-dc-machines-transformers-02-module-2-dc-motor-back-emf-torque-equation-numerical-problems-numerical-problems-on-testing",
+            "title": "Numerical problems on testing",
             "content": "",
             "pyqs": []
           }
@@ -1986,7 +2004,7 @@
         "topics": [
           {
             "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-single-phase-transformers-constructional-details",
-            "title": "Single phase transformers constructional details",
+            "title": "Single phase transformers - constructional details",
             "content": "",
             "pyqs": []
           },
@@ -2003,32 +2021,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-ideal-transformer",
-            "title": "Ideal transformer",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-ideal-and-practical-transformer",
+            "title": "Ideal and practical transformer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-practical-transformer",
-            "title": "Practical transformer",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-numerical-problems-on-construction-and-emf-equation",
+            "title": "Numerical problems on construction and EMF equation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-numerical-problems-on-emf-equation-of-single-phase-transformer",
-            "title": "Numerical problems on EMF equation of single phase transformer",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-operation-of-single-phase-transformer-on-no-load",
-            "title": "Operation of single phase transformer on no load",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-operation-of-single-phase-transformer-on-load",
-            "title": "Operation of single phase transformer on load",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-operation-on-no-load-and-on-load",
+            "title": "Operation on no load and on load",
             "content": "",
             "pyqs": []
           },
@@ -2051,20 +2057,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-numerical-problems-on-voltage-regulation",
-            "title": "Numerical problems on voltage regulation",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-numerical-problems-on-operation-and-voltage-regulation",
+            "title": "Numerical problems on operation and voltage regulation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-losses-in-single-phase-transformer",
-            "title": "Losses in single phase transformer",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-efficiency-of-single-phase-transformer",
-            "title": "Efficiency of single phase transformer",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-losses-and-efficiency-of-single-phase-transformer",
+            "title": "Losses and efficiency of single phase transformer",
             "content": "",
             "pyqs": []
           },
@@ -2075,26 +2075,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-numerical-problems-on-efficiency",
-            "title": "Numerical problems on efficiency",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-numerical-problems-on-losses-and-efficiency",
+            "title": "Numerical problems on losses and efficiency",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-polarity-test",
-            "title": "Polarity test",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-testing-of-transformers-polarity-test",
+            "title": "Testing of transformers - polarity test",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-oc-test-on-single-phase-transformer",
-            "title": "OC test on single phase transformer",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-sc-test-on-single-phase-transformer",
-            "title": "SC test on single phase transformer",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-oc-test-and-sc-test",
+            "title": "OC test and SC test",
             "content": "",
             "pyqs": []
           },
@@ -2105,8 +2099,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-separation-of-losses-in-transformer",
-            "title": "Separation of losses in transformer",
+            "id": "ee-3-pceet303-dc-machines-transformers-03-module-3-single-phase-transformers-constructional-details-separation-of-losses",
+            "title": "Separation of losses",
             "content": "",
             "pyqs": []
           },
@@ -2142,37 +2136,13 @@
           },
           {
             "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-3-phase-transformer-construction",
-            "title": "3-phase transformer construction",
+            "title": "3-phase transformer - construction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-different-connections-of-3-phase-transformers",
-            "title": "Different connections of 3-phase transformers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-star-star-connection",
-            "title": "Star-Star (Υ-Υ) connection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-delta-delta-connection",
-            "title": "Delta-Delta (Δ-Δ) connection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-star-delta-connection",
-            "title": "Star-Delta (Υ-Δ) connection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-delta-star-connection",
-            "title": "Delta-Star (Δ-Υ) connection",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-different-connections-of-3-phase-transformers-y-y-delta-delta-y-delta-delta-y",
+            "title": "Different connections of 3-phase transformers - Y-Y, Delta-Delta, Y-Delta, Delta-Y",
             "content": "",
             "pyqs": []
           },
@@ -2213,38 +2183,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-parallel-operation-of-1-phase-transformers",
-            "title": "Parallel operation of 1-phase transformers",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-parallel-operation-of-1-phase-and-3-phase-transformers",
+            "title": "Parallel operation of 1-phase and 3-phase transformers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-parallel-operation-of-3-phase-transformers",
-            "title": "Parallel operation of 3-phase transformers",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-essential-and-desirable-conditions-for-parallel-operation",
+            "title": "Essential and desirable conditions for parallel operation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-essential-conditions-for-parallel-operation",
-            "title": "Essential conditions for parallel operation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-desirable-conditions-for-parallel-operation",
-            "title": "Desirable conditions for parallel operation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-on-load-tap-changer",
-            "title": "On-load tap-changer",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-off-load-tap-changer",
-            "title": "Off-load tap-changer",
+            "id": "ee-3-pceet303-dc-machines-transformers-04-module-4-autotransformer-saving-of-copper-numerical-problems-on-load-and-off-load-tap-changers",
+            "title": "On-load and off-load tap-changers",
             "content": "",
             "pyqs": []
           }
@@ -2270,14 +2222,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-basic-economic-problems",
-            "title": "Basic economic problems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-production-possibility-curve",
-            "title": "Production Possibility Curve",
+            "id": "ee-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-basic-economic-problems-production-possibility-curve",
+            "title": "Basic economic problems - Production Possibility Curve",
             "content": "",
             "pyqs": []
           },
@@ -2372,14 +2318,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost",
-            "title": "Social cost",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-private-cost",
-            "title": "private cost",
+            "id": "ee-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost",
+            "title": "Social cost, private cost",
             "content": "",
             "pyqs": []
           },
@@ -2606,26 +2546,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value",
-            "title": "Cost Value",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-exchange-value",
-            "title": "Exchange Value",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-use-value",
-            "title": "Use Value",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-esteem-value",
-            "title": "Esteem Value",
+            "id": "ee-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value-exchange-value-use-value-esteem-value",
+            "title": "Cost Value, Exchange Value, Use Value, Esteem Value",
             "content": "",
             "pyqs": []
           },
@@ -2687,8 +2609,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-personal-vs-professional-ethics",
-            "title": "Personal vs. professional ethics",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-personal-ethics-vs-professional-ethics",
+            "title": "Personal ethics vs. professional ethics",
             "content": "",
             "pyqs": []
           },
@@ -2729,8 +2651,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-integrity-in-design-development-and-research-domains",
-            "title": "Integrity in design, development, and research domains",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-integrity-in-design",
+            "title": "Integrity in design",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-integrity-in-development",
+            "title": "Integrity in development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-integrity-in-research-domains",
+            "title": "Integrity in research domains",
             "content": "",
             "pyqs": []
           },
@@ -2765,8 +2699,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-data-information-and-knowledge",
-            "title": "Data, information, and knowledge",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-data",
+            "title": "Data",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-information",
+            "title": "Information",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-knowledge",
+            "title": "Knowledge",
             "content": "",
             "pyqs": []
           },
@@ -2777,20 +2723,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-data-collection-management",
-            "title": "Data collection & management",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-data-collection-and-management",
+            "title": "Data collection and management",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-high-technologies",
-            "title": "High technologies",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-connecting-people-and-places",
-            "title": "Connecting people and places",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-high-technologies-connecting-people-and-places",
+            "title": "High technologies: connecting people and places",
             "content": "",
             "pyqs": []
           },
@@ -2897,14 +2837,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-history-of-women-in-science-technology",
-            "title": "History of women in Science & Technology",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-history-of-women-in-science-and-technology",
+            "title": "History of women in Science and Technology",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gendered-technologies-innovations",
-            "title": "Gendered technologies & innovations",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gendered-technologies-and-innovations",
+            "title": "Gendered technologies and innovations",
             "content": "",
             "pyqs": []
           },
@@ -2969,8 +2909,20 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-anthropocentrism-biocentrism-ecocentrism",
-            "title": "Key philosophical theories (anthropocentrism, biocentrism, ecocentrism)",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-anthropocentrism",
+            "title": "Key philosophical theories: anthropocentrism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-biocentrism",
+            "title": "Key philosophical theories: biocentrism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-ecocentrism",
+            "title": "Key philosophical theories: ecocentrism",
             "content": "",
             "pyqs": []
           },
@@ -2981,8 +2933,8 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-definition-and-scope",
-            "title": "Definition and scope",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-definition-and-scope-of-sustainable-engineering",
+            "title": "Definition and scope of sustainable engineering",
             "content": "",
             "pyqs": []
           },
@@ -2993,8 +2945,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-life-cycle-analysis-and-sustainability-metrics",
-            "title": "Life cycle analysis and sustainability metrics",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-life-cycle-analysis",
+            "title": "Life cycle analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-sustainability-metrics",
+            "title": "Sustainability metrics",
             "content": "",
             "pyqs": []
           },
@@ -3047,8 +3005,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-sustainable-urban-planning-and-green-infrastructure",
-            "title": "Sustainable urban planning and green infrastructure",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-sustainable-urban-planning",
+            "title": "Sustainable urban planning",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-green-infrastructure",
+            "title": "Green infrastructure",
             "content": "",
             "pyqs": []
           }
@@ -3203,8 +3167,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-renewable-energy-sources-solar-wind-hydro-biomass",
-            "title": "Overview of renewable energy sources (solar, wind, hydro, biomass)",
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-renewable-energy-sources-solar",
+            "title": "Overview of renewable energy sources: solar",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-renewable-energy-sources-wind",
+            "title": "Overview of renewable energy sources: wind",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-renewable-energy-sources-hydro",
+            "title": "Overview of renewable energy sources: hydro",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ee-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-renewable-energy-sources-biomass",
+            "title": "Overview of renewable energy sources: biomass",
             "content": "",
             "pyqs": []
           },
@@ -3311,17 +3293,11 @@
     "modules": [
       {
         "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning",
-        "title": "Module 1: Introduction to AI and Machine Learning - Basics of Machine Learning",
+        "title": "Module 1: Introduction to ai and machine learning basics of machine learning",
         "topics": [
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-introduction-to-ai",
-            "title": "Introduction to AI",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-introduction-to-machine-learning",
-            "title": "Introduction to Machine Learning",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-01-module-1-introduction-to-ai-and-machine-learning-basics-of-machine-learning-introduction-to-ai-and-machine-learning",
+            "title": "Introduction to AI and Machine Learning",
             "content": "",
             "pyqs": []
           },
@@ -3419,7 +3395,7 @@
       },
       {
         "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra",
-        "title": "Module 2: Mathematical Foundations of AI and Data Science - Role of Linear Algebra",
+        "title": "Module 2: Mathematical foundations of ai and data science role of linear algebra",
         "topics": [
           {
             "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-mathematical-foundations-of-ai-and-data-science",
@@ -3429,7 +3405,7 @@
           },
           {
             "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-02-module-2-mathematical-foundations-of-ai-and-data-science-role-of-linear-algebra-role-of-linear-algebra-in-data-representation-and-analysis",
-            "title": "Role of Linear Algebra in Data Representation and Analysis",
+            "title": "Role of linear algebra in Data representation and analysis",
             "content": "",
             "pyqs": []
           },
@@ -3466,77 +3442,77 @@
         ]
       },
       {
-        "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability",
-        "title": "Module 3: Applied Probability and Statistics for AI and Data Science - Basics of Probability",
+        "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr",
+        "title": "Module 3: Applied probability and statistics for ai and data science basics of pr",
         "topics": [
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-applied-probability-and-statistics-for-ai-and-data-science",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-applied-probability-and-statistics-for-ai-and-data-science",
             "title": "Applied Probability and Statistics for AI and Data Science",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-basics-of-probability",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-basics-of-probability",
             "title": "Basics of probability",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-random-variables-and-statistical-measures",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-random-variables-and-statistical-measures",
             "title": "Random variables and statistical measures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-rules-in-probability",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-rules-in-probability",
             "title": "Rules in probability",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-bayes-theorem-and-its-applications",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-bayes-theorem-and-its-applications",
             "title": "Bayes theorem and its applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-statistical-estimation",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-statistical-estimation",
             "title": "Statistical estimation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-maximum-likelihood-estimator-mle",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-maximum-likelihood-estimator-mle",
             "title": "Maximum Likelihood Estimator (MLE)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-statistical-summaries",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-statistical-summaries",
             "title": "Statistical summaries",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-correlation-analysis",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-correlation-analysis",
             "title": "Correlation analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-linear-correlation-direct-problems-only",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-linear-correlation-direct-problems-only",
             "title": "Linear correlation (direct problems only)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-regression-analysis",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-regression-analysis",
             "title": "Regression analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-probability-linear-regression-using-least-square-method-text-book-4",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-03-module-3-applied-probability-and-statistics-for-ai-and-data-science-basics-of-pr-linear-regression-using-least-square-method-text-book-4",
             "title": "Linear regression (using least square method) (Text book 4)",
             "content": "",
             "pyqs": []
@@ -3545,7 +3521,7 @@
       },
       {
         "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science",
-        "title": "Module 4: Basics of Data Science - Benefits of Data Science",
+        "title": "Module 4: Basics of data science benefits of data science",
         "topics": [
           {
             "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-basics-of-data-science",
@@ -3555,7 +3531,7 @@
           },
           {
             "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-benefits-of-data-science",
-            "title": "Benefits of Data Science",
+            "title": "Benefits of data science",
             "content": "",
             "pyqs": []
           },
@@ -3585,7 +3561,7 @@
           },
           {
             "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-demonstration-of-ml-applications-in-data-science",
-            "title": "Demonstration of ML applications in Data Science",
+            "title": "Demonstration of ML applications in data science",
             "content": "",
             "pyqs": []
           },
@@ -3596,14 +3572,14 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-visualization-tools-tableau-powerbi-r-or-python-for-visualization",
-            "title": "Visualization tools: Tableau, PowerBI, R or Python (for visualization)",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-software-tools-for-visualization-tableau-powerbi-r-or-python-and-machine-learning-implementation-python-matlab-or-r",
+            "title": "Software tools for visualization (Tableau, PowerBI, R or Python) and Machine Learning implementation (Python, MATLAB or R)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-machine-learning-implementation-tools-python-matlab-or-r-text-book-5",
-            "title": "Machine Learning implementation tools: Python, MATLAB or R (Text book-5)",
+            "id": "ee-3-gnest305-introduction-to-artificial-intelligence-and-data-science-04-module-4-basics-of-data-science-benefits-of-data-science-text-book-5",
+            "title": "Text book-5",
             "content": "",
             "pyqs": []
           }
@@ -3613,8 +3589,8 @@
   },
   {
     "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3",
-    "code": "GYMAT301-MATHEMATICS-FOR-ELECTRICAL-SCIENCE-AND-PHYSICAL-SCIENCE-–-3",
-    "name": "GYMAT301 MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE – 3",
+    "code": "GYMAT301-MATHEMATICS-FOR-ELECTRICAL-SCIENCE-AND-PHYSICAL-SCIENCE---3",
+    "name": "GYMAT301 MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE - 3",
     "branchId": "ee",
     "semester": 3,
     "modules": [
@@ -3743,26 +3719,26 @@
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w-z-2",
-            "title": "Mappings of w = z^2",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-mappings-of-w",
+            "title": "Mappings of w=𝑧ଶ",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w-e-z",
-            "title": "w = e^z",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w",
+            "title": "w=𝑒௭",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w-cos-z",
-            "title": "w = cos z",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w",
+            "title": "w=ଵ",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w-sin-z",
-            "title": "w = sin z.",
+            "id": "ee-3-gymat301-mathematics-for-electrical-science-and-physical-science-3-02-module-2-complex-function-w",
+            "title": "w=𝑠𝑖𝑛𝑧.",
             "content": "",
             "pyqs": []
           }

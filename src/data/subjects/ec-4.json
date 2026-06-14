@@ -879,42 +879,42 @@
     ]
   },
   {
-    "id": "ec-4-peect 411-instrumentation",
-    "code": "PEECT 411-INSTRUMENTATION",
-    "name": "PEECT 411 INSTRUMENTATION",
+    "id": "ec-4-peect411-instrumentation",
+    "code": "PEECT411-INSTRUMENTATION",
+    "name": "PEECT411 INSTRUMENTATION",
     "branchId": "ec",
     "semester": 4,
     "modules": [
       {
-        "id": "ec-4-peect 411-instrumentation-01-module-1-introduction-to-measuring-instruments",
+        "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments",
         "title": "Module 1: Introduction to measuring instruments",
         "topics": [
           {
-            "id": "ec-4-peect 411-instrumentation-01-module-1-introduction-to-measuring-instruments-introduction-to-measuring-instruments",
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-introduction-to-measuring-instruments",
             "title": "Introduction to measuring instruments",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-01-module-1-introduction-to-measuring-instruments-generalized-configurations-and-functional-elements-of-instrumentation-systems",
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-generalized-configurations-and-functional-elements-of-instrumentation-systems",
             "title": "Generalized Configurations and Functional elements of Instrumentation systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-01-module-1-introduction-to-measuring-instruments-need-for-measurement-systems",
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-need-for-measurement-systems",
             "title": "Need for Measurement Systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-01-module-1-introduction-to-measuring-instruments-classification-of-types-of-measuring-instruments",
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-classification-of-types-of-measuring-instruments",
             "title": "Classification of Types of Measuring instruments",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-01-module-1-introduction-to-measuring-instruments-static-and-dynamic-characteristics-of-measuring-instruments",
+            "id": "ec-4-peect411-instrumentation-01-module-1-introduction-to-measuring-instruments-static-and-dynamic-characteristics-of-measuring-instruments",
             "title": "Static and Dynamic characteristics of measuring instruments",
             "content": "",
             "pyqs": []
@@ -922,131 +922,155 @@
         ]
       },
       {
-        "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers",
+        "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers",
         "title": "Module 2: Sensors and transducers",
         "topics": [
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-sensors-and-transducers",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-sensors-and-transducers",
             "title": "Sensors and Transducers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-classification-and-selection-criteria-of-transducers",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-classification-and-selection-criteria-of-transducers",
             "title": "Classification and selection criteria of Transducers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-principles-of-operation-construction-theory-advantages-and-disadvantages-applications-of-various-transducers",
-            "title": "Principles of operation, construction, theory, advantages and disadvantages, applications of various transducers",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-principles-of-operation-construction-theory-advantages-and-disadvantages-applications-of-transducers",
+            "title": "Principles of operation, construction, theory, advantages and disadvantages, applications of transducers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-resistive-transducers-potentiometers",
-            "title": "Resistive Transducers: Potentiometers",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-resistive-transducers",
+            "title": "Resistive Transducers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-resistive-transducers-strain-gauges-metallic-and-semi-conductor-type",
-            "title": "Resistive Transducers: Strain gauges (metallic and semi-conductor type)",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-potentiometers",
+            "title": "Potentiometers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-resistive-transducers-resistance-thermometer",
-            "title": "Resistive Transducers: Resistance Thermometer",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-strain-gauges-metallic-and-semi-conductor-type",
+            "title": "Strain gauges (metallic and semi-conductor type)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-resistive-transducers-thermistors",
-            "title": "Resistive Transducers: Thermistors",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-resistance-thermometer",
+            "title": "Resistance Thermometer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-inductive-transducers-lvdt-linear-variable-differential-transformer",
-            "title": "Inductive Transducers: LVDT (Linear variable differential transformer)",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-thermistors",
+            "title": "Thermistors",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-02-module-2-sensors-and-transducers-capacitive-transducers-various-capacitive-transducers-based-on-familiar-equation-of-capacitance-capacitive-microphone",
-            "title": "Capacitive Transducers: Various capacitive transducers based on familiar equation of capacitance (capacitive microphone)",
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-inductive-transducers",
+            "title": "Inductive Transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-lvdt-linear-variable-differential-transformer",
+            "title": "LVDT (Linear variable differential transformer)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-capacitive-transducers",
+            "title": "Capacitive Transducers",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-various-capacitive-transducers-based-upon-familiar-equation-of-capacitance",
+            "title": "Various capacitive transducers based upon familiar equation of capacitance",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-02-module-2-sensors-and-transducers-capacitive-microphone",
+            "title": "Capacitive microphone",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments",
+        "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments",
         "title": "Module 3: Electronic measuring instruments",
         "topics": [
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-electronic-measuring-instruments",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-electronic-measuring-instruments",
             "title": "Electronic Measuring Instruments",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-digital-storage-oscilloscope",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-digital-storage-oscilloscope",
             "title": "Digital storage oscilloscope",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-waveform-analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-waveform-analyser",
             "title": "Working principle and applications of waveform analyser",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-digital-frequency-meter",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-digital-frequency-meter",
             "title": "Working principle and applications of digital frequency meter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-harmonic-distortion-meter",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-harmonic-distortion-meter",
             "title": "Working principle and applications of harmonic distortion meter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-harmonic-analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-harmonic-analyser",
             "title": "Working principle and applications of harmonic analyser",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-spectrum-analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-spectrum-analyser",
             "title": "Working principle and applications of spectrum analyser",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-logic-state-analyser",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-working-principle-and-applications-of-logic-state-analyser",
             "title": "Working principle and applications of logic state analyser",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-ieee-488-general-purpose-interface-bus-gpib-instruments-with-application",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-ieee-488-general-purpose-interface-bus-gpib-instruments-with-application",
             "title": "IEEE - 488 General Purpose Interface Bus (GPIB) Instruments with application",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-emi",
-            "title": "EMI",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-emi-electromagnetic-interference",
+            "title": "EMI (Electromagnetic Interference)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-03-module-3-electronic-measuring-instruments-grounding-and-shielding",
+            "id": "ec-4-peect411-instrumentation-03-module-3-electronic-measuring-instruments-grounding-and-shielding",
             "title": "Grounding and Shielding",
             "content": "",
             "pyqs": []
@@ -1054,77 +1078,89 @@
         ]
       },
       {
-        "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming",
+        "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming",
         "title": "Module 4: Plc programming",
         "topics": [
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-plc-programming",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-plc-programming",
             "title": "PLC Programming",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-basic-plc-programming-programming-on-off-inputs",
-            "title": "Basic PLC Programming: Programming ON/OFF Inputs",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-basic-plc-programming",
+            "title": "Basic PLC Programming",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-creating-ladder-diagrams",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-programming-on-off-inputs",
+            "title": "Programming ON/OFF Inputs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-creating-ladder-diagrams",
             "title": "Creating Ladder diagrams",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-register-basics",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-register-basics",
             "title": "Register Basics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-plc-timers-and-counters",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-plc-timers-and-counters",
             "title": "PLC Timers and Counters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-plc-arithmetic-functions",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-plc-arithmetic-functions",
             "title": "PLC Arithmetic functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-number-comparison-functions",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-number-comparison-functions",
             "title": "Number comparison functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-data-handling-functions-skip-function-and-applications",
-            "title": "Data handling Functions: Skip function and applications",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-data-handling-functions",
+            "title": "Data handling Functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-data-handling-functions-master-control-relay-function-and-applications",
-            "title": "Data handling Functions: Master control relay function and applications",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-skip-function-and-applications",
+            "title": "Skip function and applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-data-handling-functions-jump-with-non-return-and-return",
-            "title": "Data handling Functions: Jump with non-return and return",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-master-control-relay-function-and-applications",
+            "title": "Master control relay function and applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-data-handling-functions-data-table-register-and-other-move-functions",
-            "title": "Data handling Functions: Data table, register and other move functions",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-jump-with-non-return-and-return",
+            "title": "Jump with non-return and return",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 411-instrumentation-04-module-4-plc-programming-plc-functions-with-bits",
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-data-table-register-and-other-move-functions",
+            "title": "Data table, register and other move functions",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-peect411-instrumentation-04-module-4-plc-programming-plc-functions-with-bits",
             "title": "PLC functions with BITS",
             "content": "",
             "pyqs": []
@@ -1145,146 +1181,122 @@
         "title": "Module 1: Differential amplifiers differential amplifier configurations using bjt",
         "topics": [
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-differential-amplifiers",
-            "title": "Differential Amplifiers",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-differential-amplifier-configurations-using-bjt",
-            "title": "Differential amplifier configurations using BJT",
+            "title": "Differential Amplifier Configurations using BJT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-dc-analysis",
-            "title": "DC Analysis",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-dc-analysis-transfer-characteristics-of-differential-amplifier",
+            "title": "DC Analysis - Transfer Characteristics of Differential Amplifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-transfer-characteristics",
-            "title": "Transfer characteristics",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-ac-analysis-differential-gain",
-            "title": "AC analysis - differential gain",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-ac-analysis-differential-mode-gain",
+            "title": "AC Analysis - Differential Mode Gain",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-ac-analysis-common-mode-gain",
-            "title": "AC analysis - common mode gain",
+            "title": "AC Analysis - Common Mode Gain",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-cmrr",
-            "title": "CMRR",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-common-mode-rejection-ratio-cmrr",
+            "title": "Common Mode Rejection Ratio (CMRR)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-input-and-output-resistance",
-            "title": "Input and output resistance",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-input-and-output-resistance-of-differential-amplifier",
+            "title": "Input and Output Resistance of Differential Amplifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-voltage-gain",
-            "title": "Voltage gain",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-voltage-gain-of-differential-amplifier",
+            "title": "Voltage Gain of Differential Amplifier",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-constant-current-bias",
-            "title": "Constant current bias",
+            "title": "Constant Current Bias",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-constant-current-source",
-            "title": "Constant current source",
+            "title": "Constant Current Source",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-concept-of-current-mirror",
-            "title": "Concept of current mirror",
+            "title": "Concept of Current Mirror",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-two-transistor-current-mirror",
-            "title": "Two-transistor current mirror",
+            "title": "Two-Transistor Current Mirror",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-wilson-current-mirror",
-            "title": "Wilson current mirror",
+            "title": "Wilson Current Mirror",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-widlar-current-mirror",
-            "title": "Widlar current mirror",
+            "title": "Widlar Current Mirror",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-operational-amplifiers-op-amps",
-            "title": "Operational amplifiers (Op Amps)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-the-741-op-amp",
-            "title": "The 741 Op Amp",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-block-diagram-of-741-op-amp",
-            "title": "Block diagram of 741 Op Amp",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-the-741-op-amp-block-diagram",
+            "title": "The 741 Op Amp - Block Diagram",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-ideal-op-amp-parameters",
-            "title": "Ideal Op Amp parameters",
+            "title": "Ideal Op Amp Parameters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-typical-parameter-values-for-741",
-            "title": "Typical parameter values for 741",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-typical-parameter-values-for-741-op-amp",
+            "title": "Typical Parameter Values for 741 Op Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-equivalent-circuit-of-741",
-            "title": "Equivalent circuit of 741",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-equivalent-circuit-of-741-op-amp",
+            "title": "Equivalent Circuit of 741 Op Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-open-loop-configurations",
-            "title": "Open loop configurations",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-open-loop-configurations-of-op-amp",
+            "title": "Open Loop Configurations of Op Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-voltage-transfer-curve",
-            "title": "Voltage transfer curve",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-voltage-transfer-curve-of-op-amp",
+            "title": "Voltage Transfer Curve of Op Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-frequency-response-curve",
-            "title": "Frequency response curve",
+            "id": "ec-4-pcect403-linear-integrated-circuits-01-module-1-differential-amplifiers-differential-amplifier-configurations-using-bjt-frequency-response-curve-of-op-amp",
+            "title": "Frequency Response Curve of Op Amp",
             "content": "",
             "pyqs": []
           }
@@ -1295,86 +1307,74 @@
         "title": "Module 2: Op amp with negative feedback general concept of voltage series voltage",
         "topics": [
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-op-amp-with-negative-feedback",
-            "title": "Op Amp with negative feedback",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-general-concept-of-voltage-series-negative-feedback",
-            "title": "General concept of Voltage Series negative feedback",
+            "title": "General Concept of Voltage Series Negative Feedback",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-general-concept-of-voltage-shunt-negative-feedback",
-            "title": "General concept of Voltage Shunt negative feedback",
+            "title": "General Concept of Voltage Shunt Negative Feedback",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-general-concept-of-current-series-negative-feedback",
-            "title": "General concept of Current Series negative feedback",
+            "title": "General Concept of Current Series Negative Feedback",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-general-concept-of-current-shunt-negative-feedback",
-            "title": "General concept of Current Shunt negative feedback",
+            "title": "General Concept of Current Shunt Negative Feedback",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-op-amp-circuits-with-voltage-series-feedback",
-            "title": "Op Amp circuits with Voltage Series feedback",
+            "title": "Op Amp Circuits with Voltage Series Feedback",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-op-amp-circuits-with-voltage-shunt-feedback",
-            "title": "Op Amp circuits with Voltage Shunt feedback",
+            "title": "Op Amp Circuits with Voltage Shunt Feedback",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-virtual-ground-concept",
-            "title": "Virtual ground concept",
+            "title": "Virtual Ground Concept",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-analysis-of-inverting-amplifier-for-closed-loop-gain",
-            "title": "Analysis of inverting amplifier for closed loop gain",
+            "title": "Analysis of Inverting Amplifier for Closed Loop Gain",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-analysis-of-non-inverting-amplifier-for-closed-loop-gain",
-            "title": "Analysis of non-inverting amplifier for closed loop gain",
+            "title": "Analysis of Non-Inverting Amplifier for Closed Loop Gain",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-input-resistance",
-            "title": "Input Resistance",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-input-resistance-of-feedback-amplifiers",
+            "title": "Input Resistance of Feedback Amplifiers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-output-resistance",
-            "title": "Output Resistance",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-output-resistance-of-feedback-amplifiers",
+            "title": "Output Resistance of Feedback Amplifiers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-op-amp-applications",
-            "title": "Op Amp applications",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-summer",
-            "title": "Summer",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-op-amp-summer",
+            "title": "Op Amp Summer",
             "content": "",
             "pyqs": []
           },
@@ -1385,8 +1385,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-differential-amplifier",
-            "title": "Differential Amplifier",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-differential-amplifier-using-op-amp",
+            "title": "Differential Amplifier using Op Amp",
             "content": "",
             "pyqs": []
           },
@@ -1398,37 +1398,37 @@
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-voltage-to-current-converter",
-            "title": "Voltage to Current converter",
+            "title": "Voltage to Current Converter",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-current-to-voltage-converter",
-            "title": "Current to Voltage converter",
+            "title": "Current to Voltage Converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-integrator",
-            "title": "Integrator",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-integrator-using-op-amp",
+            "title": "Integrator using Op Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-differentiator",
-            "title": "Differentiator",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-differentiator-using-op-amp",
+            "title": "Differentiator using Op Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-precision-rectifiers",
-            "title": "Precision Rectifiers",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-precision-rectifiers-using-op-amp",
+            "title": "Precision Rectifiers using Op Amp",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-comparators",
-            "title": "Comparators",
+            "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-comparators-using-op-amp",
+            "title": "Comparators using Op Amp",
             "content": "",
             "pyqs": []
           },
@@ -1440,13 +1440,13 @@
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-log-amplifier",
-            "title": "Log amplifier",
+            "title": "Log Amplifier",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-02-module-2-op-amp-with-negative-feedback-general-concept-of-voltage-series-voltage-antilog-amplifier",
-            "title": "Antilog amplifier",
+            "title": "Antilog Amplifier",
             "content": "",
             "pyqs": []
           }
@@ -1457,12 +1457,6 @@
         "title": "Module 3: Oscillators and multivibrators phase shift and wien",
         "topics": [
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-oscillators-and-multivibrators",
-            "title": "Oscillators and Multivibrators",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-phase-shift-oscillator",
             "title": "Phase Shift Oscillator",
             "content": "",
@@ -1470,145 +1464,121 @@
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-wien-bridge-oscillator",
-            "title": "Wien-bridge Oscillator",
+            "title": "Wien-Bridge Oscillator",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-triangular-waveform-generator",
-            "title": "Triangular waveform generator",
+            "title": "Triangular Waveform Generator",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-sawtooth-waveform-generator",
-            "title": "Sawtooth waveform generator",
+            "title": "Sawtooth Waveform Generator",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-astable-multivibrator",
-            "title": "Astable multivibrator",
+            "title": "Astable Multivibrator",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-monostable-multivibrator",
-            "title": "Monostable multivibrator",
+            "title": "Monostable Multivibrator",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-active-filters",
-            "title": "Active filters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-comparison-with-passive-filters",
-            "title": "Comparison with passive filters",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-active-filters-comparison-with-passive-filters",
+            "title": "Active Filters - Comparison with Passive Filters",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-first-order-low-pass-active-filter",
-            "title": "First order Low pass active filter",
+            "title": "First Order Low Pass Active Filter",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-second-order-low-pass-active-filter",
-            "title": "Second order Low pass active filter",
+            "title": "Second Order Low Pass Active Filter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-first-order-high-pass-active-filter",
-            "title": "First order High pass active filter",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-second-order-high-pass-active-filter",
-            "title": "Second order High pass active filter",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-high-pass-active-filter",
+            "title": "High Pass Active Filter",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-band-pass-active-filter",
-            "title": "Band pass active filter",
+            "title": "Band Pass Active Filter",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-band-reject-active-filter",
-            "title": "Band Reject active filter",
+            "title": "Band Reject Active Filter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-state-variable-filters",
-            "title": "State Variable filters",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-state-variable-filter",
+            "title": "State Variable Filter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-voltage-regulators",
-            "title": "Voltage Regulators",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-fixed-voltage-regulator",
+            "title": "Fixed Voltage Regulator",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-fixed-voltage-regulators",
-            "title": "Fixed voltage regulators",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-adjustable-voltage-regulator",
+            "title": "Adjustable Voltage Regulator",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-adjustable-voltage-regulators",
-            "title": "Adjustable voltage regulators",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-ic-723-low-voltage-configuration",
+            "title": "IC 723 - Low Voltage Configuration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-ic-723",
-            "title": "IC 723",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-ic-723-high-voltage-configuration",
+            "title": "IC 723 - High Voltage Configuration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-low-voltage-configuration-of-ic-723",
-            "title": "Low voltage configuration of IC 723",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-current-boosting-in-voltage-regulators",
+            "title": "Current Boosting in Voltage Regulators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-high-voltage-configuration-of-ic-723",
-            "title": "High voltage configuration of IC 723",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-current-limiting-in-voltage-regulators",
+            "title": "Current Limiting in Voltage Regulators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-current-boosting",
-            "title": "Current boosting",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-short-circuit-protection-in-voltage-regulators",
+            "title": "Short Circuit Protection in Voltage Regulators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-current-limiting",
-            "title": "Current limiting",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-short-circuit-protection",
-            "title": "Short circuit protection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-fold-back-protection",
-            "title": "Fold-back protection",
+            "id": "ec-4-pcect403-linear-integrated-circuits-03-module-3-oscillators-and-multivibrators-phase-shift-and-wien-fold-back-protection-in-voltage-regulators",
+            "title": "Fold-back Protection in Voltage Regulators",
             "content": "",
             "pyqs": []
           }
@@ -1619,140 +1589,110 @@
         "title": "Module 4: Timer and vco timer ic 555",
         "topics": [
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-timer-and-vco",
-            "title": "Timer and VCO",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-timer-ic-555-functional-diagram",
-            "title": "Timer IC 555 - Functional diagram",
+            "title": "Timer IC 555 - Functional Diagram",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-timer-ic-555-astable-operation",
-            "title": "Timer IC 555 - Astable operation",
+            "title": "Timer IC 555 - Astable Operation",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-timer-ic-555-monostable-operation",
-            "title": "Timer IC 555 - Monostable operation",
+            "title": "Timer IC 555 - Monostable Operation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-basic-concepts-of-voltage-controlled-oscillator",
-            "title": "Basic concepts of Voltage Controlled Oscillator",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-basic-concepts-of-voltage-controlled-oscillator-vco",
+            "title": "Basic Concepts of Voltage Controlled Oscillator (VCO)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-application-of-vco-ic-lm566",
-            "title": "Application of VCO IC LM566",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-vco-ic-lm566-applications",
+            "title": "VCO IC LM566 - Applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll",
-            "title": "Phase Locked Loop (PLL)",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-basic-building-block",
+            "title": "Phase Locked Loop (PLL) - Basic Building Block",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-pll-basic-building-block",
-            "title": "PLL Basic building block",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-operation",
+            "title": "Phase Locked Loop (PLL) - Operation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-pll-operation",
-            "title": "PLL Operation",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-closed-loop-analysis",
+            "title": "Phase Locked Loop (PLL) - Closed Loop Analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-pll-closed-loop-analysis",
-            "title": "PLL Closed loop analysis",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-lock-and-capture-range",
+            "title": "Phase Locked Loop (PLL) - Lock and Capture Range",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-lock-range",
-            "title": "Lock range",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-phase-locked-loop-pll-applications",
+            "title": "Phase Locked Loop (PLL) - Applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-capture-range",
-            "title": "Capture range",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-pll-ic-565",
+            "title": "PLL IC 565",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-applications-of-pll",
-            "title": "Applications of PLL",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-digital-to-analog-converters-dac",
+            "title": "Digital to Analog Converters (DAC)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-pll-ic565",
-            "title": "PLL IC565",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-data-converters",
-            "title": "Data Converters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-digital-to-analog-converters",
-            "title": "Digital to Analog converters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-dac-specifications",
-            "title": "DAC Specifications",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-data-converter-specifications",
+            "title": "Data Converter Specifications",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-weighted-resistor-type-dac",
-            "title": "Weighted resistor type DAC",
+            "title": "Weighted Resistor Type DAC",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-r-2r-ladder-type-dac",
-            "title": "R-2R Ladder type DAC",
+            "title": "R-2R Ladder Type DAC",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-analog-to-digital-converters",
-            "title": "Analog to Digital Converters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-adc-specifications",
-            "title": "ADC Specifications",
+            "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-analog-to-digital-converters-adc",
+            "title": "Analog to Digital Converters (ADC)",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-flash-type-adc",
-            "title": "Flash type ADC",
+            "title": "Flash Type ADC",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ec-4-pcect403-linear-integrated-circuits-04-module-4-timer-and-vco-timer-ic-555-successive-approximation-type-adc",
-            "title": "Successive approximation type ADC",
+            "title": "Successive Approximation Type ADC",
             "content": "",
             "pyqs": []
           }
@@ -1778,38 +1718,44 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-inverting-amplifier-using-op-amp",
-            "title": "Inverting amplifier using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-inverting-amplifier",
+            "title": "Inverting amplifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-non-inverting-amplifier-using-op-amp",
-            "title": "Non inverting amplifier using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-non-inverting-amplifier",
+            "title": "Non inverting amplifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-integrator-using-op-amp",
-            "title": "Integrator using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-integrator",
+            "title": "Integrator",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-differentiator-using-op-amp-frequency-response",
-            "title": "Differentiator using Op-Amp - frequency response",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-differentiator",
+            "title": "Differentiator",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-adder-using-op-amp",
-            "title": "Adder using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-frequency-response",
+            "title": "Frequency response",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-comparators-using-op-amp",
-            "title": "Comparators using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-adder",
+            "title": "Adder",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-comparators",
+            "title": "Comparators",
             "content": "",
             "pyqs": []
           },
@@ -1820,44 +1766,50 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-difference-amplifier-using-op-amp",
-            "title": "Difference Amplifier using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-difference-amplifier",
+            "title": "Difference Amplifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-instrumentation-amplifier-using-op-amp",
-            "title": "Instrumentation amplifier using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-instrumentation-amplifier",
+            "title": "Instrumentation amplifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-schmitt-trigger-circuit-using-op-amp",
-            "title": "Schmitt trigger circuit using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-schmitt-trigger-circuit",
+            "title": "Schmitt trigger circuit",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-astable-multivibrator-using-op-amp",
-            "title": "Astable multivibrator using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-astable-multivibrators",
+            "title": "Astable multivibrators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-monostable-multivibrator-using-op-amp",
-            "title": "Monostable multivibrator using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-monostable-multivibrators",
+            "title": "Monostable multivibrators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-triangular-waveform-generator-using-op-amp",
-            "title": "Triangular waveform generator using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-waveform-generators-using-op-amps",
+            "title": "Waveform generators using Op Amps",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-sawtooth-waveform-generator-using-op-amp",
-            "title": "Sawtooth waveform generator using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-triangular-wave-generator-using-op-amps",
+            "title": "Triangular wave generator using Op Amps",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-sawtooth-wave-generator-using-op-amps",
+            "title": "Sawtooth wave generator using Op Amps",
             "content": "",
             "pyqs": []
           },
@@ -1880,50 +1832,38 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-first-order-low-pass-filter-lpf",
-            "title": "Active first order Low Pass Filter (LPF)",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-first-order-filters",
+            "title": "Active first order filters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-first-order-high-pass-filter-hpf",
-            "title": "Active first order High Pass Filter (HPF)",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-second-order-filters",
+            "title": "Active second order filters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-first-order-band-pass-filter-bpf",
-            "title": "Active first order Band Pass Filter (BPF)",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-lpf-low-pass-filter",
+            "title": "LPF (Low Pass Filter)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-first-order-band-reject-filter-brf",
-            "title": "Active first order Band Reject Filter (BRF)",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-hpf-high-pass-filter",
+            "title": "HPF (High Pass Filter)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-second-order-low-pass-filter-lpf",
-            "title": "Active second order Low Pass Filter (LPF)",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-bpf-band-pass-filter",
+            "title": "BPF (Band Pass Filter)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-second-order-high-pass-filter-hpf",
-            "title": "Active second order High Pass Filter (HPF)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-second-order-band-pass-filter-bpf",
-            "title": "Active second order Band Pass Filter (BPF)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-active-second-order-band-reject-filter-brf",
-            "title": "Active second order Band Reject Filter (BRF)",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-brf-band-reject-filter",
+            "title": "BRF (Band Reject Filter)",
             "content": "",
             "pyqs": []
           },
@@ -1934,8 +1874,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-precision-rectifiers-using-op-amp",
-            "title": "Precision rectifiers using Op-Amp",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-01-module-1-familiarization-of-operational-amplifiers-precision-rectifiers",
+            "title": "Precision rectifiers",
             "content": "",
             "pyqs": []
           }
@@ -1958,62 +1898,86 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-dc-power-supply-using-ic-723-low-voltage-configuration",
-            "title": "DC power supply using IC 723 - Low voltage configuration",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-dc-power-supply-using-ic-723",
+            "title": "DC power supply using IC 723",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-dc-power-supply-using-ic-723-high-voltage-configuration",
-            "title": "DC power supply using IC 723 - High voltage configuration",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-low-voltage-configuration",
+            "title": "Low voltage configuration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-dc-power-supply-using-ic-723-short-circuit-protection",
-            "title": "DC power supply using IC 723 - Short circuit protection",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-high-voltage-configuration",
+            "title": "High voltage configuration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-dc-power-supply-using-ic-723-fold-back-protection",
-            "title": "DC power supply using IC 723 - Fold-back protection",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-short-circuit-protection",
+            "title": "Short circuit protection",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-a-d-converter-counter-ramp-type",
-            "title": "A/D converter - Counter ramp type",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-fold-back-protection",
+            "title": "Fold-back protection",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-a-d-converter-flash-type",
-            "title": "A/D converter - Flash type",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-a-d-converters",
+            "title": "A/D converters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-d-a-converter-r-2r-ladder-circuit",
-            "title": "D/A Converter - R-2R ladder circuit",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-counter-ramp-type-a-d-converter",
+            "title": "Counter ramp type A/D converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-study-of-pll-ic-free-running",
-            "title": "Study of PLL IC - Free running",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-flash-type-a-d-converter",
+            "title": "Flash type A/D converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-study-of-pll-ic-frequency-lock-range",
-            "title": "Study of PLL IC - Frequency lock range",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-d-a-converters",
+            "title": "D/A Converters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-study-of-pll-ic-capture-range",
-            "title": "Study of PLL IC - Capture range",
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-r-2r-ladder-circuit",
+            "title": "R-2R ladder circuit",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-study-of-pll-ic",
+            "title": "Study of PLL IC",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-free-running-mode",
+            "title": "Free running mode",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-frequency-lock-range",
+            "title": "Frequency lock range",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ec-4-pcecl407-linear-integrated-circuits-lab-02-module-2-astable-and-monostable-multivibrator-using-timer-ic-ne555-capture-range",
+            "title": "Capture range",
             "content": "",
             "pyqs": []
           }
@@ -2290,8 +2254,8 @@
   },
   {
     "id": "ec-4-gbmat401-mathematics-for-electrical-science-4",
-    "code": "GBMAT401-MATHEMATICS-FOR-ELECTRICAL-SCIENCE-–-4",
-    "name": "GBMAT401 MATHEMATICS FOR ELECTRICAL SCIENCE – 4",
+    "code": "GBMAT401-MATHEMATICS-FOR-ELECTRICAL-SCIENCE---4",
+    "name": "GBMAT401 MATHEMATICS FOR ELECTRICAL SCIENCE - 4",
     "branchId": "ec",
     "semester": 4,
     "modules": [
@@ -2367,7 +2331,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-01-module-1-random-variables-expected-value-of-a-function-of-two-discrete-variables",
-            "title": "Expected value of a function of two discrete variables",
+            "title": "Expected value of a function of two discrete variables.",
             "content": "",
             "pyqs": []
           }
@@ -2402,20 +2366,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-uniform-distribution",
-            "title": "Uniform distribution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-normal-distribution",
-            "title": "Normal distribution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-exponential-distribution",
-            "title": "Exponential distribution",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-uniform-normal-and-exponential-distributions",
+            "title": "Uniform, Normal and Exponential distributions",
             "content": "",
             "pyqs": []
           },
@@ -2439,7 +2391,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-02-module-2-continuous-random-variables-and-their-probability-distributions-expectation-value-of-a-function-of-two-continuous-variables",
-            "title": "Expectation value of a function of two continuous variables",
+            "title": "Expectation value of a function of two continuous variables.",
             "content": "",
             "pyqs": []
           }
@@ -2462,26 +2414,14 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-confidence-intervals-for-a-population-mean-for-large-samples-normal-distribution",
-            "title": "Confidence Intervals for a Population Mean for large samples (normal distribution)",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-confidence-intervals-and-one-side-confidence-intervals-for-a-population-mean-for-large-and",
+            "title": "Confidence Intervals and One-side confidence intervals for a Population Mean for large and",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-confidence-intervals-for-a-population-mean-for-small-samples-t-distribution",
-            "title": "Confidence Intervals for a Population Mean for small samples (t-distribution)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-one-side-confidence-intervals-for-a-population-mean-for-large-samples-normal-distribution",
-            "title": "One-side confidence intervals for a Population Mean for large samples (normal distribution)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-one-side-confidence-intervals-for-a-population-mean-for-small-samples-t-distribution",
-            "title": "One-side confidence intervals for a Population Mean for small samples (t-distribution)",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-small-samples-normal-distribution-and-t-distribution",
+            "title": "small samples (normal distribution and t-distribution)",
             "content": "",
             "pyqs": []
           },
@@ -2492,14 +2432,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-i-error",
-            "title": "Type I error",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-ii-error",
-            "title": "Type II error",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-type-i-and-type-ii-error",
+            "title": "Type I and Type II error",
             "content": "",
             "pyqs": []
           },
@@ -2516,14 +2450,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-tests-concerning-a-population-proportion-for-large-samples",
-            "title": "Tests concerning a population proportion for large samples",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-tests-concerning-a-population-proportion-for-small-samples",
-            "title": "Tests concerning a population proportion for small samples",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-03-module-3-confidence-intervals-tests-concerning-a-population-proportion-for-large-and-small-samples",
+            "title": "Tests concerning a population proportion for large and small samples.",
             "content": "",
             "pyqs": []
           }
@@ -2541,7 +2469,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-classification-of-process",
-            "title": "Classification of process",
+            "title": "classification of process",
             "content": "",
             "pyqs": []
           },
@@ -2564,14 +2492,8 @@
             "pyqs": []
           },
           {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-stationarity-sss",
-            "title": "Stationarity- SSS",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-stationarity-wss",
-            "title": "Stationarity- WSS",
+            "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-stationarity-sss-wss",
+            "title": "Stationarity- SSS, WSS",
             "content": "",
             "pyqs": []
           },
@@ -2607,7 +2529,7 @@
           },
           {
             "id": "ec-4-gbmat401-mathematics-for-electrical-science-4-04-module-4-random-process-concept-distribution-ergodic-process",
-            "title": "Distribution Ergodic Process",
+            "title": "Distribution Ergodic Process.",
             "content": "",
             "pyqs": []
           }
@@ -3198,307 +3120,301 @@
     ]
   },
   {
-    "id": "ec-4-peect 412-power-electronics",
-    "code": "PEECT 412-POWER-ELECTRONICS",
-    "name": "PEECT 412 POWER ELECTRONICS",
+    "id": "ec-4-peect412-power-electronics",
+    "code": "PEECT412-POWER-ELECTRONICS",
+    "name": "PEECT412 POWER ELECTRONICS",
     "branchId": "ec",
     "semester": 4,
     "modules": [
       {
-        "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics",
+        "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics",
         "title": "Module 1: Introduction scope and applications of power electronics",
         "topics": [
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-introduction-scope-and-applications-of-power-electronics",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-introduction-scope-and-applications-of-power-electronics",
             "title": "Introduction: Scope and applications of Power Electronics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-properties-of-ideal-switch",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-properties-of-ideal-switch",
             "title": "Properties of ideal switch",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-diodes",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-diodes",
             "title": "Structure and static characteristics of Power diodes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-bjt",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-bjt",
             "title": "Structure and static characteristics of Power BJT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-mosfet",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-power-mosfet",
             "title": "Structure and static characteristics of Power MOSFET",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-igbt",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-structure-and-static-characteristics-of-igbt",
             "title": "Structure and static characteristics of IGBT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-comparison-of-power-diodes-power-bjt-power-mosfet-igbt",
-            "title": "Comparison of Power diodes, Power BJT, Power MOSFET & IGBT",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-comparison-of-power-diodes-power-bjt-power-mosfet-and-igbt",
+            "title": "Comparison of Power diodes, Power BJT, Power MOSFET and IGBT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-basic-principles-of-wide-band-gap-devices-sic",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-basic-principles-of-wide-band-gap-devices-sic",
             "title": "Basic principles of wide band gap devices - SiC",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-basic-principles-of-wide-band-gap-devices-gan",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-basic-principles-of-wide-band-gap-devices-gan",
             "title": "Basic principles of wide band gap devices - GaN",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-safe-operating-area-of-power-bjt",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-safe-operating-area-of-power-bjt",
             "title": "Safe Operating Area of Power BJT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-safe-operating-area-of-power-mosfet",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-safe-operating-area-of-power-mosfet",
             "title": "Safe Operating Area of Power MOSFET",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-safe-operating-area-of-igbt",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-safe-operating-area-of-igbt",
             "title": "Safe Operating Area of IGBT",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-drive-circuits-for-power-bjt",
-            "title": "Drive Circuits for Power BJT",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-drive-circuits-for-power-bjt-any-two-example-circuits-no-analysis",
+            "title": "Drive Circuits for Power BJT (any two example circuits - no analysis)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-drive-circuits-for-power-mosfet",
-            "title": "Drive Circuits for Power MOSFET",
+            "id": "ec-4-peect412-power-electronics-01-module-1-introduction-scope-and-applications-of-power-electronics-drive-circuits-for-power-mosfet-any-two-example-circuits-no-analysis",
+            "title": "Drive Circuits for Power MOSFET (any two example circuits - no analysis)",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics",
+        "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics",
         "title": "Module 2: Scr structure two transistor analogy static characteristics",
         "topics": [
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-scr-structure",
-            "title": "SCR Structure",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-scr-structure",
+            "title": "SCR: Structure",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-scr-two-transistor-analogy",
-            "title": "SCR two transistor analogy",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-scr-two-transistor-analogy",
+            "title": "SCR: Two transistor analogy",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-scr-static-characteristics",
-            "title": "SCR static characteristics",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-scr-static-characteristics",
+            "title": "SCR: Static characteristics",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-three-phase-diode-bridge-rectifiers",
-            "title": "Three phase diode bridge rectifiers",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-rectifiers-three-phase-diode-bridge-rectifiers",
+            "title": "Rectifiers: Three phase diode bridge rectifiers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-single-phase-half-controlled-rectifier-with-r-load",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-single-phase-half-controlled-rectifier-with-r-load",
             "title": "Single phase half-controlled rectifier with R load",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-single-phase-fully-controlled-bridge-rectifier-continuous-conduction",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-single-phase-fully-controlled-bridge-rectifier-continuous-conduction",
             "title": "Single phase fully controlled bridge rectifier (continuous conduction)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-output-voltage-equation-for-single-phase-fully-controlled-bridge-rectifier",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-output-voltage-equation-for-single-phase-fully-controlled-bridge-rectifier",
             "title": "Output voltage equation for single phase fully controlled bridge rectifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-principle-of-three-phase-half-wave-controlled-rectifier",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-principle-of-three-phase-half-wave-controlled-rectifier",
             "title": "Principle of three phase half wave controlled rectifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-average-output-voltage-equation-for-continuous-load-current-in-three-phase-half-wave-controlled-rectifier",
-            "title": "Average output voltage equation for continuous load current in three phase half wave controlled rectifier",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-average-output-voltage-equation-for-continuous-load-current-of-three-phase-half-wave-controlled-rectifier",
+            "title": "Average output voltage equation for continuous load current of three phase half wave controlled rectifier",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-related-simple-problems-on-rectifiers-1-phase-3-phase",
-            "title": "Related simple problems on rectifiers (1-phase & 3-phase)",
+            "id": "ec-4-peect412-power-electronics-02-module-2-scr-structure-two-transistor-analogy-static-characteristics-related-simple-problems-on-1-phase-and-3-phase-rectifiers",
+            "title": "Related simple problems on 1-phase and 3-phase rectifiers",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck",
+        "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck",
         "title": "Module 3: Dc dc switch mode converters buck boost and buck",
         "topics": [
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-buck-dc-dc-converter",
-            "title": "Buck DC-DC converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-dc-dc-switch-mode-converters-buck-dc-dc-converter",
+            "title": "DC-DC Switch Mode Converters: Buck DC-DC converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-boost-dc-dc-converter",
-            "title": "Boost DC-DC converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-dc-dc-switch-mode-converters-boost-dc-dc-converter",
+            "title": "DC-DC Switch Mode Converters: Boost DC-DC converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-buck-boost-dc-dc-converter",
-            "title": "Buck-boost DC-DC converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-dc-dc-switch-mode-converters-buck-boost-dc-dc-converter",
+            "title": "DC-DC Switch Mode Converters: Buck-boost DC-DC converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-waveforms-of-dc-dc-converters",
-            "title": "Waveforms of DC-DC converters",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-waveforms-of-dc-dc-converters-under-continuous-conduction-mode",
+            "title": "Waveforms of DC-DC converters under continuous conduction mode",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-expression-for-output-voltage-of-dc-dc-converters",
-            "title": "Expression for output voltage of DC-DC converters",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-expression-for-output-voltage-of-dc-dc-converters-under-continuous-conduction-mode",
+            "title": "Expression for output voltage of DC-DC converters under continuous conduction mode",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-voltage-ripple-of-dc-dc-converters-under-continuous-conduction-mode",
-            "title": "Voltage ripple of DC-DC converters under continuous conduction mode",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-expression-for-voltage-ripple-of-dc-dc-converters-under-continuous-conduction-mode",
+            "title": "Expression for voltage ripple of DC-DC converters under continuous conduction mode",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-current-ripple-of-dc-dc-converters-under-continuous-conduction-mode",
-            "title": "Current ripple of DC-DC converters under continuous conduction mode",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-expression-for-current-ripple-of-dc-dc-converters-under-continuous-conduction-mode",
+            "title": "Expression for current ripple of DC-DC converters under continuous conduction mode",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-flyback-converter",
-            "title": "Flyback converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-isolated-converters-flyback-converter",
+            "title": "Isolated converters: Flyback converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-forward-converter",
-            "title": "Forward converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-isolated-converters-forward-converter",
+            "title": "Isolated converters: Forward converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-push-pull-converter",
-            "title": "Push Pull converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-isolated-converters-push-pull-converter",
+            "title": "Isolated converters: Push Pull converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-half-bridge-converter",
-            "title": "Half bridge converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-isolated-converters-half-bridge-converter",
+            "title": "Isolated converters: Half bridge converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-full-bridge-converter",
-            "title": "Full bridge converter",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-isolated-converters-full-bridge-converter",
+            "title": "Isolated converters: Full bridge converter",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-waveforms-of-isolated-converters",
-            "title": "Waveforms of isolated converters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ec-4-peect 412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-governing-equations-of-isolated-converters",
-            "title": "Governing equations of isolated converters",
+            "id": "ec-4-peect412-power-electronics-03-module-3-dc-dc-switch-mode-converters-buck-boost-and-buck-waveforms-and-governing-equations-of-isolated-converters",
+            "title": "Waveforms and governing equations of isolated converters",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "ec-4-peect 412-power-electronics-04-module-4-dc",
+        "id": "ec-4-peect412-power-electronics-04-module-4-dc",
         "title": "Module 4: Dc",
         "topics": [
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-inverter-topologies",
-            "title": "Inverter topologies",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-dc-ac-switch-mode-inverters-inverter-topologies",
+            "title": "DC-AC Switch Mode Inverters: Inverter topologies",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-driven-inverters-push-pull-configuration",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-driven-inverters-push-pull-configuration",
             "title": "Driven Inverters: Push-Pull configuration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-driven-inverters-half-bridge-configuration",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-driven-inverters-half-bridge-configuration",
             "title": "Driven Inverters: Half bridge configuration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-driven-inverters-full-bridge-configuration",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-driven-inverters-full-bridge-configuration",
             "title": "Driven Inverters: Full bridge configuration",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-single-phase-pwm-inverters-single-pulse-width-modulation",
-            "title": "Single phase PWM inverters - Single pulse width modulation",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-single-phase-pwm-inverters-single-pulse-width-modulation",
+            "title": "Single phase PWM inverters: Single pulse width modulation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-single-phase-pwm-inverters-sinusoidal-pulse-width-modulation",
-            "title": "Single phase PWM inverters - Sinusoidal pulse width modulation",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-single-phase-pwm-inverters-sinusoidal-pulse-width-modulation",
+            "title": "Single phase PWM inverters: Sinusoidal pulse width modulation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-rms-output-voltage-equation-of-single-phase-pwm-inverters",
-            "title": "RMS output voltage equation of single phase PWM inverters",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-rms-output-voltage-equation-for-single-phase-pwm-inverters",
+            "title": "RMS output voltage equation for single phase PWM inverters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ec-4-peect 412-power-electronics-04-module-4-dc-output-voltage-waveforms-of-single-phase-pwm-inverters",
-            "title": "Output voltage waveforms of single phase PWM inverters",
+            "id": "ec-4-peect412-power-electronics-04-module-4-dc-output-voltage-waveforms-for-single-phase-pwm-inverters",
+            "title": "Output voltage waveforms for single phase PWM inverters",
             "content": "",
             "pyqs": []
           }

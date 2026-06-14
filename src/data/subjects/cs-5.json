@@ -852,7 +852,7 @@
           },
           {
             "id": "cs-5-pccst502-design-and-analysis-of-algorithms-01-module-1-algorithm-analysis-and-balanced-search-trees-advanced-data-structures-balanced-search-trees-avl-trees-insertion-and-deletion-tracking-single-double-rotations",
-            "title": "Advanced Data Structures: Balanced Search Trees-AVL Trees (insertion and deletion tracking, single/double rotations)",
+            "title": "Advanced Data Structures: Balanced Search Trees—AVL Trees (insertion and deletion tracking, single/double rotations)",
             "content": "",
             "pyqs": []
           }
@@ -894,7 +894,7 @@
           },
           {
             "id": "cs-5-pccst502-design-and-analysis-of-algorithms-03-module-3-greedy-strategy-dynamic-programming-and-backtracking-spanning-trees-minimum-cost-spanning-tree-construction-kruskal-s-algorithm-and-prim-s-algorithm-optimization",
-            "title": "Spanning Trees: Minimum Cost Spanning Tree construction-Kruskal's Algorithm and Prim's Algorithm optimization",
+            "title": "Spanning Trees: Minimum Cost Spanning Tree construction—Kruskal's Algorithm and Prim's Algorithm optimization",
             "content": "",
             "pyqs": []
           },
@@ -1185,43 +1185,37 @@
         "topics": [
           {
             "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-implement-linear-regression-with-one-variable-on-the-california-housing-dataset-to-predict-housing-prices-based-on-a-single-feature-e-g-the-average-number-of-rooms-per-dwelling",
-            "title": "Implement linear regression with one variable on the California Housing dataset to predict housing prices based on a single feature (e.g., the average number of rooms per dwelling)",
+            "title": "Implement linear regression with one variable on the California Housing dataset to predict housing prices based on a single feature (e.g., the average number of rooms per dwelling).",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-load-and-preprocess-the-dataset",
-            "title": "Load and preprocess the dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-implement-linear-regression-using-gradient-descent",
-            "title": "Implement linear regression using gradient descent",
+            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-load-and-preprocess-the-datase",
+            "title": "Load and preprocess the datase.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-implement-linear-regression-using-the-normal-equation",
-            "title": "Implement linear regression using the normal equation",
+            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-implement-linear-regression-using-both-gradient-descent-and-the-normal-equation",
+            "title": "Implement linear regression using both gradient descent and the normal equation.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-evaluate-the-model-performance-using-mean-squared-error-mse",
-            "title": "Evaluate the model performance using Mean Squared Error (MSE)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-evaluate-the-model-performance-using-r-squared",
-            "title": "Evaluate the model performance using R-squared",
+            "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-evaluate-the-model-performance-using-metrics-such-as-mean-squared-error-mse-and-r-squared",
+            "title": "Evaluate the model performance using metrics such as Mean Squared Error (MSE) and R-squared.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-01-module-1-implement-linear-regression-with-one-variable-on-the-california-housing-visualize-the-fitted-line-along-with-the-data-points",
-            "title": "Visualize the fitted line along with the data points",
+            "title": "Visualize the fitted line along with the data points.",
             "content": "",
             "pyqs": []
           }
@@ -1232,44 +1226,38 @@
         "title": "Module 2: Implement polynomial regression on the auto mpg dataset to predict mile",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-miles-per-gallon-mpg-based-on-engine-displacement",
-            "title": "Implement polynomial regression on the Auto MPG dataset to predict miles per gallon (MPG) based on engine displacement",
+            "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-miles-per-gallon-mpg-based-on-engine-displacement-compare-polynomial-regression-results-with-linear-regression",
+            "title": "Implement polynomial regression on the Auto MPG dataset to predict miles per gallon (MPG) based on engine displacement. Compare polynomial regression results with linear regression.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-compare-polynomial-regression-results-with-linear-regression",
-            "title": "Compare polynomial regression results with linear regression",
+            "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-load-and-preprocess-the-dataset",
-            "title": "Load and preprocess the dataset",
+            "title": "Load and preprocess the dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-implement-polynomial-regression-of-varying-degrees",
-            "title": "Implement polynomial regression of varying degrees",
+            "title": "Implement polynomial regression of varying degrees.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-compare-the-polynomial-regression-models-with-linear-regression-using-mse",
-            "title": "Compare the polynomial regression models with linear regression using MSE",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-compare-the-polynomial-regression-models-with-linear-regression-using-r-squared",
-            "title": "Compare the polynomial regression models with linear regression using R-squared",
+            "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-compare-the-polynomial-regression-models-with-linear-regression-using-metrics-such-as-mse-and-r-squared",
+            "title": "Compare the polynomial regression models with linear regression using metrics such as MSE and R-squared.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-02-module-2-implement-polynomial-regression-on-the-auto-mpg-dataset-to-predict-mile-visualize-the-polynomial-fit",
-            "title": "Visualize the polynomial fit",
+            "title": "Visualize the polynomial fit.",
             "content": "",
             "pyqs": []
           }
@@ -1280,50 +1268,38 @@
         "title": "Module 3: Implement ridge and lasso regression on the diabetes dataset compare th",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-implement-ridge-and-lasso-regression-on-the-diabetes-dataset",
-            "title": "Implement Ridge and Lasso regression on the Diabetes dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-the-performance-of-these-regularized-models-with-standard-linear-regression",
+            "title": "Implement Ridge and Lasso regression on the Diabetes dataset. Compare the performance of these regularized models with standard linear regression.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-compare-the-performance-of-ridge-regression-with-standard-linear-regression",
-            "title": "Compare the performance of Ridge regression with standard linear regression",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-compare-the-performance-of-lasso-regression-with-standard-linear-regression",
-            "title": "Compare the performance of Lasso regression with standard linear regression",
+            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-load-and-preprocess-the-dataset",
-            "title": "Load and preprocess the dataset",
+            "title": "Load and preprocess the dataset.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-implement-ridge-regression",
-            "title": "Implement Ridge regression",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-implement-lasso-regression",
-            "title": "Implement Lasso regression",
+            "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-implement-ridge-and-lasso-regression",
+            "title": "Implement Ridge and Lasso regression.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-tune-hyperparameters-using-cross-validation",
-            "title": "Tune hyperparameters using cross-validation",
+            "title": "Tune hyperparameters using cross-validation.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-03-module-3-implement-ridge-and-lasso-regression-on-the-diabetes-dataset-compare-th-compare-performance-metrics-mse-r-squared-with-standard-linear-regression",
-            "title": "Compare performance metrics (MSE, R-squared) with standard linear regression",
+            "title": "Compare performance metrics (MSE, R-squared) with standard linear regression.",
             "content": "",
             "pyqs": []
           }
@@ -1334,56 +1310,38 @@
         "title": "Module 4: Estimate the parameters of a logistic regression model using mle and ma",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-estimate-the-parameters-of-a-logistic-regression-model-using-mle-on-the-breast-cancer-wisconsin-dataset",
-            "title": "Estimate the parameters of a logistic regression model using MLE on the Breast Cancer Wisconsin dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-map-on-the-breast-cancer-wisconsin-dataset-compare-the-results-and-discuss-the-effects-of-regularization",
+            "title": "Estimate the parameters of a logistic regression model using MLE and MAP on the Breast Cancer Wisconsin dataset. Compare the results and discuss the effects of regularization.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-estimate-the-parameters-of-a-logistic-regression-model-using-map-on-the-breast-cancer-wisconsin-dataset",
-            "title": "Estimate the parameters of a logistic regression model using MAP on the Breast Cancer Wisconsin dataset",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-compare-the-results-of-mle-and-map",
-            "title": "Compare the results of MLE and MAP",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-discuss-the-effects-of-regularization",
-            "title": "Discuss the effects of regularization",
+            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-load-and-preprocess-the-dataset",
-            "title": "Load and preprocess the dataset",
+            "title": "Load and preprocess the dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-implement-logistic-regression-with-mle",
-            "title": "Implement logistic regression with MLE",
+            "title": "Implement logistic regression with MLE.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-apply-map-estimation-with-l1-regularization-lasso-prior",
-            "title": "Apply MAP estimation with L1 regularization (Lasso prior)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-apply-map-estimation-with-l2-regularization-ridge-prior",
-            "title": "Apply MAP estimation with L2 regularization (Ridge prior)",
+            "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-apply-map-estimation-with-different-regularization-priors-l1-and-l2-regularization",
+            "title": "Apply MAP estimation with different regularization priors (L1 and L2 regularization).",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-04-module-4-estimate-the-parameters-of-a-logistic-regression-model-using-mle-and-ma-compare-the-performance-and-parameter-estimates-with-mle-and-map",
-            "title": "Compare the performance and parameter estimates with MLE and MAP",
+            "title": "Compare the performance and parameter estimates with MLE and MAP.",
             "content": "",
             "pyqs": []
           }
@@ -1394,44 +1352,38 @@
         "title": "Module 5: Use mle and map to estimate the parameters of a multinomial distributio",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-use-mle-to-estimate-the-parameters-of-a-multinomial-distribution-on-the-20-newsgroups-dataset",
-            "title": "Use MLE to estimate the parameters of a multinomial distribution on the 20 Newsgroups dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distribution-on-the-20-newsgroups-dataset-explore-the-impact-of-different-priors-on-the-estimation",
+            "title": "Use MLE and MAP to estimate the parameters of a multinomial distribution on the 20 Newsgroups dataset. Explore the impact of different priors on the estimation.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-use-map-to-estimate-the-parameters-of-a-multinomial-distribution-on-the-20-newsgroups-dataset",
-            "title": "Use MAP to estimate the parameters of a multinomial distribution on the 20 Newsgroups dataset",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-explore-the-impact-of-different-priors-on-the-estimation",
-            "title": "Explore the impact of different priors on the estimation",
+            "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-load-and-preprocess-the-dataset",
-            "title": "Load and preprocess the dataset",
+            "title": "Load and preprocess the dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-implement-mle-for-multinomial-distribution-parameter-estimation",
-            "title": "Implement MLE for multinomial distribution parameter estimation",
+            "title": "Implement MLE for multinomial distribution parameter estimation.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-apply-map-estimation-with-dirichlet-priors",
-            "title": "Apply MAP estimation with Dirichlet priors",
+            "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-apply-map-estimation-with-various-priors-e-g-dirichlet-priors",
+            "title": "Apply MAP estimation with various priors (e.g., Dirichlet priors).",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-05-module-5-use-mle-and-map-to-estimate-the-parameters-of-a-multinomial-distributio-compare-results-and-evaluate-the-effect-of-different-priors",
-            "title": "Compare results and evaluate the effect of different priors",
+            "title": "Compare results and evaluate the effect of different priors.",
             "content": "",
             "pyqs": []
           }
@@ -1442,62 +1394,38 @@
         "title": "Module 6: Implement a logistic regression model to predict the likelihood of a di",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-disease-using-the-pima-indians-diabetes-dataset",
-            "title": "Implement a logistic regression model to predict the likelihood of a disease using the Pima Indians Diabetes dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-disease-using-the-pima-indians-diabetes-dataset-compare-the-performance-with-and-without-feature-scaling",
+            "title": "Implement a logistic regression model to predict the likelihood of a disease using the Pima Indians Diabetes dataset. Compare the performance with and without feature scaling.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-compare-the-performance-of-logistic-regression-with-and-without-feature-scaling",
-            "title": "Compare the performance of logistic regression with and without feature scaling",
+            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-load-and-preprocess-the-pima-indians-diabetes-dataset",
-            "title": "Load and preprocess the Pima Indians Diabetes dataset",
+            "title": "Load and preprocess the Pima Indians Diabetes dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-implement-logistic-regression-for-binary-classification",
-            "title": "Implement logistic regression for binary classification",
+            "title": "Implement logistic regression for binary classification.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-evaluate-model-performance-with-feature-scaling",
-            "title": "Evaluate model performance with feature scaling",
+            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-evaluate-model-performance-with-and-without-feature-scaling",
+            "title": "Evaluate model performance with and without feature scaling.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-evaluate-model-performance-without-feature-scaling",
-            "title": "Evaluate model performance without feature scaling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-analyze-accuracy-metric",
-            "title": "Analyze accuracy metric",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-analyze-precision-metric",
-            "title": "Analyze precision metric",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-analyze-recall-metric",
-            "title": "Analyze recall metric",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-analyze-f1-score-metric",
-            "title": "Analyze F1-score metric",
+            "id": "cs-5-pccsl508-machine-learning-lab-06-module-6-implement-a-logistic-regression-model-to-predict-the-likelihood-of-a-di-analyze-metrics-such-as-accuracy-precision-recall-and-f1-score",
+            "title": "Analyze metrics such as accuracy, precision, recall, and F1-score.",
             "content": "",
             "pyqs": []
           }
@@ -1508,56 +1436,38 @@
         "title": "Module 7: Implement a nave bayes classifier to categorize text documents into top",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-implement-a-na-ve-bayes-classifier-to-categorize-text-documents-into-topics-using-the-20-newsgroups-dataset",
-            "title": "Implement a Naïve Bayes classifier to categorize text documents into topics using the 20 Newsgroups dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-implement-a-na-ve-bayes-classifier-to-categorize-text-documents-into-topics-using-the-20-newsgroups-dataset-compare-the-performance-of-multinomial-na-ve-bayes-with-bernoulli-na-ve-bayes",
+            "title": "Implement a Naïve Bayes classifier to categorize text documents into topics using the 20 Newsgroups dataset. Compare the performance of Multinomial Naïve Bayes with Bernoulli Naïve Bayes.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-compare-the-performance-of-multinomial-na-ve-bayes-with-bernoulli-na-ve-bayes",
-            "title": "Compare the performance of Multinomial Naïve Bayes with Bernoulli Naïve Bayes",
+            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-load-and-preprocess-the-20-newsgroups-dataset",
-            "title": "Load and preprocess the 20 Newsgroups dataset",
+            "title": "Load and preprocess the 20 Newsgroups dataset.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-implement-multinomial-na-ve-bayes-classifier",
-            "title": "Implement Multinomial Naïve Bayes classifier",
+            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-implement-multinomial-na-ve-bayes-and-bernoulli-na-ve-bayes-classifiers",
+            "title": "Implement Multinomial Naïve Bayes and Bernoulli Naïve Bayes classifiers.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-implement-bernoulli-na-ve-bayes-classifier",
-            "title": "Implement Bernoulli Naïve Bayes classifier",
+            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-evaluate-and-compare-the-performance-of-both-models-using-metrics-such-as-accuracy-and-f1-score",
+            "title": "Evaluate and compare the performance of both models using metrics such as accuracy and F1-score.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-evaluate-and-compare-the-performance-of-both-models-using-accuracy",
-            "title": "Evaluate and compare the performance of both models using accuracy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-evaluate-and-compare-the-performance-of-both-models-using-f1-score",
-            "title": "Evaluate and compare the performance of both models using F1-score",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-discuss-the-strengths-and-weaknesses-of-multinomial-na-ve-bayes-for-text-classification",
-            "title": "Discuss the strengths and weaknesses of Multinomial Naïve Bayes for text classification",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-discuss-the-strengths-and-weaknesses-of-bernoulli-na-ve-bayes-for-text-classification",
-            "title": "Discuss the strengths and weaknesses of Bernoulli Naïve Bayes for text classification",
+            "id": "cs-5-pccsl508-machine-learning-lab-07-module-7-implement-a-nave-bayes-classifier-to-categorize-text-documents-into-top-discuss-the-strengths-and-weaknesses-of-each-na-ve-bayes-variant-for-text-classification",
+            "title": "Discuss the strengths and weaknesses of each Naïve Bayes variant for text classification.",
             "content": "",
             "pyqs": []
           }
@@ -1568,50 +1478,38 @@
         "title": "Module 8: Implement the k",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-implement-the-k-nearest-neighbors-knn-algorithm-for-image-classification-using-the-fashion-mnist-dataset",
-            "title": "Implement the K-Nearest Neighbors (KNN) algorithm for image classification using the Fashion MNIST dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-implement-the-k-nearest-neighbors-knn-algorithm-for-image-classification-using-the-fashion-mnist-dataset-experiment-with-different-values-of-k-and-analyze-their-impact-on-model-performance",
+            "title": "Implement the K-Nearest Neighbors (KNN) algorithm for image classification using the Fashion MNIST dataset. Experiment with different values of K and analyze their impact on model performance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-experiment-with-different-values-of-k",
-            "title": "Experiment with different values of K",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-analyze-the-impact-of-different-k-values-on-model-performance",
-            "title": "Analyze the impact of different K values on model performance",
+            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-load-and-preprocess-the-fashion-mnist-dataset",
-            "title": "Load and preprocess the Fashion MNIST dataset",
+            "title": "Load and preprocess the Fashion MNIST dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-implement-knn-for-multi-class-classification",
-            "title": "Implement KNN for multi-class classification",
+            "title": "Implement KNN for multi-class classification.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-experiment-with-different-values-of-k-and-evaluate-performance",
-            "title": "Experiment with different values of K and evaluate performance",
+            "title": "Experiment with different values of K and evaluate performance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-discuss-the-impact-of-different-k-values-on-model-accuracy",
-            "title": "Discuss the impact of different K values on model accuracy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-discuss-the-impact-of-different-k-values-on-computational-efficiency",
-            "title": "Discuss the impact of different K values on computational efficiency",
+            "id": "cs-5-pccsl508-machine-learning-lab-08-module-8-implement-the-k-discuss-the-impact-of-different-k-values-on-model-accuracy-and-computational-efficiency",
+            "title": "Discuss the impact of different K values on model accuracy and computational efficiency.",
             "content": "",
             "pyqs": []
           }
@@ -1622,50 +1520,38 @@
         "title": "Module 9: Implement a decision tree classifier using the id3 algorithm to segment",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-customers-based-on-their-purchasing-behavior-using-the-online-retail-dataset",
-            "title": "Implement a Decision Tree classifier using the ID3 algorithm to segment customers based on their purchasing behavior using the Online Retail dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-customers-based-on-their-purchasing-behavior-using-the-online-retail-dataset-analyze-the-tree-structure-and-discuss-the-feature-importance",
+            "title": "Implement a Decision Tree classifier using the ID3 algorithm to segment customers based on their purchasing behavior using the Online Retail dataset. Analyze the tree structure and discuss the feature importance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-analyze-the-tree-structure",
-            "title": "Analyze the tree structure",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-discuss-the-feature-importance",
-            "title": "Discuss the feature importance",
+            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-load-and-preprocess-the-online-retail-dataset",
-            "title": "Load and preprocess the Online Retail dataset",
+            "title": "Load and preprocess the Online Retail dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-implement-decision-tree-using-the-id3-algorithm",
-            "title": "Implement Decision Tree using the ID3 algorithm",
+            "title": "Implement Decision Tree using the ID3 algorithm.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-visualize-the-decision-tree",
-            "title": "Visualize the decision tree",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-analyze-feature-importance",
-            "title": "Analyze feature importance",
+            "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-visualize-the-decision-tree-and-analyze-feature-importance",
+            "title": "Visualize the decision tree and analyze feature importance.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-09-module-9-implement-a-decision-tree-classifier-using-the-id3-algorithm-to-segment-discuss-how-the-tree-structure-helps-in-understanding-customer-behavior",
-            "title": "Discuss how the tree structure helps in understanding customer behavior",
+            "title": "Discuss how the tree structure helps in understanding customer behavior.",
             "content": "",
             "pyqs": []
           }
@@ -1676,74 +1562,38 @@
         "title": "Module 10: Implement and compare logistic regression and decision trees on the ad",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-implement-and-compare-logistic-regression-and-decision-trees-on-the-adult-income-dataset-for-predicting-income-levels",
-            "title": "Implement and compare Logistic Regression and Decision Trees on the Adult Income dataset for predicting income levels",
+            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-implement-and-compare-logistic-regression-and-decision-trees-on-the-adult-income-dataset-for-predicting-income-levels-evaluate-both-models-based-on-performance-metrics-and-interpretability",
+            "title": "Implement and compare Logistic Regression and Decision Trees on the Adult Income dataset for predicting income levels. Evaluate both models based on performance metrics and interpretability.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-evaluate-both-models-based-on-performance-metrics",
-            "title": "Evaluate both models based on performance metrics",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-evaluate-both-models-based-on-interpretability",
-            "title": "Evaluate both models based on interpretability",
+            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-load-and-preprocess-the-adult-income-dataset",
-            "title": "Load and preprocess the Adult Income dataset",
+            "title": "Load and preprocess the Adult Income dataset.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-implement-logistic-regression",
-            "title": "Implement Logistic Regression",
+            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-implement-both-logistic-regression-and-decision-trees",
+            "title": "Implement both Logistic Regression and Decision Trees.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-implement-decision-trees",
-            "title": "Implement Decision Trees",
+            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-compare-the-models-based-on-metrics-such-as-accuracy-precision-recall-and-f1-score",
+            "title": "Compare the models based on metrics such as accuracy, precision, recall, and F1-score.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-compare-the-models-based-on-accuracy",
-            "title": "Compare the models based on accuracy",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-compare-the-models-based-on-precision",
-            "title": "Compare the models based on precision",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-compare-the-models-based-on-recall",
-            "title": "Compare the models based on recall",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-compare-the-models-based-on-f1-score",
-            "title": "Compare the models based on F1-score",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-discuss-the-interpretability-of-both-models",
-            "title": "Discuss the interpretability of both models",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-discuss-the-suitability-of-both-models-for-the-dataset",
-            "title": "Discuss the suitability of both models for the dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-10-module-10-implement-and-compare-logistic-regression-and-decision-trees-on-the-ad-discuss-the-interpretability-of-both-models-and-their-suitability-for-the-dataset",
+            "title": "Discuss the interpretability of both models and their suitability for the dataset.",
             "content": "",
             "pyqs": []
           }
@@ -1754,50 +1604,38 @@
         "title": "Module 11: Implement a linear support vector machine svm to classify the iris dat",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dataset",
-            "title": "Implement a Linear Support Vector Machine (SVM) to classify the Iris dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dataset-visualize-the-decision-boundary-and-discuss-how-the-margin-is-determined",
+            "title": "Implement a Linear Support Vector Machine (SVM) to classify the Iris dataset. Visualize the decision boundary and discuss how the margin is determined.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-visualize-the-decision-boundary",
-            "title": "Visualize the decision boundary",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-discuss-how-the-margin-is-determined",
-            "title": "Discuss how the margin is determined",
+            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-load-and-preprocess-the-iris-dataset",
-            "title": "Load and preprocess the Iris dataset",
+            "title": "Load and preprocess the Iris dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-implement-a-linear-svm-for-binary-classification-e-g-classify-setosa-vs-non-setosa",
-            "title": "Implement a Linear SVM for binary classification (e.g., classify Setosa vs. Non-Setosa)",
+            "title": "Implement a Linear SVM for binary classification (e.g., classify Setosa vs. Non-Setosa).",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-visualize-the-decision-boundary-and-margin",
-            "title": "Visualize the decision boundary and margin",
+            "title": "Visualize the decision boundary and margin.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-discuss-the-concept-of-the-margin",
-            "title": "Discuss the concept of the margin",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-discuss-how-the-margin-influences-classification",
-            "title": "Discuss how the margin influences classification",
+            "id": "cs-5-pccsl508-machine-learning-lab-11-module-11-implement-a-linear-support-vector-machine-svm-to-classify-the-iris-dat-discuss-the-concept-of-the-margin-and-how-it-influences-classification",
+            "title": "Discuss the concept of the margin and how it influences classification.",
             "content": "",
             "pyqs": []
           }
@@ -1808,62 +1646,38 @@
         "title": "Module 12: Implement and compare the performance of svm classifiers with linear p",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-implement-and-compare-the-performance-of-svm-classifiers-with-linear-polynomial-and-rbf-kernels-on-the-fashion-mnist-dataset",
-            "title": "Implement and compare the performance of SVM classifiers with linear, polynomial, and RBF kernels on the Fashion MNIST dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-implement-and-compare-the-performance-of-svm-classifiers-with-linear-polynomial-and-rbf-kernels-on-the-fashion-mnist-dataset-analyze-the-advantages-and-disadvantages-of-each-kernel-type",
+            "title": "Implement and compare the performance of SVM classifiers with linear, polynomial, and RBF kernels on the Fashion MNIST dataset. Analyze the advantages and disadvantages of each kernel type.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-analyze-the-advantages-and-disadvantages-of-each-kernel-type",
-            "title": "Analyze the advantages and disadvantages of each kernel type",
+            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-load-and-preprocess-the-fashion-mnist-dataset",
-            "title": "Load and preprocess the Fashion MNIST dataset",
+            "title": "Load and preprocess the Fashion MNIST dataset.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-implement-svm-with-linear-kernel",
-            "title": "Implement SVM with linear kernel",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-implement-svm-with-polynomial-kernel",
-            "title": "Implement SVM with polynomial kernel",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-implement-svm-with-rbf-kernel",
-            "title": "Implement SVM with RBF kernel",
+            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-implement-svm-with-linear-polynomial-and-rbf-kernels",
+            "title": "Implement SVM with linear, polynomial, and RBF kernels.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-compare-the-classification-performance-for-each-kernel",
-            "title": "Compare the classification performance for each kernel",
+            "title": "Compare the classification performance for each kernel.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-discuss-the-strengths-and-weaknesses-of-the-linear-kernel",
-            "title": "Discuss the strengths and weaknesses of the linear kernel",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-discuss-the-strengths-and-weaknesses-of-the-polynomial-kernel",
-            "title": "Discuss the strengths and weaknesses of the polynomial kernel",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-discuss-the-strengths-and-weaknesses-of-the-rbf-kernel",
-            "title": "Discuss the strengths and weaknesses of the RBF kernel",
+            "id": "cs-5-pccsl508-machine-learning-lab-12-module-12-implement-and-compare-the-performance-of-svm-classifiers-with-linear-p-discuss-the-strengths-and-weaknesses-of-each-kernel-type",
+            "title": "Discuss the strengths and weaknesses of each kernel type.",
             "content": "",
             "pyqs": []
           }
@@ -1874,50 +1688,38 @@
         "title": "Module 13: Implement and train a multilayer feed",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-implement-and-train-a-multilayer-feed-forward-network-mlp-on-the-wine-quality-dataset",
-            "title": "Implement and train a Multilayer Feed-Forward Network (MLP) on the Wine Quality dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-implement-and-train-a-multilayer-feed-forward-network-mlp-on-the-wine-quality-dataset-experiment-with-different-numbers-of-hidden-layers-and-neurons-and-discuss-how-these-choices-affect-the-network-s-performance",
+            "title": "Implement and train a Multilayer Feed-Forward Network (MLP) on the Wine Quality dataset. Experiment with different numbers of hidden layers and neurons, and discuss how these choices affect the network's performance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-experiment-with-different-numbers-of-hidden-layers-and-neurons",
-            "title": "Experiment with different numbers of hidden layers and neurons",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-discuss-how-architecture-choices-affect-the-network-s-performance",
-            "title": "Discuss how architecture choices affect the network's performance",
+            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-load-and-preprocess-the-wine-quality-dataset",
-            "title": "Load and preprocess the Wine Quality dataset",
+            "title": "Load and preprocess the Wine Quality dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-design-and-implement-an-mlp-with-varying-architectures-different-hidden-layers-and-neurons",
-            "title": "Design and implement an MLP with varying architectures (different hidden layers and neurons)",
+            "title": "Design and implement an MLP with varying architectures (different hidden layers and neurons).",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-train-the-network",
-            "title": "Train the network",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-evaluate-the-network",
-            "title": "Evaluate the network",
+            "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-train-and-evaluate-the-network",
+            "title": "Train and evaluate the network.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-13-module-13-implement-and-train-a-multilayer-feed-discuss-the-impact-of-architecture-choices-on-performance",
-            "title": "Discuss the impact of architecture choices on performance",
+            "title": "Discuss the impact of architecture choices on performance.",
             "content": "",
             "pyqs": []
           }
@@ -1928,74 +1730,38 @@
         "title": "Module 14: Implement and compare the performance of a neural network using differ",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-implement-and-compare-the-performance-of-a-neural-network-using-different-activation-functions-sigmoid-relu-tanh-on-the-mnist-dataset",
-            "title": "Implement and compare the performance of a neural network using different activation functions (Sigmoid, ReLU, Tanh) on the MNIST dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-implement-and-compare-the-performance-of-a-neural-network-using-different-activation-functions-sigmoid-relu-tanh-on-the-mnist-dataset-analyze-how-each-activation-function-affects-the-training-process-and-classification-accuracy",
+            "title": "Implement and compare the performance of a neural network using different activation functions (Sigmoid, ReLU, Tanh) on the MNIST dataset. Analyze how each activation function affects the training process and classification accuracy.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-analyze-how-each-activation-function-affects-the-training-process",
-            "title": "Analyze how each activation function affects the training process",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-analyze-how-each-activation-function-affects-classification-accuracy",
-            "title": "Analyze how each activation function affects classification accuracy",
+            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-load-and-preprocess-the-mnist-dataset",
-            "title": "Load and preprocess the MNIST dataset",
+            "title": "Load and preprocess the MNIST dataset.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-implement-neural-network-using-sigmoid-activation-function",
-            "title": "Implement neural network using Sigmoid activation function",
+            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-implement-neural-networks-using-sigmoid-relu-and-tanh-activation-functions",
+            "title": "Implement neural networks using Sigmoid, ReLU, and Tanh activation functions.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-implement-neural-network-using-relu-activation-function",
-            "title": "Implement neural network using ReLU activation function",
+            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-train-and-evaluate-each-network",
+            "title": "Train and evaluate each network.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-implement-neural-network-using-tanh-activation-function",
-            "title": "Implement neural network using Tanh activation function",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-train-each-network",
-            "title": "Train each network",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-evaluate-each-network",
-            "title": "Evaluate each network",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-compare-training-times-of-different-activation-functions",
-            "title": "Compare training times of different activation functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-compare-convergence-of-different-activation-functions",
-            "title": "Compare convergence of different activation functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-compare-classification-accuracy-of-different-activation-functions",
-            "title": "Compare classification accuracy of different activation functions",
+            "id": "cs-5-pccsl508-machine-learning-lab-14-module-14-implement-and-compare-the-performance-of-a-neural-network-using-differ-compare-training-times-convergence-and-classification-accuracy",
+            "title": "Compare training times, convergence, and classification accuracy.",
             "content": "",
             "pyqs": []
           }
@@ -2006,74 +1772,38 @@
         "title": "Module 15: Implement and perform hyperparameter tuning for a neural network on th",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-the-fashion-mnist-dataset",
-            "title": "Implement and perform hyperparameter tuning for a neural network on the Fashion MNIST dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-the-fashion-mnist-dataset-experiment-with-different-learning-rates-batch-sizes-and-epochs-and-discuss-the-impact-on-model-performance",
+            "title": "Implement and perform hyperparameter tuning for a neural network on the Fashion MNIST dataset. Experiment with different learning rates, batch sizes, and epochs, and discuss the impact on model performance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-experiment-with-different-learning-rates",
-            "title": "Experiment with different learning rates",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-experiment-with-different-batch-sizes",
-            "title": "Experiment with different batch sizes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-experiment-with-different-epochs",
-            "title": "Experiment with different epochs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-discuss-the-impact-of-hyperparameter-choices-on-model-performance",
-            "title": "Discuss the impact of hyperparameter choices on model performance",
+            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-load-and-preprocess-the-fashion-mnist-dataset",
-            "title": "Load and preprocess the Fashion MNIST dataset",
+            "title": "Load and preprocess the Fashion MNIST dataset.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-experiment-with-different-learning-rates",
-            "title": "Experiment with different learning rates",
+            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-experiment-with-different-hyperparameters-learning-rate-batch-size-epochs",
+            "title": "Experiment with different hyperparameters (learning rate, batch size, epochs).",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-experiment-with-different-batch-sizes",
-            "title": "Experiment with different batch sizes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-experiment-with-different-epochs",
-            "title": "Experiment with different epochs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-train-the-network",
-            "title": "Train the network",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-evaluate-the-network",
-            "title": "Evaluate the network",
+            "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-train-and-evaluate-the-network",
+            "title": "Train and evaluate the network.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-15-module-15-implement-and-perform-hyperparameter-tuning-for-a-neural-network-on-th-discuss-how-hyperparameter-choices-affect-model-performance",
-            "title": "Discuss how hyperparameter choices affect model performance",
+            "title": "Discuss how hyperparameter choices affect model performance.",
             "content": "",
             "pyqs": []
           }
@@ -2084,74 +1814,38 @@
         "title": "Module 16: Implement and compare hierarchical agglomerative and partitional k",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-implement-hierarchical-agglomerative-clustering-on-the-mall-customers-dataset",
-            "title": "Implement hierarchical (agglomerative) clustering on the Mall Customers dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-implement-and-compare-hierarchical-agglomerative-and-partitional-k-means-clustering-algorithms-on-the-mall-customers-dataset-discuss-the-strengths-and-weaknesses-of-each-method-based-on-clustering-results-and-evaluation-metrics",
+            "title": "Implement and compare hierarchical (agglomerative) and partitional (K-means) clustering algorithms on the Mall Customers dataset. Discuss the strengths and weaknesses of each method based on clustering results and evaluation metrics.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-implement-partitional-k-means-clustering-on-the-mall-customers-dataset",
-            "title": "Implement partitional (K-means) clustering on the Mall Customers dataset",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-discuss-the-strengths-and-weaknesses-of-hierarchical-clustering",
-            "title": "Discuss the strengths and weaknesses of hierarchical clustering",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-discuss-the-strengths-and-weaknesses-of-k-means-clustering",
-            "title": "Discuss the strengths and weaknesses of K-means clustering",
+            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-load-and-preprocess-the-mall-customers-dataset",
-            "title": "Load and preprocess the Mall Customers dataset",
+            "title": "Load and preprocess the Mall Customers dataset.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-apply-hierarchical-agglomerative-clustering",
-            "title": "Apply hierarchical (agglomerative) clustering",
+            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-apply-both-hierarchical-agglomerative-and-k-means-clustering",
+            "title": "Apply both hierarchical (agglomerative) and K-means clustering.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-apply-k-means-clustering",
-            "title": "Apply K-means clustering",
+            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-compare-results-using-metrics-such-as-inertia-silhouette-score-and-clustering-visualization",
+            "title": "Compare results using metrics such as inertia, silhouette score, and clustering visualization.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-compare-results-using-inertia",
-            "title": "Compare results using inertia",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-compare-results-using-silhouette-score",
-            "title": "Compare results using silhouette score",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-compare-results-using-clustering-visualization",
-            "title": "Compare results using clustering visualization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-discuss-the-advantages-and-disadvantages-of-hierarchical-clustering",
-            "title": "Discuss the advantages and disadvantages of hierarchical clustering",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-discuss-the-advantages-and-disadvantages-of-k-means-clustering",
-            "title": "Discuss the advantages and disadvantages of K-means clustering",
+            "id": "cs-5-pccsl508-machine-learning-lab-16-module-16-implement-and-compare-hierarchical-agglomerative-and-partitional-k-discuss-the-advantages-and-disadvantages-of-each-clustering-method",
+            "title": "Discuss the advantages and disadvantages of each clustering method.",
             "content": "",
             "pyqs": []
           }
@@ -2162,56 +1856,38 @@
         "title": "Module 17: Implement and apply k",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-implement-and-apply-k-means-clustering-to-the-digits-dataset",
-            "title": "Implement and apply K-means clustering to the Digits dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-implement-and-apply-k-means-clustering-to-the-digits-dataset-experiment-with-different-numbers-of-clusters-and-evaluate-the-clustering-results-using-metrics-such-as-inertia-and-silhouette-score-analyze-how-the-choice-of-k-affects-clustering-performance",
+            "title": "Implement and apply K-means clustering to the Digits dataset. Experiment with different numbers of clusters and evaluate the clustering results using metrics such as inertia and silhouette score. Analyze how the choice of K affects clustering performance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-experiment-with-different-numbers-of-clusters",
-            "title": "Experiment with different numbers of clusters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-evaluate-the-clustering-results-using-inertia-and-silhouette-score",
-            "title": "Evaluate the clustering results using inertia and silhouette score",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-analyze-how-the-choice-of-k-affects-clustering-performance",
-            "title": "Analyze how the choice of K affects clustering performance",
+            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-load-and-preprocess-the-digits-dataset",
-            "title": "Load and preprocess the Digits dataset",
+            "title": "Load and preprocess the Digits dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-implement-k-means-clustering-with-various-numbers-of-clusters",
-            "title": "Implement K-means clustering with various numbers of clusters",
+            "title": "Implement K-means clustering with various numbers of clusters.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-evaluate-clustering-performance-using-inertia",
-            "title": "Evaluate clustering performance using inertia",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-evaluate-clustering-performance-using-silhouette-score",
-            "title": "Evaluate clustering performance using silhouette score",
+            "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-evaluate-clustering-performance-using-inertia-and-silhouette-score",
+            "title": "Evaluate clustering performance using inertia and silhouette score.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-17-module-17-implement-and-apply-k-analyze-the-impact-of-the-number-of-clusters-on-clustering-quality",
-            "title": "Analyze the impact of the number of clusters on clustering quality",
+            "title": "Analyze the impact of the number of clusters on clustering quality.",
             "content": "",
             "pyqs": []
           }
@@ -2222,68 +1898,38 @@
         "title": "Module 18: Implement bootstrapping and cross",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-implement-bootstrapping-on-the-iris-dataset",
-            "title": "Implement bootstrapping on the Iris dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-implement-bootstrapping-and-cross-validation-on-the-iris-dataset-compare-the-model-performance-metrics-e-g-accuracy-f1-score-obtained-using-these-resampling-methods-discuss-the-advantages-and-disadvantages-of-each-method",
+            "title": "Implement bootstrapping and cross-validation on the Iris dataset. Compare the model performance metrics (e.g., accuracy, F1-score) obtained using these resampling methods. Discuss the advantages and disadvantages of each method.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-implement-cross-validation-on-the-iris-dataset",
-            "title": "Implement cross-validation on the Iris dataset",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-compare-the-model-performance-metrics-e-g-accuracy-f1-score-obtained-using-bootstrapping-and-cross-validation",
-            "title": "Compare the model performance metrics (e.g., accuracy, F1-score) obtained using bootstrapping and cross-validation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-discuss-the-advantages-and-disadvantages-of-bootstrapping",
-            "title": "Discuss the advantages and disadvantages of bootstrapping",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-discuss-the-advantages-and-disadvantages-of-cross-validation",
-            "title": "Discuss the advantages and disadvantages of cross-validation",
+            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-load-and-preprocess-the-iris-dataset",
-            "title": "Load and preprocess the Iris dataset",
+            "title": "Load and preprocess the Iris dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-implement-bootstrapping-to-generate-multiple-samples-and-evaluate-the-model",
-            "title": "Implement bootstrapping to generate multiple samples and evaluate the model",
+            "title": "Implement bootstrapping to generate multiple samples and evaluate the model.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-implement-k-fold-cross-validation-and-evaluate-the-model",
-            "title": "Implement k-fold cross-validation and evaluate the model",
+            "title": "Implement k-fold cross-validation and evaluate the model.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-compare-the-performance-metrics-of-bootstrapping-and-cross-validation",
-            "title": "Compare the performance metrics of bootstrapping and cross-validation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-discuss-the-pros-and-cons-of-bootstrapping",
-            "title": "Discuss the pros and cons of bootstrapping",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-discuss-the-pros-and-cons-of-cross-validation",
-            "title": "Discuss the pros and cons of cross-validation",
+            "id": "cs-5-pccsl508-machine-learning-lab-18-module-18-implement-bootstrapping-and-cross-compare-the-performance-metrics-and-discuss-the-pros-and-cons-of-each-resampling-method",
+            "title": "Compare the performance metrics and discuss the pros and cons of each resampling method.",
             "content": "",
             "pyqs": []
           }
@@ -2294,80 +1940,38 @@
         "title": "Module 19: Implement bagging and boosting ensemble methods on the titanic dataset",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-implement-bagging-ensemble-method-on-the-titanic-dataset",
-            "title": "Implement bagging ensemble method on the Titanic dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-compare-the-performance-of-both-methods-in-terms-of-accuracy-precision-recall-and-f1-score-discuss-how-each-method-improves-model-performance-and-their-respective-strengths-and-weaknesses",
+            "title": "Implement bagging and boosting ensemble methods on the Titanic dataset. Compare the performance of both methods in terms of accuracy, precision, recall, and F1-score. Discuss how each method improves model performance and their respective strengths and weaknesses.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-implement-boosting-ensemble-method-on-the-titanic-dataset",
-            "title": "Implement boosting ensemble method on the Titanic dataset",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-compare-the-performance-of-bagging-and-boosting-in-terms-of-accuracy-precision-recall-and-f1-score",
-            "title": "Compare the performance of bagging and boosting in terms of accuracy, precision, recall, and F1-score",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-discuss-how-bagging-improves-model-performance",
-            "title": "Discuss how bagging improves model performance",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-discuss-how-boosting-improves-model-performance",
-            "title": "Discuss how boosting improves model performance",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-discuss-the-strengths-and-weaknesses-of-bagging",
-            "title": "Discuss the strengths and weaknesses of bagging",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-discuss-the-strengths-and-weaknesses-of-boosting",
-            "title": "Discuss the strengths and weaknesses of boosting",
+            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-load-and-preprocess-the-titanic-dataset",
-            "title": "Load and preprocess the Titanic dataset",
+            "title": "Load and preprocess the Titanic dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-implement-bagging-using-a-base-classifier-e-g-decision-tree-and-evaluate-performance",
-            "title": "Implement bagging using a base classifier (e.g., decision tree) and evaluate performance",
+            "title": "Implement bagging using a base classifier (e.g., decision tree) and evaluate performance.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-implement-boosting-using-a-boosting-algorithm-e-g-adaboost-and-evaluate-performance",
-            "title": "Implement boosting using a boosting algorithm (e.g., AdaBoost) and evaluate performance",
+            "title": "Implement boosting using a boosting algorithm (e.g., AdaBoost) and evaluate performance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-compare-performance-metrics-of-bagging-and-boosting",
-            "title": "Compare performance metrics of bagging and boosting",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-discuss-the-strengths-and-weaknesses-of-bagging",
-            "title": "Discuss the strengths and weaknesses of bagging",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-discuss-the-strengths-and-weaknesses-of-boosting",
-            "title": "Discuss the strengths and weaknesses of boosting",
+            "id": "cs-5-pccsl508-machine-learning-lab-19-module-19-implement-bagging-and-boosting-ensemble-methods-on-the-titanic-dataset-compare-performance-metrics-and-discuss-the-strengths-and-weaknesses-of-each-method",
+            "title": "Compare performance metrics and discuss the strengths and weaknesses of each method.",
             "content": "",
             "pyqs": []
           }
@@ -2378,32 +1982,26 @@
         "title": "Module 20: Investigate the bias",
         "topics": [
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-20-module-20-investigate-the-bias-investigate-the-bias-variance-tradeoff-using-polynomial-regression-on-the-boston-housing-dataset",
-            "title": "Investigate the bias-variance tradeoff using polynomial regression on the Boston Housing dataset",
+            "id": "cs-5-pccsl508-machine-learning-lab-20-module-20-investigate-the-bias-investigate-the-bias-variance-tradeoff-using-polynomial-regression-on-the-boston-housing-dataset-plot-the-training-and-validation-errors-for-various-polynomial-degrees-and-discuss-the-tradeoff-between-bias-and-variance",
+            "title": "Investigate the bias-variance tradeoff using polynomial regression on the Boston Housing dataset. Plot the training and validation errors for various polynomial degrees and discuss the tradeoff between bias and variance.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-5-pccsl508-machine-learning-lab-20-module-20-investigate-the-bias-plot-the-training-and-validation-errors-for-various-polynomial-degrees",
-            "title": "Plot the training and validation errors for various polynomial degrees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-5-pccsl508-machine-learning-lab-20-module-20-investigate-the-bias-discuss-the-tradeoff-between-bias-and-variance",
-            "title": "Discuss the tradeoff between bias and variance",
+            "id": "cs-5-pccsl508-machine-learning-lab-20-module-20-investigate-the-bias-tasks",
+            "title": "Tasks:",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-20-module-20-investigate-the-bias-load-and-preprocess-the-boston-housing-dataset",
-            "title": "Load and preprocess the Boston Housing dataset",
+            "title": "Load and preprocess the Boston Housing dataset.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-5-pccsl508-machine-learning-lab-20-module-20-investigate-the-bias-implement-polynomial-regression-with-varying-degrees",
-            "title": "Implement polynomial regression with varying degrees",
+            "title": "Implement polynomial regression with varying degrees.",
             "content": "",
             "pyqs": []
           }

@@ -12,43 +12,67 @@
         "topics": [
           {
             "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-two-hinged-arches-analysis-of-two-hinged-arches",
-            "title": "Two hinged Arches: Analysis of two hinged arches",
+            "title": "Two hinged Arches - Analysis of two hinged arches",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-support-reactions",
-            "title": "Support reactions",
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-support-reactions-normal-thrust-and-radial-shear-at-any-section-of-a-parabolic-arch",
+            "title": "Support reactions, normal thrust and radial shear at any section of a parabolic arch",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-normal-thrust-and-radial-shear-at-any-section-of-a-parabolic-arch",
-            "title": "Normal thrust and radial shear at any section of a parabolic arch",
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-simple-cases-of-loading-on-parabolic-arches",
+            "title": "Simple cases of loading on parabolic arches",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-simple-cases-of-loading",
-            "title": "Simple cases of loading",
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-influence-line-for-horizontal-thrust",
+            "title": "Influence line for horizontal thrust",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-influence-line-for-horizontal-thrust-bending-moment-normal-thrust-and-radial-shear",
-            "title": "Influence line for horizontal thrust, bending moment, normal thrust, and radial shear",
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-influence-line-for-bending-moment",
+            "title": "Influence line for bending moment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-matrix-analysis-of-structures-reviewing-the-definition-of-flexibility-and-stiffness-influence-coefficients",
-            "title": "Matrix Analysis of Structures: Reviewing the definition of flexibility and stiffness influence coefficients",
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-influence-line-for-normal-thrust",
+            "title": "Influence line for normal thrust",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-matrix-analysis-of-structures-concepts-of-physical-approach",
-            "title": "Matrix Analysis of Structures: Concepts of physical approach",
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-influence-line-for-radial-shear",
+            "title": "Influence line for radial shear",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-matrix-analysis-of-structures",
+            "title": "Matrix Analysis of Structures",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-flexibility-influence-coefficients",
+            "title": "Flexibility influence coefficients",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-stiffness-influence-coefficients",
+            "title": "Stiffness influence coefficients",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet521-advanced-structural-analysis-01-module-1-two-hinged-arches-analysis-of-two-hinged-arches-concepts-of-physical-approach",
+            "title": "Concepts of physical approach",
             "content": "",
             "pyqs": []
           }
@@ -59,8 +83,8 @@
         "title": "Module 2: Direct stiffness method introduction to direct stiffness method",
         "topics": [
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-02-module-2-direct-stiffness-method-introduction-to-direct-stiffness-method-direct-stiffness-method-introduction-to-direct-stiffness-method",
-            "title": "Direct stiffness method: Introduction to direct stiffness method",
+            "id": "ce-5-pecet521-advanced-structural-analysis-02-module-2-direct-stiffness-method-introduction-to-direct-stiffness-method-direct-stiffness-method-introduction",
+            "title": "Direct stiffness method - Introduction",
             "content": "",
             "pyqs": []
           },
@@ -102,7 +126,7 @@
         "topics": [
           {
             "id": "ce-5-pecet521-advanced-structural-analysis-03-module-3-structural-dynamics-introduction-structural-dynamics-introduction",
-            "title": "Structural dynamics: Introduction",
+            "title": "Structural dynamics - Introduction",
             "content": "",
             "pyqs": []
           },
@@ -131,8 +155,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-03-module-3-structural-dynamics-introduction-free-response-of-damped-and-undamped-systems",
-            "title": "Free response of damped and undamped systems",
+            "id": "ce-5-pecet521-advanced-structural-analysis-03-module-3-structural-dynamics-introduction-free-response-of-damped-systems",
+            "title": "Free response of damped systems",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet521-advanced-structural-analysis-03-module-3-structural-dynamics-introduction-free-response-of-undamped-systems",
+            "title": "Free response of undamped systems",
             "content": "",
             "pyqs": []
           },
@@ -167,26 +197,38 @@
         "title": "Module 4: Finite element methods boundary value problems introduction to approxim",
         "topics": [
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-finite-element-methods-boundary-value-problems",
-            "title": "Finite Element Methods: Boundary value problems",
+            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-finite-element-methods",
+            "title": "Finite Element Methods",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-finite-element-methods-introduction-to-approximate-numerical-solutions-for-solving-differential-equations",
-            "title": "Finite Element Methods: Introduction to approximate numerical solutions for solving differential equations",
+            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-boundary-value-problems",
+            "title": "Boundary value problems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-formulation-techniques-element-equations-using-weighted-residual-approach",
-            "title": "Formulation techniques: Element equations using weighted residual approach",
+            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-introduction-to-approximate-numerical-solutions-for-solving-differential-equations",
+            "title": "Introduction to approximate numerical solutions for solving differential equations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-formulation-techniques-the-axial-element-example",
-            "title": "Formulation techniques: The axial element example",
+            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-formulation-techniques",
+            "title": "Formulation techniques",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-element-equations-using-weighted-residual-approach",
+            "title": "Element equations using weighted residual approach",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet521-advanced-structural-analysis-04-module-4-finite-element-methods-boundary-value-problems-introduction-to-approxim-the-axial-element-example",
+            "title": "The axial element example",
             "content": "",
             "pyqs": []
           }
@@ -266,14 +308,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-01-module-1-introduction-cloud",
-            "title": "Cloud",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-01-module-1-introduction-types-of-clouds",
-            "title": "Types of clouds",
+            "id": "ce-5-pecet526-applied-hydrology-and-climatology-01-module-1-introduction-cloud-types",
+            "title": "Cloud types",
             "content": "",
             "pyqs": []
           },
@@ -332,14 +368,8 @@
         "title": "Module 2: Causes and effects of climate change",
         "topics": [
           {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-causes-of-climate-change",
-            "title": "Causes of climate change",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-effects-of-climate-change",
-            "title": "Effects of climate change",
+            "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-causes-and-effects-of-climate-change",
+            "title": "Causes and effects of climate change",
             "content": "",
             "pyqs": []
           },
@@ -350,8 +380,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-typical-framework-of-hydrologic-impact-modeling",
-            "title": "Typical framework of hydrologic impact modeling",
+            "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-typical-framework",
+            "title": "Typical framework",
             "content": "",
             "pyqs": []
           },
@@ -369,13 +399,13 @@
           },
           {
             "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-downscaling-concept",
-            "title": "Downscaling - concept",
+            "title": "Downscaling concept",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-downscaling-types",
-            "title": "Downscaling - types",
+            "id": "ce-5-pecet526-applied-hydrology-and-climatology-02-module-2-causes-and-effects-of-climate-change-types-of-downscaling",
+            "title": "Types of downscaling",
             "content": "",
             "pyqs": []
           },
@@ -416,14 +446,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-03-module-3-statistical-methods-in-hydro-principal-component-analysis",
-            "title": "Principal component analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-03-module-3-statistical-methods-in-hydro-use-of-principal-component-analysis-in-climate-change-studies",
-            "title": "Use of principal component analysis in climate change studies",
+            "id": "ce-5-pecet526-applied-hydrology-and-climatology-03-module-3-statistical-methods-in-hydro-principal-component-analysis-and-its-use-in-climate-change-studies",
+            "title": "Principal component analysis and its use in climate change studies",
             "content": "",
             "pyqs": []
           },
@@ -482,8 +506,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-04-module-4-design-flood-and-their-estimation-different-methods-of-design-flood-estimation",
-            "title": "Different methods of design flood estimation",
+            "id": "ce-5-pecet526-applied-hydrology-and-climatology-04-module-4-design-flood-and-their-estimation-different-methods",
+            "title": "Different methods",
             "content": "",
             "pyqs": []
           },
@@ -519,7 +543,7 @@
           },
           {
             "id": "ce-5-pecet526-applied-hydrology-and-climatology-04-module-4-design-flood-and-their-estimation-flood-routing-through-reservoirs-concept-only",
-            "title": "Flood routing through reservoirs - concept only",
+            "title": "Flood routing through reservoirs (concept only)",
             "content": "",
             "pyqs": []
           },
@@ -548,14 +572,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-04-module-4-design-flood-and-their-estimation-flood-forecasting-brief-descriptions-only",
-            "title": "Flood forecasting (Brief descriptions only)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet526-applied-hydrology-and-climatology-04-module-4-design-flood-and-their-estimation-flood-warning-brief-descriptions-only",
-            "title": "Flood warning (Brief descriptions only)",
+            "id": "ce-5-pecet526-applied-hydrology-and-climatology-04-module-4-design-flood-and-their-estimation-flood-forecasting-and-warning-brief-descriptions-only",
+            "title": "Flood forecasting and warning (Brief descriptions only)",
             "content": "",
             "pyqs": []
           }
@@ -635,14 +653,8 @@
         "title": "Module 4: Test on coarse and fine aggregate sieve analysis",
         "topics": [
           {
-            "id": "ce-5-pccel508-concrete-lab-mt-2-04-module-4-test-on-coarse-and-fine-aggregate-sieve-analysis-test-on-coarse-aggregate-sieve-analysis",
-            "title": "Test on Coarse Aggregate: Sieve analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pccel508-concrete-lab-mt-2-04-module-4-test-on-coarse-and-fine-aggregate-sieve-analysis-test-on-fine-aggregate-sieve-analysis",
-            "title": "Test on Fine Aggregate: Sieve analysis",
+            "id": "ce-5-pccel508-concrete-lab-mt-2-04-module-4-test-on-coarse-and-fine-aggregate-sieve-analysis-test-on-coarse-and-fine-aggregate-sieve-analysis",
+            "title": "Test on Coarse and Fine Aggregate: Sieve analysis",
             "content": "",
             "pyqs": []
           }
@@ -962,38 +974,38 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-pre-stress-due-to-elastic-shortening",
-            "title": "Loss of Pre stress due to Elastic shortening",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-prestress-due-to-elastic-shortening",
+            "title": "Loss of Prestress due to Elastic shortening",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-pre-stress-due-to-friction",
-            "title": "Loss of Pre stress due to Friction",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-prestress-due-to-friction",
+            "title": "Loss of Prestress due to Friction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-pre-stress-due-to-anchorage-slip",
-            "title": "Loss of Pre stress due to Anchorage slip",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-prestress-due-to-anchorage-slip",
+            "title": "Loss of Prestress due to Anchorage slip",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-pre-stress-due-to-creep-of-concrete",
-            "title": "Loss of Pre stress due to Creep of concrete",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-prestress-due-to-creep-of-concrete",
+            "title": "Loss of Prestress due to Creep of concrete",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-pre-stress-due-to-shrinkage-of-concrete",
-            "title": "Loss of Pre stress due to Shrinkage of concrete",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-prestress-due-to-shrinkage-of-concrete",
+            "title": "Loss of Prestress due to Shrinkage of concrete",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-pre-stress-due-to-relaxation-of-steel",
-            "title": "Loss of Pre stress due to Relaxation of steel",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-01-module-1-introduction-and-analysis-of-members-concept-of-prestressing-loss-of-prestress-due-to-relaxation-of-steel",
+            "title": "Loss of Prestress due to Relaxation of steel",
             "content": "",
             "pyqs": []
           },
@@ -1022,8 +1034,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-02-module-2-design-of-sections-for-flexure-analysis-of-members-at-ultimate-strength-preliminary-design",
-            "title": "Preliminary Design",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-02-module-2-design-of-sections-for-flexure-analysis-of-members-at-ultimate-strength-preliminary-design-for-type-1-members",
+            "title": "Preliminary Design for Type 1 members",
             "content": "",
             "pyqs": []
           },
@@ -1082,8 +1094,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-03-module-3-design-of-sections-for-flexure-analysis-of-members-at-ultimate-strength-preliminary-design",
-            "title": "Preliminary Design",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-03-module-3-design-of-sections-for-flexure-analysis-of-members-at-ultimate-strength-preliminary-design-for-type-1-members",
+            "title": "Preliminary Design for Type 1 members",
             "content": "",
             "pyqs": []
           },
@@ -1136,8 +1148,8 @@
         "title": "Module 4: Different anchorage system and design of end block by latest is codes",
         "topics": [
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes-different-anchorage-system",
-            "title": "Different anchorage system",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes-different-anchorage-systems",
+            "title": "Different anchorage systems",
             "content": "",
             "pyqs": []
           },
@@ -1148,8 +1160,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes-conceptual-design-and-detailing-of-prestressed-deck",
-            "title": "Conceptual design and detailing of Prestressed deck",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes-conceptual-design-of-prestressed-deck",
+            "title": "Conceptual design of Prestressed deck",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes-detailing-of-prestressed-deck",
+            "title": "Detailing of Prestressed deck",
             "content": "",
             "pyqs": []
           },
@@ -1166,8 +1184,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet525-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes-analysis",
-            "title": "Analysis",
+            "id": "ce-5-pecet525-design-of-prestressed-concrete-04-module-4-different-anchorage-system-and-design-of-end-block-by-latest-is-codes-analysis-of-composite-sections",
+            "title": "Analysis of composite sections",
             "content": "",
             "pyqs": []
           }
@@ -1188,7 +1206,7 @@
         "topics": [
           {
             "id": "ce-5-pecet524-disaster-management-01-module-1-hazards-and-disasters-introduction-to-key-concepts-and-terminology-haza-hazards-and-disasters-introduction-to-key-concepts-and-terminology",
-            "title": "Hazards and Disasters: Introduction to key concepts and terminology",
+            "title": "Hazards and disasters: Introduction to key concepts and terminology",
             "content": "",
             "pyqs": []
           },
@@ -1307,8 +1325,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-01-module-1-hazards-and-disasters-introduction-to-key-concepts-and-terminology-haza-mitigation-methods-for-coastal-disasters",
-            "title": "Mitigation methods for coastal disasters",
+            "id": "ce-5-pecet524-disaster-management-01-module-1-hazards-and-disasters-introduction-to-key-concepts-and-terminology-haza-mitigation-methods",
+            "title": "Mitigation methods",
             "content": "",
             "pyqs": []
           }
@@ -1337,14 +1355,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-02-module-2-landslides-causes-and-prediction-soil",
-            "title": "Soil",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet524-disaster-management-02-module-2-landslides-causes-and-prediction-soil-degradation",
-            "title": "Soil degradation",
+            "id": "ce-5-pecet524-disaster-management-02-module-2-landslides-causes-and-prediction-soil-and-soil-degradation",
+            "title": "Soil and soil degradation",
             "content": "",
             "pyqs": []
           },
@@ -1368,7 +1380,7 @@
           },
           {
             "id": "ce-5-pecet524-disaster-management-02-module-2-landslides-causes-and-prediction-mitigation-methods-for-soil-degradation-erosion-desertification-and-forest-fires",
-            "title": "Mitigation methods for soil degradation, erosion, desertification, and forest fires",
+            "title": "Mitigation methods for soil degradation, erosion, desertification and forest fires",
             "content": "",
             "pyqs": []
           }
@@ -1385,14 +1397,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-risk-management",
-            "title": "Risk Management",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-risk-assessment",
-            "title": "Risk Assessment",
+            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-risk-management-and-assessment",
+            "title": "Risk Management and Assessment",
             "content": "",
             "pyqs": []
           },
@@ -1403,32 +1409,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-swot-analysis",
-            "title": "SWOT Analysis",
+            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-swot-analysis-basic-concepts",
+            "title": "SWOT Analysis - basic concepts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-basic-concepts-of-swot-analysis",
-            "title": "Basic concepts of SWOT Analysis",
+            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-swot-analysis-uses",
+            "title": "SWOT Analysis - uses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-uses-of-swot-analysis",
-            "title": "Uses of SWOT Analysis",
+            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-swot-analysis-limitations",
+            "title": "SWOT Analysis - limitations",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-limitations-of-swot-analysis",
-            "title": "Limitations of SWOT Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-advantages-of-swot-analysis",
-            "title": "Advantages of SWOT Analysis",
+            "id": "ce-5-pecet524-disaster-management-03-module-3-impacts-and-assessment-risk-management-and-assessment-and-disaster-mana-swot-analysis-advantages",
+            "title": "SWOT Analysis - advantages",
             "content": "",
             "pyqs": []
           },
@@ -1457,32 +1457,8 @@
         "title": "Module 4: Hazard and disaster management plans for floods storm surges landslides",
         "topics": [
           {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-hazard-and-disaster-management-plans-for-floods",
-            "title": "Hazard and disaster management plans for floods",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-hazard-and-disaster-management-plans-for-storm-surges",
-            "title": "Hazard and disaster management plans for storm surges",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-hazard-and-disaster-management-plans-for-landslides",
-            "title": "Hazard and disaster management plans for landslides",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-hazard-and-disaster-management-plans-for-earthquakes",
-            "title": "Hazard and disaster management plans for earthquakes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-hazard-and-disaster-management-plans-for-forest-fires",
-            "title": "Hazard and disaster management plans for forest fires",
+            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-earthquakes-forest-fires",
+            "title": "Hazard and disaster management plans for floods, storm surges, landslides, earthquakes, forest fires",
             "content": "",
             "pyqs": []
           },
@@ -1517,14 +1493,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-organization-in-relief-camps",
-            "title": "Organization in relief camps",
+            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-organization",
+            "title": "Organization",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-individual-and-community-participation-in-relief-camps",
-            "title": "Individual and community participation in relief camps",
+            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-individual-and-community-participation",
+            "title": "Individual and community participation",
             "content": "",
             "pyqs": []
           },
@@ -1553,8 +1529,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-security-in-relief-camps",
-            "title": "Security in relief camps",
+            "id": "ce-5-pecet524-disaster-management-04-module-4-hazard-and-disaster-management-plans-for-floods-storm-surges-landslides-security",
+            "title": "Security",
             "content": "",
             "pyqs": []
           },
@@ -1622,14 +1598,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-01-module-1-introduction-to-environmental-engineering-separate-sewerage-system",
-            "title": "Separate sewerage system",
+            "id": "ce-5-pccet503-environmental-engineering-01-module-1-introduction-to-environmental-engineering-separate-system",
+            "title": "Separate system",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-01-module-1-introduction-to-environmental-engineering-combined-sewerage-system",
-            "title": "Combined sewerage system",
+            "id": "ce-5-pccet503-environmental-engineering-01-module-1-introduction-to-environmental-engineering-combined-system",
+            "title": "Combined system",
             "content": "",
             "pyqs": []
           },
@@ -1766,8 +1742,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-02-module-2-filtration-of-water-advantages-and-limitations-of-disinfection",
-            "title": "Advantages and limitations of disinfection",
+            "id": "ce-5-pccet503-environmental-engineering-02-module-2-filtration-of-water-advantages-and-limitations-of-disinfection-methods",
+            "title": "Advantages and limitations of disinfection methods",
             "content": "",
             "pyqs": []
           },
@@ -1778,8 +1754,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-02-module-2-filtration-of-water-types-of-water-distribution-networks",
-            "title": "Types of water distribution networks",
+            "id": "ce-5-pccet503-environmental-engineering-02-module-2-filtration-of-water-types-of-water-distribution-network",
+            "title": "Types of water distribution network",
             "content": "",
             "pyqs": []
           },
@@ -1797,7 +1773,7 @@
           },
           {
             "id": "ce-5-pccet503-environmental-engineering-02-module-2-filtration-of-water-hardy-cross-method",
-            "title": "Hardy Cross method",
+            "title": "Hardy cross method",
             "content": "",
             "pyqs": []
           },
@@ -1946,14 +1922,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-oxidation-ponds-and-lagoons-concepts-only",
-            "title": "Oxidation Ponds and Lagoons (Concepts only)",
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-oxidation-ponds",
+            "title": "Oxidation Ponds",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-wetlands-and-rootzone-systems-concepts-only",
-            "title": "Wetlands and Rootzone systems (Concepts only)",
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-lagoons",
+            "title": "Lagoons",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-wetlands-concepts-only",
+            "title": "Wetlands (Concepts only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-rootzone-systems-concepts-only",
+            "title": "Rootzone systems (Concepts only)",
             "content": "",
             "pyqs": []
           },
@@ -1982,32 +1970,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-thickening",
-            "title": "Thickening",
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-sludge-thickening",
+            "title": "Sludge thickening",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-digestion",
-            "title": "Digestion",
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-sludge-digestion",
+            "title": "Sludge digestion",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-dewatering",
-            "title": "Dewatering",
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-sludge-dewatering",
+            "title": "Sludge dewatering",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-drying",
-            "title": "Drying",
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-sludge-drying",
+            "title": "Sludge drying",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-composting",
-            "title": "Composting",
+            "id": "ce-5-pccet503-environmental-engineering-04-module-4-up-flow-anaerobic-sludge-blanket-uasb-reactor-concept-only-sludge-composting",
+            "title": "Sludge composting",
             "content": "",
             "pyqs": []
           }
@@ -2045,8 +2033,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-passive-earth-pressures",
-            "title": "Passive earth pressures",
+            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-passive-earth-pressure",
+            "title": "Passive earth pressure",
             "content": "",
             "pyqs": []
           },
@@ -2057,14 +2045,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-earth-pressure-and-point-of-application-for-cohesionless-soils",
-            "title": "Earth pressure and point of application for cohesionless soils",
+            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-earth-pressure-for-cohesionless-soils",
+            "title": "Earth pressure for cohesionless soils",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-earth-pressure-and-point-of-application-for-cohesive-soils",
-            "title": "Earth pressure and point of application for cohesive soils",
+            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-earth-pressure-for-cohesive-soils",
+            "title": "Earth pressure for cohesive soils",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-point-of-application-of-earth-pressure-for-cohesionless-and-cohesive-soils",
+            "title": "Point of application of earth pressure for cohesionless and cohesive soils",
             "content": "",
             "pyqs": []
           },
@@ -2081,8 +2075,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-numerical-problems-on-earth-pressure",
-            "title": "Numerical problems on earth pressure",
+            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-numerical-problems-on-influence-of-surcharge-and-water-table-on-earth-pressure",
+            "title": "Numerical problems on influence of surcharge and water table on earth pressure",
             "content": "",
             "pyqs": []
           },
@@ -2093,8 +2087,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-numerical-problems-on-layered-backfill",
-            "title": "Numerical problems on layered backfill",
+            "id": "ce-5-pbcet504-foundation-engineering-01-module-1-earth-pressure-numerical-problems-on-earth-pressure-with-layered-backfill",
+            "title": "Numerical problems on earth pressure with layered backfill",
             "content": "",
             "pyqs": []
           },
@@ -2159,8 +2153,8 @@
         "title": "Module 2: General considerations functions of foundations",
         "topics": [
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-general-considerations",
-            "title": "General Considerations",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-general-considerations-in-foundations",
+            "title": "General considerations in foundations",
             "content": "",
             "pyqs": []
           },
@@ -2189,8 +2183,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-objectives-of-site-investigation",
-            "title": "Objectives of site investigation",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-objectives-of-site-investigation-and-soil-exploration",
+            "title": "Objectives of site investigation and soil exploration",
             "content": "",
             "pyqs": []
           },
@@ -2213,14 +2207,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-standard-penetration-test-procedure",
-            "title": "Standard Penetration Test - Procedure",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-standard-penetration-test",
+            "title": "Standard Penetration Test",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-standard-penetration-test-correlations",
-            "title": "Standard Penetration Test - Correlations",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-procedure-of-standard-penetration-test",
+            "title": "Procedure of Standard Penetration Test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-correlations-of-standard-penetration-test",
+            "title": "Correlations of Standard Penetration Test",
             "content": "",
             "pyqs": []
           },
@@ -2231,8 +2231,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-numerical-problems-on-spt",
-            "title": "Numerical Problems on SPT",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-numerical-problems-on-standard-penetration-test",
+            "title": "Numerical problems on Standard Penetration Test",
             "content": "",
             "pyqs": []
           },
@@ -2249,20 +2249,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-plate-load-test-procedure",
-            "title": "Plate load test - Procedure",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-plate-load-test",
+            "title": "Plate load test",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-plate-load-test-uses-and-limitations",
-            "title": "Plate load test - Uses and limitations",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-procedure-of-plate-load-test",
+            "title": "Procedure of plate load test",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-plate-load-test-field-test",
-            "title": "Plate load test - Field test",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-uses-of-plate-load-test",
+            "title": "Uses of plate load test",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-limitations-of-plate-load-test",
+            "title": "Limitations of plate load test",
             "content": "",
             "pyqs": []
           },
@@ -2291,8 +2297,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-situations-in-which-each-failure-mechanism-can-be-expected",
-            "title": "Situations in which each failure mechanism can be expected",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-situations-in-which-each-type-of-shear-failure-can-be-expected",
+            "title": "Situations in which each type of shear failure can be expected",
             "content": "",
             "pyqs": []
           },
@@ -2303,8 +2309,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-assumptions-of-terzaghi-s-theory",
-            "title": "Assumptions of Terzaghi's theory",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-assumptions-of-terzaghi-s-bearing-capacity-theory",
+            "title": "Assumptions of Terzaghi's bearing capacity theory",
             "content": "",
             "pyqs": []
           },
@@ -2345,8 +2351,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-numerical-problems-on-terzaghi-s-bearing-capacity-for-strip-footing",
-            "title": "Numerical problems on Terzaghi's bearing capacity for strip footing",
+            "id": "ce-5-pbcet504-foundation-engineering-02-module-2-general-considerations-functions-of-foundations-numerical-problems-on-terzaghi-s-bearing-capacity-theory",
+            "title": "Numerical problems on Terzaghi's bearing capacity theory",
             "content": "",
             "pyqs": []
           },
@@ -2394,7 +2400,7 @@
         "topics": [
           {
             "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-settlement-analysis-introduction",
-            "title": "Settlement analysis: Introduction",
+            "title": "Settlement analysis - Introduction",
             "content": "",
             "pyqs": []
           },
@@ -2411,14 +2417,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-numerical-problems-on-immediate-settlement",
-            "title": "Numerical problems on immediate settlement",
+            "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-numerical-problems-on-settlement-analysis",
+            "title": "Numerical problems on settlement analysis",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-design-of-isolated-footing",
-            "title": "Design of Isolated Footing",
+            "title": "Design of isolated footing",
             "content": "",
             "pyqs": []
           },
@@ -2447,14 +2453,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-raft-foundations-types",
-            "title": "Raft foundations: Types",
+            "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-raft-foundations",
+            "title": "Raft foundations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-types-of-raft-foundations",
+            "title": "Types of raft foundations",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ce-5-pbcet504-foundation-engineering-03-module-3-settlement-analysis-introduction-design-principles-of-raft-foundation",
-            "title": "Design Principles of raft foundation",
+            "title": "Design principles of raft foundation",
             "content": "",
             "pyqs": []
           },
@@ -2483,8 +2495,14 @@
         "title": "Module 4: Pile foundations uses and classification of piles",
         "topics": [
           {
-            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-pile-foundations-uses",
-            "title": "Pile foundations: Uses",
+            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-pile-foundations",
+            "title": "Pile foundations",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-uses-of-piles",
+            "title": "Uses of piles",
             "content": "",
             "pyqs": []
           },
@@ -2495,8 +2513,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-selection-of-type-and-length-of-piles",
-            "title": "Selection of type and length of piles",
+            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-selection-of-type-of-piles",
+            "title": "Selection of type of piles",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-selection-of-length-of-piles",
+            "title": "Selection of length of piles",
             "content": "",
             "pyqs": []
           },
@@ -2525,8 +2549,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-numerical-problems-on-modified-hiley-formulae",
-            "title": "Numerical Problems on Modified Hiley formulae",
+            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-numerical-problems-on-dynamic-formulae",
+            "title": "Numerical problems on dynamic formulae",
             "content": "",
             "pyqs": []
           },
@@ -2543,8 +2567,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-group-action",
-            "title": "Group action",
+            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-group-action-of-piles",
+            "title": "Group action of piles",
             "content": "",
             "pyqs": []
           },
@@ -2556,13 +2580,13 @@
           },
           {
             "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-capacity-of-pile-groups",
-            "title": "Capacity of Pile groups",
+            "title": "Capacity of pile groups",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-numerical-problems-on-pile-groups",
-            "title": "Numerical problems on pile groups",
+            "id": "ce-5-pbcet504-foundation-engineering-04-module-4-pile-foundations-uses-and-classification-of-piles-numerical-problems-on-capacity-of-pile-groups",
+            "title": "Numerical problems on capacity of pile groups",
             "content": "",
             "pyqs": []
           }
@@ -2801,8 +2825,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-precipitation-mechanism-types-forms-and-measurement-using-rain-gauges",
-            "title": "Precipitation - mechanism, types, forms and measurement using rain gauges",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-precipitation-mechanism",
+            "title": "Precipitation - mechanism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-precipitation-types",
+            "title": "Precipitation - types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-precipitation-forms",
+            "title": "Precipitation - forms",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-precipitation-measurement-using-rain-gauges",
+            "title": "Precipitation - measurement using rain gauges",
             "content": "",
             "pyqs": []
           },
@@ -2813,8 +2855,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-representation-of-rainfall-data-mass-curve-and-hyetograph",
-            "title": "Representation of rainfall data - mass curve and hyetograph",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-representation-of-rainfall-data-mass-curve",
+            "title": "Representation of rainfall data - mass curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-representation-of-rainfall-data-hyetograph",
+            "title": "Representation of rainfall data - hyetograph",
             "content": "",
             "pyqs": []
           },
@@ -2825,8 +2873,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-design-rainfall-probable-maximum-rainfall",
-            "title": "Design rainfall - probable maximum rainfall",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-design-rainfall",
+            "title": "Design rainfall",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-probable-maximum-rainfall",
+            "title": "Probable maximum rainfall",
             "content": "",
             "pyqs": []
           },
@@ -2855,8 +2909,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-evaporation-measurement-and-control",
-            "title": "Evaporation - measurement and control",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-evaporation-measurement",
+            "title": "Evaporation - measurement",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-01-module-1-hydrologic-cycle-evaporation-control",
+            "title": "Evaporation - control",
             "content": "",
             "pyqs": []
           }
@@ -2873,8 +2933,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-hydrograph-analysis-hydrograph-from-isolated-storm",
-            "title": "Hydrograph analysis - hydrograph from isolated storm",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-hydrograph-analysis",
+            "title": "Hydrograph analysis",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-hydrograph-from-isolated-storm",
+            "title": "Hydrograph from isolated storm",
             "content": "",
             "pyqs": []
           },
@@ -2885,8 +2951,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-unit-hydrograph-uses-assumptions-and-limitations-of-unit-hydrograph-theory",
-            "title": "Unit hydrograph - uses, assumptions and limitations of unit hydrograph theory",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-unit-hydrograph-uses",
+            "title": "Unit hydrograph - uses",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-unit-hydrograph-assumptions-and-limitations-of-unit-hydrograph-theory",
+            "title": "Unit hydrograph - assumptions and limitations of unit hydrograph theory",
             "content": "",
             "pyqs": []
           },
@@ -2897,8 +2969,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-development-of-s-hydrograph",
-            "title": "Development of S-Hydrograph",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-computation-of-storm-flood-hydrograph-of-different-duration-by-development-of-s-hydrograph",
+            "title": "Computation of storm/flood hydrograph of different duration by development of S-Hydrograph",
             "content": "",
             "pyqs": []
           },
@@ -2909,8 +2981,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-spf-and-pmf-conceptual-ideas-only",
-            "title": "SPF and PMF (conceptual ideas only)",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-spf-standard-project-flood",
+            "title": "SPF (Standard Project Flood)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-02-module-2-runoff-pmf-probable-maximum-flood",
+            "title": "PMF (Probable Maximum Flood)",
             "content": "",
             "pyqs": []
           },
@@ -2951,14 +3029,44 @@
         "title": "Module 3: Irrigation necessity benefits and ill effects",
         "topics": [
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-irrigation-necessity-benefits-and-ill-effects",
-            "title": "Irrigation - Necessity, Benefits and ill effects",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-irrigation-necessity",
+            "title": "Irrigation - Necessity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-types-of-irrigation-flow-and-lift-irrigation-perennial-and-inundation-irrigation",
-            "title": "Types of irrigation: flow and lift irrigation - perennial and inundation irrigation",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-irrigation-benefits",
+            "title": "Irrigation - Benefits",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-irrigation-ill-effects",
+            "title": "Irrigation - Ill effects",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-types-of-irrigation-flow-irrigation",
+            "title": "Types of irrigation - flow irrigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-types-of-irrigation-lift-irrigation",
+            "title": "Types of irrigation - lift irrigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-types-of-irrigation-perennial-irrigation",
+            "title": "Types of irrigation - perennial irrigation",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-types-of-irrigation-inundation-irrigation",
+            "title": "Types of irrigation - inundation irrigation",
             "content": "",
             "pyqs": []
           },
@@ -2975,14 +3083,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-computation-of-crop-water-requirement",
-            "title": "Computation of crop water requirement",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-computation-of-crop-water-requirement-depth-of-irrigation",
+            "title": "Computation of crop water requirement - depth of irrigation",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-depth-and-frequency-of-irrigation",
-            "title": "Depth and frequency of Irrigation",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-computation-of-crop-water-requirement-frequency-of-irrigation",
+            "title": "Computation of crop water requirement - frequency of irrigation",
             "content": "",
             "pyqs": []
           },
@@ -2993,26 +3101,44 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-duty-factors-affecting-and-method-of-improving-duty",
-            "title": "Duty - factors affecting and method of improving duty",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-duty-factors-affecting-duty",
+            "title": "Duty - factors affecting duty",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-computation-of-crop-water-requirement-by-using-the-concept-of-duty-and-delta",
-            "title": "Computation of crop water requirement by using the concept of duty and delta",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-duty-methods-of-improving-duty",
+            "title": "Duty - methods of improving duty",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-irrigation-structures",
-            "title": "Irrigation structures",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-computation-of-crop-water-requirement-using-the-concept-of-duty-and-delta",
+            "title": "Computation of crop water requirement using the concept of duty and delta",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-storage-structures-reservoirs-types-zones-yield-of-reservoir",
-            "title": "Storage structures - Reservoirs - types, zones, yield of reservoir",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-irrigation-structures-storage-structures-reservoirs",
+            "title": "Irrigation structures - storage structures - Reservoirs",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-reservoirs-types",
+            "title": "Reservoirs - types",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-reservoirs-zones",
+            "title": "Reservoirs - zones",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-03-module-3-irrigation-necessity-benefits-and-ill-effects-reservoirs-yield-of-reservoir",
+            "title": "Reservoirs - yield of reservoir",
             "content": "",
             "pyqs": []
           },
@@ -3083,14 +3209,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-well-hydraulics",
-            "title": "Well hydraulics",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-well-hydraulics-steady-radial-flow-into-a-fully-penetrating-well-in-confined-aquifers",
+            "title": "Well hydraulics - Steady radial flow into a fully penetrating well in Confined aquifers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-steady-radial-flow-into-a-fully-penetrating-well-in-confined-and-unconfined-aquifers",
-            "title": "Steady radial flow into a fully penetrating well in Confined and Unconfined aquifers",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-well-hydraulics-steady-radial-flow-into-a-fully-penetrating-well-in-unconfined-aquifers",
+            "title": "Well hydraulics - Steady radial flow into a fully penetrating well in Unconfined aquifers",
             "content": "",
             "pyqs": []
           },
@@ -3113,26 +3239,44 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-yield-of-open-wells",
-            "title": "Yield of open wells",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-yield-of-open-wells-pumping-test",
+            "title": "Yield of open wells - pumping test",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-pumping-test-and-recuperation-test",
-            "title": "Pumping test and recuperation test",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-yield-of-open-wells-recuperation-test",
+            "title": "Yield of open wells - recuperation test",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-pollution-of-ground-water-sources-distribution-and-evaluation-of-ground-water-pollution-brief-description-only",
-            "title": "Pollution of ground water - sources, distribution and evaluation of ground water pollution (Brief description only)",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-pollution-of-ground-water-sources",
+            "title": "Pollution of ground water - sources",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-artificial-recharge-of-ground-water-different-techniques",
-            "title": "Artificial recharge of ground water - different techniques",
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-pollution-of-ground-water-distribution",
+            "title": "Pollution of ground water - distribution",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-pollution-of-ground-water-evaluation-of-ground-water-pollution-brief-description-only",
+            "title": "Pollution of ground water - evaluation of ground water pollution (Brief description only)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-artificial-recharge-of-ground-water",
+            "title": "Artificial recharge of ground water",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet501-hydrology-and-water-resources-engineering-04-module-4-vertical-distribution-of-ground-water-different-techniques-of-artificial-recharge-of-ground-water",
+            "title": "Different techniques of artificial recharge of ground water",
             "content": "",
             "pyqs": []
           }
@@ -3200,50 +3344,50 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-smart-and-intelligent-materials",
-            "title": "Smart and Intelligent Materials",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-smart-and-intelligent-materials-types",
+            "title": "Smart and Intelligent Materials - Types",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-types-of-smart-and-intelligent-materials-neoprene",
-            "title": "Types of Smart and Intelligent Materials - Neoprene",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-smart-and-intelligent-materials-neoprene",
+            "title": "Smart and Intelligent Materials - Neoprene",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-types-of-smart-and-intelligent-materials-bridge-pads",
-            "title": "Types of Smart and Intelligent Materials - Bridge pads",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-smart-and-intelligent-materials-bridge-pads",
+            "title": "Smart and Intelligent Materials - Bridge pads",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-types-of-smart-and-intelligent-materials-thermocol",
-            "title": "Types of Smart and Intelligent Materials - Thermocol",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-smart-and-intelligent-materials-thermocol",
+            "title": "Smart and Intelligent Materials - Thermocol",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-of-smart-materials-shape-memory-alloys-smas",
-            "title": "Special features of Smart Materials - Shape Memory Alloys (SMAs)",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-shape-memory-alloys-smas",
+            "title": "Special features - Shape Memory Alloys (SMAs)",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-of-smart-materials-magneto-strictive-materials",
-            "title": "Special features of Smart Materials - Magneto strictive materials",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-magnetostrictive-materials",
+            "title": "Special features - Magnetostrictive materials",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-of-smart-materials-piezoelectric-materials",
-            "title": "Special features of Smart Materials - Piezoelectric materials",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-piezoelectric-materials",
+            "title": "Special features - Piezoelectric materials",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-of-smart-materials-electrochromic-materials",
-            "title": "Special features of Smart Materials - Electrochromic materials",
+            "id": "ce-5-pecet522-modern-construction-technology-01-module-1-sustainable-construction-materials-wood-bamboo-straw-bales-earthen-mate-special-features-electrochromic-materials",
+            "title": "Special features - Electrochromic materials",
             "content": "",
             "pyqs": []
           },
@@ -3320,80 +3464,86 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-excavating-and-earth-moving-equipment-dozer",
-            "title": "Excavating and earth moving equipment - Dozer",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-excavating-and-earth-moving-equipment",
+            "title": "Equipment for Earth Work - Excavating and earth moving equipment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-excavating-and-earth-moving-equipment-excavators",
-            "title": "Excavating and earth moving equipment - Excavators",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-dozer",
+            "title": "Equipment for Earth Work - Dozer",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-excavating-and-earth-moving-equipment-rippers",
-            "title": "Excavating and earth moving equipment - Rippers",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-excavators",
+            "title": "Equipment for Earth Work - Excavators",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-excavating-and-earth-moving-equipment-loaders",
-            "title": "Excavating and earth moving equipment - Loaders",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-rippers",
+            "title": "Equipment for Earth Work - Rippers",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-trucks-and-hauling-equipment",
-            "title": "Trucks and hauling equipment",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-loaders",
+            "title": "Equipment for Earth Work - Loaders",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-compacting-equipment",
-            "title": "Compacting equipment",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-trucks-and-hauling-equipment",
+            "title": "Equipment for Earth Work - Trucks and hauling equipment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-finishing-equipment",
-            "title": "Finishing equipment",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-compacting-equipment",
+            "title": "Equipment for Earth Work - Compacting equipment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-erection-equipment",
-            "title": "Erection Equipment",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-equipment-for-earth-work-finishing-equipment",
+            "title": "Equipment for Earth Work - Finishing equipment",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-types-of-cranes-derrick-cranes",
-            "title": "Types of Cranes - Derrick Cranes",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-erection-equipment-cranes",
+            "title": "Erection Equipment - Cranes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-types-of-cranes-mobile-cranes",
-            "title": "Types of Cranes - Mobile cranes",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-erection-equipment-derrick-cranes",
+            "title": "Erection Equipment - Derrick Cranes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-types-of-cranes-overhead-cranes",
-            "title": "Types of Cranes - Overhead cranes",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-erection-equipment-mobile-cranes",
+            "title": "Erection Equipment - Mobile cranes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-types-of-cranes-traveller-cranes",
-            "title": "Types of Cranes - Traveller cranes",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-erection-equipment-overhead-cranes",
+            "title": "Erection Equipment - Overhead cranes",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-types-of-cranes-tower-cranes",
-            "title": "Types of Cranes - Tower cranes",
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-erection-equipment-traveller-cranes",
+            "title": "Erection Equipment - Traveller cranes",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet522-modern-construction-technology-02-module-2-equipment-for-earth-work-fundamentals-of-earth-work-operations-erection-equipment-tower-cranes",
+            "title": "Erection Equipment - Tower cranes",
             "content": "",
             "pyqs": []
           }
@@ -3542,8 +3692,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-04-module-4-cost-pre-engineered-buildings-vs-conventional-steel-buildings",
-            "title": "Pre-Engineered Buildings Vs Conventional Steel Buildings",
+            "id": "ce-5-pecet522-modern-construction-technology-04-module-4-cost-pre-engineered-buildings-pre-engineered-buildings-vs-conventional-steel-buildings",
+            "title": "Pre-Engineered Buildings - Pre-Engineered Buildings Vs Conventional Steel Buildings",
             "content": "",
             "pyqs": []
           },
@@ -3554,20 +3704,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-04-module-4-cost-basic-concept-of-prestressing",
-            "title": "Basic concept of prestressing",
+            "id": "ce-5-pecet522-modern-construction-technology-04-module-4-cost-basic-concept-of-prestressing-fundamental-understanding-of-pre-tensioned-construction",
+            "title": "Basic concept of prestressing - Fundamental understanding of pre-tensioned construction",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet522-modern-construction-technology-04-module-4-cost-fundamental-understanding-of-pre-tensioned-construction",
-            "title": "Fundamental understanding of pre-tensioned construction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pecet522-modern-construction-technology-04-module-4-cost-fundamental-understanding-of-post-tensioned-construction",
-            "title": "Fundamental understanding of post-tensioned construction",
+            "id": "ce-5-pecet522-modern-construction-technology-04-module-4-cost-basic-concept-of-prestressing-fundamental-understanding-of-post-tensioned-construction",
+            "title": "Basic concept of prestressing - Fundamental understanding of post-tensioned construction",
             "content": "",
             "pyqs": []
           },
@@ -3743,8 +3887,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet523-open-channel-hydraulics-03-module-3-gradually-varied-flow-different-forms",
-            "title": "Different forms",
+            "id": "ce-5-pecet523-open-channel-hydraulics-03-module-3-gradually-varied-flow-different-forms-of-dynamic-equation-of-gradually-varied-flow",
+            "title": "Different forms of dynamic equation of gradually varied flow",
             "content": "",
             "pyqs": []
           },
@@ -3785,8 +3929,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet523-open-channel-hydraulics-03-module-3-gradually-varied-flow-sloping-and-exponential-channels",
-            "title": "Sloping and exponential channels",
+            "id": "ce-5-pecet523-open-channel-hydraulics-03-module-3-gradually-varied-flow-hydraulic-jump-in-sloping-and-exponential-channels",
+            "title": "Hydraulic jump in sloping and exponential channels",
             "content": "",
             "pyqs": []
           },
@@ -4169,8 +4313,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet527-town-planning-01-module-1-definition-of-town-planning-migration-trends-and-impacts-on-urban-and-rural-development",
-            "title": "Migration trends and impacts on urban and rural development",
+            "id": "ce-5-pecet527-town-planning-01-module-1-definition-of-town-planning-migration-trends",
+            "title": "Migration trends",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet527-town-planning-01-module-1-definition-of-town-planning-impacts-on-urban-development",
+            "title": "Impacts on urban development",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pecet527-town-planning-01-module-1-definition-of-town-planning-impacts-on-rural-development",
+            "title": "Impacts on rural development",
             "content": "",
             "pyqs": []
           },
@@ -4319,8 +4475,8 @@
         "title": "Module 3: Housing classification of residential buildings",
         "topics": [
           {
-            "id": "ce-5-pecet527-town-planning-03-module-3-housing-classification-of-residential-buildings-housing-classification-of-residential-buildings",
-            "title": "Housing: Classification of residential buildings",
+            "id": "ce-5-pecet527-town-planning-03-module-3-housing-classification-of-residential-buildings-classification-of-residential-buildings",
+            "title": "Classification of residential buildings",
             "content": "",
             "pyqs": []
           },
@@ -4349,8 +4505,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pecet527-town-planning-03-module-3-housing-classification-of-residential-buildings-characteristics-of-slums",
-            "title": "Characteristics of slums",
+            "id": "ce-5-pecet527-town-planning-03-module-3-housing-classification-of-residential-buildings-slums-characteristics",
+            "title": "Slums: Characteristics",
             "content": "",
             "pyqs": []
           },
@@ -4427,8 +4583,8 @@
         "title": "Module 4: Town planning legislations laws relating to land acquisition urban land",
         "topics": [
           {
-            "id": "ce-5-pecet527-town-planning-04-module-4-town-planning-legislations-laws-relating-to-land-acquisition-urban-land-town-planning-legislations-laws-relating-to-land-acquisition",
-            "title": "Town Planning Legislations: Laws relating to land acquisition",
+            "id": "ce-5-pecet527-town-planning-04-module-4-town-planning-legislations-laws-relating-to-land-acquisition-urban-land-laws-relating-to-land-acquisition",
+            "title": "Laws relating to land acquisition",
             "content": "",
             "pyqs": []
           },
@@ -4514,8 +4670,8 @@
         "title": "Module 1: Introduction classification of roads",
         "topics": [
           {
-            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-introduction",
-            "title": "Introduction",
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-introduction-to-transportation-engineering",
+            "title": "Introduction to transportation engineering",
             "content": "",
             "pyqs": []
           },
@@ -4532,20 +4688,38 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-typical-cross-sections-of-roads-in-urban-and-rural-area",
-            "title": "Typical cross sections of roads in urban and rural area",
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-typical-cross-sections-of-roads-in-urban-area",
+            "title": "Typical cross sections of roads in urban area",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-requirements-and-factors-controlling-alignment-of-roads",
-            "title": "Requirements and factors controlling alignment of roads",
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-typical-cross-sections-of-roads-in-rural-area",
+            "title": "Typical cross sections of roads in rural area",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-geometric-design-of-highways-design-controls-and-criteria",
-            "title": "Geometric design of highways - Design controls and criteria",
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-requirements-of-road-alignment",
+            "title": "Requirements of road alignment",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-factors-controlling-alignment-of-roads",
+            "title": "Factors controlling alignment of roads",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-geometric-design-of-highways",
+            "title": "Geometric design of highways",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-design-controls-and-criteria-for-highways",
+            "title": "Design controls and criteria for highways",
             "content": "",
             "pyqs": []
           },
@@ -4592,14 +4766,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-length-and-shift-of-transition-curve",
-            "title": "Length and shift of transition curve",
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-length-of-transition-curve",
+            "title": "Length of transition curve",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-worked-out-problems-on-horizontal-alignment-design",
-            "title": "Worked out problems on horizontal alignment design",
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-shift-of-transition-curve",
+            "title": "Shift of transition curve",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-01-module-1-introduction-classification-of-roads-worked-out-problems-on-horizontal-alignment",
+            "title": "Worked out problems on horizontal alignment",
             "content": "",
             "pyqs": []
           },
@@ -4640,26 +4820,44 @@
         "title": "Module 2: Highway materials desirable properties and testing of road aggregates b",
         "topics": [
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-highway-materials",
-            "title": "Highway materials",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-highway-materials-overview",
+            "title": "Highway materials - overview",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-desirable-properties-and-testing-of-road-aggregates",
-            "title": "Desirable properties and testing of road aggregates",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-desirable-properties-of-road-aggregates",
+            "title": "Desirable properties of road aggregates",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-desirable-properties-and-testing-of-bituminous-materials",
-            "title": "Desirable properties and testing of bituminous materials",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-testing-of-road-aggregates",
+            "title": "Testing of road aggregates",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-desirable-properties-and-testing-of-sub-grade-soil",
-            "title": "Desirable properties and testing of sub grade soil",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-desirable-properties-of-bituminous-materials",
+            "title": "Desirable properties of bituminous materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-testing-of-bituminous-materials",
+            "title": "Testing of bituminous materials",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-desirable-properties-of-sub-grade-soil",
+            "title": "Desirable properties of sub grade soil",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-testing-of-sub-grade-soil",
+            "title": "Testing of sub grade soil",
             "content": "",
             "pyqs": []
           },
@@ -4670,26 +4868,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-flexible-and-rigid-pavements",
-            "title": "Flexible and rigid pavements",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-flexible-pavements",
+            "title": "Flexible pavements",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-functions-of-individual-layers-of-pavements",
-            "title": "Functions of individual layers of pavements",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-rigid-pavements",
+            "title": "Rigid pavements",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-functions-of-individual-pavement-layers",
+            "title": "Functions of individual pavement layers",
             "content": "",
             "pyqs": []
           },
           {
             "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-factors-influencing-pavement-design",
             "title": "Factors influencing pavement design",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-flexible-pavements",
-            "title": "Flexible pavements",
             "content": "",
             "pyqs": []
           },
@@ -4712,12 +4910,6 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-rigid-pavements",
-            "title": "Rigid pavements",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-types-of-stresses-in-rigid-pavements",
             "title": "Types of stresses in rigid pavements",
             "content": "",
@@ -4736,20 +4928,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-critical-combination-of-stresses",
-            "title": "Critical combination of stresses",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-critical-combination-of-stresses-in-rigid-pavements",
+            "title": "Critical combination of stresses in rigid pavements",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-worked-out-problem-on-rigid-pavements",
-            "title": "Worked out problem on rigid pavements",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-worked-out-problems-on-rigid-pavement-stresses",
+            "title": "Worked out problems on rigid pavement stresses",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-functions-of-longitudinal-contraction-and-expansion-joints-design-not-expected",
-            "title": "Functions of longitudinal, contraction and expansion joints (Design not expected)",
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-functions-of-longitudinal-joints",
+            "title": "Functions of longitudinal joints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-functions-of-contraction-joints",
+            "title": "Functions of contraction joints",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-02-module-2-highway-materials-desirable-properties-and-testing-of-road-aggregates-b-functions-of-expansion-joints",
+            "title": "Functions of expansion joints",
             "content": "",
             "pyqs": []
           }
@@ -4760,8 +4964,8 @@
         "title": "Module 3: Traffic engineering road user vehicle characteristics macroscopic volum",
         "topics": [
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-traffic-engineering",
-            "title": "Traffic engineering",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-traffic-engineering-overview",
+            "title": "Traffic engineering - overview",
             "content": "",
             "pyqs": []
           },
@@ -4796,8 +5000,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-greenshield-s-model-derivation-not-required",
-            "title": "Greenshield's model (derivation not required)",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-greenshield-s-model",
+            "title": "Greenshield's model",
             "content": "",
             "pyqs": []
           },
@@ -4808,32 +5012,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-traffic-surveys",
-            "title": "Traffic Surveys",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-traffic-surveys-data-collection-and-analysis",
+            "title": "Traffic Surveys - Data collection and Analysis",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-data-collection-and-analysis-for-volume-studies",
-            "title": "Data collection and Analysis for Volume studies",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-volume-studies",
+            "title": "Volume studies",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-data-collection-and-analysis-for-speed-studies",
-            "title": "Data collection and Analysis for speed studies",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-speed-studies",
+            "title": "Speed studies",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-data-collection-and-analysis-for-o-d-studies",
-            "title": "Data collection and Analysis for O&D studies",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-origin-and-destination-o-d-studies",
+            "title": "Origin and Destination (O&D) studies",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-data-collection-and-analysis-for-parking-studies",
-            "title": "Data collection and Analysis for parking studies",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-parking-studies",
+            "title": "Parking studies",
             "content": "",
             "pyqs": []
           },
@@ -4845,7 +5049,7 @@
           },
           {
             "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-at-grade-intersections",
-            "title": "At grade intersections",
+            "title": "At-grade intersections",
             "content": "",
             "pyqs": []
           },
@@ -4880,20 +5084,26 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-railway-engineering",
-            "title": "Railway Engineering",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-railway-engineering-overview",
+            "title": "Railway Engineering - overview",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-component-parts-of-a-railway-track-and-their-functions",
-            "title": "Component parts of a railway track and their functions",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-component-parts-of-a-railway-track",
+            "title": "Component parts of a railway track",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-concept-of-gauges-in-railway",
-            "title": "Concept of Gauges in railway",
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-functions-of-railway-track-components",
+            "title": "Functions of railway track components",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-03-module-3-traffic-engineering-road-user-vehicle-characteristics-macroscopic-volum-concept-of-gauges",
+            "title": "Concept of Gauges",
             "content": "",
             "pyqs": []
           },
@@ -4952,8 +5162,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-basic-runway-length-and-corrections-required",
-            "title": "Basic runway length and corrections required",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-basic-runway-length",
+            "title": "Basic runway length",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-corrections-required-for-runway-length",
+            "title": "Corrections required for runway length",
             "content": "",
             "pyqs": []
           },
@@ -4964,8 +5180,8 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-harbours",
-            "title": "Harbours",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-harbours-overview",
+            "title": "Harbours - overview",
             "content": "",
             "pyqs": []
           },
@@ -4988,8 +5204,14 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-break-waters-necessity-and-functions",
-            "title": "Break waters - necessity and functions",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-break-waters-necessity",
+            "title": "Break waters - necessity",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-functions-of-break-waters",
+            "title": "Functions of break waters",
             "content": "",
             "pyqs": []
           },
@@ -5000,32 +5222,32 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-docks",
-            "title": "Docks",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-docks-functions",
+            "title": "Docks - functions",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-functions-of-docks",
-            "title": "Functions of docks",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-types-of-docks",
+            "title": "Types of docks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-types-of-docks-dry-docks",
-            "title": "Types of docks - dry docks",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-dry-docks",
+            "title": "Dry docks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-types-of-docks-wet-docks",
-            "title": "Types of docks - wet docks",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-wet-docks",
+            "title": "Wet docks",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-tunnel-engineering",
-            "title": "Tunnel Engineering",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-tunnel-engineering-overview",
+            "title": "Tunnel Engineering - overview",
             "content": "",
             "pyqs": []
           },
@@ -5036,14 +5258,20 @@
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-tunnel-surveying-alignment",
-            "title": "Tunnel surveying - alignment",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-tunnel-surveying",
+            "title": "Tunnel surveying",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-tunnel-surveying-transferring-centre-grade-into-tunnel",
-            "title": "Tunnel surveying - transferring centre grade into tunnel",
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-alignment-of-tunnel",
+            "title": "Alignment of tunnel",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "ce-5-pccet502-transportation-engineering-04-module-4-introduction-to-airport-engineering-components-of-airport-selection-of-transferring-centre-grade-into-tunnel",
+            "title": "Transferring centre grade into tunnel",
             "content": "",
             "pyqs": []
           }

@@ -48,7 +48,7 @@
         "topics": [
           {
             "id": "cs-3-pccst303-data-structures-and-algorithms-02-module-2-linked-list-and-memory-management-linked-list-singly-linked-list-operations-stacks-and-queues-using-linked-list-polynomial-representation-using-linked-list",
-            "title": "Linked List: Singly Linked List-Operations, Stacks and Queues using Linked List, Polynomial representation using Linked List",
+            "title": "Linked List: Singly Linked List—Operations, Stacks and Queues using Linked List, Polynomial representation using Linked List",
             "content": "",
             "pyqs": []
           },
@@ -60,7 +60,7 @@
           },
           {
             "id": "cs-3-pccst303-data-structures-and-algorithms-02-module-2-linked-list-and-memory-management-memory-management-memory-allocation-first-fit-best-fit-and-worst-fit-allocation-schemes",
-            "title": "Memory Management: Memory allocation-First-fit, Best-fit, and Worst-fit allocation schemes",
+            "title": "Memory Management: Memory allocation—First-fit, Best-fit, and Worst-fit allocation schemes",
             "content": "",
             "pyqs": []
           },
@@ -183,13 +183,13 @@
         "topics": [
           {
             "id": "cs-3-pccsl307-data-structures-lab-03-module-3-convert-infix-expression-to-postfix-or-prefix-and-then-evaluate-using-s-convert-infix-expression-to-postfix-or-prefix-using-stack",
-            "title": "Convert infix expression to postfix (or prefix) using stack",
+            "title": "Convert infix expression to postfix or prefix using stack",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl307-data-structures-lab-03-module-3-convert-infix-expression-to-postfix-or-prefix-and-then-evaluate-using-s-evaluate-the-postfix-or-prefix-expression-using-stack",
-            "title": "Evaluate the postfix (or prefix) expression using stack",
+            "id": "cs-3-pccsl307-data-structures-lab-03-module-3-convert-infix-expression-to-postfix-or-prefix-and-then-evaluate-using-s-evaluate-the-converted-postfix-or-prefix-expression-using-stack",
+            "title": "Evaluate the converted postfix or prefix expression using stack",
             "content": "",
             "pyqs": []
           }
@@ -266,14 +266,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl307-data-structures-lab-07-module-7-create-a-binary-tree-for-a-given-simple-arithmetic-expression-and-find-find-the-prefix-equivalent-of-the-arithmetic-expression-from-the-binary-tree",
-            "title": "Find the prefix equivalent of the arithmetic expression from the binary tree",
+            "id": "cs-3-pccsl307-data-structures-lab-07-module-7-create-a-binary-tree-for-a-given-simple-arithmetic-expression-and-find-find-the-prefix-equivalent-using-the-binary-tree",
+            "title": "Find the prefix equivalent using the binary tree",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl307-data-structures-lab-07-module-7-create-a-binary-tree-for-a-given-simple-arithmetic-expression-and-find-find-the-postfix-equivalent-of-the-arithmetic-expression-from-the-binary-tree",
-            "title": "Find the postfix equivalent of the arithmetic expression from the binary tree",
+            "id": "cs-3-pccsl307-data-structures-lab-07-module-7-create-a-binary-tree-for-a-given-simple-arithmetic-expression-and-find-find-the-postfix-equivalent-using-the-binary-tree",
+            "title": "Find the postfix equivalent using the binary tree",
             "content": "",
             "pyqs": []
           }
@@ -344,8 +344,14 @@
         "title": "Module 11: Implement the find and replace feature in a text editor",
         "topics": [
           {
-            "id": "cs-3-pccsl307-data-structures-lab-11-module-11-implement-the-find-and-replace-feature-in-a-text-editor-implement-the-find-and-replace-feature-in-a-text-editor",
-            "title": "Implement the find and replace feature in a text editor",
+            "id": "cs-3-pccsl307-data-structures-lab-11-module-11-implement-the-find-and-replace-feature-in-a-text-editor-implement-the-find-feature-in-a-text-editor",
+            "title": "Implement the find feature in a text editor",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-3-pccsl307-data-structures-lab-11-module-11-implement-the-find-and-replace-feature-in-a-text-editor-implement-the-replace-feature-in-a-text-editor",
+            "title": "Implement the replace feature in a text editor",
             "content": "",
             "pyqs": []
           }
@@ -375,7 +381,7 @@
           },
           {
             "id": "cs-3-pccsl307-data-structures-lab-13-module-13-implement-bubble-sort-insertion-sort-radix-sort-quick-sort-and-merge-s-implement-insertion-sort",
-            "title": "Implement Insertion sort",
+            "title": "Implement Insertion Sort",
             "content": "",
             "pyqs": []
           },
@@ -387,19 +393,19 @@
           },
           {
             "id": "cs-3-pccsl307-data-structures-lab-13-module-13-implement-bubble-sort-insertion-sort-radix-sort-quick-sort-and-merge-s-implement-quick-sort",
-            "title": "Implement Quick sort",
+            "title": "Implement Quick Sort",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl307-data-structures-lab-13-module-13-implement-bubble-sort-insertion-sort-radix-sort-quick-sort-and-merge-s-implement-merge-sort",
-            "title": "Implement Merge sort",
+            "title": "Implement Merge Sort",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl307-data-structures-lab-13-module-13-implement-bubble-sort-insertion-sort-radix-sort-quick-sort-and-merge-s-compare-the-number-of-steps-involved-in-the-sorting-algorithms",
-            "title": "Compare the number of steps involved in the sorting algorithms",
+            "id": "cs-3-pccsl307-data-structures-lab-13-module-13-implement-bubble-sort-insertion-sort-radix-sort-quick-sort-and-merge-s-compare-the-number-of-steps-involved-in-each-sorting-algorithm",
+            "title": "Compare the number of steps involved in each sorting algorithm",
             "content": "",
             "pyqs": []
           }
@@ -446,14 +452,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl307-data-structures-lab-15-module-15-implement-a-spell-checker-using-a-hash-table-to-store-a-dictionary-of-implement-a-function-to-check-if-a-word-is-valid",
-            "title": "Implement a function to check if a word is valid",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl307-data-structures-lab-15-module-15-implement-a-spell-checker-using-a-hash-table-to-store-a-dictionary-of-implement-a-function-to-suggest-corrections-for-misspelled-words",
-            "title": "Implement a function to suggest corrections for misspelled words",
+            "id": "cs-3-pccsl307-data-structures-lab-15-module-15-implement-a-spell-checker-using-a-hash-table-to-store-a-dictionary-of-implement-functions-to-check-if-a-word-is-valid-and-to-suggest-corrections-for-misspelled-words",
+            "title": "Implement functions to check if a word is valid and to suggest corrections for misspelled words",
             "content": "",
             "pyqs": []
           }
@@ -500,8 +500,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl307-data-structures-lab-17-module-17-the-cse-dept-is-organizing-a-tech-fest-with-so-many-exciting-events-if-you-are-not-allowed-to-participate-in-more-than-k-events-what-s-the-max-number-of-points-that-you-can-earn",
-            "title": "If you are not allowed to participate in more than k events, what's the max number of points that you can earn?",
+            "id": "cs-3-pccsl307-data-structures-lab-17-module-17-the-cse-dept-is-organizing-a-tech-fest-with-so-many-exciting-events-if-you-are-not-allowed-to-participate-in-more-than-k-events-find-the-max-number-of-points-that-you-can-earn",
+            "title": "If you are not allowed to participate in more than k events, find the max number of points that you can earn.",
             "content": "",
             "pyqs": []
           }
@@ -513,19 +513,19 @@
         "topics": [
           {
             "id": "cs-3-pccsl307-data-structures-lab-18-module-18-merge-k-sorted-lists-into-a-single-sorted-list-using-a-heap-merge-k-sorted-lists-into-a-single-sorted-list-using-a-heap",
-            "title": "Merge K sorted lists into a single sorted list using a heap",
+            "title": "Merge K sorted lists into a single sorted list using a heap.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl307-data-structures-lab-18-module-18-merge-k-sorted-lists-into-a-single-sorted-list-using-a-heap-use-a-min-heap-to-keep-track-of-the-smallest-element-from-each-list",
-            "title": "Use a min-heap to keep track of the smallest element from each list",
+            "title": "Use a min-heap to keep track of the smallest element from each list.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl307-data-structures-lab-18-module-18-merge-k-sorted-lists-into-a-single-sorted-list-using-a-heap-repeatedly-extract-the-smallest-element-and-insert-the-next-element-from-the-corresponding-list-into-the-heap-until-all-lists-are-merged",
-            "title": "Repeatedly extract the smallest element and insert the next element from the corresponding list into the heap until all lists are merged",
+            "title": "Repeatedly extract the smallest element and insert the next element from the corresponding list into the heap until all lists are merged.",
             "content": "",
             "pyqs": []
           }
@@ -546,7 +546,7 @@
         "topics": [
           {
             "id": "cs-3-gaest305-digital-electronics-and-logic-design-01-module-1-introduction-to-digital-systems-core-gate-logic-digital-abstraction-number-systems-binary-decimal-octal-hexadecimal-base-conversion",
-            "title": "Digital Abstraction: Number Systems-Binary, Decimal, Octal, Hexadecimal, Base conversion",
+            "title": "Digital Abstraction: Number Systems—Binary, Decimal, Octal, Hexadecimal, Base conversion",
             "content": "",
             "pyqs": []
           },
@@ -612,7 +612,7 @@
           },
           {
             "id": "cs-3-gaest305-digital-electronics-and-logic-design-03-module-3-msi-logic-and-digital-building-blocks-digital-building-blocks-arithmetic-circuits-half-adder-full-adder-half-subtractor-full-subtractor-comparators",
-            "title": "Digital Building Blocks: Arithmetic Circuits-Half adder, Full adder, Half subtractor, Full subtractor, Comparators",
+            "title": "Digital Building Blocks: Arithmetic Circuits—Half adder, Full adder, Half subtractor, Full subtractor, Comparators",
             "content": "",
             "pyqs": []
           }
@@ -657,73 +657,73 @@
         "topics": [
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-digital-logic-gates",
-            "title": "Study of basic digital ICs and verification of Boolean theorems using digital logic gates",
+            "title": "Study of basic digital ICs and verification of Boolean theorems using digital logic gates.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-familiarisation-of-the-working-of-circuit-simulation-software",
-            "title": "Familiarisation of the working of circuit simulation software",
+            "title": "Familiarisation of the working of circuit simulation software.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-realize-the-basic-logic-gates-and-analyze-their-waveforms",
-            "title": "Realize the basic logic gates and analyze their waveforms",
+            "title": "Realize the basic logic gates and analyze their waveforms.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-realize-a-given-boolean-function-using-basic-gates-and-verify-the-waveform-with-the-truth-table",
-            "title": "Realize a given Boolean function using basic gates and verify the waveform with the truth table",
+            "title": "Realize a given Boolean function using basic gates and verify the waveform with the truth table.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-familiarisation-of-verilog-hdl-modelling-of-the-basic-gates-using-gate-level-modelling",
-            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using gate level modelling",
+            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using gate level modelling.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-familiarisation-of-verilog-hdl-modelling-of-the-basic-gates-using-behavioural-modelling",
-            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using behavioural modelling",
+            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using behavioural modelling.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-familiarisation-of-verilog-hdl-modelling-of-the-basic-gates-using-structural-modelling",
-            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using structural modelling",
+            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using structural modelling.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-familiarisation-of-verilog-hdl-modelling-of-the-basic-gates-using-dataflow-modelling",
-            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using dataflow modelling",
+            "title": "Familiarisation of Verilog HDL - Modelling of the basic gates using dataflow modelling.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-realization-of-an-sop-and-its-corresponding-pos-expression-using-nand-gates-alone-and-nor-gates-alone-to-be-done-on-breadboard-and-simulated-using-software",
-            "title": "Realization of an SOP and its corresponding POS expression using NAND gates alone and NOR gates alone (to be done on breadboard and simulated using software)",
+            "title": "Realization of an SOP and its corresponding POS expression using NAND gates alone and NOR gates alone (to be done on breadboard and simulated using software).",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-model-a-given-boolean-function-sop-and-pos-in-verilog-using-continuous-assignment-with-logical-operators",
-            "title": "Model a given Boolean function (SOP and POS) in Verilog using continuous assignment with logical operators",
+            "title": "Model a given Boolean function (SOP and POS) in Verilog using continuous assignment with logical operators.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-model-a-given-boolean-function-sop-and-pos-in-verilog-using-continuous-assignment-with-conditional-operators",
-            "title": "Model a given Boolean function (SOP and POS) in Verilog using continuous assignment with conditional operators",
+            "title": "Model a given Boolean function (SOP and POS) in Verilog using continuous assignment with conditional operators.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-01-module-1-study-of-basic-digital-ics-and-verification-of-boolean-theorems-using-d-model-a-given-boolean-function-sop-and-pos-in-verilog-using-gate-level-primitives",
-            "title": "Model a given Boolean function (SOP and POS) in Verilog using gate level primitives",
+            "title": "Model a given Boolean function (SOP and POS) in Verilog using gate level primitives.",
             "content": "",
             "pyqs": []
           }
@@ -735,163 +735,169 @@
         "topics": [
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functions-any-two",
-            "title": "Design and implement a combinational logic circuit for arbitrary functions (any two)",
+            "title": "Design and implement a combinational logic circuit for arbitrary functions (any two).",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-code-converters",
-            "title": "Code converters",
+            "title": "Code converters.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-half-adder",
-            "title": "Half adder",
+            "title": "Half adder.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-full-adder",
-            "title": "Full adder",
+            "title": "Full adder.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-half-subtractor",
-            "title": "Half subtractor",
+            "title": "Half subtractor.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-full-subtractor",
-            "title": "Full subtractor",
+            "title": "Full subtractor.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-multiplexer",
-            "title": "Multiplexer",
+            "title": "Multiplexer.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-demultiplexer",
-            "title": "Demultiplexer",
+            "title": "Demultiplexer.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-encoder",
-            "title": "Encoder",
+            "title": "Encoder.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-decoder",
-            "title": "Decoder",
+            "title": "Decoder.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-combinational-circuits-using-msi-devices-any-three",
-            "title": "Design and implement combinational circuits using MSI devices (any three)",
+            "title": "Design and implement combinational circuits using MSI devices: (any three).",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-4-bit-adder-and-subtractor-using-msi-device-ic-7483",
-            "title": "4-bit adder and subtractor using MSI device IC 7483",
+            "title": "4-bit adder and subtractor using MSI device IC 7483.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-parity-generator-checker-using-msi-device-ic-74180",
-            "title": "Parity generator / checker using MSI device IC 74180",
+            "title": "Parity generator / checker using MSI device IC 74180.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-magnitude-comparator-using-msi-device-ic-7485",
-            "title": "Magnitude Comparator using MSI device IC 7485",
+            "title": "Magnitude Comparator using MSI device IC 7485.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-implement-a-boolean-function-using-mux-ic",
-            "title": "Implement a boolean function using MUX IC",
+            "title": "Implement a Boolean function using MUX IC.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-study-of-d-flip-flop-and-jk-flip-flops-using-ics",
-            "title": "Study of D flip flop and JK flip flops using ICs",
+            "title": "Study of D flip flop and JK flip flops using ICs.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-to-design-and-implement-the-following-shift-registers-using-d-flip-flops-i-serial-in-serial-out",
-            "title": "To design and implement the following shift registers using D flip flops (i) Serial in serial out",
+            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-to-design-and-implement-the-following-shift-registers-using-d-flip-flops",
+            "title": "To design and implement the following shift registers using D flip flops.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-to-design-and-implement-the-following-shift-registers-using-d-flip-flops-ii-serial-in-parallel-out",
-            "title": "To design and implement the following shift registers using D flip flops (ii) Serial in parallel out",
+            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-serial-in-serial-out",
+            "title": "Serial in serial out.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-to-design-and-implement-the-following-shift-registers-using-d-flip-flops-iii-parallel-in-serial-out",
-            "title": "To design and implement the following shift registers using D flip flops (iii) Parallel in serial out",
+            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-serial-in-parallel-out",
+            "title": "Serial in parallel out.",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-to-design-and-implement-the-following-shift-registers-using-d-flip-flops-iv-parallel-in-parallel-out",
-            "title": "To design and implement the following shift registers using D flip flops (iv) Parallel in parallel out",
+            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-parallel-in-serial-out",
+            "title": "Parallel in serial out.",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-parallel-in-parallel-out",
+            "title": "Parallel in parallel out.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-an-asynchronous-counter-3-bit-up-counter",
-            "title": "Design and implement an asynchronous counter - 3 bit up counter",
+            "title": "Design and implement an asynchronous counter - 3 bit up counter.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-an-asynchronous-counter-3-bit-down-counter",
-            "title": "Design and implement an asynchronous counter - 3-bit down counter",
+            "title": "Design and implement an asynchronous counter - 3-bit down counter.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-an-asynchronous-counter-3-bit-up-down-counter-with-mode-control",
-            "title": "Design and implement an asynchronous counter - 3 bit up down counter with mode control",
+            "title": "Design and implement an asynchronous counter - 3 bit up down counter with mode control.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-an-asynchronous-counter-mod-n-counter",
-            "title": "Design and implement an asynchronous counter - mod-N counter",
+            "title": "Design and implement an asynchronous counter - mod-N counter.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-a-synchronous-counter-3-bit-up-counter",
-            "title": "Design and implement a synchronous counter - 3 bit up counter",
+            "title": "Design and implement a synchronous counter - 3 bit up counter.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-a-synchronous-counter-3-bit-down-counter",
-            "title": "Design and implement a synchronous counter - 3-bit down counter",
+            "title": "Design and implement a synchronous counter - 3-bit down counter.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-02-module-2-design-and-implement-a-combinational-logic-circuit-for-arbitrary-functi-design-and-implement-a-synchronous-counter-sequence-generator",
-            "title": "Design and implement a synchronous counter - sequence generator",
+            "title": "Design and implement a synchronous counter - sequence generator.",
             "content": "",
             "pyqs": []
           }
@@ -903,31 +909,31 @@
         "topics": [
           {
             "id": "cs-3-pccsl308-digital-lab-03-module-3-model-a-41-mux-14-demux-4-to-2-encoder-and-2-to-4-decoder-and-a-7-model-a-4-1-mux-1-4-demux-4-to-2-encoder-and-2-to-4-decoder-and-a-7-segment-display-decoder-in-verilog-using-continuous-assignment-with-logical-operators",
-            "title": "Model a 4:1 MUX, 1:4 DEMUX, 4 to 2 encoder, and 2 to 4 decoder and a 7-Segment Display Decoder in Verilog using continuous assignment with logical operators",
+            "title": "Model a 4:1 MUX, 1:4 DEMUX, 4 to 2 encoder, and 2 to 4 decoder and a 7-Segment Display Decoder in Verilog using continuous assignment with logical operators.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-03-module-3-model-a-41-mux-14-demux-4-to-2-encoder-and-2-to-4-decoder-and-a-7-model-a-4-1-mux-1-4-demux-4-to-2-encoder-and-2-to-4-decoder-and-a-7-segment-display-decoder-in-verilog-using-continuous-assignment-with-conditional-operators",
-            "title": "Model a 4:1 MUX, 1:4 DEMUX, 4 to 2 encoder, and 2 to 4 decoder and a 7-Segment Display Decoder in Verilog using continuous assignment with conditional operators",
+            "title": "Model a 4:1 MUX, 1:4 DEMUX, 4 to 2 encoder, and 2 to 4 decoder and a 7-Segment Display Decoder in Verilog using continuous assignment with conditional operators.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-03-module-3-model-a-41-mux-14-demux-4-to-2-encoder-and-2-to-4-decoder-and-a-7-design-and-synthesize-the-behavioural-model-for-a-d-flip-flop-in-verilog-hdl",
-            "title": "Design and synthesize the behavioural model for a D flip flop in Verilog HDL",
+            "title": "Design and synthesize the behavioural model for a D flip flop in Verilog HDL.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-03-module-3-model-a-41-mux-14-demux-4-to-2-encoder-and-2-to-4-decoder-and-a-7-design-and-synthesize-the-behavioural-model-for-a-synchronous-counter-in-verilog",
-            "title": "Design and synthesize the behavioural model for a synchronous counter in Verilog",
+            "title": "Design and synthesize the behavioural model for a synchronous counter in Verilog.",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-3-pccsl308-digital-lab-03-module-3-model-a-41-mux-14-demux-4-to-2-encoder-and-2-to-4-decoder-and-a-7-design-a-verilog-hdl-behavioral-model-to-implement-a-finite-state-machine-a-serial-bit-sequence-detector",
-            "title": "Design a Verilog HDL behavioral model to implement a finite-state machine - a serial bit sequence detector",
+            "title": "Design a Verilog HDL behavioral model to implement a finite-state machine - a serial bit sequence detector.",
             "content": "",
             "pyqs": []
           }
@@ -943,101 +949,95 @@
     "semester": 3,
     "modules": [
       {
-        "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts",
-        "title": "Module 1: Basic economics concepts",
+        "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems",
+        "title": "Module 1: Basic economic problems",
         "topics": [
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-basic-economics-concepts",
-            "title": "Basic Economics Concepts",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-basic-economic-problems",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-basic-economic-problems",
             "title": "Basic economic problems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-production-possibility-curve",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-production-possibility-curve",
             "title": "Production Possibility Curve",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-utility",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-utility",
             "title": "Utility",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-law-of-diminishing-marginal-utility",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-law-of-diminishing-marginal-utility",
             "title": "Law of diminishing marginal utility",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-law-of-demand",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-law-of-demand",
             "title": "Law of Demand",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-law-of-supply",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-law-of-supply",
             "title": "Law of supply",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-elasticity",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-elasticity",
             "title": "Elasticity",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-measurement-of-elasticity-and-its-applications",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-measurement-of-elasticity-and-its-applications",
             "title": "measurement of elasticity and its applications",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-equilibrium",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-equilibrium",
             "title": "Equilibrium",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-changes-in-demand-and-supply-and-its-effects",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-changes-in-demand-and-supply-and-its-effects",
             "title": "Changes in demand and supply and its effects",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-production-function",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-production-function",
             "title": "Production function",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-law-of-variable-proportion",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-law-of-variable-proportion",
             "title": "Law of variable proportion",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-economies-of-scale",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-economies-of-scale",
             "title": "Economies of Scale",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-internal-and-external-economies",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-internal-and-external-economies",
             "title": "Internal and External Economies",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economics-concepts-cobb-douglas-production-function",
+            "id": "cs-3-uchut346-economics-for-engineers-01-module-1-basic-economic-problems-cobb-douglas-production-function",
             "title": "Cobb-Douglas Production Function",
             "content": "",
             "pyqs": []
@@ -1055,14 +1055,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost",
-            "title": "Social cost",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-private-cost",
-            "title": "private cost",
+            "id": "cs-3-uchut346-economics-for-engineers-02-module-2-cost-concepts-social-cost-private-cost",
+            "title": "Social cost, private cost",
             "content": "",
             "pyqs": []
           },
@@ -1289,26 +1283,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value",
-            "title": "Cost Value",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-exchange-value",
-            "title": "Exchange Value",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-use-value",
-            "title": "Use Value",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-esteem-value",
-            "title": "Esteem Value",
+            "id": "cs-3-uchut346-economics-for-engineers-04-module-4-value-analysis-and-value-engineering-cost-value-exchange-value-use-value-esteem-value",
+            "title": "Cost Value, Exchange Value, Use Value, Esteem Value",
             "content": "",
             "pyqs": []
           },
@@ -1394,20 +1370,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-ingenuity",
-            "title": "Ingenuity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-diligence",
-            "title": "Diligence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-responsibility",
-            "title": "Responsibility",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-ingenuity-diligence-and-responsibility",
+            "title": "Ingenuity, diligence and responsibility",
             "content": "",
             "pyqs": []
           },
@@ -1430,14 +1394,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-challenges",
-            "title": "Challenges",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-challenges-of-law",
+            "title": "Challenges of law",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-case-studies",
-            "title": "Case studies",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-case-studies-on-law",
+            "title": "Case studies on law",
             "content": "",
             "pyqs": []
           },
@@ -1466,20 +1430,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-high-technologies",
-            "title": "High technologies",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-high-technologies-connecting-people-and-places",
+            "title": "High technologies: connecting people and places",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-connecting-people-and-places",
-            "title": "Connecting people and places",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-accessibility-and-social-impacts",
-            "title": "Accessibility and social impacts",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-accessibility-and-social-impacts-of-high-technologies",
+            "title": "Accessibility and social impacts of high technologies",
             "content": "",
             "pyqs": []
           },
@@ -1598,20 +1556,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-equity",
-            "title": "Equity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-diversity",
-            "title": "Diversity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-gender-justice",
-            "title": "Gender justice",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-01-module-1-fundamentals-of-ethics-equity-diversity-gender-justice",
+            "title": "Equity, diversity & gender justice",
             "content": "",
             "pyqs": []
           },
@@ -1652,20 +1598,26 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-anthropocentrism-biocentrism-ecocentrism",
-            "title": "Key philosophical theories (anthropocentrism, biocentrism, ecocentrism)",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-anthropocentrism",
+            "title": "Key philosophical theories: anthropocentrism",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-sustainable-engineering-principles",
-            "title": "Sustainable Engineering Principles",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-biocentrism",
+            "title": "Key philosophical theories: biocentrism",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-definition-and-scope",
-            "title": "Definition and scope",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-key-philosophical-theories-ecocentrism",
+            "title": "Key philosophical theories: ecocentrism",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-sustainable-engineering-principles-definition-and-scope",
+            "title": "Sustainable Engineering Principles: Definition and scope",
             "content": "",
             "pyqs": []
           },
@@ -1682,14 +1634,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-ecosystems-and-biodiversity",
-            "title": "Ecosystems and Biodiversity",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-basics-of-ecosystems-and-their-functions",
-            "title": "Basics of ecosystems and their functions",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-ecosystems-and-biodiversity-basics-of-ecosystems-and-their-functions",
+            "title": "Ecosystems and Biodiversity: Basics of ecosystems and their functions",
             "content": "",
             "pyqs": []
           },
@@ -1707,19 +1653,13 @@
           },
           {
             "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-an-overview-of-various-ecosystems-in-kerala-india-and-its-significance",
-            "title": "An overview of various ecosystems in Kerala/India, and its significance",
+            "title": "An overview of various ecosystems in Kerala/India and its significance",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-landscape-and-urban-ecology",
-            "title": "Landscape and Urban Ecology",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-principles-of-landscape-ecology",
-            "title": "Principles of landscape ecology",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-02-module-2-introduction-to-environmental-ethics-definition-importance-and-historic-landscape-and-urban-ecology-principles-of-landscape-ecology",
+            "title": "Landscape and Urban Ecology: Principles of landscape ecology",
             "content": "",
             "pyqs": []
           },
@@ -1742,14 +1682,8 @@
         "title": "Module 3: Hydrology and water management basics of hydrology and water cycle wate",
         "topics": [
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-hydrology-and-water-management",
-            "title": "Hydrology and Water Management",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-basics-of-hydrology-and-water-cycle",
-            "title": "Basics of hydrology and water cycle",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-hydrology-and-water-management-basics-of-hydrology-and-water-cycle",
+            "title": "Hydrology and Water Management: Basics of hydrology and water cycle",
             "content": "",
             "pyqs": []
           },
@@ -1766,26 +1700,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-environmental-flow",
-            "title": "Environmental flow",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-environmental-flow-disruptions-and-disasters",
+            "title": "Environmental flow, disruptions and disasters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-disruptions-and-disasters",
-            "title": "Disruptions and disasters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-zero-waste-concepts-and-practices",
-            "title": "Zero Waste Concepts and Practices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-definition-of-zero-waste-and-its-principles",
-            "title": "Definition of zero waste and its principles",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-zero-waste-concepts-and-practices-definition-of-zero-waste-and-its-principles",
+            "title": "Zero Waste Concepts and Practices: Definition of zero waste and its principles",
             "content": "",
             "pyqs": []
           },
@@ -1802,14 +1724,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-circular-economy-and-degrowth",
-            "title": "Circular Economy and Degrowth",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-introduction-to-the-circular-economy-model",
-            "title": "Introduction to the circular economy model",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-circular-economy-and-degrowth-introduction-to-the-circular-economy-model",
+            "title": "Circular Economy and Degrowth: Introduction to the circular economy model",
             "content": "",
             "pyqs": []
           },
@@ -1832,14 +1748,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-mobility-and-sustainable-transportation",
-            "title": "Mobility and Sustainable Transportation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-impacts-of-transportation-on-the-environment-and-climate",
-            "title": "Impacts of transportation on the environment and climate",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-03-module-3-hydrology-and-water-management-basics-of-hydrology-and-water-cycle-wate-mobility-and-sustainable-transportation-impacts-of-transportation-on-the-environment-and-climate",
+            "title": "Mobility and Sustainable Transportation: Impacts of transportation on the environment and climate",
             "content": "",
             "pyqs": []
           },
@@ -1880,14 +1790,8 @@
         "title": "Module 4: Renewable energy and sustainable technologies overview of renewable ene",
         "topics": [
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-renewable-energy-and-sustainable-technologies",
-            "title": "Renewable Energy and Sustainable Technologies",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-renewable-energy-sources-solar-wind-hydro-biomass",
-            "title": "Overview of renewable energy sources (solar, wind, hydro, biomass)",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-renewable-energy-and-sustainable-technologies-overview-of-renewable-energy-sources-solar-wind-hydro-biomass",
+            "title": "Renewable Energy and Sustainable Technologies: Overview of renewable energy sources (solar, wind, hydro, biomass)",
             "content": "",
             "pyqs": []
           },
@@ -1904,14 +1808,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-climate-change-and-engineering-solutions",
-            "title": "Climate Change and Engineering Solutions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-basics-of-climate-change-science",
-            "title": "Basics of climate change science",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-climate-change-and-engineering-solutions-basics-of-climate-change-science",
+            "title": "Climate Change and Engineering Solutions: Basics of climate change science",
             "content": "",
             "pyqs": []
           },
@@ -1934,14 +1832,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-environmental-policies-and-regulations",
-            "title": "Environmental Policies and Regulations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-overview-of-key-environmental-policies-and-regulations-national-and-international",
-            "title": "Overview of key environmental policies and regulations (national and international)",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-environmental-policies-and-regulations-overview-of-key-environmental-policies-and-regulations-national-and-international",
+            "title": "Environmental Policies and Regulations: Overview of key environmental policies and regulations (national and international)",
             "content": "",
             "pyqs": []
           },
@@ -1958,14 +1850,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-case-studies-and-future-directions",
-            "title": "Case Studies and Future Directions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-analysis-of-real-world-case-studies",
-            "title": "Analysis of real-world case studies",
+            "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-case-studies-and-future-directions-analysis-of-real-world-case-studies",
+            "title": "Case Studies and Future Directions: Analysis of real-world case studies",
             "content": "",
             "pyqs": []
           },
@@ -2400,7 +2286,7 @@
         "topics": [
           {
             "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-motivation-for-studying-computability-need-for-mathematical-modeling-automata",
-            "title": "Motivation for studying computability, need for mathematical modeling-automata",
+            "title": "Motivation for studying computability, need for mathematical modeling—automata",
             "content": "",
             "pyqs": []
           },
@@ -2436,7 +2322,7 @@
           },
           {
             "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-equivalence-of-nfas-and-dfas-the-subset-construction",
-            "title": "Equivalence of NFAs and DFAs-The Subset Construction",
+            "title": "Equivalence of NFAs and DFAs—The Subset Construction",
             "content": "",
             "pyqs": []
           },

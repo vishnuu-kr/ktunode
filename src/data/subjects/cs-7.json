@@ -1124,6 +1124,12 @@
         "title": "Module 1: Introduction",
         "topics": [
           {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-introduction",
+            "title": "Introduction",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-01-module-1-introduction-stages-in-software-development",
             "title": "Stages in software development",
             "content": "",
@@ -1166,6 +1172,12 @@
         "title": "Module 2: Ensuring reliability in the design phase",
         "topics": [
           {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-ensuring-reliability-in-the-design-phase",
+            "title": "Ensuring reliability in the design phase",
+            "content": "",
+            "pyqs": []
+          },
+          {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-conceptual-modelling",
             "title": "Conceptual modelling",
             "content": "",
@@ -1197,7 +1209,7 @@
           },
           {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-02-module-2-ensuring-reliability-in-the-design-phase-how-alloy-works",
-            "title": "How Alloy works?",
+            "title": "How Alloy works",
             "content": "",
             "pyqs": []
           },
@@ -1214,14 +1226,14 @@
         "title": "Module 3: Verification by model checking",
         "topics": [
           {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-verifier-for-concurrent-c-vcc",
-            "title": "Verifier for Concurrent C (VCC)",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-verification-by-model-checking",
+            "title": "Verification by Model Checking",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-a-hoare-triple-based-tool-for-verifying-concurrent-c",
-            "title": "A Hoare-Triple-based tool for Verifying Concurrent C",
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-03-module-3-verification-by-model-checking-verifier-for-concurrent-c-vcc-a-hoare-triple-based-tool-for-verifying-concurrent-c",
+            "title": "Verifier for Concurrent C (VCC): a Hoare-Triple-based tool for Verifying Concurrent C",
             "content": "",
             "pyqs": []
           },
@@ -1243,6 +1255,12 @@
         "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification",
         "title": "Module 4: Program verification",
         "topics": [
+          {
+            "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-program-verification",
+            "title": "Program Verification",
+            "content": "",
+            "pyqs": []
+          },
           {
             "id": "cs-7-pecst741-formal-methods-in-software-engineering-04-module-4-program-verification-inter-procedure-verification-of-programs-in-vcc",
             "title": "Inter-procedure verification of programs in VCC",
@@ -1314,19 +1332,19 @@
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-basic-operations-dilation",
-            "title": "Basic operations - dilation",
+            "title": "Basic operations - Dilation",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-basic-operations-concentration",
-            "title": "Basic operations - concentration",
+            "title": "Basic operations - Concentration",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-basic-operations-normalization",
-            "title": "Basic operations - normalization",
+            "title": "Basic operations - Normalization",
             "content": "",
             "pyqs": []
           },
@@ -1337,32 +1355,32 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-properties-of-fuzzy-set",
-            "title": "Properties of fuzzy set",
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-properties-of-fuzzy-set-level-sets",
+            "title": "Properties of fuzzy set - Level Sets",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-level-sets-alpha-cut-representation",
-            "title": "Level Sets - Alpha cut representation",
+            "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-alpha-cut-representation",
+            "title": "Alpha cut representation",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-complement",
-            "title": "Operations on fuzzy sets - fuzzy complement",
+            "title": "Operations on fuzzy sets - Fuzzy complement",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-intersection",
-            "title": "Operations on fuzzy sets - fuzzy intersection",
+            "title": "Operations on fuzzy sets - Fuzzy intersection",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-union",
-            "title": "Operations on fuzzy sets - fuzzy union",
+            "title": "Operations on fuzzy sets - Fuzzy union",
             "content": "",
             "pyqs": []
           },
@@ -1380,25 +1398,25 @@
         "topics": [
           {
             "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-union",
-            "title": "Operations on Fuzzy relations - union",
+            "title": "Operations on Fuzzy relations - Union",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-intersection",
-            "title": "Operations on Fuzzy relations - intersection",
+            "title": "Operations on Fuzzy relations - Intersection",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-complement",
-            "title": "Operations on Fuzzy relations - complement",
+            "title": "Operations on Fuzzy relations - Complement",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-cartesian-product",
-            "title": "Operations on Fuzzy relations - cartesian product",
+            "title": "Operations on Fuzzy relations - Cartesian product",
             "content": "",
             "pyqs": []
           },
@@ -1415,14 +1433,14 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-extension-principle-fuzzy-arithmetic",
-            "title": "Extension Principle - Fuzzy arithmetic",
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-extension-principle",
+            "title": "Extension Principle",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-fuzzy-numbers",
-            "title": "Fuzzy numbers",
+            "id": "cs-7-pecst753-fuzzy-systems-02-module-2-fuzzy-relations-fuzzy-arithmetic-fuzzy-numbers",
+            "title": "Fuzzy arithmetic - Fuzzy numbers",
             "content": "",
             "pyqs": []
           },
@@ -1553,8 +1571,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-aggregation-of-fuzzy-rules",
-            "title": "Aggregation of fuzzy rules",
+            "id": "cs-7-pecst753-fuzzy-systems-04-module-4-fuzzy-inference-systems-fuzzy-rule-based-systems-aggregation-of-fuzzy-rules",
+            "title": "Fuzzy (Rule-Based) Systems - Aggregation of fuzzy rules",
             "content": "",
             "pyqs": []
           },
@@ -1588,294 +1606,90 @@
     "semester": 7,
     "modules": [
       {
-        "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory",
-        "title": "Module 1: Basic fuzzy set theory",
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-strategic-form-games-nash-equilibrium",
+        "title": "Module 1: Strategic Form Games & Nash Equilibrium",
         "topics": [
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-introduction-uncertainty-imprecision-and-vagueness",
-            "title": "Introduction - Uncertainty, Imprecision and Vagueness",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-strategic-form-games-nash-equilibrium-strategic-matrix-configuration-structures-dominant-strategy-profile-discovery-loops-layouts",
+            "title": "Strategic matrix configuration structures dominant strategy profile discovery loops layouts",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-crisp-vs-fuzzy-sets",
-            "title": "Crisp vs Fuzzy sets",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-strategic-form-games-nash-equilibrium-nash-equilibrium-formulation-proof-calculation-equations-algorithms-optimization-boundaries",
+            "title": "Nash Equilibrium formulation proof calculation equations algorithms optimization boundaries",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-representation-of-fuzzy-sets",
-            "title": "Representation of Fuzzy sets",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-membership-functions-types",
-            "title": "Membership Functions - Types",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-basic-operations-dilation",
-            "title": "Basic operations - dilation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-basic-operations-concentration",
-            "title": "Basic operations - concentration",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-basic-operations-normalization",
-            "title": "Basic operations - normalization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-linguistic-hedges",
-            "title": "Linguistic hedges",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-properties-of-fuzzy-set",
-            "title": "Properties of fuzzy set",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-level-sets-alpha-cut-representation",
-            "title": "Level Sets - Alpha cut representation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-complement",
-            "title": "Operations on fuzzy sets - fuzzy complement",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-intersection",
-            "title": "Operations on fuzzy sets - fuzzy intersection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-operations-on-fuzzy-sets-fuzzy-union",
-            "title": "Operations on fuzzy sets - fuzzy union",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-basic-fuzzy-set-theory-aggregation-operations",
-            "title": "Aggregation operations",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-01-module-1-strategic-form-games-nash-equilibrium-subgame-perfect-refinement-models-validation-paths-scales-tracks-setups-profiles",
+            "title": "Subgame perfect refinement models validation paths scales tracks setups profiles",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations",
-        "title": "Module 2: Fuzzy relations",
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-mechanism-optimization-frameworks",
+        "title": "Module 2: Mechanism Optimization Frameworks",
         "topics": [
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-union",
-            "title": "Operations on Fuzzy relations - union",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-mechanism-optimization-frameworks-vickrey-clarke-groves-vcg-auction-design-optimization-rules-incentive-matching-logic",
+            "title": "Vickrey-Clarke-Groves (VCG) auction design optimization rules incentive matching logic",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-intersection",
-            "title": "Operations on Fuzzy relations - intersection",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-complement",
-            "title": "Operations on Fuzzy relations - complement",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-operations-on-fuzzy-relations-cartesian-product",
-            "title": "Operations on Fuzzy relations - cartesian product",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-composition-max-min",
-            "title": "Fuzzy composition - Max-min",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-composition-max-product",
-            "title": "Fuzzy composition - Max-product",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-extension-principle-fuzzy-arithmetic",
-            "title": "Extension Principle - Fuzzy arithmetic",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-numbers",
-            "title": "Fuzzy numbers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-arithmetic-operations-on-fuzzy-numbers",
-            "title": "Arithmetic operations on fuzzy numbers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-reasoning-generalized-modus-ponens-gmp",
-            "title": "Fuzzy Reasoning - Generalized Modus Ponens (GMP)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-fuzzy-relations-fuzzy-reasoning-generalized-modus-tollens-gmt",
-            "title": "Fuzzy Reasoning - Generalized Modus Tollens (GMT)",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-02-module-2-mechanism-optimization-frameworks-revelation-principle-frameworks-strategy-validation-scripts-parameters-definitions-tracking-models",
+            "title": "Revelation principle frameworks strategy validation scripts parameters definitions tracking models",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods",
-        "title": "Module 3: Fuzzification and defuzzification methods",
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-repeated-and-extensive-form-games-models",
+        "title": "Module 3: Repeated and Extensive Form Games Models",
         "topics": [
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-fuzzy-inference-zadeh-rule",
-            "title": "Fuzzy inference - Zadeh rule",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-repeated-and-extensive-form-games-models-backward-induction-game-tree-parsing-procedures-formatting-logic-setups-optimization-systems",
+            "title": "Backward induction game tree parsing procedures formatting logic setups optimization systems",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-fuzzy-inference-mamdani-rule",
-            "title": "Fuzzy inference - Mamdani rule",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-repeated-and-extensive-form-games-models-folk-theorem-sustainability-criteria-tracking-parameters-options-variables-metrics-performance-profiles",
+            "title": "Folk theorem sustainability criteria tracking parameters options variables metrics performance profiles",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-intuition",
-            "title": "Development of membership Functions - Intuition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-inference",
-            "title": "Development of membership Functions - Inference",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-rank-ordering",
-            "title": "Development of membership Functions - Rank ordering",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-development-of-membership-functions-inductive-reasoning",
-            "title": "Development of membership Functions - Inductive reasoning",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-max-membership-principle",
-            "title": "Defuzzification to Scalars - Max membership principle",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-centroid-method",
-            "title": "Defuzzification to Scalars - Centroid method",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-weighted-average-method",
-            "title": "Defuzzification to Scalars - Weighted average method",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-mean-max-membership",
-            "title": "Defuzzification to Scalars - Mean max membership",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-center-of-sums",
-            "title": "Defuzzification to Scalars - Center of sums",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-center-of-largest-area",
-            "title": "Defuzzification to Scalars - Center of largest area",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-fuzzification-and-defuzzification-methods-defuzzification-to-scalars-first-or-last-of-maxima",
-            "title": "Defuzzification to Scalars - First (or last) of maxima",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-03-module-3-repeated-and-extensive-form-games-models-incomplete-information-settings-bayesian-nash-metrics-calculations-algorithms-optimization-setups-templates",
+            "title": "Incomplete information settings Bayesian nash metrics calculations algorithms optimization setups templates",
             "content": "",
             "pyqs": []
           }
         ]
       },
       {
-        "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems",
-        "title": "Module 4: Fuzzy inference systems",
+        "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-network-games-routing-infrastructure-solutions",
+        "title": "Module 4: Network Games Routing Infrastructure Solutions",
         "topics": [
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-approximate-reasoning",
-            "title": "Approximate Reasoning",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-network-games-routing-infrastructure-solutions-braess-paradox-network-traffic-modeling-configurations-templates-tracks-channels-parameters-structures",
+            "title": "Braess paradox network traffic modeling configurations templates tracks channels parameters structures",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-rule-based-systems-multiple-conjunctive-antecedents",
-            "title": "Fuzzy (Rule-Based) Systems - Multiple conjunctive antecedents",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-network-games-routing-infrastructure-solutions-price-of-anarchy-validation-ratios-computational-processes-verification-tracks-platforms-parameters",
+            "title": "Price of anarchy validation ratios computational processes verification tracks platforms parameters",
             "content": "",
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-rule-based-systems-multiple-disjunctive-antecedents",
-            "title": "Fuzzy (Rule-Based) Systems - Multiple disjunctive antecedents",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-aggregation-of-fuzzy-rules",
-            "title": "Aggregation of fuzzy rules",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-graphical-techniques-of-inference",
-            "title": "Graphical Techniques of Inference",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-controllers-mamdani-fis",
-            "title": "Fuzzy Controllers - Mamdani FIS",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-fuzzy-inference-systems-fuzzy-controllers-larsen-model",
-            "title": "Fuzzy Controllers - Larsen Model",
+            "id": "cs-7-pecst753-game-theory-and-mechanism-design-04-module-4-network-games-routing-infrastructure-solutions-matching-market-stable-allocations-algorithmic-layouts-execution-tracking-variables-performance-ratios",
+            "title": "Matching market stable allocations algorithmic layouts execution tracking variables performance ratios",
             "content": "",
             "pyqs": []
           }
@@ -2127,13 +1941,25 @@
           },
           {
             "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-cross-site-scripting-xss",
-            "title": "Cross-Site Scripting (XSS)",
+            "title": "Cross-site Scripting (XSS)",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-xss-vulnerabilities",
+            "title": "XSS Vulnerabilities",
             "content": "",
             "pyqs": []
           },
           {
             "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-sql-injection",
             "title": "SQL Injection",
+            "content": "",
+            "pyqs": []
+          },
+          {
+            "id": "cs-7-pecst744-information-security-02-module-2-software-vulnerabilities-sql-injection-vulnerabilities",
+            "title": "SQL Injection Vulnerabilities",
             "content": "",
             "pyqs": []
           },
@@ -2252,8 +2078,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-risk-management-process",
-            "title": "Risk Management Process",
+            "id": "cs-7-pecst744-information-security-03-module-3-introduction-to-security-of-information-storage-the-risk-management-process",
+            "title": "The Risk Management Process",
             "content": "",
             "pyqs": []
           },
@@ -2324,8 +2150,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-network-security-architecture",
-            "title": "Network Security Architecture",
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-architecture",
+            "title": "Architecture",
             "content": "",
             "pyqs": []
           },
@@ -2378,8 +2204,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-firewall-design",
-            "title": "Firewall Design",
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-design-of-firewalls",
+            "title": "Design of Firewalls",
             "content": "",
             "pyqs": []
           },
@@ -2396,8 +2222,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-intrusion-detection-systems-ids",
-            "title": "Intrusion Detection Systems (IDS)",
+            "id": "cs-7-pecst744-information-security-04-module-4-security-in-networks-ids",
+            "title": "IDS",
             "content": "",
             "pyqs": []
           },
