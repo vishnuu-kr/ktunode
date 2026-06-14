@@ -120,7 +120,7 @@ export const defaultSiteConfig: SiteConfig = {
   siteName: "KTU Node",
   maintenanceMode: false,
   activeScheme: "2024 Scheme",
-  allowedBranches: ["cs", "ec", "me", "ce", "ee"],
+  allowedBranches: ["cs"],
   visibleSemesters: [1, 2, 3, 4, 5, 6, 7, 8],
   activeTools: {
     attendance: true,
