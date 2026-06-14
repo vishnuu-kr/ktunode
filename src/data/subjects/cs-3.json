@@ -261,117 +261,6 @@
     ]
   },
   {
-    "id": "cs-3-gaest305-digital-electronics-logic-design",
-    "code": "GAEST305-DIGITAL-ELECTRONICS-LOGIC-DESIGN",
-    "name": "GAEST305 DIGITAL ELECTRONICS LOGIC DESIGN",
-    "branchId": "cs",
-    "semester": 3,
-    "modules": [
-      {
-        "id": "cs-3-gaest305-digital-electronics-logic-design-01-module-1-introduction-to-digital-systems-core-gate-logic",
-        "title": "Module 1: Introduction to digital systems core gate logic",
-        "topics": [
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-01-module-1-introduction-to-digital-systems-core-gate-logic-basic-gates-buffer-inverter-and-or-nand-nor-xor-xnor-gates",
-            "title": "Basic Gates: Buffer, Inverter, AND, OR, NAND, NOR, XOR, XNOR gates",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-01-module-1-introduction-to-digital-systems-core-gate-logic-binary-arithmetic-addition-and-subtraction-unsigned-and-signed-numbers-fixed-point-floating-point-systems",
-            "title": "Binary Arithmetic: Addition and subtraction, Unsigned and Signed numbers, Fixed-Point/Floating-Point Systems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-01-module-1-introduction-to-digital-systems-core-gate-logic-digital-abstraction-number-systems-binary-decimal-octal-hexadecimal-base-conversion",
-            "title": "Digital Abstraction: Number Systems—Binary, Decimal, Octal, Hexadecimal, Base conversion",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-01-module-1-introduction-to-digital-systems-core-gate-logic-electrical-specifications-noise-margins-power-supplies-driving-loads-gates-resistive-loads-and-leds",
-            "title": "Electrical specifications, noise margins, power supplies, Driving loads: gates, resistive loads, and LEDs",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-gaest305-digital-electronics-logic-design-02-module-2-combinational-logic-design",
-        "title": "Module 2: Combinational logic design",
-        "topics": [
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-02-module-2-combinational-logic-design-boolean-algebra-operations-axioms-theorems",
-            "title": "Boolean Algebra: Operations, Axioms, Theorems",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-02-module-2-combinational-logic-design-combinational-logic-analysis-canonical-sop-and-pos-minterm-and-maxterm-equivalence",
-            "title": "Combinational logic analysis: Canonical SOP and POS, Minterm and Maxterm equivalence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-02-module-2-combinational-logic-design-logic-minimization-algebraic-minimization-k-map-karnaugh-map-minimization-don-t-cares-code-converters",
-            "title": "Logic minimization: Algebraic minimization, K-map (Karnaugh Map) minimization, Don't cares, Code converters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-02-module-2-combinational-logic-design-modeling-concurrent-functionality-in-verilog-continuous-assignment-statements-structural-modeling",
-            "title": "Modeling Concurrent Functionality in Verilog: Continuous assignment statements, structural modeling",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-gaest305-digital-electronics-logic-design-03-module-3-msi-logic-and-digital-building-blocks",
-        "title": "Module 3: Msi logic and digital building blocks",
-        "topics": [
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-03-module-3-msi-logic-and-digital-building-blocks-digital-building-blocks-arithmetic-circuits-half-adder-full-adder-half-subtractor-full-subtractor-comparators",
-            "title": "Digital Building Blocks: Arithmetic Circuits—Half adder, Full adder, Half subtractor, Full subtractor, Comparators",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-03-module-3-msi-logic-and-digital-building-blocks-msi-logic-decoders-one-hot-decoder-7-segment-display-decoder-encoders-multiplexers-mux-demultiplexers-demux",
-            "title": "MSI Logic: Decoders (One-Hot decoder, 7-segment display decoder), Encoders, Multiplexers (Mux), Demultiplexers (Demux)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-gaest305-digital-electronics-logic-design-04-module-4-sequential-logic-design-finite-state-machines",
-        "title": "Module 4: Sequential logic design finite state machines",
-        "topics": [
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-04-module-4-sequential-logic-design-finite-state-machines-finite-state-machines-logic-synthesis-for-an-fsm-fsm-design-process-synchronous-sequential-circuits-counters",
-            "title": "Finite State Machines: logic synthesis for an FSM, FSM design process, Synchronous Sequential Circuits: Counters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-04-module-4-sequential-logic-design-finite-state-machines-latches-and-flip-flops-sr-latch-sr-latch-with-enable-jk-flip-flop-d-flip-flop-register-enabled-resettable-flip-flops",
-            "title": "Latches and Flip-Flops: SR latch, SR latch with enable, JK flip-flop, D flip-flop, Register Enabled/Resettable Flip-Flops",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gaest305-digital-electronics-logic-design-04-module-4-sequential-logic-design-finite-state-machines-sequential-logic-timing-considerations-toggle-flop-clock-divider-asynchronous-ripple-counter-shift-register",
-            "title": "Sequential logic timing considerations, toggle-flop, clock divider, asynchronous ripple counter, shift register",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "cs-3-gamat301-mathematics-for-computer-and-information-science-3",
     "code": "GAMAT301-MATHEMATICS-FOR-COMPUTER-AND-INFORMATION-SCIENCE-3",
     "name": "GAMAT301 MATHEMATICS FOR COMPUTER AND INFORMATION SCIENCE 3",
@@ -633,348 +522,12 @@
     ]
   },
   {
-    "id": "cs-3-gamat301-mathematics-for-information-science-3",
-    "code": "GAMAT301-MATHEMATICS-FOR-INFORMATION-SCIENCE-3",
-    "name": "GAMAT301 MATHEMATICS FOR INFORMATION SCIENCE 3",
-    "branchId": "cs",
-    "semester": 3,
-    "modules": [
-      {
-        "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables",
-        "title": "Module 1: Discrete random variables",
-        "topics": [
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables-expectation-mean-and-variance",
-            "title": "Expectation, Mean, and Variance",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables-joint-probability-mass-function-pmf-of-two-discrete-random-variables",
-            "title": "Joint probability mass function (pmf) of two discrete random variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables-poisson-distribution-as-a-limit-of-the-binomial-distribution",
-            "title": "Poisson distribution as a limit of the binomial distribution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables-probability-distributions-and-cumulative-distribution-function-cdf",
-            "title": "Probability distributions and Cumulative distribution function (CDF)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables-random-variables-and-discrete-random-variables",
-            "title": "Random variables and Discrete random variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables-the-binomial-probability-distribution",
-            "title": "The Binomial probability distribution",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-01-module-1-discrete-random-variables-the-poisson-probability-distribution",
-            "title": "The Poisson probability distribution",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables",
-        "title": "Module 2: Continuous random variables",
-        "topics": [
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-continuous-random-variables-and-their-probability-distributions",
-            "title": "Continuous random variables and their probability distributions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-cumulative-distribution-function-cdf",
-            "title": "Cumulative distribution function (CDF)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-expectation-mean-and-variance",
-            "title": "Expectation, Mean, and Variance",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-expectation-value-of-a-function-of-two-continuous-random-variables",
-            "title": "Expectation value of a function of two continuous random variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-independent-random-variables",
-            "title": "Independent random variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-joint-probability-density-function-pdf-of-two-continuous-random-variables",
-            "title": "Joint probability density function (pdf) of two continuous random variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-marginal-pdf",
-            "title": "Marginal pdf",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-02-module-2-continuous-random-variables-uniform-normal-and-exponential-distributions",
-            "title": "Uniform, Normal, and Exponential distributions",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-gamat301-mathematics-for-information-science-3-03-module-3-limit-theorems-and-stochastic-processes",
-        "title": "Module 3: Limit theorems and stochastic processes",
-        "topics": [
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-03-module-3-limit-theorems-and-stochastic-processes-counting-processes",
-            "title": "Counting Processes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-03-module-3-limit-theorems-and-stochastic-processes-interarrival-times-theorems-without-proof",
-            "title": "Interarrival times (Theorems without proof)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-03-module-3-limit-theorems-and-stochastic-processes-limit-theorems-markov-s-inequality-chebyshev-s-inequality-strong-law-of-large-numbers-without-proof-and-central-limit-theorem-without-proof",
-            "title": "Limit Theorems: Markov's Inequality, Chebyshev's Inequality, Strong Law of Large Numbers (Without proof), and Central Limit Theorem (Without proof)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-03-module-3-limit-theorems-and-stochastic-processes-stochastic-processes-discrete-time-processes-and-continuous-time-processes",
-            "title": "Stochastic Processes: Discrete-time processes and Continuous-time processes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-03-module-3-limit-theorems-and-stochastic-processes-the-poisson-process",
-            "title": "The Poisson Process",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process",
-        "title": "Module 4: Markov process",
-        "topics": [
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process-chapman-komogorov-equations",
-            "title": "Chapman–Komogorov Equations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process-classification-of-states",
-            "title": "Classification of States",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process-irreducible-markov-chain",
-            "title": "Irreducible Markov chain",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process-long-run-proportions-theorems-without-proof",
-            "title": "Long-Run Proportions (Theorems without proof)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process-markov-chains",
-            "title": "Markov Chains",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process-random-walk-model",
-            "title": "Random Walk Model",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-gamat301-mathematics-for-information-science-3-04-module-4-markov-process-recurrent-state-and-transient-state",
-            "title": "Recurrent state and Transient state",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cs-3-pbcsl307-object-oriented-programming-lab",
-    "code": "PBCSL307-OBJECT-ORIENTED-PROGRAMMING-LAB",
-    "name": "PBCSL307 OBJECT ORIENTED PROGRAMMING LAB",
-    "branchId": "cs",
-    "semester": 3,
-    "modules": [
-      {
-        "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-java-programming-applications",
-        "title": "Module 1: Java programming applications",
-        "topics": [
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-java-programming-applications-basic-application-frameworks-class-definition-and-instantiation-routines",
-            "title": "Basic application frameworks, class definition and instantiation routines",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-java-programming-applications-exception-intercept-setup-dynamic-ui-window-builds-via-swings-jdbc-relational-access-tracking",
-            "title": "Exception intercept setup, dynamic UI window builds via Swings, JDBC relational access tracking",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-java-programming-applications-inheritance-models-testing-method-overrides-validation-routes-abstract-interfaces-code-rules",
-            "title": "Inheritance models testing, method overrides validation routes, abstract interfaces code rules",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-oop-basics-and-inheritance",
-        "title": "Module 1: Oop basics and inheritance",
-        "topics": [
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-oop-basics-and-inheritance-access-specifiers-including-protected-variables",
-            "title": "Access Specifiers including Protected Variables",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-oop-basics-and-inheritance-constructor-overloading",
-            "title": "Constructor Overloading",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-oop-basics-and-inheritance-interfaces",
-            "title": "Interfaces",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-oop-basics-and-inheritance-method-overriding",
-            "title": "Method Overriding",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-01-module-1-oop-basics-and-inheritance-programs-using-classes-and-objects",
-            "title": "Programs using Classes and Objects",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pbcsl307-object-oriented-programming-lab-02-module-2-advanced-java-concepts",
-        "title": "Module 2: Advanced java concepts",
-        "topics": [
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-02-module-2-advanced-java-concepts-event-driven-swing-gui-layouts",
-            "title": "Event-Driven Swing GUI Layouts",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-02-module-2-advanced-java-concepts-exception-handling",
-            "title": "Exception Handling",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-02-module-2-advanced-java-concepts-file-i-o-operations",
-            "title": "File I/O Operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcsl307-object-oriented-programming-lab-02-module-2-advanced-java-concepts-multithreading",
-            "title": "Multithreading",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "cs-3-pbcst304-object-oriented-programming",
     "code": "PBCST304-OBJECT-ORIENTED-PROGRAMMING",
     "name": "PBCST304 OBJECT ORIENTED PROGRAMMING",
     "branchId": "cs",
     "semester": 3,
     "modules": [
-      {
-        "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-and-oop-concepts",
-        "title": "Module 1: Introduction to java and oop concepts",
-        "topics": [
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-and-oop-concepts-control-statements-selection-iteration-and-jump-statements-functions-command-line-varargs",
-            "title": "Control Statements: Selection, Iteration, and Jump Statements, Functions, Command Line/Varargs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-and-oop-concepts-object-oriented-programming-in-java-declaring-objects-references-methods-constructors-access-modifiers-this-keyword",
-            "title": "Object-Oriented Programming in Java: Declaring Objects, References, Methods, Constructors, Access Modifiers, 'this' keyword",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-and-oop-concepts-oop-concepts-abstraction-encapsulation-inheritance-polymorphism-procedural-vs-oop-paradigms-microservices",
-            "title": "OOP Concepts: Abstraction, encapsulation, inheritance, polymorphism, Procedural vs OOP paradigms, Microservices",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-and-oop-concepts-operators-arithmetic-bitwise-relational-boolean-logical-assignment-conditional-precedence",
-            "title": "Operators: Arithmetic, Bitwise, Relational, Boolean Logical, Assignment, Conditional, Precedence",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-and-oop-concepts-primitive-data-types-and-wrapper-types-casting-and-autoboxing-arrays-strings-vector-class",
-            "title": "Primitive Data types and Wrapper Types, Casting and Autoboxing, Arrays, Strings, Vector class",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-and-oop-concepts-structure-of-a-simple-java-program-java-environment-command-line-ide-compiler-jvm",
-            "title": "Structure of a simple Java program, Java Environment (Command Line & IDE), Compiler, JVM",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
       {
         "id": "cs-3-pbcst304-object-oriented-programming-01-module-1-introduction-to-java-structure-of-a-simple-java-program",
         "title": "Module 1: Introduction to java structure of a simple java program",
@@ -1204,36 +757,6 @@
         ]
       },
       {
-        "id": "cs-3-pbcst304-object-oriented-programming-02-module-2-polymorphism-inheritance-and-static-members",
-        "title": "Module 2: Polymorphism inheritance and static members",
-        "topics": [
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-02-module-2-polymorphism-inheritance-and-static-members-inheritance-super-class-sub-class-types-of-inheritance-the-super-keyword-protected-members-calling-order-of-constructors",
-            "title": "Inheritance: Super Class, Sub Class, Types of Inheritance, The 'super' keyword, protected Members, Calling Order of Constructors",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-02-module-2-polymorphism-inheritance-and-static-members-method-overriding-dynamic-method-dispatch-using-final-with-inheritance",
-            "title": "Method Overriding, Dynamic Method Dispatch, Using 'final' with Inheritance",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-02-module-2-polymorphism-inheritance-and-static-members-polymorphism-method-overloading-using-objects-as-parameters-returning-objects-recursion",
-            "title": "Polymorphism: Method Overloading, Using Objects as Parameters, Returning Objects, Recursion",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-02-module-2-polymorphism-inheritance-and-static-members-static-members-final-variables-inner-classes",
-            "title": "Static Members, Final Variables, Inner Classes",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-3-pbcst304-object-oriented-programming-03-module-3-packages-and-interfaces-packages",
         "title": "Module 3: Packages and interfaces packages",
         "topics": [
@@ -1348,36 +871,6 @@
           {
             "id": "cs-3-pbcst304-object-oriented-programming-03-module-3-packages-and-interfaces-packages-unchecked-exceptions",
             "title": "Unchecked Exceptions",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pbcst304-object-oriented-programming-03-module-3-packages-interfaces-exception-handling-and-design-patterns",
-        "title": "Module 3: Packages interfaces exception handling and design patterns",
-        "topics": [
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-03-module-3-packages-interfaces-exception-handling-and-design-patterns-exception-handling-checked-unchecked-exceptions-try-catch-blocks-multiple-catch-clauses-nested-try-throw-throws-finally",
-            "title": "Exception Handling: Checked/Unchecked Exceptions, try-catch blocks, Multiple catch Clauses, Nested try, throw, throws, finally",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-03-module-3-packages-interfaces-exception-handling-and-design-patterns-interfaces-interfaces-vs-abstract-classes-defining-implementing-an-interface-extending-interfaces",
-            "title": "Interfaces: Interfaces vs Abstract classes, defining/implementing an interface, extending interfaces",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-03-module-3-packages-interfaces-exception-handling-and-design-patterns-java-built-in-exceptions-custom-exceptions-introduction-to-design-patterns-singleton-and-adapter-patterns",
-            "title": "Java Built-in Exceptions, Custom Exceptions, Introduction to Design Patterns: Singleton and Adapter patterns",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-03-module-3-packages-interfaces-exception-handling-and-design-patterns-packages-defining-a-package-classpath-access-protection-importing-packages",
-            "title": "Packages: Defining a Package, CLASSPATH, Access Protection, Importing Packages",
             "content": "",
             "pyqs": []
           }
@@ -1546,159 +1039,6 @@
           {
             "id": "cs-3-pbcst304-object-oriented-programming-04-module-4-solid-principles-in-java-httpswwwjavatpointcomsolid-working-with-result-set",
             "title": "Working with Result Set",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pbcst304-object-oriented-programming-04-module-4-solid-principles-swings-framework-and-jdbc",
-        "title": "Module 4: Solid principles swings framework and jdbc",
-        "topics": [
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-04-module-4-solid-principles-swings-framework-and-jdbc-developing-database-applications-using-jdbc-jdbc-overview-types-connection-establishment-fundamentals-crud-operations",
-            "title": "Developing Database Applications using JDBC: JDBC overview, Types, Connection Establishment Fundamentals, CRUD Operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-04-module-4-solid-principles-swings-framework-and-jdbc-solid-principles-in-java",
-            "title": "SOLID Principles in Java",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-04-module-4-solid-principles-swings-framework-and-jdbc-swing-controls-components-containers-layout-managers-event-handling-mechanisms-delegation-event-model-listeners",
-            "title": "Swing Controls, Components, Containers, Layout Managers, Event Handling Mechanisms, Delegation Event Model, Listeners",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pbcst304-object-oriented-programming-04-module-4-solid-principles-swings-framework-and-jdbc-swings-fundamentals-overview-of-awt-swing-vs-awt-swing-key-features-model-view-controller-mvc-architecture",
-            "title": "Swings Fundamentals: Overview of AWT, Swing vs AWT, Swing Key Features, Model-View-Controller (MVC) architecture",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cs-3-pccsl306-data-structures-algorithms-lab",
-    "code": "PCCSL306-DATA-STRUCTURES-ALGORITHMS-LAB",
-    "name": "PCCSL306 DATA STRUCTURES ALGORITHMS LAB",
-    "branchId": "cs",
-    "semester": 3,
-    "modules": [
-      {
-        "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures",
-        "title": "Module 1: Basic and linear data structures",
-        "topics": [
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-array-operations",
-            "title": "Array operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-binary-search",
-            "title": "Binary search",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-doubly-linked-list-operations",
-            "title": "Doubly Linked List operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-linear-search",
-            "title": "Linear search",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-queue-operations-using-array",
-            "title": "Queue operations using array",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-singly-linked-list-operations",
-            "title": "Singly Linked List operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-sorting-algorithms-bubble-selection-insertion",
-            "title": "Sorting algorithms (Bubble/Selection/Insertion)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-basic-and-linear-data-structures-stack-operations-using-array",
-            "title": "Stack operations using array",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-practical-implementation-schemes",
-        "title": "Module 1: Practical implementation schemes",
-        "topics": [
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-practical-implementation-schemes-array-processing-rules-polynomial-calculation-via-array-stack-and-queue-array-implementation",
-            "title": "Array processing rules, polynomial calculation via array, Stack and Queue array implementation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-practical-implementation-schemes-binary-search-tree-construction-algorithms-traversals-path-monitoring-sort-performance-comparison-runs",
-            "title": "Binary search tree construction algorithms, traversals path monitoring, sort performance comparison runs",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-01-module-1-practical-implementation-schemes-singly-linked-lists-implementation-double-links-operations-expression-parse-tracking",
-            "title": "Singly linked lists implementation, double links operations, expression parse tracking",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pccsl306-data-structures-algorithms-lab-02-module-2-non-linear-data-structures-and-graph-algorithms",
-        "title": "Module 2: Non linear data structures and graph algorithms",
-        "topics": [
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-02-module-2-non-linear-data-structures-and-graph-algorithms-binary-search-tree-traversals-inorder-preorder-postorder",
-            "title": "Binary Search Tree traversals (Inorder, Preorder, Postorder)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-02-module-2-non-linear-data-structures-and-graph-algorithms-breadth-first-search-bfs",
-            "title": "Breadth First Search (BFS)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-02-module-2-non-linear-data-structures-and-graph-algorithms-depth-first-search-dfs",
-            "title": "Depth First Search (DFS)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-02-module-2-non-linear-data-structures-and-graph-algorithms-dijkstra-s-shortest-path-algorithm",
-            "title": "Dijkstra's shortest path algorithm",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccsl306-data-structures-algorithms-lab-02-module-2-non-linear-data-structures-and-graph-algorithms-hash-table-collision-resolution",
-            "title": "Hash table collision resolution",
             "content": "",
             "pyqs": []
           }
@@ -2266,66 +1606,6 @@
     "semester": 3,
     "modules": [
       {
-        "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata",
-        "title": "Module 1: Foundations and finite automata",
-        "topics": [
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-applications-of-finite-automata-text-search-keyword-recognition",
-            "title": "Applications of finite automata: text search, keyword recognition",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-dfa-state-minimization",
-            "title": "DFA State Minimization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-eliminating-epsilon-transitions-proof-not-expected",
-            "title": "Eliminating epsilon-transitions (Proof not expected)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-equivalence-of-nfas-and-dfas-the-subset-construction",
-            "title": "Equivalence of NFAs and DFAs—The Subset Construction",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-finite-automata-formal-definition-of-a-finite-automaton-deterministic-finite-automata-dfa-regular-languages",
-            "title": "Finite Automata: Formal definition of a finite automaton, Deterministic Finite Automata (DFA), Regular languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-introducing-automata-through-simple-models-on-off-switch-coffee-vending-machine",
-            "title": "Introducing automata through simple models: On/Off switch, coffee vending machine",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-motivation-for-studying-computability-need-for-mathematical-modeling-automata",
-            "title": "Motivation for studying computability, need for mathematical modeling—automata",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-nondeterminism-guess-and-verify-paradigm-formal-definition-of-an-nfa-nfa-with-epsilon-transitions",
-            "title": "Nondeterminism (guess and verify paradigm), Formal definition of an NFA, NFA with epsilon-transitions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-and-finite-automata-three-basic-concepts-alphabet-strings-and-languages",
-            "title": "Three basic concepts: Alphabet, Strings, and Languages",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-linz-hopcroft",
         "title": "Module 1: Foundations linz hopcroft",
         "topics": [
@@ -2416,54 +1696,6 @@
           {
             "id": "cs-3-pccst302-theory-of-computation-01-module-1-foundations-linz-hopcroft-three-basic-concepts-alphabet-strings-and-languages",
             "title": "Three basic concepts: Alphabet, Strings, and Languages",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages",
-        "title": "Module 2: Regular expressions and properties of regular languages",
-        "topics": [
-          {
-            "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages-equivalence-with-finite-automata-converting-fa-to-regular-expressions-converting-regular-expressions-to-fa",
-            "title": "Equivalence with finite automata: Converting FA to Regular Expressions, Converting Regular Expressions to FA",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages-pattern-matching-and-regular-expressions",
-            "title": "Pattern Matching and Regular Expressions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages-properties-of-regular-languages-closure-and-decision-properties-of-regular-languages-with-proofs",
-            "title": "Properties of Regular Languages: Closure and Decision Properties of Regular Languages (with proofs)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages-pumping-lemma-as-a-tool-to-prove-non-regularity-of-languages",
-            "title": "Pumping lemma as a tool to prove non-regularity of languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages-regular-expressions-the-formal-definition-of-a-regular-expression-building-regular-expressions",
-            "title": "Regular Expressions: The formal definition of a regular expression, Building Regular Expressions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages-regular-grammar-and-equivalence-with-fa-conversion-in-both-directions",
-            "title": "Regular grammar and Equivalence with FA (Conversion in both directions)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-02-module-2-regular-expressions-and-properties-of-regular-languages-the-pumping-lemma-for-regular-languages-with-formal-proof",
-            "title": "The Pumping Lemma for Regular Languages (with formal proof)",
             "content": "",
             "pyqs": []
           }
@@ -2608,60 +1840,6 @@
         ]
       },
       {
-        "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata",
-        "title": "Module 3: Context free grammars and pushdown automata",
-        "topics": [
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-ambiguous-grammars-resolving-ambiguity-inherent-ambiguity-cfgs-and-programming-languages",
-            "title": "Ambiguous Grammars, Resolving ambiguity, Inherent ambiguity, CFGs and programming languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-chomsky-normal-form-cnf-greibach-normal-form-gnf",
-            "title": "Chomsky Normal Form (CNF), Greibach Normal Form (GNF)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-context-free-grammars-formal-definition-of-a-context-free-grammar-cfg-designing-context-free-grammars",
-            "title": "Context-Free Grammars: Formal definition of a context-free grammar (CFG), Designing context-free grammars",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-equivalence-of-npdas-and-cfgs-conversions-in-both-directions",
-            "title": "Equivalence of NPDAs and CFGs (conversions in both directions)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-leftmost-and-rightmost-derivations-using-a-grammar-parse-trees",
-            "title": "Leftmost and Rightmost Derivations Using a Grammar, Parse Trees",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-properties-of-cfls-the-pumping-lemma-for-cfls-with-formal-proof-closure-and-decision-properties-with-formal-proofs",
-            "title": "Properties of CFLs: The Pumping Lemma for CFLs (with formal proof), Closure and Decision Properties (with formal proofs)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-pushdown-automata-formal-definition-of-a-pushdown-automaton-pda-dpda-and-npda-examples",
-            "title": "Pushdown Automata: Formal definition of a pushdown automaton (PDA), DPDA and NPDA, Examples",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-03-module-3-context-free-grammars-and-pushdown-automata-simplification-of-cfgs-elimination-of-useless-symbols-productions-epsilon-productions-unit-productions",
-            "title": "Simplification of CFGs: Elimination of useless symbols, productions, epsilon-productions, unit productions",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
         "id": "cs-3-pccst302-theory-of-computation-03-module-3-pushdown-automata-linz",
         "title": "Module 3: Pushdown automata linz",
         "topics": [
@@ -2746,48 +1924,6 @@
           {
             "id": "cs-3-pccst302-theory-of-computation-03-module-3-pushdown-automata-linz-the-pumping-lemma-for-context-free-languages-with-formal-proof",
             "title": "The Pumping Lemma for Context-Free Languages (with formal proof)",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pccst302-theory-of-computation-04-module-4-turing-machines-and-undecidability",
-        "title": "Module 4: Turing machines and undecidability",
-        "topics": [
-          {
-            "id": "cs-3-pccst302-theory-of-computation-04-module-4-turing-machines-and-undecidability-recursive-and-recursively-enumerable-languages",
-            "title": "Recursive and recursively enumerable languages",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-04-module-4-turing-machines-and-undecidability-reductions-decidable-and-undecidability-problems-the-halting-problem-post-correspondence-problem-pcp",
-            "title": "Reductions, Decidable and Undecidability Problems, The Halting problem, Post Correspondence Problem (PCP)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-04-module-4-turing-machines-and-undecidability-turing-machines-as-language-acceptors-turing-machines-as-computers-of-functions",
-            "title": "Turing machines as language acceptors, Turing machines as computers of functions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-04-module-4-turing-machines-and-undecidability-turing-machines-the-formal-definition-of-a-turing-machine-examples",
-            "title": "Turing Machines: The formal definition of a Turing machine, Examples",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-04-module-4-turing-machines-and-undecidability-undecidability-church-turing-thesis-encoding-of-tms-universal-machine-and-diagonalization",
-            "title": "Undecidability: Church-Turing thesis, Encoding of TMs, Universal Machine and Diagonalization",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst302-theory-of-computation-04-module-4-turing-machines-and-undecidability-variants-of-turing-machines-equivalence-proofs-not-expected",
-            "title": "Variants of Turing Machines (equivalence proofs not expected)",
             "content": "",
             "pyqs": []
           }
@@ -2933,12 +2069,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-definitions-and-data-abstraction",
-            "title": "Definitions and Data Abstraction",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-double-ended-queues",
             "title": "Double Ended Queues",
             "content": "",
@@ -2957,12 +2087,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-evaluation-of-expressions-infix-to-postfix-conversion-evaluating-postfix-expressions",
-            "title": "Evaluation of Expressions: Infix to Postfix conversion, Evaluating Postfix Expressions",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-multi-stacks",
             "title": "Multi-Stacks",
             "content": "",
@@ -2975,20 +2099,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-performance-analysis-time-space-complexity-asymptotic-notations-o-omega-theta",
-            "title": "Performance Analysis: Time & Space Complexity, Asymptotic Notations ($O$, $\\Omega$, $\\Theta$)",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-polynomial-representation-using-arrays",
             "title": "Polynomial representation using Arrays",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-polynomial-representation-using-arrays-sparse-matrix-tuple-representation",
-            "title": "Polynomial representation using Arrays, Sparse matrix (Tuple representation)",
             "content": "",
             "pyqs": []
           },
@@ -3007,12 +2119,6 @@
           {
             "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-stacks-and-queues-stacks",
             "title": "Stacks and Queues - Stacks",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-01-module-1-basic-concepts-of-data-structures-stacks-and-queues-stacks-multi-stacks-queues-circular-queues-double-ended-queues-deques",
-            "title": "Stacks and Queues: Stacks, Multi-Stacks, Queues, Circular Queues, Double Ended Queues (Deques)",
             "content": "",
             "pyqs": []
           }
@@ -3035,12 +2141,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-02-module-2-linked-list-and-memory-management-doubly-linked-list-circular-linked-list",
-            "title": "Doubly Linked List, Circular Linked List",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-02-module-2-linked-list-and-memory-management-garbage-collection-and-compaction",
             "title": "Garbage collection and compaction",
             "content": "",
@@ -3053,20 +2153,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-02-module-2-linked-list-and-memory-management-linked-list-singly-linked-list-operations-stacks-and-queues-using-linked-list-polynomial-representation-using-linked-list",
-            "title": "Linked List: Singly Linked List—Operations, Stacks and Queues using Linked List, Polynomial representation using Linked List",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-02-module-2-linked-list-and-memory-management-memory-allocation-first-fit-best-fit-and-worst-fit-allocation-schemes",
             "title": "Memory allocation - First-fit, Best-fit, and Worst-fit allocation schemes",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-02-module-2-linked-list-and-memory-management-memory-management-memory-allocation-first-fit-best-fit-and-worst-fit-allocation-schemes",
-            "title": "Memory Management: Memory allocation—First-fit, Best-fit, and Worst-fit allocation schemes",
             "content": "",
             "pyqs": []
           },
@@ -3107,12 +2195,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-03-module-3-trees-and-graphs-binary-heaps-binary-heap-operations-priority-queue",
-            "title": "Binary Heaps: Binary Heap Operations, Priority Queue",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-03-module-3-trees-and-graphs-binary-search-trees-binary-search-tree-operations",
             "title": "Binary Search Trees - Binary Search Tree Operations",
             "content": "",
@@ -3131,12 +2213,6 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-03-module-3-trees-and-graphs-binary-trees-types-and-properties-binary-tree-representation-tree-operations-tree-traversals-inorder-preorder-postorder",
-            "title": "Binary Trees: Types and Properties, Binary Tree Representation, Tree Operations, Tree Traversals (Inorder, Preorder, Postorder)",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-03-module-3-trees-and-graphs-depth-first-search-and-breadth-first-search",
             "title": "Depth First Search and Breadth First Search",
             "content": "",
@@ -3149,20 +2225,8 @@
             "pyqs": []
           },
           {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-03-module-3-trees-and-graphs-expression-trees-binary-search-trees-bst-operations",
-            "title": "Expression Trees, Binary Search Trees (BST): Operations",
-            "content": "",
-            "pyqs": []
-          },
-          {
             "id": "cs-3-pccst303-data-structures-and-algorithms-03-module-3-trees-and-graphs-graphs-definitions",
             "title": "Graphs :- Definitions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-03-module-3-trees-and-graphs-graphs-definitions-and-representation-adjacency-matrix-adjacency-list-graph-traversals-dfs-and-bfs-applications-single-source-all-destination",
-            "title": "Graphs: Definitions and Representation (Adjacency Matrix, Adjacency List), Graph Traversals: DFS and BFS, Applications: Single Source All Destination",
             "content": "",
             "pyqs": []
           },
@@ -3271,36 +2335,6 @@
           {
             "id": "cs-3-pccst303-data-structures-and-algorithms-04-module-4-sorting-and-searching-sorting-techniques-selection-sort",
             "title": "Sorting Techniques :- Selection Sort",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-pccst303-data-structures-and-algorithms-04-module-4-sorting-searching-and-hashing",
-        "title": "Module 4: Sorting searching and hashing",
-        "topics": [
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-04-module-4-sorting-searching-and-hashing-collision-resolution-linear-probing-quadratic-probing-double-hashing-open-hashing-chaining",
-            "title": "Collision Resolution: Linear probing, Quadratic Probing, Double hashing, Open hashing (Chaining)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-04-module-4-sorting-searching-and-hashing-hashing-hashing-functions-mid-square-division-folding-digit-analysis",
-            "title": "Hashing: Hashing functions (Mid-square, Division, Folding, Digit Analysis)",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-04-module-4-sorting-searching-and-hashing-searching-techniques-linear-search-binary-search",
-            "title": "Searching Techniques: Linear Search, Binary Search",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-pccst303-data-structures-and-algorithms-04-module-4-sorting-searching-and-hashing-sorting-techniques-selection-sort-insertion-sort-quick-sort-merge-sort-heap-sort-radix-sort",
-            "title": "Sorting Techniques: Selection Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort, Radix Sort",
             "content": "",
             "pyqs": []
           }
@@ -3931,309 +2965,6 @@
           {
             "id": "cs-3-uchut347-engineering-ethics-and-sustainable-development-04-module-4-renewable-energy-and-sustainable-technologies-overview-of-renewable-ene-renewable-energy-and-sustainable-technologies-overview-of-renewable-energy-sources-solar-wind-hydro",
             "title": "Renewable Energy and Sustainable Technologies:  Overview of renewable energy sources (solar, wind, hydro, biomass), Sustainable technologies in energy production and consumption, Challenges and opportunities in renewable energy adoption.",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics",
-    "code": "UHSUT300-ECONOMICS-FOR-ENGINEERS-AND-ENGINEERING-ETHICS",
-    "name": "UHSUT300 ECONOMICS FOR ENGINEERS AND ENGINEERING ETHICS",
-    "branchId": "cs",
-    "semester": 3,
-    "modules": [
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-basic-economic-concepts",
-        "title": "Module 1: Basic economic concepts",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-basic-economic-concepts-break-even-analysis",
-            "title": "Break-Even Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-basic-economic-concepts-cost-concepts",
-            "title": "Cost Concepts",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-basic-economic-concepts-demand-and-supply-analysis",
-            "title": "Demand and Supply Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-basic-economic-concepts-elasticity-of-demand-and-supply",
-            "title": "Elasticity of Demand and Supply",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-basic-economic-concepts-production-functions",
-            "title": "Production Functions",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-engineering-economics-foundations",
-        "title": "Module 1: Engineering economics foundations",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-engineering-economics-foundations-basic-economic-problems-scarcity-choice-and-opportunity-cost",
-            "title": "Basic economic problems: Scarcity, choice, and opportunity cost",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-engineering-economics-foundations-cost-concepts-fixed-variable-marginal-average-costs-break-even-analysis-arithmetic-models",
-            "title": "Cost concepts: Fixed, variable, marginal, average costs, Break-even analysis arithmetic models",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-engineering-economics-foundations-definitions-scope-of-engineering-economics",
-            "title": "Definitions & scope of engineering economics",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-engineering-economics-foundations-law-of-demand-and-supply-elasticity-mechanics-equilibrium-price-determination",
-            "title": "Law of demand and supply: Elasticity mechanics, equilibrium price determination",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-01-module-1-engineering-economics-foundations-production-analysis-factors-of-production-laws-of-returns-returns-to-scale",
-            "title": "Production analysis: Factors of production, laws of returns, returns to scale",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-engineering-economics",
-        "title": "Module 2: Engineering economics",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-engineering-economics-annual-worth-analysis",
-            "title": "Annual Worth Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-engineering-economics-benefit-cost-analysis",
-            "title": "Benefit-Cost Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-engineering-economics-interest-formulas",
-            "title": "Interest Formulas",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-engineering-economics-present-worth-analysis",
-            "title": "Present Worth Analysis",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-engineering-economics-rate-of-return-comparisons",
-            "title": "Rate of Return Comparisons",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-engineering-economics-time-value-of-money",
-            "title": "Time Value of Money",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-time-value-of-money-financial-decisions",
-        "title": "Module 2: Time value of money financial decisions",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-time-value-of-money-financial-decisions-cash-flow-diagrams-discrete-compounding-factors-present-worth-future-worth-annuities",
-            "title": "Cash flow diagrams, Discrete compounding factors: Present worth, future worth, annuities",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-time-value-of-money-financial-decisions-depreciation-straight-line-declining-balance-methods",
-            "title": "Depreciation: Straight line, declining balance methods",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-time-value-of-money-financial-decisions-inflation-effects-on-financial-decisions",
-            "title": "Inflation effects on financial decisions",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-time-value-of-money-financial-decisions-investment-evaluation-methods-net-present-value-npv-internal-rate-of-return-irr-payback-period",
-            "title": "Investment evaluation methods: Net Present Value (NPV), Internal Rate of Return (IRR), Payback period",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-02-module-2-time-value-of-money-financial-decisions-time-value-of-money-simple-and-compound-interest-formulas",
-            "title": "Time value of money: Simple and compound interest formulas",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-ethics-and-professionalism",
-        "title": "Module 3: Engineering ethics and professionalism",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-ethics-and-professionalism-code-of-ethics-for-engineers",
-            "title": "Code of Ethics for Engineers",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-ethics-and-professionalism-ethical-issues-in-engineering-practice",
-            "title": "Ethical Issues in Engineering Practice",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-ethics-and-professionalism-moral-reasoning-and-ethical-theories",
-            "title": "Moral Reasoning and Ethical Theories",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-ethics-and-professionalism-professional-responsibilities",
-            "title": "Professional Responsibilities",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-ethics-and-professionalism-safety-and-risk-assessment",
-            "title": "Safety and Risk Assessment",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-professional-ethics",
-        "title": "Module 3: Engineering professional ethics",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-professional-ethics-code-of-ethics-ieee-acm-and-national-society-of-professional-engineers-nspe-templates",
-            "title": "Code of ethics: IEEE, ACM, and National Society of Professional Engineers (NSPE) templates",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-professional-ethics-consensus-and-controversy-professional-ideals-and-virtues",
-            "title": "Consensus and controversy, Professional ideals and virtues",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-professional-ethics-moral-autonomy-kohlberg-s-and-gilligan-s-theories-of-moral-development",
-            "title": "Moral autonomy, Kohlberg's and Gilligan's theories of moral development",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-professional-ethics-senses-of-engineering-ethics-variety-of-moral-issues-moral-dilemmas",
-            "title": "Senses of Engineering Ethics, Variety of moral issues, Moral dilemmas",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-03-module-3-engineering-professional-ethics-types-of-inquiry-normative-conceptual-and-empirical",
-            "title": "Types of inquiry: Normative, conceptual, and empirical",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-safety-responsibilities-and-rights",
-        "title": "Module 4: Safety responsibilities and rights",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-safety-responsibilities-and-rights-collegiality-and-loyalty-respect-for-authority-collective-bargaining",
-            "title": "Collegiality and loyalty, Respect for authority, Collective bargaining",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-safety-responsibilities-and-rights-conflicts-of-interest-occupational-crimes-professional-rights-whistle-blowing-rules",
-            "title": "Conflicts of interest, Occupational crimes, Professional rights, Whistle-blowing rules",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-safety-responsibilities-and-rights-intellectual-property-rights-ipr-and-institutional-parameters",
-            "title": "Intellectual Property Rights (IPR) and institutional parameters",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-safety-responsibilities-and-rights-reducing-risk-the-three-mile-island-and-chernobyl-case-studies",
-            "title": "Reducing risk: The Three Mile Island and Chernobyl case studies",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-safety-responsibilities-and-rights-safety-and-risk-assessment-of-safety-and-risk-risk-benefit-analysis",
-            "title": "Safety and risk: Assessment of safety and risk, Risk benefit analysis",
-            "content": "",
-            "pyqs": []
-          }
-        ]
-      },
-      {
-        "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-sustainable-development-and-environmental-ethics",
-        "title": "Module 4: Sustainable development and environmental ethics",
-        "topics": [
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-sustainable-development-and-environmental-ethics-concept-of-sustainable-development",
-            "title": "Concept of Sustainable Development",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-sustainable-development-and-environmental-ethics-corporate-social-responsibility",
-            "title": "Corporate Social Responsibility",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-sustainable-development-and-environmental-ethics-environmental-impact-assessment",
-            "title": "Environmental Impact Assessment",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-sustainable-development-and-environmental-ethics-ethics-in-technology-and-innovation",
-            "title": "Ethics in Technology and Innovation",
-            "content": "",
-            "pyqs": []
-          },
-          {
-            "id": "cs-3-uhsut300-economics-for-engineers-and-engineering-ethics-04-module-4-sustainable-development-and-environmental-ethics-green-technology-and-clean-energy",
-            "title": "Green Technology and Clean Energy",
             "content": "",
             "pyqs": []
           }
