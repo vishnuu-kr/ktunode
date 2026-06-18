@@ -1,0 +1,237 @@
+{
+  "id": "oebrt832-ec-s8",
+  "code": "OEBRT832",
+  "name": "BIOMEDICAL TRANSPORT PHENOMENA",
+  "branchId": "ec",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Biomedical Transport Phenomena - Role of Diffusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Convection in Physiological Systems - Fluid Kinematics: Control Volumes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Velocity Field",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Flow Rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Acceleration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Streamlines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Stream Tubes and Streak Lines - Conservation Relations and Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Fluid Statics: Surface Tension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Membrane and Cortical Tension - Newtonian and Non-Newtonian Fluids - Laminar and Turbulent Flow",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Cardiovascular Transport System: Review of Physiological Process - Rheology of Flow of Blood: Large Vessels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Small Tubes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Capillaries - Regulation of Blood Flow - Flow in Branching Vessels - Flow in Specific Arteries - Transvascular Transport: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Pathways for Transendothelial Transport - Rates of Transvascular Transport: Osmotic Pressure - Starling's Law of Filtration - Kedem-Katchalsky Equation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Respiratory Transport System: Review of Physiological Process - Oxygen-Haemoglobin Dissociation Curve - Oxygen Levels in Blood - The Hill Equation - Dynamics of Oxygenation of Blood in Lung Capillaries - Oxygen and Carbon Dioxide Transport in Blood Oxygenators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Bioartificial Organs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Tissue Engineered Constructs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Oxygen Transport in Perfusion Bioreactors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Oxygen Transport in the Krogh Tissue Cylinder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Transport in Kidneys: Review of Physiological Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Mechanism of Transmembrane Transport: Direct Diffusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Facilitated Transport",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Active Transport",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Quantitative Analysis of Glomerular Filtration: Hydraulic Conductivity of Glomerular Capillaries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Solute Transport across Glomerular Capillaries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Quantitative Analysis of Tubular Reabsorption: Mass Balance Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Fluxes of Passive Diffusion and Convection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Mathematical Modeling of Carrier Mediated Transport",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Drug Transport in Solid Tumors: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Drug Delivery in Cancer Treatment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Quantitative Analysis of Transvascular Transport - Factors that Affect Drug Administration: The Oie-Tozer Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "A Model for Intravenous Injection of Drug",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Application to Controlled Release of Drugs by Osmotic Pumps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Controlled Release of Drugs from Transdermal Patches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Controlled Release of Drug from Implantable Devices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

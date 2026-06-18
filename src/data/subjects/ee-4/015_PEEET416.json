@@ -1,0 +1,297 @@
+{
+  "id": "peeet416-ee-s4",
+  "code": "PEEET416",
+  "name": "COMPUTER ORGANIZATION",
+  "branchId": "ee",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Basic Structure of Computers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Functional Units",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Basic Operational Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Bus Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Memory Locations and Addresses, Memory Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Instructions and Instruction Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Addressing Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Basic Processing Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Fundamental Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Instruction Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Execution of a Complete Instruction - Single Bus and Multiple Bus Organization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Inter-Register Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Arithmetic, Logic and Shift Micro-Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Processor Logic Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Processor Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Arithmetic Logic Unit - Design of Arithmetic Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Design of Logic Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Design of Arithmetic Logic Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Status Register",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Design of Shifter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Processor Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Design of Accumulator (Basic Concept Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Control Logic Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Hardwired Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Microprogrammed Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Microinstructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Microprogram Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Arithmetic Algorithms: Signed-Operand Multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Booth Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Fast Multiplication - Bit Pair Recoding of Multipliers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Pipelining: Basic Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Classification of Pipeline Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Instruction and Arithmetic Pipelines (Design Examples Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Hazard Detection and Resolution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Types of Memory (Concepts Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Virtual Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Content Addressable Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Cache Memories - Mapping Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "I/O Organization: Characteristics of I/O Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Data Transfer Schemes - Programmed Controlled I/O Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Interrupt Controlled I/O Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Organization of Interrupts - Vectored Interrupts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Servicing of Multiple Input/Output Devices - Polling and Daisy Chaining Schemes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Direct Memory Accessing (DMA)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

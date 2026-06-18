@@ -1,0 +1,105 @@
+{
+  "id": "pcbrt502-ec-s5",
+  "code": "PCBRT502",
+  "name": "ELECTRICAL DRIVES AND CONTROL SYSTEMS",
+  "branchId": "ec",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Electric Motors Used for Robotic Applications: DC Motor - Construction - Principle of Operation - Back EMF - Torque - Characteristics of Shunt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Series and Compound Motors - Necessity of Starters - Starting Methods of DC Motors, Introduction to Special Electrical Machines - DC Servo Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "AC Servo Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Stepper Motor - Variable Reluctance - Permanent Magnet - Hybrid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "BLDC",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "DC-DC Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Step Down and Step Up Choppers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Control Methods - Two-Quadrant and Four-Quadrant Chopper. DC Motor Drives - Solid State Speed Control of DC Motors - Armature Control and Field Control, Single Phase Fully Controlled Converter Drives (Rectifier and Inverter Mode). Chopper Controlled DC Drives",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Mechanical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Time Response of First and Second Order Systems to Standard Test Signals (Step and Ramp)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Stability of Linear Control Systems: Concept of BIBO Stability, Routh-Hurwitz Criterion, Root Locus Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Introduction, Properties and its Construction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

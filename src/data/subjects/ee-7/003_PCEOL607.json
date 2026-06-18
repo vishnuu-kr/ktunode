@@ -1,0 +1,87 @@
+{
+  "id": "pceol607-ee-s7",
+  "code": "PCEOL607",
+  "name": "ELECTRICAL SIMULATION LAB",
+  "branchId": "ee",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Plot the IV and PV Characteristics of a Solar Photovoltaic Module and Determine Maximum Power Point Under Uniform and Partial Shaded Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Load Flow Analysis - Gauss-Seidel Method, Newton-Raphson Method, and Fast Decoupled Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Reactive Power Compensation and Power Factor Correction Using Capacitor Bank",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Short Circuit Analysis - Symmetrical and Unsymmetrical Faults",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Transmission Line Modelling (Basic Programming): ABCD Constants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Modelling of Overcurrent Relay for Power System Protection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Determination of Transfer Function from Block Diagram of Closed Loop System and Plot Pole Zero Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Performance of Step Response of a Second Order System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Stability Analysis by Frequency Response Methods (Bode Plot or Nyquist Plot)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Performance Analysis Using Root-Locus Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Design of Lead/Lag/Lead-Lag Compensator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Design of PI/PID Controller and Its Effects on the Feedback Loop Response",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

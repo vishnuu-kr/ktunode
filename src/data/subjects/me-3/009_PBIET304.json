@@ -1,0 +1,333 @@
+{
+  "id": "pbiet304-me-s3",
+  "code": "PBIET304",
+  "name": "OPERATIONS MANAGEMENT",
+  "branchId": "me",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Role of Operations in an Organisation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Historical Evolution and Perspectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Operations Strategies and Productivity in Organisations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Demand Forecasting: Forecasting Methods - Causal and Time Series Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Moving Average and Exponential Smoothing Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Trend, Cycle, and Seasonality Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Winter's Complete Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Analysis of Forecast Error and Comparison of Forecasting Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Facility Location and Layout: Factors Influencing Location Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Factor Rating and Center of Gravity Methods of Location Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Types of Facility Layouts and Their Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Systematic Layout Planning (SLP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Software Packages for SLP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Inventory Management Objectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Types of Inventories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "EOQ and EBQ Models for Uniform and Variable Demand with and Without Shortages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Quantity Discount Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Probabilistic Inventory Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Inventory Systems Under Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Service Levels and Safety Stock",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Selective Inventory Control: ABC Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "XYZ Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "VED Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Decision Rules: Definition and Value",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Pure and Mixed Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Mathematical Models for Aggregate Planning - Transportation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Linear Programming Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Linear Decision Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Master Production Schedule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Bill of Material (BOM) and Structuring BOM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "MRP - Lot Sizing Methods and Implementation Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "MRP-II",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Introduction to ERP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Activity Planning, Scheduling, Shop Loading, and Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Priority Rules for Dispatching Jobs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Modern Production Systems: Introduction to Business Process Re-engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Lean Manufacturing, Kaizen, and Toyota Production System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "World Class Manufacturing Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Kanban - Push vs Pull Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Just-in-Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Project Suggestion: Forecasting Model Implementation - Apply Different Forecasting Methods (Causal, Time Series, Moving Average, Exponential Smoothing) to Predict Future Demand",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Project Suggestion: Location Planning Analysis - Apply Factor Rating and Center of Gravity Methods to Determine Optimal Location",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Project Suggestion: Layout Design - Design and Compare Different Facility Layouts (Process, Product) for a Business Scenario",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Project Suggestion: EOQ/EBQ Model Development - Develop Advanced Models Accounting for Variable Demand, Lead Times, and Shortages Using Python or MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Project Suggestion: Optimization of Inventory Costs with Quantity Discounts - Create an Optimization Algorithm Using Excel Solver, Python, or MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Project Suggestion: MPS Optimization for a Manufacturing Firm - Design an Optimized Master Production Schedule Using Linear Decision Rules and Software Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Project Suggestion: BOM Structuring and MRP System Development - Develop a Comprehensive BOM and Implement MRP Using MS Project or Specialized Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Project Suggestion: Case Study on Real-World ERP Implementation - Analyze Challenges, Solutions, and Outcomes in a Large Enterprise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Project Suggestion: Business Process Re-engineering (BPR) Case Study - Identify Processes for Re-engineering, Propose Improvements, and Evaluate Impacts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Project Suggestion: Lean Manufacturing Implementation - Develop a Plan Applying Value Stream Mapping and Waste Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

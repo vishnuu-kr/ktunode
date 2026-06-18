@@ -1,0 +1,177 @@
+{
+  "id": "pccbt602-cs-s6",
+  "code": "PCCBT602",
+  "name": "INFORMATION SECURITY",
+  "branchId": "cs",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Basics of Security and Traditional Cryptosystems: OSI Security Architecture - Security Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Mechanisms. Cryptography vs Cryptanalysis. Classical Encryption Techniques - Symmetric Cipher Model. Substitution Ciphers - Monoalphabetic vs Polyalphabetic Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Caesar Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Affine Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Playfair Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Vigenere Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Hill Cipher. Transposition Ciphers - Keyless, Keyed, Double Transposition",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Modern Symmetric Key Cryptosystems: Symmetric Key Ciphers - Block vs Stream Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Block Cipher Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Product Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Feistel and Non-Feistel Ciphers. Data Encryption Standard (DES) - Structure, Key Generation, Design Criteria, Weaknesses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Double DES, Triple DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Advanced Encryption Standard (AES) - Structure, Key Expansion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Block Cipher Modes of Operation - Electronic Codebook Mode (ECB), Cipher Block Chaining Mode (CBC), Cipher Feedback Mode (CFB), Output Feedback Mode (OFB), Counter Mode (CTR). Stream Ciphers - Structure",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Public Key Cryptosystems: Introduction to Public Key Cryptosystems - Principles, Applications, Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Conventional vs Public Key Cryptosystems. RSA Cryptosystem - Algorithm, Security, Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "ElGamal Cryptosystem - Algorithm. Diffie-Hellman Key Exchange - Algorithm, Man-in-the-Middle Attack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Elliptic Curve Cryptography (ECC) - ElGamal ECC, Key Exchange Using ECC",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Access Control Principles - Subjects, Objects, and Access Rights",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Unix File Access Control, Role-Based Access Control, Attribute-Based Access Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "System Security: Intruders, Intrusion Detection Techniques, Password Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Malicious Software - Viruses, Related Threats, Countermeasures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Distributed Denial of Service (DDoS) Attacks - Types, Countermeasures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

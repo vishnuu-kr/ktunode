@@ -1,0 +1,159 @@
+{
+  "id": "pecat746-cs-s7",
+  "code": "PECAT746",
+  "name": "PROGRAMMING IN R",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to R: The R Environment - Overview, Command Line Interface, and Batch Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "R Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Basic Data Types - Vectors, Lists, Data Frames, Matrices, and Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Control Statements - If-Else, Switch, For Loops, and While Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Functions - Writing and Using Functions, Scope of Variables, Function Arguments, and Returning Values",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Data Import, Cleaning, and Preprocessing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Data Import and Export - Reading and Writing Data from/to Text Files, Excel, and Other Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Database Connections - Connecting to Databases and Importing Data Using Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Handling Missing Data - NA and NULL Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Data Cleaning and Preprocessing - Detecting and Removing Duplicates, Handling Outliers, Data Transformation and Normalization, Combining Data Sets, Binning Data, Subsets, and Summarizing Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Statistical Analysis and Data Visualization: Introduction to Data Analytics and Summary Statistics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Statistical Tests - Continuous Data and Discrete Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Common Distributions - Type Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Probability Distributions - Normal Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "R Graphics - Overview, Customizing Charts, Graphical Parameters, and Basic Graphics Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Lattice Graphics - Lattice Functions and Customizing Lattice Graphics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Ggplot",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Machine Learning with R: Basic Concepts, Supervised vs. Unsupervised Learning, Simple Regression, and Classification Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Building Linear Models - Model Fitting, Predicting Values Using Models, Analyzing the Fit, and Refining the Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Regression - Types, Unusual Observations and Corrective Measures, and Comparison of Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Case Studies and Applications - Real-World Applications of R in Various Fields Like Finance, Healthcare, and Social Sciences",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

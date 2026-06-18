@@ -1,0 +1,135 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS",
+  "course_code": "PCCST402",
+  "module_number": 1,
+  "module_title": "Introduction to Databases",
+  "topics_generated": [
+    {
+      "title": "Database System Concepts and Architecture",
+      "slug": "database-system-concepts-and-architecture",
+      "path": "database-system-concepts-and-architecture/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Models",
+      "slug": "data-models",
+      "path": "data-models/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Schemas and Instances",
+      "slug": "schemas-and-instances",
+      "path": "schemas-and-instances/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Three-Schema Architecture and Data Independence",
+      "slug": "three-schema-architecture-and-data-independence",
+      "path": "three-schema-architecture-and-data-independence/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Database Languages and Interfaces",
+      "slug": "database-languages-and-interfaces",
+      "path": "database-languages-and-interfaces/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Centralized and Client/Server Architectures for DBMSs",
+      "slug": "centralized-and-client-server-architectures-for-dbmss",
+      "path": "centralized-and-client-server-architectures-for-dbmss/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Conceptual Data Modelling and Database Design",
+      "slug": "conceptual-data-modelling-and-database-design",
+      "path": "conceptual-data-modelling-and-database-design/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Modelling Using the Entity Relationship (ER) Model",
+      "slug": "data-modelling-using-the-entity-relationship-er-model",
+      "path": "data-modelling-using-the-entity-relationship-er-model/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Entity Types",
+      "slug": "entity-types",
+      "path": "entity-types/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Entity Sets",
+      "slug": "entity-sets",
+      "path": "entity-sets/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Attributes",
+      "slug": "attributes",
+      "path": "attributes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Keys",
+      "slug": "keys",
+      "path": "keys/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Relationship Types",
+      "slug": "relationship-types",
+      "path": "relationship-types/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Relationship Sets",
+      "slug": "relationship-sets",
+      "path": "relationship-sets/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Roles",
+      "slug": "roles",
+      "path": "roles/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Structural Constraints",
+      "slug": "structural-constraints",
+      "path": "structural-constraints/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Weak Entity Types",
+      "slug": "weak-entity-types",
+      "path": "weak-entity-types/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Refining the ER Design for the COMPANY Database",
+      "slug": "refining-the-er-design-for-the-company-database",
+      "path": "refining-the-er-design-for-the-company-database/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ],
+  "cheat_sheet": "cheat-sheet/cheat-sheet.md"
+}

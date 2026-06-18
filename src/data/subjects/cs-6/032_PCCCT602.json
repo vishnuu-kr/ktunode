@@ -1,0 +1,327 @@
+{
+  "id": "pccct602-cs-s6",
+  "code": "PCCCT602",
+  "name": "CYBER FORENSICS",
+  "branchId": "cs",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction: Computer Forensic Investigations, Forensics Investigation Process, Preparing for Computer Investigations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Understanding Public and Private Investigations, Data Acquisition, Storage Formats for Digital Evidence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Determining the Best Acquisition Method, Forensic Protocol for Evidence Acquisition, Digital Forensics Standards and Guidelines, Incident Response Stages, Digital Evidence Identification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Collection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Seizing, Documenting and Storing, Contingency Planning for Image Acquisitions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Cyber Forensics Tools, Computer Forensics Software and Hardware Tools, Open Source and Proprietary, Challenges in Cyber Forensics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Skills Required to Become a Cyber Forensic Expert, Physical Requirements of a Cyber Forensics Lab",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Types of Cyber Forensics, File System Forensics, Working with Windows and CLI Systems, File Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Exploring Microsoft File Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Examining FAT and NTFS Disks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Whole Disk Encryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "The Windows Registry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Microsoft Start-up Tasks: Windows 7",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Windows 8",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Windows 10, Examining UNIX and Linux Disk Structures and Boot Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Understanding Disk Drives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Solid State Storage Devices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Data Collection: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Locard's Exchange Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Order of Volatility, Volatile and Non-Volatile Data, Live-Response Methodologies, Data Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Windows Memory Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Rootkits and Rootkit Detection, Linux Forensics: Live Response, Data Collection, Data Analysis, Log Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Keyword Searches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "User Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Network Connections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Running Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Open File Handlers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "The Hacking Top Ten and Reconnaissance Tools, Network Forensics: The OSI Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Forensic Footprints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Seizure of Networking Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Network Forensic Artifacts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "ICMP Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Drive-By Downloads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Network Forensic Analysis Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Network Log Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Case Study: Wireshark, Web Attack Forensics: OWASP Top 10",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_20",
+          "title": "Web Attack Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_21",
+          "title": "Penetration Testing, Mobile Device Forensics and Internet of Anything, Cloud Forensics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Cybercrimes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Types of Cybercrimes, Cyber Security Steps Taken to Protect ICT and Prevent Misuse of Internet, IT Act 2000 and Amendments, Email and Social Media Investigations, Cyber Technology: Technological/Governance/Judicial/Legal Aspects and Perspectives of Cyber Forensics/Security, Cyber-attack Frameworks, MITRE Framework, Cryptocurrency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Anti-Forensics, Anti-forensic Practices, Data Wiping and Shredding, Data Remanence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Degaussing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Case Study: USB Oblivion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Eraser, Trail Obfuscation: Spoofing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Data Modification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Case Study: Timestamp, Encryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Case Study: VeraCrypt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Anti-forensics Detection Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

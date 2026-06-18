@@ -1,0 +1,195 @@
+{
+  "id": "pbpet404-me-s4",
+  "code": "PBPET404",
+  "name": "MECHANICS OF MACHINERY AND ROBOTICS",
+  "branchId": "me",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Linkages and Joints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Kinematic Pairs and Chains",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Degrees of Freedom and Mobility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Inversion of 4-Bar Chain and its Various Applications. Kinematic Analysis: Displacement Analysis, Velocity and Acceleration Analysis (includes Coriolis acceleration)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Graphical Approach: Velocity Analysis by Instantaneous Centre Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Type Synthesis and Dimensional Synthesis: Function Generation, Path Generation, Motion Generation - Chebyshev's Spacing of Precision Points. Graphical Method for Dimensional Synthesis: 2-Position and 3-Position Synthesis. Analytical Method: Freudenstein's Equation, Loop Closure Equation. Synthesis of Lower Pair Mechanisms such as Straight Line and Quick Return Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Higher Pairs: Cam and Follower for Prescribed Displacement - Gears and Gear Trains for Prescribed Speed and Torque Transmission",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Introduction to Robotics - Industrial Robot Manipulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Service Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Electromechanical Components. Robotic Kinematics: Kinematic Models of Manipulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Definition of Pose: Position Description, Orientation Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Changing Description from Frame to Frame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Homogeneous Transformation Matrix. Manipulator Kinematics: Link Description and Link to Reference Frame Connection, Denavit-Hartenberg (DH) Representation, Forward Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Inverse Kinematics: Formulation, Enumerated using Simple Manipulator Configurations. Workspace Analysis and Trajectory Planning: Planning with Constraints (Case Study-Based Explanation Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Linear and Angular Velocity of Links - Jacobian Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Singularity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Static Analysis of Manipulator. Robot Dynamics: Introduction to Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Lagrangian Formulation (Overview) of Manipulator Dynamics. Linear Robot Dynamics: Force-Acceleration Relationship for 1-DOF System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Equation of Motion for 2-DOF Robot Arm. Motion Control: Path vs. Trajectory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Joint Space vs. Cartesian Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Point-to-Point Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Trajectory Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Continuous Path Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Force Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Hybrid Position/Force Control System. Overview of Robot Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Scope for Mobile Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Need and Application of AI and ML in Robotics. Project Topics: Design and Analysis of a Four-Bar Linkage for a Specific Application; Velocity Analysis of Quick Return Mechanism by Instantaneous Centre Method; Synthesis of a Cam Mechanism for a Given Motion Program; Design of a Mechanism for Converting Rotational Motion to Linear Motion; Analysis of a Pantograph Mechanism for a Specific Task; Develop a Program to Generate DH Parameters for a Manipulator; Design of a Robot Arm for Pick-and-Place Tasks; Forward and Inverse Kinematics Analysis of a 2-DOF Robot Arm; Development of a Robot Arm for a Pick-and-Place Task in a Manufacturing Line; Kinematic Synthesis of a Mechanism for a Robotic Arm for a Specific Industry; Design of a Robot Gripper for a Specific Object Manipulation Task",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

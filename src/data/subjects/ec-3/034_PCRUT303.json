@@ -1,0 +1,105 @@
+{
+  "id": "pcrut303-ec-s3",
+  "code": "PCRUT303",
+  "name": "MATERIALS AND MANUFACTURING PROCESSES",
+  "branchId": "ec",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Crystallography: Crystal, space lattice, unit cell, BCC, FCC, HCP structures, coordination number and radius ratio, polymorphism and allotropy. Phase diagrams: Solid solutions, Hume Rothery's rule, equilibrium diagram of common types of binary systems (Cu-Ni, Pb-Sn). Detailed discussion on iron-carbon equilibrium diagram with microstructure and properties. Heat treatments: Annealing, normalizing, hardening, spheroidizing, tempering. Surface hardening methods: No change in surface composition methods (flame, induction, laser and electron beam hardening processes), change in surface composition methods (carburizing and nitriding)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Applications of ferrous and non-ferrous alloys, steel (low, medium, high carbon steels), stainless steels, tool steels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Cast iron (gray, white, ductile), copper and its alloys, aluminium and its alloys, magnesium and alloys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Composites: Classification, fiber phase characteristics, matrix phase functions, characteristics of PMC and CMC, applications of composites",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Ceramics, polymers (thermoplastics and thermosetting), nanomaterials, biomaterials, optical fibers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Primary processes: Casting - sand casting, moulds, types of moulding sand, types of patterns, pattern materials",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Forging methods: Precision forging, coining, heading, piercing, die design, die materials and lubrication, forging machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Forming: Extrusion process, hot extrusion, cold",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Extrusion: Impact extrusion, wire drawing process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Rolling: Principles of rolling, types of rolling mills, hot and cold rolling, ring rolling, thread rolling, applications (rolling of tubes, wheels, axles and I-beams)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Importance of material selection for manufacturing processes, selection of primary forming process and suitable materials for various products, defects and design considerations in casting, forging and rolling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

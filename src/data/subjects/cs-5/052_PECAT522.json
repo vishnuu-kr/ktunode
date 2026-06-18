@@ -1,0 +1,201 @@
+{
+  "id": "pecat522-cs-s5",
+  "code": "PECAT522",
+  "name": "ARTIFICIAL NEURAL NETWORKS TECHNIQUES",
+  "branchId": "cs",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Human Brain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Model of an Artificial Neuron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Basic Concepts of Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Fundamentals of Biological Neural Network and Artificial Neural Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Types of Activation Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Applications of Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Learning Methods - Supervised, Unsupervised and Reinforcement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Taxonomy of Neural Network Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Terminologies - Weights, Bias, Threshold, Learning Rate",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "McCulloch-Pitts Neuron - Architecture, Algorithm and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Biases and Thresholds, Linear Separability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Hebb Net - Algorithm and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Perceptron - Architecture, Algorithm, Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Perceptron Learning Rule Convergence Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Adaline - Architecture, Algorithm, Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Multi-Layered Network Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Back Propagation Algorithm and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "XOR Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Replacing and Modifying Back Propagation Algorithms Using Heuristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Cover's Theorem on the Separability of Patterns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "The Interpolation Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Radial Basis Function Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Comparison of MLP and RBF Networks (Theory only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Self-Organizing Maps - Building, Training, Evaluating, Interpreting and Visualizing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Applications of Self-Organizing Maps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Adaptive Resonance Theory - Stability Plasticity Dilemma",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "ART-1 - Architecture, Algorithm, Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "ART-2 - Architecture, Algorithms, Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "peaet785-ec-s7",
+  "code": "PEAET785",
+  "name": "INTERNET OF THINGS BASED SYSTEM DESIGN",
+  "branchId": "ec",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Internet of Things - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Basic IoT Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Characteristics of IoT Devices - Power and Computational Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "IoT Architecture - Middleware-Based Architecture and Service-Oriented Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "M2M Communication - M2M System Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Device Domain, Network Domain, and Application Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "M2M vs IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Typical Application Areas of IoT - Smart Homes, Agriculture, and Smart City",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "IoT Hardware: Commercially Available Sensors (Operating Principles Only) - Temperature and Humidity Sensor (DHT11/22), Gas Sensor (MQ Series), Ultrasonic Distance Sensor (HC-SR04)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Actuators (Working Principles Only) - DC Motors, Solenoid-Based Valves, Electromechanical Relay, Solid State Relay, and Stepper Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Embedded Boards - Overview of Typical Microcontroller and Single Board Computers Used in IoT Applications - Arduino Uno, ESP32, and Raspberry Pi (Overview Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "IoT Communication: IoT Device Gateways",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Overview of IP Addressing - IPv4 and IPv6",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Network Address Translation (Overview Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "IoT Infrastructure Protocols (Overview and Key Features Only) - RFID, Zigbee, Bluetooth, DASH7, LoRa, 6LoWPAN, SigFox, NB-IoT, and WiFi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Overview of Cellular Communication for IoT (LTE/4G Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Application Protocols and Cloud Computing (Fundamental Concepts Only): Message Queue Telemetry Transport (MQTT) - Architecture and Quality of Service Levels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "HTTP REST API",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Constrained Application Protocol (CoAP) - Architecture and Request-Response Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Typical Use Cases of MQTT, CoAP, and REST API in IoT Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Cloud Computing - Overview of Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Cloud Models - Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Emerging Trends in IoT - AI Integration and Beyond",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

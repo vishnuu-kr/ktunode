@@ -1,0 +1,303 @@
+{
+  "id": "pecct753-cs-s7",
+  "code": "PECCT753",
+  "name": "INFORMATION SECURITY IN PUBLIC AND PRIVATE SECTORS",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "The Meaning of Computer Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Computer Criminals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Methods of Defense",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Elementary Cryptography: Substitution Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Transpositions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Making \"Good\" Encryption Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "The Data Encryption Standard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "The AES Encryption Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Public Key Encryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Uses of Encryption",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Secure Programs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Non-Malicious Program Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Viruses and Other Malicious Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Targeted Malicious Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Controls Against Program Threats",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Protection in General-Purpose Operating System: Protected Objects and Methods of Protection, Memory and Address Protection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "File Protection Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "User Authentication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Designing Trusted O.S: Security Policies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Models of Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Trusted O.S Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Assurance in Trusted O.S. Implementation Examples",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Security Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Reliability and Integrity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Sensitive Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Inference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Multilevel Database",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Proposals for Multilevel Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Security in Network: Threats in Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Network Security Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Firewalls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Intrusion Detection Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Secure E-Mail",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Security Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Risk Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Organizational Security Policies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Physical Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Legal, Privacy and Ethical Issues in Computer Security: Protecting Programs and Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Information and the Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Rights of Employees and Employers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Software Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Computer Crime",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Praia",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Ethical Issues in Computer Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Case Studies of Ethics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "id": "pcrut502-ec-s5",
+  "code": "PCRUT502",
+  "name": "KINEMATICS AND DESIGN OF MACHINE ELEMENTS",
+  "branchId": "ec",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Machines and Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Lower and Higher Pairs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Kinematic Chains",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Kinematic Inversions of Four Bar and Single Slider Crank Chains, Mobility/Degrees of Freedom (DOF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Kutzbach's Formula, Velocity Analysis: Definition of the Velocity Analysis Problem, Graphical Method of Velocity Analysis - Four Bar and Slider Crank Mechanisms Only",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Definition of the Acceleration Analysis Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Angular Acceleration of a Rigid Link and Relative Acceleration of Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Graphical Method of Acceleration Analysis - Four Bar and Slider Crank Mechanisms Only, Coriolis Acceleration - Concept Only (No Derivation), Static Force Analysis: Free Body Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Static Force Analysis of Four Bar and Slider Crank Mechanisms Only",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Introduction to Design - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Steps in Design Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Preferred Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Standards and Codes in Design, Shock and Impact Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Fatigue Loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Endurance Limit Stress",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Factors Affecting Endurance Limit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Factor of Safety, Gears - Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Gear Nomenclature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Tooth Profiles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Materials of Gears",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Virtual or Formative Number of Teeth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Gear Tooth Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Lewis Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Buckingham's Equation for Dynamic Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Wear Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Endurance Strength of Tooth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Surface Durability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Heat Dissipation, Lubrication of Gears - Merits and Demerits of Each Type of Gears",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_20",
+          "title": "Design of Spur Gear",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Rolling Contact Bearing - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Selection of a Bearing Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Bearing Life",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Static and Dynamic Load Capacity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Axial and Radial Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Equivalent Bearing Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Selection of Bearing Life, Design of Ball Bearings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Basic Idea of Flat and V Belt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Materials for Belts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Selection of V-Belt Drives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Advantages and Limitations of V-Belt Drive",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

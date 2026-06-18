@@ -1,0 +1,86 @@
+{
+  "course_name": "CODING THEORY",
+  "course_code": "PECST414",
+  "module_number": 1,
+  "module_title": "Module 1",
+  "topics_generated": [
+    {
+      "title": "Binary block codes",
+      "slug": "binary-block-codes",
+      "path": "binary-block-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Minimum distance",
+      "slug": "minimum-distance",
+      "path": "minimum-distance/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Error-detecting capability and error-correcting capability",
+      "slug": "error-detecting-capability-and-error-correcting-capability",
+      "path": "error-detecting-capability-and-error-correcting-capability/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Introduction to linear block codes",
+      "slug": "introduction-to-linear-block-codes",
+      "path": "introduction-to-linear-block-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "generator matrix and parity check matrix",
+      "slug": "generator-matrix-and-parity-check-matrix",
+      "path": "generator-matrix-and-parity-check-matrix/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Properties of linear block codes: Syndrome",
+      "slug": "properties-of-linear-block-codes-syndrome",
+      "path": "properties-of-linear-block-codes-syndrome/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Properties of linear block codes: error detection",
+      "slug": "properties-of-linear-block-codes-error-detection",
+      "path": "properties-of-linear-block-codes-error-detection/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Distance properties of linear block codes",
+      "slug": "distance-properties-of-linear-block-codes",
+      "path": "distance-properties-of-linear-block-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Single parity check codes",
+      "slug": "single-parity-check-codes",
+      "path": "single-parity-check-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Hamming codes",
+      "slug": "hamming-codes",
+      "path": "hamming-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Reed Muller codes",
+      "slug": "reed-muller-codes",
+      "path": "reed-muller-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ],
+  "cheat_sheet": "cheat-sheet/cheat-sheet.md"
+}

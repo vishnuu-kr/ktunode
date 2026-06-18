@@ -1,0 +1,297 @@
+{
+  "id": "pcict501-ec-s5",
+  "code": "PCICT501",
+  "name": "CLASSICAL CONTROL ENGINEERING",
+  "branchId": "ec",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Open-Loop and Closed-Loop Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Feedback and Non-Feedback Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Servomechanism",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "History and Development of Automatic Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Feedback Characteristics of Control Systems: Reduction of Parameter Variation, Control Over System Dynamics, and Control of the Effects of Disturbance Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Review of Mathematical Modelling and Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Block Diagram Algebra and Signal Flow Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Block Diagram of an Open-Loop System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Block Diagram of a Closed-Loop System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Block Diagram and Transfer Function of First-Order and Second-Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Block Diagram Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Concept of Signal Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Construction of Signal Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Finding Transfer Function from Signal Flow Graph Using Mason's Gain Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Time-Domain Analysis of First-Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Time Response: Transient and Steady-State Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Standard Test Signals and Their Application in System Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Open-Loop and Closed-Loop Transfer Functions, Type and Order of Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Concept of Poles and Zeros",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Response of First-Order System to Unit Impulse and Unit Step Input",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Time Response Specifications of First-Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Time-Domain Analysis of Second-Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Response of Under-Damped Second-Order System to Unit Step Input",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Response of Under-Damped Second-Order System to Unit Impulse and Unit Ramp Input",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Response of Over-Damped, Critically Damped, and Un-Damped Second-Order System to Unit Step Input",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Time Response Specifications of Under-Damped Second-Order System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Steady-State Errors and Error Constants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Steady-State Error and Static Error Constants",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Definitions, Characteristic Polynomial and Characteristic Equation, General Stability Criterion with Reference to S-Plane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Absolute and Relative Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Necessary Conditions for Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Routh's Criterion of Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "The Root Locus Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Evan's Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Construction of Root Locus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Determination of Roots from Root Locus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Effect of Addition of Zeros and Poles on Root Locus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Root Contours",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Stability in Frequency Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Gain Margin and Phase Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Stability from Bode Plots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Nyquist Stability Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Assessment of Relative Stability Using Nyquist Criterion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

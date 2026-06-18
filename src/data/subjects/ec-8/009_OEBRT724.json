@@ -1,0 +1,171 @@
+{
+  "id": "oebrt724-ec-s8",
+  "code": "OEBRT724",
+  "name": "MEDICAL ROBOTICS",
+  "branchId": "ec",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "History, Classification, and Future Trends of Medical Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Basic Components of Robotic Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Basic Terminology: Accuracy, Repeatability, Resolution, and Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Mechanisms, Transmission, and End Effectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Grippers: Methods of Gripping, Mechanical, Magnetic, Vacuum, and Air Operated Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Specifications of Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Drive Systems: Pneumatic, Hydraulic, Mechanical, and Electrical Drives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "DC Servo Motors, Stepper Motors, and AC Servo Motors: Salient Features and Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Forward Kinematics, Inverse Kinematics, and Their Difference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Forward and Reverse Kinematics of Manipulators with Two, Three, and Four Degrees of Freedom (2D and 3D)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Jacobians, Velocity, and Forces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Manipulator Dynamics and Trajectory Generation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Telerobotic-Assisted Minimally Invasive Surgery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Robot Design Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Robot-Assisted Image-Guided Interventions: CT and Ultrasound",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Other Applications: Robotic Catheters for Heart Electrophysiology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Humanoids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Micro/Nano Robots for Biomedicine: Delivery, Surgery, Sensing, and Detoxification",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Surgical Procedures with Telerobots: Cardiac, Abdominal, Urologic, Neurosurgery, and Orthopedic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Other Healthcare Robots: Physically Assistive, Socially Assistive, and Rehabilitation Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Design Methodologies, Technological Choices, and Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Professional and Medical Ethics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Roboethics: Social and Ethical Implications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "id": "pecmt695-cs-s6",
+  "code": "PECMT695",
+  "name": "DATA HANDLING AND VISUALIZATION",
+  "branchId": "cs",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Dataset Types - Attribute Types - Semantics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Task Abstraction - Analyse",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Produce",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Query",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Four Levels of Validation - Validation Approaches - Validation Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Marks and Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Data Visualization Tools",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Categorical Regions - Spatial Axis Orientation - Spatial Layout Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Arrange Spatial Data: Geometry, Scalar Fields, Vector Fields, Tensor Fields",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Arrange Networks and Trees: Connections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Matrix Views - Containment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Map Color: Color Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Color Maps and Other Channels",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "The R Environment - Command Line Interface and Batch Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "R Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Data Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Vectors - Vector Operations and Factor Vectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "List - Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Data Frames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Matrices and Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Control Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Branching and Looping - For Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "While Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Controlling Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Functions - Function as Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Named Arguments",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Importing Data from Text Files and Other Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Exporting Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Importing Data from Databases - Database Connection Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Missing Data - NA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "NULL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Binning Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Subsets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Summarizing Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Data Cleaning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Finding and Removing Duplicates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Sorting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Analyzing Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Summary Statistics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Statistical Tests - Continuous Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Discrete Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Power Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_18",
+          "title": "Common Distributions - Type Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_19",
+          "title": "Probability Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_20",
+          "title": "Normal Distributions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

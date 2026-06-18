@@ -1,0 +1,129 @@
+{
+  "id": "pecst742-cs-s7",
+  "code": "PECST742",
+  "name": "WEB PROGRAMMING",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Creating Web Pages Using HTML5 - Introduction, First HTML5 Example, Headings, Linking, Images, Special Characters and Horizontal Rules, Lists, Tables, Forms, Internal Linking, Meta Elements, HTML5 Form Input Types, Input and Datalist Elements and Autocomplete Attribute, Page-Structure Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Styling Web Pages Using CSS - Introduction, Inline Styles, Embedded Style Sheets, Linking External Style Sheets, Positioning Elements: Absolute Positioning, Z-index, Positioning Elements: Relative Positioning, Span, Backgrounds, Element Dimensions, Box Model and Text Flow, Media Types and Media Queries, Drop-Down Menus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Extensible Markup Language - Introduction, XML Basics, Structuring Data, XML Namespaces, Document Type Definitions (DTDs), XML Vocabularies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Making Asynchronous Requests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Complete Control over AJAX",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Cross-Origin Resource Sharing, JavaScript Library: jQuery, jQuery Foundations, Including jQuery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "jQuery Selectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Common Element Manipulations in jQuery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Event Handling in jQuery",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Node.js - The Architecture of Node.js, Working with Node.js, Adding Express to Node.js",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Server-Side Programming Language: PHP - What Is Server-Side Development, Quick Tour of PHP, Program Control, Functions, Arrays, Classes and Objects in PHP, Object-Oriented Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Rendering HTML: React - ReactJS Foundations: The Philosophy of React, What Is a Component, Built-in Components, User-Defined Components - Types of Components, Function Components, Differences Between Function and Class Components",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "SPA - Basics, AngularJS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Working with Databases - Databases and Web Development, SQL, Database APIs, Accessing MySQL in PHP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Web Application Design - Real World Web Software Design, Principle of Layering, Software Design Patterns in the Web Context, Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Web Services - Overview of Web Services - SOAP Services, REST Services, An Example Web Service, Web Server - Hosting Options",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "peict411-ec-s4",
+  "code": "PEICT411",
+  "name": "POWER ELECTRONICS FOR CONTROL ENGINEERING",
+  "branchId": "ec",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Power Diodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Power Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Thyristor Family",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "SCRs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Triac",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "GTOs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Power MOSFETs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "IGBTs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "MCTs - Static and Dynamic Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Protection Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Series and Parallel Connections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Turn-On Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Turn-Off Characteristics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "AC-DC Converters (Rectifiers): Operation of Half-Wave and Full-Wave Rectifiers, Bridge Rectifiers and Performance Parameters (Ripple, Efficiency)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "DC-DC Converters: Types of DC-DC Converters (Buck, Boost, Buck-Boost, Cuk), Mode of Operation, Duty Cycle Calculations, and Efficiency Analysis. Design and Application Examples in Power Supplies and Renewable Energy Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "DC-AC Converters (Inverters): Basic Principles of Inverters and Types (Square Wave, Sine Wave, PWM Inverters), Performance Parameters and Harmonic Analysis. Applications in UPS, Motor Drives, and Grid-Tied Renewable Energy Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Control Techniques in Power Electronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Pulse Width Modulation (PWM): Introduction to PWM Techniques, Types of PWM (Single-Pulse, Multiple Pulse, Sinusoidal PWM), Applications in Voltage Regulation and Motor Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Feedback Control Systems: Basics of Feedback Control Systems in Power Electronics, Implementation of Feedback Loops in Power Converters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Industrial Applications and Practical Considerations: Power Electronics in Renewable Energy - Role of Power Electronics in Solar PV and Wind Energy Systems, Maximum Power Point Tracking (MPPT) Techniques, Grid Integration and Storage Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Motor Drives and Control: Types of Motors Used in Industrial Applications (DC, Induction, Synchronous), Role of Power Electronics in Motor Control, Variable Frequency Drives (VFD) and Their Design Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Practical Issues and Emerging Trends: Thermal Management, EMI/EMC, and Protection Strategies in Power Electronics, Reliability and Safety Standards, Emerging Technologies and Future Trends in Power Electronics (Wide Bandgap Semiconductors, Smart Grids, IoT Integration)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

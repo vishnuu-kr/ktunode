@@ -1,0 +1,183 @@
+{
+  "id": "peebt741-ec-s7",
+  "code": "PEEBT741",
+  "name": "POWER ELECTRONICS & APPLICATIONS",
+  "branchId": "ec",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Power Diodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Power Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "MOSFETs and IGBTs: Structure, Fabrication, Regions of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Switching Characteristics: Turn-On and Turn-Off Switching Waveforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Safe Operating Area",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Paralleling of Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Thyristor Family: SCRs, DIAC, TRIAC and GTOs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "V-I Characteristics of SCR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Classification of Power Electronic Circuits: AC-DC, DC-DC, DC-AC and AC-AC Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Applications of Power Devices in Renewable Energy Systems and Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Single Phase Controlled Rectifiers: Half-Wave, Full-Wave, Half-Controlled and Fully Controlled",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Typical Waveforms with R, RL with Diode and RL with Voltage Source",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Voltage and Current Equations for Half-Wave Controlled Rectifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Three Phase Half-Wave and Full-Wave Controlled Rectifier with R Load and Waveforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Basic Chopper Operation Using Semiconductor Switches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Buck, Boost and Buck-Boost Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Selection of Devices, Electrical and Thermal Stress",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Isolated Converters: Half Bridge and Full Bridge Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Governing Equations and Switching Waveforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "DC-AC Inverters: Square Wave Operations, Half Bridge and Full Bridge Inverters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Solar Power Plants: On-Grid and Off-Grid Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Traction Control in EVs: Forward Motoring and Generating Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "PWM Control Techniques: Voltage Mode, Current Mode and Gated Oscillator Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Closed Loop Responses and Stabilization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Gate Driver Circuits: Isolated and Non-Isolated Types",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

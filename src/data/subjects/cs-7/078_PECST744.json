@@ -1,0 +1,147 @@
+{
+  "id": "pecst744-cs-s7",
+  "code": "PECST744",
+  "name": "INFORMATION SECURITY",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Information Security - CIA Triad, OSI Security Architecture, Security Goals, Security Services and Mechanisms, Threats, Attacks - Malicious Code, Brute Force, Timing Attack, Sniffers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Access Control Mechanisms - Access Control, Access Control Matrix, Access Control in OS - Discretionary and Mandatory Access Control, Role-Based Access Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Software Vulnerabilities - Buffer and Stack Overflow, Cross-site Scripting (XSS) and Vulnerabilities, SQL Injection and Vulnerabilities, Phishing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Malwares - Viruses, Worms and Trojans, Topological Worms, Trapdoors, Salami Attack, Man-in-the-Middle Attacks, Covert Channels",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Introduction to Security of Information Storage - Processing, and Transmission. Information Security Management - The ISO Standards Relating to Information Security - Other Information Security Management Frameworks - Security Policies - Security Controls - The Risk Management Process - Regulations and Legal Frameworks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Authentication - User Authentication, Token Based, Biometric Authentication, Remote User Authentication, Multifactor Authentication",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Security in Networks - Threats in Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Network Security Controls - Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Encryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Content Integrity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Strong Authentication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Access Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Wireless Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Honeypots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Traffic Flow Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Firewalls - Design and Types of Firewalls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Personal Firewalls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Email Security - PGP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "S/MIME",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

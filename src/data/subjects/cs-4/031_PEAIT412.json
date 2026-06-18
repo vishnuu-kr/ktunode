@@ -1,0 +1,123 @@
+{
+  "id": "peait412-cs-s4",
+  "code": "PEAIT412",
+  "name": "DATA WAREHOUSING",
+  "branchId": "cs",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Data Warehousing: Overview of Data Warehousing, Need, Definition, Characteristics, Benefits, Operational vs. Analytical Systems, Applications in Industry. Architecture of Data Warehousing, Data Sources, Staging Area, Data Marts, ETL (Extract, Transform, Load) Processes, Components of a Data Warehouse (Data Models, OLAP, Metadata)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Data Warehouse Models: Enterprise Data Warehouse, Virtual Warehouse, Data Mart",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Dimensional Modeling & Design: Dimensional Modeling Basics, Facts, Dimensions, Star Schema, Snowflake Schema",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Steps in Dimensional Modeling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Fact Tables and Dimension Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Data Warehouse Design: Top-Down & Bottom-Up, Fact Table Granularity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Slowly Changing Dimensions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Advances in Dimensional Modeling: Aggregates & Roll-Up, Time Dimension, Junk Dimensions, Degenerate Dimensions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "ETL Processes & Tools: ETL Concepts and Process, Extracting Data from Multiple Sources, Data Transformation and Cleansing, Loading Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "ETL Tools and Platforms: Common ETL Tools (Informatica, Talend, Microsoft SSIS), Scheduling and Automation of ETL Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Data Quality and Data Governance in ETL: Handling Incomplete and Inconsistent Data, Ensuring Data Accuracy, Consistency, and Integrity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Data Warehouse Optimization & OLAP: Query Optimization in Data Warehouses, Indexing Strategies, Partitioning, Performance Tuning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "OLAP Architectures: MOLAP, ROLAP, HOLAP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "OLAP Operations: Drill-Down, Roll-Up, Slicing, Dicing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Data Warehouse Maintenance: Data Loading Automation, Backup and Recovery, Data Warehouse Evolution and Scalability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "pccsl408-cs-s5",
+  "code": "PCCSL408",
+  "name": "DBMS LAB",
+  "branchId": "cs",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Design a database schema for an application with ER diagram from a problem description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Creation of database schema - DDL (create tables, set constraints, enforce relationships, create indices, delete and modify tables). Export ER diagram from the database and verify relationships",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Database initialization - Data insert, Data import to a database (bulk import using UI and SQL Commands)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Practice SQL commands for DML (insertion, updating, altering, deletion of data, and viewing/querying records based on condition in databases)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Implementation of various aggregate functions, Order By, Group By & Having clause in SQL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Implementation of set operators, nested queries, and join queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Practice of SQL TCL and DCL commands like Rollback, Commit, Savepoint, and granting/revoking user privileges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Practice of SQL commands for creation of views and assertions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Creation of Procedures, Triggers and Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Creation of Packages and Cursors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Design a database application using any front-end tool for any problem selected in experiment number 1. The application constructed should have five or more tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Perform basic CRUD (Create, Read, Update, Delete) operations on a Cassandra table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Write and execute CQL queries to retrieve specific data from Cassandra tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Create a simple application using MongoDB with Python",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

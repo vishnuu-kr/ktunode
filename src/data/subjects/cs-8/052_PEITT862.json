@@ -1,0 +1,189 @@
+{
+  "id": "peitt862-cs-s8",
+  "code": "PEITT862",
+  "name": "SOFTWARE TESTING",
+  "branchId": "cs",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction - Software Testing Terminology - STLC - Software Testing Methodology - Verification and Validation Activities - Verification of Requirements - Verification of High level Design - Verification of Low level Design - How to Verify Code - Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Functional Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Non Functional Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "SDLC and STLC Relationship",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Dynamic Testing: Black Box Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Dynamic Testing: White Box Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Static Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Validation Activities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Regression Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Unit Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Integration Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Sanity Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Smoke Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Performance Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Load Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Stress Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Usability Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Compatibility Testing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Managing the Test Process: Test Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Software Metrics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Testing Metrics for Monitoring and Controlling the Testing Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Efficient Test Suite Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Testing Process Maturity Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Introduction to Test Management Tool - Jira",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Automation and Testing Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Testing for Specialized Environment: Testing Object Oriented Software, Testing Web-based Systems, Tracking the Bug: Debugging",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

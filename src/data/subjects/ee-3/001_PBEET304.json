@@ -1,0 +1,267 @@
+{
+  "id": "pbeet304-ee-s3",
+  "code": "PBEET304",
+  "name": "ANALOG ELECTRONICS",
+  "branchId": "ee",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Review of Bipolar Junction Transistor and Introduction to DC Biasing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Base Bias",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Voltage Divider Bias and Common Emitter Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "AC Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Role of Coupling Capacitors and Emitter Bypass Capacitor, Common Emitter AC Equivalent Circuit, Amplifier Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Calculation of Amplifier Gains and Impedances Using h-Parameter Equivalent Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Emitter Follower Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Power Amplifiers and AC Load Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "RC Coupled Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Transformer Coupled Class A Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Class B Amplifiers and Derivation of Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Class AB Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Class C and Class D Amplifiers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Introduction to JFET",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "JFET Biasing Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Common Source Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Introduction to MOSFET",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "MOSFET Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "D-MOSFET and E-MOSFET",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Complementary MOSFET Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "BJT Amplifier Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "FET Amplifier Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Feedback and Oscillator Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Feedback Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Feedback Connection Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Practical Feedback Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "Oscillators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Phase Shift Oscillator and Expression of Frequency Oscillation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "Wien Bridge Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_19",
+          "title": "Tuned Oscillator Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_20",
+          "title": "Crystal Oscillator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Zero Crossing and Voltage Level Detectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Schmitt Trigger",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Square, Triangular and Ramp Generator Circuits Using Op-Amp",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Effect of Slew Rate on Waveform Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Timer 555 IC: Internal Diagram, Astable and Monostable Multivibrators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Project Based Learning Approach and Project Topic Suggestions for Analog Electronics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

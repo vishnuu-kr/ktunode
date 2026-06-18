@@ -1,0 +1,231 @@
+{
+  "id": "pbeot304-ee-s3",
+  "code": "PBEOT304",
+  "name": "DIGITAL ELECTRONICS AND LOGIC SYSTEM DESIGN",
+  "branchId": "ee",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Number Systems and Codes - Binary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Octal and Hexadecimal - Conversions - ASCII Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Excess-3 Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Gray Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "BCD Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Signed Numbers - 1's Complement and 2's Complement - Addition and Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Basic Logic Gates - Universal Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "TTL and CMOS - Internal Diagram of TTL NAND Gate and CMOS NOR Gate - Comparison of CMOS and TTL Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Boolean Laws and Theorems - Sum of Products and Product of Sums Forms - K Map Representation and Simplification (Up to Four Variables) - Pairs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Quads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Octets - Don't Care Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Combinational Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Half Adder and Full Adder, Half Subtractor and Full Subtractor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "4-Bit Parallel Binary Adder/Subtractor, Comparators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Parity Generators and Checkers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Encoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Decoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "BCD to Seven Segment Decoder, Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Implementation of Boolean Expressions Using Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Demultiplexers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Flip-Flops - SR, D and T Flip-Flops - Characteristic Table and Excitation Table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "JK Master Slave Flip-Flop - Conversion of Flip-Flops - SR to JK and JK to SR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Up/Down Counters - Asynchronous Counters - Mod-6 and Mod-10 Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Synchronous Counters - Design of Synchronous Counters - Ring Counter - Johnson Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Shift Registers - SISO, SIPO, PISO, PIPO",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "State Machines - State Transition Diagram - Moore and Mealy Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Digital to Analog Converter - Weighted Resistor Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "R-2R Ladder Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Analog to Digital Converter - Flash Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Successive Approximation Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Introduction to Verilog - Implementation of AND, Half Adder and Full Adder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Project-Based Learning in Digital Electronics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

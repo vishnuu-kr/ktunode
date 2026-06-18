@@ -1,0 +1,303 @@
+{
+  "id": "pccat602-cs-s6",
+  "code": "PCCAT602",
+  "name": "ROBOTICS AND AUTOMATION",
+  "branchId": "cs",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Robotics: Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Robot Types - Manipulators - Anatomy of a Robotic Manipulator: Links",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Joints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Robot Configurations - PPP, RRR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Mobile Robots - Wheeled, Legged, Aerial, Underwater, Surface Water",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Dynamic Characteristics - Speed of Motion, Load Carrying Capacity and Speed of Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Introduction to End Effectors - Mechanical Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Special Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Magnetic Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Vacuum Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Adhesive Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Active and Passive Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Ethics in Robotics - Three Laws - Applications of Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Sensors, Actuators and Control: Sensor Classification - Touch, Force, Proximity, Vision Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Internal Sensors - Position Sensors, Velocity Sensors, Acceleration Sensors, Force Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "External Sensors - Contact Type, Non-contact Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Digital Camera - CCD Camera - CMOS Camera - Omnidirectional Cameras",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Sensor Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Actuators - DC Motors - H-Bridge - Pulse Width Modulation - Stepper Motors - Servos, Hydraulic and Pneumatic Actuators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Sensing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Pre-processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Interpretation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Feature Extraction - Camera Sensor Hardware Interfacing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Representation of Transformations - Pure Translation - Pure Rotation about an Axis - Combined Transformations - Transformations Relative to the Rotating Frame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Basic Understanding of Differential-Drive Wheeled Mobile Robot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Degree of Mobility - Different Wheel Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Holonomic and Nonholonomic Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Omnidirectional Wheeled Mobile Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Representing Robot Position",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Basics of Reactive Navigation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Robot Localization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Challenges in Localization - Continuous Representations - Decomposition Strategies - Current Challenges in Map Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Probabilistic Map-based Localization (Kalman Method)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Autonomous Map Building",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Simultaneous Localization and Mapping (SLAM) - Mathematical Definition and Various Types of SLAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Path Planning - Graph Search - Deterministic Graph Search - Breadth First Search - Depth First Search - Dijkstra's Algorithm - A* - D* Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Potential Field Based Path Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Obstacle Avoidance - Bug Algorithm - Vector Field Histogram - Dynamic Window Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Navigation Architectures - Modularity for Code Reuse and Sharing - Control Localization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -40,12 +40,22 @@ if (typeof window === "undefined") {
     const path = require("path");
     const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
     if (fs.existsSync(subjectsDir)) {
-      const files = fs.readdirSync(subjectsDir);
-      for (const file of files) {
-        if (file.endsWith(".json")) {
-          const filePath = path.join(subjectsDir, file);
-          const content = fs.readFileSync(filePath, "utf8");
-          const parsed = JSON.parse(content);
+      for (const entry of fs.readdirSync(subjectsDir, { withFileTypes: true })) {
+        const entryPath = path.join(subjectsDir, entry.name);
+        if (entry.isDirectory()) {
+          // New layout: one folder per branch-sem, one file per subject object
+          for (const file of fs.readdirSync(entryPath)) {
+            if (!file.endsWith(".json")) continue;
+            const parsed = JSON.parse(fs.readFileSync(path.join(entryPath, file), "utf8"));
+            if (Array.isArray(parsed)) {
+              loadedSubjects.push(...parsed);
+            } else if (parsed) {
+              loadedSubjects.push(parsed);
+            }
+          }
+        } else if (entry.name.endsWith(".json")) {
+          // Legacy layout: flat array file per branch-sem
+          const parsed = JSON.parse(fs.readFileSync(entryPath, "utf8"));
           if (Array.isArray(parsed)) {
             loadedSubjects.push(...parsed);
           }

@@ -1,0 +1,147 @@
+{
+  "id": "pccet303-ce-s3",
+  "code": "PCCET303",
+  "name": "STRUCTURAL ANALYSIS - I",
+  "branchId": "ce",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Analysis Using Method of Joints and Method of Sections. Cables and Suspension Bridges: Forces in Loaded (Concentrated and Uniformly Distributed) Cables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Length of Cables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Supports at Same and Different Levels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Maximum Tension in the Suspension Cable and Backstays, Pressure on Towers. Simple Suspension Bridges with Three Hinged Stiffening Girders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Bending Moments and Shear Force Diagrams. Deformation Response of Statically Determinate Beams: Moment Area Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Mohr's Theorems, Applications to Determinate Deformations of Cantilever and Simply Supported Beams (Prismatic and Beams of Varying Cross Section) Subjected to Concentrated and Uniformly Distributed Loads",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Conjugate Beam Method - Real Beam and Conjugate Beam, Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Applications to Determinate Deformations of Cantilever and Simply Supported Beams (Prismatic and Beams of Varying Cross Section) Subjected to Concentrated and Uniformly Distributed Loads. Energy Principles and Energy Theorems: Castigliano's Theorem I, Principle of Virtual Work, Betti's Theorem, Maxwell's Law of Reciprocal Deflections. Unit Load Method for Determination of Deflection of Statically Determinate Beams, Frames and Trusses",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Introduction to Force Method of Analysis. Static Indeterminacy Analysis of Statically Indeterminate Structures Castigliano's Theorem II",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Minimum Strain Energy Method for Analysing Statically Indeterminate Structures (Illustration Only) Method of Consistent Deformations: Analysis of Beams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Frames and Trusses. (Simple Problems with One Redundant)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Illustration Only for Two-Redundant Problems). Concepts of Effect of Pre-Strain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Lack of Fit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Temperature Changes and Support Settlement. (Illustration Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Action of an Arch - Eddy's Theorem - Three Hinged",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Parabolic and Circular Arches (with Supports at Same Level) - Determination of Horizontal Thrust",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Bending Moment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Normal Thrust and Radial Shear. Moving Loads and Influence Lines Introduction to Moving Loads - Concept of Influence Lines - Influence Lines for Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Shear Force and Bending Moment in Simply Supported Beams and Over Hanging Beams - Analysis for Different Types of Moving Loads (Single Concentrated Load - Several Concentrated Loads - Uniformly Distributed Load Shorter and Longer than the Span) Conditions for Maximum Bending Moment and Shear Force",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

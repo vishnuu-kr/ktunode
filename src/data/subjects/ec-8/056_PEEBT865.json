@@ -1,0 +1,153 @@
+{
+  "id": "peebt865-ec-s8",
+  "code": "PEEBT865",
+  "name": "MODELLING OF PHYSIOLOGICAL SYSTEMS",
+  "branchId": "ec",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Physiological Complexity and Need for Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Feedback and Control in Physiological Systems: Modeling Process Steps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Different Approaches in System Modeling: Parametric and Nonparametric Modeling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Linear and Nonlinear",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Compartmental Modeling (Examples of Each Type in Physiological Systems)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Basic Cardiac Anatomy and Electrocardiology Conduction System: The Electrocardiogram (ECG), Cardiac Action Potential Models, Biophysical Models (Noble)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Noble Models, Reduced Cell Models, Mathematical Models of Cardiac Cell Arrangements: The Bidomain and Monodomain Models",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Electrophysiology of Neurons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Ionic Currents and Conductance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Equivalent Circuit Representation of a Patch of Cell Membrane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Resting Membrane Potential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Voltage-Gated Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Hodgkin-Huxley Model Formulation for Action Potential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Compartmental Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Simplified Models of Neurons: Integrate-and-Fire Neurons, Spike-Response Model Neurons, Rate-Based Models",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Dynamical System Analysis: Types of Fixed Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Phase Plane Analysis: Nullclines, Hopf Bifurcation and Limit Cycles, Van der Pol Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Fitzhugh-Nagumo Model: Phase-Plane Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Showing Excitability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Bistability and Oscillations: Simulation Studies of Simplified Models (e.g., Izhikevich Neuron Models)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

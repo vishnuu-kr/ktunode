@@ -1,0 +1,123 @@
+{
+  "id": "pbict604-ec-s6",
+  "code": "PBICT604",
+  "name": "MODERN CONTROL ENGINEERING",
+  "branchId": "ec",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Design of Cascade Compensators and Dominant Pole",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Realisation of Basic Compensators: Lead, Lag, and Lag-Lead Compensators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Cascade Compensation Using Root Locus: Lead, Lag, and Lead-Lag Compensation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Cascade Compensation Using Bode Plot: Lag, Lead, and Lag-Lead Compensation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Controllable Canonical Form, Observable Canonical Form, and Jordan Canonical Form",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "State Variable Analysis of Continuous LTI Systems and Solution of State Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "State Transition Matrix and Its Properties; Computation of the State Transition Matrix Using Lyapunov's Method and Cayley-Hamilton Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Response of Homogeneous and Non-Homogeneous State-Space Model; Concept of Controllability and Observability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Kalman Test",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "State Variable Design (Continuous): Design of State Variable Feedback if the Given Model is in the Controllable Canonical Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Design of Arbitrary State Variable Feedback if the Given Model is Not in Controllable Canonical Form; Design of Full Order State Observer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Application of Duality Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Concept of Reduced Order State Observer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Stability Analysis of Continuous LTI Systems Using Phase Plane Method: Singular Points and Classification of Singular Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

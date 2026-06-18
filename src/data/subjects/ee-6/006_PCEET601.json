@@ -1,0 +1,81 @@
+{
+  "id": "pceet601-ee-s6",
+  "code": "PCEET601",
+  "name": "CONTROL SYSTEMS",
+  "branchId": "ee",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Impulse and Step Responses of First and Second Order Systems - Pole Dominance for Higher Order Systems, Time Domain Specifications, Error Analysis: Steady State Error Analysis and Static Error Constants",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Root Locus Technique: Construction of Root Locus - Stability Analysis - Effect of Addition of Poles and Zeros",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Effect of Positive Feedback Systems on Root Locus, Controller Design: Types of Controllers and their Control Action - Proportional (P), Integral (I), Derivative (D), PID Control, PID Tuning using Ziegler-Nichols Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Bode Plot: Construction, Concept of Gain Margin and Phase Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Stability Analysis, Frequency Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Correlation between Time Domain and Frequency Domain Responses (Resonant Peak and Resonant Frequency), Introduction to Compensators (Concept Only), Polar Plot: Gain Margin and Phase Margin, Stability Analysis, Nyquist Stability Criterion, Concept of Nichols Chart",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Introduction to State-Space Modelling: State Variables, State Equations, State Variable Representation of Electrical Systems, Relationship between State Space and Transfer Function Models: Derivation of Transfer Functions from State Equations, Controllable, Observable and Diagonal/Jordan Canonical Forms, Introduction to Similarity Transformations (Concept Only), Solution of Time Invariant Systems: Solution of Time Response of Autonomous Systems and Forced Systems, State Transition Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Computation using Method of Laplace Transform and Cayley Hamilton Theorem, Controllability and Observability: Definition, Kalman's Test",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

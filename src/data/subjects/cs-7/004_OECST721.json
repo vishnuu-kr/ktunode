@@ -1,0 +1,351 @@
+{
+  "id": "oecst721-cs-s7",
+  "code": "OECST721",
+  "name": "CYBER SECURITY",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Cyber Security: Basic Cyber Security Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Layers of Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Vulnerability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Threats",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Computer Criminals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "CIA Triad",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Motive of Attackers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Active Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Passive Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Software Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Hardware Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Cyber Threats and Its Classifications: Malware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Social Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "DoS/DDoS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Insider Threats",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Advanced Persistent Threats (APTs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_17",
+          "title": "Data Breaches and Information Theft",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Cybercrime and Cyber Law: Cybercrime",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Classification of Cybercrimes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "The Legal Perspectives: Indian Perspective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Global Perspective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Categories of Cybercrime",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Fundamentals of Cyber Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Outline of Legislative Framework for Cyber Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "History and Emergence of Cyber Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Outreach and Impact of Cyber Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Major Amendments in Various Statutes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Malware and Protection Against Malware: Virus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Worms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Trojans",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Spyware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Adware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Keylogger",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Ransomware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Common Methods of Malware Propagation: Email Attachments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Malicious Websites",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Removable Media",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "File Sharing Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Malvertising",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Protection Against Malware: Antivirus/Antimalware Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Regular Software Updates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Email Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Web Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Data Backup and Recovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Strong Passwords and Multi-Factor Authentication (MFA)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Mobile App Security: Security Implications of Mobile Apps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Mobile App Permission Management and Best Practices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Risks of Location-Based Social Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Data Security on Mobile Devices: Importance of Data Security on Mobile Devices to Protect Sensitive Information",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Risks of Unencrypted Data Storage and Communication on Mobile Platforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Benefits of Device Encryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Secure Messaging Apps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Encrypted Storage Solutions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "oecst611-cs-s6",
+  "code": "OECST611",
+  "name": "DATA STRUCTURES",
+  "branchId": "cs",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Data Structures: Basic Concepts and Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Data Abstraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Performance Analysis: Time and Space Complexity, Asymptotic Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Polynomial Representation Using Arrays; Sparse Matrix (Tuple Representation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Stacks and Queues: Stacks, Multi-Stacks, Queues, Circular Queues",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Linked List and Memory Management: Singly Linked List - Operations, Stacks and Queues using Linked List, Polynomial Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Doubly Linked List",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Trees: Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Binary Trees: Types, Properties, Representation, Operations, Traversals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Binary Search Trees: Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Graphs: Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Graphs: Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Depth First Search and Breadth First Search",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Sorting Techniques: Selection Sort, Insertion Sort, Quick Sort, Merge Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Searching Techniques: Linear Search, Binary Search; Hashing - Hash Functions: Division",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Collision Resolution: Linear Probing, Open Hashing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

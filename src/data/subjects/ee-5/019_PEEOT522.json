@@ -1,0 +1,147 @@
+{
+  "id": "peeot522-ee-s5",
+  "code": "PEEOT522",
+  "name": "INTRODUCTION TO SIGNALS AND SYSTEMS",
+  "branchId": "ee",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Continuous time and discrete time systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Properties of systems: time invariance, linearity, causality, systems with and without memory, and stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Convolution integral and convolution sum (graphical and any one matrix method)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Impulse and step response",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Fourier transform: existence and properties of continuous time Fourier transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Concept of frequency response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Significance of Fourier transform and difference from Fourier series; energy and power spectral density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Characterization of LTI systems: differential equation representation of continuous time LTI systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Transfer function representation of differential equation in Laplace domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Modeling of LTI systems: electrical and translational mechanical system transfer function model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Sampling process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Impulse train sampling, sampling theorem, and aliasing effect; zero-order and first-order hold circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Signal reconstruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Z-transform: stability and causality conditions using ROC; characterization of difference equations using Z-transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Pulse transfer function and impulse response of discrete-time systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Delay operator and block diagram representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Direct form, cascade, and parallel representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Discrete Fourier series: Fourier representation of discrete time signals and properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Discrete Time Fourier Transform: properties and frequency response of simple DT systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "id": "pcamt302-cs-s3",
+  "code": "PCAMT302",
+  "name": "MACHINE LEARNING I",
+  "branchId": "cs",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Machine Learning Paradigms: Supervised Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Unsupervised Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Semi-Supervised Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Reinforcement Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Parameter Estimation Methods: Maximum Likelihood Estimation (MLE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Maximum A Posteriori Estimation (MAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Bayes Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Least Squares Estimation (LS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Minimum Mean Square Estimation (MMSE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "The Gradient Descent Method and its Variants (Simple Gradient Descent Method)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Stochastic Gradient Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Batch Gradient Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Illustrative Examples of Parameter Estimation Using Different Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Supervised Learning Models: Regression - Regression Models (Simple Regression, Multivariable Linear Regression, Polynomial Regression, Logistic Regression), Illustrative Examples of Designing Regression Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Decision Trees - Working Principle, Decision Tree Formation Using ID3 Algorithm, The Classification and Regression Trees Algorithm (CART), Illustrative Examples on Designing Decision Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Overfitting and Underfitting: Bias and Variance, Bias-Variance Trade-off, Regularization (Ridge, Lasso and Elastic Net Regularization Techniques)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "More Supervised Learning Methods: Support Vector Machines (SVM) - Maximum Margin Classification, Mathematics Behind Maximum Margin Classification, Hard Margin SVM, Soft Margin SVM, Non-Linear SVM, The Kernel Trick, Different Kernel Functions (Linear Kernel, Polynomial Kernel, RBF Kernel, Sigmoid Kernel)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "K-Nearest Neighbour Classifier (KNN): Working Principle, Illustrative Examples on Designing KNN Classifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Naive Bayes Classifier - Working Principle, Types of Naive Bayes Classifiers, Illustrative Examples",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Ensemble Learning: Basic Techniques (Voting)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Simple and Weighted Averaging Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Advanced Techniques (Bagging)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Boosting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Stacking) - The Random Forest Classifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Assessment of Classification Models: Performance Measures - Confusion Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Recall",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "F1-Score",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Receiver Operating Characteristics Curve (ROC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Area Under the Curve (AUC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Illustrative Examples on Classification Model Assessment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

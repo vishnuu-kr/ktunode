@@ -1,0 +1,459 @@
+{
+  "id": "pcect602-ec-s6",
+  "code": "PCECT602",
+  "name": "MICROWAVES & ANTENNAS",
+  "branchId": "ec",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Electromagnetic Spectrum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Frequency Bands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Features of Microwaves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Advantages and Disadvantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Atmospheric Propagation Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Cavity Resonator: TE and TM Modes in Waveguides (Review only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Rectangular Cavity Resonator - Resonance Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Q Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Excitation and Tuning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Re-entrant Cavity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Microwave Hybrid Circuits: E Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "H Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Hybrid Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Hybrid Ring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Two-hole Directional Coupler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_17",
+          "title": "Isolator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_18",
+          "title": "Circulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_19",
+          "title": "Phase Shifter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_20",
+          "title": "Attenuator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_21",
+          "title": "Scattering Parameters: Properties of S Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_22",
+          "title": "S Matrix Formulation of E Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_23",
+          "title": "H Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_24",
+          "title": "Magic Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_25",
+          "title": "Directional Coupler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_26",
+          "title": "Microwave Semiconductor Devices: Principle of Operation of Tunnel Diode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_27",
+          "title": "Gunn Diode - Different Modes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Types, Structure and Principles of Operation of Two Cavity Klystron - Velocity Modulation, Bunching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Reflex Klystron - Velocity Modulation, Power Output and Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Traveling Wave Tube Amplifier - Slow Wave Structures, Helix TWT Amplification Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Magnetron Oscillator - Cylindrical Magnetron, Cyclotron Angular Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Microwave Measurements: Measurement of Power, VSWR, Frequency, Wavelength, Insertion Loss, Impedance and Attenuation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Basic Concept of Network Analyzer and Anechoic Chamber",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Radiation Mechanism",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Polarisation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Basic Antenna Parameters: Radiation Pattern",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Radiation Power Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Radiation Intensity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Radiation Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Beamwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Directivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Antenna Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Beam Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Input Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Antenna Radiation Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Effective Aperture Area",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Effective Height",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_20",
+          "title": "Antenna Noise Temperature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_21",
+          "title": "Reciprocity Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_22",
+          "title": "Helmholtz Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_23",
+          "title": "Duality Theorem (No proof required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_24",
+          "title": "Field, Directivity and Radiation Resistance of a Short Dipole and Half Wave Dipole (Far Field Derivation)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Field of Two Isotropic Point Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Principle of Pattern Multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Array Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Linear Arrays of 'n' Isotropic Point Sources with Equal Amplitude",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Grating Lobes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Design of Broadside and End Fire Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Phased Array Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Adaptive Antenna Array Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Broadband Antennas: Log Periodic Antenna Array - Principle and Design Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Helical Antenna: Design Equations, Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Microstrip Rectangular Patch Antennas - Design Equations, Important Feeding Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Horn Antenna - Types, Principles, Expressions for E, H and Gain (No derivation required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Parabolic Dish Antenna - Principle, Cassegrain Feed, Expression for E, H and Gain without Derivation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Mobile Phone Antenna - Inverted F Antenna",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "peaet413-ec-s4",
+  "code": "PEAET413",
+  "name": "OPTICAL INSTRUMENTATION",
+  "branchId": "ec",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Optical Fiber Concepts: Principle of Light Propagation Through Optical Fiber, Acceptance Angle and Acceptance Cone, Numerical Aperture, V-Number, Types of Optical Fibers (Material, Refractive Index and Modes) and Their Properties, Distortions in Optical Fibers: Attenuation, Material Absorption Losses, Scattering Losses, Fiber Bend Loss",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Dispersions: Intermodal and Intramodal Dispersions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Optical Fiber Fabrication: Melting Method, Vapor Phase Deposition Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Optical Source: LED - Edge Emitting LED, Surface Emitting LED",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Optical Detectors: Photodiodes, Phototransistors, PIN Diodes, Avalanche Photodiodes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Fiber Connections: Fiber Optic Connectors, Splicers, Splicing Issues and Splicing Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Optical Couplers, Isolators and Circulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Fiber Optic Sensors: Fiber Optic Instrumentation System for Measurement of Fiber Characteristics - Attenuation Measurement (Cut Back Method), Dispersion Measurement (Time Domain and Frequency Domain Method), Refractive Index Profile Measurements, Optical Time Domain Reflectometers, Fiber Numerical Aperture Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Measurement of Pressure, Temperature, Current, Voltage, Liquid Level and Strain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Optical Modulators: Different Types of Modulators - Electro-Optic Modulators, Magneto-Optic Modulators and Acousto-Optic Modulators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Interferometers: Types - Fabry-Perot Interferometer, Michelson Interferometer and Mach-Zehnder Interferometer, Interference Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Interferometric Method for Measurement of Length - Fiber Optic Gyroscope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Optical Spectrum Analyzers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Lasers: Principles of Operation, Einstein Relations, Population Inversion, Optical Feedback, Laser Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Types of Lasers: Solid State Laser (Ruby Laser), Gas Lasers (He-Ne Laser), Liquid Dye Lasers, Semiconductor Lasers, Q-Switching and Mode Locking, Properties of Laser Light",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Laser Heating, Melting, Scribing, Trimming, Welding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Medical Application of Lasers: Laser and Tissue Interaction, Laser Diagnosis, Laser Instruments for Microsurgery, Removal of Tumors of Vocal Chords, Brain Surgery, Dermatology, Oncology and Ophthalmology",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

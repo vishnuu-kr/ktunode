@@ -1,0 +1,357 @@
+{
+  "id": "oeevt612-ec-s6",
+  "code": "OEEVT612",
+  "name": "ELECTRONIC HARDWARE FOR ENGINEERS",
+  "branchId": "ec",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Single Sided (Single Layer)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Multi-Layer (Double Layer)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "PCB Materials, Component Package Types: Axial Lead",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Radial Lead",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Single Inline Package (SIP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Dual Inline Package (DIP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Transistor Outline (TO)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Pin Grid Array (PGA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Metal Electrode Face (MELF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Leadless Chip Carrier (LCC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Small Outline Integrated Circuit (SOIC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Quad Flat Pack (QPF) and Thin QFP (TQFP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Ball Grid Array (BGA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Plastic Leaded Chip Carrier (PLCC)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Schematic Entry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Net Listing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "PCB Layout Designing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Prototype Designing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Design Rule Check (DRC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Design for Manufacturing (DFM), PCB Making: Printing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Etching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Drilling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Assembly of Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Introduction to PCB Design using PROTEUS Tool",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Assembly of Simple Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Switch Mode Power Supply (Applicable Standard: IS 14886): Safety Testing (Earth Leakage Current Test)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Dielectric Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Short Circuit Protection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Performance Testing (Line Regulation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Load Regulation for a Variation of Load Min to Max Load and Vice Versa",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Safety Testing of Household Appliances (Applicable Standard IS 302-1): Definitions and Terminology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Protection Against Shock",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Power Input and Current",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Leakage Current and Electric Strength at Operating Temperature",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Introduction to Computer: Difference between Hardware and Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Booting Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Different Input and Output Devices/Cables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Connectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Different Types of Motherboard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Controller Cards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Ethernet Cards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Different Types of RAM Used in PCs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Installation: BIOS Setting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Formatting of Hard Disk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Installation of Windows",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Offline Drive Installation, Online Drive Installation, Windows File Repairing, BIOS Password Break, Administrative Password Break, Data Recovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Application Software Installation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Dual Booting Installation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Assembly and Dismantling: Assembly and Dismantling of PCs, Front Panel Connection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Servicing of Computer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Types of Backup",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_18",
+          "title": "Taking Backup Files and Fine Tuning the System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_19",
+          "title": "Running Diagnostics Tool",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_20",
+          "title": "Running of Virus Protection Program",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

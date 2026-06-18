@@ -1,0 +1,105 @@
+{
+  "id": "pecat867-cs-s8",
+  "code": "PECAT867",
+  "name": "STOCHASTIC DECISION MAKING",
+  "branchId": "cs",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Overview of Stochastic Processes and Their Relevance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Discrete-Time Stochastic Processes: Markov Chains - States, Transition Matrices, Steady-State Analysis, Examples, and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Continuous-Time Stochastic Processes: Poisson Processes and Continuous-Time Markov Chains - Basic Properties and Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Introduction to MDPs: Components of MDPs (States, Actions, Rewards, and Policies), Bellman Equations, and Value Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Solution Methods for MDPs: Dynamic Programming Methods (Value Iteration, Policy Iteration)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Advanced Topics in MDPs: Approximate Solutions for Large MDPs, Policy Gradients, and Actor-Critic Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Introduction to Stochastic Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Formulations and Types of Stochastic Optimization Problems: Basic Principles and Illustrative Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Stochastic Gradient Descent: Algorithmic Details, Convergence, Practical Considerations, and Comparison with Deterministic Optimization Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Real-World Applications: Finance and Robotics - Analysis of Practical Challenges and Case Studies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Applications in AI and Robotics: Stochastic Decision-Making in AI (Natural Language Processing, Autonomous Systems) and Case Studies in Robotics (Path Planning, Adaptive Control)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Applications in Finance and Operations Research: Financial Modeling (Risk Management, Portfolio Optimization) and Operations Research Applications (Inventory Management, Queuing Systems)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "id": "pcict205-ec-s2",
+  "code": "PCICT205",
+  "name": "BASIC OF INSTRUMENTATION ENGINEERING (INSTRUMENTATION AND CONTROL ENGINEERING)",
+  "branchId": "ec",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Instrument Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Typical Applications of Instrument Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Basic Description of the Functional Elements of the Measurement System with Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Transducers and Instrument Types: Definition of Transducers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Role of Transducers in Instrumentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Classification of Instruments: Active and Passive Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Null-Type and Deflection-Type Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Analogue and Digital Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Indicating Instruments and Instruments with a Signal Output",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Manually Operated and Automatic Type Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Self-Generating and Power Operated Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Contacting and Non-Contacting Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Smart and Non-Smart Instruments",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Need of Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Role of Error Detectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Block Diagram for a Control System with Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Measurement System Performance: Static Characteristics of Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Accuracy and Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Static Sensitivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Linearity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Hysteresis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Threshold",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Dead Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Dead Zone",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Resolution or Discrimination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Static Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Static Correction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Scale Range and Span",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "Reproducibility and Drift",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Repeatability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "Dynamic Characteristics of Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_19",
+          "title": "Zero Order Instrument",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_20",
+          "title": "First Order Instrument",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_21",
+          "title": "Second Order Instrument",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Standards and Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Necessity of Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Careful Instrument Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Principles of Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Control of Calibration Environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Calibration Chain and Traceability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Calibration Records",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Intelligent Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Types of Inputs: Input Output Configuration of Measuring Instruments and Measurement Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Desired Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Interfering Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Modifying Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Methods of Correction for Interfering and Modifying Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Loading Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Input and Output Impedances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Input Impedances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Input Admittance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Output Impedances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Output Admittance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Signal to Noise Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Sources of Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Johnson Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Power Spectrum Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Sources of Measurement Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Inductive Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Capacitive (Electrostatic) Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Noise Due to Multiple Earths",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Noise in the Form of Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Errors During the Measurement Process: Errors in Measurements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "True Value",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Limiting Errors (Guarantee Errors)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Relative (Fractional) Limiting Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Combination of Quantities with Limiting Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Known Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Types of Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_18",
+          "title": "Gross Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_19",
+          "title": "Systematic Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_20",
+          "title": "Instrumental Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_21",
+          "title": "Environmental Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_22",
+          "title": "Observational Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_23",
+          "title": "Random (Residual) Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_24",
+          "title": "Reduction of Systematic Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_25",
+          "title": "Careful Instrument Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_26",
+          "title": "Method of Opposing Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_27",
+          "title": "Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_28",
+          "title": "Manual Correction of Output Reading",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

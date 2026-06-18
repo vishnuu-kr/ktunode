@@ -1,0 +1,345 @@
+{
+  "id": "oerat724-ec-s8",
+  "code": "OERAT724",
+  "name": "BASICS OF MOBILE ROBOTICS",
+  "branchId": "ec",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Static and Dynamic Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Coordinate Systems and Frames of Reference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Matrix Notation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Mapping from One Frame to Another",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Concatenation of Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Forward Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "The Denavit-Hartenberg Notation and Inverse Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Differential Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Inverse Differential Kinematics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Statics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Kineto-Static Duality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Manipulability Ellipsoid in Velocity Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Force Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Manipulability Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Grasping: The Theory of Grasping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Simple Grasping Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "1-DoF Scissor Like Gripper",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Parallel Jaw",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "4-Bar Linkage Parallel Gripper",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Multi-Fingered Hands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Actuators: Electric Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Hydraulic and Pneumatic Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Safety Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Sensors: Terminology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "Sensors that Measure the Robot's Joint Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Sensors that Measure Ego-Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "Sensors to Measure Force",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_19",
+          "title": "Sensors to Measure Distance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_20",
+          "title": "Sensors to Measure Global Pose",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Images as Two Dimensional Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Translation of Signal to Information",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Basic Image Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Extracting Structure from Vision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Computer Vision and Machine Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Feature Extraction: Feature Detection as an Information-Reduction Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Line Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Scale-Invariant Feature Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Feature Detection and Machine Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "The Simple Perception",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Activation Function: Simple Perceptron to Multilayer Neural Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Single Outputs to Higher Dimensional Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Objective Functions and Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Task Execution: Reactive Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Finite State Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Hierarchical Finite State Machine and Behaviour Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Mission Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Mapping: Map Representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Iterative Closest Point for Sparse Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Octomap: Dense Mapping of Voxels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "RGB-D Mapping: Dense Mapping of Surfaces",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

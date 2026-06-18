@@ -1,0 +1,93 @@
+{
+  "id": "pcbml308-ec-s4",
+  "code": "PCBML308",
+  "name": "DIGITAL ELECTRONICS LAB",
+  "branchId": "ec",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Identification of Different Logic ICs, Their Specifications, and Pin Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Implementation of Basic and Universal Gates; Realization of Basic Gates Using Universal Gates; Realization of SOP and POS Expressions Using Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Design of 4:1 Multiplexer and 1:4 Demultiplexer Circuits Using Basic Gates and Study of Mux/De-Mux ICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Realization of Multiplexers and De-Multiplexers Using Gates and Study of Their ICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Analyse the Characteristics of TTL Gate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Realization of Encoder and Decoder Circuits Using Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Implementation of SR, T, and Master Slave JK Flip-Flops Using Basic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Realization of Ring Counter and Johnson Counter Using Flip-Flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Design and Implementation of 2-Bit Comparators and Code Converters Using Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Design of Asynchronous Counters: Up and Down Asynchronous Counter; Up/Down Asynchronous Counter Using Mode Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Design of Synchronous Counters: Up and Down Synchronous Counter; Up/Down Synchronous Counter Using Mode Control; Mod-N Synchronous Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Design of Shift Registers (Any Two): Serial In-Serial Out (SISO), Serial In-Parallel Out (SIPO), Parallel In-Serial Out (PISO), Parallel In-Parallel Out (PIPO), and Serial/Parallel Shift Register Using Mode Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Familiarization with Verilog HDL Coding: Modelling and Simulation of Basic Gates, Simple Boolean Functions, and Combinational Circuits Using Verilog (Gate Level)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "pceol507-ee-s5",
+  "code": "PCEOL507",
+  "name": "POWER ELECTRONICS LAB",
+  "branchId": "ee",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Preliminary Work: Testing and Troubleshooting of Power Diodes, Power Transistors, MOSFETs, IGBTs, Op-Amps, and MOSFET Drivers Using Multimeters and Datasheets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Simulation of Power Electronic Circuits Using SPICE-Based Software (LTSpice, ORCAD, PSpice, Proteus)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Static VI Characteristics of Power Devices (Diode, SCR, MOSFET, IGBT) – Simulation and Comparison with Datasheet Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "High Frequency Diode: Measurement of Power Loss and Reverse Recovery Time, Comparison with Theoretical Estimates and Schottky Diode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Single-Phase Half-Wave Controlled Rectifier Feeding R/RL Load with Line-Synchronized R and RC Firing Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Single-Phase Half-Controlled (Semi-Converter) and Fully-Controlled Rectifier Feeding R/RL Loads with UJT, Ramp, and Digital Firing Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Effect of Source Inductance in Single-Phase Controlled Rectifier Feeding Highly Inductive Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Single-Phase Half-Controlled/Fully-Controlled Rectifier Fed PMDC/Separately Excited DC Motor Drive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Single-Phase AC Voltage Controller Using TRIAC/SCR Feeding R/RL Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Isolated Gate Driver Circuit for Single-Phase Half-Bridge IGBT/MOSFET Inverter and Dead-Time Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Gate Drive Using Bootstrap Technique for MOSFET/IGBT with Protection Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Single-Phase Half-Bridge/Full-Bridge IGBT/MOSFET Inverter Feeding RL Load with Square Wave and Sine-Triangle PWM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Inductor Design and Fabrication for High Frequency Switching Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Design and Set-Up of Buck/Boost/Buck-Boost Converter (Continuous Conduction Mode)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Speed Control of Permanent Magnet/Separately Excited DC Motor Using One-Quadrant/Two-Quadrant DC Chopper",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_16",
+          "title": "Three-Phase IGBT/MOSFET Inverter Feeding RL Load with Sine-Triangle PWM and Third-Harmonic Injection PWM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_17",
+          "title": "Stator Voltage Control of Three-Phase Induction Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_18",
+          "title": "Single-Phase Unidirectional/Bidirectional Interface – Boost PWM Rectifier with Near Unity Power Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_19",
+          "title": "V/F Control of Three-Phase Induction Motor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

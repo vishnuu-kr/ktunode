@@ -1,0 +1,213 @@
+{
+  "id": "pcict403-ec-s4",
+  "code": "PCICT403",
+  "name": "SIGNALS AND SYSTEMS",
+  "branchId": "ec",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Definitions and Classification of Signals (Continuous-time and Discrete-time, Periodic and Aperiodic, Even and Odd, Energy and Power)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Basic Operations on Signals (Scaling, Shifting, Folding)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Systems: Definitions and Classification (Linear and Nonlinear, Time-Invariant and Time-Variant, Causal and Non-Causal, Stable and Unstable)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Examples of Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Linear Time-Invariant (LTI) Systems: Properties, Stability, and Causality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Representation of Systems: Differential Equation (Continuous-time) and Difference Equation (Discrete-time)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Discrete-time LTI Systems and Linear Convolution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Representation of Periodic Signals: Fourier Series and Convergence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Continuous-Time Fourier Transform (CTFT) and its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Review of Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Region of Convergence (ROC): Properties, Stability, and Causality Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Relation between Fourier and Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Discrete-Time Fourier Series (DTFS) and its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Discrete-Time Fourier Transform (DTFT) and its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Analysis of Discrete-Time LTI Systems using DTFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Z-Transform: Mapping of s-plane to Z-plane, Inverse Transform, and Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Relation between DTFT and Z-Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Analysis of Discrete-Time LTI Systems using Z-Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Stability and Causality using Z-Transform",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Sampling: Definition and Importance in Signal Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Nyquist-Shannon Sampling Theorem and Conditions for Perfect Reconstruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Aliasing: Definition, Causes, Effects of Undersampling, and Methods of Prevention",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Ideal vs. Practical Sampling (Impulse Sampling, Zero-Order Hold, First-Order Hold)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Quantization: Process, Quantization Error, Uniform and Non-uniform Quantization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Reconstruction of Continuous-time Signals from Discrete-time Samples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Interpolation Methods (Zero-Order Hold, First-Order Hold, Sinc Interpolation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Oversampling and Undersampling: Benefits, Conditions, and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Sampling in the Frequency Domain and Sampling of Band-Pass Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Introduction to Multi-rate Systems: Decimation and Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Applications of Sampling in Digital Signal Processing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

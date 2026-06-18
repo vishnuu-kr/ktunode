@@ -1,0 +1,117 @@
+{
+  "id": "pcerl307-ec-s3",
+  "code": "PCERL307",
+  "name": "PCERL307",
+  "branchId": "ec",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Searching and sorting algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Array-based data structures and expression notation conversions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Linked lists for stacks, queues, and polynomial manipulations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Binary search trees, tree traversals, and graph traversal algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Familiarization of logic gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Realization of functions using basic and universal gates (SOP and POS forms)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Half adder and full adder using NAND",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Realization of 8:1 MUX and 1:8 DEMUX",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Flip-flop circuits (SR, D & Master slave)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Asynchronous up/down counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Familiarization of FPGA devices and Verilog HDL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Implementation of basic gates using Verilog & simulate the result using test bench",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Implementation of half adder & full adder using Verilog & simulate the result using test bench",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Implementation of MUX & DEMUX using Verilog & simulate the result using test bench",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Implementation of encoder & decoder using Verilog & simulate the result using test bench",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Implementation of flip-flops using Verilog & simulate the result using test bench",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "pccbl607-cs-s7",
+  "code": "PCCBL607",
+  "name": "INFORMATION SECURITY LAB",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Encryption and Decryption using Caesar, Affine, Playfair, Hill, and Vigenere Ciphers with Brute Force Attack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Implementation of DES Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "RSA Algorithm for Practical Application",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Diffie Hellman Key Exchange",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Message Digest Calculation using SHA-1 Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Implementation of Simplified AES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Digital Signature Standard (DSS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Shell Scripting Experiments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "OS Security in Linux: User Management and File Permissions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "OS Security in Linux: Process Permissions and Access Control Lists",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Linux System Calls Programming (fork, exec, getpid, exit, wait, close, stat, opendir, readdir)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Linux I/O System Calls Programming (open, read, write)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Familiarization with Wireshark",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Demonstration of Intrusion Detection System (IDS)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

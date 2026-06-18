@@ -1,0 +1,375 @@
+{
+  "id": "pecst411-cs-s4",
+  "code": "PECST411",
+  "name": "SOFTWARE ENGINEERING",
+  "branchId": "cs",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "SRS for College Library Management Software",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Component and Connector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Layered",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Repository",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Client-Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Publish-Subscribe",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Functional Independence - Coupling and Cohesion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Case Study: Ariane Launch Failure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Object-Oriented Software Design - UML Diagrams and Relationships - Static and Dynamic Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Class Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "State Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Use Case Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Sequence Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Case Studies: Voice Mail System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "ATM Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Software Pattern - Model View Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "Creational Design Pattern Types - Factory Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Abstract Factory Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "Singleton Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_19",
+          "title": "Prototype Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_20",
+          "title": "Builder Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_21",
+          "title": "Structural Design Pattern and its Types - Adapter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_22",
+          "title": "Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_23",
+          "title": "Proxy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_24",
+          "title": "Composite",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_25",
+          "title": "Decorator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_26",
+          "title": "Façade",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_27",
+          "title": "Flyweight",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_28",
+          "title": "Behavioral Design Pattern",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Coding Guidelines - Code Review",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Code Walkthrough and Code Inspection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Code Debugging and its Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Testing - Unit Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Integration Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "System Testing and its Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Black Box Testing and White Box Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Regression Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Overview of DevOps and Code Management - Code Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "DevOps Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Continuous Integration, Delivery, and Deployment (CI/CD/CD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Case Study - Netflix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Software Maintenance and its Types - Adaptive, Preventive, Corrective, and Perfective Maintenance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Boehm's Maintenance Models (both legacy and non-legacy)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Risk and its Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Risk Monitoring and Management Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Software Project Management - Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Staffing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Organizational Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Scheduling using Gantt Chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Software Configuration Management and its Phases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Software Quality Management - ISO 9000",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Six Sigma for Software Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Cloud-based Software - Virtualisation and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Everything as a Service (IaaS, PaaS, Software as a Service)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Microservices Architecture - Microservices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Microservices Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Microservice Deployment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

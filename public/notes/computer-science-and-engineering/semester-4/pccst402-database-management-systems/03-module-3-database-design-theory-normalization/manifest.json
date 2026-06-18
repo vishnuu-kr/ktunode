@@ -1,0 +1,72 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS",
+  "course_code": "PCCST402",
+  "module_number": 3,
+  "module_title": "Database Design Theory & Normalization",
+  "topics_generated": [
+    {
+      "title": "Functional Dependencies",
+      "slug": "functional-dependencies",
+      "path": "functional-dependencies/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Basic definition",
+      "slug": "basic-definition",
+      "path": "basic-definition/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "First, Second, and Third normal forms",
+      "slug": "first-second-and-third-normal-forms",
+      "path": "first-second-and-third-normal-forms/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transaction Management",
+      "slug": "transaction-management",
+      "path": "transaction-management/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transaction Processing: Introduction",
+      "slug": "transaction-processing-introduction",
+      "path": "transaction-processing-introduction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transaction Processing: problems and failures in transaction",
+      "slug": "transaction-processing-problems-and-failures-in-transaction",
+      "path": "transaction-processing-problems-and-failures-in-transaction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transaction Processing: Desirable properties of transaction",
+      "slug": "transaction-processing-desirable-properties-of-transaction",
+      "path": "transaction-processing-desirable-properties-of-transaction/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Transaction Processing: Characterizing schedules based on recoverability and serializability",
+      "slug": "transaction-processing-characterizing-schedules-based-on-recoverability-and-serializability",
+      "path": "transaction-processing-characterizing-schedules-based-on-recoverability-and-serializability/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Concurrency Control",
+      "slug": "concurrency-control",
+      "path": "concurrency-control/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ],
+  "cheat_sheet": "cheat-sheet/cheat-sheet.md"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "pecmt523-cs-s5",
+  "code": "PECMT523",
+  "name": "FUZZY SYSTEMS",
+  "branchId": "cs",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Fuzzy Set Theory - Uncertainty, Imprecision and Vagueness, Crisp vs Fuzzy Sets, Representation of Fuzzy Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Membership Functions - Types and Basic Operations (Dilation, Concentration, Normalization), Linguistic Hedges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Properties of Fuzzy Sets - Level Sets, Alpha Cut Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Operations on Fuzzy Sets - Complement, Intersection, Union, Aggregation Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Fuzzy Relations - Operations: Union, Intersection, Complement, Cartesian Product",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Fuzzy Composition - Max-Min, Max-Product",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Extension Principle - Fuzzy Arithmetic, Fuzzy Numbers, Arithmetic Operations on Fuzzy Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Fuzzy Reasoning - Generalized Modus Ponens (GMP) and Generalized Modus Tollens (GMT)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Fuzzy Inference - Zadeh Rule, Mamdani Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Development of Membership Functions - Intuition, Inference, Rank Ordering, Inductive Reasoning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Defuzzification to Scalars - Max Membership Principle, Centroid Method, Weighted Average Method, Mean Max Membership, Center of Sums, Center of Largest Area, First (or Last) of Maxima",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Approximate Reasoning and Fuzzy (Rule-Based) Systems - Multiple Conjunctive Antecedents, Multiple Disjunctive Antecedents, Aggregation of Fuzzy Rules, Graphical Techniques of Inference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Fuzzy Controllers - Mamdani FIS, Larsen Model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

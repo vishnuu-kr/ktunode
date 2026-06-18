@@ -1,0 +1,135 @@
+{
+  "id": "oecpt722-cs-s7",
+  "code": "OECPT722",
+  "name": "INTRODUCTION TO ROBOTICS",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Robotics: Overview of Robotics and Its Applications, Historical Development and Current Trends, Basic Components and Classifications of Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Robot Anatomy and Components: Sensors (Types, Functions, and Integration), Actuators (Motors, Servos, and Their Control), Control Systems and Feedback Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Robot Kinematics: Coordinate Systems and Transformations, Forward and Inverse Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Robot Dynamics: Introduction to Dynamic Modeling (Newton-Euler and Lagrangian Methods)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Control Systems Fundamentals: Control Theory Basics (PID Control, State-Space Models), Implementing Control Algorithms in Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Programming Robots: Introduction to Robot Programming Languages and Environments, Basic Programming Constructs and Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Perception and Sensor Integration: Types of Sensors (Vision, Rangefinders, IMUs), Sensor Fusion and Data Interpretation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Motion Planning: Path Planning Algorithms (A*, PRM), Motion Planning in Dynamic Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Robotic Systems Integration: Integration of Hardware and Software Components, Communication Protocols and Data Exchange",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Robotics in Industry: Applications in Manufacturing, Healthcare, and Other Fields, Case Studies, Current Trends and Future Directions in Robotics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Human-Robot Interaction: Techniques and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Autonomous Robots: Navigation and Decision-Making",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Robotics and AI: Integration and Future Trends",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Emerging Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Soft Robotics and Bio-Inspired Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Collaborative Robots (Cobots) and Their Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Swarm Robotics and Collective Behavior",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

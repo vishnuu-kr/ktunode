@@ -1,0 +1,165 @@
+{
+  "id": "oeitt613-cs-s6",
+  "code": "OEITT613",
+  "name": "AI WITH PYTHON",
+  "branchId": "cs",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Overview of AI and Agents: Definition and History of AI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Narrow AI vs. General AI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "AI Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Definition and Components of AI Agents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Types of Agents: Simple Reflex, Model Based, Goal Based, and Utility Based Agents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Agent Architectures and Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Python for AI: Python Basic Data Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Setting Up Python Environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Key Libraries and Tools: NumPy, Pandas, Matplotlib",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Definition and Formulation of AI Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "State Space Representation, Actions, and Goals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Problem Characteristics: Problem Decomposability, Solution Steps Consideration, Problem Solution Predictability, Absolute or Relative Problem Solution, State or Path Solution, Role of Knowledge in Problem Solving",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Human Interaction in Problem Solving",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Problem Definition and Python Implementation of Water Jug Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "8-Puzzle Problem and Missionaries and Cannibals Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Uninformed Search Algorithm: Breadth First Search and Depth First Search Algorithms Description and Implementation Using Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Informed Search Algorithms: Hill Climbing, A* Search Algorithm, and AO* Search Algorithm Description and Implementation Using Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Comparison of Informed and Uninformed Search Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Minimax Algorithm and Alpha-Beta Pruning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Game Playing Implementation: Tic-Tac-Toe with Minimax and Alpha-Beta Pruning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Introduction to CSP: Definitions and Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Techniques for CSP: Backtracking and Constraint Propagation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

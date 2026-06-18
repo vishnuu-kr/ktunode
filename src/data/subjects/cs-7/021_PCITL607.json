@@ -1,0 +1,87 @@
+{
+  "id": "pcitl607-cs-s7",
+  "code": "PCITL607",
+  "name": "NETWORK SECURITY LAB",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Implementation of AES and DES algorithms for data encryption and decryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Setting up and configuring a public key infrastructure (PKI) for secure communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Key management using RSA algorithm and certificate generation in a simulated environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Implementation of digital signatures using RSA and DSA algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Application of cryptographic hash functions (SHA-256 and MD5) for data integrity verification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Secure message transmission using digital signatures and hash functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Configuration and deployment of Snort as an Intrusion Detection System (IDS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Implementation of an Intrusion Prevention System (IPS) using open-source tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Analysis of network traffic and identification of malicious activities using IDS/IPS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Configuration of a network firewall using iptables/pfSense",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Implementation of VPN protocols (IPSec and SSL/TLS) for secure communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Testing and validation of cryptographic protocols (SSL/TLS) in securing web transactions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

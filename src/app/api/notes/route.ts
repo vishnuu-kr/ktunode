@@ -66,9 +66,13 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const relativePath = readTopicPathMap()[id];
+    let relativePath = readTopicPathMap()[id];
     if (!relativePath) {
       return json({ error: "Note not found in lookup mapping" }, 404);
+    }
+
+    if (relativePath.startsWith("public/")) {
+      relativePath = relativePath.substring(7);
     }
 
     if (!validateNotePath(relativePath)) {

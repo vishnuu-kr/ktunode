@@ -1,0 +1,111 @@
+{
+  "id": "pecst869-cs-s8",
+  "code": "PECST869",
+  "name": "COMPUTATIONAL NUMBER THEORY",
+  "branchId": "cs",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Number Theory: Basic Concepts and Definitions, Greatest Common Divisor (GCD) and Euclidean Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Modular Arithmetic: Congruences and Modular Arithmetic, Applications of Modular Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Integer Factorization: Prime Numbers and Factorization, Algorithms for Integer Factorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Basic Algorithms: Algorithms for Modular Arithmetic, Fast Exponentiation Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Advanced Factorization Algorithms: Pollard's Rho Algorithm, Elliptic Curve Factorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Public-Key Cryptography: RSA Algorithm, Security Analysis of RSA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Elliptic Curve Cryptography: Introduction to Elliptic Curves, Algorithms for Elliptic Curve Cryptosystems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Public Key Cryptography: RSA Algorithm and Its Implementation, Security Aspects and Cryptanalysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Elliptic Curve Cryptography: Basics of Elliptic Curves, Elliptic Curve Cryptosystems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Cryptographic Protocols: Key Exchange Protocols, Digital Signatures and Authentication",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Algebraic Number Theory: Algebraic Integers and Number Fields, Factorization in Number Fields",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Computational Methods: Algorithms for Solving Diophantine Equations, Applications in Computational Algebra",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Recent Developments and Applications: Applications in Modern Cryptography and Coding Theory",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

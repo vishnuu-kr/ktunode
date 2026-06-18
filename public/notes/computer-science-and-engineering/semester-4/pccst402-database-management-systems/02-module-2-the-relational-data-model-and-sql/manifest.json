@@ -1,0 +1,72 @@
+{
+  "course_name": "DATABASE MANAGEMENT SYSTEMS",
+  "course_code": "PCCST402",
+  "module_number": 2,
+  "module_title": "The Relational Data Model and SQL",
+  "topics_generated": [
+    {
+      "title": "The Relational Data Model and Relational Database Constraints",
+      "slug": "the-relational-data-model-and-relational-database-constraints",
+      "path": "the-relational-data-model-and-relational-database-constraints/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Relational Algebra and Relational Calculus",
+      "slug": "relational-algebra-and-relational-calculus",
+      "path": "relational-algebra-and-relational-calculus/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Structured Query Language (SQL)",
+      "slug": "structured-query-language-sql",
+      "path": "structured-query-language-sql/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Definition Language",
+      "slug": "data-definition-language",
+      "path": "data-definition-language/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Data Manipulation Language",
+      "slug": "data-manipulation-language",
+      "path": "data-manipulation-language/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Assertions",
+      "slug": "assertions",
+      "path": "assertions/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Triggers",
+      "slug": "triggers",
+      "path": "triggers/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Views",
+      "slug": "views",
+      "path": "views/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Relational Database Design Using ER-to-Relational Mapping",
+      "slug": "relational-database-design-using-er-to-relational-mapping",
+      "path": "relational-database-design-using-er-to-relational-mapping/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ],
+  "cheat_sheet": "cheat-sheet/cheat-sheet.md"
+}

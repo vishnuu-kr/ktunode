@@ -1,0 +1,51 @@
+{
+  "course_name": "CODING THEORY",
+  "course_code": "PECST414",
+  "module_number": 2,
+  "module_title": "Cyclic Codes",
+  "topics_generated": [
+    {
+      "title": "Cyclic Codes: Generator and Parity-Check Matrices of Cyclic Codes",
+      "slug": "cyclic-codes-generator-and-parity-check-matrices-of-cyclic-codes",
+      "path": "cyclic-codes-generator-and-parity-check-matrices-of-cyclic-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Encoding of Cyclic Codes",
+      "slug": "encoding-of-cyclic-codes",
+      "path": "encoding-of-cyclic-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Syndrome Computation and Error Detection",
+      "slug": "syndrome-computation-and-error-detection",
+      "path": "syndrome-computation-and-error-detection/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Decoding of Cyclic Codes",
+      "slug": "decoding-of-cyclic-codes",
+      "path": "decoding-of-cyclic-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Cyclic Hamming Codes",
+      "slug": "cyclic-hamming-codes",
+      "path": "cyclic-hamming-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    },
+    {
+      "title": "Shortened Cyclic Codes",
+      "slug": "shortened-cyclic-codes",
+      "path": "shortened-cyclic-codes/notes.md",
+      "has_mermaid": true,
+      "has_math": true
+    }
+  ],
+  "cheat_sheet": "cheat-sheet/cheat-sheet.md"
+}

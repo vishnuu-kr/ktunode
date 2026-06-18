@@ -1,0 +1,477 @@
+{
+  "id": "pciet302-me-s3",
+  "code": "PCIET302",
+  "name": "FLUID MECHANICS AND HYDRAULIC MACHINES",
+  "branchId": "me",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Properties of Fluid - Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Specific Weight",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Viscosity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Surface Tension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Capillarity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Vapour Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Bulk Modulus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Compressibility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Newton's Law of Viscosity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Newtonian and Non-Newtonian Fluids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Real and Ideal Fluids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Incompressible and Compressible Fluids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Fluid Statics: Atmospheric Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Gauge Pressure and Absolute Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Pascal's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Measurement of Pressure - Piezometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_17",
+          "title": "Manometers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_18",
+          "title": "Pressure Gauges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_19",
+          "title": "Forces on Planar and Curved Surfaces Immersed in Fluids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_20",
+          "title": "Centre of Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_21",
+          "title": "Buoyancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_22",
+          "title": "Equilibrium of Floating Bodies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_23",
+          "title": "Metacentre and Metacentric Height",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Overview on Classification of Flows",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Continuity Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Velocity and Acceleration of Fluid Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Euler's Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Bernoulli's Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Reynolds Experiment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Hagen-Poiseuille Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Major and Minor Losses in Pipes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Darcy-Weisbach Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Chezy's Formula",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Pipes in Series and Parallel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Siphon Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Water Hammer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Transmission of Power through Pipes and Related Practical Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Flow Rate Measurements: Venturi and Orifice Meters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Mouth Pieces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Notches and Weirs (Derivation of Discharges Only for Basic Geometries)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Flow Velocity Measurements Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Time of Emptying a Tank",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Basic Concepts on Boundary Layer Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Displacement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Momentum and Energy Thickness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Hydraulic Turbines: Overview on Impact of Jets on Flat",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Curved Symmetrical and Unsymmetrical Plates (Stationary and Moving)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Impact of Jet on Hinged Plate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Impact of Jet on Moving Series of Flat and Curved Vanes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Hydroelectric Power Stations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Overview on Impulse",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Reaction and Axial Flow Turbines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Working Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Constructional Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Design Parameters and Practical Problems on Pelton",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Francis and Kaplan Turbines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_20",
+          "title": "Governing of Turbines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_21",
+          "title": "Draft Tubes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_22",
+          "title": "Cavitation in Turbines",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Overview on Rotary and Positive Displacement Pumps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Working Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Constructional Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Design Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Accessories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Factors Affecting Performance Characteristics and Practical Problems on Centrifugal Pumps and Reciprocating Pumps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Multi Staging of Pumps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Basic Features and Working of Diaphragm Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Gear Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Peristaltic Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Progressive Cavity Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Drum Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Submersible Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Fire Fighting Pumps and Micro Pumps",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

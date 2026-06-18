@@ -1,0 +1,117 @@
+{
+  "id": "pccsl507-cs-s5",
+  "code": "PCCSL507",
+  "name": "NETWORKS LAB",
+  "branchId": "cs",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Familiarize Linux networking commands (ifconfig, ping, traceroute, netstat, nmap, tcpdump, etc.)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "HTTP packet capture and analysis using Wireshark",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "SMTP packet capture and analysis using Wireshark",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "DNS packet capture and analysis using Wireshark",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Client-Server communication using TCP - Matrix type identification (upper triangular, lower triangular, diagonal)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Client-Server communication using UDP - Abbreviation translation to formal English",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Multi-user chat server using TCP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Concurrent time server using UDP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Concurrent file server with PID response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Packet capturing using raw sockets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Familiarizing router commands (modes, configuration, routing table, interfaces)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Static routing configuration and verification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "RIPv2 routing configuration and verification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "OSPF routing configuration and verification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Access control list configuration to restrict specific host communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_16",
+          "title": "Network design with subnetting and selective service blocking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_17",
+          "title": "RIPng routing implementation for IPv6 network",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

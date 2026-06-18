@@ -1,0 +1,411 @@
+{
+  "id": "peadt525-cs-s5",
+  "code": "PEADT525",
+  "name": "FUNDAMENTALS OF DIGITAL IMAGE PROCESSING",
+  "branchId": "cs",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "The Image, Its Representation and Properties - Image Representations, Image Digitization, Sampling, Quantization, Digital Image Properties, Metric and Topological Properties of Digital Images, Histograms, Entropy, Visual Perception of the Image - Contrast, Acuity, Image Quality, Noise in Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Color Images - Physics of Color, Color Perceived by Humans, Color Spaces, Color Constancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Data Structures for Image Analysis - Levels of Image Data Representation, Traditional Image Data Structures - Matrices, Chains, Topological Data Structures - Relational Structures, Hierarchical Data Structures, Pyramids, Quadtrees, Other Pyramidal Structures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Pixel Brightness Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Position-Dependent Brightness Correction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Gray-Scale Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Geometric Transformations - Pixel Coordinate Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Brightness Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Local Pre-Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Image Smoothing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Edge Detectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Zero-Crossings of the Second Derivative",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Scale in Image Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Canny Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Parametric Edge Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Edges in Multi-Spectral Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Line Detection by Local Pre-Processing Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Detection of Corners (Interest Points)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "Image Restoration - Degradations That Are Easy to Restore",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Inverse Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "Wiener Filtering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Image Segmentation - Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Threshold Detection Methods - Optimal Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Multi-Spectral Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Edge-Based Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Edge Image Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Edge Relaxation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Border Tracing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Border Detection as Graph Searching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Border Detection as Dynamic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Hough Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Border Detection Using Border Location Information",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Region Construction from Borders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Region-Based Segmentation - Region Merging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Region Splitting - Splitting and Merging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Watershed Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Mean Shift Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Fuzzy Connectivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Introduction to 3D Graph-Based Image Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Matching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_20",
+          "title": "Template Matching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_21",
+          "title": "Control Strategies Templating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_22",
+          "title": "Evaluation Issues in Segmentation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Image Transforms - 2D Fourier Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Discrete Cosine Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Wavelet Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Eigen-Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Singular Value Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Image Texture - Statistical Texture Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Methods Based on Spatial Frequencies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Co-Occurrence Matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Edge Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Primitive Length (Runlength)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Texture Energy Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Local Binary Patterns (LBPs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Fractal Texture Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Other Statistical Methods of Texture Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Introduction to Object Recognition - Knowledge Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Statistical Pattern Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_18",
+          "title": "Classification Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_19",
+          "title": "Minimum Distance Classifier Learning and Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_20",
+          "title": "Nearest Neighbor Search with K-D Trees",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

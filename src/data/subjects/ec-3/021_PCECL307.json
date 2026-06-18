@@ -1,0 +1,75 @@
+{
+  "id": "pcecl307-ec-s3",
+  "code": "PCECL307",
+  "name": "ANALOG CIRCUITS LAB",
+  "branchId": "ec",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "RC Integrating and Differentiating Circuits (Transient Analysis with Different Inputs and Frequency Response)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Diode Clipping and Clamping Circuits (Transient and Transfer Characteristics)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "CE Amplifier - Design for a Specific Voltage Gain and Plot Frequency Response Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "CS MOSFET Amplifier - Design for a Specific Voltage Gain and Plot Frequency Response Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Cascaded Amplifier (CE-CE) - Design for a Specific Voltage Gain and Plot Frequency Response Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Cascode Amplifier - Design for a Specific Voltage Gain and Plot Frequency Response Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Feedback Amplifiers (Current Series and Voltage Series) - Design for a Specific Voltage Gain and Plot Frequency Response Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "RC Oscillators - RC Phase Shift or Wien Bridge Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Power Amplifiers (Transformerless) - Class B and Class AB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Transistor Series Voltage Regulator - Design for a Specific Output Voltage with and without Short Circuit Protection (Plot Load and Line Regulation Characteristics)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

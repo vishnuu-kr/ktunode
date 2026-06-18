@@ -1,0 +1,248 @@
+{
+  "id": "pbitt404-cs-s4",
+  "code": "PBITT404",
+  "name": "DATA SCIENCE",
+  "branchId": "cs",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Definition of Data Science",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Installing Latest Version of Python: Step by Step Installation of Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Installing Necessary Packages of Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Introducing Jupyter. Data Science Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Data Loading and Preprocessing with Pandas: Fast and Easy Data Loading, Data Preprocessing, Data Selection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Data Pipeline, Exploratory Data Analysis (EDA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Building New Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Dimensionality Reduction: The Detection and Treatment of Outliers, Validation Metrics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Testing and Validating: Cross-Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Hyperparameter Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Feature Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Wrapping Everything in a Pipeline. Preparing Tools and Datasets, Plotting Scatter Plots for Relationships in Data",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Rule-Based Classification: Using IF-THEN Rules for Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "K-Nearest-Neighbour Classifier. Unsupervised Learning: K-means Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Hierarchical Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Agglomerative versus Divisive Hierarchical Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Distance Measures in Algorithmic Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Density Based Clustering - DBSCAN. Linear and Logistic Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Ensemble Strategies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Building Your First Model in Data Science, Making Predictions, Evaluating the Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "9 Suggestions on Project Topics: Churn Prediction Using Machine Learning, Credit Analysis, Employee Access Challenge as a Classification Problem, Fake News Detection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 5",
+      "title": "Module Module 5",
+      "topics": [
+        {
+          "id": "tModule 5_1",
+          "title": "House Price Prediction Using Machine Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 6",
+      "title": "Module Module 6",
+      "topics": [
+        {
+          "id": "tModule 6_1",
+          "title": "Loan Default Prediction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 7",
+      "title": "Module Module 7",
+      "topics": [
+        {
+          "id": "tModule 7_1",
+          "title": "Model Insurance Claim Severity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 8",
+      "title": "Module Module 8",
+      "topics": [
+        {
+          "id": "tModule 8_1",
+          "title": "Personalized Medicine Recommending System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 9",
+      "title": "Module Module 9",
+      "topics": [
+        {
+          "id": "tModule 9_1",
+          "title": "Price Recommendation Using Machine Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 10",
+      "title": "Module Module 10",
+      "topics": [
+        {
+          "id": "tModule 10_1",
+          "title": "Recommendation System for Retail Stores",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 11",
+      "title": "Module Module 11",
+      "topics": []
+    },
+    {
+      "id": "mModule 12",
+      "title": "Module Module 12",
+      "topics": [
+        {
+          "id": "tModule 12_1",
+          "title": "Sentiment Analysis of Product Reviews",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

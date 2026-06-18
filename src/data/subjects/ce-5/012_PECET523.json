@@ -1,0 +1,123 @@
+{
+  "id": "pecet523-ce-s5",
+  "code": "PECET523",
+  "name": "OPEN CHANNEL HYDRAULICS",
+  "branchId": "ce",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Open Channel Flow, Uniform Flow - Conveyance and Section Factor, Hydraulic Exponents, Computation of Discharge Through Compound Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Design of Channels for Uniform Flow - Non-Erodible Channel - Minimum Permissible Velocity - Best Hydraulic Section. Erodible Channels Which Scour But Do Not Silt - Tractive Force Approach, Stable Hydraulic Section. Velocity Distribution in Open Channels, Pressure Distribution in Curvilinear Flows - Flows Through Spillway Crest and Spillway Bucket",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Specific Energy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Specific Energy Diagram and Discharge Diagram, Critical Flow and Its Computation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Hydraulic Exponents, Application of Specific Energy for Channel Transitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Hump and Reduction in Channel Width",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Gradually Varied Flow - Dynamic Equation of Gradually Varied Flow - Different Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Computation of Length of Water Surface Profiles - Direct Step Method, Bresse's Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Standard Step Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Rapidly Varied Flow - Hydraulic Jump in Sloping and Exponential Channels, Types Based on Tail Water Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Uses of Hydraulic Jumps for Energy Dissipation Below Spillways - Jump Height Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Tail Water Rating Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Design Features of USBR Stilling Basins, Standing Wave Flume, Parshall Flume",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Unsteady Flow Through Open Channels - Surges - Positive Surges (Problems) and Concept of Negative Surges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Spatially Varied Flow, Dynamic Equation of Spatially Varied Flow, Analysis of Spatially Varied Flow Profile",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "peadt746-cs-s7",
+  "code": "PEADT746",
+  "name": "CLOUD COMPUTING",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Types of Cloud",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Working of Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Cloud Computing Architecture and Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Cloud Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Cloud Modelling and Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Virtualization - Foundations, Grid, Cloud and Virtualization, Virtualization and Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Data Storage and Cloud Computing - Data Storage, Cloud Storage, Cloud Storage from LANs to WANs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Cloud Computing Services - Cloud Computing Elements, Understanding Services and Applications by Type, Cloud Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Cloud Computing and Security - Risks in Cloud Computing, Data Security in Cloud, Cloud Security Services",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Cloud Computing Tools - Tools and Technologies for Cloud, Apache Hadoop, Cloud Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Cloud Applications - Moving Applications to the Cloud, Microsoft Cloud Services, Google Cloud Applications, Amazon Cloud Services",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

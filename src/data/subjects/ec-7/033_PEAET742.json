@@ -1,0 +1,381 @@
+{
+  "id": "peaet742-ec-s7",
+  "code": "PEAET742",
+  "name": "ELECTRIC VEHICLES AND RENEWABLE TECHNOLOGIES",
+  "branchId": "ec",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Conventional Vehicles - Basics of Vehicle Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Vehicle Power Source Characterization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Transmission Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Introduction to Electric Vehicles - History of Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Classification of Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Overview of EV Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Overview of EV Technologies - Motor Drive Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Energy Source Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Battery Charging Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Vehicle-to-Grid Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Vehicle Dynamics & Load Forces - Mathematical Models to Describe Vehicle Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Vehicle Load Forces: Aerodynamic Drag",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Rolling Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Grading Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Vehicle Acceleration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Calculation of Motor Power from Traction Torque",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_17",
+          "title": "Simple Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_18",
+          "title": "Electric Drive-trains - Basic Concept of Electric Traction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_19",
+          "title": "Electric Drive-train Topologies (Basics Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_20",
+          "title": "Power Flow Control in Electric Drive-train Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_21",
+          "title": "Fuel Efficiency Analysis (Derivations not required)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "DC Drives - Motoring using a PM DC Machine - DC Motor Electric Drive using DC-DC Converter - Generating/Braking using a PM DC Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "PMSM Drives - Review of PMSM Motor Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Independent Control of Orthogonal Flux and Torque (Concept Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Field Oriented Control (FOC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Sensor-based and Sensorless Control (Block Diagram Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Sizing the Drive System - Matching the Electric Machine and the Internal Combustion Engine (ICE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Sizing the Propulsion Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Sizing the Power Electronics - Switch Technology Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Ripple Capacitor Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Switching Frequency and PWM",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Battery Based Energy Storage Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Types of Battery - Battery Parameters - Units of Battery Energy Storage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Capacity Rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Cell Voltage - Specific Energy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Cycle Life",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Self-discharge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Battery Management System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Other Storage Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Fuel Cell Based Energy Storage Systems - Supercapacitors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Hybridization of Different Energy Storage Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Overview of Electric Vehicle Battery Chargers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Types of Chargers - On-board Chargers, Off-board Chargers, Wireless Charger (Concept Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Electric Vehicle Supply Equipment (EVSE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Grid to EVSE to On-board Chargers to Battery Pack Power Flow Block Schematic Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "V2G Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Introduction to AC and DC Charging Stations (Basics and Block Diagram Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Types of Connectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "CHAdeMO, CCS Type 1 and 2, GB/T",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Introduction - Solar Photovoltaic - Solar Cell Fundamentals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Cell Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Wind Energy - Introduction - Wind Turbine Types (HAWT and VAWT) - Wind Power Curve - Betz's Law - Power from a Wind Turbine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Tidal Energy - Principle of Tidal Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Components of Tidal Power Plant (TPP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Classification of Tidal Power Plants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Advantages and Limitations of TPP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

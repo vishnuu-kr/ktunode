@@ -1,0 +1,189 @@
+{
+  "id": "pcadt601-cs-s6",
+  "code": "PCADT601",
+  "name": "DEEP LEARNING",
+  "branchId": "cs",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Deep Feed Forward Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Activation Functions (Sigmoid, Tanh, ReLU, Leaky ReLU, Hard Tanh, Softmax)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Loss Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Training a Neural Network with Backpropagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Practical Issues in Neural Network Training (Overfitting, Underfitting)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Hyperparameters and Validation Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Estimators - Bias and Variance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Introduction, Setup and Initialization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Weight Initialization (Kaiming, Xavier)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Vanishing and Exploding Gradient Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Optimization Techniques (Gradient Descent, Stochastic GD, GD with Momentum, GD with Nesterov Momentum)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Parameter-Specific Learning Rates (AdaGrad, RMSProp, Adam)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Regularization Techniques (L1 and L2 Regularization, Early Stopping, Dataset Augmentation, Parameter Tying and Sharing, Ensemble Methods, Dropout, Batch Normalization)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Basic Structure of a CNN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Basic Layers and Operations in CNN (Convolution Operation, Effect of Stride and Padding, Fully Connected Layers)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Building and Training a CNN Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Estimation of Tensor Size and Number of Features in CNN Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Transfer Learning (Size Similarity Matrix)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Pre-trained Architectures (AlexNet, ResNet-50, GoogleNet)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Recurrent Neural Network Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Variants of RNN Architectures (Deep RNN, Recursive Neural Network, Bidirectional RNN, Encoder-Decoder Architecture, LSTM, GRU)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Autoencoders and Generative Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Types of Autoencoders (Variational Autoencoder, Undercomplete Autoencoder, Stochastic Encoder, Denoising Encoder)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Applications of Autoencoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Generative Models (Boltzmann Machines, Deep Belief Networks, Generative Adversarial Networks)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

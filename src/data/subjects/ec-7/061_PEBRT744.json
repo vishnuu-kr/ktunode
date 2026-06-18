@@ -1,0 +1,141 @@
+{
+  "id": "pebrt744-ec-s7",
+  "code": "PEBRT744",
+  "name": "COMPUTATIONAL METHODS TO BIOMEDICAL PROCESS",
+  "branchId": "ec",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Numerical Algorithms, Errors and Approximations: Accuracy and Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Definitions of Round-Off and Truncation Errors, Taylor Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Error Propagation; Algebraic Equations: Formulation and Solution of Linear Algebraic Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Gauss Elimination Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Gauss-Jordan Reduction; Iterative Approach for Solution of Linear Systems - Jacobi and Gauss-Seidel Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "General Form of Nonlinear Equations; Examples of Nonlinear Equations in Biomedical Engineering; The Method of Successive Substitution; The Method of False Position (Linear Interpolation); The Newton-Raphson Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Newton's Method for Simultaneous Nonlinear Equations. Applications: Friction Factor in a Catheter, Ventricular Pressure Measurements",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Interpolation, Differentiation, and Integration: Backward, Forward, and Central Differences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Interpolating of Equally Spaced Points: Gregory-Newton and Stirling's Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Interpolating Polynomials; Interpolation of Equally Spaced Points: Gregory-Newton Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Interpolation of Unequally Spaced Points: Lagrange and Spline",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Integration Formulas: Newton-Cotes Formulas of Integration; Dynamic Systems: Examples of Ordinary Differential Equations in Biomedical Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Solution of Nonlinear Ordinary Differential Equations: Euler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Runge-Kutta Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Solution of Linear Ordinary Differential Equations: Eigenvalue Methods; Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Glycolysis Pathways of Living Cells; Dynamics of Membrane and Nerve Cell Potentials",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Solution of Partial Differential Equations: Elliptic, Parabolic, Hyperbolic Equations. Applications: Dynamics of the Basilar Membrane, Drug Diffusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Computational Modelling of Biosystems: Numerical Modelling of Bioengineering Systems Using Numerical Tools - PhysioNet, PhysioBank, and Physio Toolkit, Python Packages to Simulate Neuronal Activity. Applications: ECG Simulation, EEG Simulation, Model of Glucose Regulation, Diabetes and Insulin Regulation, Renal Clearance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

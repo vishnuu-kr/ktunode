@@ -1,0 +1,189 @@
+{
+  "id": "peeet751-ee-s7",
+  "code": "PEEET751",
+  "name": "POWER QUALITY",
+  "branchId": "ee",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Power Quality Phenomenon - Sources and Effects of Power Quality Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Need for Concern of Power Quality, Types of Power Quality Disturbances - Transients - Classification and Origin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Short Duration Voltage Variation - Interruption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Swell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Long Duration Voltage Variation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Voltage Unbalance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Waveform Distortion - Notching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Harmonics and Voltage Flicker, Power Quality Issues of Grid Connected Renewable Energy Systems - Operating Conflicts",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Harmonics - Mechanism of Harmonic Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Triplen Harmonics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Harmonic Sources - Switching Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Arcing Devices and Saturable Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Effects of Harmonics on Power System Equipment and Loads - Transformers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Capacitor Banks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Motors and Telecommunication Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Effect of Triplen Harmonics on Neutral Current",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Line and Phase Voltages, Harmonic Analysis Using Fourier Series and Fourier Transforms - Simple Numerical Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "IEEE 519",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "IEEE 1433 and IEC 61000 Power Quality Monitoring: Objectives and Measurement Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Different Monitoring Instruments - Power Quality Analyzer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Harmonic Spectrum Analyzer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Flicker Meters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Mitigation of Power Quality Problems - Harmonic Elimination - Design Simple Problems and Analysis of Passive Filters to Reduce Harmonic Distortion - Demerits of Passive Filters - Description of Active Filters - Shunt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Hybrid Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Sag and Swell Correction Using DVR, Power Quality Conditioners - DSTATCOM and UPQC - Configuration and Working, Power Factor Correction - Single Phase Active Power Factor Converter - Circuit Schematic and Control Block Diagram, Grounding and Wiring - Reasons for Grounding - Wiring and Grounding Problems - Solutions to These Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

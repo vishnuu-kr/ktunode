@@ -1,0 +1,93 @@
+{
+  "id": "pcbbt403-me-s4",
+  "code": "PCBBT403",
+  "name": "FLUID FLOW AND PARTICLE TECHNOLOGY",
+  "branchId": "me",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Fluid Statics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Forces on Fluids and Hydrostatic Equilibrium, Measurement of Pressure Using Different Types of Manometers, Forces on Submerged Bodies, Stability of Floating and Submerged Bodies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Concept of Drag and its Types, Overview of Boundary Layer Formation in Pipe Flow and for Flow Over Flat Plates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Concept of Boundary Layer Separation and Wake Formation, Flow Through Pipe-Bernoulli Equation, Correction Factors in Bernoulli Equation, Pump Work, Outline of Pressure Losses in Straight Pipes and in Fittings, Schedule Number of Pipes, Concept of Equivalent Diameter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Laminar Flow of Newtonian Fluid-Hagen-Poiseuille Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Shear Stress and Velocity Distribution in Circular Channel, Relation Between Average and Maximum Velocity, Friction Factor-Fanning and Darcy, Moody Diagram, Transportation and Metering of Fluids: Classification of Pumps, Characteristics of Centrifugal Pumps-Priming, Cavitation, NPSH, Water Hammer, Loss of Head and Power in Centrifugal Pumps, Flow Measurement-General Equation for Internal Flow Meters: Orifice Meter and Venturimeter: Derivation of Expression for Flow Rate Using Bernoulli Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Weirs: Classification and Derivation of Equations for Flow Rate in Rectangular and Triangular Notches, Concept of Area Meters: Rotameter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Local Velocity Measurement: Pitot Tube: Principle and Equations, Resistance of Immersed Bodies-Concept of Drag and Drag Coefficient",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Variation of Drag Coefficient with Particle Reynolds Number, Free Settling-Motion of Particle Under Gravitational and Centrifugal Fields, Terminal Settling Velocity and Stokes' Law, Hindered Settling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Mechanism, Interparticle Forces and Granulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

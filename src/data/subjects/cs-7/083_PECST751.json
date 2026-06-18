@@ -1,0 +1,171 @@
+{
+  "id": "pecst751-cs-s7",
+  "code": "PECST751",
+  "name": "ADVANCED COMPUTER NETWORKS",
+  "branchId": "cs",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Overview and Use Cases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Network Security Basics - Firewalls, ACLs, and NAT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Working of NAT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Virtual Private Networks (VPNs) - Types and Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Overview of Data Center Networks: Key Components and Topologies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "DLL switching - Overview, VLANs, Inter-VLAN Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Spanning Tree Protocol (STP) - IEEE 802.1D, Rapid Spanning Tree Protocol (RSTP) - IEEE 802.1w, Multiple Spanning Tree Protocol (MSTP) - IEEE 802.1s, STP Enhancements - BPDU Guard, Root Guard, and Loop Guard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Data Center Network Architectures - Traditional vs. Modern Data Center Designs (Spine-Leaf, Clos Networks), Ethernet Fabrics and TRILL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Data Center Design Considerations - Scalability, Redundancy, and Latency",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "SDN Architecture and Components - Control Plane, Data Plane, and Application Plane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "OpenFlow Protocol and its Role in SDN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "SDN Controllers - Ryu, OpenDaylight, and ONOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "SDN Use Cases - Traffic Engineering, Network Function Virtualization (NFV) - NFV Concepts, Virtualizing Network Functions and Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "NFV Infrastructure (NFVI) and Management (MANO)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Service Function Chaining (SFC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "NFV in Telecom Networks",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Data Center Interconnect (DCI) - Technologies for Data Center Interconnection (VPLS, OTV, and VXLAN), DCI Design and Deployment Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Intent-Based Networking (IBN) - Introduction to Intent-Based Networking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Content Distribution on the Internet - Architectures for Information-Centric Networking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Content Naming, Routing and Caching, Security in Named Data Networking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Network Automation and Orchestration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Automation Tools - Ansible, Terraform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Orchestration Frameworks - Kubernetes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

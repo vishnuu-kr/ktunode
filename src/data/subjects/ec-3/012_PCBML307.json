@@ -1,0 +1,87 @@
+{
+  "id": "pcbml307-ec-s3",
+  "code": "PCBML307",
+  "name": "ANALOG ELECTRONICS LAB",
+  "branchId": "ec",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Diode Characteristics (Silicon, Zener)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "BJT Characteristics CE Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "JFET/MOSFET Characteristics CS Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "RC Coupled Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "RC Phase Shift Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "RC Differentiator and Integrator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Basic OPAMP Circuits (Inverting, Non-Inverting, Voltage Follower, Summing Amplifier)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Voltage Comparator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Schmitt Trigger",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Active Filters and Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Precision Rectifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Astable and Monostable Multivibrators (Using IC 555/Op-Amp)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

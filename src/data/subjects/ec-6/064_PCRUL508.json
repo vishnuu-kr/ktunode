@@ -1,0 +1,177 @@
+{
+  "id": "pcrul508-ec-s6",
+  "code": "PCRUL508",
+  "name": "ROBOT OPERATING SYSTEM (ROS) LAB",
+  "branchId": "ec",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Develop a Simple Publisher and Subscriber",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Simple Service and Client",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Recording and Playing Back Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Reading Messages from a Bagfile",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Working with Turtlesim: Understanding ROS Communication - Topics and Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Basic Control and Movement of Turtlesim",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Writing Simple ROS Nodes and Scripts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Introduction to Rviz and its Capabilities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Visualizing Robot Models and Sensor Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Creating and Configuring Rviz Displays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Introduction to tf: Broadcasting the State of a Robot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Accessing Frame Transformations and Adding a Frame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Building a Visual Robot Model with URDF from Scratch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Building a Movable Robot Model with URDF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Adding Physical and Collision Properties to a URDF Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_16",
+          "title": "Creating a 3DOF Robotic Arm from Scratch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_17",
+          "title": "Introduction to Gazebo and its Integration with ROS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_18",
+          "title": "Setting up Simulation Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_19",
+          "title": "Simulating Sensors and Actuators in Gazebo",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_20",
+          "title": "Introduction to MoveIt and its Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_21",
+          "title": "Configuring MoveIt for Robotic Arms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_22",
+          "title": "Performing Motion Planning and Execution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_23",
+          "title": "Overview of ROS Navigation Stack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_24",
+          "title": "Localization and Mapping with SLAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_25",
+          "title": "Path Planning and Obstacle Avoidance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_26",
+          "title": "ROS Serial Arduino for Hardware Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_27",
+          "title": "Obstacle Avoidance Using a Differentially Driven Mobile Robot using ROS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "id": "pcict503-ec-s5",
+  "code": "PCICT503",
+  "name": "INDUSTRIAL INSTRUMENTATION II",
+  "branchId": "ec",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to the Physics of Flow Rate and Total Flow Measurement - Volumetric Flow Rate - Mass Flow Rate - Rate of Flow Measurement - Classification of Flow Meters. Fluid Mechanics Concept - Viscosity - Reynolds Number - Flow Regimes - Laminar Flow - Turbulent Flow - Transitional Flow - Law of Continuity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Bernoulli's Equation. Linearization and Compensation of Flow Meters - Linear and Nonlinear Flow Meters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Gas Flow Pressure and Temperature Compensation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Liquid Temperature Compensation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Pressure and Temperature Tap Location",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Flow Computers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Multivariable Flowmeters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Differential Pressure Flow Meter - Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Construction and Applications - Venturi Meter - Types of Venturi Meter - Limitations - Pressure Tapping in Venturi Meter - Orifice Meter - Types of Orifice Meter - Pressure Taps - Limitations. Pitot Tubes - Limitations - Method of Use for Circular Duct and Rectangular Duct - Precautions During Installation of Pitot Tube - Dall Tube - Installation - Flow Nozzle - Different Types of Flow Nozzle - Long Radius Nozzle - ISA 1932 Nozzle - Generalised Features of Differential Pressure Type Flow Meter - Installation Requirement with Differential Pressure Flow Meter - Target Flow Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Positive Displacement Flow Meters - Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Construction and Applications - Reciprocating Piston Flow Meter - 2 Piston Type and 4 Piston Type - Oscillating Piston Flow Meter - Nutating Disc Flow Meter - Helix Meter - Rotating Vane Flow Meter - Oval Wheel Flow Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Inferential Flow Meters - Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Construction and Applications - Single and Multi-Jet Flow Meter - Propeller Type Flow Meter - Double Rotor Propeller Type Flow Meter - Turbine Flow Meter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "IR Radiation Absorption Type",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Control Valves - General Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Final Control Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Basic Parts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Valve Body - Bonnet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Stem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Actuator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Packing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Seat",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Disk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Electrical and Pneumatic Signal Conversion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Electric, Pneumatic & Hydraulic Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Valve Characteristics. Different Types of Control Valves - Disc, Stem and Seat Design and Applications - Gate Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Globe Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Plug Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Ball Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Butterfly Valve - Diaphragm Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Pinch Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_18",
+          "title": "Needle Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_19",
+          "title": "Safety and Relief Valves. Control Valves Accessories - Positioners",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_20",
+          "title": "Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_21",
+          "title": "Pressure Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_22",
+          "title": "Limit Switch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_23",
+          "title": "Proximity Switch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_24",
+          "title": "Solenoids. Control Valve Noise and Methods of Its Reduction - Mechanical Vibration - Aerodynamic Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_25",
+          "title": "Hydrodynamic Noise",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}
