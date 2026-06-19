@@ -560,7 +560,7 @@ export default function Home() {
           className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-9 max-w-[34rem] font-medium leading-relaxed animate-fade-up"
           style={{ animationDelay: "160ms" }}
         >
-          Notes, PYQs, and syllabus tracking — all free,
+          Notes, PYQs, and syllabus tracking — all free,{" "}
           <br className="hidden sm:block" />
           designed for the{" "}
           <span className="text-slate-500 dark:text-slate-400 font-bold">{siteConfig?.activeScheme || "2024 KTU scheme"}</span>

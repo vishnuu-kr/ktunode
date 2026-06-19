@@ -95,11 +95,11 @@ export default function KtuCompareSection() {
                   "Scattered updates about internal marks & schedules",
                   "Cluttered syllabi that cause backlog panic",
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-red-50 dark:bg-red-950/30 flex items-center justify-center flex-shrink-0">
+                  <div key={item} className="flex items-start gap-3 text-left">
+                    <div className="w-5 h-5 rounded-full bg-red-50 dark:bg-red-950/30 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-red-550 dark:text-red-400 text-xs font-bold">✕</span>
                     </div>
-                    <span className="text-sm font-semibold text-slate-555 dark:text-slate-400">{item}</span>
+                    <span className="text-sm font-semibold text-slate-555 dark:text-slate-400 leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
@@ -115,15 +115,15 @@ export default function KtuCompareSection() {
                 {bullets.map((item, i) => (
                   <motion.div
                     key={item}
-                    className="flex items-center gap-3"
+                    className="flex items-start gap-3 text-left"
                     initial={{ opacity: 0, x: -20 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ delay: 0.2 + i * 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                   >
-                    <div className="w-6 h-6 rounded-full bg-emerald-50 dark:bg-emerald-950/40 flex items-center justify-center flex-shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-emerald-50 dark:bg-emerald-950/40 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
                     </div>
-                    <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">{item}</span>
+                    <span className="text-sm font-semibold text-slate-700 dark:text-slate-200 leading-snug">{item}</span>
                   </motion.div>
                 ))}
               </div>
