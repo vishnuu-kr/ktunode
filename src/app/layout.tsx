@@ -231,7 +231,7 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <style dangerouslySetInnerHTML={{ __html: `
+        <style suppressHydrationWarning dangerouslySetInnerHTML={{ __html: `
           :root {
             --color-accent: oklch(56% 0.18 ${hue});
             --color-accent-light: oklch(56% 0.18 ${hue} / 8%);
