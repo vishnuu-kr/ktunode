@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import {
   BookOpen, FileText, GraduationCap,
   Check, ShieldCheck, ArrowRight, HelpCircle,
-  Clock, RotateCcw, Play, Pause, Sparkles
+  Clock, RotateCcw, Play, Pause
 } from "lucide-react";
 
 // Branches configuration
@@ -57,7 +57,6 @@ type SemKey = keyof typeof modelPapersData;
 export function Features() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-10%" });
-  const [showAll, setShowAll] = useState(false);
 
   // 1. Branch Dial State
   const [selectedBranchIdx, setSelectedBranchIdx] = useState(0);
@@ -163,12 +162,61 @@ export function Features() {
           </p>
         </motion.div>
 
-        {/* Bento grid - Symmetric Grid */}
+        {/* Bento grid - Symmetric 3x2 Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {/* ── 1. Chapter-wise Notes ── */}
+          {/* ── 1. Coverage dial ── */}
           <motion.div
-            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-4">Exam Coverage</div>
+              
+              {/* Branch Selector Tabs */}
+              <div className="flex gap-1.5 p-1 bg-slate-100/70 dark:bg-slate-800/70 rounded-2xl border border-slate-200/30 dark:border-slate-800/30 mb-4 select-none">
+                {branchesData.map((b, idx) => (
+                  <button
+                    key={b.label}
+                    onClick={() => setSelectedBranchIdx(idx)}
+                    className={`flex-1 py-2.5 text-xs font-extrabold rounded-xl transition-all duration-300 ${
+                      selectedBranchIdx === idx
+                        ? `${b.activeColor} border shadow-sm`
+                        : "text-slate-500 dark:text-slate-400 hover:text-slate-800 hover:dark:text-slate-200 hover:bg-slate-200/40 hover:dark:bg-slate-800/40 border border-transparent"
+                    }`}
+                  >
+                    {b.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Dial Gauge SVG */}
+              <div className="relative flex flex-col items-center justify-center my-2">
+                <svg className="w-36 h-36 transform -rotate-90">
+                  <circle cx="72" cy="72" r="56" className="stroke-slate-100 dark:stroke-slate-800" strokeWidth="7" fill="transparent" />
+                  <circle cx="72" cy="72" r="56" className="stroke-blue-500 transition-all duration-700 ease-out" strokeWidth="7" fill="transparent" strokeDasharray="351.86" strokeDashoffset={351.86 - (351.86 * currentBranch.pct) / 100} strokeLinecap="round" />
+                </svg>
+                <div className="absolute flex flex-col items-center justify-center">
+                  <span className="text-3xl font-black text-slate-900 dark:text-slate-50 leading-none">{currentBranch.pct}%</span>
+                  <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1">Coverage</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">{currentBranch.name}</h3>
+              <p className="text-xs text-slate-400 dark:text-slate-500 leading-relaxed">
+                Meticulously structured chapter notes and syllabus checkpoints matching the latest 2024 regulations.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* ── 2. Chapter-wise Notes ── */}
+          <motion.div
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -183,9 +231,9 @@ export function Features() {
                   Live Preview
                 </span>
               </div>
-              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Score full marks in internals & externals</h3>
+              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Chapter-wise Notes</h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                Skip dense textbooks. Study module-by-module notes packed with the exact diagrams and equations KTU examiners grade on.
+                Syllabus topics stripped of filler and packed with the diagrams and equations examiners actually grade on.
               </p>
 
               {/* Tag Switcher widget */}
@@ -225,120 +273,9 @@ export function Features() {
             </div>
           </motion.div>
 
-          {/* ── 2. Model Question Papers (Previously PYQs) ── */}
+          {/* ── 3. Interactive Pomodoro Study Timer (Replaces Flashcards) ── */}
           <motion.div
-            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.4, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
-          >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-9 h-9 rounded-2xl bg-violet-50 dark:bg-violet-950/30 border border-violet-100 dark:border-violet-900/50 flex items-center justify-center">
-                  <FileText className="w-[18px] h-[18px] text-violet-500 dark:text-violet-400" strokeWidth={1.8} />
-                </div>
-                <span className="text-[9px] font-bold px-2.5 py-1 rounded-full bg-violet-50 dark:bg-violet-950/40 text-violet-600 dark:text-violet-400 uppercase tracking-wider">
-                  2024 Scheme
-                </span>
-              </div>
-              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Predict your exam questions</h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                Solve scheme-matched PYQs and model exams to stay backlog-free and walk in prepared.
-              </p>
-
-              {/* Semester tab container */}
-              <div className="flex gap-1.5 mb-3 select-none">
-                {(Object.keys(modelPapersData) as SemKey[]).map((sem) => (
-                  <button
-                    key={sem}
-                    onClick={() => setSelectedSem(sem)}
-                    className={`flex-1 py-2 text-[10px] font-bold rounded-lg border transition-all duration-200 cursor-pointer ${
-                      selectedSem === sem
-                        ? "bg-violet-600 dark:bg-violet-500 text-white border-violet-600 dark:border-violet-500"
-                        : "bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700/80"
-                    }`}
-                  >
-                    {sem}
-                  </button>
-                ))}
-              </div>
-
-              {/* Papers list card */}
-              <div className="p-3 bg-violet-50/20 dark:bg-violet-950/10 border border-violet-100/40 dark:border-violet-900/30 rounded-2xl h-[105px] overflow-y-auto">
-                <div className="text-[9px] font-bold text-violet-600 dark:text-violet-400 uppercase tracking-wider mb-1.5 flex items-center gap-1 select-none">
-                  <HelpCircle className="w-2.5 h-2.5" />
-                  Available Model Papers:
-                </div>
-                <ul className="space-y-1">
-                  {currentPapers.map((paper, idx) => (
-                    <li key={idx} className="text-[11px] text-slate-700 dark:text-slate-300 font-extrabold flex items-center gap-1.5">
-                      <div className="w-1 h-1 rounded-full bg-violet-500" />
-                      {paper}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* ── 3. Syllabus Tracker ── */}
-          <motion.div
-            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
-          >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-9 h-9 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50 flex items-center justify-center">
-                  <GraduationCap className="w-[18px] h-[18px] text-emerald-500 dark:text-emerald-450" strokeWidth={1.8} />
-                </div>
-                
-                {/* Dynamic Status Pill */}
-                <span className={`text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider transition-colors duration-300 ${
-                  isFullyComplete ? "bg-emerald-500 text-white shadow-sm" : "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400"
-                }`}>
-                  {isFullyComplete ? "Ready! 🎉" : `${completedCount}/4 Done`}
-                </span>
-              </div>
-              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Know exactly what's left for internals and externals</h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                Mark modules as complete as you cover them. Keep track of what's remaining to secure your internal marks.
-              </p>
-
-              {/* Interactive Modules Checklist */}
-              <div className="space-y-1.5 select-none">
-                {modules.map((m, idx) => (
-                  <div
-                    key={idx}
-                    onClick={() => toggleModule(idx)}
-                    className={`flex items-center gap-3 p-2 border rounded-xl cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all ${
-                      m.done
-                        ? "border-emerald-100 dark:border-emerald-950 bg-emerald-50/10 dark:bg-emerald-950/10"
-                        : "border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900"
-                    }`}
-                  >
-                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center border transition-all ${
-                      m.done ? "bg-emerald-500 border-emerald-500" : "border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800"
-                    }`}>
-                      {m.done && <Check className="w-2.5 h-2.5 text-white" strokeWidth={3} />}
-                    </div>
-                    <span className={`text-[11px] font-bold transition-all ${
-                      m.done ? "text-slate-400 dark:text-slate-500 line-through font-medium" : "text-slate-700 dark:text-slate-300"
-                    }`}>
-                      {m.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-
-          {/* ── 4. Interactive Pomodoro Study Timer ── */}
-          <motion.div
-            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -353,9 +290,9 @@ export function Features() {
                   Study Tool
                 </span>
               </div>
-              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Focus timer to study in 25-minute sprints</h3>
+              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Focus Study Timer</h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                Clear tough modules and complex theory in bite-sized, high-focus sessions without getting overwhelmed.
+                Engage learning sessions with the integrated Pomodoro clock to maximize revision focus and track milestones.
               </p>
 
               {/* Pomodoro Timer display */}
@@ -403,136 +340,174 @@ export function Features() {
             </div>
           </motion.div>
 
-          {showAll && (
-            <>
-              {/* ── 5. Coverage dial ── */}
-              <motion.div
-                className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-9 h-9 rounded-2xl bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/50 flex items-center justify-center">
-                      <ShieldCheck className="w-[18px] h-[18px] text-blue-500 dark:text-blue-400" strokeWidth={1.8} />
+          {/* ── 4. Syllabus Tracker ── */}
+          <motion.div
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-9 h-9 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50 flex items-center justify-center">
+                  <GraduationCap className="w-[18px] h-[18px] text-emerald-500 dark:text-emerald-450" strokeWidth={1.8} />
+                </div>
+                
+                {/* Dynamic Status Pill */}
+                <span className={`text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider transition-colors duration-300 ${
+                  isFullyComplete ? "bg-emerald-500 text-white shadow-sm" : "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400"
+                }`}>
+                  {isFullyComplete ? "Ready! 🎉" : `${completedCount}/4 Done`}
+                </span>
+              </div>
+              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Live Progress Tracker</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                Mark modules complete as you learn. Visually audit exactly what topics remain before your exam.
+              </p>
+
+              {/* Interactive Modules Checklist */}
+              <div className="space-y-1.5 select-none">
+                {modules.map((m, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => toggleModule(idx)}
+                    className={`flex items-center gap-3 p-2 border rounded-xl cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all ${
+                      m.done
+                        ? "border-emerald-100 dark:border-emerald-950 bg-emerald-50/10 dark:bg-emerald-950/10"
+                        : "border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900"
+                    }`}
+                  >
+                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center border transition-all ${
+                      m.done ? "bg-emerald-500 border-emerald-500" : "border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800"
+                    }`}>
+                      {m.done && <Check className="w-2.5 h-2.5 text-white" strokeWidth={3} />}
                     </div>
-                    <span className="text-[9px] font-bold px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-                      Syllabus
+                    <span className={`text-[11px] font-bold transition-all ${
+                      m.done ? "text-slate-400 dark:text-slate-500 line-through font-medium" : "text-slate-700 dark:text-slate-300"
+                    }`}>
+                      {m.name}
                     </span>
                   </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
 
-                  <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">{currentBranch.name}</h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                    Meticulously structured syllabus coverage designed to help you secure internal marks and avoid backlogs.
-                  </p>
+          {/* ── 5. Model Question Papers (Previously PYQs) ── */}
+          <motion.div
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-9 h-9 rounded-2xl bg-violet-50 dark:bg-violet-950/30 border border-violet-100 dark:border-violet-900/50 flex items-center justify-center">
+                  <FileText className="w-[18px] h-[18px] text-violet-500 dark:text-violet-400" strokeWidth={1.8} />
+                </div>
+                <span className="text-[9px] font-bold px-2.5 py-1 rounded-full bg-violet-50 dark:bg-violet-950/40 text-violet-600 dark:text-violet-400 uppercase tracking-wider">
+                  2024 Scheme
+                </span>
+              </div>
+              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Model Question Papers</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                Get ready for exams using dedicated, syllabus-matched model question papers tailored for the 2024 scheme.
+              </p>
+
+              {/* Semester tab container */}
+              <div className="flex gap-1.5 mb-3 select-none">
+                {(Object.keys(modelPapersData) as SemKey[]).map((sem) => (
+                  <button
+                    key={sem}
+                    onClick={() => setSelectedSem(sem)}
+                    className={`flex-1 py-2 text-[10px] font-bold rounded-lg border transition-all duration-200 cursor-pointer ${
+                      selectedSem === sem
+                        ? "bg-violet-600 dark:bg-violet-500 text-white border-violet-600 dark:border-violet-500"
+                        : "bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700/80"
+                    }`}
+                  >
+                    {sem}
+                  </button>
+                ))}
+              </div>
+
+              {/* Papers list card */}
+              <div className="p-3 bg-violet-50/20 dark:bg-violet-950/10 border border-violet-100/40 dark:border-violet-900/30 rounded-2xl h-[105px] overflow-y-auto">
+                <div className="text-[9px] font-bold text-violet-600 dark:text-violet-400 uppercase tracking-wider mb-1.5 flex items-center gap-1 select-none">
+                  <HelpCircle className="w-2.5 h-2.5" />
+                  Available Model Papers:
+                </div>
+                <ul className="space-y-1">
+                  {currentPapers.map((paper, idx) => (
+                    <li key={idx} className="text-[11px] text-slate-700 dark:text-slate-300 font-extrabold flex items-center gap-1.5">
+                      <div className="w-1 h-1 rounded-full bg-violet-500" />
+                      {paper}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* ── 6. Zero friction launch ── */}
+          <motion.div
+            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.5, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
+          >
+            <div>
+              <div className="flex items-center gap-2 mb-4 select-none">
+                <div className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
+                <span className="text-[9px] font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Instant access</span>
+              </div>
+              <h3 className="text-xl font-extrabold text-slate-800 dark:text-slate-100 leading-snug mb-2">
+                No Accounts.<br />No payments.<br />Just learn.
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                We believe learning resources should be open and friction-free. Pick your semester and jump straight in.
+              </p>
+            </div>
+
+            {/* Launch Simulator Sandbox Widget */}
+            <div className="mt-auto select-none">
+              <div className="p-3 border border-slate-200/60 dark:border-slate-800 rounded-2xl bg-slate-50/50 dark:bg-slate-900/50">
+                <div className="space-y-1 mb-2 opacity-50">
+                  <div className="h-5 bg-slate-200 dark:bg-slate-800 rounded-lg w-3/4 line-through text-[9px] font-bold flex items-center px-2 text-slate-500 dark:text-slate-400">Email Address</div>
+                  <div className="h-5 bg-slate-200 dark:bg-slate-800 rounded-lg w-1/2 line-through text-[9px] font-bold flex items-center px-2 text-slate-500 dark:text-slate-400">Choose Password</div>
                 </div>
 
-                <div className="mt-auto select-none">
-                  {/* Branch Selector Tabs */}
-                  <div className="flex gap-1.5 p-1 bg-slate-100/70 dark:bg-slate-800/70 rounded-2xl border border-slate-200/30 dark:border-slate-800/30 mb-4 select-none">
-                    {branchesData.map((b, idx) => (
-                      <button
-                        key={b.label}
-                        onClick={() => setSelectedBranchIdx(idx)}
-                        className={`flex-1 py-1.5 text-[10px] font-extrabold rounded-xl transition-all duration-300 ${
-                          selectedBranchIdx === idx
-                            ? `${b.activeColor} border shadow-sm`
-                            : "text-slate-500 dark:text-slate-400 hover:text-slate-800 hover:dark:text-slate-200 hover:bg-slate-200/40 hover:dark:bg-slate-800/40 border border-transparent"
-                        }`}
-                      >
-                        {b.label}
-                      </button>
-                    ))}
-                  </div>
-
-                  {/* Dial Gauge SVG */}
-                  <div className="relative flex flex-col items-center justify-center my-2">
-                    <svg className="w-28 h-28 transform -rotate-90">
-                      <circle cx="56" cy="56" r="44" className="stroke-slate-100 dark:stroke-slate-800" strokeWidth="6" fill="transparent" />
-                      <circle cx="56" cy="56" r="44" className="stroke-blue-500 transition-all duration-700 ease-out" strokeWidth="6" fill="transparent" strokeDasharray="276.46" strokeDashoffset={276.46 - (276.46 * currentBranch.pct) / 100} strokeLinecap="round" />
-                    </svg>
-                    <div className="absolute flex flex-col items-center justify-center">
-                      <span className="text-2xl font-black text-slate-900 dark:text-slate-550 leading-none">{currentBranch.pct}%</span>
-                      <span className="text-[8px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-0.5">Coverage</span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* ── 6. Zero friction launch ── */}
-              <motion.div
-                className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                whileHover={{ y: -4, boxShadow: "0 24px 48px rgba(37,99,235,0.05)" }}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-9 h-9 rounded-2xl bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/50 flex items-center justify-center">
-                      <Sparkles className="w-[18px] h-[18px] text-blue-500 dark:text-blue-400" strokeWidth={1.8} />
-                    </div>
-                    <span className="text-[9px] font-bold px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-                      Instant Access
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">Start preparing in 1-click</h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                    Skip the signup process. Start revising minutes before your exams without any registration lag or forms.
-                  </p>
-                </div>
-
-                {/* Launch Simulator Sandbox Widget */}
-                <div className="mt-auto select-none">
-                  <div className="p-3 border border-slate-200/60 dark:border-slate-800 rounded-2xl bg-slate-50/50 dark:bg-slate-900/50">
-                    <div className="space-y-1 mb-2 opacity-50">
-                      <div className="h-5 bg-slate-200 dark:bg-slate-800 rounded-lg w-3/4 line-through text-[9px] font-bold flex items-center px-2 text-slate-500 dark:text-slate-400">Email Address</div>
-                      <div className="h-5 bg-slate-200 dark:bg-slate-800 rounded-lg w-1/2 line-through text-[9px] font-bold flex items-center px-2 text-slate-500 dark:text-slate-400">Choose Password</div>
-                    </div>
-
-                    <button
-                      onClick={handleSimulatedLaunch}
-                      disabled={launchStep !== "idle"}
-                      className={`w-full py-2 text-center text-[10px] font-bold rounded-xl transition-all shadow-sm flex items-center justify-center gap-1.5 cursor-pointer ${
-                        launchStep === "idle" ? "bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 dark:hover:bg-slate-200 text-white dark:text-slate-900" :
-                        launchStep === "launching" ? "bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400 cursor-not-allowed" :
-                        "bg-emerald-500 text-white shadow-[0_4px_12px_rgba(16,185,129,0.2)]"
-                      }`}
-                    >
-                      {launchStep === "idle" && (
-                        <>
-                          Skip Signup & Launch
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </>
-                      )}
-                      {launchStep === "launching" && "Simulating access..."}
-                      {launchStep === "ready" && (
-                        <>
-                          <ShieldCheck className="w-3.5 h-3.5" />
-                          Welcome to KTUNode!
-                        </>
-                      )}
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            </>
-          )}
+                <button
+                  onClick={handleSimulatedLaunch}
+                  disabled={launchStep !== "idle"}
+                  className={`w-full py-2 text-center text-[10px] font-bold rounded-xl transition-all shadow-sm flex items-center justify-center gap-1.5 cursor-pointer ${
+                    launchStep === "idle" ? "bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 dark:hover:bg-slate-200 text-white dark:text-slate-900" :
+                    launchStep === "launching" ? "bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400 cursor-not-allowed" :
+                    "bg-emerald-500 text-white shadow-[0_4px_12px_rgba(16,185,129,0.2)]"
+                  }`}
+                >
+                  {launchStep === "idle" && (
+                    <>
+                      Skip Signup & Launch
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </>
+                  )}
+                  {launchStep === "launching" && "Simulating access..."}
+                  {launchStep === "ready" && (
+                    <>
+                      <ShieldCheck className="w-3.5 h-3.5" />
+                      Welcome to KTUNode!
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </motion.div>
 
         </div>
-
-        {!showAll && (
-          <div className="flex justify-center mt-12">
-            <button
-              onClick={() => setShowAll(true)}
-              className="pill-btn pill-btn-primary"
-            >
-              View all tools
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );

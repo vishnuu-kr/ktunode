@@ -431,7 +431,7 @@ export default function Home() {
   return (
     <main
       id="main-content"
-      className="relative w-full min-h-screen flex flex-col font-sans overflow-x-hidden gap-10 md:gap-12"
+      className="relative w-full min-h-screen flex flex-col font-sans overflow-x-hidden"
       style={{ background: "var(--color-bg)" }}
       tabIndex={-1}
     >
@@ -491,39 +491,19 @@ export default function Home() {
         ══════════════════════════════════════ */}
         <section
         ref={heroRef}
-        className="relative flex-1 flex flex-col items-center pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 text-center px-5 sm:px-6 overflow-hidden"
+        className="relative flex-1 flex flex-col items-center pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 text-center px-4 overflow-hidden"
         style={{ minHeight: "100vh" }}
       >
         {/* ── Dot grid overlay ── */}
-        {/* Semi-transparent dark overlay behind text to ensure legibility and high contrast on glowing gradients */}
-        <div className="absolute top-[12%] left-1/2 -translate-x-1/2 w-full max-w-4xl h-[55%] bg-slate-950/5 dark:bg-slate-950/40 blur-3xl rounded-full pointer-events-none z-0" aria-hidden="true" />
+        <div className="absolute inset-0 z-0 dot-grid opacity-[0.10] pointer-events-none" />
 
-        <style dangerouslySetInnerHTML={{__html: `
-          .upgrade-banner-neutral div {
-            color: #64748b !important;
-            border-color: rgb(226 232 240 / 0.5) !important;
-          }
-          .dark .upgrade-banner-neutral div {
-            color: #94a3b8 !important;
-            border-color: rgb(30 41 59 / 0.5) !important;
-          }
-          .upgrade-banner-neutral span {
-            color: #64748b !important;
-          }
-          .upgrade-banner-neutral svg {
-            color: #64748b !important;
-          }
-          .pill-btn {
-            padding: 14px 26px !important;
-            min-height: 48px !important;
-          }
-        `}} />
+
 
         <UpgradeBanner
           variant="pill"
           buttonText="Built for KTU"
           description="2024 Scheme"
-          className="mb-6 z-10 relative select-none animate-fade-in upgrade-banner-neutral"
+          className="mb-6 z-10 relative select-none animate-fade-in"
         />
 
         {/* ── Headline ── */}
@@ -557,13 +537,13 @@ export default function Home() {
 
         {/* ── Subtitle ── */}
         <p
-          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-12 max-w-[34rem] font-medium leading-relaxed animate-fade-up"
+          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-9 max-w-xl font-medium leading-relaxed animate-fade-up"
           style={{ animationDelay: "160ms" }}
         >
-          Notes, PYQs, and syllabus tracking — all free,{" "}
+          Notes, PYQs, and syllabus tracking — all free,
           <br className="hidden sm:block" />
           designed for the{" "}
-          <span className="text-slate-500 dark:text-slate-400 font-bold">{siteConfig?.activeScheme || "2024 KTU scheme"}</span>
+          <span className="text-blue-500 font-bold">{siteConfig?.activeScheme || "2024 KTU scheme"}</span>
         </p>
 
         {/* ── Selector card ── */}
@@ -598,7 +578,7 @@ export default function Home() {
           </AnimatePresence>
 
           <div
-            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-3.5 md:p-3 flex flex-col md:flex-row items-center gap-4 md:gap-3 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
+            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
             style={{
               boxShadow: !mounted
                 ? undefined
@@ -645,8 +625,7 @@ export default function Home() {
           <div className="relative w-full md:w-auto z-30">
             <MagneticButton
               onClick={handleLaunch}
-              className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-6 !py-4 !text-sm !font-black !from-[#ff7a00] !to-[#ff5c00] hover:!shadow-[0_12px_30px_-4px_rgba(255,122,0,0.6)]"
-              customShadow="shadow-[0_8px_20px_-4px_rgba(255,122,0,0.4),inset_0_1px_0_rgba(255,255,255,0.3)] border border-orange-400/20 group-hover:shadow-[0_12px_30px_-4px_rgba(255,122,0,0.6),inset_0_1px_0_rgba(255,255,255,0.4)]"
+              className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-6 !py-4 !text-sm !font-black"
             >
               Open Dashboard
               <ArrowRight className="w-4 h-4" />
@@ -682,7 +661,7 @@ export default function Home() {
             { icon: FileText, text: "No account needed" },
           ].map(({ icon: Icon, text }) => (
             <div key={text} className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 text-sm font-medium">
-              <Icon className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-450" />
+              <Icon className="w-3.5 h-3.5 text-blue-500" />
               {text}
             </div>
           ))}

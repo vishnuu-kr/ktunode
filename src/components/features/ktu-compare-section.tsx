@@ -1,40 +1,21 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Compare } from "@/components/ui/compare";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 const bullets = [
-  "Module-by-module notes with precise formulas for full marks",
-  "Exam-focused content designed to prevent backlogs",
-  "Updated for the latest 2024 regulation & subject codes",
+  "Module-by-module structure",
+  "Exam-focused content only",
+  "Updated for 2024 scheme",
 ];
 
 export default function KtuCompareSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-8%" });
   const [isTouchDevice, setIsTouchDevice] = useState(false);
-  const [sliderPct, setSliderPct] = useState(50);
-  const [hasCelebrated, setHasCelebrated] = useState(false);
-
-  useEffect(() => {
-    if (sliderPct >= 98 && !hasCelebrated) {
-      setHasCelebrated(true);
-      import("canvas-confetti").then((module) => {
-        const confetti = module.default;
-        confetti({
-          particleCount: 45,
-          spread: 60,
-          origin: { y: 0.75 },
-          colors: ["#10b981", "#34d399", "#6ee7b7", "#059669", "#ffffff"]
-        });
-      });
-    } else if (sliderPct < 90 && hasCelebrated) {
-      setHasCelebrated(false);
-    }
-  }, [sliderPct, hasCelebrated]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -83,50 +64,27 @@ export default function KtuCompareSection() {
               <span className="gradient-text-animated">to Clarity.</span>
             </h2>
 
-            {/* Problem Group (Chaos) */}
-            <div className="space-y-4 mb-6">
-              <p className="text-xs font-black uppercase tracking-wider text-red-550 dark:text-red-400">The Problem</p>
-              <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 leading-relaxed max-w-md">
-                Digging through dense textbooks and matching subject codes is exhausting.
-              </p>
-              <div className="flex flex-col gap-2.5">
-                {[
-                  "Dense textbooks with too much theory",
-                  "Scattered updates about internal marks & schedules",
-                  "Cluttered syllabi that cause backlog panic",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3 text-left">
-                    <div className="w-5 h-5 rounded-full bg-red-50 dark:bg-red-950/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-red-550 dark:text-red-400 text-xs font-bold">✕</span>
-                    </div>
-                    <span className="text-sm font-semibold text-slate-555 dark:text-slate-400 leading-snug">{item}</span>
+            <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed mb-8 max-w-md">
+              Stop digging through dense, cluttered university material. Our
+              structured notes strip away the noise so you can focus on exactly
+              what you need to pass.
+            </p>
+
+            <div className="flex flex-col gap-3 mb-10">
+              {bullets.map((item, i) => (
+                <motion.div
+                  key={item}
+                  className="flex items-center gap-3"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : {}}
+                  transition={{ delay: 0.2 + i * 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                >
+                  <div className="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-blue-500" />
                   </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Separator */}
-            <hr className="border-slate-200/60 dark:border-slate-800/80 my-8" />
-
-            {/* Solution Group (Clarity) */}
-            <div className="space-y-4 mb-8">
-              <p className="text-xs font-black uppercase tracking-wider text-emerald-605 dark:text-emerald-450">Here’s how KTUNode fixes this:</p>
-              <div className="flex flex-col gap-3">
-                {bullets.map((item, i) => (
-                  <motion.div
-                    key={item}
-                    className="flex items-start gap-3 text-left"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ delay: 0.2 + i * 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                  >
-                    <div className="w-6 h-6 rounded-full bg-emerald-50 dark:bg-emerald-950/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
-                    </div>
-                    <span className="text-sm font-semibold text-slate-700 dark:text-slate-200 leading-snug">{item}</span>
-                  </motion.div>
-                ))}
-              </div>
+                  <span className="text-sm font-semibold text-slate-600 dark:text-slate-350">{item}</span>
+                </motion.div>
+              ))}
             </div>
 
             <Link
@@ -152,12 +110,13 @@ export default function KtuCompareSection() {
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.div
-              className={`p-2 md:p-3 w-full max-w-[760px] rounded-3xl border bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm transition-all duration-500 ${
-                sliderPct >= 98
-                  ? "border-emerald-400 dark:border-emerald-700 shadow-[0_0_50px_rgba(16,185,129,0.25)]"
-                  : "border-blue-100 dark:border-slate-800 shadow-[0_20px_60px_rgba(37,99,235,0.12),0_4px_16px_rgba(0,0,0,0.06)]"
-              }`}
+              className="p-2 md:p-3 w-full max-w-[760px] rounded-3xl border border-blue-100 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm"
+              style={{
+                boxShadow:
+                  "0 20px 60px rgba(37,99,235,0.12), 0 4px 16px rgba(0,0,0,0.06)",
+              }}
               whileHover={{
+                boxShadow: "0 32px 80px rgba(46,149,255,0.18), 0 8px 24px rgba(0,0,0,0.08)",
                 y: -4,
                 transition: { duration: 0.35, ease: [0.16, 1, 0.3, 1] },
               }}
@@ -170,35 +129,11 @@ export default function KtuCompareSection() {
                 className="w-full aspect-square sm:aspect-square md:aspect-video rounded-[20px]"
                 slideMode={isTouchDevice ? "drag" : "hover"}
                 autoplay={true}
-                onChange={setSliderPct}
               />
             </motion.div>
-            <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wide uppercase mb-2">
+            <p className="text-xs font-semibold text-slate-400 dark:text-slate-500 tracking-wide uppercase">
               ← Drag or hover to compare →
             </p>
-
-            {/* Celebration text and CTA when clarity is achieved */}
-            <AnimatePresence>
-              {sliderPct >= 98 && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                  className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-center text-sm font-bold flex flex-col sm:flex-row items-center justify-between gap-4 w-full max-w-[760px] shadow-lg shadow-emerald-500/5 select-none z-30"
-                >
-                  <span className="flex items-center gap-2">
-                    <span>✨ This is how your semester can look!</span>
-                  </span>
-                  <Link
-                    href="/dashboard"
-                    className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-black shadow-[0_4px_12px_rgba(16,185,129,0.3)] transition-all inline-flex items-center gap-1 cursor-pointer"
-                  >
-                    Go to Dashboard
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
-                </motion.div>
-              )}
-            </AnimatePresence>
           </motion.div>
         </div>
       </div>
