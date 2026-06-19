@@ -169,8 +169,8 @@ export default function FoundreeHero() {
           transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           The chaos of unstructured materials, dense textbooks, and scattered
-          notes is replaced by singular clarity. A seamless flow of knowledge,
-          curated for the modern KTU student.
+          notes is replaced by singular clarity. Secure your internal marks and
+          study without backlogs using resources curated by students, for students.
         </motion.p>
 
         {/* Divider */}

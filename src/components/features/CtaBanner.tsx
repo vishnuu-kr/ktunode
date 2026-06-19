@@ -2,15 +2,8 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import Link from "next/link";
-
-const stats = [
-  { value: "Free",  label: "Always free" },
-  { value: "2024",  label: "Scheme updated" },
-  { value: "Instant", label: "To get started" },
-];
 
 export default function CtaBanner() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,27 +37,15 @@ export default function CtaBanner() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
-        {/* Badge */}
-        <motion.div
-          className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-full bg-white/8 border border-white/12 text-blue-200 text-xs font-bold tracking-widest uppercase cursor-default"
-          initial={{ opacity: 0, y: 16 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <Sparkles className="w-3.5 h-3.5" />
-          Free for all KTU students
-        </motion.div>
-
         {/* Headline */}
         <motion.h2
           id="cta-heading"
-          className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 leading-[1.05]"
+          className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-10 leading-[1.05]"
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.1, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          Ready to ace your
-          <br />
+          Ready to{" "}
           <span
             className="gradient-text-animated"
             style={{
@@ -72,64 +53,38 @@ export default function CtaBanner() {
               "--mobile-gradient-fallback": "#60b8ff",
             } as React.CSSProperties}
           >
-            next semester?
+            fix this semester?
           </span>
         </motion.h2>
 
-        <motion.p
-          className="text-white/70 text-lg mb-12 max-w-xl mx-auto leading-relaxed"
+        {/* Primary CTA Button */}
+        <motion.div
+          className="flex flex-col items-center justify-center gap-4 mb-6"
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          Structured notes, real PYQs, and a syllabus tracker built for the 2024 scheme.
-          No account, no payment — just open and study.
-        </motion.p>
+          <MagneticButton
+            href="/dashboard"
+            className="whitespace-nowrap !rounded-2xl !px-8 !py-5 !text-base !font-black !from-[#ff7a00] !to-[#ff5c00] hover:!shadow-[0_12px_30px_-4px_rgba(255,122,0,0.6)]"
+            customShadow="shadow-[0_8px_20px_-4px_rgba(255,122,0,0.4),inset_0_1px_0_rgba(255,255,255,0.3)] border border-orange-400/20 group-hover:shadow-[0_12px_30px_-4px_rgba(255,122,0,0.6),inset_0_1px_0_rgba(255,255,255,0.4)]"
+          >
+            Open Dashboard
+            <ArrowRight className="w-5 h-5" />
+          </MagneticButton>
+        </motion.div>
 
-        {/* Buttons */}
-        <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14"
-          initial={{ opacity: 0, y: 16 }}
+        {/* Reassurance text */}
+        <motion.p
+          className="text-white/60 text-sm font-medium mt-6 tracking-wide select-none"
+          initial={{ opacity: 0, y: 12 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <MagneticButton href="/dashboard">
-            Open Dashboard
-            <ArrowRight className="w-4 h-4" />
-          </MagneticButton>
-
-          <Link
-            href="/notes"
-            className="pill-btn pill-btn-outline !bg-white/10 !text-white !border-white/18 hover:!bg-white/16 hover:!border-white/30 hover:!text-white inline-flex"
-          >
-            Browse Notes
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </motion.div>
-
-        {/* Stats */}
-        <motion.div
-          className="flex items-center justify-center gap-6 sm:gap-10 flex-wrap"
-          initial={{ opacity: 0, y: 12 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.4, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        >
-          {stats.map((stat) => (
-            <motion.div
-              key={stat.label}
-              className="text-center cursor-default group"
-              whileHover={{ scale: 1.08 }}
-            >
-              <div className="text-3xl font-black text-white group-hover:text-blue-300 transition-colors duration-300">
-                {stat.value}
-              </div>
-              <div className="text-xs text-white/60 font-semibold mt-1 uppercase tracking-widest group-hover:text-white/80 transition-colors duration-300">
-                {stat.label}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+          No login · Free forever · Built for KTU 2024
+        </motion.p>
       </div>
     </section>
   );
 }
+

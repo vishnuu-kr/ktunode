@@ -21,7 +21,7 @@ const steps = [
     icon: BookMarked,
     title: "Access core resources",
     description:
-      "Chapter-wise notes, model papers, and a live syllabus tracker — all in one place, always updated for the 2024 scheme.",
+      "Study clean, module-wise notes, predict exam questions with solved model papers, and track your progress to secure internal marks.",
     textColor: "text-emerald-600 dark:text-emerald-400",
     bgColor: "bg-emerald-50/70 dark:bg-emerald-950/20 border-emerald-100/50 dark:border-emerald-900/30",
     hoverStyle: "hover:border-emerald-300/80 hover:shadow-[0_24px_48px_rgba(16,185,129,0.06)]",
@@ -31,7 +31,7 @@ const steps = [
     icon: TrendingUp,
     title: "Track & ace exams",
     description:
-      "Mark modules complete, audit what's left, and walk into every exam knowing you've covered exactly what the examiner expects.",
+      "Mark modules as complete, see exactly what's left for internals and externals, and prevent backlogs entirely.",
     textColor: "text-violet-600 dark:text-violet-400",
     bgColor: "bg-violet-50/70 dark:bg-violet-950/20 border-violet-100/50 dark:border-violet-900/30",
     hoverStyle: "hover:border-violet-300/80 hover:shadow-[0_24px_48px_rgba(139,92,246,0.06)]",

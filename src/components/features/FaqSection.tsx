@@ -25,8 +25,8 @@ const faqs = [
     a: "No account is required. Just select your branch and semester on the homepage and you're instantly taken to your personalized dashboard.",
   },
   {
-    q: "How does the syllabus tracker work?",
-    a: "The syllabus tracker lets you mark modules as complete as you study. Your progress is saved locally so you can always see what you've covered and what's left before exams.",
+    q: "How do I keep track of what's left for my internals and externals?",
+    a: "You can mark modules as complete as you cover them. Your progress is stored locally in your browser, helping you see exactly what's left to study before model exams and university exams.",
   },
   {
     q: "Is KTUNODE affiliated with KTU?",

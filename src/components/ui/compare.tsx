@@ -15,6 +15,7 @@ interface CompareProps {
   showHandlebar?: boolean;
   autoplay?: boolean;
   autoplayDuration?: number;
+  onChange?: (percentage: number) => void;
 }
 
 export const Compare: React.FC<CompareProps> = ({
@@ -28,6 +29,7 @@ export const Compare: React.FC<CompareProps> = ({
   showHandlebar = true,
   autoplay = false,
   autoplayDuration = 5000,
+  onChange,
 }) => {
   const [sliderPosition, setSliderPosition] = useState(initialSliderPercentage);
   const [isDragging, setIsDragging] = useState(false);
@@ -41,7 +43,8 @@ export const Compare: React.FC<CompareProps> = ({
     const x = clientX - rect.left;
     const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
     setSliderPosition(percentage);
-  }, []);
+    onChange?.(percentage);
+  }, [onChange]);
 
   // Mouse / Touch moves for drag and hover
   const handleMouseMove = useCallback(
@@ -88,6 +91,7 @@ export const Compare: React.FC<CompareProps> = ({
       const percentage = 50 + Math.sin(angle) * 35; // oscillates between 15 and 85
 
       setSliderPosition(percentage);
+      onChange?.(percentage);
       animationFrameId = requestAnimationFrame(animate);
     };
 
@@ -96,7 +100,7 @@ export const Compare: React.FC<CompareProps> = ({
     return () => {
       cancelAnimationFrame(animationFrameId);
     };
-  }, [autoplay, autoplayDuration, isInteracted]);
+  }, [autoplay, autoplayDuration, isInteracted, onChange]);
 
   // Global mouse up & touch release to stop dragging anywhere
   useEffect(() => {
@@ -119,25 +123,35 @@ export const Compare: React.FC<CompareProps> = ({
       case "ArrowLeft":
         e.preventDefault();
         setIsInteracted(true);
-        setSliderPosition((prev) => Math.max(0, prev - step));
+        setSliderPosition((prev) => {
+          const next = Math.max(0, prev - step);
+          onChange?.(next);
+          return next;
+        });
         break;
       case "ArrowRight":
         e.preventDefault();
         setIsInteracted(true);
-        setSliderPosition((prev) => Math.min(100, prev + step));
+        setSliderPosition((prev) => {
+          const next = Math.min(100, prev + step);
+          onChange?.(next);
+          return next;
+        });
         break;
       case "Home":
         e.preventDefault();
         setIsInteracted(true);
         setSliderPosition(0);
+        onChange?.(0);
         break;
       case "End":
         e.preventDefault();
         setIsInteracted(true);
         setSliderPosition(100);
+        onChange?.(100);
         break;
     }
-  }, []);
+  }, [onChange]);
 
   return (
     <div

@@ -28,8 +28,8 @@ const testimonials = [
     avatar: "RS",
     color: "bg-emerald-50 text-emerald-600 border-emerald-100",
     rating: 5,
-    quote: "I finally study with absolute clarity.",
-    text: "The syllabus tracker is a game changer. I could see exactly what I'd covered and what was left. No more last-minute panic about missing modules.",
+    quote: "No more last-minute panic about missing modules.",
+    text: "Knowing exactly what's left for my internals and externals is a game changer. I could mark modules complete as I studied, preventing backlogs entirely.",
   },
   {
     name: "Anjali Nair",
@@ -90,13 +90,25 @@ export default function TestimonialsSection() {
 
       {/* Header */}
       <div
-        className={`mx-auto max-w-6xl px-6 mb-16 text-center transition-all duration-700 ${
+        className={`mx-auto max-w-6xl px-6 mb-10 text-center transition-all duration-700 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
+        {/* Overall Star Rating summary */}
+        <div className="flex flex-col items-center justify-center gap-1.5 mb-6">
+          <div className="flex gap-1">
+            {[1, 2, 3, 4, 5].map((s) => (
+              <Star key={s} className="w-5 h-5 fill-amber-400 text-amber-400" />
+            ))}
+          </div>
+          <span className="text-[10px] sm:text-xs font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-[0.15em]">
+            4.9/5 Rating (5,000+ KTU students)
+          </span>
+        </div>
+
         <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-100/60 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-wide uppercase shadow-sm">
           <Heart className="w-3 h-3 fill-current text-blue-500" />
-          Loved by students
+          Loved by KTU students
         </div>
         <h2
           id="testimonials-heading"
