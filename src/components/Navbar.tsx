@@ -181,10 +181,10 @@ export default function Navbar() {
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`pointer-events-auto relative mx-auto flex w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl items-center justify-between rounded-full px-3.5 py-2.5 sm:px-6 sm:py-3 transition-all duration-300 overflow-visible ${
+        className={`pointer-events-auto relative mx-auto flex w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl items-center justify-between rounded-full transition-all duration-300 overflow-visible ${
           scrolled
-            ? "bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-[0_12px_40px_rgba(37,99,235,0.15)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.4)]"
-            : "bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800/50 shadow-[0_4px_16px_rgba(37,99,235,0.07)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.3)]"
+            ? "py-1.5 sm:py-2.5 px-3 sm:px-6 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-[0_12px_40px_rgba(37,99,235,0.15)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.4)]"
+            : "py-2.5 sm:py-3 px-3.5 sm:px-6 bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800/50 shadow-[0_4px_16px_rgba(37,99,235,0.07)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.3)]"
         }`}
       >
         {/* Logo */}
@@ -211,8 +211,8 @@ export default function Navbar() {
           <button
             type="button"
             id="tour-navbar-links"
-            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
-            aria-label="Tools"
+            className="hidden sm:inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-violet-100 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-600 dark:text-slate-300 shadow-sm whitespace-nowrap"
+            aria-label="Toggle Tools"
             title="Tools"
             aria-current="page"
           >
@@ -223,7 +223,7 @@ export default function Navbar() {
           <Link
             href="/tools"
             id="tour-navbar-links"
-            className="inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
+            className="hidden sm:inline-flex h-10 sm:h-9 w-10 sm:w-auto items-center justify-center gap-1 sm:gap-2 rounded-full border border-slate-200/80 dark:border-slate-800 bg-slate-50/40 dark:bg-slate-900/40 px-0 sm:px-3.5 text-[10px] sm:text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-violet-200 dark:hover:border-violet-800 hover:text-violet-600 dark:hover:text-violet-400"
             title="Tools"
             aria-label="Tools"
           >

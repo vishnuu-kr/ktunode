@@ -173,7 +173,7 @@ export default function KtuCompareSection() {
                 onChange={setSliderPct}
               />
             </motion.div>
-            <p className="text-xs font-semibold text-slate-400 dark:text-slate-500 tracking-wide uppercase mb-2">
+            <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wide uppercase mb-2">
               ← Drag or hover to compare →
             </p>
 

@@ -168,7 +168,7 @@ export function Features() {
 
           {/* ── 1. Chapter-wise Notes ── */}
           <motion.div
-            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -227,7 +227,7 @@ export function Features() {
 
           {/* ── 2. Model Question Papers (Previously PYQs) ── */}
           <motion.div
-            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -284,7 +284,7 @@ export function Features() {
 
           {/* ── 3. Syllabus Tracker ── */}
           <motion.div
-            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -338,7 +338,7 @@ export function Features() {
 
           {/* ── 4. Interactive Pomodoro Study Timer ── */}
           <motion.div
-            className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+            className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -407,7 +407,7 @@ export function Features() {
             <>
               {/* ── 5. Coverage dial ── */}
               <motion.div
-                className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+                className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -423,13 +423,20 @@ export function Features() {
                     </span>
                   </div>
 
+                  <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">{currentBranch.name}</h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+                    Meticulously structured syllabus coverage designed to help you secure internal marks and avoid backlogs.
+                  </p>
+                </div>
+
+                <div className="mt-auto select-none">
                   {/* Branch Selector Tabs */}
                   <div className="flex gap-1.5 p-1 bg-slate-100/70 dark:bg-slate-800/70 rounded-2xl border border-slate-200/30 dark:border-slate-800/30 mb-4 select-none">
                     {branchesData.map((b, idx) => (
                       <button
                         key={b.label}
                         onClick={() => setSelectedBranchIdx(idx)}
-                        className={`flex-1 py-2.5 text-xs font-extrabold rounded-xl transition-all duration-300 ${
+                        className={`flex-1 py-1.5 text-[10px] font-extrabold rounded-xl transition-all duration-300 ${
                           selectedBranchIdx === idx
                             ? `${b.activeColor} border shadow-sm`
                             : "text-slate-500 dark:text-slate-400 hover:text-slate-800 hover:dark:text-slate-200 hover:bg-slate-200/40 hover:dark:bg-slate-800/40 border border-transparent"
@@ -442,28 +449,21 @@ export function Features() {
 
                   {/* Dial Gauge SVG */}
                   <div className="relative flex flex-col items-center justify-center my-2">
-                    <svg className="w-36 h-36 transform -rotate-90">
-                      <circle cx="72" cy="72" r="56" className="stroke-slate-100 dark:stroke-slate-800" strokeWidth="7" fill="transparent" />
-                      <circle cx="72" cy="72" r="56" className="stroke-blue-500 transition-all duration-700 ease-out" strokeWidth="7" fill="transparent" strokeDasharray="351.86" strokeDashoffset={351.86 - (351.86 * currentBranch.pct) / 100} strokeLinecap="round" />
+                    <svg className="w-28 h-28 transform -rotate-90">
+                      <circle cx="56" cy="56" r="44" className="stroke-slate-100 dark:stroke-slate-800" strokeWidth="6" fill="transparent" />
+                      <circle cx="56" cy="56" r="44" className="stroke-blue-500 transition-all duration-700 ease-out" strokeWidth="6" fill="transparent" strokeDasharray="276.46" strokeDashoffset={276.46 - (276.46 * currentBranch.pct) / 100} strokeLinecap="round" />
                     </svg>
                     <div className="absolute flex flex-col items-center justify-center">
-                      <span className="text-3xl font-black text-slate-900 dark:text-slate-50 leading-none">{currentBranch.pct}%</span>
-                      <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1">Coverage</span>
+                      <span className="text-2xl font-black text-slate-900 dark:text-slate-550 leading-none">{currentBranch.pct}%</span>
+                      <span className="text-[8px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-0.5">Coverage</span>
                     </div>
                   </div>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 mb-1">{currentBranch.name}</h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                    Meticulously structured syllabus coverage designed to help you secure internal marks and avoid backlogs.
-                  </p>
                 </div>
               </motion.div>
 
               {/* ── 6. Zero friction launch ── */}
               <motion.div
-                className="min-h-[360px] md:h-[400px] p-6 md:p-8 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
+                className="min-h-[380px] md:h-[420px] p-7 md:p-9 flex flex-col justify-between rounded-3xl border border-slate-200/50 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-[0_8px_30px_rgb(0,0,0,0.015)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.25)] cursor-default transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}

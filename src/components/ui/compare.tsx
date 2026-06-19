@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 interface CompareProps {
   firstImage?: string;
@@ -234,10 +235,23 @@ export const Compare: React.FC<CompareProps> = ({
           <div className="absolute inset-y-0 w-0.5 bg-white/80 dark:bg-neutral-800/80 pointer-events-none" />
 
           {/* Centered Grab Pill */}
-          <div className="h-10 w-6 rounded-full bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 shadow-lg flex items-center justify-center gap-[2px] pointer-events-none z-30">
+          <motion.div
+            initial={{ scale: 1 }}
+            animate={!isInteracted ? {
+              scale: [1, 1.08, 1],
+              x: [0, -3, 3, -3, 3, 0],
+            } : { scale: 1, x: 0 }}
+            transition={{
+              duration: 2.2,
+              repeat: !isInteracted ? Infinity : 0,
+              repeatDelay: 2,
+              ease: "easeInOut"
+            }}
+            className="h-10 w-6 rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 shadow-[0_8px_24px_rgba(0,0,0,0.15),0_0_12px_rgba(46,149,255,0.15)] flex items-center justify-center gap-[2px] pointer-events-none z-30"
+          >
             <div className="w-[2px] h-4 bg-neutral-400 dark:bg-neutral-600 rounded-full" />
             <div className="w-[2px] h-4 bg-neutral-400 dark:bg-neutral-600 rounded-full" />
-          </div>
+          </motion.div>
         </div>
       )}
     </div>

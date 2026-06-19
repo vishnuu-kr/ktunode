@@ -67,7 +67,7 @@ export default function CtaBanner() {
           <MagneticButton
             href="/dashboard"
             className="whitespace-nowrap !rounded-2xl !px-8 !py-5 !text-base !font-black !from-[#ff7a00] !to-[#ff5c00] hover:!shadow-[0_12px_30px_-4px_rgba(255,122,0,0.6)]"
-            customShadow="shadow-[0_8px_20px_-4px_rgba(255,122,0,0.4),inset_0_1px_0_rgba(255,255,255,0.3)] border border-orange-400/20 group-hover:shadow-[0_12px_30px_-4px_rgba(255,122,0,0.6),inset_0_1px_0_rgba(255,255,255,0.4)]"
+            customShadow="shadow-[0_12px_28px_-4px_rgba(255,122,0,0.5),inset_0_1px_0_rgba(255,255,255,0.3)] border border-orange-400/20 group-hover:shadow-[0_20px_40px_-4px_rgba(255,122,0,0.7),inset_0_1px_0_rgba(255,255,255,0.4)]"
           >
             Open Dashboard
             <ArrowRight className="w-5 h-5" />
@@ -76,7 +76,7 @@ export default function CtaBanner() {
 
         {/* Reassurance text */}
         <motion.p
-          className="text-white/60 text-sm font-medium mt-6 tracking-wide select-none"
+          className="text-white/60 text-sm font-medium mt-10 tracking-wide select-none"
           initial={{ opacity: 0, y: 12 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}

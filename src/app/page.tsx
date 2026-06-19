@@ -557,7 +557,7 @@ export default function Home() {
 
         {/* ── Subtitle ── */}
         <p
-          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-9 max-w-[34rem] font-medium leading-relaxed animate-fade-up"
+          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-12 max-w-[34rem] font-medium leading-relaxed animate-fade-up"
           style={{ animationDelay: "160ms" }}
         >
           Notes, PYQs, and syllabus tracking — all free,{" "}
@@ -598,7 +598,7 @@ export default function Home() {
           </AnimatePresence>
 
           <div
-            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
+            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-3.5 md:p-3 flex flex-col md:flex-row items-center gap-4 md:gap-3 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
             style={{
               boxShadow: !mounted
                 ? undefined

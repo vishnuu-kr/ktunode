@@ -58,7 +58,7 @@ export default function FoundreeHero() {
       className="relative w-full min-h-[100dvh] py-24 md:py-0 flex items-center justify-center overflow-hidden"
       style={{
         background:
-          "linear-gradient(160deg, #040912 0%, #07111e 50%, #0b1828 100%)",
+          "linear-gradient(160deg, #02050b 0%, #040a12 50%, #060e18 100%)",
       }}
       aria-label="Philosophy section"
       onMouseMove={onMouseMove}
@@ -163,7 +163,7 @@ export default function FoundreeHero() {
 
         {/* Body */}
         <motion.p
-          className="text-lg md:text-xl text-white/50 max-w-2xl leading-relaxed"
+          className="text-lg md:text-xl text-slate-205 dark:text-slate-300 max-w-2xl leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
