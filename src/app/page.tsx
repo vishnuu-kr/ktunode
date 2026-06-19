@@ -324,7 +324,6 @@ export default function Home() {
   const [isLaunching, setIsLaunching] = useState(false);
   const [isRedirecting, setIsRedirecting] = useState(false);
   const [siteConfig, setSiteConfig] = useState<any>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
 
   const heroRef = useRef<HTMLDivElement>(null);
@@ -388,7 +387,6 @@ export default function Home() {
 
     triggerHaptic("success", event);
     setIsLaunching(true);
-    setIsModalOpen(false);
 
     // Save session before navigating (only when both are selected)
     if (selectedBranch && selectedSemester) {
@@ -548,32 +546,93 @@ export default function Home() {
           <span className="text-blue-500 font-bold">{siteConfig?.activeScheme || "2024 KTU scheme"}</span>
         </p>
 
-        {/* ── CTA Buttons ── */}
+        {/* ── Selector card ── */}
         <div 
-          className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md px-4 animate-fade-up"
+          className={`relative w-full max-w-3xl animate-fade-up transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-20"}`} 
           style={{ animationDelay: "240ms" }}
         >
-          <MagneticButton
-            onClick={() => {
-              triggerHaptic("light");
-              setIsModalOpen(true);
-            }}
-            className="w-full sm:w-auto whitespace-nowrap !rounded-2xl !px-8 !py-4 !text-sm !font-black"
-          >
-            Browse Notes
-            <ArrowRight className="w-4 h-4" />
-          </MagneticButton>
+          <AnimatePresence>
+            {showLandingHint && (
+              <motion.div
+                initial={{ opacity: 0, y: 8, scale: 0.95, x: "-50%" }}
+                animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
+                exit={{ opacity: 0, y: 8, scale: 0.95, x: "-50%" }}
+                className="absolute -top-14 left-1/2 bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 text-[10px] md:text-xs font-black uppercase tracking-wider px-4 py-2 rounded-2xl shadow-xl flex items-center gap-2 select-none z-50 whitespace-nowrap border border-blue-200/80 dark:border-slate-800 shadow-blue-500/5"
+              >
+                <Sparkles className="w-4 h-4 text-blue-500 dark:text-blue-400 animate-pulse flex-shrink-0" />
+                <span>New? Select your branch & semester to start!</span>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowLandingHint(false);
+                    triggerHaptic("light");
+                  }}
+                  className="hover:bg-slate-100 dark:hover:bg-slate-800 p-0.5 rounded ml-1 text-slate-400 dark:text-slate-500 hover:text-blue-650 dark:hover:text-blue-400 transition-colors cursor-pointer flex-shrink-0"
+                  aria-label="Dismiss guide"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+                <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white dark:bg-slate-900 rotate-45 border-r border-b border-blue-200/80 dark:border-slate-800" />
+              </motion.div>
+            )}
+          </AnimatePresence>
 
-          <button
-            onClick={() => {
-              triggerHaptic("light");
-              document.getElementById("how-it-works-heading")?.scrollIntoView({ behavior: "smooth" });
+          <div
+            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2.5 md:p-3 flex flex-col md:flex-row items-center gap-2.5 md:gap-3 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
+            style={{
+              boxShadow: !mounted
+                ? undefined
+                : resolvedTheme === "dark"
+                  ? "0 16px 56px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)"
+                  : "0 16px 56px rgba(37,99,235,0.14), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)",
             }}
-            className="w-full sm:w-auto h-[48px] px-8 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 bg-white/5 dark:bg-slate-900/5 hover:bg-slate-50 dark:hover:bg-slate-800/30 text-slate-800 dark:text-slate-200 text-sm font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
           >
-            How it works
-          </button>
+          {/* Branch */}
+          <div className={`relative flex-1 w-full transition-all duration-250 ${branchOpen ? "z-50" : "z-30"}`}>
+            <PremiumSelect
+              value={selectedBranch}
+              onChange={(val) => setSelectedBranch(String(val))}
+              options={branches
+                .filter(b => (siteConfig?.allowedBranches || ["cs", "ec", "me", "ce", "ee"]).includes(b.id))
+                .map(b => ({ label: b.label, value: b.id }))}
+              placeholder="Select Branch"
+              icon={BookOpen}
+              hasError={errorState && !selectedBranch}
+              onOpenChange={setBranchOpen}
+            />
+          </div>
+
+          {/* Semester */}
+          <div className={`relative flex-1 w-full transition-all duration-250 ${semOpen ? "z-50" : "z-20"}`}>
+            <PremiumSelect
+              value={selectedSemester}
+              onChange={(val) => setSelectedSemester(val === "" ? "" : Number(val))}
+              options={semesters.map(s => {
+                const isVisible = (siteConfig?.visibleSemesters || [1, 2, 3, 4, 5, 6, 7, 8]).includes(s);
+                return {
+                  label: isVisible ? `Semester ${s}` : `Semester ${s} (Coming Soon)`,
+                  value: s,
+                  disabled: !isVisible
+                };
+              })}
+              placeholder="Select Semester"
+              icon={Calendar}
+              hasError={errorState && !selectedSemester}
+              onOpenChange={setSemOpen}
+            />
+          </div>
+
+          <div className="relative w-full md:w-auto z-30">
+            <MagneticButton
+              onClick={handleLaunch}
+              className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-6 !py-4 !text-sm !font-black"
+            >
+              Open Dashboard
+              <ArrowRight className="w-4 h-4" />
+            </MagneticButton>
+          </div>
         </div>
+      </div>
 
         {/* ── Accessibility: announce validation errors to screen readers ── */}
         <div aria-live="assertive" className="sr-only">
@@ -675,98 +734,6 @@ export default function Home() {
       <LazySection height="400px">
         <CinematicFooter />
       </LazySection>
-
-      {/* ── Branch / Semester Select Modal ── */}
-      <AnimatePresence>
-        {isModalOpen && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsModalOpen(false)}
-              className="absolute inset-0 bg-slate-950/60 backdrop-blur-md"
-            />
-            {/* Modal Box */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 16 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 16 }}
-              transition={{ type: "spring", duration: 0.4 }}
-              className="relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-slate-200 dark:border-slate-800 rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl z-10 overflow-hidden"
-            >
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="absolute top-4 right-4 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-650 transition-colors"
-                aria-label="Close modal"
-              >
-                <X className="w-5 h-5" />
-              </button>
-
-              <div className="mb-6">
-                <div className="flex items-center gap-2 mb-2">
-                  <Sparkles className="w-5 h-5 text-blue-500" />
-                  <h2 className="text-xl font-extrabold text-slate-900 dark:text-white">Choose Semester</h2>
-                </div>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  Select your academic branch and semester to view personalized syllabus trackers, notes, and study tools.
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-5">
-                {/* Branch Selection */}
-                <div>
-                  <label className="block text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Branch</label>
-                  <PremiumSelect
-                    value={selectedBranch}
-                    onChange={(val) => setSelectedBranch(String(val))}
-                    options={branches
-                      .filter(b => (siteConfig?.allowedBranches || ["cs", "ec", "me", "ce", "ee"]).includes(b.id))
-                      .map(b => ({ label: b.label, value: b.id }))}
-                    placeholder="Select Branch"
-                    icon={BookOpen}
-                    hasError={errorState && !selectedBranch}
-                    onOpenChange={setBranchOpen}
-                  />
-                </div>
-
-                {/* Semester Selection */}
-                <div>
-                  <label className="block text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Semester</label>
-                  <PremiumSelect
-                    value={selectedSemester}
-                    onChange={(val) => setSelectedSemester(val === "" ? "" : Number(val))}
-                    options={semesters.map(s => {
-                      const isVisible = (siteConfig?.visibleSemesters || [1, 2, 3, 4, 5, 6, 7, 8]).includes(s);
-                      return {
-                        label: isVisible ? `Semester ${s}` : `Semester ${s} (Coming Soon)`,
-                        value: s,
-                        disabled: !isVisible
-                      };
-                    })}
-                    placeholder="Select Semester"
-                    icon={Calendar}
-                    hasError={errorState && !selectedSemester}
-                    onOpenChange={setSemOpen}
-                  />
-                </div>
-
-                {/* Open Button */}
-                <div className="mt-2">
-                  <MagneticButton
-                    onClick={handleLaunch}
-                    className="w-full whitespace-nowrap !rounded-2xl !py-4 !text-sm !font-black justify-center"
-                  >
-                    Open Dashboard
-                    <ArrowRight className="w-4 h-4" />
-                  </MagneticButton>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </main>
   );
 }
