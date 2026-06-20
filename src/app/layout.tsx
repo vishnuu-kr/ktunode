@@ -9,6 +9,9 @@ import LockdownGate from "@/components/ui/LockdownGate";
 import DismissibleBanner from "@/components/ui/DismissibleBanner";
 import { parseKeywords, readSiteConfig, SITE_URL } from "@/lib/siteConfig";
 import { logEnvironmentStatus } from "@/lib/envValidation";
+import { siteConfig as seoSiteConfig } from "@/lib/site";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { graph, organizationSchema, webSiteSchema, educationalOrgSchema } from "@/components/seo/schema";
 import { validateLockdownSession } from "@/lib/session";
 
 logEnvironmentStatus();
@@ -44,167 +47,52 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export async function generateMetadata(): Promise<Metadata> {
-  const config = await readSiteConfig();
-  const title = config.seo?.title || "KTU Notes, Syllabus & PYQs — 2024 Scheme | KTUNODE";
-  const description = config.seo?.description || "Free B.Tech module-wise KTU notes, previous year question papers, and syllabus tracker tailored for the 2024 scheme. CS, EC, ME, CE, EE — all semesters covered.";
-  const keywordsStr = config.seo?.keywords || "KTU notes, KTU syllabus 2024 scheme, KTU previous year question papers, KTU B.Tech notes, KTU study materials, KTU PYQ, KTU S1 notes, KTU S2 notes, KTU S3 notes, KTU CSE notes 2024, KTU model question papers, KTU module wise notes, APJ Abdul Kalam Technological University syllabus, KTU exam preparation, KTUNODE, KTU 2024 scheme subjects, KTU chapter wise notes, Kerala Technological University";
-  const keywords = parseKeywords(keywordsStr);
-
-  return {
-    metadataBase: new URL(SITE_URL),
-    applicationName: "KTUNODE",
-    manifest: "/manifest.json",
-    title: {
-      default: title,
-      template: "%s | KTUNODE",
-    },
-    description,
-    keywords,
-    authors: [{ name: "KTUNODE Team" }],
-    creator: "KTUNODE",
-    publisher: "KTUNODE",
-    alternates: {
-      canonical: "/",
-    },
-    category: "education",
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-        "max-video-preview": -1,
-      },
-    },
-    appleWebApp: {
-      capable: true,
-      statusBarStyle: "default",
-      title: "KTUNODE",
-    },
-    icons: {
-      icon: "/logo.webp",
-      apple: "/logo.webp",
-    },
-    openGraph: {
-      title,
-      description,
-      url: SITE_URL,
-      siteName: "KTUNODE",
-      locale: "en_US",
-      type: "website",
-      images: [
-        {
-          url: "/og-main.webp",
-          width: 1200,
-          height: 630,
-          alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [
-        {
-          url: "/og-main.webp",
-          width: 1200,
-          height: 630,
-          alt: "KTUNODE — Free premium B.Tech KTU Notes, Syllabus & PYQs (2024 Scheme)",
-        },
-      ],
-    },
-  };
-}
+export const metadata: Metadata = {
+  metadataBase: new URL(seoSiteConfig.url),
+  title: {
+    default: seoSiteConfig.defaultTitle,
+    template: seoSiteConfig.titleTemplate,
+  },
+  description: seoSiteConfig.description,
+  applicationName: seoSiteConfig.name,
+  manifest: "/manifest.webmanifest",
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": [{ url: "/feed.xml", title: "KTUNODE Blog" }] },
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo.webp", type: "image/webp" },
+    ],
+    apple: "/logo.webp",
+  },
+  openGraph: {
+    type: "website",
+    locale: seoSiteConfig.locale,
+    url: seoSiteConfig.url,
+    siteName: seoSiteConfig.name,
+    title: seoSiteConfig.defaultTitle,
+    description: seoSiteConfig.description,
+    images: [{ url: seoSiteConfig.ogImage, width: 1200, height: 630, alt: seoSiteConfig.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: seoSiteConfig.twitter,
+    creator: seoSiteConfig.twitter,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+};
 
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteUrl = SITE_URL;
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": `${siteUrl}/#organization`,
-        name: "KTUNODE",
-        url: siteUrl,
-        logo: {
-          "@type": "ImageObject",
-          url: `${siteUrl}/logo.webp`,
-        },
-        description:
-          "Free module-wise KTU notes, previous year question papers, and syllabus tracker for the 2024 B.Tech scheme.",
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${siteUrl}/#website`,
-        url: siteUrl,
-        name: "KTUNODE",
-        publisher: { "@id": `${siteUrl}/#organization` },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${siteUrl}/#faq`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Is KTUNODE free to use?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, KTUNODE is completely free. All notes, PYQs, and syllabus tracking features are available without any subscription or account creation.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Which KTU scheme does KTUNODE cover?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "KTUNODE is built specifically for the 2024 KTU scheme. All notes, syllabi, and PYQs are mapped to the latest curriculum from APJ Abdul Kalam Technological University.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Which branches are supported?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "We currently support Computer Science (CS), Electronics & Communication (EC), Mechanical (ME), Civil (CE), and Electrical & Electronics (EE).",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Do I need to create an account?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "No account is required. Just select your branch and semester on the homepage and you're instantly taken to your personalized dashboard.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How does the syllabus tracker work?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "The syllabus tracker lets you mark modules as complete as you study. Your progress is saved locally so you can always see what you've covered and what's left before exams.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Is KTUNODE affiliated with KTU?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "No. KTUNODE is an independent student resource platform and is not affiliated with or endorsed by APJ Abdul Kalam Technological University.",
-            },
-          },
-        ],
-      },
-    ],
-  };
-
   const config = await readSiteConfig();
   const cookieStore = await cookies();
 
@@ -243,14 +131,10 @@ export default async function RootLayout({
             --color-accent-mid: oklch(68% 0.2 ${hue} / 22%);
           }
         `}} />
-        {/* JSON-LD structured data belongs in head, not body */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </head>
       {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
       <body className={`${plusJakartaSans.variable} ${outfit.variable} ${poppins.variable} font-sans antialiased`} suppressHydrationWarning>
+        <JsonLd data={graph(organizationSchema(), webSiteSchema(), educationalOrgSchema())} />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <CSPostHogProvider>
             {isUnderMaintenance ? (

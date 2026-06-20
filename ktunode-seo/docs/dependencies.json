@@ -1,0 +1,15 @@
+{
+  "_comment": "Add these to your package.json then run: npm install",
+  "dependencies": {
+    "next-mdx-remote": "^5.0.0",
+    "gray-matter": "^4.0.3",
+    "reading-time": "^1.5.0"
+  },
+  "optionalForProseStyling": {
+    "@tailwindcss/typography": "^0.5.13",
+    "_note": "Enables the `prose` classes used in blog posts. Add to tailwind.config plugins: require('@tailwindcss/typography'). Remove the `prose` classNames if you skip this."
+  },
+  "_builtIn": {
+    "_note": "next/og (ImageResponse) for dynamic OG images is built into Next.js 13.3+. No install needed."
+  }
+}
