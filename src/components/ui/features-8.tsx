@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import {
   BookOpen, FileText, GraduationCap,
   Check, ShieldCheck, ArrowRight, HelpCircle,
-  Clock, RotateCcw, Play, Pause, Sparkles
+  Clock, RotateCcw, Play, Pause
 } from "lucide-react";
 
 // Branches configuration
@@ -494,7 +494,6 @@ export function Features() {
             onClick={() => setShowAll(!showAll)}
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-50 dark:bg-blue-950/30 border border-blue-150 dark:border-blue-900/55 text-blue-600 dark:text-blue-400 font-extrabold text-sm hover:bg-blue-100/50 hover:dark:bg-blue-950/50 active:scale-95 transition-all shadow-sm cursor-pointer select-none"
           >
-            <Sparkles className="w-4 h-4 text-blue-550 dark:text-blue-400 animate-pulse" />
             {showAll ? "Show Less Tools" : "View All Tools"}
           </button>
         </div>

@@ -205,7 +205,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/?landing=true" onClick={handleLogoClick} className="flex items-center gap-1.5 sm:gap-2 group select-none">
         <Image
-          src="/logo.webp"
+          src="/logo.webp?v=1"
           alt="KTU node Logo"
           width={28}
           height={28}

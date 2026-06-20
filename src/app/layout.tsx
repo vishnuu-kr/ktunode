@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     types: { "application/rss+xml": [{ url: "/feed.xml", title: "KTUNODE Blog" }] },
   },
   icons: {
-    icon: "/logo.webp",
-    apple: "/logo.webp",
+    icon: "/logo.webp?v=1",
+    apple: "/logo.webp?v=1",
   },
   openGraph: {
     type: "website",
