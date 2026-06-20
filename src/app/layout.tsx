@@ -13,6 +13,7 @@ import { siteConfig as seoSiteConfig } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { graph, organizationSchema, webSiteSchema, educationalOrgSchema } from "@/components/seo/schema";
 import { validateLockdownSession } from "@/lib/session";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 logEnvironmentStatus();
 
@@ -182,6 +183,7 @@ export default async function RootLayout({
             )}
           </CSPostHogProvider>
         </ThemeProvider>
+        <SpeedInsights />
         <Script
           id="register-sw"
           strategy="afterInteractive"
