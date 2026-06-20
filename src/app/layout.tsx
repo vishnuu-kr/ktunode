@@ -128,10 +128,10 @@ export default async function RootLayout({
             --color-accent-mid: oklch(68% 0.2 ${hue} / 22%);
           }
         `}} />
+        <JsonLd data={graph(organizationSchema(), webSiteSchema(), educationalOrgSchema())} />
       </head>
       {/* Apply both the CSS variable AND the font-sans utility so the font actually renders */}
       <body className={`${plusJakartaSans.variable} ${outfit.variable} ${poppins.variable} font-sans antialiased`} suppressHydrationWarning>
-        <JsonLd data={graph(organizationSchema(), webSiteSchema(), educationalOrgSchema())} />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <CSPostHogProvider>
             {isUnderMaintenance ? (
