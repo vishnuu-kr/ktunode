@@ -45,7 +45,7 @@ export default function HowItWorksSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 overflow-hidden bg-gradient-to-b from-white via-slate-50/40 to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 border-t border-slate-100 dark:border-slate-800"
+      className="relative py-20 sm:py-32 overflow-hidden bg-gradient-to-b from-bg via-surface/40 to-bg border-t border-border"
       aria-labelledby="how-it-works-heading"
     >
       {/* Soft Ambient Background Glows */}

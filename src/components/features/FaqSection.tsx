@@ -69,7 +69,7 @@ export default function FaqSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 overflow-hidden bg-background"
+      className="relative py-20 sm:py-32 overflow-hidden bg-background border-t border-border"
       style={{
         background:
           "linear-gradient(180deg, var(--color-bg) 0%, var(--color-sky) 100%)",

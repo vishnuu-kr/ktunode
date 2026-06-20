@@ -19,7 +19,7 @@ export default function CtaBanner() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-20 sm:py-32 overflow-hidden border-t border-slate-800"
       style={{
         backgroundColor: "#0f172a",
         backgroundImage: "radial-gradient(circle at center, rgba(8, 15, 30, 0.75) 0%, rgba(8, 15, 30, 0) 65%), url('/bg-ready.webp')",

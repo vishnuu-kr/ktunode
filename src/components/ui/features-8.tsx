@@ -133,7 +133,7 @@ export function Features() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 overflow-hidden bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900 border-t border-slate-100 dark:border-slate-800"
+      className="relative py-20 sm:py-32 overflow-hidden bg-gradient-to-b from-bg to-sky/30 border-t border-border"
     >
       {/* Premium Ambient Background Blur */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">

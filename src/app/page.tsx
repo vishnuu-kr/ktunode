@@ -529,7 +529,7 @@ export default function Home() {
         >
           <MagneticButton
             onClick={handleLaunch}
-            className="w-full sm:w-auto whitespace-nowrap !rounded-2xl !px-8 !py-4 !text-base !font-black shadow-lg shadow-blue-500/25 hover:shadow-blue-500/35 transition-all duration-200"
+            className="w-full sm:w-auto whitespace-nowrap !px-8 !py-4 !text-base !font-bold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/35 transition-all duration-200"
           >
             Get Started — It's Free
             <ArrowRight className="w-5 h-5 ml-1.5" />
@@ -540,7 +540,7 @@ export default function Home() {
               triggerHaptic("light");
               document.getElementById("how-it-works-heading")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="w-full sm:w-auto whitespace-nowrap px-8 py-4 text-base font-bold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:white bg-slate-100/80 dark:bg-slate-800/85 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200/50 dark:border-slate-700/50 rounded-2xl transition-all duration-200 cursor-pointer"
+            className="w-full sm:w-auto whitespace-nowrap pill-btn pill-btn-outline text-base font-bold transition-all duration-200 cursor-pointer"
           >
             See How It Works
           </button>
@@ -622,9 +622,7 @@ export default function Home() {
  
       {siteConfig?.landingPageSections?.features !== false && (
         <LazySection height="800px">
-          <section className="relative z-10 w-full bg-white dark:bg-slate-900 border-y border-blue-50 dark:border-slate-800">
-            <Features />
-          </section>
+          <Features />
         </LazySection>
       )}
  
