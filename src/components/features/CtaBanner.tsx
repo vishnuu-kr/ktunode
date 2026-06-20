@@ -94,7 +94,7 @@ export default function CtaBanner() {
           transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <MagneticButton href="/dashboard" customShadow="shadow-[0_10px_25px_-5px_rgba(0,122,255,0.5),inset_0_1px_0_rgba(255,255,255,0.3)] group-hover:shadow-[0_20px_50px_-5px_rgba(0,122,255,0.85),inset_0_1px_0_rgba(255,255,255,0.4)]">
-            Open Dashboard
+            Get Started
             <ArrowRight className="w-4 h-4" />
           </MagneticButton>
 

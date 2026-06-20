@@ -57,17 +57,14 @@ export default function HowItWorksSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-6">
         {/* Header */}
         <motion.div
-          className="text-center mb-24"
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-100/50 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-wide uppercase select-none">
-            How it works
-          </div>
           <h2
             id="how-it-works-heading"
-            className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-5 leading-[1.06]"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-5 leading-[1.05]"
           >
             Study smarter{" "}
             <span className="gradient-text-animated">in 3 steps.</span>
@@ -191,7 +188,7 @@ export default function HowItWorksSection() {
             href="/dashboard"
             className="pill-btn pill-btn-primary group inline-flex"
           >
-            Start Now — It&apos;s Free
+            Get Started
             <motion.span
               className="inline-flex"
               animate={{ x: [0, 3, 0] }}

@@ -91,7 +91,7 @@ export default function KtuCompareSection() {
               href="/notes"
               className="pill-btn pill-btn-primary group inline-flex"
             >
-              Browse Notes
+              Get Started
               <motion.span
                 className="inline-flex"
                 animate={{ x: [0, 3, 0] }}
@@ -126,7 +126,7 @@ export default function KtuCompareSection() {
                 secondImage="/assets/ktu-structured.webp"
                 firstImageClassName="object-cover object-top"
                 secondImageClassname="object-cover object-top"
-                className="w-full aspect-square sm:aspect-square md:aspect-video rounded-[20px]"
+                className="w-full aspect-[4/3] sm:aspect-square md:aspect-video rounded-[20px]"
                 slideMode={isTouchDevice ? "drag" : "hover"}
                 autoplay={true}
               />

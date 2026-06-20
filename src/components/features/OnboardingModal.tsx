@@ -408,9 +408,15 @@ export default function OnboardingModal({
         {/* Header */}
         <div className="px-6 pt-7 pb-4 flex items-center justify-between border-b border-slate-100 dark:border-slate-900 z-10">
           <div className="flex flex-col gap-0.5">
-            <span className="text-[10px] font-black text-blue-500 uppercase tracking-widest">
-              Step {step} of 3
-            </span>
+            {step < 4 ? (
+              <span className="text-[10px] font-black text-blue-500 uppercase tracking-widest">
+                Step {step} of 3
+              </span>
+            ) : (
+              <span className="text-[10px] font-black text-blue-500 uppercase tracking-widest">
+                Finalizing
+              </span>
+            )}
             <h2
               id="onboarding-modal-title"
               className="text-base md:text-lg font-extrabold text-slate-900 dark:text-slate-100 tracking-tight"
@@ -433,7 +439,7 @@ export default function OnboardingModal({
                 triggerHaptic("light");
                 onClose();
               }}
-              className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-400 hover:text-slate-600 dark:hover:text-slate-800 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-400 hover:text-slate-600 dark:hover:text-slate-205 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
               aria-label="Close onboarding modal"
             >
               <X className="w-5 h-5" />
@@ -462,20 +468,23 @@ export default function OnboardingModal({
                     className="grid grid-cols-2 md:grid-cols-5 gap-3"
                   >
                     {PRIMARY_BRANCHES.map(({ id, label, desc, icon: Icon }) => {
-                      const isSelected = selectedBranch === id;
-                      return (
+                       const isSelected = selectedBranch === id;
+                       return (
                         <button
                           key={id}
                           data-branch-item
                           onClick={() => selectBranch(id)}
-                          className={`flex flex-col items-center justify-center p-4 rounded-2xl border text-center transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                          className={`flex flex-col items-center justify-center p-4 rounded-2xl border text-center transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 group relative overflow-hidden ${
                             isSelected
-                              ? "bg-blue-50 dark:bg-blue-950/40 border-blue-500 text-blue-600 dark:text-blue-400 font-bold scale-[1.02] shadow-sm shadow-blue-500/10"
-                              : "bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-slate-350 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200"
+                              ? "bg-gradient-to-b from-blue-50 to-blue-100/50 dark:from-blue-950/40 dark:to-blue-950/20 border-blue-500 text-blue-600 dark:text-blue-400 font-bold scale-[1.02] shadow-md shadow-blue-500/10"
+                              : "bg-slate-50/50 dark:bg-slate-900/50 hover:bg-slate-100/50 dark:hover:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-800 hover:scale-[1.02] text-slate-800 dark:text-slate-200"
                           } min-h-[100px] sm:min-h-[110px] md:min-h-[120px]`}
                           aria-label={`Select ${label}`}
                         >
-                          <Icon className={`w-6 h-6 mb-2.5 ${isSelected ? "text-blue-500" : "text-slate-400 dark:text-slate-500"}`} />
+                          {isSelected && (
+                            <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse" />
+                          )}
+                          <Icon className={`w-6 h-6 mb-2.5 transition-all duration-300 group-hover:scale-110 ${isSelected ? "text-blue-500" : "text-slate-400 dark:text-slate-500 group-hover:text-blue-500"}`} />
                           <span className="text-xs font-black leading-tight mb-1">{label}</span>
                           <span className="text-[10px] text-slate-400 font-semibold">{desc}</span>
                         </button>
@@ -542,15 +551,18 @@ export default function OnboardingModal({
                           key={sem}
                           data-sem-item
                           onClick={() => selectSemester(sem)}
-                          className={`flex flex-col items-center justify-center p-5 rounded-2xl border text-center transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                          className={`flex flex-col items-center justify-center p-5 rounded-2xl border text-center transition-all duration-305 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 group relative overflow-hidden ${
                             isSelected
-                              ? "bg-blue-50 dark:bg-blue-950/40 border-blue-500 text-blue-600 dark:text-blue-400 font-bold scale-[1.02] shadow-sm shadow-blue-500/10"
-                              : "bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-slate-350 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200"
+                              ? "bg-gradient-to-b from-blue-50 to-blue-100/50 dark:from-blue-950/40 dark:to-blue-950/20 border-blue-500 text-blue-600 dark:text-blue-400 font-bold scale-[1.02] shadow-md shadow-blue-500/10"
+                              : "bg-slate-50/50 dark:bg-slate-900/50 hover:bg-slate-100/50 dark:hover:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-800 hover:scale-[1.02] text-slate-800 dark:text-slate-200"
                           } min-h-[90px]`}
                           aria-label={`Select Semester ${sem}`}
                         >
-                          <span className="text-[10px] text-slate-400 font-extrabold uppercase tracking-wider mb-1">Semester</span>
-                          <span className="text-2xl font-black">{sem}</span>
+                          {isSelected && (
+                            <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse" />
+                          )}
+                          <span className="text-[10px] text-slate-400 font-extrabold uppercase tracking-wider mb-1 transition-colors group-hover:text-blue-500">Semester</span>
+                          <span className="text-2xl font-black transition-all duration-300 group-hover:scale-110">{sem}</span>
                         </button>
                       );
                     })}
@@ -606,26 +618,39 @@ export default function OnboardingModal({
                                   e.preventDefault();
                                 }
                               }}
-                              className="flex items-center justify-between p-3.5 rounded-2xl border bg-slate-50/50 dark:bg-slate-900/50 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 cursor-pointer select-none transition-colors border-slate-150 dark:border-slate-850 min-h-[48px] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                              className={`flex items-center justify-between p-3.5 rounded-2xl border cursor-pointer select-none transition-all duration-200 min-h-[48px] focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                                isChecked
+                                  ? "bg-blue-50/20 dark:bg-blue-950/10 border-blue-500/30 hover:border-blue-500/50"
+                                  : "bg-slate-50/40 dark:bg-slate-900/20 border-slate-200 dark:border-slate-800 opacity-60 hover:opacity-85"
+                              }`}
                             >
                               <div className="flex items-center gap-3.5 pr-2">
-                                <input
-                                  type="checkbox"
-                                  checked={isChecked}
-                                  onChange={() => toggleSubject(subject.id)}
-                                  tabIndex={-1} // Handled by outer container keypress
-                                  className="w-5 h-5 rounded border-slate-300 dark:border-slate-750 text-blue-500 focus:ring-blue-500 transition-colors pointer-events-none"
-                                />
+                                <div className="relative flex items-center justify-center">
+                                  <input
+                                    type="checkbox"
+                                    checked={isChecked}
+                                    onChange={() => toggleSubject(subject.id)}
+                                    tabIndex={-1} // Handled by outer container keypress
+                                    className="w-5 h-5 rounded-lg border-2 border-slate-300 dark:border-slate-700 text-blue-500 focus:ring-blue-500 transition-colors pointer-events-none appearance-none checked:bg-blue-500 checked:border-blue-500"
+                                  />
+                                  {isChecked && (
+                                    <svg className="w-3.5 h-3.5 text-white absolute pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4">
+                                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                  )}
+                                </div>
                                 <div className="flex flex-col gap-0.5">
-                                  <span className="text-xs font-black text-slate-800 dark:text-slate-200 line-clamp-1 leading-tight">
+                                  <span className="text-xs font-black text-slate-850 dark:text-slate-150 line-clamp-1 leading-tight">
                                     {subject.name}
                                   </span>
-                                  <span className="text-[10px] font-extrabold text-slate-450 tracking-wider">
+                                  <span className="text-[10px] font-extrabold text-slate-400 dark:text-slate-500 tracking-wider">
                                     {subject.code}
                                   </span>
                                 </div>
                               </div>
-                              <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest shrink-0">
+                              <span className={`text-[10px] font-black uppercase tracking-widest shrink-0 px-2 py-0.5 rounded-full ${
+                                isChecked ? "text-blue-500 bg-blue-50 dark:bg-blue-950/30" : "text-slate-400 bg-slate-100 dark:bg-slate-900"
+                              }`}>
                                 {isChecked ? "Visible" : "Hidden"}
                               </span>
                             </label>
@@ -658,16 +683,17 @@ export default function OnboardingModal({
 
               {/* STEP 4: REDIRECT LOADING SCREEN */}
               {step === 4 && (
-                <div className="flex flex-col items-center justify-center gap-4 py-10">
-                  <div className="relative w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-center text-blue-500 animate-pulse">
-                    <Loader2 className="w-8 h-8 animate-spin text-blue-500" />
+                <div className="flex flex-col items-center justify-center gap-5 py-12">
+                  <div className="relative w-20 h-20 rounded-3xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 animate-pulse shadow-lg shadow-blue-500/5">
+                    <Loader2 className="w-9 h-9 animate-spin text-blue-500" />
+                    <span className="absolute inset-0 rounded-3xl border border-blue-400/30 animate-ping opacity-25" />
                   </div>
-                  <div className="text-center space-y-1">
-                    <h3 className="text-sm font-black text-slate-850 dark:text-slate-150 uppercase tracking-widest">
-                      Booting Study Cockpit
+                  <div className="text-center space-y-2">
+                    <h3 className="text-sm font-black text-slate-900 dark:text-slate-100 uppercase tracking-widest">
+                      Assembling Your Dashboard
                     </h3>
-                    <p className="text-xs text-slate-400 font-semibold max-w-xs leading-relaxed">
-                      Customizing syllabus checklist, setting up shortcuts, and building notes index...
+                    <p className="text-xs text-slate-400 dark:text-slate-500 font-semibold max-w-xs leading-relaxed mx-auto">
+                      Preparing syllabus checklists, indexing official study materials, and setting up local study storage...
                     </p>
                   </div>
                 </div>

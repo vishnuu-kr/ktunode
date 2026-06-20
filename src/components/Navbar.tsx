@@ -21,6 +21,8 @@ export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const { scrollY } = useScroll();
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
 
   const isDashboardActive = useCallback(() => {
     if (pathname.startsWith("/dashboard")) return true;
@@ -34,6 +36,16 @@ export default function Navbar() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 24);
+    
+    const prev = lastScrollY.current;
+    if (latest <= 40) {
+      setVisible(true);
+    } else if (latest > prev && latest - prev > 10) {
+      setVisible(false);
+    } else if (latest < prev && prev - latest > 10) {
+      setVisible(true);
+    }
+    lastScrollY.current = latest;
   });
 
   useEffect(() => {
@@ -180,7 +192,8 @@ export default function Navbar() {
     <div className="fixed top-0 left-0 right-0 z-[60] w-full pt-2 pb-1.5 sm:pt-4 sm:pb-3 transition-all duration-300 pointer-events-none ios-safe-top">
       <motion.header
         initial={{ y: -100 }}
-        animate={{ y: 0 }}
+        animate={{ y: visible ? 0 : -100 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
         className={`pointer-events-auto relative mx-auto flex w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl items-center justify-between rounded-full transition-all duration-300 overflow-visible ${
           scrolled ? "px-3 py-1.5 sm:px-5 sm:py-2" : "px-3.5 py-2.5 sm:px-6 sm:py-3"
         } ${

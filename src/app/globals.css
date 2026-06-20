@@ -141,7 +141,7 @@
     font-family: 'Inter', var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
 
-  button:focus, select:focus, input:focus {
+  button:focus:not(:focus-visible), select:focus:not(:focus-visible), input:focus:not(:focus-visible) {
     outline: none !important;
   }
 
@@ -529,17 +529,14 @@
 
 .bg-orb-1 {
   animation: drift-slow-1 28s ease-in-out infinite alternate;
-  will-change: transform;
 }
 
 .bg-orb-2 {
   animation: drift-slow-2 34s ease-in-out infinite alternate;
-  will-change: transform;
 }
 
 .bg-orb-3 {
   animation: drift-slow-3 30s ease-in-out infinite alternate;
-  will-change: transform;
 }
 
 @media (max-width: 768px) {

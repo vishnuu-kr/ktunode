@@ -282,12 +282,12 @@ function PremiumSelect({
                     disabled={isDisabled}
                     role="option"
                     aria-selected={value === opt.value}
-                    className={`w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors duration-150 ${
+                    className={`w-full text-left px-4 py-3 text-sm font-semibold transition-colors duration-150 ${
                       isDisabled
                         ? "opacity-35 cursor-not-allowed text-slate-400 dark:text-slate-600"
                         : value === opt.value
                           ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold"
-                          : "text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-slate-100"
+                          : "text-slate-600 dark:text-slate-355 hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-slate-100"
                     } ${focusedIndex === index && !isDisabled ? "bg-slate-50 dark:bg-slate-800/60" : ""}`}
                     onClick={(e) => {
                       if (isDisabled) return;
@@ -319,8 +319,6 @@ export default function Home() {
   const { savedSession, saveSession, clearSession } = useSessionPersistence();
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSemester, setSelectedSemester] = useState<number | "">("");
-  const [branchOpen, setBranchOpen] = useState(false);
-  const [semOpen, setSemOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [isLaunching, setIsLaunching] = useState(false);
   const [isRedirecting, setIsRedirecting] = useState(false);
@@ -328,8 +326,6 @@ export default function Home() {
 
 
   const heroRef = useRef<HTMLDivElement>(null);
-
-  const [errorState, setErrorState] = useState(false);
   const [showOnboardingModal, setShowOnboardingModal] = useState(false);
 
   useEffect(() => {
@@ -342,18 +338,6 @@ export default function Home() {
       .catch(err => console.error("Failed to load site config:", err));
   }, []);
 
-  const [showLandingHint, setShowLandingHint] = useState(false);
-
-  useEffect(() => {
-    if (mounted) {
-      const seen = localStorage.getItem("ktunode_onboarding_completed");
-      const savedBranch = localStorage.getItem("ktunode_branch");
-      if (!seen && !savedBranch) {
-        setShowLandingHint(true);
-      }
-    }
-  }, [mounted]);
-
   // Redirect returning users immediately to the dashboard if a session is saved and they didn't bypass it via landing=true
   useEffect(() => {
     if (mounted && savedSession) {
@@ -365,13 +349,6 @@ export default function Home() {
     }
   }, [mounted, savedSession, router]);
 
-  // Prefetch the target route as soon as a branch and semester are selected
-  useEffect(() => {
-    if (selectedBranch && selectedSemester) {
-      router.prefetch(`/${selectedBranch}/sem-${selectedSemester}`);
-    }
-  }, [selectedBranch, selectedSemester, router]);
-
   // Prefetch the saved session route on mount
   useEffect(() => {
     if (mounted && savedSession) {
@@ -380,29 +357,19 @@ export default function Home() {
   }, [mounted, savedSession, router]);
 
   const handleLaunch = (event?: React.MouseEvent | React.PointerEvent) => {
-    const onboardingCompleted = localStorage.getItem("ktunode_onboarding_completed") === "true";
-    if (!onboardingCompleted) {
-      triggerHaptic("light", event);
-      setShowOnboardingModal(true);
+    const savedBranch = localStorage.getItem("ktunode_branch");
+    const savedSemester = localStorage.getItem("ktunode_semester");
+
+    triggerHaptic("light", event);
+
+    if (savedBranch && savedSemester) {
+      triggerHaptic("success", event);
+      setIsLaunching(true);
+      router.push(`/${savedBranch}/sem-${savedSemester}`);
       return;
     }
 
-    if (!selectedBranch || !selectedSemester) {
-      setErrorState(true);
-      setTimeout(() => setErrorState(false), 500);
-      triggerHaptic("warning", event);
-      return;
-    }
-
-    triggerHaptic("success", event);
-    setIsLaunching(true);
-
-    // Save session before navigating (only when both are selected)
-    if (selectedBranch && selectedSemester) {
-      saveSession(selectedBranch, selectedSemester as number);
-    }
-
-    router.push(`/${selectedBranch}/sem-${selectedSemester}`);
+    setShowOnboardingModal(true);
   };
 
   const handleContinue = (event?: React.MouseEvent | React.PointerEvent) => {
@@ -555,98 +522,31 @@ export default function Home() {
           <span className="text-blue-500 font-bold">{siteConfig?.activeScheme || "2024 KTU scheme"}</span>
         </p>
 
-        {/* ── Selector card ── */}
+        {/* ── CTA Buttons ── */}
         <div 
-          className={`relative w-full max-w-2xl animate-fade-up transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-20"}`} 
+          className="relative z-20 flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md mx-auto px-4 animate-fade-up"
           style={{ animationDelay: "240ms" }}
         >
-          <AnimatePresence>
-            {showLandingHint && (
-              <motion.div
-                initial={{ opacity: 0, y: 8, scale: 0.95, x: "-50%" }}
-                animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
-                exit={{ opacity: 0, y: 8, scale: 0.95, x: "-50%" }}
-                className="absolute -top-14 left-1/2 bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 text-[10px] md:text-xs font-black uppercase tracking-wider px-4 py-2 rounded-2xl shadow-xl flex items-center gap-2 select-none z-50 whitespace-nowrap border border-blue-200/80 dark:border-slate-800 shadow-blue-500/5"
-              >
-                <Sparkles className="w-4 h-4 text-blue-500 dark:text-blue-400 animate-pulse flex-shrink-0" />
-                <span>New? Select your branch & semester to start!</span>
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setShowLandingHint(false);
-                    triggerHaptic("light");
-                  }}
-                  className="hover:bg-slate-100 dark:hover:bg-slate-800 p-0.5 rounded ml-1 text-slate-400 dark:text-slate-500 hover:text-blue-650 dark:hover:text-blue-400 transition-colors cursor-pointer flex-shrink-0"
-                  aria-label="Dismiss guide"
-                >
-                  <X className="w-3.5 h-3.5" />
-                </button>
-                <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white dark:bg-slate-900 rotate-45 border-r border-b border-blue-200/80 dark:border-slate-800" />
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <div
-            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-3 sm:p-3.5 md:p-2 flex flex-col md:flex-row items-center gap-3 sm:gap-4 md:gap-2.5 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
-            style={{
-              boxShadow: !mounted
-                ? undefined
-                : resolvedTheme === "dark"
-                  ? "0 16px 56px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05)"
-                  : "0 16px 56px rgba(37,99,235,0.14), 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)",
-            }}
+          <MagneticButton
+            onClick={handleLaunch}
+            className="w-full sm:w-auto whitespace-nowrap !rounded-2xl !px-8 !py-4 !text-base !font-black shadow-lg shadow-blue-500/25 hover:shadow-blue-500/35 transition-all duration-200"
           >
-          {/* Branch */}
-          <div className={`relative flex-1 w-full transition-all duration-250 ${branchOpen ? "z-50" : "z-30"}`}>
-            <PremiumSelect
-              value={selectedBranch}
-              onChange={(val) => setSelectedBranch(String(val))}
-              options={branches
-                .filter(b => (siteConfig?.allowedBranches || ["cs", "ec", "me", "ce", "ee"]).includes(b.id))
-                .map(b => ({ label: b.label, value: b.id }))}
-              placeholder="Select Branch"
-              icon={BookOpen}
-              hasError={errorState && !selectedBranch}
-              onOpenChange={setBranchOpen}
-            />
-          </div>
-
-          {/* Semester */}
-          <div className={`relative flex-1 w-full transition-all duration-250 ${semOpen ? "z-50" : "z-20"}`}>
-            <PremiumSelect
-              value={selectedSemester}
-              onChange={(val) => setSelectedSemester(val === "" ? "" : Number(val))}
-              options={semesters.map(s => {
-                const isVisible = (siteConfig?.visibleSemesters || [1, 2, 3, 4, 5, 6, 7, 8]).includes(s);
-                return {
-                  label: isVisible ? `Semester ${s}` : `Semester ${s} (Coming Soon)`,
-                  value: s,
-                  disabled: !isVisible
-                };
-              })}
-              placeholder="Select Semester"
-              icon={Calendar}
-              hasError={errorState && !selectedSemester}
-              onOpenChange={setSemOpen}
-            />
-          </div>
-
-          <div className="relative w-full md:w-auto z-30">
-            <MagneticButton
-              onClick={handleLaunch}
-              className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-6 !py-3.5 !text-sm !font-black"
-            >
-              Open Dashboard
-              <ArrowRight className="w-4 h-4" />
-            </MagneticButton>
-          </div>
+            Get Started — It's Free
+            <ArrowRight className="w-5 h-5 ml-1.5" />
+          </MagneticButton>
+          
+          <button
+            onClick={() => {
+              triggerHaptic("light");
+              document.getElementById("how-it-works-heading")?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="w-full sm:w-auto whitespace-nowrap px-8 py-4 text-base font-bold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:white bg-slate-100/80 dark:bg-slate-800/85 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200/50 dark:border-slate-700/50 rounded-2xl transition-all duration-200 cursor-pointer"
+          >
+            See How It Works
+          </button>
         </div>
-      </div>
 
-        {/* ── Accessibility: announce validation errors to screen readers ── */}
-        <div aria-live="assertive" className="sr-only">
-          {errorState ? "Please select both a branch and semester before continuing" : ""}
-        </div>
+
 
         {/* ── Continue Session Button (below selector card) ── */}
         <AnimatePresence>
@@ -682,6 +582,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: mounted ? 0.5 : 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
+          aria-hidden="true"
         >
           <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-[0.2em] uppercase">
             Scroll
@@ -712,9 +613,11 @@ export default function Home() {
         </LazySection>
       )}
       {siteConfig?.landingPageSections?.foundree !== false && (
-        <LazySection height="700px">
-          <FoundreeHero />
-        </LazySection>
+        <div className="hidden md:block">
+          <LazySection height="700px">
+            <FoundreeHero />
+          </LazySection>
+        </div>
       )}
  
       {siteConfig?.landingPageSections?.features !== false && (

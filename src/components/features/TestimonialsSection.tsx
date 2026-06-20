@@ -7,6 +7,7 @@ const testimonials = [
   {
     name: "Arjun Menon",
     dept: "Computer Science",
+    year: "3rd Year",
     sem: "Sem 6",
     avatar: "AM",
     color: "bg-blue-50 text-blue-600 border-blue-100",
@@ -17,6 +18,7 @@ const testimonials = [
   {
     name: "Priya Krishnan",
     dept: "Electronics",
+    year: "2nd Year",
     sem: "Sem 4",
     avatar: "PK",
     color: "bg-violet-50 text-violet-600 border-violet-100",
@@ -27,16 +29,18 @@ const testimonials = [
   {
     name: "Rahul Suresh",
     dept: "Mechanical",
+    year: "4th Year",
     sem: "Sem 8",
     avatar: "RS",
     color: "bg-emerald-50 text-emerald-600 border-emerald-100",
-    rating: 5,
+    rating: 4,
     quote: "No more panic about missing modules.",
     text: "Knowing exactly what is left for my exams is a game changer. Marking modules complete as I study prevents backlogs entirely.",
   },
   {
     name: "Anjali Nair",
     dept: "Civil",
+    year: "3rd Year",
     sem: "Sem 5",
     avatar: "AN",
     color: "bg-rose-50 text-rose-600 border-rose-100",
@@ -47,16 +51,18 @@ const testimonials = [
   {
     name: "Vishnu Das",
     dept: "Electrical",
+    year: "2nd Year",
     sem: "Sem 3",
     avatar: "VD",
     color: "bg-amber-50 text-amber-600 border-amber-100",
-    rating: 5,
+    rating: 4,
     quote: "Saves me hours every study week.",
     text: "I used to spend hours searching for good notes. Now I just open KTUNODE and everything is right there. Saves me so much time.",
   },
   {
     name: "Sneha Pillai",
     dept: "Computer Science",
+    year: "4th Year",
     sem: "Sem 7",
     avatar: "SP",
     color: "bg-cyan-50 text-cyan-600 border-cyan-100",
@@ -112,10 +118,6 @@ export default function TestimonialsSection() {
           </span>
         </div>
 
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-5 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-100/60 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-wide uppercase shadow-sm">
-          <Heart className="w-3 h-3 fill-current text-blue-500" />
-          Loved by KTU students
-        </div>
         <h2
           id="testimonials-heading"
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-4 sm:mb-5 leading-[1.05]"
@@ -132,11 +134,15 @@ export default function TestimonialsSection() {
 
       {/* Scrolling track */}
       <div
-        className="relative w-full"
+        className="relative w-full focus:outline-none"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
         onTouchStart={() => setPaused(true)}
         onTouchEnd={() => setPaused(false)}
+        onFocus={() => setPaused(true)}
+        onBlur={() => setPaused(false)}
+        tabIndex={0}
+        aria-label="Student testimonials carousel. Focus or hover to pause scrolling."
       >
         {/* Fade edges */}
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 md:w-32 z-10 bg-gradient-to-r from-slate-50 dark:from-slate-950 to-transparent" />
@@ -189,7 +195,7 @@ export default function TestimonialsSection() {
                 <div className="flex-1 min-w-0">
                   <div className="text-sm font-bold text-slate-800 dark:text-slate-200 truncate">{t.name}</div>
                   <div className="flex justify-between items-center text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider mt-0.5">
-                    <span>{t.dept}</span>
+                    <span>{t.dept} • {t.year}</span>
                     <span className="text-blue-600 dark:text-blue-400">{t.sem}</span>
                   </div>
                 </div>

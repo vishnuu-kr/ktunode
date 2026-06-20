@@ -93,7 +93,7 @@ export default function FaqSection() {
               <div className="section-badge mb-5">FAQ</div>
               <h2
                 id="faq-heading"
-                className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-4 sm:mb-5 leading-[1.05]"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-4 sm:mb-5 leading-[1.05]"
               >
                 Common
                 <br />
