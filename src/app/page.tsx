@@ -389,7 +389,7 @@ export default function Home() {
       <div className="fixed inset-0 bg-[#070709] flex flex-col items-center justify-center z-[100] gap-5 font-sans">
         <div className="relative w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 animate-pulse">
           <Image
-            src="/logo.webp?v=1"
+            src="/logo.webp"
             alt="KTU node Logo"
             width={40}
             height={40}
@@ -427,7 +427,7 @@ export default function Home() {
         {/* ── Global Hero Background Image (Light Mode) ── */}
         <div className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-100 dark:opacity-0">
           <Image
-            src="/hero-bg.webp?v=1"
+            src="/hero-bg.webp"
             alt="Hero Background Light"
             fill
             priority
@@ -439,7 +439,7 @@ export default function Home() {
         {/* ── Global Hero Background Image (Dark Mode) ── */}
         <div className="absolute inset-0 z-0 pointer-events-none transition-opacity duration-700 opacity-0 dark:opacity-100">
           <Image
-            src="/hero-bg-dark.webp?v=1"
+            src="/hero-bg-dark.webp"
             alt="Hero Background Dark"
             fill
             priority

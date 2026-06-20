@@ -24,7 +24,7 @@ export function PremiumLayout({ children }: { children: React.ReactNode }) {
         {/* ── Global Hero Background Image (Light Mode) ── */}
         <div className="absolute top-0 left-0 right-0 h-[600px] z-0 pointer-events-none transition-opacity duration-700 opacity-100 dark:opacity-0">
           <Image
-            src="/hero-bg.webp?v=1"
+            src="/hero-bg.webp"
             alt="Hero Background Light"
             fill
             priority
@@ -36,7 +36,7 @@ export function PremiumLayout({ children }: { children: React.ReactNode }) {
         {/* ── Global Hero Background Image (Dark Mode) ── */}
         <div className="absolute top-0 left-0 right-0 h-[600px] z-0 pointer-events-none transition-opacity duration-700 opacity-0 dark:opacity-100">
           <Image
-            src="/hero-bg-dark.webp?v=1"
+            src="/hero-bg-dark.webp"
             alt="Hero Background Dark"
             fill
             priority
