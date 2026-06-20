@@ -178,9 +178,11 @@ export default function FaqSection() {
                           isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                         }`}
                       >
-                        <p className="px-6 pb-6 text-sm text-slate-500 dark:text-slate-400" style={{ lineHeight: "1.75" }}>
-                          {faq.a}
-                        </p>
+                        <div className="px-5 pb-5 pt-1.5 md:px-6 border-t border-slate-100/50 dark:border-slate-800/40">
+                          <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                            {faq.a}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

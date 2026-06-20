@@ -88,12 +88,12 @@ export default function CtaBanner() {
 
         {/* Buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20"
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <MagneticButton href="/dashboard">
+          <MagneticButton href="/dashboard" customShadow="shadow-[0_10px_25px_-5px_rgba(0,122,255,0.5),inset_0_1px_0_rgba(255,255,255,0.3)] group-hover:shadow-[0_20px_50px_-5px_rgba(0,122,255,0.85),inset_0_1px_0_rgba(255,255,255,0.4)]">
             Open Dashboard
             <ArrowRight className="w-4 h-4" />
           </MagneticButton>

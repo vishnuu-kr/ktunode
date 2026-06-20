@@ -6,57 +6,63 @@ import { Star, Quote, Heart } from "lucide-react";
 const testimonials = [
   {
     name: "Arjun Menon",
-    branch: "Computer Science — Sem 6",
+    dept: "Computer Science",
+    sem: "Sem 6",
     avatar: "AM",
     color: "bg-blue-50 text-blue-600 border-blue-100",
     rating: 5,
     quote: "This platform changed how I study.",
-    text: "KTUNODE completely changed how I study. The chapter-wise notes are so clean — I stopped wasting time on dense textbooks and scored my best semester yet.",
+    text: "The chapter-wise notes are so clean—I stopped wasting time on dense textbooks and scored my best semester yet.",
   },
   {
     name: "Priya Krishnan",
-    branch: "Electronics — Sem 4",
+    dept: "Electronics",
+    sem: "Sem 4",
     avatar: "PK",
     color: "bg-violet-50 text-violet-600 border-violet-100",
     rating: 5,
     quote: "Helped me build real exam confidence.",
-    text: "The PYQs are organized exactly how I needed them. I could see patterns in questions across years and walked into the exam prepared.",
+    text: "The model papers are organized exactly how I needed them. I could easily spot patterns and walked into the exam prepared.",
   },
   {
     name: "Rahul Suresh",
-    branch: "Mechanical — Sem 8",
+    dept: "Mechanical",
+    sem: "Sem 8",
     avatar: "RS",
     color: "bg-emerald-50 text-emerald-600 border-emerald-100",
     rating: 5,
-    quote: "No more last-minute panic about missing modules.",
-    text: "Knowing exactly what's left for my internals and externals is a game changer. I could mark modules complete as I studied, preventing backlogs entirely.",
+    quote: "No more panic about missing modules.",
+    text: "Knowing exactly what is left for my exams is a game changer. Marking modules complete as I study prevents backlogs entirely.",
   },
   {
     name: "Anjali Nair",
-    branch: "Civil — Sem 5",
+    dept: "Civil",
+    sem: "Sem 5",
     avatar: "AN",
     color: "bg-rose-50 text-rose-600 border-rose-100",
     rating: 5,
     quote: "Finally built for the 2024 scheme.",
-    text: "Finally a platform built for the 2024 scheme. Everything is up to date and the notes actually match what our professors teach. Highly recommend.",
+    text: "Finally a platform built for the 2024 scheme. Everything is up to date and notes match exactly what our professors teach.",
   },
   {
     name: "Vishnu Das",
-    branch: "Electrical — Sem 3",
+    dept: "Electrical",
+    sem: "Sem 3",
     avatar: "VD",
     color: "bg-amber-50 text-amber-600 border-amber-100",
     rating: 5,
     quote: "Saves me hours every study week.",
-    text: "I used to spend hours searching for good notes. Now I just open KTUNODE and everything is right there. Saves me so much time every week.",
+    text: "I used to spend hours searching for good notes. Now I just open KTUNODE and everything is right there. Saves me so much time.",
   },
   {
     name: "Sneha Pillai",
-    branch: "Computer Science — Sem 7",
+    dept: "Computer Science",
+    sem: "Sem 7",
     avatar: "SP",
     color: "bg-cyan-50 text-cyan-600 border-cyan-100",
     rating: 5,
     quote: "My grades improved noticeably.",
-    text: "The compare feature showed me exactly how cluttered my old notes were. The structured format here is just on another level. My grades improved noticeably.",
+    text: "The comparison preview showed me how clean structured notes should be. My revision is on another level, and grades improved.",
   },
 ];
 
@@ -146,41 +152,46 @@ export default function TestimonialsSection() {
           {doubled.map((t, i) => (
             <div
               key={i}
-              className="w-[300px] sm:w-[360px] flex-shrink-0 bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800 rounded-3xl p-6 sm:p-7 cursor-default group hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-800 hover:shadow-[0_20px_40px_rgba(37,99,235,0.06)] hover:dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              className="w-[300px] sm:w-[360px] h-[230px] sm:h-[250px] flex flex-col justify-between flex-shrink-0 bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800 rounded-3xl p-6 sm:p-7 cursor-default group hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-800 hover:shadow-[0_20px_40px_rgba(37,99,235,0.06)] hover:dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
               style={{
                 boxShadow: "0 2px 16px rgba(0,0,0,0.01), inset 0 1px 0 rgba(255,255,255,0.05)",
               }}
             >
-              {/* Rating stars & Quote mark */}
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex gap-0.5">
-                  {Array.from({ length: t.rating }).map((_, s) => (
-                    <Star key={s} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                  ))}
+              <div>
+                {/* Rating stars & Quote mark */}
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex gap-0.5">
+                    {Array.from({ length: t.rating }).map((_, s) => (
+                      <Star key={s} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <Quote className="w-5 h-5 text-blue-500/10 group-hover:text-blue-500/20 transition-colors" />
                 </div>
-                <Quote className="w-5 h-5 text-blue-500/10 group-hover:text-blue-500/20 transition-colors" />
+
+                {/* Quote Title */}
+                <h3 className="text-[15px] sm:text-base font-extrabold text-slate-800 dark:text-slate-100 leading-snug mb-1.5 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 truncate">
+                  &ldquo;{t.quote}&rdquo;
+                </h3>
+
+                {/* Description */}
+                <p className="text-xs sm:text-[13px] text-slate-500/95 dark:text-slate-400 leading-relaxed font-medium line-clamp-3">
+                  {t.text}
+                </p>
               </div>
 
-              {/* Quote Title */}
-              <h3 className="text-lg font-extrabold text-slate-800 dark:text-slate-100 leading-snug mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                &ldquo;{t.quote}&rdquo;
-              </h3>
-
-              {/* Description */}
-              <p className="text-sm text-slate-500/95 dark:text-slate-400 leading-relaxed mb-6 font-medium">
-                {t.text}
-              </p>
-
               {/* Profile */}
-              <div className="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <div className="flex items-center gap-3 pt-3 border-t border-slate-100 dark:border-slate-800">
                 <div
-                  className={`w-9 h-9 rounded-xl border flex items-center justify-center text-xs font-bold ${t.color}`}
+                  className={`w-9 h-9 rounded-xl border flex items-center justify-center text-xs font-bold flex-shrink-0 ${t.color}`}
                 >
                   {t.avatar}
                 </div>
-                <div>
-                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200">{t.name}</div>
-                  <div className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider">{t.branch}</div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200 truncate">{t.name}</div>
+                  <div className="flex justify-between items-center text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider mt-0.5">
+                    <span>{t.dept}</span>
+                    <span className="text-blue-600 dark:text-blue-400">{t.sem}</span>
+                  </div>
                 </div>
               </div>
             </div>

@@ -242,7 +242,7 @@ function PremiumSelect({
         aria-haspopup="listbox"
         aria-controls={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
         aria-label={selectedOption ? `${placeholder}: ${selectedOption.label}` : placeholder}
-        className={`w-full flex items-center justify-between bg-white/70 dark:bg-slate-900/70 hover:bg-white/95 dark:hover:bg-slate-900/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700 dark:text-slate-200'} rounded-2xl px-4 py-3 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
+        className={`w-full flex items-center justify-between bg-white/70 dark:bg-slate-900/70 hover:bg-white/95 dark:hover:bg-slate-900/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700 dark:text-slate-200'} rounded-2xl px-4 py-3.5 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
         animate={hasError ? { x: [-6, 6, -5, 5, -3, 3, 0] } : { x: 0 }}
         transition={{ duration: 0.4 }}
       >
@@ -537,7 +537,7 @@ export default function Home() {
 
         {/* ── Subtitle ── */}
         <p
-          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-9 max-w-xl font-medium leading-relaxed animate-fade-up"
+          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-12 max-w-xl font-medium leading-relaxed animate-fade-up"
           style={{ animationDelay: "160ms" }}
         >
           Notes, PYQs, and syllabus tracking — all free,
@@ -578,7 +578,7 @@ export default function Home() {
           </AnimatePresence>
 
           <div
-            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-2 md:p-2 flex flex-col md:flex-row items-center gap-2 md:gap-2.5 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
+            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-3.5 md:p-2 flex flex-col md:flex-row items-center gap-4 md:gap-2.5 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
             style={{
               boxShadow: !mounted
                 ? undefined
@@ -625,7 +625,7 @@ export default function Home() {
           <div className="relative w-full md:w-auto z-30">
             <MagneticButton
               onClick={handleLaunch}
-              className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-5 !py-3 !text-sm !font-black"
+              className="w-full md:w-auto whitespace-nowrap !rounded-2xl !px-6 !py-3.5 !text-sm !font-black"
             >
               Open Dashboard
               <ArrowRight className="w-4 h-4" />

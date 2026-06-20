@@ -58,7 +58,7 @@ export default function FoundreeHero() {
       className="relative w-full min-h-[100dvh] py-24 md:py-0 flex items-center justify-center overflow-hidden"
       style={{
         background:
-          "linear-gradient(160deg, #040912 0%, #07111e 50%, #0b1828 100%)",
+          "linear-gradient(160deg, #02050a 0%, #040913 50%, #070e17 100%)",
       }}
       aria-label="Philosophy section"
       onMouseMove={onMouseMove}
@@ -163,7 +163,7 @@ export default function FoundreeHero() {
 
         {/* Body */}
         <motion.p
-          className="text-lg md:text-xl text-white/50 max-w-2xl leading-relaxed"
+          className="text-lg md:text-xl text-slate-200 dark:text-slate-300 max-w-2xl leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -202,7 +202,7 @@ export default function FoundreeHero() {
               >
                 {s.value}
               </div>
-              <div className="text-xs font-semibold text-white/60 uppercase tracking-widest mt-1 group-hover:text-white/80 transition-colors duration-300">
+              <div className="text-xs font-semibold text-slate-400 dark:text-slate-350 uppercase tracking-widest mt-1 group-hover:text-white transition-colors duration-300">
                 {s.label}
               </div>
             </motion.div>
@@ -212,7 +212,7 @@ export default function FoundreeHero() {
         {/* CTA */}
         <Link
           href="/dashboard"
-          className="group flex items-center gap-2 px-7 py-3.5 rounded-full bg-white/8 hover:bg-white/14 border border-white/12 hover:border-white/22 text-white font-bold text-sm backdrop-blur-sm"
+          className="group flex items-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/15 border border-white/15 hover:border-white/25 text-white font-bold text-sm backdrop-blur-sm"
         >
           Start Studying Free
           <motion.span

@@ -131,7 +131,7 @@ export default function KtuCompareSection() {
                 autoplay={true}
               />
             </motion.div>
-            <p className="text-xs font-semibold text-slate-400 dark:text-slate-500 tracking-wide uppercase">
+            <p className="text-xs font-bold text-slate-500 dark:text-slate-400 tracking-wider uppercase mt-4">
               ← Drag or hover to compare →
             </p>
           </motion.div>
