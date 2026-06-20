@@ -58,7 +58,7 @@ export default function CtaBanner() {
         {/* Headline */}
         <motion.h2
           id="cta-heading"
-          className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 leading-[1.05]"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-5 sm:mb-6 leading-[1.05]"
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.1, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -77,7 +77,7 @@ export default function CtaBanner() {
         </motion.h2>
 
         <motion.p
-          className="text-white/70 text-lg mb-12 max-w-xl mx-auto leading-relaxed"
+          className="text-white/70 text-base sm:text-lg mb-8 sm:mb-12 max-w-xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -88,7 +88,7 @@ export default function CtaBanner() {
 
         {/* Buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-14 sm:mb-20"
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}

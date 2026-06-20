@@ -3,7 +3,7 @@
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **nil-project** (271254 symbols, 272791 relationships, 298 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **nil-project** (104707 symbols, 106474 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -47,4 +47,3 @@ This project is indexed by GitNexus as **nil-project** (271254 symbols, 272791 r
 <!-- BEGIN:i-have-adhd-rules -->
 See the mandatory ADHD-Friendly Output Rules defined in [AGENTS.md](file:///c:/Users/Windows%2010/Downloads/ktunode/AGENTS.md).
 <!-- END:i-have-adhd-rules -->
-

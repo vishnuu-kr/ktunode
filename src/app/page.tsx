@@ -36,6 +36,7 @@ const TestimonialsSection = dynamic(() => import("@/components/features/Testimon
 const FaqSection = dynamic(() => import("@/components/features/FaqSection"));
 const CtaBanner = dynamic(() => import("@/components/features/CtaBanner"));
 const CinematicFooter = dynamic(() => import("@/components/ui/motion-footer").then(mod => mod.CinematicFooter), { ssr: false });
+const OnboardingModal = dynamic(() => import("@/components/features/OnboardingModal"), { ssr: false });
 import {
   BookOpen, Calendar, ArrowRight, ShieldCheck,
   FileText, ChevronDown, Sparkles, X
@@ -329,6 +330,7 @@ export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
 
   const [errorState, setErrorState] = useState(false);
+  const [showOnboardingModal, setShowOnboardingModal] = useState(false);
 
   useEffect(() => {
     queueMicrotask(() => setMounted(true));
@@ -378,6 +380,13 @@ export default function Home() {
   }, [mounted, savedSession, router]);
 
   const handleLaunch = (event?: React.MouseEvent | React.PointerEvent) => {
+    const onboardingCompleted = localStorage.getItem("ktunode_onboarding_completed") === "true";
+    if (!onboardingCompleted) {
+      triggerHaptic("light", event);
+      setShowOnboardingModal(true);
+      return;
+    }
+
     if (!selectedBranch || !selectedSemester) {
       setErrorState(true);
       setTimeout(() => setErrorState(false), 500);
@@ -431,7 +440,7 @@ export default function Home() {
   return (
     <main
       id="main-content"
-      className="relative w-full min-h-screen flex flex-col font-sans overflow-x-hidden"
+      className="relative w-full min-h-screen flex flex-col font-sans overflow-x-hidden ios-safe-x"
       style={{ background: "var(--color-bg)" }}
       tabIndex={-1}
     >
@@ -491,8 +500,8 @@ export default function Home() {
         ══════════════════════════════════════ */}
         <section
         ref={heroRef}
-        className="relative flex-1 flex flex-col items-center pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 text-center px-4 overflow-hidden"
-        style={{ minHeight: "100vh" }}
+        className="relative flex-1 flex flex-col items-center pt-16 sm:pt-24 md:pt-32 pb-10 sm:pb-16 text-center px-4 overflow-hidden"
+        style={{ minHeight: "100svh" }}
       >
         {/* ── Dot grid overlay ── */}
         <div className="absolute inset-0 z-0 dot-grid opacity-[0.10] pointer-events-none" />
@@ -508,7 +517,7 @@ export default function Home() {
 
         {/* ── Headline ── */}
         <h1
-          className="relative z-10 text-5xl sm:text-6xl md:text-7xl lg:text-[82px] font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.03] mb-5 max-w-4xl animate-fade-up"
+          className="relative z-10 text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[82px] font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.03] mb-4 sm:mb-5 max-w-4xl animate-fade-up"
           style={{ animationDelay: "80ms" }}
         >
           Master the{" "}
@@ -537,7 +546,7 @@ export default function Home() {
 
         {/* ── Subtitle ── */}
         <p
-          className="relative z-10 text-base md:text-xl text-slate-600 dark:text-slate-300 mb-12 max-w-xl font-medium leading-relaxed animate-fade-up"
+          className="relative z-10 text-sm sm:text-base md:text-xl text-slate-600 dark:text-slate-300 mb-8 sm:mb-12 max-w-xl font-medium leading-relaxed animate-fade-up"
           style={{ animationDelay: "160ms" }}
         >
           Notes, PYQs, and syllabus tracking — all free,
@@ -578,7 +587,7 @@ export default function Home() {
           </AnimatePresence>
 
           <div
-            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-3.5 md:p-2 flex flex-col md:flex-row items-center gap-4 md:gap-2.5 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
+            className={`relative bg-white/96 dark:bg-slate-900/96 backdrop-blur-xl border border-blue-100/80 dark:border-slate-800 rounded-2xl p-3 sm:p-3.5 md:p-2 flex flex-col md:flex-row items-center gap-3 sm:gap-4 md:gap-2.5 w-full transition-all duration-200 ${branchOpen || semOpen ? "z-50" : "z-30"}`}
             style={{
               boxShadow: !mounted
                 ? undefined
@@ -734,6 +743,17 @@ export default function Home() {
       <LazySection height="400px">
         <CinematicFooter />
       </LazySection>
+
+      <AnimatePresence>
+        {showOnboardingModal && (
+          <OnboardingModal
+            isOpen={showOnboardingModal}
+            onClose={() => setShowOnboardingModal(false)}
+            initialBranch={selectedBranch}
+            initialSemester={selectedSemester !== "" ? selectedSemester : undefined}
+          />
+        )}
+      </AnimatePresence>
     </main>
   );
 }

@@ -81,7 +81,7 @@ export default function FaqSection() {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-50/35 dark:bg-indigo-900/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+        <div className="flex flex-col lg:flex-row gap-10 sm:gap-16 lg:gap-24">
 
           {/* Left — sticky header */}
           <div
@@ -93,7 +93,7 @@ export default function FaqSection() {
               <div className="section-badge mb-5">FAQ</div>
               <h2
                 id="faq-heading"
-                className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-5 leading-[1.05]"
+                className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-100 mb-4 sm:mb-5 leading-[1.05]"
               >
                 Common
                 <br />

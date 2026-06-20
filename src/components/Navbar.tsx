@@ -177,7 +177,7 @@ export default function Navbar() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] w-full pt-4 pb-2 sm:pt-4 sm:pb-3 transition-all duration-300 pointer-events-none">
+    <div className="fixed top-0 left-0 right-0 z-[60] w-full pt-2 pb-1.5 sm:pt-4 sm:pb-3 transition-all duration-300 pointer-events-none ios-safe-top">
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}

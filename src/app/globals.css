@@ -611,5 +611,51 @@
   scrollbar-width: none !important;  /* Firefox */
 }
 
+/* ══════════════════════════════════════════
+   MOBILE UX ENHANCEMENTS
+   ══════════════════════════════════════════ */
+@media (max-width: 639px) {
+  /* Reduce excessive section spacing on mobile */
+  section.py-28, section[class*='py-28'] {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  section.py-32, section[class*='py-32'] {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
 
+  /* Tighter header bottom-margin on mobile */
+  .mb-24 {
+    margin-bottom: 3rem;
+  }
 
+  /* Active touch states for better feedback */
+  button:active, a:active, [role="button"]:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
+  }
+
+  /* Smaller testimonial cards on narrow viewports */
+  .w-\[300px\] {
+    width: 260px;
+  }
+
+  /* Faster testimonial scroll on mobile for engagement */
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.333%); }
+  }
+}
+
+/* Ensure all interactive elements meet 48px minimum touch target */
+@media (pointer: coarse) {
+  button, a, [role="button"], input, select, textarea, label[data-subject-item] {
+    min-height: 44px;
+  }
+}
+
+/* Smooth momentum scrolling for iOS */
+.overflow-y-auto, .overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+}

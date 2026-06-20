@@ -7,7 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **nil-project** (271254 symbols, 272791 relationships, 298 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **nil-project** (104707 symbols, 106474 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -64,4 +64,3 @@ Shape all responses in this workspace according to the following rules:
 9. **Cap lists at 5 items:** Split list items if they exceed 5.
 10. **No preamble, no recap, no closing pleasantries:** Completely eliminate opening/closing pleasantries (e.g., "Sure!", "Hope this helps").
 <!-- END:i-have-adhd-rules -->
-

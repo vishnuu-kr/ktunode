@@ -55,15 +55,15 @@ const nextConfig = {
         destination: 'https://us.i.posthog.com/:path*',
       },
       {
-        source: '/:branch(cs|ec|me|ce|ee)/:sem(sem-\\d+)/:subject/:topic',
+        source: '/:branch/:sem(sem-\\d+)/:subject/:topic',
         destination: '/notes/:branch/:sem/:subject?branch=:branch&sem=:sem&subject=:subject&topic=:topic',
       },
       {
-        source: '/:branch(cs|ec|me|ce|ee)/:sem(sem-\\d+)/:subject',
+        source: '/:branch/:sem(sem-\\d+)/:subject',
         destination: '/notes/:branch/:sem/:subject?branch=:branch&sem=:sem&subject=:subject',
       },
       {
-        source: '/:branch(cs|ec|me|ce|ee)/:sem(sem-\\d+)',
+        source: '/:branch/:sem(sem-\\d+)',
         destination: '/notes/:branch/:sem?branch=:branch&sem=:sem',
       },
     ];

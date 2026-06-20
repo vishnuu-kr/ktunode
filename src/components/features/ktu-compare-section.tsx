@@ -44,7 +44,7 @@ export default function KtuCompareSection() {
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-sky-100/25 dark:bg-sky-900/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center gap-10 sm:gap-16 lg:gap-20">
 
           {/* ── Left text ── */}
           <motion.div
@@ -57,7 +57,7 @@ export default function KtuCompareSection() {
 
             <h2
               id="compare-heading"
-              className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.05] mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-slate-100 leading-[1.05] mb-5 sm:mb-6"
             >
               From Chaos
               <br />
