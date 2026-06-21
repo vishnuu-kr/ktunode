@@ -10,7 +10,6 @@ import fs from "fs";
 import path from "path";
 
 const SEMS = (process.argv.slice(2).length ? process.argv.slice(2) : ["3", "4", "5"]).map(String);
-const CODES = ["ce", "cs", "ec", "ee", "me"];
 const DIR = path.join(process.cwd(), "src", "data", "subjects");
 const MAXB = 256 * 1024 * 1024;
 
@@ -48,13 +47,15 @@ for (const sem of SEMS) {
     }
   }
 
-  for (const code of CODES) {
-    const folder = path.join(DIR, `${code}-${sem}`);
-    if (!fs.existsSync(folder)) continue;
+  const folders = fs.readdirSync(DIR)
+    .filter((f) => f.endsWith(`-${sem}`) && fs.statSync(path.join(DIR, f)).isDirectory());
+
+  for (const folderName of folders) {
+    const folder = path.join(DIR, folderName);
     for (const fname of fs.readdirSync(folder)) {
       if (!fname.endsWith(".json")) continue;
       const fpath = path.join(folder, fname);
-      const rel = `src/data/subjects/${code}-${sem}/${fname}`;
+      const rel = `src/data/subjects/${folderName}/${fname}`;
       
       // Check if any branch modified this file. If not, we don't need to check any branch.
       let anyBranchChanged = false;
