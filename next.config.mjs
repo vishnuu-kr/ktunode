@@ -69,14 +69,16 @@ const nextConfig = {
     ];
   },
   outputFileTracingIncludes: {
-    '/api/notes': ['./src/data/topic-path-map.json'],
-    '/api/notes/route': ['./src/data/topic-path-map.json'],
+    '/api/notes': ['./src/data/topic-path-map.json', './src/data/topic-index.json'],
+    '/api/notes/route': ['./src/data/topic-path-map.json', './src/data/topic-index.json'],
     '/api/subjects': ['./src/data/subjects/**/*'],
     '/api/subjects/route': ['./src/data/subjects/**/*'],
   },
   outputFileTracingExcludes: {
-    '*': ['./public/notes/**/*'],
-    '**/*': ['./public/notes/**/*'],
+    '*': ['./public/notes/**/*', './public/data/**/*'],
+    '**/*': ['./public/notes/**/*', './public/data/**/*'],
+    '/api/notes': ['./src/data/subjects/**/*', './src/data/notes/**/*'],
+    '/api/notes/route': ['./src/data/subjects/**/*', './src/data/notes/**/*'],
   },
 };
 

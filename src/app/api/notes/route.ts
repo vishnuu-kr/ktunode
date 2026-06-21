@@ -5,6 +5,7 @@ import path from "path";
 export const dynamic = "force-dynamic";
 
 const topicMapPath = path.join(process.cwd(), "src", "data", "topic-path-map.json");
+const topicIndexPath = path.join(process.cwd(), "src", "data", "topic-index.json");
 const publicNotesRoot = path.join(process.cwd(), "public", "notes");
 
 function json(data: unknown, status = 200) {
@@ -25,6 +26,32 @@ function readTopicPathMap() {
     console.error("Failed to load topic-path-map.json", error);
   }
 
+  return {};
+}
+
+// Lazy-loaded topic index (single file, ~31MB, cached in memory after first read)
+let _topicIndex: Record<string, {
+  t: string;   // title
+  sc: string;  // subjectCode
+  sn: string;  // subjectName
+  scd: string; // subjectCodeDisplay
+  mt: string;  // moduleTitle
+  b: string;   // branchSlug
+  bd: string;  // branchDisplayName
+  s: string;   // semester
+  hc: number;  // hasContent (1/0)
+}> | null = null;
+
+function getTopicIndex() {
+  if (_topicIndex) return _topicIndex;
+  try {
+    if (fs.existsSync(topicIndexPath)) {
+      _topicIndex = JSON.parse(fs.readFileSync(topicIndexPath, "utf8"));
+      return _topicIndex;
+    }
+  } catch (error) {
+    console.error("Failed to load topic-index.json", error);
+  }
   return {};
 }
 
@@ -53,6 +80,31 @@ async function fetchStaticFile(relativePath: string): Promise<string | null> {
     const res = await fetch(`${siteUrl}/${relativePath}`, { cache: "no-store" });
     if (!res.ok) return null;
     return await res.text();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Fetch a note JSON from the public/data/notes/ CDN path.
+ * Returns the parsed JSON or null if not found.
+ */
+async function fetchNoteStore(subjectCode: string): Promise<any | null> {
+  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.com").replace(/\/$/, "");
+  try {
+    // Try local filesystem first (works in dev and during build on Vercel)
+    const localPath = path.join(process.cwd(), "public", "data", "notes", `${subjectCode.toUpperCase()}.json`);
+    if (fs.existsSync(localPath)) {
+      return JSON.parse(fs.readFileSync(localPath, "utf8"));
+    }
+  } catch {
+    // Fall through to HTTP fetch
+  }
+
+  try {
+    const res = await fetch(`${siteUrl}/data/notes/${subjectCode.toUpperCase()}.json`, { cache: "no-store" });
+    if (!res.ok) return null;
+    return await res.json();
   } catch {
     return null;
   }
@@ -107,127 +159,39 @@ export async function GET(request: NextRequest) {
       return json({ content: markdown, path: `/${relativePath}` });
     }
 
-    // Primary source for dashboard topic ids: the authored note content embedded in each
-    // subject JSON. Topic id format is `${branchId}-${sem}-${code}-${moduleId}-t${index}`,
-    // where branchId may contain dashes and moduleId may contain spaces/dashes — so we anchor
-    // on the single-digit semester and the alphanumeric subject code rather than greedy splits.
-    // branch/code are constrained to filesystem-safe charsets so the derived path can never
-    // traverse out of the subjects dir; only the module segment may contain spaces/":"/"/".
-    const match = id.match(/^([a-z0-9-]+)-([1-8])-([a-z0-9]+)-m(.+)-t(\d+)$/i);
-    if (match) {
-      const [, branch, sem, subjectCode] = match;
-      const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
-      const folderPath = path.join(subjectsDir, `${branch}-${sem}`);
+    // Look up topic metadata from the pre-built index (single JSON file)
+    // instead of scanning 13,000+ subject files at runtime.
+    const topicMeta = getTopicIndex()?.[id];
+    if (topicMeta) {
+      const { t: topicTitle, sc: subjectCode, sn: subjectName, scd: subjectCodeDisplay, mt: modTitle, b: branch, bd: branchDisplayName, s: sem } = topicMeta;
 
-      if (fs.existsSync(folderPath) && fs.statSync(folderPath).isDirectory()) {
-        const files = fs.readdirSync(folderPath);
-        const matchedFile = files.find(f => f.toLowerCase().endsWith(`_${subjectCode.toLowerCase()}.json`));
-
-        if (matchedFile) {
-          const subjectData = JSON.parse(fs.readFileSync(path.join(folderPath, matchedFile), "utf8"));
-
-          // Locate the exact topic by id across all modules (robust to module-name variations).
-          let topic: any = null;
-          let targetMod: any = null;
-          for (const mod of subjectData.modules || []) {
-            const found = (mod.topics || []).find((t: any) => t.id === id);
-            if (found) {
-              topic = found;
-              targetMod = mod;
-              break;
-            }
+      // Try to serve authored content from the unified notes store (now in public/data/notes/)
+      let noteContent: string | null = null;
+      try {
+        const notesData = await fetchNoteStore(subjectCode);
+        if (notesData) {
+          const normalizedTitle = (topicTitle || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+          const matchedTopic = notesData.topics && notesData.topics[normalizedTitle];
+          if (matchedTopic && typeof matchedTopic.content === "string" && matchedTopic.content.trim().length > 0) {
+            noteContent = matchedTopic.content;
           }
+        }
+      } catch (err) {
+        console.error(`Failed to read note from unified store for ${subjectCode}:`, err);
+      }
 
-          if (topic) {
-            // Serve the authored content when present — this is the real study note.
-            let noteContent: string | null = null;
-            const notesDir = path.join(process.cwd(), "src", "data", "notes");
-            const notePath = path.join(notesDir, `${subjectCode.toUpperCase()}.json`);
-            
-            if (fs.existsSync(notePath)) {
-              try {
-                const notesData = JSON.parse(fs.readFileSync(notePath, "utf8"));
-                const normalizedTitle = (topic.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                const matchedTopic = notesData.topics && notesData.topics[normalizedTitle];
-                if (matchedTopic && typeof matchedTopic.content === "string" && matchedTopic.content.trim().length > 0) {
-                  noteContent = matchedTopic.content;
-                }
-              } catch (err) {
-                console.error(`Failed to read note from unified store for ${subjectCode}:`, err);
-              }
-            }
+      if (noteContent && noteContent.trim().length > 0) {
+        return json({ content: stripFrontmatter(noteContent), path: `/api/notes?id=${id}` });
+      }
 
-            const finalContent = noteContent || (typeof topic.content === "string" ? topic.content : "");
-
-            if (finalContent.trim().length > 0) {
-              return json({ content: stripFrontmatter(finalContent), path: `/api/notes?id=${id}` });
-            }
-
-            // Otherwise render a premium "coming soon" placeholder from the syllabus schema.
-            {
-              const topicTitle = topic.title || "this topic";
-              const subjectName = subjectData.name || subjectCode.toUpperCase();
-              const subjectCodeDisplay = subjectData.code || subjectCode.toUpperCase();
-              const modTitle = targetMod?.title || (targetMod?.id || "").replace(/^m/, "Module ");
-
-              // Clean branch display mapping
-              const branchMap: Record<string, string> = {
-                "aeronautical-engineering": "Aeronautical Engineering",
-                "agriculture-engineering": "Agriculture Engineering",
-                "applied-electronics-and-instrumentation": "Applied Electronics and Instrumentation",
-                "artificial-intelligence": "Artificial Intelligence",
-                "artificial-intelligence-and-machine-learning": "Artificial Intelligence & Machine Learning",
-                "artificial-intelligence-and-data-science": "Artificial Intelligence and Data Science",
-                "automobile-engineering": "Automobile Engineering",
-                "biomedical-and-robotic-engineering": "Biomedical & Robotic Engineering",
-                "biomedical-engineering": "Biomedical Engineering",
-                "biotechnology-engineering": "Biotechnology Engineering",
-                "biotechnology-and-biochemical-engineering": "Biotechnology and Biochemical Engineering",
-                "chemical-engineering": "Chemical Engineering",
-                "civil-engineering": "Civil Engineering",
-                "civil-and-environmental-engineering": "Civil and Environmental Engineering",
-                "computer-science-and-business-systems": "Computer Science and Business Systems",
-                "computer-science-and-design": "Computer Science and Design",
-                "computer-science-and-engineering": "Computer Science and Engineering",
-                "computer-science-and-engineering-ai-and-ml": "Computer Science and Engineering (AI & ML)",
-                "computer-science-and-engineering-artificial-intelligence": "Computer Science and Engineering (Artificial Intelligence)",
-                "computer-science-and-engineering-cyber-security": "Computer Science and Engineering (Cyber Security)",
-                "computer-science-and-engineering-data-science": "Computer Science and Engineering (Data Science)",
-                "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology": "Computer Science and Engineering (Internet of Things and Cyber Security including Blockchain Technology)",
-                "computer-science-and-engineering-iot": "Computer Science and Engineering (IoT)",
-                "computer-science-and-engineering-and-business-systems": "Computer Science and Engineering and Business Systems",
-                "cyber-physical-systems": "Cyber Physical Systems",
-                "electrical-and-computer-engineering": "Electrical and Computer Engineering",
-                "electrical-and-electronics-engineering": "Electrical and Electronics Engineering",
-                "electronics-and-biomedical-engineering": "Electronics & Biomedical Engineering",
-                "electronics-and-communication-advanced-communication-technology": "Electronics & Communication (Advanced Communication Technology)",
-                "electronics-and-communication-engineering": "Electronics & Communication Engineering",
-                "electronics-and-computer-engineering": "Electronics & Computer Engineering",
-                "electronics-engineering-vlsi-design-and-technology": "Electronics Engineering (VLSI Design and Technology)",
-                "electronics-and-instrumentation": "Electronics and Instrumentation",
-                "food-technology": "Food Technology",
-                "industrial-engineering": "Industrial Engineering",
-                "information-technology": "Information Technology",
-                "instrumentation-and-control": "Instrumentation and Control",
-                "mechanical-automobile-engineering": "Mechanical (Automobile) Engineering",
-                "mechanical-engineering": "Mechanical Engineering",
-                "mechatronics-engineering": "Mechatronics Engineering",
-                "naval-architecture-and-shipbuilding-engineering": "Naval Architecture & Shipbuilding Engineering",
-                "polymer-engineering": "Polymer Engineering",
-                "production-engineering": "Production Engineering",
-                "robotics-and-artificial-intelligence": "Robotics and Artificial Intelligence",
-                "robotics-and-automation": "Robotics and Automation",
-                "safety-and-fire-engineering": "Safety & Fire Engineering"
-              };
-              const branchDisplayName = branchMap[branch.toLowerCase()] || branch;
-
-              const placeholderMarkdown = `# ${topicTitle}
+      // Otherwise render a premium "coming soon" placeholder from the syllabus schema.
+      const placeholderMarkdown = `# ${topicTitle || "this topic"}
 
 > [!NOTE]
 > This study note for **${subjectName} (${subjectCodeDisplay})** is currently under review by our subject matter experts to ensure alignment with the latest APJ Abdul Kalam Technological University (KTU) 2024 scheme syllabus.
 
 ## Syllabus details
-- **Branch**: ${branchDisplayName}
+- **Branch**: ${branchDisplayName || branch}
 - **Semester**: Semester ${sem}
 - **Subject**: ${subjectName} (${subjectCodeDisplay})
 - **Module**: ${modTitle}
@@ -241,11 +205,7 @@ export async function GET(request: NextRequest) {
 ---
 *Stay tuned! We are constantly updating our repository with high-quality, comprehensive study notes.*`;
 
-              return json({ content: placeholderMarkdown, path: `/api/notes?id=${id}` });
-            }
-          }
-        }
-      }
+      return json({ content: placeholderMarkdown, path: `/api/notes?id=${id}` });
     }
 
     return json({ error: "Note not found and syllabus fallback could not be generated" }, 404);
