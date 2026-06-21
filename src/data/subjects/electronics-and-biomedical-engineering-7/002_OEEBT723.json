@@ -1,0 +1,141 @@
+{
+  "id": "oeebt723-electronics-and-biomedical-engineering-s7",
+  "code": "OEEBT723",
+  "name": "OEEBT723",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Properties of Ultrasound",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Doppler Effect and Principle of Image Formation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Constructional Details of US Probes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Transducer Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Transducer Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Modes of Scanning - A Mode, B Mode, M Mode Scanners",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Duplex Scanning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Instrumentation - Axial and Lateral Resolutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Applications of Each",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Principle of CT Imaging and Generations of Scanners",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "System Instrumentation - X-ray Tubes for CT Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Pencil Beam and Cone Beam Projections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Image Reconstruction Algorithms for Pencil Beam and Image Characteristics - CT Numbers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Principle of Nuclear Magnetic Resonance, Relaxation, MR Instrumentation, Contrast Mechanisms in MRI, Pulse Sequences (FLASH, GRASS), Principle of Image Reconstruction, Spatial Encoding Systems, k-Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Functional MRI - BOLD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Spatial and Temporal Resolution of fMRI",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "MR-PET Instrumentation, MR Compatible PET Detector Technology, MR-PET System Architecture, PET-CT, SPECT-CT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

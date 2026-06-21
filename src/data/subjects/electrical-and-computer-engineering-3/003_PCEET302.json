@@ -1,0 +1,237 @@
+{
+  "id": "pceet302-electrical-and-computer-engineering-s3",
+  "code": "PCEET302",
+  "name": "PCEET302",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Mesh Analysis and Nodal Analysis (Review Only) - Super Mesh and Super Node",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Superposition Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Source Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Analysis with DC and AC (Sinusoidal) Excitation - Thevenin's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Norton's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Maximum Power Transfer Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Analysis with DC and AC (Sinusoidal) Excitation with Independent and Dependent Sources - Reciprocity Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Application to the Analysis of DC Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Resonance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Series Resonance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Resonant Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Variations of Impedance and Current with Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Quality Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Parallel Resonance (Series RL in Parallel with C)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Calculation of Resonant Frequency - Power in 3-Phase Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Complex Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Active, Reactive and Apparent Power in Balanced Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Steady State Analysis of 3-Wire Unbalanced Delta Connected Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Steady State Analysis of 3-Phase 4-Wire and 3-Wire (Using Millman's Theorem Only) Unbalanced Star Connected Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Neutral Shift",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Laplace Transforms (Review Only) - Transient Response of Simple Series and Parallel RL and RC Circuits with DC Excitation and Initial Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Natural Response and Forced Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Time Constant",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Solution Using Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Transformed Circuits in S-Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Solution Using Mesh Analysis and Nodal Analysis - Transient Response of Series RLC Circuit with DC Excitation and Initial Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Damping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Overdamped, Underdamped, Critically Damped and Undamped",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Solution Using Laplace Transforms - Transient Response of Simple Series and Parallel RL and RC Circuits with Sinusoidal Excitation and Zero Initial Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Solution Using Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Two Port Networks - Z",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "T Parameters - Conditions for Symmetry and Reciprocity - Relationship Between Parameters - Interconnection of Two Port Networks - Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Parallel and Cascade Coupled Circuit - Dot Convention - Fixing of Dots - Coefficient of Coupling - Conductively Coupled Equivalent Circuit - Sinusoidal Steady State Analysis of Coupled Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "perat412-robotics-and-artificial-intelligence-s4",
+  "code": "PERAT412",
+  "name": "PERAT412",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Architecture of PLC - Types of PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "PLC Modules, Input and Output Modules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Digital and Analog Input/Output - Examples of Digital and Analog Inputs/Outputs in PLC - AC-DC Power Supplies in PLC - Isolators - PLC Configuration - Scan Cycle - Capabilities of PLC - Selection Criteria for PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "PLC Communication with PC and Software - PLC Wiring - Installation of PLC and its Modules. PLC Programming Languages: Ladder Logic, Functional Block Diagram (FBD), Sequential Flow Chart (SFC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Structured Text",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Instruction List",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Programming of PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Ladder Logic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Realization of Simple Logic Circuits Programming on-off Inputs/Outputs. Auxiliary Commands and Functions: PLC Basic Functions - Register Basics - Timer Functions - Counter Functions. Program Control Instructions - Math Instructions - Sequencers - PLC Based Traffic Light System, Stepper Motor and Servo Motor Control using PLC, Analog Sensor Interfacing with PLC. Applications of PLC: Case Studies of Manufacturing Automation and Process Automation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "PLC Programming Tools as per IEC 61131 - Developing Programs using Sequential Function Chart and FBD. Networking PLC: Using RS232",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "RS485",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Protocols - Ethernet - Modbus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "CANOpen",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "OPC - Open Platform Communication - OPC UA. Industrial Automation: General Block Diagrams of DDC - Supervisory Control - Data Acquisition System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "DCS Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Various Function Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "DCS Components/Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "DCS Architecture of Different Makes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Comparison of these Architectures with Automation Pyramid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "DCS Specification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Latest Trends and Developments in DCS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "DCS Support to Enterprise Resources Planning (ERP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Performance Criteria for DCS and other Automation Tools",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

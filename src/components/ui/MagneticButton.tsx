@@ -58,9 +58,7 @@ export const MagneticButton = ({ children, className = "", onClick, href, custom
   const buttonBaseClasses = `
     relative overflow-hidden block
     px-8 py-4 rounded-full font-semibold text-white
-    bg-gradient-to-b from-[var(--btn-primary-from)] to-[var(--btn-primary-to)]
-    hover:from-[var(--btn-primary-hover-from)] hover:to-[var(--btn-primary-hover-to)]
-    focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:outline-none
+    bg-gradient-to-b from-[#2E95FF] to-[#007AFF]
     ${shadowClasses}
     transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]
     group-hover:scale-[1.02]

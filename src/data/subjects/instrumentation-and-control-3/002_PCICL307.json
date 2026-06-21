@@ -1,0 +1,117 @@
+{
+  "id": "pcicl307-instrumentation-and-control-s3",
+  "code": "PCICL307",
+  "name": "PCICL307",
+  "branchId": "instrumentation-and-control",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Realization of logic gates using diodes and transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Study of basic logic gates and realization of logic gates using universal gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Half and full adders and subtractors using basic gates and universal gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Study of adder IC and implementation of binary adders, adder cum subtractors and BCD adder using adder IC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Design and implementation of code converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Design and implementation of comparator circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Realization of simple Mux, Demux, Decoder and Encoder using basic gates and study of their ICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Combinational logic design using Multiplexers and Decoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Realization of Flip-Flop Circuits (SR, D and Master Slave JK) using basic gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Study of flip flop ICs and counter ICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Asynchronous Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Johnson and Ring Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Synchronous counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Shift registers using flip flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "A sequence generator circuit to display the sequence in seven segment display",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_16",
+          "title": "A sequence detector circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_17",
+          "title": "Design and implement a BCD counter and display the count in seven segment display",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

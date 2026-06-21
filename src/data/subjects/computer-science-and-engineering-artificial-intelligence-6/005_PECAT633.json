@@ -1,0 +1,129 @@
+{
+  "id": "pecat633-computer-science-and-engineering-artificial-intelligence-s6",
+  "code": "PECAT633",
+  "name": "PECAT633",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to AI and Cybersecurity: Introduction to AI - Definition and Types of AI (Narrow AI vs. General AI), Historical Context and Evolution of AI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Basics of Machine Learning: Supervised Learning (Regression and Classification), Unsupervised Learning (Clustering and Dimensionality Reduction), Reinforcement Learning (Basics and Applications)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Key Concepts and Terminology: Algorithms, Models, and Training, Overfitting and Underfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Applications of AI in Cybersecurity: Case Studies and Examples of AI in Real-World Cybersecurity Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Benefits and Limitations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "AI Techniques for Security: Anomaly Detection Techniques and Algorithms, Statistical Methods for Anomaly Detection, Machine Learning Models (Isolation Forest, One-Class SVM, etc.)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Threat Intelligence and Prediction: Data Collection and Processing - Gathering and Preprocessing Threat Data, Feature Extraction and Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Predictive Analytics: Building and Evaluating Predictive Models for Threat Forecasting, Case Studies on Threat Intelligence Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Behavioral Analysis Techniques: Behavioral Profiling and Pattern Recognition, Analyzing User and System Behavior to Detect Anomalies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Building AI Security Solutions: Designing Intrusion Detection Systems (IDS) - IDS Types (Network-Based vs. Host-Based), Integrating AI Techniques for Enhanced Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Automated Threat Response Mechanisms: Response Strategies and Automation Workflows, Integration with Threat Detection Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Integration with Existing Security Tools: Integration Techniques - Connecting AI Solutions with Legacy Security Tools, Ensuring Compatibility and Effectiveness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Case Studies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Addressing AI Security Risks and Future Trends: AI Security Risks - Adversarial Attacks (Techniques and Examples), Model Poisoning and Data Privacy Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Mitigating AI Security Risks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Strategies and Best Practices: Techniques for Securing AI Systems Against Adversarial Attacks, Data Protection and Model Validation Strategies, Future Trends and Emerging Technologies - Latest Developments in AI and Cybersecurity, Future Directions and Research Areas, Impact of New Technologies on Cybersecurity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

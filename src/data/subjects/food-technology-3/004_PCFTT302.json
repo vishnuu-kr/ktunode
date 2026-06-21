@@ -1,0 +1,117 @@
+{
+  "id": "pcftt302-food-technology-s3",
+  "code": "PCFTT302",
+  "name": "PCFTT302",
+  "branchId": "food-technology",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Ideal and Real Gas Laws: Gas Constant, Calculations of Pressure, Volume and Temperature Using Ideal Gas Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Humidity: Absolute, Molal, Relative, and Percentage Humidity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Use of Humidity in Condensation and Drying; Humidity Chart; Dew Point",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Material Balance in Unit Operations: Evaporation, Crystallization, Mixing, Leaching, Extraction, Absorption, Distillation and Drying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Heat Capacity of Solids, Liquids, Gases, and Solutions; Use of Mean Heat Capacity in Heat Calculations; Problems Involving Sensible Heat and Latent Heat",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Fundamental Concepts and Definitions: Closed, Open, and Isolated Systems; Intensive and Extensive Properties; Path and State Functions; Reversible and Irreversible Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Zeroth Law of Thermodynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "First Law of Thermodynamics: Internal Energy, Enthalpy, Heat Capacity; First Law for Cyclic, Non-Flow, and Flow Processes; Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Second Law of Thermodynamics: Limitations of First Law, General Statements of Second Law, Concept of Entropy, Calculation of Entropy Changes, Carnot's Principle, Absolute Scale of Temperature, Clausius Inequality, Entropy and Irreversibility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Third Law of Thermodynamics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Overview of Chemical Reaction Engineering: Classification of Chemical Reactions, Definition of Reaction Rate, Concentration and Temperature Dependent Term of Rate Equation, Order and Molecularity, Elementary and Non-Elementary Reactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Reactors: Batch Reactor, Continuous Stirred Tank Reactor (CSTR), Plug Flow Reactor (PFR)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Enzymatic Reaction Fundamentals: Michaelis-Menten Kinetics, Batch Reactor Calculations for Enzymatic Reactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Bioreactors: Cell Growth Kinetics, Monod Equation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

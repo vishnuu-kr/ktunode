@@ -1,0 +1,171 @@
+{
+  "id": "pbect504-electronics-and-instrumentation-s5",
+  "code": "PBECT504",
+  "name": "PBECT504",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "DFT as a Linear Transformation (Matrix Relation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "IDFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Properties of DFT and Examples (Proof Not Necessary), Circular Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Linear Convolution Using Circular Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Filtering of Long Data Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Overlap Save and Overlap Add Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Frequency Analysis of Signals Using the DFT (Concept Only Required)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Design of FIR Filters - Symmetric and Anti-symmetric FIR Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Design of Linear Phase FIR Filters Using Window Methods (Rectangular, Hamming and Hanning)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Design of IIR Digital Filters from Analog Filters (Butterworth)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "IIR Filter Design by Impulse Invariance and Bilinear Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Frequency Transformations in the Analog Domain",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Linear Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "IIR Filter Structures: Direct Form, Transposed Form, Cascade Form and Parallel Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Multi-rate Digital Signal Processing: Decimation and Interpolation (Time Domain and Frequency Domain Interpretation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Anti-aliasing and Anti-imaging Filters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Fast Fourier Transform and Computational Advantage over DFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Radix-2 Decimation in Time FFT Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Computer Architecture for Signal Processing: Harvard Architecture, Pipelining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Introduction to TMS320C67xx Digital Signal Processor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Functional Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Finite Word Length Effects in DSP Systems: Introduction, Fixed-point and Floating-point DSP Arithmetic, ADC Quantization Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Suggestion on Project Topics: Projects Can Include but Not Limited to Analysing Various Signals/Finding their Transforms and Designing Filters for Extracting Different Frequency Components. Projects Can be Simulated or Implemented in Hardware",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

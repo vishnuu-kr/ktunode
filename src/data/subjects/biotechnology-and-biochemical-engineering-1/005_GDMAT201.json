@@ -1,0 +1,165 @@
+{
+  "id": "gdmat201-biotechnology-and-biochemical-engineering-s1",
+  "code": "GDMAT201",
+  "name": "GDMAT201",
+  "branchId": "biotechnology-and-biochemical-engineering",
+  "semester": 1,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Complex Numbers and Their Geometric Representation - Addition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Division",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Conjugate, Polar Form of Complex Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Derivative - Analytic Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Cauchy Riemann Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Exponential Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Trigonometric and Hyperbolic Functions - Euler's Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Power Series - Concept, Behaviour of Convergence of Power Series, Radius of Convergence. Taylor and Maclaurin Series - Binomial Series - Series Representation of Exponential, Trigonometric, Logarithmic Functions. Fourier Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Euler's Formulas",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Convergence of Fourier Series (Dirichlet's Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Fourier Series of Function with Period 2L",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Homogeneous Linear ODEs of Second Order with Constant Coefficients (Method to Find General Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Solution of Linear Initial Value Problem). Non-Homogeneous ODEs (with Constant Coefficients) - General Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Particular Solution by the Method of Undetermined Coefficients (Particular Solutions for the Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Inverse Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Linearity Property",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "First Shifting Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Transform of Derivatives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Solution of Initial Value Problems by Laplace Transform (Second Order Linear ODE with Constant Coefficients with Initial Conditions at t=0 only",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

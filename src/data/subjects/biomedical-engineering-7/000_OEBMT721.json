@@ -1,0 +1,105 @@
+{
+  "id": "oebmt721-biomedical-engineering-s7",
+  "code": "OEBMT721",
+  "name": "OEBMT721",
+  "branchId": "biomedical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Biomedical Instrumentation - Definition, Importance in Healthcare, Origin of Bioelectric Potentials, Resting and Action Potentials, Propagation of Action Potentials, Examples of Bioelectric Potentials, ECG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Electrodes for Measurement of Biopotentials",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Cardiovascular System - Electrocardiography (ECG) - Electrical Activity of Heart, Electrocardiogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "ECG Lead Systems, ECG Machine Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Measurement of Heart Sounds, Phonocardiography, Blood Pressure Measurement - Sphygmomanometer and Oscillometric Methods, Photoplethysmography for Pulse Rate Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Pulse Oximeters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Respiratory System - Spirometry and Lung Volume Measurements, Measurement of Respiratory Parameters, Nervous System - Electroencephalography (EEG) - Electrical Activity of Brain, Electroencephalogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "EEG Measurement and Waveforms, Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Evoked Potential - Types and Applications, Electromyography (EMG) - Electrical Activity of Muscle, Types of Electrodes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Diagnostic Imaging Systems - X-ray Radiography, Principles of X-ray Generation, Block Diagram of X-ray Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Computed Tomography (CT) - Principle of Operation, Magnetic Resonance Imaging (MRI) - Basic Principle, Ultrasound Imaging, Basic Principles - Ultrasonic Transducers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Therapeutic Devices - Pacemakers, Internal and External Pacemakers, Defibrillators, Basic Principles",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

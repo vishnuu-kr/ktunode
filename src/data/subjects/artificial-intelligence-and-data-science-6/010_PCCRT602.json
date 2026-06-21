@@ -1,0 +1,129 @@
+{
+  "id": "pccrt602-artificial-intelligence-and-data-science-s6",
+  "code": "PCCRT602",
+  "name": "PCCRT602",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Iteration Method, Recursion Tree Method, Substitution Method and Master's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Balanced Search Trees - AVL Trees (Insertion and Deletion Operations with All Rotations in Detail)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "BFS, DFS and Their Analysis, Strongly Connected Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Topological Sorting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Divide and Conquer Strategy - Control Abstraction, Merge Sort, Strassen's Matrix Multiplication, Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Greedy Strategy - Control Abstraction, Fractional Knapsack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Minimum Cost Spanning Tree - Kruskal's and Prim's, Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Shortest Path Problem - Dijkstra's Algorithm, Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Dynamic Programming - Control Abstraction, Optimality Principle, Matrix Chain Multiplication, Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "All Pairs Shortest Path Algorithm - Floyd-Warshall Algorithm, Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Backtracking - Control Abstraction, N-Queens Problem, Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "P, NP, NP-Hard and NP-Complete Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "NP-Completeness Proof - Clique Problem and Vertex Cover Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Approximation Algorithms - Bin Packing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Randomized Algorithms - Definitions of Monte Carlo and Las Vegas Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Randomized Version of Quick Sort Algorithm with Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

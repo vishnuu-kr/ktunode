@@ -1,0 +1,141 @@
+{
+  "id": "oeaet831-applied-electronics-and-instrumentation-s8",
+  "code": "OEAET831",
+  "name": "OEAET831",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Mechatronics - Definition and Scope of Mechatronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Key Elements of a Mechatronic System - Sensors, Actuators, Controllers, and Interfaces; Multidisciplinary Nature of Mechatronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Comparison Between Traditional Design and Mechatronics Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Applications of Mechatronics in Industry (Robotics, Automotive, Aerospace, Consumer Electronics)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Sensors (Basic Working Only) - Position, Displacement, and Proximity Sensors (Encoders, Potentiometers, LVDTs, IR Sensors, Acoustic Emission Sensors, Vibration Sensors, Tactile Sensors, Flow Sensors)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Electrical Actuators and Control Systems - Types of Actuators (Basics Only) - Electromechanical, Hydraulic, Pneumatic, and Piezoelectric; Overview of Relays and Solenoids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Electric Motors (Working Only) - DC, Stepper, and Servo Motors; Motor Control Techniques - PWM Control, H-Bridge Circuits, Motor Drivers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Selection Criteria for Actuators and Drive Systems in Mechatronic Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Overview of Proportional, Integral, and Derivative (PID) Control; Example Practical Implementation of Control Algorithms on Mechatronic Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Actuation Systems - Hydraulic and Pneumatic Actuation Systems (Basics Only) - Introduction, Reciprocating Cylinders, Rotary Actuators - Gear, Vane, and Lobe",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Comparison Between Electrical, Pneumatic, and Hydraulic Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Mechanical Power Transmission Systems - Spur Gears, Bevel Gear, Planetary Gear, Belts, and Chains",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Direction Control Valve, Pressure Control Valves, Solenoid Valve",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Mechatronic Design and Modern Trends - Design Considerations for Mechatronic Systems (Cost, Reliability, Scalability)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Case Studies (Basic Overview Only) - Examples of Mechatronic System (Robotic Arm, Robotic Vision System, Autonomous Vehicle, Auto Focus Camera, Automatic Car Park Barrier System, Assembly Line Automation in Manufacturing)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Introduction to Smart Sensors and Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Basics of Mechatronics in Industry 4.0",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Overview of Soft Robotics and Human-Machine Interfaces",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

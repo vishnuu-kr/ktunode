@@ -1,0 +1,171 @@
+{
+  "id": "pecet417-civil-engineering-s4",
+  "code": "PECET417",
+  "name": "PECET417",
+  "branchId": "civil-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Numerical Methods - Errors in Numerical Computation, System of Linear Algebraic Equations - Ill-Conditioned Systems - Symmetric and Banded Systems, Elimination Methods - Gauss Elimination (Review)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Gauss-Seidel Iteration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Factorization Method - Choleski's Method, System of Non-Linear Equations - Newton-Raphson Method, Eigen Value Problems - Largest and Smallest Eigen Values - Power Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Jacobi's Transformation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Approximation - Lagrangian and Hermite Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Spline Interpolation - Quadratic and Cubic Splines (Example of Equal Intervals), Data Smoothing by Least Squares Criterion - Non-Polynomial Models Like Exponential Model and Power Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Multiple Linear Regression, Numerical Integration - Newton-Cotes Open Quadrature Formulae",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Trapezoidal Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Simpson's Rules (Review)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Solution of First-Order Ordinary Differential Equations - Stability of Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Use of Taylor Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Euler's Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Modified Euler's Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Fourth Order Runge-Kutta Method, Higher Order Equations of Initial Value Type by Runge-Kutta Method, Ordinary Differential Equations of the Boundary Value Type - Finite Difference Solution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Partial Differential Equations in Two-Dimension - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Laplace Equation and Poisson's Equation, Parabolic Equations - Explicit Finite Difference Method - Bender-Schmidt Method, Crank-Nicholson Implicit Method, Elliptic Equations - Finite Difference Method, Weighted Residual Methods for Initial Value Problems and Boundary Value Problems - Collocation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Method of Least Squares",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Galerkin's Method, Applications of the Methods Shall Be Based on Civil Engineering Problems Such as Structural Analysis Problems to Determine Member Forces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Traffic Simulations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Weather Prediction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Water Flow Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Fluid Dynamics Simulations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Geotechnical Modelling of Groundwater Movement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

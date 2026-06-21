@@ -1,0 +1,117 @@
+{
+  "id": "pcebl508-electronics-and-biomedical-engineering-s6",
+  "code": "PCEBL508",
+  "name": "PCEBL508",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Familiarization of Python & QT Octave programming - Generation of elementary signals and its basic operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Basic signal processing operations (Convolution, Correlation, Digital filters, etc.)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Analysis of ECG (calculation of heart rate & parameters related to QRS complex, P wave & T wave)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Analysis of respiratory signal and calculation of respiratory rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Analysis of PPG signal and calculation of pulse rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Time & frequency domain analysis of HRV from ECG and using HRV software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Time domain filtering of bio signal for removal of baseline drift & high frequency noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Power line interference rejection from bio signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Detection of Premature Ventricular Contraction in ECG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Estimation of dicrotic notch from PPG signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Event detection in EEG signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Spectral analysis of EEG signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Time and frequency domain analysis of EMG signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Concurrent signal analysis with ECG, PPG and PCG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Familiarisation of Python toolbox (biosppy, neurokit2, etc.) for bio signal processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_16",
+          "title": "Arrhythmia classification using machine learning techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_17",
+          "title": "Analysis of speech signal (identification of voiced, unvoiced and silent portion, etc.)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

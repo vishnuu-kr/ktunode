@@ -43,69 +43,52 @@ import {
 } from "lucide-react";
 
 const branchLabels: Record<string, string> = {
-  "cs": "Computer Science and Engineering",
-  "ce": "Civil Engineering",
-  "ec": "Electronics and Communication Engineering",
-  "ee": "Electrical and Electronics Engineering",
-  "me": "Mechanical Engineering",
+  "aeronautical-engineering": "Aeronautical Engineering",
+  "agriculture-engineering": "Agriculture Engineering",
+  "applied-electronics-and-instrumentation": "Applied Electronics and Instrumentation",
   "artificial-intelligence": "Artificial Intelligence",
+  "artificial-intelligence-and-machine-learning": "Artificial Intelligence & Machine Learning",
   "artificial-intelligence-and-data-science": "Artificial Intelligence and Data Science",
-  "artificial-intelligence-and-machine-learning": "Artificial Intelligence and Machine Learning",
-  "cs-and-business-systems": "CS and Business Systems",
-  "cs-and-design": "CS and Design",
-  "cse-artificial-intelligence-and-data-science": "CSE (Artificial Intelligence and Data Science)",
-  "cse-block-chain": "CSE (Block Chain)",
-  "cse-cyber-security": "CSE (Cyber Security)",
-  "cse-internet-of-things-cse-iot": "CSE (Internet of Things), CSE(IoT)",
-  "cse-iot-and-cs-including-block-chain-technology": "CSE (IoT and CS including Block Chain Technology)",
+  "automobile-engineering": "Automobile Engineering",
+  "biomedical-and-robotic-engineering": "Biomedical & Robotic Engineering",
+  "biomedical-engineering": "Biomedical Engineering",
+  "biotechnology-engineering": "Biotechnology Engineering",
+  "biotechnology-and-biochemical-engineering": "Biotechnology and Biochemical Engineering",
+  "chemical-engineering": "Chemical Engineering",
+  "civil-engineering": "Civil Engineering",
+  "civil-and-environmental-engineering": "Civil and Environmental Engineering",
   "computer-science-and-business-systems": "Computer Science and Business Systems",
   "computer-science-and-design": "Computer Science and Design",
   "computer-science-and-engineering": "Computer Science and Engineering",
-  "computer-science-and-engineering-artificial-intelligence-and-data-science": "Computer Science and Engineering (Artificial Intelligence and Data Science)",
-  "computer-science-and-engineering-artificial-intelligence-and-machine-learning": "Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+  "computer-science-and-engineering-ai-and-ml": "Computer Science and Engineering (AI & ML)",
   "computer-science-and-engineering-artificial-intelligence": "Computer Science and Engineering (Artificial Intelligence)",
   "computer-science-and-engineering-cyber-security": "Computer Science and Engineering (Cyber Security)",
   "computer-science-and-engineering-data-science": "Computer Science and Engineering (Data Science)",
-  "computer-science-and-engineering-iot": "Computer Science and Engineering (IOT)",
+  "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology": "Computer Science and Engineering (Internet of Things and Cyber Security including Blockchain Technology)",
+  "computer-science-and-engineering-iot": "Computer Science and Engineering (IoT)",
   "computer-science-and-engineering-and-business-systems": "Computer Science and Engineering and Business Systems",
-  "cyber-security": "Cyber Security",
-  "information-technology": "Information Technology",
-  "civil-engineering": "Civil Engineering",
-  "civil-and-environmental-engineering": "Civil and Environmental Engineering",
-  "applied-electronics-instrumentation-engineering": "Applied Electronics & Instrumentation Engineering",
-  "biomedical-robotics-engineering": "Biomedical & Robotics Engineering",
-  "biomedical-engineering": "Biomedical Engineering",
-  "cyber-physical-system": "Cyber Physical System",
-  "electronics-biomedical": "Electronics & Biomedical",
-  "electronics-communication-engineering": "Electronics & Communication Engineering",
-  "electronics-instrumentation-engineering": "Electronics & Instrumentation Engineering",
-  "electronics-engineering-vlsi-design-and-technology": "Electronics Engineering (VLSI Design and Technology)",
-  "electronics-and-biomedical-engineering": "Electronics and Biomedical Engineering",
-  "electronics-and-communication-advanced-communication-technology": "Electronics and Communication (Advanced Communication Technology)",
-  "electronics-and-communication-engineering": "Electronics and Communication Engineering",
-  "electronics-and-computer-engineering": "Electronics and Computer Engineering",
-  "instrumentation-and-control-engineering": "Instrumentation and Control Engineering",
-  "robotics-and-artificial-intelligence": "Robotics and Artificial Intelligence",
-  "robotics-and-automation": "Robotics and Automation",
+  "cyber-physical-systems": "Cyber Physical Systems",
   "electrical-and-computer-engineering": "Electrical and Computer Engineering",
   "electrical-and-electronics-engineering": "Electrical and Electronics Engineering",
-  "aeronautical-engineering": "Aeronautical Engineering",
-  "automobile-engineering": "Automobile Engineering",
-  "chemical-engineering": "Chemical Engineering",
+  "electronics-and-biomedical-engineering": "Electronics & Biomedical Engineering",
+  "electronics-and-communication-advanced-communication-technology": "Electronics & Communication (Advanced Communication Technology)",
+  "electronics-and-communication-engineering": "Electronics & Communication Engineering",
+  "electronics-and-computer-engineering": "Electronics & Computer Engineering",
+  "electronics-engineering-vlsi-design-and-technology": "Electronics Engineering (VLSI Design and Technology)",
+  "electronics-and-instrumentation": "Electronics and Instrumentation",
   "food-technology": "Food Technology",
   "industrial-engineering": "Industrial Engineering",
+  "information-technology": "Information Technology",
+  "instrumentation-and-control": "Instrumentation and Control",
+  "mechanical-automobile-engineering": "Mechanical (Automobile) Engineering",
   "mechanical-engineering": "Mechanical Engineering",
-  "mechanical-engineering-auto": "Mechanical Engineering (Auto)",
-  "mechanical-engineering-automobile": "Mechanical Engineering (Automobile)",
   "mechatronics-engineering": "Mechatronics Engineering",
-  "metallurgical-materials-engineering": "Metallurgical & Materials Engineering",
-  "naval-architecture-ship-building-engineering": "Naval Architecture & Ship Building Engineering",
+  "naval-architecture-and-shipbuilding-engineering": "Naval Architecture & Shipbuilding Engineering",
   "polymer-engineering": "Polymer Engineering",
   "production-engineering": "Production Engineering",
-  "safety-and-fire-engineering": "Safety and Fire Engineering",
-  "agriculture-engineering": "Agriculture Engineering",
-  "biotechnology": "Biotechnology",
-  "biotechnology-and-biochemical-engineering": "Biotechnology and Biochemical Engineering"
+  "robotics-and-artificial-intelligence": "Robotics and Artificial Intelligence",
+  "robotics-and-automation": "Robotics and Automation",
+  "safety-and-fire-engineering": "Safety & Fire Engineering"
 };
 
 const branches = VALID_BRANCHES.map((id) => ({
@@ -287,7 +270,7 @@ function PremiumSelect({
                         ? "opacity-35 cursor-not-allowed text-slate-400 dark:text-slate-600"
                         : value === opt.value
                           ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold"
-                          : "text-slate-600 dark:text-slate-355 hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-slate-100"
+                          : "text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-slate-100"
                     } ${focusedIndex === index && !isDisabled ? "bg-slate-50 dark:bg-slate-800/60" : ""}`}
                     onClick={(e) => {
                       if (isDisabled) return;
@@ -529,7 +512,7 @@ export default function Home() {
         >
           <MagneticButton
             onClick={handleLaunch}
-            className="w-full sm:w-auto whitespace-nowrap !px-8 !py-4 !text-base !font-bold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/35 transition-all duration-200"
+            className="w-full sm:w-auto whitespace-nowrap !rounded-2xl !px-8 !py-4 !text-base !font-black shadow-lg shadow-blue-500/25 hover:shadow-blue-500/35 transition-all duration-200"
           >
             Get Started — It's Free
             <ArrowRight className="w-5 h-5 ml-1.5" />
@@ -540,7 +523,7 @@ export default function Home() {
               triggerHaptic("light");
               document.getElementById("how-it-works-heading")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="w-full sm:w-auto whitespace-nowrap pill-btn pill-btn-outline text-base font-bold transition-all duration-200 cursor-pointer"
+            className="w-full sm:w-auto whitespace-nowrap px-8 py-4 text-base font-bold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-100/80 dark:bg-slate-800/85 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200/50 dark:border-slate-700/50 rounded-2xl transition-all duration-200 cursor-pointer"
           >
             See How It Works
           </button>
@@ -622,7 +605,9 @@ export default function Home() {
  
       {siteConfig?.landingPageSections?.features !== false && (
         <LazySection height="800px">
-          <Features />
+          <section className="relative z-10 w-full bg-white dark:bg-slate-900 border-y border-blue-50 dark:border-slate-800">
+            <Features />
+          </section>
         </LazySection>
       )}
  

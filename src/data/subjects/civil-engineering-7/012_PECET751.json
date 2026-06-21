@@ -1,0 +1,195 @@
+{
+  "id": "pecet751-civil-engineering-s7",
+  "code": "PECET751",
+  "name": "PECET751",
+  "branchId": "civil-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Vertical Distribution of Groundwater - Types of Geologic Formations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Aquifers and Their Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Properties of Aquifer Related to Storage and Transmissivity of Water",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Darcy's Law (Review): Steady Unidirectional Flow - Steady Flow in a Homogenous Aquifer - Aquifer with Recharge - Flow into Infiltration Galleries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Evaluation of Aquifer Parameters by Theis Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Jacob's and Chow's Method (Problems from Evaluation of Aquifer Parameters)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Modelling of Groundwater Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Governing Equations of Groundwater Flow and Boundary Conditions (Basic Ideas Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Solution of Partial Differential Equation of Groundwater Flow for 1D Steady Groundwater Flow in Homogenous Aquifers (Confined and Unconfined) Using Finite Difference Method (Uniform Mesh Interval Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Partial Differential Equation Governing Unsteady Groundwater Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Unsteady Radial Flow Towards Well",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Well Hydraulics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Well Flow Near Aquifer Boundaries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Image Well System and Method of Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Practical Cases (Problems from Method of Images) and Method of Constructing Shallow Wells",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Cable Tool Method, Rotary Method and Reverse Rotary Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Well Completion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Design of Gravel Packed Well",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Well Development - Different Methods and Well Rehabilitation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Surface Investigation of Groundwater - Different Methods - Electrical Resistivity Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Seismic Refraction Method - Determination of Aquifer Thickness of Horizontal Aquifers (Problems from Resistivity Method and Seismic Refraction)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Groundwater Contamination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Quality of Groundwater - Graphical Representations, Reducing Groundwater Contamination, Sea Water Intrusion - Ghyben-Herzberg Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Sea Water - Fresh Water Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Length of Intrusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Upconing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Preventive Measures (Problems from Sea Water Intrusion)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

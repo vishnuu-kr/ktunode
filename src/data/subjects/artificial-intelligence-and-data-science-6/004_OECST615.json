@@ -1,0 +1,237 @@
+{
+  "id": "oecst615-artificial-intelligence-and-data-science-s6",
+  "code": "OECST615",
+  "name": "OECST615",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Java - Java Programming Environment and Runtime Environment (Command Line & IDE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Java Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Java Virtual Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Primitive Data Types and Wrapper Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Casting and Autoboxing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Vector Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Operators - Arithmetic, Bitwise, Relational, Boolean Logical, Assignment, Conditional (Ternary)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Operator Precedence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Control Statements - Selection Statements, Iteration Statements and Jump Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Command Line Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Variable Length Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Abstract Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_17",
+          "title": "Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_18",
+          "title": "OOP Concepts - Data Abstraction, Encapsulation, Inheritance, Polymorphism, Procedural and Object Oriented Programming Paradigm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_19",
+          "title": "Microservices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_20",
+          "title": "Object Oriented Programming in Java - Declaring Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_21",
+          "title": "Object Reference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_22",
+          "title": "Introduction to Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_23",
+          "title": "Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_24",
+          "title": "Access Modifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_25",
+          "title": "this Keyword",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Polymorphism - Method Overloading, Using Objects as Parameters, Returning Objects, Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Static Members, Final Variables, Inner Classes, Inheritance - Super Class, Sub Class, Types of Inheritance, The super Keyword, protected Members, Calling Order of Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Method Overriding, Dynamic Method Dispatch, Using final with Inheritance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Packages and Interfaces - Packages - Defining a Package, CLASSPATH, Access Protection, Importing Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Interfaces - Interfaces v/s Abstract Classes, Defining an Interface, Implementing Interfaces, Accessing Implementations through Interface References, Extending Interface(s)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Exception Handling - Checked Exceptions, Unchecked Exceptions, try Block and catch Clause, Multiple catch Clauses, Nested try Statements, throw, throws and finally, Java Built-in Exceptions, Custom Exceptions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Swings Fundamentals - Overview of AWT, Swing v/s AWT, Swing Key Features, Swing Controls, Components and Containers, Swing Packages, Event Handling in Swings, Swing Layout Managers, Exploring Swings - JFrame, JLabel, The Swing Buttons, JTextField",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Event Handling - Event Handling Mechanisms, Delegation Event Model, Event Classes, Sources of Events, Event Listener Interfaces, Using the Delegation Event Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Developing Database Applications using JDBC - JDBC Overview, Types, Steps, Common JDBC Components, Connection Establishment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "pcrut601-robotics-and-automation-s6",
+  "code": "PCRUT601",
+  "name": "PCRUT601",
+  "branchId": "robotics-and-automation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Control System - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Open Loop vs Closed Loop Control Systems - Components of a Typical Control System - Necessity of a Control System in a Robot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Linear Time Invariant Systems - Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Necessity of Knowing the Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Modelling - Mechanical Translational and Electromechanical Systems (Force Voltage and Force Current Analogy) - Block Diagram Representation - Block Diagram Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Signal Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Basic Problems using Mason's Gain Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Transient and Steady State Responses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Time Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "First and Second Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Step Responses of First and Second Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Steady State Error Analysis - Static Error Coefficient of Type 0, 1, 2 Systems. Concept of Stability: Time Response for Various Pole Locations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Stability of Feedback System - Routh's Stability Criterion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Frequency Domain Specifications (Derivations not required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Analysis based on Bode Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Log Magnitude vs. Phase Plot. Design of P, PI and PID Controller using Ziegler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Nichols Tuning Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Introduction to State Concept - State Equation of Linear Continuous Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Matrix Representation of State Equations. Phase Variable and Canonical Forms of State Representation - Controllable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Observable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "State Transition Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Relationship between State Equations and Transfer Function. Controllability and Observability - Kalman's Method. State Feed-back Design via Pole Placement Technique",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

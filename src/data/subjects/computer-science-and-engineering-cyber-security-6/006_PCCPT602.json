@@ -1,0 +1,165 @@
+{
+  "id": "pccpt602-computer-science-and-engineering-cyber-security-s6",
+  "code": "PCCPT602",
+  "name": "PCCPT602",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Overview of CPS and Communication Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Types of Communication in CPS (e.g., Sensor-Sensor, Sensor-Actuator, Actuator-Actuator)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Communication Protocols and Standards for CPS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Network Topologies and Architecture for CPS (TCP/IP, HTTP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Network Performance Matrices (e.g., Throughput, Latency, Jitter)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Wireless Communication Technologies (Wi-Fi, Bluetooth, Zigbee)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Wireless Network Protocols and Standards (802.11, 802.15.4)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Wireless Communication Challenges (Interference, Fading)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Wired Communication for CPS: Wired Communication Technologies (Ethernet)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Wired Network Topologies and Standards (TCP/IP, Modbus)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Data Compression Techniques (Huffman Coding, LZ77)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Encryption Techniques (AES)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Data Compression and Encryption Algorithms for CPS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Communication Protocols for CPS Applications: IoT Communication Protocols (MQTT, CoAP, LWM2M)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Industrial Automatic Communication Protocols (Modbus, Profibus, Profinet)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Healthcare Communication Protocols (HL7, DICOM)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Performance Matrices for CPS Communication (Throughput, Latency, Reliability)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Performance Evaluation Tools (Simulation, Testing)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Optimization Techniques for CPS Communication (Buffer Sizing, Packet Scheduling)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Security and Privacy in CPS Communication: Threats and Vulnerabilities in CPS Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Security Measures for CPS Communication (Encryption and Authentication)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Privacy Concerns and Solutions in CPS Communication",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

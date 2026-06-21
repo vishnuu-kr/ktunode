@@ -1,0 +1,105 @@
+{
+  "id": "pccsl607-computer-science-and-engineering-s7",
+  "code": "PCCSL607",
+  "name": "PCCSL607",
+  "branchId": "computer-science-and-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Design and implement a lexical analyzer using C language to recognize all valid tokens in the input program, ignoring redundant spaces, tabs, newlines, and comments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Write a lex program to display the number of lines, words, and characters in an input text",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Generate a YACC specification to recognize a valid arithmetic expression that uses operators and parenthesis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Implementation of Calculator using LEX and YACC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Convert the BNF rules into YACC form and write code to generate abstract syntax tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Write a program to find First and Follow of any given grammar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Design and implement a recursive descent parser for a given grammar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Construct a Shift Reduce Parser for a given language",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Write a program to perform constant propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Implement Intermediate code generation for simple expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Implement the back end of the compiler which takes the three address code and produces assembly language instructions that can be assembled and run using a corresponding assembler, including simple move and jump instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Instantiation of VMs with image file using open-source hypervisors or public cloud platforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Virtual machine Cluster set up using open-source hypervisors or public cloud platforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Setting host name for virtual machine nodes in cluster and ssh set up for remote login",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Copy a file from one virtual machine to another virtual machine",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

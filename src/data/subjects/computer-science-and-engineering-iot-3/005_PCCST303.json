@@ -1,0 +1,177 @@
+{
+  "id": "pccst303-computer-science-and-engineering-iot-s3",
+  "code": "PCCST303",
+  "name": "PCCST303",
+  "branchId": "computer-science-and-engineering-iot",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Basic Concepts of Data Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Data Abstraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Performance Analysis – Time and Space Complexity, Asymptotic Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Polynomial Representation Using Arrays, Sparse Matrix (Tuple Representation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Stacks and Queues – Stacks, Multi-Stacks, Queues, Circular Queues, Double Ended Queues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Evaluation of Expressions – Infix to Postfix, Evaluating Postfix Expressions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Linked List and Memory Management – Singly Linked List: Operations on Linked List, Stacks and Queues Using Linked List, Polynomial Representation Using Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Doubly Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Circular Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Memory Allocation – First-fit, Best-fit, and Worst-fit Allocation Schemes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Garbage Collection and Compaction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Trees – Representation of Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Binary Trees – Types and Properties, Binary Tree Representation, Tree Operations, Tree Traversals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Expression Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Binary Search Trees – Binary Search Tree Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Binary Heaps – Binary Heap Operations, Priority Queue",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Graphs – Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Representation of Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Depth First Search and Breadth First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Applications of Graphs – Single Source All Destination",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Sorting Techniques – Selection Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort, Radix Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Searching Techniques – Linear Search, Binary Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Hashing – Hashing Functions: Mid Square, Division, Folding, Digit Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Collision Resolution – Linear Probing, Quadratic Probing, Double Hashing, Open Hashing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

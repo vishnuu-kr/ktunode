@@ -1,0 +1,123 @@
+{
+  "id": "pcecl408-electronics-and-communication-engineering-s5",
+  "code": "PCECL408",
+  "name": "PCECL408",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2 - Part A: Data Manipulation Experiments Using Assembly Language",
+      "title": "Module Experiment 2 - Part A: Data Manipulation Experiments Using Assembly Language",
+      "topics": [
+        {
+          "id": "tExperiment 2 - Part A: Data Manipulation Experiments Using Assembly Language_1",
+          "title": "Multiplication of Two 16-bit Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part A: Data Manipulation Experiments Using Assembly Language_2",
+          "title": "Largest/Smallest from a Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part A: Data Manipulation Experiments Using Assembly Language_3",
+          "title": "Sorting (Ascending/Descending) of Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part A: Data Manipulation Experiments Using Assembly Language_4",
+          "title": "Matrix Addition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part A: Data Manipulation Experiments Using Assembly Language_5",
+          "title": "LCM and HCF of Two 8-bit Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part A: Data Manipulation Experiments Using Assembly Language_6",
+          "title": "Code Conversion - Hex to Decimal/ASCII to Decimal and Vice Versa",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mExperiment 2 - Part B: Interface to Microcontroller Assembly/C Language",
+      "title": "Module Experiment 2 - Part B: Interface to Microcontroller Assembly/C Language",
+      "topics": [
+        {
+          "id": "tExperiment 2 - Part B: Interface to Microcontroller Assembly/C Language_1",
+          "title": "Time Delay Generation and Relay Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part B: Interface to Microcontroller Assembly/C Language_2",
+          "title": "Display (LED/Seven Segments/LCD) and Keyboard Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part B: Interface to Microcontroller Assembly/C Language_3",
+          "title": "ADC Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part B: Interface to Microcontroller Assembly/C Language_4",
+          "title": "DAC Interface with Waveform Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part B: Interface to Microcontroller Assembly/C Language_5",
+          "title": "Stepper Motor and DC Motor Interface",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mExperiment 2 - Part C: Interface with Advanced Microcontroller Using C Language",
+      "title": "Module Experiment 2 - Part C: Interface with Advanced Microcontroller Using C Language",
+      "topics": [
+        {
+          "id": "tExperiment 2 - Part C: Interface with Advanced Microcontroller Using C Language_1",
+          "title": "PWM Generation for DC Motor Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part C: Interface with Advanced Microcontroller Using C Language_2",
+          "title": "Object/Visitor Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part C: Interface with Advanced Microcontroller Using C Language_3",
+          "title": "UART Interface to Bluetooth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part C: Interface with Advanced Microcontroller Using C Language_4",
+          "title": "SPI/I2C Interface to Display",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2 - Part C: Interface with Advanced Microcontroller Using C Language_5",
+          "title": "Real-Time Clock",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

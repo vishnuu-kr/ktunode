@@ -16,7 +16,7 @@ import path from "path";
 
 const DRY = process.argv.includes("--dry");
 const SUBJECTS_DIR = path.join(process.cwd(), "src", "data", "subjects");
-const FLAT_RE = /^([a-z]+)-([1-8])\.json$/i;
+const FLAT_RE = /^([a-z0-9-]+)-([1-8])\.json$/i;
 
 function safeName(code, fallback) {
   const base = String(code || "").trim() || fallback;

@@ -8,134 +8,122 @@ import {
   Laptop, Cpu, Wrench, Building, Zap, BookOpen
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
+import { siteConfig } from "@/lib/site";
+
+function getBranchIcon(code: string) {
+  const c = code.toLowerCase();
+  if (c.includes("computer") || c.includes("artificial") || c.includes("cyber") || c.includes("information-technology") || c.includes("cs")) {
+    return Laptop;
+  }
+  if (c.includes("electronics") || c.includes("electrical") || c.includes("applied") || c.includes("instrumentation") || c.includes("ee") || c.includes("ec")) {
+    return Cpu;
+  }
+  if (c.includes("mechanical") || c.includes("mechatronics") || c.includes("automobile") || c.includes("aeronautical") || c.includes("me")) {
+    return Wrench;
+  }
+  if (c.includes("civil") || c.includes("ce")) {
+    return Building;
+  }
+  return BookOpen;
+}
 
 // Complete list of valid branch IDs from session.ts
 const VALID_BRANCHES = [
-  "cs", "ce", "ec", "ee", "me",
+  "aeronautical-engineering",
+  "agriculture-engineering",
+  "applied-electronics-and-instrumentation",
   "artificial-intelligence",
-  "artificial-intelligence-and-data-science",
   "artificial-intelligence-and-machine-learning",
-  "cs-and-business-systems",
-  "cs-and-design",
-  "cse-artificial-intelligence-and-data-science",
-  "cse-block-chain",
-  "cse-cyber-security",
-  "cse-internet-of-things-cse-iot",
-  "cse-iot-and-cs-including-block-chain-technology",
+  "artificial-intelligence-and-data-science",
+  "automobile-engineering",
+  "biomedical-and-robotic-engineering",
+  "biomedical-engineering",
+  "biotechnology-engineering",
+  "biotechnology-and-biochemical-engineering",
+  "chemical-engineering",
+  "civil-engineering",
+  "civil-and-environmental-engineering",
   "computer-science-and-business-systems",
   "computer-science-and-design",
   "computer-science-and-engineering",
-  "computer-science-and-engineering-artificial-intelligence-and-data-science",
-  "computer-science-and-engineering-artificial-intelligence-and-machine-learning",
+  "computer-science-and-engineering-ai-and-ml",
   "computer-science-and-engineering-artificial-intelligence",
   "computer-science-and-engineering-cyber-security",
   "computer-science-and-engineering-data-science",
+  "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology",
   "computer-science-and-engineering-iot",
   "computer-science-and-engineering-and-business-systems",
-  "cyber-security",
-  "information-technology",
-  "civil-engineering",
-  "civil-and-environmental-engineering",
-  "applied-electronics-instrumentation-engineering",
-  "biomedical-robotics-engineering",
-  "biomedical-engineering",
-  "cyber-physical-system",
-  "electronics-biomedical",
-  "electronics-communication-engineering",
-  "electronics-instrumentation-engineering",
-  "electronics-engineering-vlsi-design-and-technology",
+  "cyber-physical-systems",
+  "electrical-and-computer-engineering",
+  "electrical-and-electronics-engineering",
   "electronics-and-biomedical-engineering",
   "electronics-and-communication-advanced-communication-technology",
   "electronics-and-communication-engineering",
   "electronics-and-computer-engineering",
-  "instrumentation-and-control-engineering",
-  "robotics-and-artificial-intelligence",
-  "robotics-and-automation",
-  "electrical-and-computer-engineering",
-  "electrical-and-electronics-engineering",
-  "aeronautical-engineering",
-  "automobile-engineering",
-  "chemical-engineering",
+  "electronics-engineering-vlsi-design-and-technology",
+  "electronics-and-instrumentation",
   "food-technology",
   "industrial-engineering",
+  "information-technology",
+  "instrumentation-and-control",
+  "mechanical-automobile-engineering",
   "mechanical-engineering",
-  "mechanical-engineering-auto",
-  "mechanical-engineering-automobile",
   "mechatronics-engineering",
-  "metallurgical-materials-engineering",
-  "naval-architecture-ship-building-engineering",
+  "naval-architecture-and-shipbuilding-engineering",
   "polymer-engineering",
   "production-engineering",
-  "safety-and-fire-engineering",
-  "agriculture-engineering",
-  "biotechnology",
-  "biotechnology-and-biochemical-engineering"
+  "robotics-and-artificial-intelligence",
+  "robotics-and-automation",
+  "safety-and-fire-engineering"
 ] as const;
 
 const branchLabels: Record<string, string> = {
-  "cs": "Computer Science and Engineering",
-  "ce": "Civil Engineering",
-  "ec": "Electronics and Communication Engineering",
-  "ee": "Electrical and Electronics Engineering",
-  "me": "Mechanical Engineering",
+  "aeronautical-engineering": "Aeronautical Engineering",
+  "agriculture-engineering": "Agriculture Engineering",
+  "applied-electronics-and-instrumentation": "Applied Electronics and Instrumentation",
   "artificial-intelligence": "Artificial Intelligence",
+  "artificial-intelligence-and-machine-learning": "Artificial Intelligence & Machine Learning",
   "artificial-intelligence-and-data-science": "Artificial Intelligence and Data Science",
-  "artificial-intelligence-and-machine-learning": "Artificial Intelligence and Machine Learning",
-  "cs-and-business-systems": "CS and Business Systems",
-  "cs-and-design": "CS and Design",
-  "cse-artificial-intelligence-and-data-science": "CSE (Artificial Intelligence and Data Science)",
-  "cse-block-chain": "CSE (Block Chain)",
-  "cse-cyber-security": "CSE (Cyber Security)",
-  "cse-internet-of-things-cse-iot": "CSE (Internet of Things), CSE(IoT)",
-  "cse-iot-and-cs-including-block-chain-technology": "CSE (IoT and CS including Block Chain Technology)",
+  "automobile-engineering": "Automobile Engineering",
+  "biomedical-and-robotic-engineering": "Biomedical & Robotic Engineering",
+  "biomedical-engineering": "Biomedical Engineering",
+  "biotechnology-engineering": "Biotechnology Engineering",
+  "biotechnology-and-biochemical-engineering": "Biotechnology and Biochemical Engineering",
+  "chemical-engineering": "Chemical Engineering",
+  "civil-engineering": "Civil Engineering",
+  "civil-and-environmental-engineering": "Civil and Environmental Engineering",
   "computer-science-and-business-systems": "Computer Science and Business Systems",
   "computer-science-and-design": "Computer Science and Design",
   "computer-science-and-engineering": "Computer Science and Engineering",
-  "computer-science-and-engineering-artificial-intelligence-and-data-science": "Computer Science and Engineering (Artificial Intelligence and Data Science)",
-  "computer-science-and-engineering-artificial-intelligence-and-machine-learning": "Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+  "computer-science-and-engineering-ai-and-ml": "Computer Science and Engineering (AI & ML)",
   "computer-science-and-engineering-artificial-intelligence": "Computer Science and Engineering (Artificial Intelligence)",
   "computer-science-and-engineering-cyber-security": "Computer Science and Engineering (Cyber Security)",
   "computer-science-and-engineering-data-science": "Computer Science and Engineering (Data Science)",
-  "computer-science-and-engineering-iot": "Computer Science and Engineering (IOT)",
+  "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology": "Computer Science and Engineering (Internet of Things and Cyber Security including Blockchain Technology)",
+  "computer-science-and-engineering-iot": "Computer Science and Engineering (IoT)",
   "computer-science-and-engineering-and-business-systems": "Computer Science and Engineering and Business Systems",
-  "cyber-security": "Cyber Security",
-  "information-technology": "Information Technology",
-  "civil-engineering": "Civil Engineering",
-  "civil-and-environmental-engineering": "Civil and Environmental Engineering",
-  "applied-electronics-instrumentation-engineering": "Applied Electronics & Instrumentation Engineering",
-  "biomedical-robotics-engineering": "Biomedical & Robotics Engineering",
-  "biomedical-engineering": "Biomedical Engineering",
-  "cyber-physical-system": "Cyber Physical System",
-  "electronics-biomedical": "Electronics & Biomedical",
-  "electronics-communication-engineering": "Electronics & Communication Engineering",
-  "electronics-instrumentation-engineering": "Electronics & Instrumentation Engineering",
-  "electronics-engineering-vlsi-design-and-technology": "Electronics Engineering (VLSI Design and Technology)",
-  "electronics-and-biomedical-engineering": "Electronics and Biomedical Engineering",
-  "electronics-and-communication-advanced-communication-technology": "Electronics and Communication (Advanced Communication Technology)",
-  "electronics-and-communication-engineering": "Electronics and Communication Engineering",
-  "electronics-and-computer-engineering": "Electronics and Computer Engineering",
-  "instrumentation-and-control-engineering": "Instrumentation and Control Engineering",
-  "robotics-and-artificial-intelligence": "Robotics and Artificial Intelligence",
-  "robotics-and-automation": "Robotics and Automation",
+  "cyber-physical-systems": "Cyber Physical Systems",
   "electrical-and-computer-engineering": "Electrical and Computer Engineering",
   "electrical-and-electronics-engineering": "Electrical and Electronics Engineering",
-  "aeronautical-engineering": "Aeronautical Engineering",
-  "automobile-engineering": "Automobile Engineering",
-  "chemical-engineering": "Chemical Engineering",
+  "electronics-and-biomedical-engineering": "Electronics & Biomedical Engineering",
+  "electronics-and-communication-advanced-communication-technology": "Electronics & Communication (Advanced Communication Technology)",
+  "electronics-and-communication-engineering": "Electronics & Communication Engineering",
+  "electronics-and-computer-engineering": "Electronics & Computer Engineering",
+  "electronics-engineering-vlsi-design-and-technology": "Electronics Engineering (VLSI Design and Technology)",
+  "electronics-and-instrumentation": "Electronics and Instrumentation",
   "food-technology": "Food Technology",
   "industrial-engineering": "Industrial Engineering",
+  "information-technology": "Information Technology",
+  "instrumentation-and-control": "Instrumentation and Control",
+  "mechanical-automobile-engineering": "Mechanical (Automobile) Engineering",
   "mechanical-engineering": "Mechanical Engineering",
-  "mechanical-engineering-auto": "Mechanical Engineering (Auto)",
-  "mechanical-engineering-automobile": "Mechanical Engineering (Automobile)",
   "mechatronics-engineering": "Mechatronics Engineering",
-  "metallurgical-materials-engineering": "Metallurgical & Materials Engineering",
-  "naval-architecture-ship-building-engineering": "Naval Architecture & Ship Building Engineering",
+  "naval-architecture-and-shipbuilding-engineering": "Naval Architecture & Shipbuilding Engineering",
   "polymer-engineering": "Polymer Engineering",
   "production-engineering": "Production Engineering",
-  "safety-and-fire-engineering": "Safety and Fire Engineering",
-  "agriculture-engineering": "Agriculture Engineering",
-  "biotechnology": "Biotechnology",
-  "biotechnology-and-biochemical-engineering": "Biotechnology and Biochemical Engineering"
+  "robotics-and-artificial-intelligence": "Robotics and Artificial Intelligence",
+  "robotics-and-automation": "Robotics and Automation",
+  "safety-and-fire-engineering": "Safety & Fire Engineering"
 };
 
 const PRIMARY_BRANCHES = [
@@ -465,28 +453,34 @@ export default function OnboardingModal({
                 <div className="space-y-6">
                   <div
                     onKeyDown={(e) => handleGridKeyDown(e, "[data-branch-item]")}
-                    className="grid grid-cols-2 md:grid-cols-5 gap-3"
+                    className="max-h-[380px] overflow-y-auto pr-1 grid grid-cols-1 sm:grid-cols-2 gap-3.5 scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-800"
                   >
-                    {PRIMARY_BRANCHES.map(({ id, label, desc, icon: Icon }) => {
-                       const isSelected = selectedBranch === id;
+                    {siteConfig.branches.map(({ code, name, short }) => {
+                       const isSelected = selectedBranch === code;
+                       const Icon = getBranchIcon(code);
                        return (
                         <button
-                          key={id}
+                          key={code}
                           data-branch-item
-                          onClick={() => selectBranch(id)}
-                          className={`flex flex-col items-center justify-center p-4 rounded-2xl border text-center transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 group relative overflow-hidden ${
+                          type="button"
+                          onClick={() => selectBranch(code)}
+                          className={`flex items-start p-4 rounded-2xl border text-left transition-all duration-305 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 group relative overflow-hidden ${
                             isSelected
-                              ? "bg-gradient-to-b from-blue-50 to-blue-100/50 dark:from-blue-950/40 dark:to-blue-950/20 border-blue-500 text-blue-600 dark:text-blue-400 font-bold scale-[1.02] shadow-md shadow-blue-500/10"
-                              : "bg-slate-50/50 dark:bg-slate-900/50 hover:bg-slate-100/50 dark:hover:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-800 hover:scale-[1.02] text-slate-800 dark:text-slate-200"
-                          } min-h-[100px] sm:min-h-[110px] md:min-h-[120px]`}
-                          aria-label={`Select ${label}`}
+                              ? "bg-gradient-to-r from-blue-50 to-blue-100/50 dark:from-blue-950/40 dark:to-blue-950/20 border-blue-500 text-blue-600 dark:text-blue-400 font-bold scale-[1.01] shadow-md shadow-blue-500/5"
+                              : "bg-slate-50/50 dark:bg-slate-900/50 hover:bg-slate-100/50 dark:hover:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-800 hover:scale-[1.01] text-slate-800 dark:text-slate-200"
+                          }`}
+                          aria-label={`Select ${name}`}
                         >
                           {isSelected && (
                             <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse" />
                           )}
-                          <Icon className={`w-6 h-6 mb-2.5 transition-all duration-300 group-hover:scale-110 ${isSelected ? "text-blue-500" : "text-slate-400 dark:text-slate-500 group-hover:text-blue-500"}`} />
-                          <span className="text-xs font-black leading-tight mb-1">{label}</span>
-                          <span className="text-[10px] text-slate-400 font-semibold">{desc}</span>
+                          <div className={`p-2 rounded-xl mr-3 transition-colors ${isSelected ? 'bg-blue-500/10 text-blue-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 group-hover:bg-blue-500/10 group-hover:text-blue-500'}`}>
+                            <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
+                          </div>
+                          <div className="flex-1 min-w-0 pr-4">
+                            <span className="block text-xs font-black leading-snug truncate group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">{name}</span>
+                            <span className="block text-[10px] text-slate-400 font-extrabold uppercase mt-1 tracking-wider">{short}</span>
+                          </div>
                         </button>
                       );
                     })}

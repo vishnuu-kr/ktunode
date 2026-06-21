@@ -1,0 +1,141 @@
+{
+  "id": "gnest305-electronics-engineering-vlsi-design-and-technology-s3",
+  "code": "GNEST305",
+  "name": "GNEST305",
+  "branchId": "electronics-engineering-vlsi-design-and-technology",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Basics of Machine Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Types of Machine Learning Systems - Challenges in ML - Supervised Learning Model Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Regression Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Classification Model Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Logistic Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Unsupervised Model Example - K-Means Clustering, Artificial Neural Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Universal Approximation Theorem (Statement Only) - Multi-Layer Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Deep Neural Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Demonstration of Regression and Classification Problems Using MLP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Role of Linear Algebra in Data Representation and Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Matrix Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Singular Value Decomposition (SVD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Spectral Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Dimensionality Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Principal Component Analysis (PCA)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Basics of Probability - Random Variables and Statistical Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Rules in Probability - Bayes Theorem and Its Applications - Statistical Estimation - Maximum Likelihood Estimator (MLE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Statistical Summaries - Correlation Analysis - Linear Correlation (Direct Problems Only) - Regression Analysis - Linear Regression (Using Least Square Method)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

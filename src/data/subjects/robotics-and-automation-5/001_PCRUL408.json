@@ -1,0 +1,87 @@
+{
+  "id": "pcrul408-robotics-and-automation-s5",
+  "code": "PCRUL408",
+  "name": "PCRUL408",
+  "branchId": "robotics-and-automation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "All Arithmetic Operations - Addition, Subtraction (32 bit), Multiplication and Division (8 bit)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "A Block of Data Transfer from One Memory Location to Another Memory Location (Internal/External Memory)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Sorting of an Array of Numbers Stored in the Memory Location (Ascending/Descending Order)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Time Delay Generation Using Timers and Relay Interface with 8051/AT89S51 Microcontroller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "DAC Interface with 8051/AT89S51 for Different Wave Form Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Display (LED/Seven Segments/LCD) and Keyboard Interface with 8051/AT89S51",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Toggle the ON/OFF Status of an LED with a Switch Using Arduino UNO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Interfacing of Ultrasonic Sensor Using Arduino UNO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Interfacing Stepper Motor Using Arduino UNO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "ADC Operation of Arduino Using Potentiometer and Display with Arduino UNO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Sending Sensor Data from Arduino to Cloud Using WiFi Module ESP8266 and Things Speak Account",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Develop and Test the Mini IoT Projects Using Arduino with ESP8266/Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

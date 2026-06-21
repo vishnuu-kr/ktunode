@@ -1,0 +1,153 @@
+{
+  "id": "gzest204-production-engineering-s2",
+  "code": "GZEST204",
+  "name": "GZEST204",
+  "branchId": "production-engineering",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Generation of Alternating Voltages: Faraday's Laws of Electromagnetic Induction, Generation of Alternating Voltage, Elementary Generator, Representation of AC Voltage and Currents, Sinusoidal Waveforms (Frequency, Period, Average and RMS Values, Form Factor of Waveform)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "DC Circuits: Resistance in Series and Parallel, Ohm's Law and Kirchhoff's Laws, Voltage and Current Divider Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "AC Circuits: Purely Resistive, Inductive and Capacitive Circuits, Inductive and Capacitive Reactance, Concept of Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Three Phase AC Systems: Representation of Three Phase Voltages, Star and Delta Connections (Balanced Only), Relation Between Line and Phase Voltages, Line and Phase Currents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Power in AC Circuits: Power Factor, Active, Reactive and Apparent Power in Single Phase and Three Phase Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Conventional and Non-Conventional Energy Sources: Hydro, Thermal and Nuclear Plants (Block Diagram Description), Solar, Wind, Small Hydro Plants, PV System for Domestic Application",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Transformers: Principle of Operation, Step-Up and Step-Down Transformers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "AC Power Supply, Transmission and Distribution Systems: Single Phase and Three Phase System, Three Phase 3-Wire and 4-Wire Systems, Transmission System, Distribution System (Feeder, Distributor, Service Mains)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Electric Motors: Principle of Operation (Block Diagram Showing Power Stages, Losses and Efficiency), Classification and Types of DC and AC Motors, Common Applications, Principle of Traction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Earthing: Need for Earthing, Types of Earthing (Pipe Earthing, Plate Earthing)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Protective Devices: Principle of Operation of MCB, ELCB/RCCB",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Electronic Components: Passive and Active Components, Resistors, Capacitors and Inductors (Types, Specifications, Standard Values, Colour Coding)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "PN Junction Diode: Principle of Operation, V-I Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Bipolar Junction Transistors: PNP and NPN Structures, Principle of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Digital Electronics: Binary Number System, Boolean Algebra, Logic Gates, Universal Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Rectifiers and Power Supplies: Block Diagram Description of a DC Power Supply, Working of a Full Wave Bridge Rectifier, Capacitor Filter, Working of Simple Zener Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Amplifiers: Transistor as an Amplifier, Block Diagram of Public Address System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Quality of Measurements: Accuracy, Precision, Sensitivity and Resolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Sensors: Working Principle and Applications - Pressure (Strain Gauge, Bourden Gauge), Temperature (RTD, Thermocouple), Proximity (Capacitive Sensor, Ultrasonic Sensor), Accelerometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Internet of Things (IoT): Introduction, Architecture of IoT, Implementation of Smart City (Street Lighting, Smart Parking)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

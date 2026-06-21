@@ -1,0 +1,129 @@
+{
+  "id": "pbect404-electronics-and-instrumentation-s4",
+  "code": "PBECT404",
+  "name": "PBECT404",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Features of 8051 Microcontroller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Block Diagram of 8051 - Program Status Word (PSW), Accumulator, Program Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Memory Organization - RAM and ROM, Register Banks and Stack, Special Function Registers (SFRs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "I/O Port Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Interrupts",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Classification of Instruction Set - Data Transfer Group, Arithmetic Group, Logical Group, Branching Group",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Addressing Modes - Types, Accessing Data from Internal and External Memory",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Introduction to 8051 Assembly Language Programming, Data Types and Directives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Concept of Subroutine and Software Delay Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Programming 8051 Using Embedded C Language: Introduction and Advantages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Timer Registers - Timer0, Timer1, Configuration of Timer Registers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Timer Mode Programming and Counter Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Serial Communication in 8051 - Modes and Protocols, RS-232 Pin Configuration and Connection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Serial Port Programming - Transmitting and Receiving",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Programming the Interrupts - External, Timer and Serial Port Interrupts, Interrupt Priority Settings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Suggested Project Topics Using 8051 Microcontroller: (1) Interface ADC chip to 8051 and read variation in voltage from potentiometer and display on LCD module; (2) Interface DAC chip to 8051 and generate sine waveform of 1 kHz at any port pin; (3) DC motor interface for speed and direction control; (4) Stepper motor interface with unit step control, rotation angle control, speed control, and direction control; (5) Read temperature sensor and display on LCD",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

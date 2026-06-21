@@ -1,0 +1,465 @@
+{
+  "id": "pbcst304-computer-science-and-engineering-data-science-s3",
+  "code": "PBCST304",
+  "name": "PBCST304",
+  "branchId": "computer-science-and-engineering-data-science",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Java: Structure of a Simple Java Program",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Java Programming Environment and Runtime Environment (Command Line and IDE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Java Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Java Virtual Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Primitive Data Types and Wrapper Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Casting and Autoboxing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Vector Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Operators: Arithmetic, Bitwise, Relational, Boolean Logical, Assignment, Conditional (Ternary)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Operator Precedence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Control Statements: Selection Statements, Iteration Statements, and Jump Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "Command Line Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Variable Length Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_17",
+          "title": "Abstract Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_18",
+          "title": "Interfaces. OOP Concepts: Data Abstraction, Encapsulation, Inheritance, Polymorphism, Procedural and Object-Oriented Programming Paradigm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_19",
+          "title": "Object-Oriented Programming in Java: Declaring Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_20",
+          "title": "Object Reference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_21",
+          "title": "Introduction to Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_22",
+          "title": "Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_23",
+          "title": "Access Modifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_24",
+          "title": "this Keyword",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Polymorphism: Method Overloading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Using Objects as Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Returning Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Recursion, Static Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Final Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Inner Classes, Inheritance: Super Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Sub Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Types of Inheritance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "The super Keyword",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "protected Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Calling Order of Constructors, Method Overriding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Dynamic Method Dispatch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Using final with Inheritance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Singleton and Adaptor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "SOLID Principles in Java, Swings Fundamentals: Overview of AWT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Swing vs AWT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Swing Key Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Model View Controller (MVC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Swing Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Components and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Swing Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Event Handling in Swings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Swing Layout Managers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Exploring Swings: JFrame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "JLabel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "The Swing Buttons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "JTextField, Event Handling Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Delegation Event Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Event Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Sources of Events",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Event Listener Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_18",
+          "title": "Using the Delegation Event Model, Developing Database Applications using JDBC: JDBC Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_19",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_20",
+          "title": "Steps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_21",
+          "title": "Common JDBC Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_22",
+          "title": "Connection Establishment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_23",
+          "title": "SQL Fundamentals (For Projects Only): Creating and Executing Basic SQL Queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_24",
+          "title": "Working with Result Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_25",
+          "title": "Performing CRUD Operations with JDBC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_26",
+          "title": "Suggestion on Project Topics: Students should identify a topic to be implemented as a project having the following nature: (i) It must accept a considerable amount of information from the user for processing. (ii) It must have a considerable amount of data to be stored permanently within the computer - as plain files / using databases. (iii) It must process the user provided data and the stored data to generate some output to be displayed to the user",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_27",
+          "title": "Example 1: Design and implement the Circulation function in a Library Management System using Object-Oriented Programming (OOP) principles in Java and limited use of SQL. The system should manage the operations of a library such as book and user management, borrowing and returning books",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_28",
+          "title": "Requirements I. Class Design - Book: Attributes like title, author, ISBN, genre, and status (available/borrowed). User: Attributes like user ID, name, contact information, and a list of borrowed books. Library: Attributes like a list of books and a list of users. Librarian: Inherits from User, with additional functionalities like adding/removing books and managing users. BorrowTransaction: Attributes like transaction ID, book, user, borrow date, and return date",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_29",
+          "title": "II. Functionalities: (a) Book Management: Add, remove, and update book details. Search books by title, author, ISBN, and genre. (b) User Management: Register new users. Search users by user ID and name. (c) Borrowing and Returning: Borrow a book: Check if the book is available and if the user can borrow more books. Return a book: Update the book's status and remove it from the user's borrowed list",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_30",
+          "title": "III. Deliverables: (1) Design Document: Describe the classes, their attributes, methods and relationships. (2) Source Code: Well-documented Java code implementing the described functionalities. (3) User Manual: Instructions on how to set up, run and use the system. (4) Test Cases: A suite of test cases demonstrating the functionality of the system",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_31",
+          "title": "Example 2: Design and implement an Online Payment Processing System using Object-Oriented Programming (OOP) principles in Java, with a focus on dynamic polymorphism. The system should support different types of payment methods and demonstrate polymorphism in processing payments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_32",
+          "title": "Requirements (a) Class Design - Payment: An abstract base class with common attributes and an abstract method for processing payments. CreditCardPayment: Inherits from Payment, with specific implementation for processing credit card payments. PayPalPayment: Inherits from Payment, with specific implementation for processing PayPal payments. BankTransferPayment: Inherits from Payment, with specific implementation for processing bank transfer payments. PaymentProcessor: A class to manage and process different types of payments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_33",
+          "title": "(b) Functionalities: Add Payment Method - Add new payment methods (CreditCardPayment, PayPalPayment, BankTransferPayment) to the system. Process Payment: Demonstrate dynamic polymorphism by processing payments using different methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_34",
+          "title": "(c) Deliverables: Design Document - Describe the classes, their attributes, methods and relationships. Source Code: Well-documented Java code implementing the described functionalities. User Manual: Instructions on how to set up, run and use the system. Test Cases: A suite of test cases demonstrating the functionality of the system",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

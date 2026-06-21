@@ -69,7 +69,7 @@ export default function FaqSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 sm:py-32 overflow-hidden bg-background border-t border-border"
+      className="relative py-28 overflow-hidden bg-background"
       style={{
         background:
           "linear-gradient(180deg, var(--color-bg) 0%, var(--color-sky) 100%)",
@@ -151,8 +151,8 @@ export default function FaqSection() {
                         <span
                           className={`text-sm md:text-base font-bold leading-snug transition-colors ${
                             isOpen
-                              ? "text-blue-700 dark:text-blue-450"
-                              : "text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-450"
+                              ? "text-blue-700 dark:text-blue-400"
+                              : "text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"
                           }`}
                         >
                           {faq.q}

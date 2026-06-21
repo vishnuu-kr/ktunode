@@ -1,0 +1,123 @@
+{
+  "id": "pcert205-robotics-and-automation-s2",
+  "code": "PCERT205",
+  "name": "PCERT205",
+  "branchId": "robotics-and-automation",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Number Systems (Decimal, Binary, Octal, Hexadecimal) and Their Bases - Conversion Methods Between Decimal, Binary, Octal and Hexadecimal Number Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Arithmetic - Binary Addition, Binary Multiplication and Binary Division",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Addition of BCD, Octal and Hexadecimal Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Representing Negative Numbers - Signed Numbers and Complements, Subtraction with Complements (Binary, Octal and Hexadecimal)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Introduction to Alternative Coding Schemes - BCD, Gray Codes, and Excess-3 Codes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Introduction to Boolean Algebra - Postulates (Idempotence, Commutativity, Associativity, Distributive Property) and Basic Theorems (like De-Morgan's Theorem)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Minimization of Boolean Expressions - Canonical and Standard Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Karnaugh Map Minimization (up to four variables) and Don't-Care Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Digital Logic Gates - Implementation of Boolean Functions Using Combinations of Basic Logic Gates and Universal Gates",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Combinational and Arithmetic Circuits - Combinatorial Logic Systems, Data Encoders and Decoders, Data Selection and Distribution (Mux and Demux), Code Converters, Comparators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Arithmetic Circuits - Half and Full Adder, Half and Full Subtractor, Binary Parallel Adder, BCD Adder",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Sequential Circuits Fundamentals, Flip-Flops - SR, T and D, Conversion of Flip-Flops, Excitation Table and Characteristic Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Asynchronous (Binary and BCD Counters) and Synchronous Counter Design (Binary Up, Down and Up-Down Counter, BCD Counter, Timing Sequences and State Diagrams, Mod N Counter)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Shift Registers - SIPO, SISO, PISO, PIPO, Timing Sequences and State Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Shift Registers with Parallel Load/Shift, Ring Counter and Johnson Counter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

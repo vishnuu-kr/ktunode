@@ -1,0 +1,321 @@
+{
+  "id": "pcagt402-agriculture-engineering-s4",
+  "code": "PCAGT402",
+  "name": "PCAGT402",
+  "branchId": "agriculture-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Soil and Soil Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "History of Soil Mechanics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Soil as a 3 Phase System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Index Properties: Void Ratio - Specific Gravity - Dry Density - Porosity - Water Content - Saturated Unit Weight - Submerged Unit Weight - Degree of Saturation. Determination of Index Properties of Soils: Determination of Water Content by Oven Drying - Specific Gravity Using Pycnometer and Specific Gravity Bottle - Grain Size Analysis by Sieve Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Hydrometer Analysis and Pipette Analysis - Atterberg Limits and Indices - Visual Identification by Simple Field Tests - Field Density by Core Cutter and Sand Replacement Methods. Classification of Soils: Necessity - Principles of Classification - I.S. Classification - Plasticity Charts - Group Index",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Modes of Occurrence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Adsorbed and Capillary Water Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Total Stress - Effective Stress",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Pore Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Pressure Diagrams; Permeability: Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Darcy's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Factors Affecting Permeability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Laboratory Determination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Stratified Soils: Average Permeability. Compaction: Definition and Objectives of Compaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Standard and Modified Proctor Tests - Concept of OMC and Maximum Dry Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Zero Air Voids Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Factors Influencing Compaction - Effect of Compaction on Soil Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Field Compaction Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Proctor Needle for Field Control; Consolidation: Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Spring Analogy for Primary Consolidation - Terzaghi's Theory of One-Dimensional Consolidation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "Concepts of Coefficient of Compressibility - Coefficient of Volume Change and Compression Index",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Laboratory Consolidation Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "e-Log p Curves",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Stress Due to Self Weight",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Concentrated Load - Boussinesq Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Pressure Distribution Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Vertical Pressure Under a Uniformly Loaded Circular Area",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Shear Strength: Definition - Mohr's Strength and Stress Circles - Origin of Planes - Mohr's Envelope - Mohr-Coulomb Strength Theory - Direct Shear Test - Introduction to Triaxial Shear Test - Measurement of Pore Pressure - Total and Effective Stress Strength Parameters - UCC Test - Vane Shear Tests - Choice of Test Conditions for Field Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Lateral Earth Pressure: Earth Pressure at Rest - Active and Passive Earth Pressure for Cohesionless and Cohesive Soils - Rankine's and Coulomb's Theories - Point of Application of Earth Pressure for Cases With and Without Surcharge in Cohesionless and Cohesive Soils - Culmann's and Rebhan's Graphical Construction for Active Earth Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Stability of Slopes: Slope Failure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Base Failure and Toe Failure - Swedish Circle Method - φ = 0 Analysis and c = 0 Analysis - Friction Circle Method - Taylor's Stability Number - Stability Charts",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Definitions Related to Foundations and Bearing Capacity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Minimum Depth of Foundation - Rankine's Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Types of Bearing Capacity Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Effect of Water Table on Bearing Capacity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "IS Code Method for Computing Bearing Capacity; Shallow Foundations: Types of Foundations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Spread Footing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Safe Bearing Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Settlement of Footings; Pile Foundations: Types of Piles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Pile Driving",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Load Carrying Capacity of Piles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Dynamic Formulae",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Static Formulae",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Pile Load Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Penetration Tests; Well Foundations: Caissons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_15",
+          "title": "Shape of Wells and Component Parts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_16",
+          "title": "Depth of Well Foundation and Bearing Capacity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_17",
+          "title": "Forces Acting on a Well Foundation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

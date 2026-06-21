@@ -1,0 +1,165 @@
+{
+  "id": "pecst495-computer-science-and-design-s3",
+  "code": "PECST495",
+  "name": "PECST495",
+  "branchId": "computer-science-and-design",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Foundational Data Structures - Overview of Arrays and Linked Lists, Implementation of Pointers and Objects, Representing Rooted Trees, Hashing - Hash Tables, Hash Functions, Cuckoo Hashing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Bloom Filters - Count-Min Sketch, Applications to Networks - Click Stream Processing using Bloom Filters, Applications to Data Science - Heavy Hitters and Count-Min Structures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Advanced Tree Data Structures - Balanced Trees - AVL Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Red-Black Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Suffix Trees and Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Segment Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Heaps and Related Structures - Binomial Heap",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Fibonacci Heaps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Merkle Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Applications to Information Retrieval and WWW - AutoComplete using Tries",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Specialized Data Structures - Spatial Data Structures - Quadtree, K-D Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "R-trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Temporal Data Structures - Persistence, Retroactivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Search and Optimization Trees - Skip List, Tango Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Applications to Data Science - Approximate Nearest Neighbor Search, Applications to Information Retrieval and WWW, Posting List Intersection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Data Structure Applications - Distributed and Parallel Data Structures - Distributed Hash Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Consistent Hashing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Distributed BST",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Data Compression and Transformations - Burrows-Wheeler Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Histogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Wavelet Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Cryptographic Applications - Hashing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

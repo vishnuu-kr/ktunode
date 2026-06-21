@@ -1,0 +1,33 @@
+{
+  "id": "pceel408-electrical-and-electronics-engineering-s5",
+  "code": "PCEEL408",
+  "name": "PCEEL408",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 15",
+      "title": "Module Experiment 15",
+      "topics": [
+        {
+          "id": "tExperiment 15_1",
+          "title": "Three-phase induction motor drive using stator voltage control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 15_2",
+          "title": "Single phase unidirectional/bidirectional boost PWM rectifier with near unity power factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 15_3",
+          "title": "V/F control of three-phase induction motor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

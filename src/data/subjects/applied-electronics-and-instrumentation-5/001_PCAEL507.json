@@ -1,0 +1,99 @@
+{
+  "id": "pcael507-applied-electronics-and-instrumentation-s5",
+  "code": "PCAEL507",
+  "name": "PCAEL507",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Study of responses of P, PI and PID controllers on Level/Flow/Thermal/Pressure processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Study of responses of ON-OFF controller and ON-OFF controller with dead zone",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Controller tuning using continuous cycling method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Controller tuning using Process Reaction curve method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Characteristics of Linear, Equal percentage and Quick opening valves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Control of Stepper motor/Water level/Bottle filling plant using PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Experiment to determine non-linearity if any in a plant",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Data acquisition with ADC/DAC card and control applications using LabVIEW (Speed control/Temperature control)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Design and testing of a RTD based Temperature transmitter on a prototyping board",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Design and testing of an analog PID controller on a prototyping board",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "PC based control of robotic arm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Simulation study of feed-forward, cascade, and ratio control systems using MATLAB/SIMULINK",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "PID controller design using MATLAB/SIMULINK",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Simulation of PID controller using MATLAB/SIMULINK/LabVIEW",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "id": "pbcmt504-artificial-intelligence-and-machine-learning-s5",
+  "code": "PBCMT504",
+  "name": "PBCMT504",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Fundamentals in Computer Vision: Camera Calibration - Pinhole Camera Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Geometric Image Features - Curves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Surfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Analytical Image Features - Elements of Analytical Euclidean Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Geometric Camera Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Stereopsis - Binocular Camera Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Epipolar Constraint",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Binocular Reconstruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Local Methods for Binocular Fusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Global Methods for Binocular Fusion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Features and Filters: Linear Filters - Linear Filters and Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Shift Invariant Linear Systems - Estimating Derivatives with Finite Differences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Edges and Gradient-Based Edge Detectors - Image Gradients - Computing the Image Gradient",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Gradient Based Edge and Corner Detection - Filters as Templates - Normalized Correlation and Finding Patterns",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Machine Learning for Computer Vision: Machine Learning - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Dataset for Machine Perception - Labelled and Unlabelled Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Basics of Classification and Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Multi-Class Perspective (Recap) - Machine Learning for Computer Vision - Deep Learning Use Cases - Machine Learning Models for Vision - Image Vision - Pretrained Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Transfer Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Fine-Tuning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Convolutional Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Convolutional Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Stacking Convolutional Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Pooling Layers - AlexNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "VGG19",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Modular Architecture - ResNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Neural Architecture Search Design - NASNet",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Segmentation and Object Detection: Segmentation Using Clustering Methods - Human Vision - Grouping and Gestalt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Applications - Shot Boundary Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Background Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Image Segmentation by Clustering Pixels - Simple Clustering Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Clustering and Segmentation by K-Means - Object Detection - YOLO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Segmentation - Mask R-CNN and Instance Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "U-Net and Semantic Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Model Quality Metrics - A Case Study to Compare Performance of Various Models on a Suitable Dataset - Suggestion on Project Topics - Real Life Problems in the Domain of Computer Vision May Be Identified",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Solved and Implemented Using Different Algorithms - A Few Suggestions Are Given Below - Build a System Capable of Detecting and Classifying Objects (Like Pedestrians",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Vehicles, Traffic Signs) in Real-Time from Video Feeds in Autonomous Vehicles - You Can Explore Different Algorithms Like YOLO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "R-CNN etc. - Develop a Machine Learning Model to Automatically Detect and Classify Diseases from Medical Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Such as X-Rays, MRIs, or CT Scans - This Could Be Applied to Specific Conditions Like Detecting Tumors, Pneumonia, or Diabetic Retinopathy - Develop a Machine Learning Model That Utilizes Edge Detection and Linear Filtering Techniques to Enhance Object Detection and Recognition in Images",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "gxest104-computer-science-and-design-s1",
+  "code": "GXEST104",
+  "name": "GXEST104",
+  "branchId": "computer-science-and-design",
+  "semester": 1,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Current and Voltage Division Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Relative Potential, Capacitors and Inductors: V-I Relations and Energy Stored, Ohm's Law and Kirchhoff's Laws",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Star-Delta Conversion (Resistive Networks Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Analysis of DC Electric Circuits: Mesh Current Method, Matrix Representation, Solution of Network Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Node Voltage Methods: Matrix Representation, Solution of Network Equations by Matrix Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Elementary Concepts of Magnetic Circuits: MMF, Field Strength, Flux Density, Reluctance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Comparison Between Electric and Magnetic Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Series and Parallel Magnetic Circuits with Composite Materials",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Faraday's Laws, Lenz's Law: Statically Induced and Dynamically Induced EMF, Self-Inductance and Mutual Inductance, Coefficient of Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Alternating Current Fundamentals: Generation of Alternating Voltages, Representation of Sinusoidal Waveforms (Frequency, Period, Average Value, RMS Value, Form Factor)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "AC Circuits: Phasor Representation of Sinusoidal Quantities, Trigonometric, Rectangular, Polar and Complex Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Analysis of Simple AC Circuits: Purely Resistive, Inductive and Capacitive Circuits, Inductive and Capacitive Reactance, Concept of Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "RL, RC and RLC Series Circuits: Power Factor, Active, Reactive and Apparent Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Three Phase AC Systems: Generation of Three Phase Voltages, Advantages of Three Phase Systems, Star and Delta Connections (Balanced Only), Relation Between Line and Phase Voltages, Line and Phase Currents",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Passive and Active Components in Electronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Working of PN Junction Diode, V-I Characteristics of PN Junction Diode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Zener Diode and Avalanche Breakdown, Basics of Zener Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Block Diagram of DC Power Supply, Circuit and Working of Half Wave, Full Wave and Bridge Rectifiers, Ripple Factor (With and Without Capacitor Filters)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Construction, Working and V-I Characteristics of BJT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Input Output Characteristics of CE Configuration, Comparison of CE, CB and CC Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Concept of Biasing and Load Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Transistor as a Switch, Transistor as an Amplifier (Circuit Diagram and Working)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "RC Coupled Amplifier: Circuit Diagram and Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Introduction to FET, Construction and Working of N-Channel and P-Channel MOSFETs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "General Block Diagram of a Communication System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Block Diagram of Fiber Optic Communication System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Concept of AM and FM (No Derivation Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Block Diagram of AM and FM Super-Heterodyne Receiver",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Basic Concepts of Wired and Wireless Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Block Diagram of GSM, Comparison of 3G, 5G and 6G Communication Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Block Diagrams of Electronic Instrumentation System, Digital Multimeter, Function Generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Introduction to CRO and Lissajous Patterns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Applications of Modern Electronics: IoT Based Smart Homes, Healthcare and Agriculture (Case Study Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

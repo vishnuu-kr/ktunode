@@ -1,0 +1,615 @@
+{
+  "id": "peait415-artificial-intelligence-s3",
+  "code": "PEAIT415",
+  "name": "PEAIT415",
+  "branchId": "artificial-intelligence",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Robotic Process Automation - History of Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "What is RPA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "RPA vs Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Processes and Flowcharts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Programming Constructs in RPA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "What Processes Can Be Automated",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Types of Bots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Workloads Which Can Be Automated - RPA Advanced Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Standardization of Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "RPA Development Methodologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Difference from SDLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Robotic Control Flow Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_13",
+          "title": "RPA Business Case",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_14",
+          "title": "RPA Team",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_15",
+          "title": "Process Design Document/Solution Design Document",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_16",
+          "title": "Industries Best Suited for RPA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_17",
+          "title": "Risks and Challenges with RPA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_18",
+          "title": "RPA and Emerging Ecosystem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "The User Interface - Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Managing Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Naming Best Practices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "The Variables Panel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Generic Value Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Text Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "True or False Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Number Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Array Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Date and Time Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Data Table Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Managing Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Naming Best Practices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "The Arguments Panel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Using Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "About Imported Namespaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Importing New Namespaces - Control Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "Control Flow Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_19",
+          "title": "If Else Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_20",
+          "title": "Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_21",
+          "title": "Advanced Control Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_22",
+          "title": "Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_23",
+          "title": "Flowcharts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_24",
+          "title": "About Control Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_25",
+          "title": "Control Flow Activities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_26",
+          "title": "The Assign Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_27",
+          "title": "The Delay Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_28",
+          "title": "The Do While Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_29",
+          "title": "The If Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_30",
+          "title": "The Switch Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_31",
+          "title": "The While Activity - The For Each Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_32",
+          "title": "The Break Activity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_33",
+          "title": "Data Manipulation Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_34",
+          "title": "Scalar Variables, Collections and Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_35",
+          "title": "Text Manipulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_36",
+          "title": "Data Manipulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_37",
+          "title": "Gathering and Assembling Data",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Recording Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Basic and Desktop Recording",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Web Recording",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Input/Output Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Screen Scraping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Data Scraping - Scraping Advanced Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Selectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Defining and Assessing Selectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Customization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Debugging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Dynamic Selectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Partial Selectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "RPA Challenge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Image, Text and Advanced Citrix Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Introduction to Image and Text Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Image Based Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Keyboard Based Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Information Retrieval - Advanced Citrix Automation Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Best Practices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_20",
+          "title": "Using Tab for Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_21",
+          "title": "Starting Apps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_22",
+          "title": "Excel Data Tables and PDF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_23",
+          "title": "Data Tables in RPA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_24",
+          "title": "Excel and Data Table Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_25",
+          "title": "Data Manipulation in Excel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_26",
+          "title": "Extracting Data from PDF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_27",
+          "title": "Extracting a Single Piece of Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_28",
+          "title": "Anchors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_29",
+          "title": "Using Anchors in PDF",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "What are Assistant Bots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Monitoring System Event Triggers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Hotkey Trigger - Mouse Trigger",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "System Trigger",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Monitoring Image and Element Triggers - Deploying and Maintaining the Bot - Publishing Using Publish Utility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Creation of Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Using Server to Control the Bots - Creating a Provision Robot from the Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Connecting a Robot to Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Deploy the Robot to Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Publishing and Managing Updates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Managing Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Uploading Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Deleting Packages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "pcrat602-robotics-and-artificial-intelligence-s6",
+  "code": "PCRAT602",
+  "name": "PCRAT602",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Fundamentals of Image Formation, Transformation: Orthogonal, Euclidean, Affine, Projective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Fourier Transform, Convolution and Filtering, Image Enhancement, Restoration, Histogram Processing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Perspective, Binocular Stereopsis: Camera and Epipolar Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Homography, Rectification, DLT, RANSAC, 3D Reconstruction Framework",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Auto-Calibration",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Edges - Canny, LOG, DOG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Line Detectors (Hough Transform), Corners - Harris and Hessian Affine, Orientation Histogram, SIFT, SURF, HOG, GLOH",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Scale-Space Analysis - Image Pyramids and Gaussian Derivative Filters, Gabor Filters and DWT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Region Growing, Edge-Based Approaches to Segmentation, Graph-Cut, Mean-Shift, MRFs, Texture Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Object Detection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

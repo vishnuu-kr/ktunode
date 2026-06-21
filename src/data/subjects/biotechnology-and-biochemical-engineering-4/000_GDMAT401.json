@@ -1,0 +1,141 @@
+{
+  "id": "gdmat401-biotechnology-and-biochemical-engineering-s4",
+  "code": "GDMAT401",
+  "name": "GDMAT401",
+  "branchId": "biotechnology-and-biochemical-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Population and Sample",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "The Sample Mean",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Population Mean and Variance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "The Central Limit Theorem - Distribution of Sum of Random Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Approximate Distribution of the Sample Mean",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Sample Variance and Sample Standard Deviation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Interval Estimation of Population Mean - Two Sided Confidence Interval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "One-Sided Lower and Upper Confidence Intervals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Confidence Interval for the Mean when the Variance is Unknown",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Confidence Intervals for the Variance of a Normal Distribution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Hypothesis Testing: Significance Levels, Null Hypothesis, Critical Region, Type I and Type II Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Testing of Mean of a Normal Population - Case of Known Variance, One Sided Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Testing of Mean of a Normal Population - Case of Unknown Variance, One Sided t-Test",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "The Method of Least Squares - Regression Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Multiple Regression (for Two Independent Variables Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Analysis of Variance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Completely Randomized Design (One-Way ANOVA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Randomized-Block Design (Two-Way ANOVA)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

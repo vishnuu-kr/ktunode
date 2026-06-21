@@ -1,0 +1,267 @@
+{
+  "id": "pcecl508-electronics-and-communication-engineering-s6",
+  "code": "PCECL508",
+  "name": "PCECL508",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mExperiments",
+      "title": "Module Experiments",
+      "topics": [
+        {
+          "id": "tExperiments_1",
+          "title": "Familiarization with Software Defined Radio (Hardware and Control Software)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiments_2",
+          "title": "FM Reception Using SDR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiments_3",
+          "title": "FM Transmission Using SDR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiments_4",
+          "title": "Performance of Waveform Coding Using PCM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiments_5",
+          "title": "Pulse Shaping and Matched Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiments_6",
+          "title": "Eye Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiments_7",
+          "title": "Error Performance of BPSK",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiments_8",
+          "title": "Error Performance of QPSK",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 1: Information Theory and Source Coding",
+      "title": "Module Module 1: Information Theory and Source Coding",
+      "topics": [
+        {
+          "id": "tModule 1: Information Theory and Source Coding_1",
+          "title": "Entropy: Properties of Entropy, Joint and Conditional Entropy, Mutual Information",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1: Information Theory and Source Coding_2",
+          "title": "Discrete Memoryless Sources, Source Code, and Average Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1: Information Theory and Source Coding_3",
+          "title": "Bounds on Average Length, Uniquely Decodable and Prefix-Free Source Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1: Information Theory and Source Coding_4",
+          "title": "Kraft Inequality and Shannon's Source Coding Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1: Information Theory and Source Coding_5",
+          "title": "Huffman Code and Operational Meaning of Entropy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1: Information Theory and Source Coding_6",
+          "title": "Channel Capacity of Discrete Memoryless Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1: Information Theory and Source Coding_7",
+          "title": "Binary Symmetric Channels (BSC) and Binary Erasure Channels (BEC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1: Information Theory and Source Coding_8",
+          "title": "Capacity of BSC and BEC, Shannon's Channel Coding Theorem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2: Channel Capacity and Coding",
+      "title": "Module Module 2: Channel Capacity and Coding",
+      "topics": [
+        {
+          "id": "tModule 2: Channel Capacity and Coding_1",
+          "title": "Channel Capacity of AWGN Channel: Differential Entropy and Shannon-Hartley Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2: Channel Capacity and Coding_2",
+          "title": "Shannon Limit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2: Channel Capacity and Coding_3",
+          "title": "Block Codes: Error Detecting and Correcting Capability, Linear Block Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2: Channel Capacity and Coding_4",
+          "title": "Generator and Parity-Check Matrices, Encoding Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2: Channel Capacity and Coding_5",
+          "title": "Maximum Likelihood Decoding of Linear Block Codes, Syndrome and Standard Array Decoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2: Channel Capacity and Coding_6",
+          "title": "Convolutional Codes: State Diagram, Trellis Diagram, and Maximum Likelihood Decoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2: Channel Capacity and Coding_7",
+          "title": "Viterbi Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3: Wireless Communication Systems",
+      "title": "Module Module 3: Wireless Communication Systems",
+      "topics": [
+        {
+          "id": "tModule 3: Wireless Communication Systems_1",
+          "title": "Introduction to Wireless Communication: Evolution and Paging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3: Wireless Communication Systems_2",
+          "title": "Wireless LAN, Bluetooth, Zig-Bee, and Personal Area Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3: Wireless Communication Systems_3",
+          "title": "Broadband Wireless Access: WiMax Technology and Wireless Spectrum Allocation Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3: Wireless Communication Systems_4",
+          "title": "Cellular System Design Fundamentals: Frequency Reuse and Channel Assignment Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3: Wireless Communication Systems_5",
+          "title": "Handoff Strategies, Interference, and System Capacity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3: Wireless Communication Systems_6",
+          "title": "Trunking and Grade of Service, Improving Coverage and Capacity: Cell Splitting, Sectoring, Microcells",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3: Wireless Communication Systems_7",
+          "title": "Multiple Access Techniques: FDMA, TDMA, CDMA, and OFDMA",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4: Wireless Channels and Receiver Techniques",
+      "title": "Module Module 4: Wireless Channels and Receiver Techniques",
+      "topics": [
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_1",
+          "title": "Path Loss and Shadowing: Free Space Path Loss and Two-Ray Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_2",
+          "title": "Statistical Multipath Channel Models: Time-Varying Channel Impulse Response, Narrowband and Wideband Fading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_3",
+          "title": "Delay Spread, Coherence Bandwidth, Doppler Spread, and Coherence Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_4",
+          "title": "Flat Fading versus Frequency Selective Fading, Slow Fading versus Fast Fading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_5",
+          "title": "Multi-carrier Modulation: Data Transmission for Frequency-Selective Fading Channels, Overlapping Subchannels, Mitigation of Subcarrier Fading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_6",
+          "title": "Discrete Implementation of Multicarrier Modulation: OFDM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_7",
+          "title": "Diversity: Receiver Diversity (Selection Combining and Maximal Ratio Combining) and Transmitter Diversity (Alamouti Scheme for 2x2 MIMO)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4: Wireless Channels and Receiver Techniques_8",
+          "title": "Equalization: Linear and Non-Linear Equalizers, MMSE Equalizers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

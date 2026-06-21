@@ -1,0 +1,81 @@
+{
+  "id": "pecst521-computer-science-and-engineering-s5",
+  "code": "PECST521",
+  "name": "PECST521",
+  "branchId": "computer-science-and-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Project Scheduling and Feasibility Study: Project Overview and Feasibility Studies, Identification, Market and Demand Analysis, Project Cost Estimate, Financial Appraisal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Project Scheduling: Introduction to PERT and CPM, Critical Path Calculation, Precedence Relationship, Difference Between PERT and CPM, Float Calculation and Its Importance, Cost Reduction by Crashing of Activity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Resource Scheduling, Cost Control and Scheduling: Project Cost Control (PERT/Cost), Resource Scheduling and Resource Levelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Project Management Features: Risk Analysis, Project Control, Project Audit, and Project Termination",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Agile Project Management: Introduction, Agile Principles, Agile Methodologies, Relationship Between Agile Scrum, Lean, DevOps and IT Service Management (ITIL)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Other Agile Methodologies: Introduction to XP, FDD, DSDM, Crystal",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Scrum and DevOps in Project Management: Scrum, Various Terminologies Used in Scrum (Sprint, Product Backlog, Sprint Backlog, Sprint Review, Retro Perspective), Various Roles (Roles in Scrum), Best Practices of Scrum, Case Study",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "DevOps: Overview and Its Components, Containerization Using Docker, Managing Source Code and Automating Builds, Automated Testing and Test-Driven Development, Continuous Integration, Configuration Management, Continuous Deployment, Automated Monitoring, Case Study",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

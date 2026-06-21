@@ -1,0 +1,141 @@
+{
+  "id": "pceel307-electrical-and-electronics-engineering-s3",
+  "code": "PCEEL307",
+  "name": "PCEEL307",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Verification of Superposition theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Verification of Thevenin's theorem and Maximum Power Transfer theorem; Calculation of Norton's equivalent circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Determination of impedance, admittance, and power factor in RLC series/parallel circuit and study the effect of reactive components on power factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Measurement of two port network parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Step response of RLC circuit (suggested to use DSO)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "3-phase power measurement using one-wattmeter and two-wattmeter methods and determination of reactive/apparent power drawn",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Resistance measurement using Wheatstone's bridge and extension of range of voltmeters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Extension of instrument range using instrument transformers (CT and PT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Calibration of 1-phase Energy meter at various power factors and phantom loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Calibration of 3-phase Energy meter using standard wattmeter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Determination of B-H curve, μ-H curve, and μ-B curve of a magnetic specimen",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Measurement of self inductance, mutual inductance, and coupling coefficient of a 1-phase transformer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Measurement of capacitance, inductance, and frequency using AC bridges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Determination of characteristics of thermal sensors: thermistor, thermocouple, and RTD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Determination of P-V characteristics of solar PV array and determination of fill factor (study of partial shading may be included)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_16",
+          "title": "Determination of insulation resistance and earth resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_17",
+          "title": "Calibration of meters (ammeter/voltmeter) using potentiometers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_18",
+          "title": "Determination of characteristics of transducers: LVDT, strain gauge, and load-cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_19",
+          "title": "Simulation of circuits using software platforms like PSpice/LT spice/MATLAB/Multisim",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_20",
+          "title": "Implementation of IoT-based data acquisition system",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_21",
+          "title": "Demo experiments: measurement of energy using TOD meter/digital meters/bidirectional meter; measurement of electrical variables and frequency using CRO and DSO; harmonic analysers; instrumentation systems for gas/fire/smoke detection systems; virtual instrumentation experiments using LABVIEW",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

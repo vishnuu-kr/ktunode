@@ -1,0 +1,39 @@
+{
+  "id": "pcevl508-electronics-engineering-vlsi-design-and-technology-s5",
+  "code": "PCEVL508",
+  "name": "PCEVL508",
+  "branchId": "electronics-engineering-vlsi-design-and-technology",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Realize an asynchronous BCD counter in VHDL and implement on FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Realize a 4-bit Gray to Binary in VHDL and implement on FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Realize the flip-flops D, JK and T in VHDL and implement on FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Realize in VHDL a 4-bit ALU that performs basic arithmetic (addition, subtraction) and logic (and, xor) operations on 4-bit inputs and implement on FPGA. Understand the synthesis reports and perform timing and power analysis.",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

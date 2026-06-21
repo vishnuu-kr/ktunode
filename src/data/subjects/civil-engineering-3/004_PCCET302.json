@@ -1,0 +1,273 @@
+{
+  "id": "pccet302-civil-engineering-s3",
+  "code": "PCCET302",
+  "name": "PCCET302",
+  "branchId": "civil-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Fluid Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Pascal's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Hydrostatic Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Measurement of Fluid Pressure using Manometers – Simple Manometer (Piezometer and U Tube Manometers) and Differential Manometers (U Tube Differential Manometer and Inverted U Tube Differential Manometer) (Include Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Mechanical Gauges (Brief Description Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Vertical Plane Surface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Horizontal Plane Surface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Inclined Plane Surface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Curved Surfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Buoyancy and Floatation: Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Centre of Buoyancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Meta-centre and Meta-centric Height of Floating Bodies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Determination of Meta-centric Height using Analytical and Experimental Method (Include Derivation and Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Conditions for Stability of Floating and Submerged Bodies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Methods of Describing Fluid Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Lagrangian and Eulerian Methods; Types of Fluid Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Continuity Equation in One, Two and Three Dimensions (Include Derivation and Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Determination of Velocity and Acceleration at a Point in Fluid Flow (Include Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Description of Streamline",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Pathline and Streakline",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Velocity Potential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Stream Function and Flow Net",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Fluid Dynamics: Forces in Fluid Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Derivation of Bernoulli's Equation from Euler's Equation of Motion with Assumptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Practical Applications of Bernoulli's Equation – Venturimeter, Orifice Meter and Pitot Tube (Include Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Momentum Equations and Forces on Pipe Bends",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Flow through Orifices: Hydraulic Coefficients and Experimental Determination of Hydraulic Coefficients (Associated Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Discharge through Large Orifices – Rectangular Orifice (Discharging Freely, Fully Submerged and Partially Submerged)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Time of Emptying of a Rectangular Tank through an Orifice at its Bottom (Include Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Pipe Flow – Computation of Major Losses in Pipes (Derivation of Darcy Weisbach Equation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Computation of Minor Losses in Pipes (Equations Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Hydraulic Gradient Line and Total Energy Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Pipes in Series and Parallel – Equivalent Pipes (Include Numerical Problems from all Sections)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Flow in Open Channel: Comparison between Pipe Flow and Open Channel Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Classification of Flow in Open Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "Flow through Notches and Weirs: Classification of Notches and Weirs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Discharge over a Rectangular Notch/Weir",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Discharge over a Triangular Notch/Weir",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Discharge over a Trapezoidal Notch/Weir",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Velocity of Approach and End Contraction (Include Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

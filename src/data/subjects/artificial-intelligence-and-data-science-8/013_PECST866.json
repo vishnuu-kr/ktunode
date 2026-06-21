@@ -1,0 +1,177 @@
+{
+  "id": "pecst866-artificial-intelligence-and-data-science-s8",
+  "code": "PECST866",
+  "name": "PECST866",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Speech Production - Acoustic Theory of Speech Production",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Source/Filter Model - Pitch, Formant",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Spectrogram - Wide and Narrow Band Spectrogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Discrete Model for Speech Production",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Short-Time Speech Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Windowing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "STFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Time Domain Parameters - Short Time Energy, Short Time Zero Crossing Rate, ACF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Frequency Domain Parameters - Filter Bank Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "STFT Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Mel-Frequency Cepstral Coefficient (MFCC) - Computation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Pitch Estimation - ACF/AMDF Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Cepstral Analysis - Pitch and Formant Estimation Using Cepstral Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "LPC Analysis - LPC Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Autocorrelation Method - Levinson-Durbin Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Speech Enhancement - Spectral Subtraction and Filtering, Harmonic Filtering, Parametric Resynthesis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Speech Coding - Fundamentals, Class of Coders: Time Domain/Spectral Domain/Vocoders, Sub-Band Coding, Adaptive Transform Coding, Phase Vocoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Speaker Recognition - Speaker Verification and Speaker Identification, Log-Likelihood",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Language Identification - Implicit and Explicit Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Machine Learning Models in Speaker Recognition",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Signal Processing Models of Audio Perception - Basic Anatomy of Hearing System, Basilar Membrane Behaviour",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Sound Perception - Auditory Filter Banks, Critical Band Structure, Absolute Threshold of Hearing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Masking - Simultaneous Masking, Temporal Masking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Models of Speech Perception",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "pccpt501-computer-science-and-engineering-cyber-security-s5",
+  "code": "PCCPT501",
+  "name": "PCCPT501",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Control System - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Open Loop vs Closed Loop Control Systems - Components of a Typical Control System - Necessity of a Control System in a Robot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Bird's Eye View of Typical Actuators in Robot Control Systems - Hydraulic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Pneumatic and Electric Actuators - Overview of Basic Types - DC Motors for Speed Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "DC and AC Servo Motors for Position Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Brushless DC Motors for Speed Control of Quadcopters and Linear Actuation Mechanisms. Basic Idea of Feedbacks in Robotic Systems - Sensors - e.g., Linear and Rotary Encoders. Linear Time Invariant Systems - Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Necessity of Knowing the Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Modelling - Mechanical and Electromechanical Systems - Block Diagram Representation - Block Diagram Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Characteristic Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Signal Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Overview of Mason's Gain Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Transient and Steady State Responses - Time Domain Specifications - First and Second Order Systems - Step Responses of First and Second Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Steady State Error Analysis - Static Error Coefficient of Type 0",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Type 2 Systems - Dynamic Error Coefficients. Concept of Stability: Time Response for Various Pole Locations - Stability of Feedback System - Routh's Stability Criterion. Root Locus - General Rules for Constructing Root Loci - Stability from Root Loci - Effect of Addition of Poles and Zeros",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Frequency Domain Specifications - Analysis Based on Bode Plot - Log Magnitude vs. Phase Plot. Design of P",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "PI and PID Controller Using Ziegler-Nichols Tuning Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Overview - Necessity of Using Lag",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Lead and Lag-Lead Compensators in Control Systems. State Space Analysis of Systems: Introduction to State Concept - State Equation of Linear Continuous Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Matrix Representation of State Equations. Phase Variable and Canonical Forms of State Representation - Controllable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Observable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Diagonal and Jordan Canonical Forms - Solution of Time Invariant Autonomous Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Characteristics of Nonlinear Systems. Types of Nonlinearities. Determination of Describing Function of Nonlinearities (Relay, Dead Zone and Saturation Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Application of Describing Function for Stability Analysis of Autonomous System with Single Nonlinearity. Singular Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Classification of Singular Points. Definition of Stability - Asymptotic Stability and Instability, Overview of Lyapunov Methods to Stability of Linear and Nonlinear Continuous Time Systems. Case Study - Kinematic Modelling of a Differential Drive Robot and Controlling the Same to Move to a Point",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

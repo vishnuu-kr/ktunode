@@ -1,0 +1,87 @@
+{
+  "id": "peadt862-artificial-intelligence-and-data-science-s8",
+  "code": "PEADT862",
+  "name": "PEADT862",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction: Optimization Techniques - Introduction to Optimization Problems, Single and Multi-objective Optimization, Classical Techniques, Overview of Various Optimization Methods, Evolutionary Computing. Genetic Algorithm and Genetic Programming - Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Bio-inspired Computing (BIC) - Motivation, Overview of BIC, Usage of BIC, Merits and Demerits of BIC",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Swarm Intelligence - Biological Foundations of Swarm Intelligence, Swarm Intelligence in Optimization. Ant Colonies - Ant Foraging Behaviour, Towards Artificial Ants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Ant Colony Optimization (ACO) - S-ACO, Ant Colony Optimization Metaheuristic, Combinatorial Optimization, ACO Metaheuristic Problem Solving using ACO, Local Search Methods, Scope of ACO Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Swarm Robotics - Foraging for Food, Clustering of Objects, Collective Prey Retrieval, Scope of Swarm Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Social Adaptation of Knowledge - Particle Swarm, Particle Swarm Optimization (PSO), Particle Swarms for Dynamic Optimization Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Artificial Bee Colony (ABC) Optimization, Biologically Inspired Algorithms in Engineering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Other Swarm Intelligence Algorithms - Fish Swarm, Bacteria Foraging, Intelligent Water Drop Algorithms, Applications of Biologically Inspired Algorithms in Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Case Studies - ACO and PSO for NP-Hard Problems, Routing Problems, Assignment Problems, Scheduling Problems, Subset Problems, Machine Learning Problems, Travelling Salesman Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

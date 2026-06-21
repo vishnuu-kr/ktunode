@@ -1,0 +1,93 @@
+{
+  "id": "peeet752-electrical-and-electronics-engineering-s7",
+  "code": "PEEET752",
+  "name": "PEEET752",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Basic Characteristics of Nonlinear Systems, Examples, State-Space Representation of Nonlinear Systems, Classification of Nonlinearities, Phase Plane Analysis: Concept of Phase Plane and Singular Points, Definition of Stability - Asymptotic Stability and Instability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Construction Using Isocline Method and Classification of Equilibrium Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Systems with Multiple Equilibria and Periodic Orbits (Limit Cycles)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Lyapunov's Direct Method - Definite Functions and Stability Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Variable Gradient Method, La-Salle Theorems, Stability of Linear Systems, Lyapunov Equation for Time-Invariant Systems, Lyapunov's Linearization (Indirect) Method, Region of Attraction (Concept Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Describing Function Method: Analysis Through Harmonic Linearization, Determination of Describing Function of Nonlinearities, Application of Describing Function for Stability Analysis of Autonomous System with Single Nonlinearity (Relay, Dead Zone and Saturation Only), Feedback Stabilisation, Kalman-Yakubovitch-Popov Lemma (Concept Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Stability Analysis of Feedback Systems and Circle Criterion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Lie Derivatives and Lie Brackets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Feedback Linearization, Input-State Linearization and Input-Output Linearization of SISO Systems, Design via Linearization, Regulation via Integral Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Gain Scheduling, Tracking, Concepts of Other Nonlinear Controllers - Sliding Mode and Backstepping",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

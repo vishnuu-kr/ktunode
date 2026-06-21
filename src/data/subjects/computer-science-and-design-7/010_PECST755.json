@@ -1,0 +1,105 @@
+{
+  "id": "pecst755-computer-science-and-design-s7",
+  "code": "PECST755",
+  "name": "PECST755",
+  "branchId": "computer-science-and-design",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction: Why IoT, Trends in IT Space, Internet of Things Era, Device-to-Device/Machine-to-Machine Integration, Device-to-Cloud (D2C) Integration, IoT Platform as a Service (PaaS), Cloud-to-Cloud (C2C) Integration, IoT Key Application Domains, Emerging IoT Flavors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "IoT Ecosystem: Architecture for IoT, Mobile Technologies, Mobile Application Development Platforms, LPWAN",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Infrastructure and Service Discovery Protocols: Layered Architecture for IoT, Protocol Architecture of IoT, Infrastructure Protocols, Device or Service Discovery for IoT, Protocols & Products for IoT Service Discovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Integration Technologies and Tools: Smart Enterprises and Environments, Sensor and Actuator Networks, The IoT Device Integration Concepts, Standards, and Implementations, The Device Integration Protocols and Middleware, The Protocol Landscape",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Platforms for IoT Applications and Analytics: The IoT Building Blocks, Use Cases, M2M Application Platform, IoT Architectural Building Blocks, Data Analytics Platforms, IoT Data Virtualization Platforms and Capabilities, The IoT Edge Data Analytics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Clouds for IoT Applications and Analytics: Reflecting the Cloud Journey, The Key Motivations for Cloud-Enabled Environments, IoT and Cloud-Inspired Smarter Environments, Hybrid, Federated, and Special-Purpose Cloud, The Emergence of Edge/Fog Clouds, SDN and SDS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Introduction to Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Creating Your First Project",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Creating a Sensor to Measure Ambient Light",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Creating an Actuator for Controlling Illumination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Publishing Information Using MQTT & HTTP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Creating Web Pages for Your Devices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

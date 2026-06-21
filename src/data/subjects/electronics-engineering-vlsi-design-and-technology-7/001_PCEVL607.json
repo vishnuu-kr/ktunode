@@ -1,0 +1,105 @@
+{
+  "id": "pcevl607-electronics-engineering-vlsi-design-and-technology-s7",
+  "code": "PCEVL607",
+  "name": "PCEVL607",
+  "branchId": "electronics-engineering-vlsi-design-and-technology",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Study the Transfer Characteristics of a MOSFET (n-MOS and p-MOS) and Determine the Threshold Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Study the Output Characteristics of a MOSFET (n-MOS, p-MOS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Study the Effect of Substrate Potential on the Threshold Voltage and I-V Characteristics of a MOSFET",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Design a CS Amplifier with Resistive Load and Triode Load. Perform Transient and AC Analyses, Plot the Frequency Response, and Obtain the Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Design a CS Amplifier with Diode-Connected Load and Constant Current Source Load. Perform Transient and AC Analysis, Plot the Frequency Response, and Obtain the Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Design a Common Drain Amplifier and Perform AC Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Design a Common Gate Amplifier for a Specified Current Gain and Perform AC Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Design a RC Coupled Amplifier Using MOSFET and Perform AC Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "Design a Current Mirror with Passive and Active Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "Design a Cascode Current Mirror with Active and Passive Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Design a Differential Amplifier for a Specified Gain and Perform Transient Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Perform the Layout Design of a Common Source Amplifier and Check DRC and LVS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "A/D Converters - 3-bit Flash ADC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "D/A Converter - 3-bit Ladder Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Study of PLL: Free Running Frequency, Lock Range, and Capture Range",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

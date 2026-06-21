@@ -1,0 +1,141 @@
+{
+  "id": "pbict404-instrumentation-and-control-s4",
+  "code": "PBICT404",
+  "name": "PBICT404",
+  "branchId": "instrumentation-and-control",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Integrated Circuit Fabrication Process: Brief overview of integrated circuit fabrication technology, Silicon wafer preparation, Epitaxial Growth, Oxidation, Photolithography, Diffusion, Ion Implantation, Isolation techniques, Metallization and packaging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Operational Amplifiers: Introduction of op amps, Block level diagram of op amp, Basic information of op amp (741 op amp)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Characteristics of Operational Amplifiers: Ideal op amp characteristics, DC characteristics, Input bias current, Input offset current, Input offset voltage, Thermal drift, CMRR, PSRR, AC characteristics, Frequency response, Stability of op amp, Slew rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Applications of Operational Amplifiers: Basic applications, Inverting amplifier, Non-inverting amplifier, Differential amplifier, Scale changer, Summing amplifier, Subtractor, Adder, Voltage follower, V-I converter (grounded load type and floating load type), Howland constant current circuit and I-V converter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Instrumentation amplifier (3 op amp design), Op amp integrator, Op amp differentiator, Op amp circuit using diodes, Rectifier (half and full wave), Peak detector, Sample and hold circuit, Log and antilog amplifier, Multiplier and divider",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Comparator: Inverting and non-inverting type, Applications of comparator, Zero crossing detector, Window detector, Time marker generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Waveform Generators and Oscillators using Operational Amplifier: Schmitt trigger, Astable multivibrator, Monostable multivibrator, Triangular waveform generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Oscillator: Introduction, Block level diagram, RC phase shift oscillator, Wien Bridge Oscillator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Filters: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "LPF: First order filter, Second order filter (Sallen-Key Butterworth), Higher order filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "HPF: First order filter, Second order filter (Sallen-Key Butterworth), Higher order filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "BPF: Wide BPF, Narrow band pass filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "BRF: Wide BRF, Narrow BRF (Twin T Notch design)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "All pass filter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Analog to Digital Converter and Digital to Analog Converter: DAC, Weighted resistor type DAC, R-2R DAC, ADC, Direct type, Flash type, Counter type, Servo type, Successive approximation type, Integrating type ADC, Dual slope type, Specifications of DAC and ADC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Voltage Regulator: Introduction, Series op amp regulator, IC regulators, 78XX and 79XX characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "555 Timer: Introduction, Functional diagram, Monostable operation and its applications, Astable operation and its applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Voltage Controlled Oscillator and PLL (basic principle only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

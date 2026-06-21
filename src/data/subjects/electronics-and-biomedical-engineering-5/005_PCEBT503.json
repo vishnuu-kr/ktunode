@@ -1,0 +1,177 @@
+{
+  "id": "pcebt503-electronics-and-biomedical-engineering-s5",
+  "code": "PCEBT503",
+  "name": "PCEBT503",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Cardiac Pacemakers: Different Modes of Operation, External and Implantable Pacemakers; Defibrillators: AC and DC Defibrillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Cardioverter Defibrillator - Basic Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Implantable Defibrillator and Automated External Defibrillator (AED) - Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Catheterization - IABP, Stents, Functional Block Diagram",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Ventilators - Block Diagram, Ventilator Settings, Types of Ventilators (Pressure, Volume, Time Controlled, Flow, Patient Cycle Ventilators), Modes of Ventilation: Non-Invasive (CPAP, BiPAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Invasive Modes - Controlled, Assisted, SIMV, APRV, Pressure Support",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Flow Sensors and FiO2 Sensor; Anesthetic Machines - Block Diagram and Working, Gas Blending and Vaporizers, Anesthesia Delivery System, Breathing Circuit, Computer Aided Anesthesia Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Dialysis Machine - Haemodialysis Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Dialysis Machine - Block Diagram and Working; Heart Lung Machine (HLM) - Principle of Operation, Functional Block Diagram, Types of Oxygenators; Extracorporeal Membrane Oxygenation (ECMO) Machine; Lithotripsy - Concept of Lithotripter Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Extracorporeal Shock Wave Lithotripsy (ESWL); Drug Delivery Systems - Different Approaches for Drug Delivery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Drug Infusion Devices - Gravity Drip Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Infusion Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Syringe Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "Implantable Pumps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Patient Controlled Analgesia (PCA) Pumps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Elastomeric Infusers; Recent Developments in Drug Infusion Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Surgical Diathermy - Short-Wave Diathermy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Ultrasonic Therapy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Interferential Current Therapy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Neuro Drills",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Neuro Navigation Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Intra Operative Nerve Monitors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Deep Brain Simulators; Transcutaneous Electrical Nerve Stimulation (TENS) - Applications; Transcranial Magnetic Stimulation (TMS) - Applications; Endoscopy - Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Endoscopy - Different Types and Applications, Block Diagram of a Fibre Optic Endoscope with Integral TV Cameras; Cryo-Surgery Techniques and Application",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

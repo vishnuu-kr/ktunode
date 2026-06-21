@@ -1,0 +1,183 @@
+{
+  "id": "pbcit304-computer-science-and-engineering-s3",
+  "code": "PBCIT304",
+  "name": "PBCIT304",
+  "branchId": "computer-science-and-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Basic Structure of Computers - Functional Units - Basic Operational Concepts - Bus Structures, Memory Locations and Addresses - Memory Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Instructions and Instruction Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Addressing Modes, Basic Processing Unit - Fundamental Concepts - Instruction Cycle - Execution of a Complete Instruction - Single Bus and Multiple Bus Organization, Register Transfer Logic: Inter Register Transfer - Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Logic and Shift Micro Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Processor Logic Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Processor Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Arithmetic Logic Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Design of Arithmetic Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Design of Logic Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Design of Arithmetic Logic Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "Status Register",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Design of Shifter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Processor Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Design of Accumulator, Arithmetic Algorithms: Algorithms for Multiplication and Division (Restoring Method) of Binary Numbers, Array Multiplier, Booth's Multiplication Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Basic Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Classification of Pipeline Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Instruction and Arithmetic Pipelines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Hazard Detection and Resolution, I/O Organization: Accessing of I/O Devices - Interrupts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Interrupt Hardware - Direct Memory Access, Control Logic Design: Control Organization - Hardwired Control - Micro Program Control - Control of Processor Unit - Micro Program Sequencer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Micro Programmed CPU Organization - Horizontal and Vertical Micro Instructions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Memory System: Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Semiconductor RAMs, Memory System Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "ROMs, Content Addressable Memory, Cache Memories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Mapping Functions, Hardware Software Design and Embedded Product Development: Hardware Software Co-Design, Modeling of Systems, Embedded Product Development Life Cycle Management, Life Cycle Models, Product Design, Design Process, Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Suggestions on Project Topics: Ripple Carry Adder, Carry Look Ahead Adder, Wallace Tree Adder, Synthesis of Flipflops, Register and Counters, Combinational Multipliers, Booth's Multiplier, ALU, Memory Design, Associative Cache Design, Direct Memory Mapped Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

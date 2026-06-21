@@ -1,0 +1,129 @@
+{
+  "id": "pccal308-computer-science-and-engineering-artificial-intelligence-s4",
+  "code": "PCCAL308",
+  "name": "PCCAL308",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Write a Python program to sort a list of tuples based on the second element in each tuple",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Write a Python program to count the occurrences of each word in a given text and store the result in a dictionary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_3",
+          "title": "Write a Python program to find all unique elements in a list",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_4",
+          "title": "Write a Python program to create a set of squares of all even numbers between m and n using set comprehension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_5",
+          "title": "Write a Python program using sets to find all unique characters in a given string",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_6",
+          "title": "Write a Python program that takes a list of numbers and returns a new list containing only the even numbers from the original list",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_7",
+          "title": "Write a Turtle program to draw an equilateral triangle and modify the program to draw triangles of different sizes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_8",
+          "title": "Write a Turtle program to draw a flower with a specified number of petals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_9",
+          "title": "A basic calculator that can perform addition, subtraction, multiplication, and division using Tkinter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_10",
+          "title": "A digital clock that displays the current time and updates every second using Tkinter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_11",
+          "title": "Write a Python program to copy the contents of one text file to another",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_12",
+          "title": "Write a Python program to merge the contents of two text files and write the result into a third file",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_13",
+          "title": "Write a Python program using NumPy to create an array of 10 random numbers and calculate the mean and standard deviation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_14",
+          "title": "Write a Python program using NumPy to create a 3x3 matrix of integers, reshape it into a 1D array, and then flatten it back to a 2D array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_15",
+          "title": "Write a Python program using NumPy to create two 3x3 matrices and perform matrix multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_16",
+          "title": "Write a Python program using Pandas to load a CSV file into a DataFrame, display the first five rows, and calculate the mean of a specified column",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_17",
+          "title": "Write a Python program using Pandas to read a CSV file and perform basic data analysis tasks like finding the sum, mean, and standard deviation of a specified column",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_18",
+          "title": "Write a Python program using Pandas to load a CSV file into a DataFrame, remove duplicate rows, and display the cleaned DataFrame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_19",
+          "title": "Write a Python program using Matplotlib to plot a line graph of a dataset representing monthly sales figures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

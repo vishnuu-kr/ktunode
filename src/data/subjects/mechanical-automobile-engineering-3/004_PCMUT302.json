@@ -1,0 +1,471 @@
+{
+  "id": "pcmut302-mechanical-automobile-engineering-s3",
+  "code": "PCMUT302",
+  "name": "PCMUT302",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Introduction to Automobile Systems - Classification of Automobiles - Layout with Reference to Prime Mover Location and Drive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Frames - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Sections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Constructional Details - Materials - Integrated Body Construction - Loads Acting on Frame Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_5",
+          "title": "Chassis Specifications, Layout of Hybrid and Electric Vehicles, Front Axle and Steering Systems - Front Axle Types, Construction Details, Materials, Front Wheel Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_6",
+          "title": "Wheel Alignment Parameters - Description and Importance, Steering Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_7",
+          "title": "Conditions for True Rolling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_8",
+          "title": "Ackermann and Davis Steering Gear Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_9",
+          "title": "Steering Linkage Layout for Conventional and Independent Suspensions, Steering Gear Boxes - Worm and Wheel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_10",
+          "title": "Recirculating Ball",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_11",
+          "title": "Rack and Pinion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_12",
+          "title": "Power and Power Assisted Steering - Electric Steering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Rear Axle and Final Drive System - Function of Rear Axle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Loads Acting on Rear Axle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Axle Casings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Axle Types - Semi-Floating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_6",
+          "title": "Three Quarter and Full Floating, Final Drive for Multi-Axle Vehicles, Different Types of Final Drives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_7",
+          "title": "U-Joint",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_8",
+          "title": "Propeller Shaft",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_9",
+          "title": "Differential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_10",
+          "title": "Constructional Details and Working of Differential Unit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_11",
+          "title": "Non-Slip and Limited Slip Differential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_12",
+          "title": "Differential Lock",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_13",
+          "title": "Differential Housing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_14",
+          "title": "Final Drive Lubrication, Braking Systems - Components of Braking System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_15",
+          "title": "Principles of Shoe Brakes - Constructional Details of Internal Expanding Shoe Brakes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_16",
+          "title": "Self-Energising",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_17",
+          "title": "Self-Locking Braking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_18",
+          "title": "Disc Brakes - Constructional Details",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_19",
+          "title": "Hydraulic Braking System - Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_20",
+          "title": "Working",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_21",
+          "title": "Tandem Master Cylinder - Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_22",
+          "title": "Working, Pneumatic Brakes, Power Brakes, Air Brakes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_23",
+          "title": "Vacuum Brakes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_24",
+          "title": "Servo Brakes - Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_25",
+          "title": "Brake Actuating Mechanisms, Brake Fluids, Regenerative Brakes in Electric Vehicles, Parking Brakes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_26",
+          "title": "Antilock Braking System (ABS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_27",
+          "title": "Brake Bleeding",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Suspension Systems - Types of Suspension, Factors Influencing Ride Comfort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Suspension Springs - Leaf Spring Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Shackle and Mounting Brackets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Coil",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "and Torsion Bar Springs, Spring Materials",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Independent Front",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_7",
+          "title": "and Rear Suspension Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_8",
+          "title": "Pneumatic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_9",
+          "title": "Hydro-Elastic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_10",
+          "title": "Hydro-Gas Suspension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_11",
+          "title": "Active Suspension System, Hydraulic Dampers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_12",
+          "title": "Gas Filled Dampers, Tyres and Wheels - Types of Wheels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_13",
+          "title": "Tyres",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_14",
+          "title": "Types - Tubed and Tubeless",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_15",
+          "title": "Radial",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_16",
+          "title": "Bias Belted Tyres - Constructional Details",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_17",
+          "title": "Tyre Aspect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_18",
+          "title": "Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_19",
+          "title": "Tyre Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_20",
+          "title": "Wheel Balancing and Wheel Alignment, Wheel Wobble and Shimmy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "IC Engine Cooling System - Necessity of Engine Cooling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "Air Cooling and Liquid Cooling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Pressure Sealed Cooling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Components of Liquid Cooling System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Coolants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Antifreeze Solution, Engine Lubricating System - Requirements of Lubrication Systems, Types of Lubrication System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_7",
+          "title": "Mist",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_8",
+          "title": "Splash",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_9",
+          "title": "Wet Sump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_10",
+          "title": "and Dry Sump Lubrication System, Multi-Grade Lubricants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_11",
+          "title": "Pre-Lubrication Systems, Electric Vehicle Systems - Electric Vehicles Drive Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_12",
+          "title": "Storage Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_13",
+          "title": "Battery Management Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_14",
+          "title": "Thermal Management Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

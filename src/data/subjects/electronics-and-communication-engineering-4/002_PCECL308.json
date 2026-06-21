@@ -1,0 +1,129 @@
+{
+  "id": "pcecl308-electronics-and-communication-engineering-s4",
+  "code": "PCECL308",
+  "name": "PCECL308",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "tExperiment 2_1",
+          "title": "Realization of Functions Using Basic and Universal Gates (SOP and POS Forms)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 2_2",
+          "title": "Design and Realization of Half/Full Adder and Subtractor Using Basic Gates and Universal Gates",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mExperiment 4",
+      "title": "Module Experiment 4",
+      "topics": [
+        {
+          "id": "tExperiment 4_1",
+          "title": "S-R, D, T, JK and Master Slave JK FF Using NAND Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_2",
+          "title": "Asynchronous Counter: 3-bit Up/Down Counter, Realization of Mod N Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_3",
+          "title": "Synchronous Counter: Realization of 4-bit Up/Down Counter, Realization of Mod-N Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_4",
+          "title": "Ring Counter and Johnson Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_5",
+          "title": "Realization of Counters Using ICs (7490, 7492, 7493)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_6",
+          "title": "Realization of Combinational Circuits Using MUX and DEMUX, Using ICs (74150, 74154)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_7",
+          "title": "Sequence Generator / Detector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_8",
+          "title": "Realization of Logic Gates and Familiarization of FPGAs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_9",
+          "title": "Adders in Verilog",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_10",
+          "title": "Mux and Demux in Verilog",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_11",
+          "title": "Flipflops and Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_12",
+          "title": "Multiplexer and Logic Implementation in FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_13",
+          "title": "Flip-Flops and Their Conversion in FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_14",
+          "title": "Asynchronous and Synchronous Counters in FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_15",
+          "title": "Universal Shift Register in FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tExperiment 4_16",
+          "title": "BCD to Seven Segment Decoder in FPGA",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

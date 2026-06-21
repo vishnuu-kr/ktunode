@@ -1,0 +1,159 @@
+{
+  "id": "pecst757-artificial-intelligence-and-data-science-s7",
+  "code": "PECST757",
+  "name": "PECST757",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Stored-Program Computer Architecture - General-Purpose Cache-Based Microprocessor Architecture - Performance Metrics and Benchmarks - Moore's Law - Pipelining - Superscalarity - SIMD - Memory Hierarchies - Cache",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Cache Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Prefetch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_4",
+          "title": "Multicore Processors - Multithreaded Processors - Vector Processors - Design Principles - Maximum Performance Estimates - Programming for Vector Architectures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Parallel Computers - Taxonomy of Parallel Computing Paradigms - Shared-Memory Computers - Cache Coherence - UMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "ccNUMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Distributed-Memory Computers - Hierarchical (Hybrid) Systems - Networks - Basic Performance Characteristics of Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Buses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_5",
+          "title": "Switched and Fat-Tree Networks - Mesh Networks - Hybrids",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Shared-Memory Parallel Programming with OpenMP - Short Introduction to OpenMP - Parallel Execution - Data Scoping - OpenMP Worksharing for Loops - Synchronization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Reductions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Loop Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Tasking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_5",
+          "title": "Miscellaneous",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_6",
+          "title": "Case Study: OpenMP-Parallel Jacobi Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Distributed-Memory Parallel Programming with MPI - Message Passing - A Short Introduction to MPI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "A Simple Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_3",
+          "title": "Messages and Point-to-Point Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_4",
+          "title": "Collective Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_5",
+          "title": "Nonblocking Point-to-Point Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_6",
+          "title": "Virtual Topologies - Example: MPI Parallelization of a Jacobi Solver - MPI Implementation - Performance Properties",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "pecet412-civil-engineering-s4",
+  "code": "PECET412",
+  "name": "PECET412",
+  "branchId": "civil-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mModule 1",
+      "title": "Module Module 1",
+      "topics": [
+        {
+          "id": "tModule 1_1",
+          "title": "Cement - Chemical Composition, Bogue's Compounds, Hydration, Hydrated Structure, Various Types of Cement, Testing of Cement as per Indian Standard - Standard Consistency, Setting Times, Fineness, Specific Gravity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_2",
+          "title": "Aggregates - Utility in Concrete, Fine and Coarse Aggregates, Effect of Geometry and Texture, Strength, Mechanical Properties, Moisture Content, Water Absorption, Bulking of Sand, Deleterious Substances, Sieve Analysis, Aggregate Grading and Gradation Curves, Testing as per Indian Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 1_3",
+          "title": "Admixtures - Types, Necessity and Benefit, Mineral Admixture (Fly Ash, Silica Fume, Blast Furnace Slag, and Agro Waste Based Pozzolans), Chemical Admixtures (Accelerator, Retarder, Plasticizer and Superplasticizer - Functions and Dosage)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 2",
+      "title": "Module Module 2",
+      "topics": [
+        {
+          "id": "tModule 2_1",
+          "title": "Properties of Fresh Concrete - Factors Affecting Workability, Slump Test, Compacting Factor Test, Vee Bee Consistometer Test, Flow Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_2",
+          "title": "Properties of Hardened Concrete - Modulus of Elasticity, Compressive Strength, Split Tensile Strength, Flexural Strength, Effect of Water Cement Ratio on Properties of Concrete",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_3",
+          "title": "Maturity of Concrete (Concept Only), Creep - Factors Affecting Creep, Effect of Creep, Shrinkage - Factors Affecting and Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 2_4",
+          "title": "Non-Destructive Testing of Concrete - Surface Hardness Test, Ultrasonic Pulse Velocity Method, Pull-Out Test, Core Test, Measuring Reinforcement Cover",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 3",
+      "title": "Module Module 3",
+      "topics": [
+        {
+          "id": "tModule 3_1",
+          "title": "Mix Proportioning - Mix Design, Nominal Mix, Design Mix, Concept of Mix Design, Variables of Proportioning, General Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_2",
+          "title": "Various Methods of Mix Design - Design of Concrete Mix as per IS 10262-2019",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_3",
+          "title": "Statistical Quality Control of Concrete - Mean Strength, Standard Deviation, Coefficient of Variation, Sampling and Testing, Acceptance Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 3_4",
+          "title": "Special Concrete - Lightweight Concrete, Heavy Weight Concrete, High Strength Concrete, High Performance Concrete, Self Compacting Concrete, Roller Compacted Concrete, Fibre Reinforced Concrete, Polymer Concrete, Pumped Concrete, Ready Mix Concrete, Geopolymer/Alkali Activated Concrete",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "mModule 4",
+      "title": "Module Module 4",
+      "topics": [
+        {
+          "id": "tModule 4_1",
+          "title": "Durability of Concrete - Factors Affecting Durability, Permeability, Cracking, Reinforcement Corrosion, Carbonation, Chloride Penetration, Sulphate Attack, Acid Attack, Fire Resistance, Frost Damage, Alkali Silica Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "tModule 4_2",
+          "title": "3D Concrete Printing, Underwater Concrete, Mass Concrete, Slip Form Construction, Sprayed Concrete",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}
