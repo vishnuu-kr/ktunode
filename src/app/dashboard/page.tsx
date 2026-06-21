@@ -52,6 +52,8 @@ import ShareButton from "@/components/ui/ShareButton";
 import OnboardingTour, { ReplayTourButton } from "@/components/dashboard/OnboardingTour";
 import FirstTimeChecklist from "@/components/dashboard/FirstTimeChecklist";
 import { triggerChecklistTask } from "@/lib/checklist";
+import topicPathMapRaw from "@/data/topic-path-map.json";
+const topicPathMap = topicPathMapRaw as Record<string, string>;
 
 const MarkdownRenderer = dynamic(() => import("@/components/ui/MarkdownRenderer"), {
   loading: () => <div className="animate-pulse h-48 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-[20px] flex items-center justify-center text-xs text-slate-400 font-medium">Loading notes rendering engine...</div>,
@@ -2261,16 +2263,17 @@ function DashboardContent() {
                       {pinnedTopicIds.map((id) => {
                         const item = topicIndex.find((t) => t.topic.id === id);
                         if (!item) return null;
+                        const isPending = !topicPathMap[id];
                         return (
                           <button
                             key={id}
                             type="button"
                             onClick={() => goTopic(item.topic, item.subject)}
-                            className="w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] hover:bg-amber-500/[0.04] border border-transparent hover:border-amber-500/[0.15] transition-all text-left group"
+                            className={`w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] hover:bg-amber-500/[0.04] border border-transparent hover:border-amber-500/[0.15] transition-all text-left group ${isPending ? "opacity-50" : ""}`}
                           >
                             <span className="min-w-0 flex-1">
                               <span className="block text-xs font-black text-slate-800 truncate">{item.topic.title}</span>
-                              <span className="block text-[10px] font-bold text-slate-400/80 truncate">{item.subject.code}</span>
+                              <span className="block text-[10px] font-bold text-slate-400/80 truncate">{item.subject.code} {isPending && "· Pending"}</span>
                             </span>
                             <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition-all shrink-0 ml-2" />
                           </button>
@@ -2394,6 +2397,7 @@ function DashboardContent() {
                               {module.topics.map((topic, topicIdx) => {
                                 const done = isCompleted(topic.id);
                                 const pinned = pinnedTopicIds.includes(topic.id);
+                                const isPending = !topicPathMap[topic.id];
                                 return (
                                   <motion.div
                                     key={topic.id}
@@ -2401,24 +2405,33 @@ function DashboardContent() {
                                     initial={{ opacity: 0, x: -12 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.2, delay: topicIdx * 0.03 }}
-                                    className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3"
+                                    className={`px-4 py-4 mx-2 rounded-2xl flex items-start justify-between transition-all duration-200 group gap-3 ${isPending ? "opacity-45 hover:opacity-60 bg-slate-50/20 dark:bg-slate-900/10 cursor-not-allowed" : "hover:bg-blue-50/50 dark:hover:bg-slate-800/50"}`}
                                   >
                                     <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
-                                      <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
-                                        {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
+                                      <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400" : isPending ? "bg-slate-100/50 dark:bg-slate-800/30 border-slate-200/40 dark:border-slate-800/40 text-slate-355 dark:text-slate-700" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
+                                        {done ? <CheckCircle2 className="w-4 h-4" /> : isPending ? <Timer className="w-3.5 h-3.5 animate-pulse text-slate-400 dark:text-slate-500" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
                                       </div>
-                                      <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-400 line-through decoration-slate-300 dark:decoration-slate-700" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
+                                      <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-400 line-through decoration-slate-300 dark:decoration-slate-700" : isPending ? "text-slate-400 dark:text-slate-550" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
                                         {topic.title}
                                       </span>
                                     </button>
-                                    <button
-                                      type="button"
-                                      onClick={() => togglePinnedTopic(topic.id)}
-                                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
-                                      aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
-                                    >
-                                      <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
-                                    </button>
+                                    <div className="flex items-center gap-2 shrink-0">
+                                      {isPending ? (
+                                        <span className="px-2 py-0.5 rounded-md bg-slate-100/80 dark:bg-slate-800/60 text-slate-400 dark:text-slate-500 text-[8.5px] font-black tracking-widest uppercase border border-slate-200/50 dark:border-slate-700/30 flex items-center gap-1 select-none self-center">
+                                          <Timer className="w-2.5 h-2.5 animate-pulse" />
+                                          Generating
+                                        </span>
+                                      ) : (
+                                        <button
+                                          type="button"
+                                          onClick={() => togglePinnedTopic(topic.id)}
+                                          className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
+                                          aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
+                                        >
+                                          <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
+                                        </button>
+                                      )}
+                                    </div>
                                   </motion.div>
                                 );
                               })}
@@ -2730,15 +2743,16 @@ function DashboardContent() {
                   const matchIdx = query ? title.toLowerCase().indexOf(query) : -1;
                   const done = isCompleted(item.topic.id);
                   const isActiveSearch = activeSearchIndex === index;
+                  const isPending = !topicPathMap[item.topic.id];
                   return (
                     <button
                       type="button"
                       key={item.topic.id}
                       onClick={() => goTopic(item.topic, item.subject)}
-                      className={`w-full flex items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-blue-50 dark:hover:bg-slate-800/50 transition-colors group ${isActiveSearch ? 'bg-blue-50 dark:bg-slate-800/80 outline outline-2 outline-blue-500/80 outline-offset-[-2px]' : ''}`}
+                      className={`w-full flex items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-blue-50 dark:hover:bg-slate-800/50 transition-colors group ${isActiveSearch ? 'bg-blue-50 dark:bg-slate-800/80 outline outline-2 outline-blue-500/80 outline-offset-[-2px]' : ''} ${isPending ? "opacity-50" : ""}`}
                     >
-                      <div className={`h-10 w-10 rounded-xl grid place-items-center shrink-0 transition-colors ${done ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400' : 'bg-blue-50 dark:bg-slate-800 text-blue-500 dark:text-blue-400 group-hover:bg-blue-100 group-hover:dark:bg-slate-700'}`}>
-                        {done ? <CheckCircle2 className="w-4 h-4" /> : <BookOpen className="w-4 h-4" />}
+                      <div className={`h-10 w-10 rounded-xl grid place-items-center shrink-0 transition-colors ${done ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400' : isPending ? 'bg-slate-100 dark:bg-slate-850 text-slate-400 dark:text-slate-500' : 'bg-blue-50 dark:bg-slate-800 text-blue-500 dark:text-blue-400 group-hover:bg-blue-100 group-hover:dark:bg-slate-700'}`}>
+                        {done ? <CheckCircle2 className="w-4 h-4" /> : isPending ? <Timer className="w-4 h-4 animate-pulse" /> : <BookOpen className="w-4 h-4" />}
                       </div>
                       <span className="min-w-0 flex-1">
                         <span className="block text-sm font-black text-slate-900 dark:text-slate-100 truncate">
@@ -2750,7 +2764,7 @@ function DashboardContent() {
                             </>
                           ) : title}
                         </span>
-                        <span className="block text-xs font-bold text-slate-400 dark:text-slate-500">{item.subject.code} · {item.module.title}</span>
+                        <span className="block text-xs font-bold text-slate-400 dark:text-slate-550">{item.subject.code} · {item.module.title} {isPending && "· Generating"}</span>
                       </span>
                       <ArrowRight className="ml-auto w-4 h-4 text-slate-300 dark:text-slate-650 group-hover:text-blue-500 group-hover:dark:text-blue-400 group-hover:translate-x-0.5 transition-all shrink-0" />
                     </button>
@@ -2885,6 +2899,7 @@ function DashboardContent() {
               {pinnedTopicIds.map((id) => {
                 const item = topicIndex.find((t) => t.topic.id === id);
                 if (!item) return null;
+                const isPending = !topicPathMap[id];
                 return (
                   <button
                     key={id}
@@ -2893,11 +2908,11 @@ function DashboardContent() {
                       setMobileSheetOpen(false);
                       goTopic(item.topic, item.subject);
                     }}
-                    className="w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] dark:bg-white/[0.02] hover:bg-amber-500/[0.04] dark:hover:bg-amber-500/[0.1] border border-transparent hover:border-amber-500/[0.15] dark:hover:border-amber-500/[0.3] transition-all text-left group"
+                    className={`w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] dark:bg-white/[0.02] hover:bg-amber-500/[0.04] dark:hover:bg-amber-500/[0.1] border border-transparent hover:border-amber-500/[0.15] dark:hover:border-amber-500/[0.3] transition-all text-left group ${isPending ? "opacity-50" : ""}`}
                   >
                     <span className="min-w-0 flex-1">
                       <span className="block text-xs font-black text-slate-800 dark:text-slate-200 truncate">{item.topic.title}</span>
-                      <span className="block text-[10px] font-bold text-slate-400/80 dark:text-slate-505 truncate">{item.subject.code}</span>
+                      <span className="block text-[10px] font-bold text-slate-400/80 dark:text-slate-505 truncate">{item.subject.code} {isPending && "· Pending"}</span>
                     </span>
                     <ArrowRight className="w-3.5 h-3.5 text-slate-400 dark:text-slate-650 group-hover:text-amber-600 group-hover:dark:text-amber-400 group-hover:translate-x-0.5 transition-all shrink-0 ml-2" />
                   </button>
