@@ -70,6 +70,46 @@ const branchMap = {
 function main() {
   const index = {};
   let topicCount = 0;
+  let cdnMappedCount = 0;
+
+  const topicMapPath = path.join(root, "src", "data", "topic-path-map.json");
+  const publicNotesDir = path.join(root, "public", "data", "notes");
+  let topicPathMap = {};
+  if (fs.existsSync(topicMapPath)) {
+    try {
+      topicPathMap = JSON.parse(fs.readFileSync(topicMapPath, "utf8"));
+    } catch (e) {
+      console.error("Failed to load topic-path-map.json:", e.message);
+    }
+  }
+
+  // Cache to store ONLY the topic titles that have content for each subject,
+  // to avoid keeping huge markdown content strings in memory.
+  const notesCache = new Map();
+  function getNotesTopics(subjectCode) {
+    const code = subjectCode.toUpperCase();
+    if (notesCache.has(code)) {
+      return notesCache.get(code);
+    }
+    const notesFilePath = path.join(publicNotesDir, `${code}.json`);
+    const topicsWithContent = new Set();
+    if (fs.existsSync(notesFilePath)) {
+      try {
+        const raw = JSON.parse(fs.readFileSync(notesFilePath, "utf8"));
+        if (raw && raw.topics) {
+          for (const [title, topic] of Object.entries(raw.topics)) {
+            if (topic && typeof topic.content === "string" && topic.content.trim().length > 0) {
+              topicsWithContent.add(title);
+            }
+          }
+        }
+      } catch (e) {
+        // Ignore
+      }
+    }
+    notesCache.set(code, topicsWithContent);
+    return topicsWithContent;
+  }
 
   const branchDirs = fs.readdirSync(subjectsDir).filter((d) =>
     fs.statSync(path.join(subjectsDir, d)).isDirectory()
@@ -96,11 +136,26 @@ function main() {
         const subjectName = subjectData.name || subjectCode.toUpperCase();
         const subjectCodeDisplay = subjectData.code || subjectCode.toUpperCase();
 
+        const topicsWithContent = getNotesTopics(subjectCode);
+
         for (const mod of subjectData.modules || []) {
           const modTitle =
             mod.title || (mod.id || "").replace(/^m/, "Module ");
           for (const topic of mod.topics || []) {
             if (!topic.id) continue;
+
+            // Check if there is note content in the public notes file
+            let hasCdnContent = false;
+            if (topicsWithContent) {
+              const normalizedTitle = (topic.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+              if (topicsWithContent.has(normalizedTitle)) {
+                hasCdnContent = true;
+              }
+            }
+
+            const hasEmbedded = typeof topic.content === "string" && topic.content.trim().length > 0;
+            const hc = (hasEmbedded || hasCdnContent) ? 1 : 0;
+
             index[topic.id] = {
               t: topic.title || "",
               sc: subjectCode.toUpperCase(),
@@ -110,10 +165,20 @@ function main() {
               b: branchSlug,
               bd: branchDisplayName,
               s: sem,
-              // Flag: does this topic have embedded content?
-              hc: typeof topic.content === "string" && topic.content.trim().length > 0 ? 1 : 0,
+              hc: hc,
             };
             topicCount++;
+
+            // Dynamically update topicPathMap for CDN notes
+            if (hasCdnContent) {
+              const currentPath = topicPathMap[topic.id];
+              if (!currentPath || currentPath === "cdn") {
+                topicPathMap[topic.id] = "cdn";
+                cdnMappedCount++;
+              }
+            } else if (topicPathMap[topic.id] === "cdn") {
+              delete topicPathMap[topic.id];
+            }
           }
         }
       } catch (err) {
@@ -122,9 +187,13 @@ function main() {
     }
   }
 
+  // Write files
   fs.writeFileSync(outputPath, JSON.stringify(index));
+  fs.writeFileSync(topicMapPath, JSON.stringify(topicPathMap, null, 2) + "\n", "utf8");
+
   const sizeKB = Math.round(fs.statSync(outputPath).size / 1024);
   console.log(`✓ Built topic index: ${topicCount} topics, ${sizeKB} KB → ${outputPath}`);
+  console.log(`✓ Updated topic path map: ${cdnMappedCount} topics mapped to CDN → ${topicMapPath}`);
 }
 
 main();

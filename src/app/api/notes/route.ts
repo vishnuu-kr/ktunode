@@ -121,7 +121,10 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    let relativePath = readTopicPathMap()[id];
+    let relativePath: string | undefined = readTopicPathMap()[id];
+    if (relativePath === "cdn") {
+      relativePath = undefined;
+    }
     let fileContent: string | null = null;
 
     if (relativePath) {
