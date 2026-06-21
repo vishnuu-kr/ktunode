@@ -1,0 +1,207 @@
+{
+  "id": "pcaet502-chemical-engineering-s6",
+  "code": "PCAET502",
+  "name": "PROCESS DYNAMICS AND CONTROL",
+  "branchId": "chemical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t1",
+          "title": "Elements of Process Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t2",
+          "title": "Types of Processes - Dead Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t3",
+          "title": "Single/Multi Capacity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t4",
+          "title": "Self-Regulating/Non-Self-Regulating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t5",
+          "title": "Interacting/Non-Interacting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t6",
+          "title": "Linear/Non-Linear",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t7",
+          "title": "Selection of Control Action for Them",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 1-t8",
+          "title": "Study of Liquid Flow and Thermal Processes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t1",
+          "title": "Process Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t2",
+          "title": "Valve Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t3",
+          "title": "Process Time Constant",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t4",
+          "title": "Variable Time Constant",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t5",
+          "title": "Transmitter Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t6",
+          "title": "Linearizing an Equal Percentage Valve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t7",
+          "title": "Variable Pressure Drop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t8",
+          "title": "Analysis of Liquid Level Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 2-t9",
+          "title": "Temperature Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 3-t1",
+          "title": "Quarter Decay Ratio Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 3-t2",
+          "title": "Minimal Error Integral Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 3-t3",
+          "title": "Advanced Control Techniques: Cascade Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 3-t4",
+          "title": "Feed Forward Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 3-t5",
+          "title": "Feedback-Feed Forward Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 3-t6",
+          "title": "Ratio Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 3-t7",
+          "title": "Selective Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 4-t1",
+          "title": "Model Predictive Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 4-t2",
+          "title": "Adaptive and Self-Tuning Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 4-t3",
+          "title": "Computer Control of Process Plants: Centralised Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 4-t4",
+          "title": "Distributed Control Systems - Fieldbus System - Fieldbus Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pcaet502-mModule 4-t5",
+          "title": "Hierarchical Control Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

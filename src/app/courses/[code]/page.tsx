@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
-import fs from "fs";
 import path from "path";
 import { SITE_URL } from "@/lib/siteConfig";
+import { fileExists, readDir, readJsonFile, statIsDir } from "@/lib/fsHelper";
 
 interface Props {
   params: Promise<{
@@ -25,31 +25,49 @@ function getSubjectIndex() {
   subjectCache.clear();
   cacheTimestamps.clear();
 
-  const branches = ["cs", "ec", "me", "ce", "ee"];
-  const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
+  const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
+  if (!fileExists(subjectsDir)) {
+    return subjectCache;
+  }
 
-  for (const branch of branches) {
-    for (const sem of semesters) {
-      const cacheKey = `${branch}-${sem}`;
+  try {
+    const folders = readDir(subjectsDir);
+    for (const folder of folders) {
+      const folderPath = path.join(subjectsDir, folder);
+      if (!statIsDir(folderPath)) continue;
+
+      const lastDashIndex = folder.lastIndexOf("-");
+      if (lastDashIndex === -1) continue;
+
+      const branchId = folder.substring(0, lastDashIndex);
+      const semStr = folder.substring(lastDashIndex + 1);
+      const sem = Number(semStr);
+      if (isNaN(sem)) continue;
+
       try {
-        const filePath = path.join(process.cwd(), "src", "data", "subjects", `${cacheKey}.json`);
-        if (fs.existsSync(filePath)) {
-          const fileContent = fs.readFileSync(filePath, "utf8");
-          const subjects = JSON.parse(fileContent);
-          if (Array.isArray(subjects)) {
-            for (const s of subjects) {
-              if (s.code) {
-                subjectCache.set(s.code.toLowerCase(), { code: s.code, name: s.name, branchId: branch, semester: sem });
-              }
-            }
+        const files = readDir(folderPath);
+        for (const file of files) {
+          if (!file.endsWith(".json")) continue;
+          const filePath = path.join(folderPath, file);
+          const s = readJsonFile(filePath);
+          if (s && s.code) {
+            subjectCache.set(s.code.toLowerCase(), {
+              code: s.code,
+              name: s.name,
+              branchId,
+              semester: sem,
+            });
           }
         }
       } catch {
-        // skip corrupt files
+        // skip corrupt directories or files
       }
-      cacheTimestamps.set(cacheKey, now);
+      cacheTimestamps.set(folder, now);
     }
+  } catch {
+    // skip
   }
+
   return subjectCache;
 }
 

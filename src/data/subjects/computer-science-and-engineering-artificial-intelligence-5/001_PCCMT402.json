@@ -1,0 +1,213 @@
+{
+  "id": "pccmt402-computer-science-and-engineering-artificial-intelligence-s5",
+  "code": "PCCMT402",
+  "name": "FUNDAMENTALS OF ARTIFICIAL INTELLIGENCE",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 1-t1",
+          "title": "Introduction to Artificial Intelligence: Introduction, Foundation and History of AI Agents and Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 1-t2",
+          "title": "The Concept of Rationality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 1-t3",
+          "title": "The Nature of Environments, Structure of Agents, Problem-Solving Agents, Well-Defined Problems and Solutions, Formulating Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 1-t4",
+          "title": "Example Problems: Vacuum World, 8-Puzzle, 8-Queens",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 2-t1",
+          "title": "Blind Search Strategies: Depth First Search, Breadth First Search, Iterative Deepening Search; Heuristic Search Strategies, Heuristic Functions, The Effect of Heuristic Accuracy on Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 2-t2",
+          "title": "Generate and Test, Greedy Best-First Search, A* Algorithm, Constraint Satisfaction Problems, Cryptarithmetic Problems, Means-End Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 2-t3",
+          "title": "Local Search Strategies: Simple Hill Climbing, Simulated Annealing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 2-t4",
+          "title": "Adversarial Search: Games, Optimal Decision in Games, The Minimax Algorithm, Alpha-Beta Pruning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t1",
+          "title": "Knowledge-Based Agents: The Wumpus World",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t2",
+          "title": "Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t3",
+          "title": "Propositional Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t4",
+          "title": "Reasoning Patterns in Propositional Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t5",
+          "title": "First-Order Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t6",
+          "title": "Inference in First-Order Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t7",
+          "title": "Propositional vs. First-Order Inference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t8",
+          "title": "Unification and Lifting, Forward Chaining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 3-t9",
+          "title": "Backward Chaining",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t1",
+          "title": "Planning: Classical Planning, Algorithms for Classical Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t2",
+          "title": "Forward State-Space Search for Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t3",
+          "title": "Backward Search for Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t4",
+          "title": "Planning as Boolean Satisfiability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t5",
+          "title": "Heuristics for Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t6",
+          "title": "Domain-Independent Pruning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t7",
+          "title": "State Abstraction in Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t8",
+          "title": "Hierarchical Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t9",
+          "title": "High-Level Actions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t10",
+          "title": "Searching for Primitive Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t11",
+          "title": "Searching for Abstract Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t12",
+          "title": "Planning and Acting in Nondeterministic Domains",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccmt402-mModule 4-t13",
+          "title": "Time, Schedules, and Resources",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

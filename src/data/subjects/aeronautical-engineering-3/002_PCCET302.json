@@ -1,0 +1,111 @@
+{
+  "id": "pccet302-aeronautical-engineering-s3",
+  "code": "PCCET302",
+  "name": "FLUID MECHANICS",
+  "branchId": "aeronautical-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 1-t1",
+          "title": "Fluid Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 1-t2",
+          "title": "Pascal's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 1-t3",
+          "title": "Hydrostatic Law",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 2-t1",
+          "title": "Buoyancy and Floatation: Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 2-t2",
+          "title": "Conditions for Stability of Floating and Submerged Bodies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 3-t1",
+          "title": "Methods of Describing Fluid Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 3-t2",
+          "title": "Lagrangian and Eulerian Methods; Types of Fluid Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 3-t3",
+          "title": "Fluid Dynamics: Forces in Fluid Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 3-t4",
+          "title": "Derivation of Bernoulli's Equation from Euler's Equation of Motion with Assumptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 3-t5",
+          "title": "Momentum Equations and Forces on Pipe Bends",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 4-t1",
+          "title": "Hydraulic Gradient Line and Total Energy Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 4-t2",
+          "title": "Classification of Flow in Open Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "aeronautical-engineering-3-pccet302-mModule 4-t3",
+          "title": "Flow through Notches and Weirs: Classification of Notches and Weirs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

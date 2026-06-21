@@ -1,0 +1,177 @@
+{
+  "id": "peaet865-artificial-intelligence-and-machine-learning-s5",
+  "code": "PEAET865",
+  "name": "DEEP LEARNING",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t1",
+          "title": "Introduction to ANN and CNN: Overview of Biological Neuron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t2",
+          "title": "Concept of Perceptrons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t3",
+          "title": "Multi-Layer Perceptrons (MLPs), Activation Functions - Sigmoid, ReLU, and Softmax, Loss Functions - Mean Squared Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t4",
+          "title": "Cross Entropy, Convolutional Neural Networks - Convolution Operation, CNN Architecture - Convolutional Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t5",
+          "title": "Kernels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t6",
+          "title": "Padding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t7",
+          "title": "Pooling Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 1-t8",
+          "title": "Fully Connected Layers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 2-t1",
+          "title": "Training CNNs - Backpropagation and Initialization, Optimization Algorithms - SGD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 2-t2",
+          "title": "Adam, Hyperparameter Optimization - Learning Rate, Regularization Methods - L1",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 2-t3",
+          "title": "L2 Regularization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 2-t4",
+          "title": "Dropout",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 2-t5",
+          "title": "Data Augmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 2-t6",
+          "title": "Early Stopping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 2-t7",
+          "title": "Batch Normalization, Introduction to Transfer Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 3-t1",
+          "title": "Sequence Models, Recurrent Neural Networks (RNN)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 3-t2",
+          "title": "Cell Structure and Architecture, Training RNN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 3-t3",
+          "title": "Backpropagation Through Time, Vanishing and Exploding Gradients, Architecture of Long Short-Term Memory (LSTM), Architecture of Gated Recurrent Units (GRU)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 4-t1",
+          "title": "Introduction to Generative Models, GANs - Adversarial Training, Discriminator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 4-t2",
+          "title": "Generator, Introduction to Transformer Models - Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 4-t3",
+          "title": "Word Embedding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 4-t4",
+          "title": "Position Encoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 4-t5",
+          "title": "Attention",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-peaet865-mModule 4-t6",
+          "title": "Basics of Training Transformer Models, Basics of Large Language Model - GPT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

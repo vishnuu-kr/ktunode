@@ -1,0 +1,105 @@
+{
+  "id": "pccsl607-electronics-and-communication-advanced-communication-technology-s6",
+  "code": "PCCSL607",
+  "name": "SYSTEMS LAB",
+  "branchId": "electronics-and-communication-advanced-communication-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t1",
+          "title": "Design and implement a lexical analyzer using C language to recognize all valid tokens in the input program, ignoring redundant spaces, tabs, newlines, and comments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t2",
+          "title": "Write a lex program to display the number of lines, words, and characters in an input text",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t3",
+          "title": "Generate a YACC specification to recognize a valid arithmetic expression that uses operators and parenthesis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t4",
+          "title": "Implementation of Calculator using LEX and YACC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t5",
+          "title": "Convert the BNF rules into YACC form and write code to generate abstract syntax tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t6",
+          "title": "Write a program to find First and Follow of any given grammar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t7",
+          "title": "Design and implement a recursive descent parser for a given grammar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t8",
+          "title": "Construct a Shift Reduce Parser for a given language",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t9",
+          "title": "Write a program to perform constant propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t10",
+          "title": "Implement Intermediate code generation for simple expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t11",
+          "title": "Implement the back end of the compiler which takes the three address code and produces assembly language instructions that can be assembled and run using a corresponding assembler, including simple move and jump instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t12",
+          "title": "Instantiation of VMs with image file using open-source hypervisors or public cloud platforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t13",
+          "title": "Virtual machine Cluster set up using open-source hypervisors or public cloud platforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t14",
+          "title": "Setting host name for virtual machine nodes in cluster and ssh set up for remote login",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccsl607-mModule Experiment 2-t15",
+          "title": "Copy a file from one virtual machine to another virtual machine",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

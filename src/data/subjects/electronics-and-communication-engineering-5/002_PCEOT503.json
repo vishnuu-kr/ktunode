@@ -1,0 +1,165 @@
+{
+  "id": "pceot503-electronics-and-communication-engineering-s5",
+  "code": "PCEOT503",
+  "name": "POWER SYSTEMS",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 1-t1",
+          "title": "Generation from Renewable and Non-Renewable Sources - Hydro, Thermal, Nuclear (Block Schematic Details, Environmental and Ethical Factors, Advantages, Disadvantages)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 1-t2",
+          "title": "Solar and Wind (Block Schematic Details, Environmental Factors, Regulations, Advantages, Disadvantages)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 1-t3",
+          "title": "Energy Storage Systems as Alternative Energy Sources - BESS, CESS, Thermal SS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 1-t4",
+          "title": "Load Curve - Load Duration Curve, Load Factor, Diversity Factor, Demand Factor, Plant Capacity Factor, Plant Use Factor (Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t1",
+          "title": "Power Transmission System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t2",
+          "title": "Electrical Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t3",
+          "title": "Line Parameters - Resistance, Inductance and Capacitance (Derivation of Three Phase Double Circuit)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t4",
+          "title": "Transmission Line Modelling - Classifications (Concept Only), Transmission Line as Two Port Network, Derivation and Calculation of ABCD Parameters (Derivation and Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t5",
+          "title": "Skin Effect and Ferranti Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t6",
+          "title": "Corona (Qualitative Study Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t7",
+          "title": "Surge Impedance Loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 2-t8",
+          "title": "Insulators - String Efficiency, Grading (Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 3-t1",
+          "title": "Per Unit Quantities - Single Phase and Three Phase",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 3-t2",
+          "title": "Symmetrical Components - Sequence Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 3-t3",
+          "title": "Types of Faults - Fault Calculations (Shunt Only) - Symmetrical and Unsymmetrical",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 3-t4",
+          "title": "Need for Protection - Types of Protection Schemes, Primary and Back-up",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 3-t5",
+          "title": "Protective Relays - Basics of Typical Electromechanical Relay (Induction Type Only), Static Relays (Block Diagrams of Over Current and Instantaneous Over Current Relays), Microprocessor Relays (Block Diagram and Flow Chart of Overcurrent Relay), Fundamentals of Numerical Relays, Principles of Overcurrent, Directional, Distance and Differential Relays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 3-t6",
+          "title": "Circuit Breakers - Operating Principle, Arc Phenomenon, Arc Extinction, Principle and Methods, Circuit Breaker Classification Based on Medium of Arc Extinction, SF6 and VCB",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 4-t1",
+          "title": "Load Flow Studies - Introduction - Types of Buses, Network Model - Admittance Matrix, Gauss Siedal Method of Load Flow Analysis (Qualitative Analysis, Numerical Problems Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 4-t2",
+          "title": "Power System Stability - Steady State, Dynamic and Transient Stability, Power Angle Curve, Steady State Stability Limit, Swing Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 4-t3",
+          "title": "Equal Area Criterion and Application",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pceot503-mModule 4-t4",
+          "title": "Methods of Improving Stability Limits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "pecit523-electrical-and-electronics-engineering-s5",
+  "code": "PECIT523",
+  "name": "EMBEDDED SYSTEMS",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 1-t1",
+          "title": "Introduction to Embedded Systems: Definition of Embedded System, Embedded Systems vs General Computing Systems, History, Classification, Major Application Areas of Embedded Systems, Purpose of Embedded Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 1-t2",
+          "title": "Typical System - Core of the Embedded System, Memory, Sensors and Actuators, Communication Interface, Embedded Firmware, Other System Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 1-t3",
+          "title": "Characteristics and Quality Attributes of Embedded Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 2-t1",
+          "title": "Designing with 8051 - Factors to be Considered in Selecting a Controller, Why 8051 Microcontroller, 8052 Microcontroller, 8051/52 Variants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 2-t2",
+          "title": "Different Addressing Modes Supported by 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 2-t3",
+          "title": "The 8051 Instruction Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 2-t4",
+          "title": "Fundamental Issues in Hardware Software Co-Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 2-t5",
+          "title": "Computational Models in Embedded Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 2-t6",
+          "title": "Introduction to Unified Modelling Language (UML)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 2-t7",
+          "title": "Hardware Software Trade-offs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 3-t1",
+          "title": "Design and Development: Hardware Design and Development - VLSI and Integrated Circuit Design, Recap of Electronic Design Automation (EDA) Tools, PCB Layout Design, Printed Circuit Board (PCB) Fabrication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 3-t2",
+          "title": "Firmware Design and Development - Embedded Firmware Design, Embedded Firmware Development Languages, Programming in Embedded C",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t1",
+          "title": "Integration and Testing of Embedded Hardware and Firmware: Integration of Hardware and Firmware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t2",
+          "title": "Board Bring-up",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t3",
+          "title": "The Embedded System Development Environment - The Integrated Development Environment (IDE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t4",
+          "title": "Types of Files Generated on Cross-Compilation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t5",
+          "title": "Disassembler/Decompiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t6",
+          "title": "Simulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t7",
+          "title": "Emulators and Debugging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t8",
+          "title": "Target Hardware Debugging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-5-pecit523-mModule 4-t9",
+          "title": "Boundary Scan",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

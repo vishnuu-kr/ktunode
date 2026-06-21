@@ -1,0 +1,219 @@
+{
+  "id": "pecst749-artificial-intelligence-and-machine-learning-s7",
+  "code": "PECST749",
+  "name": "APPROXIMATION ALGORITHMS",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t1",
+          "title": "Basics of Approximation Algorithms - Introduction to Approximation Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t2",
+          "title": "Performance Guarantees: Approximation Ratio and Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t3",
+          "title": "Examples of Approximation Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t4",
+          "title": "Greedy Algorithms - Introduction to Greedy Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t5",
+          "title": "Set Cover Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t6",
+          "title": "Vertex Cover Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t7",
+          "title": "Local Search Algorithms - Local Search Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t8",
+          "title": "k-Median and k-Center Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 1-t9",
+          "title": "Analysis of Local Search Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t1",
+          "title": "Introduction to Linear Programming (LP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t2",
+          "title": "LP Relaxation of Combinatorial Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t3",
+          "title": "Primal-Dual Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t4",
+          "title": "Rounding Techniques - Randomized Rounding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t5",
+          "title": "Deterministic Rounding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t6",
+          "title": "Applications to Various Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t7",
+          "title": "Integer Programming and Cutting Planes - Integer Programming Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t8",
+          "title": "Cutting Plane Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 2-t9",
+          "title": "Applications in Network Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 3-t1",
+          "title": "Introduction to Semi-Definite Programming (SDP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 3-t2",
+          "title": "Goemans-Williamson Algorithm for MAX-CUT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 3-t3",
+          "title": "Other Applications of SDP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 3-t4",
+          "title": "Approximation Schemes - Polynomial-Time Approximation Schemes (PTAS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 3-t5",
+          "title": "Fully Polynomial-Time Approximation Schemes (FPTAS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 3-t6",
+          "title": "Examples: Knapsack Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 3-t7",
+          "title": "Euclidean TSP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 4-t1",
+          "title": "Introduction to Inapproximability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 4-t2",
+          "title": "Reductions and Hardness of Approximation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 4-t3",
+          "title": "PCP Theorem and Its Implications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 4-t4",
+          "title": "Network Design Problems - Steiner Tree Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 4-t5",
+          "title": "Traveling Salesman Problem (TSP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst749-mModule 4-t6",
+          "title": "Multicommodity Flow Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

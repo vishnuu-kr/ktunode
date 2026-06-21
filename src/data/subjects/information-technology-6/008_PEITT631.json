@@ -1,0 +1,219 @@
+{
+  "id": "peitt631-information-technology-s6",
+  "code": "PEITT631",
+  "name": "COMPILER DESIGN",
+  "branchId": "information-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t1",
+          "title": "Need of Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t2",
+          "title": "Analysis of the Source Program",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t3",
+          "title": "Phases of a Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t4",
+          "title": "Grouping of Phases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t5",
+          "title": "Compiler Writing Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t6",
+          "title": "Cross Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t7",
+          "title": "Lexical Analyser: Role of Lexical Analyzer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t8",
+          "title": "Review of Finite Automata",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t9",
+          "title": "Design of Lexical Analyser Using DFAs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 1-t10",
+          "title": "Specification of Tokens Using Regular Expressions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t1",
+          "title": "Review of Context-Free Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t2",
+          "title": "Parse Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t3",
+          "title": "Ambiguous Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t4",
+          "title": "Top-Down Parsing: Recursive Descent Parser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t5",
+          "title": "Predictive Parser - LL(1)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t6",
+          "title": "Bottom-Up Parsing: LR(0) Parser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t7",
+          "title": "SLR(1) Parser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t8",
+          "title": "CLR(1) Parser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 2-t9",
+          "title": "LALR Parser",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t1",
+          "title": "Syntax-Directed Definitions: S-Attributed Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t2",
+          "title": "L-Attributed Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t3",
+          "title": "Bottom-Up Evaluation of S-Attributed Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t4",
+          "title": "Top-Down Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t5",
+          "title": "Bottom-Up Evaluation of Inherited Attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t6",
+          "title": "Intermediate Code Generation (ICG): Need of ICG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t7",
+          "title": "Different Representations of Intermediate Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 3-t8",
+          "title": "Intermediate Code for Assignment Statement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt631-mModule 4-t1",
+          "title": "Principal Sources of Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 4-t2",
+          "title": "Optimization of Basic Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 4-t3",
+          "title": "Code Generation: Issues in the Design of a Code Generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt631-mModule 4-t4",
+          "title": "A Simple Code Generator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

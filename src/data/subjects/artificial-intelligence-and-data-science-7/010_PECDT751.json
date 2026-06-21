@@ -1,0 +1,243 @@
+{
+  "id": "pecdt751-artificial-intelligence-and-data-science-s7",
+  "code": "PECDT751",
+  "name": "GRAPH DATABASES AND ANALYSIS",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t1",
+          "title": "Graphs as the Future of Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t2",
+          "title": "The Relevance of Data Relationships",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t3",
+          "title": "High-Level View of Graph Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t4",
+          "title": "The Power of Graph Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t5",
+          "title": "Options for Storing Connected Data: Relational Database Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t6",
+          "title": "NoSQL Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t7",
+          "title": "Graph Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 1-t8",
+          "title": "Defining Graph Analytics and Graph Data Science",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t1",
+          "title": "Models and Goals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t2",
+          "title": "The Property Graph Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t3",
+          "title": "Querying Graphs: An Introduction to Cypher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t4",
+          "title": "Other Cypher Clauses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t5",
+          "title": "Comparison of Relational and Graph Modelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t6",
+          "title": "Cross Domain Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t7",
+          "title": "Common Modelling Pitfalls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t8",
+          "title": "Building a Graph Database Application: Data Modelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t9",
+          "title": "Application Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 2-t10",
+          "title": "Redundancy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 3-t1",
+          "title": "Graph Algorithms in Neo4j",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 3-t2",
+          "title": "Graph Algorithm Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 3-t3",
+          "title": "The Neo4j Graph Algorithms Library",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 3-t4",
+          "title": "Pathfinding and Graph Search Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 3-t5",
+          "title": "Centrality Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 3-t6",
+          "title": "Community Detection Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 3-t7",
+          "title": "Graph Algorithms in Practice",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t1",
+          "title": "Real-World Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t2",
+          "title": "Looking at Graphs in the Health Industry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t3",
+          "title": "Graph Database Internals: Native Graph Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t4",
+          "title": "Native Graph Storage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t5",
+          "title": "Programmatic APIs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t6",
+          "title": "Non-Functional Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t7",
+          "title": "Depth and Breadth-First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t8",
+          "title": "Path-Finding with Dijkstra's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t9",
+          "title": "The A* Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt751-mModule 4-t10",
+          "title": "Graph Theory and Predictive Modelling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

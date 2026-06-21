@@ -1,0 +1,69 @@
+{
+  "id": "pbect504-electronics-and-communication-advanced-communication-technology-s5",
+  "code": "PBECT504",
+  "name": "DIGITAL SIGNAL PROCESSING",
+  "branchId": "electronics-and-communication-advanced-communication-technology",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pbect504-mModule 1-t1",
+          "title": "IDFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pbect504-mModule 1-t2",
+          "title": "Linear Convolution Using Circular Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pbect504-mModule 1-t3",
+          "title": "Filtering of Long Data Sequences",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pbect504-mModule 2-t1",
+          "title": "Design of FIR Filters - Symmetric and Anti-symmetric FIR Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pbect504-mModule 2-t2",
+          "title": "IIR Filter Design by Impulse Invariance and Bilinear Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pbect504-mModule 2-t3",
+          "title": "Frequency Transformations in the Analog Domain",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pbect504-mModule 4-t1",
+          "title": "Introduction to TMS320C67xx Digital Signal Processor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "id": "peebt745-electronics-and-biomedical-engineering-s7",
+  "code": "PEEBT745",
+  "name": "ADVANCED MEDICAL IMAGING & IMAGE PROCESSING TECHNIQUES",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t1",
+          "title": "Hybrid PET/CT Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t2",
+          "title": "PET/MRI Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t3",
+          "title": "Super Resolution Imaging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t4",
+          "title": "Image Fusion: Preprocessing Measures - Geometrical Transformations and Image Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t5",
+          "title": "Distortion Identification - Disparity Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t6",
+          "title": "Image Registration - Global Similarity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t7",
+          "title": "Transform Identification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t8",
+          "title": "Registration Evaluation and Approval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t9",
+          "title": "Three-Dimensional Data from Two-Dimensional Slices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t10",
+          "title": "Panorama Fusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 1-t11",
+          "title": "Stereo Surface Reconstruction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t1",
+          "title": "Image Intensity Versus Image Texture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t2",
+          "title": "Characterizing the Texture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t3",
+          "title": "From Markov Random Fields to Fractals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t4",
+          "title": "From Markov Random Fields to Gibbs Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t5",
+          "title": "Local Binary Patterns (LBP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t6",
+          "title": "Co-occurrence Matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t7",
+          "title": "Generalized Co-occurrence Matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t8",
+          "title": "Orientation Histograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t9",
+          "title": "Textons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t10",
+          "title": "From Spatio-Frequency to Spatio-Structural Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t11",
+          "title": "Statistical Spatio-Structural Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t12",
+          "title": "Monogenic Signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t13",
+          "title": "From Monogenic Signal Back to Gabor Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 2-t14",
+          "title": "Deep Learning Techniques on Texture Analysis - Lung Nodule Detection in CT Scans",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t1",
+          "title": "Creating an ASM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t2",
+          "title": "Using ASMs for Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t3",
+          "title": "The Active Appearance Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t4",
+          "title": "Deficiencies of Statistical Shape Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t5",
+          "title": "Changing the Parametric Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t6",
+          "title": "Using a Part-Based Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t7",
+          "title": "Using a Non-parametric Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t8",
+          "title": "Physically-Based Shape Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t9",
+          "title": "Mass-Spring Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t10",
+          "title": "Finite Element Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t11",
+          "title": "Shape",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t12",
+          "title": "Appearance and Pose Priors for Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t13",
+          "title": "Atlas-Based Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t14",
+          "title": "Combining Shape Information with Level Set Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t15",
+          "title": "Solutions Based on Graph Cuts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 3-t16",
+          "title": "Graph Cuts on Pre-Segmented Images",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t1",
+          "title": "Image Management: Archiving - Image Storage and Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t2",
+          "title": "Information Systems in a Hospital",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t3",
+          "title": "The DICOM Standard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t4",
+          "title": "Establishing DICOM Connectivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t5",
+          "title": "The DICOM File Format",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t6",
+          "title": "Technical Properties of Medical Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t7",
+          "title": "Displays and Workstations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t8",
+          "title": "HL7 Standard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t9",
+          "title": "Principles of Image Compression for Archiving and Communication - Philosophy of Image Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t10",
+          "title": "Generic Still-Image Compression System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t11",
+          "title": "Principles of Lossless Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t12",
+          "title": "Predictive Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t13",
+          "title": "Principles of Lossy Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t14",
+          "title": "Pixel-Oriented Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t15",
+          "title": "Block-Oriented Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt745-mModule 4-t16",
+          "title": "Global Compression Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

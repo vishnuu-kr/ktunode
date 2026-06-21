@@ -1,0 +1,189 @@
+{
+  "id": "perat755-robotics-and-artificial-intelligence-s7",
+  "code": "PERAT755",
+  "name": "FPGA BASED SYSTEM DESIGN",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 1-t1",
+          "title": "Digital System Design Options and Tradeoffs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 1-t2",
+          "title": "Design Methodology and Technology Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 1-t3",
+          "title": "High Level System Architecture and Specification: Behavioral Modelling and Simulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 1-t4",
+          "title": "Hardware Description Languages (Emphasis on Verilog)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 1-t5",
+          "title": "Combinational and Sequential Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 1-t6",
+          "title": "State Machine Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 1-t7",
+          "title": "Test Benches",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 2-t1",
+          "title": "CPLD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 2-t2",
+          "title": "FPGA Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 2-t3",
+          "title": "Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 2-t4",
+          "title": "Architectures and Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 2-t5",
+          "title": "Implementation of MSI Circuits Using Programmable Logic Devices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t1",
+          "title": "FPGA Architectural Options",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t2",
+          "title": "Granularity of Function and Wiring Resources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t3",
+          "title": "Coarse vs. Fine Grained",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t4",
+          "title": "Vendor Specific Issues (Emphasis on Xilinx and Altera)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t5",
+          "title": "Logic Block Architecture: FPGA Logic Cells",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t6",
+          "title": "Timing Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t7",
+          "title": "Power Dissipation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t8",
+          "title": "I/O Block Architecture: Input and Output Cell Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t9",
+          "title": "Clock Input",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t10",
+          "title": "Timing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 3-t11",
+          "title": "Power Dissipation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 4-t1",
+          "title": "Programmable Interconnect: Partitioning and Placement, Routing Resources, Delays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 4-t2",
+          "title": "Applications: Embedded System Design Using FPGAs, DSP Using FPGAs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat755-mModule 4-t3",
+          "title": "Commercial FPGAs: Xilinx, Altera, Actel (Different Series Description Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

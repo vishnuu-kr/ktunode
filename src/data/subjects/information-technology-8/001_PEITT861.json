@@ -1,0 +1,309 @@
+{
+  "id": "peitt861-information-technology-s8",
+  "code": "PEITT861",
+  "name": "BIOINFORMATICS",
+  "branchId": "information-technology",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t1",
+          "title": "Introduction to Bioinformatics - Scope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t2",
+          "title": "Elementary Tasks in Bioinformatics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t3",
+          "title": "Molecular Biology Basics - Human Genome Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t4",
+          "title": "Central Dogma",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t5",
+          "title": "DNA and RNA Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t6",
+          "title": "Genetic Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t7",
+          "title": "Datatypes - Gene Expression Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t8",
+          "title": "Microarrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t9",
+          "title": "Pathways",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t10",
+          "title": "Molecular Interactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t11",
+          "title": "Biological Databases - Types of Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t12",
+          "title": "Sequence Databases - GenBank",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t13",
+          "title": "DDBJ",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t14",
+          "title": "EMBL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t15",
+          "title": "Entrez",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t16",
+          "title": "UniGene",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t17",
+          "title": "Protein Sequence Databases - SwissProt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 1-t18",
+          "title": "UniProt",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t1",
+          "title": "Sequence Alignment - Local and Global Alignment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t2",
+          "title": "Similarity vs Homology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t3",
+          "title": "Dot Matrices and Hash Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t4",
+          "title": "FASTA Files",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t5",
+          "title": "Algorithms for Pairwise Sequence Alignment - Needleman and Wunsch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t6",
+          "title": "Scoring Matrices - Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t7",
+          "title": "BLAST and Its Variants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t8",
+          "title": "Multiple Sequence Alignment - Goals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t9",
+          "title": "Scoring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t10",
+          "title": "Substitution Matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t11",
+          "title": "PAM and BLOSUM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t12",
+          "title": "Gap Penalties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 2-t13",
+          "title": "CLUSTAL and Its Variants",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t1",
+          "title": "Phylogenetic Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t2",
+          "title": "Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t3",
+          "title": "Distance Matrix Based and Character Based Tree Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t4",
+          "title": "Algorithms for Phylogenetic Tree Construction - UPGMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t5",
+          "title": "Neighbor-Joining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t6",
+          "title": "Maximum Parsimony",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t7",
+          "title": "Pattern Representations - Deterministic and Probabilistic Patterns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t8",
+          "title": "Algorithms for Pattern Discovery - HMM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 3-t9",
+          "title": "Gene Discovery Using GeneMark",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-8-peitt861-mModule 4-t1",
+          "title": "Introduction to Protein Structures - Primary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 4-t2",
+          "title": "Secondary and Tertiary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 4-t3",
+          "title": "Measures of Prediction Accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 4-t4",
+          "title": "Statistical Algorithms for Protein Secondary Structure Prediction - Chou-Fasman",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 4-t5",
+          "title": "Protein Folding - Lattice Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-peitt861-mModule 4-t6",
+          "title": "Algorithms for Predicting RNA Secondary Structure - Nussinov Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

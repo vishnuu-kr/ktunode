@@ -1,0 +1,219 @@
+{
+  "id": "pbnst304-naval-architecture-and-shipbuilding-engineering-s3",
+  "code": "PBNST304",
+  "name": "SHIP STABILITY",
+  "branchId": "naval-architecture-and-shipbuilding-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t1",
+          "title": "Transverse Stability: Centre of Gravity of Ship",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t2",
+          "title": "Estimation of BMT and GMT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t3",
+          "title": "Stability at Small Angles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t4",
+          "title": "Effect of Addition, Removal and Transference (Lateral and Vertical) of Weight",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t5",
+          "title": "Effect of Suspended Weights",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t6",
+          "title": "Free Surface Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t7",
+          "title": "Wall Sided Formula, Large Angle Stability - Statical Stability Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t8",
+          "title": "Characteristics of GZ Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t9",
+          "title": "Effect of Changes in Ship's Breadth, Freeboard and Superstructure on GZ Curve, Cross Curves of Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t10",
+          "title": "Methods for Calculating GZ (Krylov, Prohaska)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 1-t11",
+          "title": "Dynamical Stability - Diagram of Dynamical Stability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 2-t1",
+          "title": "Longitudinal Stability: Trim, Longitudinal Metacentre, Estimation of BML and GML, Longitudinal Centre of Flotation, Trimming Moment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 2-t2",
+          "title": "Trim Calculations - Addition, Removal and Transference of Weight, Effect of Change of Density of Water, Fresh Water Allowance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t1",
+          "title": "Flooding and Damage Stability: Watertight Integrity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t2",
+          "title": "Bilging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t3",
+          "title": "Permeability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t4",
+          "title": "Margin Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t5",
+          "title": "Flooding Calculation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t6",
+          "title": "Floodable Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t7",
+          "title": "Factor of Subdivision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t8",
+          "title": "Permissible Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t9",
+          "title": "Curves of Floodable Length and Permissible Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t10",
+          "title": "Compartment Standard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t11",
+          "title": "Damage Stability - Calculations by Lost Buoyancy and Added Weight Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 3-t12",
+          "title": "Deterministic and Probabilistic Approach",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 4-t1",
+          "title": "Stability of Ships While Docking and Grounding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 4-t2",
+          "title": "Inclining Experiment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 4-t3",
+          "title": "Heeling Moments due to Wind, Shift of Cargo, Passengers, Turning and Nonsymmetrical Accumulation of Ice",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 4-t4",
+          "title": "Stability in Waves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 4-t5",
+          "title": "Recommendations of IMO, Classification Societies and Government Authorities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-3-pbnst304-mModule 4-t6",
+          "title": "Intact and Damage Stability Rules, Stability Criteria in Weather Condition, Stability Booklet, Suggestion on Project Topic",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

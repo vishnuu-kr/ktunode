@@ -1,0 +1,405 @@
+{
+  "id": "pemut755-mechanical-automobile-engineering-s7",
+  "code": "PEMUT755",
+  "name": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t1",
+          "title": "Introduction to AI and Machine Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t2",
+          "title": "Foundations of AI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t3",
+          "title": "History",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t4",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t5",
+          "title": "Intelligent Agents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t6",
+          "title": "Agents and Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t7",
+          "title": "Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t8",
+          "title": "Solving Problems by Searching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t9",
+          "title": "Search Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t10",
+          "title": "Adversarial Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t11",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t12",
+          "title": "Machine Learning Paradigms - Supervised",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t13",
+          "title": "Unsupervised",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t14",
+          "title": "Semi-supervised",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 1-t15",
+          "title": "Reinforcement Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t1",
+          "title": "Supervised Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t2",
+          "title": "Basics of Parameter Estimation - Maximum Likelihood Estimation (MLE) and Maximum A Posteriori Estimation (MAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t3",
+          "title": "Introduction to Bayesian Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t4",
+          "title": "Regression - Linear Regression with One Variable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t5",
+          "title": "Linear Regression with Multiple Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t6",
+          "title": "Solution using Gradient Descent Algorithm and Matrix Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t7",
+          "title": "Basic Idea of Overfitting in Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t8",
+          "title": "Linear Methods for Classification - Logistic Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t9",
+          "title": "Naive Bayes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t10",
+          "title": "Decision Tree Algorithm ID3",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t11",
+          "title": "Classification Performance Measures - Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t12",
+          "title": "Recall",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t13",
+          "title": "Accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t14",
+          "title": "F-Measure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t15",
+          "title": "Receiver Operating Characteristic Curve (ROC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t16",
+          "title": "Area Under Curve (AUC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t17",
+          "title": "Bootstrapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 2-t18",
+          "title": "Cross Validation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t1",
+          "title": "Unsupervised Learning and Dimensionality Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t2",
+          "title": "Ensemble Methods - Voting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t3",
+          "title": "Bagging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t4",
+          "title": "Boosting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t5",
+          "title": "Similarity Measures - Minkowski Distance Measures (Manhattan)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t6",
+          "title": "Euclidean",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t7",
+          "title": "Cosine Similarity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t8",
+          "title": "K-Means Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t9",
+          "title": "Clustering - Hierarchical Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t10",
+          "title": "Density-Based Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t11",
+          "title": "Expectation Maximization (EM) for Soft Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t12",
+          "title": "Dimensionality Reduction - Subset Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 3-t13",
+          "title": "Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t1",
+          "title": "Neural Networks and SVM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t2",
+          "title": "Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t3",
+          "title": "Neural Network - Multilayer Feed Forward Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t4",
+          "title": "Activation Functions (Sigmoid)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t5",
+          "title": "ReLU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t6",
+          "title": "Tanh",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t7",
+          "title": "Backpropagation Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t8",
+          "title": "SVM Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t9",
+          "title": "Maximum Margin Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t10",
+          "title": "Mathematics Behind Maximum Margin Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t11",
+          "title": "Maximum Margin Linear Separators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t12",
+          "title": "Soft Margin SVM Classifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t13",
+          "title": "Non-Linear SVM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t14",
+          "title": "Kernels for Learning Non-Linear Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t15",
+          "title": "Polynomial Kernel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-pemut755-mModule 4-t16",
+          "title": "Radial Basis Function (RBF)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

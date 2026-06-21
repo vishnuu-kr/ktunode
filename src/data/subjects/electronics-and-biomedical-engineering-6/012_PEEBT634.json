@@ -1,0 +1,129 @@
+{
+  "id": "peebt634-electronics-and-biomedical-engineering-s6",
+  "code": "PEEBT634",
+  "name": "BIOMEDICAL SIGNAL PROCESSING & APPLICATIONS",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 1-t1",
+          "title": "Estimation of Power Density Spectrum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 1-t2",
+          "title": "Non-Parametric Methods: Periodogram, Bartlett, Welch, Blackman and Tukey Methods - Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 1-t3",
+          "title": "Parametric Models: Autoregressive (AR), Moving Average (MA), Autoregressive Moving Average (ARMA) Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 1-t4",
+          "title": "Parametric Model Based Linear Prediction: Forward and Backward Linear Prediction, Estimation of Parameters, Spectrum Estimation of ECG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 1-t5",
+          "title": "Power Spectrum Estimation of Heart Rate Variability Data and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 1-t6",
+          "title": "Spectrum Estimation of EEG",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 2-t1",
+          "title": "Introduction to Wavelet Analysis and Wavelet Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 2-t2",
+          "title": "Continuous Wavelet Transform (CWT) and Discrete Wavelet Transform (DWT): Orthogonal Wavelet Decomposition, Orthonormal Wavelets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 2-t3",
+          "title": "Filter Banks and Applications of DWT: Wavelet Denoising, ECG Feature Detection, Heart Sound Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 3-t1",
+          "title": "Optimal and Adaptive Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 3-t2",
+          "title": "Wiener Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 3-t3",
+          "title": "Adaptive Signal Processing: Steepest Descent Algorithm, LMS Adaptive Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 3-t4",
+          "title": "Adaptive Noise Canceller: Cancellation of 50 Hz Signal in ECG, Cancellation of Maternal ECG in Fetal Electrocardiography",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 4-t1",
+          "title": "Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 4-t2",
+          "title": "Denoising of ECG and EEG Signals Using PCA and Independent Component Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt634-mModule 4-t3",
+          "title": "EEG Denoising and Computation of Diagnostic Signal Parameters of ECG: Heart Rate and QRS Detection Using Multivariate Analysis (PCA and ICA)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

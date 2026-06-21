@@ -1,0 +1,267 @@
+{
+  "id": "pcamt403-artificial-intelligence-and-machine-learning-s4",
+  "code": "PCAMT403",
+  "name": "MACHINE LEARNING II",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t1",
+          "title": "Introduction to Neural Networks: Biological Neuron versus Artificial Neuron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t2",
+          "title": "The Perceptron Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t3",
+          "title": "Notion of Bias and Activation Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t4",
+          "title": "Different Activation Functions: Sign Function, Sigmoid Function, Hyperbolic Tangent Function, ReLU Function, Leaky ReLU Function, Softmax Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t5",
+          "title": "Architecture of Neural Networks: Feedforward and Feedback Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t6",
+          "title": "Single Layer Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t7",
+          "title": "Linear Separability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t8",
+          "title": "The Perceptron Learning Algorithm and Its Convergence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t9",
+          "title": "The XOR Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 1-t10",
+          "title": "Designing Simple Mathematical Functions Using Single Layer Perceptron",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t1",
+          "title": "Multilayer Neural Networks: Multilayer Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t2",
+          "title": "Representational Capability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t3",
+          "title": "Universal Approximation Capability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t4",
+          "title": "Kolmogorov's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t5",
+          "title": "Size versus Depth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t6",
+          "title": "MLP Representational Capability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t7",
+          "title": "Back Propagation Algorithm: Back Propagation Learning Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t8",
+          "title": "The Back Propagation Learning Algorithm (Derivation of the Algorithm is Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t9",
+          "title": "Issues in Back Propagation Learning: Vanishing and Exploding Gradient Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t10",
+          "title": "Local Minima and Saddle Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t11",
+          "title": "Overfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t12",
+          "title": "Slow Convergence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t13",
+          "title": "Sensitivity to the Selection of the Initial Weights",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 2-t14",
+          "title": "Computational Cost",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 3-t1",
+          "title": "Methods to Rectify the Issues in Backpropagation: Gradient Clipping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 3-t2",
+          "title": "Batch Normalization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 3-t3",
+          "title": "Regularization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 3-t4",
+          "title": "Dropout",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 3-t5",
+          "title": "Use of Adaptive Learning Rate Methods: Back Propagation Algorithm with Momentum, Adaptive Gradient Descent Algorithm (ADAGRAD), Root Mean Square Propagation (RMSProp), Adaptive Momentum Estimation (ADAM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 3-t6",
+          "title": "Weight Initialization Techniques: Random Initialization Methods, Non-random Initialization Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t1",
+          "title": "Unsupervised Learning Models: Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t2",
+          "title": "Similarity Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t3",
+          "title": "Different Types of Clustering: Partitional Clustering, Hierarchical Clustering, Density Based Clustering, Model Based Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t4",
+          "title": "K-means Clustering Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t5",
+          "title": "Hierarchical Agglomerative Clustering Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t6",
+          "title": "Expectation Maximization (EM) Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t7",
+          "title": "DBSCAN Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t8",
+          "title": "Dimensionality Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-4-pcamt403-mModule 4-t9",
+          "title": "Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

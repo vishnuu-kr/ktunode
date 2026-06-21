@@ -1,0 +1,285 @@
+{
+  "id": "pccst602-computer-science-and-engineering-s6",
+  "code": "PCCST602",
+  "name": "ADVANCED COMPUTING SYSTEMS",
+  "branchId": "computer-science-and-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t1",
+          "title": "Distributed System Models and Enabling Technologies: The Age of Internet Computing - High Performance and High Throughput Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t2",
+          "title": "Centralized Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t3",
+          "title": "Parallel Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t4",
+          "title": "Distributed and Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t5",
+          "title": "Design Objectives of HPC and HTC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t6",
+          "title": "IoT and Cyber Physical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t7",
+          "title": "Technologies for Network-Based Systems: Multicore CPUs and Multithreading Technologies, GPU Computing, Virtual Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t8",
+          "title": "System Models for Distributed and Cloud Computing: Clusters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t9",
+          "title": "Grids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t10",
+          "title": "P2P Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 1-t11",
+          "title": "Clouds",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t1",
+          "title": "Computer Clusters: Clustering for Massive Parallelism - Design Objectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t2",
+          "title": "Design Issues: Ensuring High Availability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t3",
+          "title": "Cluster Families and Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t4",
+          "title": "GPU Clusters Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t5",
+          "title": "Computer Clusters Design Principles: Single System Image Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t6",
+          "title": "High Availability through Redundancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t7",
+          "title": "Fault Tolerant Cluster Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t8",
+          "title": "Checkpoint and Recovery Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t9",
+          "title": "Cluster Job and Resource Management: Job Scheduling Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t10",
+          "title": "Job Management System Administration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t11",
+          "title": "Job Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 2-t12",
+          "title": "Migration Schemes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 3-t1",
+          "title": "Virtualization: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 3-t2",
+          "title": "Virtualization at Different Levels and Their Comparison, VMM Design Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 3-t3",
+          "title": "OS Level Virtualization, Virtualization Structures and Mechanisms, CPU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 3-t4",
+          "title": "Memory and I/O Virtualization, Virtual Clusters and Resource Management, Live VM Migration Steps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 3-t5",
+          "title": "Migration of Memory, Files and Network Resources",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t1",
+          "title": "Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t2",
+          "title": "Microservices and Containers: Cloud Computing and Service Models - Private",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t3",
+          "title": "Public and Hybrid Clouds, Cloud Design Objectives and Cost Model, Infrastructure-as-a-Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t4",
+          "title": "Platform-as-a-Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t5",
+          "title": "Software-as-a-Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t6",
+          "title": "Microservices: Introduction, Advantages and Disadvantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t7",
+          "title": "Interprocess Communication: Types of Interactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t8",
+          "title": "Protocol, Standard and Message Format",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t9",
+          "title": "Discovery Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t10",
+          "title": "API Gateway",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t11",
+          "title": "Service Registry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t12",
+          "title": "Containers: Comparison of Virtual Machines and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t13",
+          "title": "Introduction to Docker",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccst602-mModule 4-t14",
+          "title": "Case Study: Docker Containers Architecture, Components and Examples",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

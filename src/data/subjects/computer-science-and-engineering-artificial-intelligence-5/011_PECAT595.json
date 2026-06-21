@@ -1,0 +1,297 @@
+{
+  "id": "pecat595-computer-science-and-engineering-artificial-intelligence-s5",
+  "code": "PECAT595",
+  "name": "FOUNDATIONS OF SECURITY IN COMPUTING",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t1",
+          "title": "Modular Arithmetic: Integer Arithmetic - Integer Division",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t2",
+          "title": "Divisibility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t3",
+          "title": "Greatest Common Divisor (GCD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t4",
+          "title": "Euclid's Algorithm for GCD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t5",
+          "title": "Extended Euclid's Algorithm. Prime Numbers and Factorization: Prime Numbers - Prime-Power Factorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t6",
+          "title": "Fermat and Mersenne Primes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t7",
+          "title": "Fermat's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t8",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t9",
+          "title": "Euler's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t10",
+          "title": "Euler's Totient Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t11",
+          "title": "Applications. Factorization - Fermat's Factorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 1-t12",
+          "title": "Pollard p-1 Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t1",
+          "title": "Symmetric Cipher Models: Substitution Techniques - Caesar Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t2",
+          "title": "Monoalphabetic Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t3",
+          "title": "Playfair Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t4",
+          "title": "Hill Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t5",
+          "title": "Polyalphabetic Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t6",
+          "title": "One Time Pad. Transposition Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t7",
+          "title": "Block Cipher Principles - The Data Encryption Standard (DES)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t8",
+          "title": "Strength of DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t9",
+          "title": "Block Cipher Operation - Electronic Code Book",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t10",
+          "title": "Cipher Block Chaining Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t11",
+          "title": "Cipher Feedback Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t12",
+          "title": "Output Feedback Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t13",
+          "title": "Counter Mode. Advanced Encryption Standard (AES) - Basic Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t14",
+          "title": "Transformation Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 2-t15",
+          "title": "Key Expansion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t1",
+          "title": "Public Key Cryptography: Principles of Public Key Cryptosystems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t2",
+          "title": "RSA Algorithms - Description of the Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t3",
+          "title": "Computational Aspects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t4",
+          "title": "The Security of RSA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t5",
+          "title": "Diffie Hellman Key Exchange - The Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t6",
+          "title": "Key Exchange Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t7",
+          "title": "Man-in-the-Middle Attack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t8",
+          "title": "Elliptic Curve Cryptography - Analog of Diffie Hellman Key Exchange",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t9",
+          "title": "Elliptic Curve Encryption/Decryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 3-t10",
+          "title": "Security of Elliptic Curve Cryptography",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 4-t1",
+          "title": "Operating System Security: Security in the Operating System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 4-t2",
+          "title": "Security in the Design of the Operating System. Database Security: Security Requirements of Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 4-t3",
+          "title": "Reliability and Integrity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 4-t4",
+          "title": "Database Disclosure. Cloud Security: Cloud Computing Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 4-t5",
+          "title": "Moving to the Cloud",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 4-t6",
+          "title": "Cloud Security Tools and Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pecat595-mModule 4-t7",
+          "title": "Cloud Identity Management",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

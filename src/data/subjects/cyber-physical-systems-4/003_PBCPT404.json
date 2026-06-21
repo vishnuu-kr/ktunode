@@ -1,0 +1,111 @@
+{
+  "id": "pbcpt404-cyber-physical-systems-s4",
+  "code": "PBCPT404",
+  "name": "INTRODUCTION TO PROGRAMMING FOR CPS",
+  "branchId": "cyber-physical-systems",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 1-t1",
+          "title": "Introduction to Python Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 1-t2",
+          "title": "Variables, Data Types, and Basic Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 1-t3",
+          "title": "Control Structures and Functions in Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 1-t4",
+          "title": "Conditionals, Loops, Functions, Modules, and Packages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 2-t1",
+          "title": "Introduction to MATLAB Environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 2-t2",
+          "title": "MATLAB Syntax, Variables, and Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 2-t3",
+          "title": "MATLAB Scripts and Functions: Writing Scripts, Creating Functions, and Plotting",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 3-t1",
+          "title": "Robot Kinematics and Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 3-t2",
+          "title": "Understanding Robot Movement and Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 3-t3",
+          "title": "Sensor Integration in Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 3-t4",
+          "title": "Reading Sensor Data and Interfacing with Hardware",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 4-t1",
+          "title": "Simulation Techniques for Robotics: Building Computational Models and Simulating Robot Behaviors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pbcpt404-mModule 4-t2",
+          "title": "Project Based Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "perut757-robotics-and-automation-s7",
+  "code": "PERUT757",
+  "name": "DIGITAL IMAGE PROCESSING",
+  "branchId": "robotics-and-automation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t1",
+          "title": "Image Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t2",
+          "title": "Basic Relationship Between Pixels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t3",
+          "title": "Elements of DIP System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t4",
+          "title": "Elements of Visual Perception, Simple Image Formation Model, Brightness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t5",
+          "title": "Contrast",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t6",
+          "title": "Saturation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t7",
+          "title": "Mach Band Effect, Colour Image Fundamentals, RGB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t8",
+          "title": "HIS Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t9",
+          "title": "2D Sampling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 1-t10",
+          "title": "Quantization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 2-t1",
+          "title": "Review of Matrix Theory: Row and Column Ordering, Toeplitz",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 2-t2",
+          "title": "Circulant and Block Matrix, Image Compression: Need for Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 2-t3",
+          "title": "Basics of Lossless Compression: Bit Plane Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 2-t4",
+          "title": "Run Length Encoding and Predictive Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 2-t5",
+          "title": "Basics of Lossy Compression: Uniform and Non-Uniform Quantization Techniques Used in Image Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 2-t6",
+          "title": "Concept of Transform Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 2-t7",
+          "title": "JPEG Image Compression Standard",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 3-t1",
+          "title": "Spatial Domain Methods: Point Processing, Intensity Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 3-t2",
+          "title": "Histogram Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 3-t3",
+          "title": "Image Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 3-t4",
+          "title": "Image Averaging, Spatial Filtering, Smoothing Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 3-t5",
+          "title": "Sharpening Filters, Frequency Domain Methods: Low Pass Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 3-t6",
+          "title": "High Pass Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 3-t7",
+          "title": "Homomorphic Filter, Simple MATLAB Examples",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t1",
+          "title": "Degradation Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t2",
+          "title": "Unconstraint Restoration: Lagrange Multiplier and Constraint Restoration, Inverse Filtering: Removal of Blur Caused by Uniform Linear Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t3",
+          "title": "Weiner Filtering, Image Segmentation: Classification of Image Segmentation Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t4",
+          "title": "Region Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t5",
+          "title": "Clustering Techniques, Segmentation Based on Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t6",
+          "title": "Edge Based Segmentation, Classification of Edges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t7",
+          "title": "Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t8",
+          "title": "Hough Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut757-mModule 4-t9",
+          "title": "Active Contour",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "gaest305-computer-science-and-engineering-s3",
+  "code": "GAEST305",
+  "name": "DIGITAL ELECTRONICS AND LOGIC DESIGN",
+  "branchId": "computer-science-and-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t1",
+          "title": "Introduction to Digital Systems: Digital Abstraction; Number Systems - Binary, Hexadecimal, Grouping Bits, Base Conversion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t2",
+          "title": "Binary Arithmetic - Addition and Subtraction, Unsigned and Signed Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t3",
+          "title": "Fixed-Point Number Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t4",
+          "title": "Floating-Point Number Systems; Basic Gates - Operation of a Logic Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t5",
+          "title": "Buffer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t6",
+          "title": "Gates - Inverter, AND Gate, OR Gate, NOR Gate, NAND Gate, XOR Gate, XNOR Gate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t7",
+          "title": "Digital Circuit Operation - Logic Levels, Output DC Specifications, Input DC Specifications, Noise Margins, Power Supplies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t8",
+          "title": "Driving Loads - Driving Other Gates, Resistive Loads and LEDs; Verilog (Part 1): HDL Abstraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 1-t9",
+          "title": "Modern Digital Design Flow - Verilog Constructs: Data Types, the Module, Verilog Operators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 2-t1",
+          "title": "Combinational Logic Design: Boolean Algebra - Operations, Axioms, Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 2-t2",
+          "title": "Combinational Logic Analysis - Canonical SOP and POS, Minterm and Maxterm Equivalence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 2-t3",
+          "title": "Logic Minimization - Algebraic Minimization, K-Map Minimization, Don't Cares, Code Convertors; Modeling Concurrent Functionality in Verilog: Continuous Assignment - Continuous Assignment with Logical Operators, Continuous Assignment with Conditional Operators, Continuous Assignment with Delay",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 3-t1",
+          "title": "MSI Logic and Digital Building Blocks; MSI Logic - Decoders (One-Hot Decoder, 7-Segment Display Decoder), Encoders, Multiplexers, Demultiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 3-t2",
+          "title": "Digital Building Blocks - Arithmetic Circuits - Half Adder, Full Adder, Half Subtractor, Full Subtractor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 3-t3",
+          "title": "Comparators; Structural Design and Hierarchy - Lower Level Module Instantiation, Gate Level Primitives, User Defined Primitives, Adding Delay to Primitives",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t1",
+          "title": "Sequential Logic Design: Latches and Flip-Flops - SR Latch, SR Latch with Enable, JK Flip-Flop, D Flip-Flop, Register, Enabled Flip-Flop, Resettable Flip-Flop; Sequential Logic Timing Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t2",
+          "title": "Common Circuits Based on Sequential Storage Devices - Toggle Flop Clock Divider, Asynchronous Ripple Counter, Shift Register; Finite State Machines: Finite State Machines - Logic Synthesis for an FSM, FSM Design Process and Design Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t3",
+          "title": "Synchronous Sequential Circuits - Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t4",
+          "title": "Verilog (Part 2): Procedural Assignment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t5",
+          "title": "Conditional Programming Constructs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t6",
+          "title": "Test Benches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t7",
+          "title": "Modeling a D Flip-Flop in Verilog",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-gaest305-mModule 4-t8",
+          "title": "Modeling an FSM in Verilog",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

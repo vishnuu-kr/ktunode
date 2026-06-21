@@ -1,0 +1,279 @@
+{
+  "id": "pbrut304-robotics-and-automation-s3",
+  "code": "PBRUT304",
+  "name": "ELECTRONIC CIRCUITS AND LOGIC DESIGN",
+  "branchId": "robotics-and-automation",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t1",
+          "title": "Introduction to Operational Amplifiers (Op-Amps)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t2",
+          "title": "Op-amp Characteristics and Ideal Op-amp",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t3",
+          "title": "Op-amp Configurations: Inverting, Non-inverting, Differential Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t4",
+          "title": "Op-amp Parameters: Gain, Bandwidth, Input/Output Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t5",
+          "title": "Effect of Feedback on Op-amp Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t6",
+          "title": "Op-amp Applications: Amplifiers, Comparators, Integrators, Differentiators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t7",
+          "title": "V-I and I-V Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t8",
+          "title": "Comparator - Regenerative Comparator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t9",
+          "title": "Zero Crossing Detector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t10",
+          "title": "Window Detector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t11",
+          "title": "Sample and Hold Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 1-t12",
+          "title": "Rectifiers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 2-t1",
+          "title": "Active Filters and Signal Conditioning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 2-t2",
+          "title": "Low-pass, High-pass, Band-pass, and Band-stop Filters using Op-amps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 2-t3",
+          "title": "Active Filter Design Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 2-t4",
+          "title": "Signal Conditioning Circuits for Sensor Interfacing using Op-amps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 2-t5",
+          "title": "A-D and D-A Converters using Op-amps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 2-t6",
+          "title": "D/A Converter - Specifications - Weighted Resistor Type, R-2R Ladder Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 2-t7",
+          "title": "A/D Converters - Specifications - Flash Type, Successive Approximation Type, Dual Slope Type",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t1",
+          "title": "Fundamentals of Digital Electronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t2",
+          "title": "Review of Boolean Algebra",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t3",
+          "title": "Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t4",
+          "title": "BCD, Gray Code, Excess 3 Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t5",
+          "title": "De-Morgan's Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t6",
+          "title": "Principle of Duality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t7",
+          "title": "Minimization of Boolean Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t8",
+          "title": "Sum of Products (SOP), Product of Sum (POS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t9",
+          "title": "Canonical Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t10",
+          "title": "Karnaugh Map Minimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t11",
+          "title": "Simplification of Logic Functions through K-maps and Implementation using Logic Gates (up to 4 variables)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t12",
+          "title": "Combinational Logic Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t13",
+          "title": "Combinatorial Logic Systems - Comparators, Multiplexers, Demultiplexers, Encoder, Decoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t14",
+          "title": "Half and Full Adders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t15",
+          "title": "Subtractors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t16",
+          "title": "Serial and Parallel Adders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 3-t17",
+          "title": "BCD Adder",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 4-t1",
+          "title": "SR, D, JK, and T Flip-flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 4-t2",
+          "title": "Design of Sequential Circuits - Counters - Ring Counter and Johnson's Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 4-t3",
+          "title": "Shift Registers - SIPO, SISO, PISO, PIPO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 4-t4",
+          "title": "Asynchronous Sequential Circuits - Analysis of State Machines using D Flip-flops and JK Flip-flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-3-pbrut304-mModule 4-t5",
+          "title": "Design of State Machines - State Table, State Assignment, Transition/Excitation Table",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

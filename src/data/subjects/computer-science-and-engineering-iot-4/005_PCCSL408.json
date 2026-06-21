@@ -1,0 +1,63 @@
+{
+  "id": "pccsl408-computer-science-and-engineering-iot-s4",
+  "code": "PCCSL408",
+  "name": "DBMS LAB",
+  "branchId": "computer-science-and-engineering-iot",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t1",
+          "title": "Design a database schema for an application with ER diagram from a problem description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t2",
+          "title": "Implementation of set operators, nested queries, and join queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t3",
+          "title": "Practice of SQL commands for creation of views and assertions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t4",
+          "title": "Creation of procedures, triggers, and functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t5",
+          "title": "Creation of packages and cursors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t6",
+          "title": "Perform basic CRUD (Create, Read, Update, Delete) operations on a Cassandra table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t7",
+          "title": "Write and execute CQL queries to retrieve specific data from Cassandra tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-4-pccsl408-mModule Experiment 2-t8",
+          "title": "Create a simple application using MongoDB with Python",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

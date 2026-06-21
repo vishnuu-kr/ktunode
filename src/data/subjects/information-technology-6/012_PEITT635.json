@@ -1,0 +1,153 @@
+{
+  "id": "peitt635-information-technology-s6",
+  "code": "PEITT635",
+  "name": "DATA ANALYTICS",
+  "branchId": "information-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt635-mModule 1-t1",
+          "title": "Overview of Data Analytics: Definitions, Types, and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 1-t2",
+          "title": "Data Collection Techniques: Sources, Tools, and Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 1-t3",
+          "title": "Data Cleaning: Handling Missing Data, Outlier Detection, Data Imputation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 1-t4",
+          "title": "Data Transformation: Normalization, Standardization, Feature Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 1-t5",
+          "title": "Introduction to R for Data Analytics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt635-mModule 2-t1",
+          "title": "Descriptive Statistics: Mean, Median, Mode, Variance, Standard Deviation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 2-t2",
+          "title": "Inferential Statistics: Hypothesis Testing, Confidence Intervals, p-Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 2-t3",
+          "title": "Data Mining Techniques: Classification, Clustering, Association Rule Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 2-t4",
+          "title": "Feature Selection and Dimensionality Reduction: PCA, LDA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 2-t5",
+          "title": "Applications of Data Mining: Market Basket Analysis, Customer Segmentation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt635-mModule 3-t1",
+          "title": "Introduction to Predictive Analytics: Concepts and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 3-t2",
+          "title": "Supervised Learning: Linear Regression, Decision Trees, Random Forests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 3-t3",
+          "title": "Unsupervised Learning: k-Means Clustering, Hierarchical Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 3-t4",
+          "title": "Model Evaluation and Optimization: Cross-Validation, Grid Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 3-t5",
+          "title": "Case Studies in Predictive Analytics: Financial Forecasting, Health Analytics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt635-mModule 4-t1",
+          "title": "Big Data Analytics: Hadoop, Spark, NoSQL Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 4-t2",
+          "title": "Real-Time Data Processing: Streaming Data, Apache Kafka",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 4-t3",
+          "title": "Data Visualization Techniques: Dashboards, Reports, Data Storytelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 4-t4",
+          "title": "Ethical Considerations in Data Analytics: Privacy, Security, and Bias",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt635-mModule 4-t5",
+          "title": "Future Trends in Data Analytics: AI-Driven Analytics, Automated Data Science",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "pbeot304-electronics-and-communication-engineering-s3",
+  "code": "PBEOT304",
+  "name": "DIGITAL ELECTRONICS AND LOGIC SYSTEM DESIGN",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t1",
+          "title": "Number Systems and Codes - Binary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t2",
+          "title": "Octal and Hexadecimal - Conversions - ASCII Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t3",
+          "title": "Excess-3 Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t4",
+          "title": "Gray Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t5",
+          "title": "BCD Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t6",
+          "title": "Signed Numbers - 1's Complement and 2's Complement - Addition and Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t7",
+          "title": "Basic Logic Gates - Universal Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t8",
+          "title": "TTL and CMOS - Internal Diagram of TTL NAND Gate and CMOS NOR Gate - Comparison of CMOS and TTL Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t9",
+          "title": "Boolean Laws and Theorems - Sum of Products and Product of Sums Forms - K Map Representation and Simplification (Up to Four Variables) - Pairs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t10",
+          "title": "Quads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 1-t11",
+          "title": "Octets - Don't Care Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t1",
+          "title": "Combinational Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t2",
+          "title": "Half Adder and Full Adder, Half Subtractor and Full Subtractor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t3",
+          "title": "4-Bit Parallel Binary Adder/Subtractor, Comparators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t4",
+          "title": "Parity Generators and Checkers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t5",
+          "title": "Encoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t6",
+          "title": "Decoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t7",
+          "title": "BCD to Seven Segment Decoder, Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t8",
+          "title": "Implementation of Boolean Expressions Using Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 2-t9",
+          "title": "Demultiplexers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 3-t1",
+          "title": "Flip-Flops - SR, D and T Flip-Flops - Characteristic Table and Excitation Table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 3-t2",
+          "title": "JK Master Slave Flip-Flop - Conversion of Flip-Flops - SR to JK and JK to SR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 3-t3",
+          "title": "Up/Down Counters - Asynchronous Counters - Mod-6 and Mod-10 Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 3-t4",
+          "title": "Synchronous Counters - Design of Synchronous Counters - Ring Counter - Johnson Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 3-t5",
+          "title": "Shift Registers - SISO, SIPO, PISO, PIPO",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t1",
+          "title": "State Machines - State Transition Diagram - Moore and Mealy Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t2",
+          "title": "Digital to Analog Converter - Weighted Resistor Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t3",
+          "title": "R-2R Ladder Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t4",
+          "title": "Analog to Digital Converter - Flash Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t5",
+          "title": "Successive Approximation Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t6",
+          "title": "Introduction to Verilog - Implementation of AND, Half Adder and Full Adder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t7",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-3-pbeot304-mModule 4-t8",
+          "title": "Project-Based Learning in Digital Electronics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
+import { fileExists, readJsonFile, readTextFile, readDir, statIsDir } from "@/lib/fsHelper";
 import { normalizeSiteConfig, readSiteConfig, writeSiteConfig } from "@/lib/siteConfig";
 import { writeToKV, readFromKV } from "@/lib/github";
 import { safeEqual } from "@/lib/crypto";
@@ -111,8 +112,8 @@ export async function saveNoteFile(formData: FormData) {
 
     const mapPath = path.join(process.cwd(), "src", "data", "topic-path-map.json");
     let mapData: Record<string, string> = {};
-    if (fs.existsSync(mapPath)) {
-      mapData = JSON.parse(fs.readFileSync(mapPath, "utf8"));
+    if (fileExists(mapPath)) {
+      mapData = readJsonFile(mapPath);
     }
     mapData[topicId] = relativePath;
     fs.writeFileSync(mapPath, `${JSON.stringify(mapData, null, 2)}\n`, "utf8");
@@ -427,26 +428,36 @@ export async function getSubjectCount() {
   try {
     await assertAdminSecret();
     const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
-    if (!fs.existsSync(subjectsDir)) return { totalSubjects: 0, totalTopics: 0, byBranch: {} };
+    if (!fileExists(subjectsDir)) return { totalSubjects: 0, totalTopics: 0, byBranch: {} };
 
-    const files = fs.readdirSync(subjectsDir).filter((f: string) => f.endsWith(".json"));
     let totalSubjects = 0;
     let totalTopics = 0;
     const byBranch: Record<string, number> = {};
 
-    for (const file of files) {
-      const branch = file.split("-")[0];
-      const data = JSON.parse(fs.readFileSync(path.join(subjectsDir, file), "utf8"));
-      if (Array.isArray(data)) {
-        totalSubjects += data.length;
-        for (const sub of data) {
+    const folders = readDir(subjectsDir);
+    for (const folder of folders) {
+      const folderPath = path.join(subjectsDir, folder);
+      if (!statIsDir(folderPath)) continue;
+
+      const lastDashIndex = folder.lastIndexOf("-");
+      if (lastDashIndex === -1) continue;
+      const branch = folder.substring(0, lastDashIndex);
+
+      try {
+        const files = readDir(folderPath);
+        for (const file of files) {
+          if (!file.endsWith(".json")) continue;
+          const sub = readJsonFile(path.join(folderPath, file));
+          totalSubjects++;
           if (sub.modules) {
             for (const mod of sub.modules) {
               if (mod.topics) totalTopics += mod.topics.length;
             }
           }
+          byBranch[branch] = (byBranch[branch] || 0) + 1;
         }
-        byBranch[branch] = (byBranch[branch] || 0) + data.length;
+      } catch {
+        // skip corrupt files/folders
       }
     }
 

@@ -1,0 +1,69 @@
+{
+  "id": "peait419-computer-science-and-engineering-s3",
+  "code": "PEAIT419",
+  "name": "INTRODUCTION TO THEORY OF COMPUTATION",
+  "branchId": "computer-science-and-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-peait419-mModule 1-t1",
+          "title": "Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-peait419-mModule 1-t2",
+          "title": "NFA with Epsilon Transitions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-peait419-mModule 2-t1",
+          "title": "Converting Regular Expressions to FA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-3-peait419-mModule 2-t2",
+          "title": "Parse Trees",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-peait419-mModule 3-t1",
+          "title": "DPDA and NPDA",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-3-peait419-mModule 4-t1",
+          "title": "Universal Turing Machine",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "pbcbt504-computer-science-and-engineering-and-business-systems-s5",
+  "code": "PBCBT504",
+  "name": "OPERATIONS RESEARCH",
+  "branchId": "computer-science-and-engineering-and-business-systems",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t1",
+          "title": "Introduction to OR and Linear Programming: Origin of OR and its definition, Types of OR problems, Deterministic vs stochastic optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t2",
+          "title": "Phases of OR: Problem formulation, Building mathematical model, Deriving solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t3",
+          "title": "Validating model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t4",
+          "title": "Controlling and implementing solution, Linear programming: Example from industrial cases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t5",
+          "title": "Formulation of LPP, Implicit assumptions of LPP, Solution of LPP, Graphical method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t6",
+          "title": "Simplex method, Artificial variables, Big M method, Identification and resolution of special cases, Infeasibility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t7",
+          "title": "Unboundedness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 1-t8",
+          "title": "Redundancy and degeneracy, Sensitivity analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t1",
+          "title": "Transportation and Assignment Problems: Transportation problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t2",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t3",
+          "title": "Mathematical formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t4",
+          "title": "Balanced and unbalanced transportation problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t5",
+          "title": "Initial basic feasible solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t6",
+          "title": "Northwest corner rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t7",
+          "title": "Least cost method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t8",
+          "title": "Vogel's approximation method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t9",
+          "title": "Test for optimality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t10",
+          "title": "MODI method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t11",
+          "title": "Degeneracy and its solution, Assignment problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t12",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t13",
+          "title": "Mathematical formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t14",
+          "title": "Balanced and unbalanced assignment problem, Solution method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 2-t15",
+          "title": "Hungarian algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 3-t1",
+          "title": "Inventory Control: Functions of inventory and its disadvantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 3-t2",
+          "title": "ABC analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 3-t3",
+          "title": "Concept of inventory costs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 3-t4",
+          "title": "Basics of inventory policy, Order",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 3-t5",
+          "title": "Lead time, Fixed order quantity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 3-t6",
+          "title": "Economic Order Quantity (EOQ)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 3-t7",
+          "title": "Production Order Quantity (POQ), EOQ models (manufacturing and purchase) with shortages and without shortages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 4-t1",
+          "title": "Definition and steps of simulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 4-t2",
+          "title": "Random number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 4-t3",
+          "title": "Random number generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 4-t4",
+          "title": "Application in scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pbcbt504-mModule 4-t5",
+          "title": "Queuing systems and inventory systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

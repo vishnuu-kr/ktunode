@@ -1,0 +1,177 @@
+{
+  "id": "pemrt414-mechatronics-engineering-s4",
+  "code": "PEMRT414",
+  "name": "NETWORK THEORY",
+  "branchId": "mechatronics-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 1-t1",
+          "title": "Mesh and Node Analysis of Network Containing Independent and Dependent Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 1-t2",
+          "title": "Supermesh and Supernode Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 1-t3",
+          "title": "Steady-State AC Analysis Using Mesh and Node Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t1",
+          "title": "Thevenin's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t2",
+          "title": "Norton's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t3",
+          "title": "Superposition Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t4",
+          "title": "Reciprocity Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t5",
+          "title": "Maximum Power Transfer Theorem (Applied to Both DC and AC Circuits Having Dependent Sources)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t6",
+          "title": "Review of Laplace Transforms and Inverse Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t7",
+          "title": "Initial Value Theorem and Final Value Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 2-t8",
+          "title": "Transformation of Basic Signals and Circuits into S-Domain",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t1",
+          "title": "Transient Analysis of RL and RLC Networks with Impulse, Step, and Sinusoidal Inputs (With and Without Initial Conditions)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t2",
+          "title": "Network Functions for the Single Port and Two Port Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t3",
+          "title": "Properties of Driving Point and Transfer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t4",
+          "title": "Significance of Poles and Zeros of Network Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t5",
+          "title": "Time Domain Response from Pole Zero Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t6",
+          "title": "Impulse Function and Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t7",
+          "title": "Network Functions in the Sinusoidal Steady State",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 3-t8",
+          "title": "Magnitude and Phase Response",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 4-t1",
+          "title": "Impedance, Admittance, Transmission and Hybrid Parameters of Two Port Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 4-t2",
+          "title": "Interrelationship Among Parameter Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 4-t3",
+          "title": "Series and Parallel Connections of Two Port Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 4-t4",
+          "title": "Reciprocal and Symmetrical Two Port Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pemrt414-mModule 4-t5",
+          "title": "Characteristic Impedance, Image Impedance and Propagation Constant (Derivation Not Required)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

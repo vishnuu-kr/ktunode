@@ -1,0 +1,225 @@
+{
+  "id": "pecat415-computer-science-and-engineering-artificial-intelligence-s4",
+  "code": "PECAT415",
+  "name": "ALGORITHM ANALYSIS AND DESIGN",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t1",
+          "title": "Introduction to Algorithm Analysis: Characteristics of Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t2",
+          "title": "Criteria for Analysing Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t3",
+          "title": "Time and Space Complexity - Best",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t4",
+          "title": "Worst and Average Case Complexities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t5",
+          "title": "Asymptotic Notations - Big-Oh (O)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t6",
+          "title": "Big-Omega (Ω)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t7",
+          "title": "Big-Theta (Θ)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t8",
+          "title": "Little-Oh (o) and Little-Omega (ω) and Their Properties. Classifying Functions by Their Asymptotic Growth Rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t9",
+          "title": "Time and Space Complexity Calculation of Simple Algorithms. Analysis of Recursive Algorithms: Recurrence Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t10",
+          "title": "Solving Recurrence Equations - Iteration Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t11",
+          "title": "Recursion Tree Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 1-t12",
+          "title": "Substitution Method and Master's Theorem (Proof Not Required)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 2-t1",
+          "title": "Divide and Conquer and Greedy Strategy: General Method, Binary Search, Recurrence Equation for Divide and Conquer, Finding the Maximum and Minimum, Merge Sort, Strassen's Matrix Multiplication, Advantages and Disadvantages of Divide and Conquer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 2-t2",
+          "title": "Decrease and Conquer Approach - Topological Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 2-t3",
+          "title": "The Control Abstraction of Greedy Strategy - Fractional Knapsack Problem, Minimum Cost Spanning Tree Computation - Kruskal's Algorithms, Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 2-t4",
+          "title": "Single Source Shortest Path Algorithm - Dijkstra's Algorithm, Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 3-t1",
+          "title": "Dynamic Programming - General Method with Examples, Multistage Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 3-t2",
+          "title": "Transitive Closure - Warshall's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 3-t3",
+          "title": "All Pairs Shortest Paths - Floyd's Algorithm, Optimal Binary Search Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 3-t4",
+          "title": "Knapsack Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 3-t5",
+          "title": "Bellman-Ford Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 3-t6",
+          "title": "Travelling Salesperson Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 3-t7",
+          "title": "Reliability Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t1",
+          "title": "Backtracking and Branch and Bound: Backtracking - General Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t2",
+          "title": "N-Queen Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t3",
+          "title": "Sum of Subsets Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t4",
+          "title": "Graph Coloring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t5",
+          "title": "Hamiltonian Cycles. Branch and Bound - General Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t6",
+          "title": "Travelling Salesperson Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t7",
+          "title": "0/1 Knapsack Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t8",
+          "title": "LC Branch and Bound Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-4-pecat415-mModule 4-t9",
+          "title": "FIFO Branch and Bound Solution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

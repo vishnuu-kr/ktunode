@@ -1,0 +1,273 @@
+{
+  "id": "peect526-electronics-and-communication-engineering-s5",
+  "code": "PEECT526",
+  "name": "HIGH SPEED DIGITAL DESIGN",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 1-t1",
+          "title": "Fundamentals: Frequency and Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 1-t2",
+          "title": "Time and Distance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 1-t3",
+          "title": "Lumped Versus Distributed Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 1-t4",
+          "title": "Four Kinds of Reactance - Ordinary Capacitance and Inductance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 1-t5",
+          "title": "Mutual Capacitance and Inductance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 1-t6",
+          "title": "Relation of Mutual Capacitance and Mutual Inductance to Cross Talk",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t1",
+          "title": "Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t2",
+          "title": "Quiescent vs Active Dissipation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t3",
+          "title": "Active Power Driving a Capacitive Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t4",
+          "title": "Active Power Due to Overlapping Bias Currents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t5",
+          "title": "Input Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t6",
+          "title": "Speed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t7",
+          "title": "Packaging (Power Dissipation Analysis of Only CMOS Logic Gates are Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t8",
+          "title": "Measurement Techniques: Rise Time and Bandwidth of Oscilloscope Probes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t9",
+          "title": "Self Inductance of Probe Ground Loop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t10",
+          "title": "Spurious Signal Pick Up from Probe Ground Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t11",
+          "title": "Special Probing Fixtures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t12",
+          "title": "Avoiding Pickup from Probe Shield Currents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t13",
+          "title": "Slowing Down of a System Clock",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 2-t14",
+          "title": "Observing Metastable States",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 3-t1",
+          "title": "Problems of Point to Point Wiring, Signal Distortion, EMI, Cross Talk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 3-t2",
+          "title": "Infinite Uniform Transmission Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 3-t3",
+          "title": "Ideal Distortion Less Lossless Transmission Line, RC Transmission Line, Skin Effect, Proximity Effect, Dielectric Loss",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 3-t4",
+          "title": "Effects of Source and Load Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 3-t5",
+          "title": "Termination: End Terminator, Source Terminators, Middle Terminators, AC Biasing for End Terminators, Resistor Selection, Cross Talk in Terminators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t1",
+          "title": "Stable Voltage Reference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t2",
+          "title": "Uniform Voltage Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t3",
+          "title": "Distribution Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t4",
+          "title": "Choosing a Bypass Capacitor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t5",
+          "title": "Clock Distribution: Timing Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t6",
+          "title": "Clock Skew",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t7",
+          "title": "Using Low Impedance Drivers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t8",
+          "title": "Using Low Impedance Distribution Lines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t9",
+          "title": "Delay Adjustments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t10",
+          "title": "Differential Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t11",
+          "title": "Clock Signal Duty Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t12",
+          "title": "Decoupling Clock Receivers from the Clock Bus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t13",
+          "title": "Clock Oscillators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t14",
+          "title": "Canned Clock Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-peect526-mModule 4-t15",
+          "title": "Clock Jitter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

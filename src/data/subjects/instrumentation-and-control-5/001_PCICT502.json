@@ -1,0 +1,417 @@
+{
+  "id": "pcict502-instrumentation-and-control-s5",
+  "code": "PCICT502",
+  "name": "PROCESS CONTROL INSTRUMENTATION",
+  "branchId": "instrumentation-and-control",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t1",
+          "title": "Introduction to Process Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t2",
+          "title": "Process Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t3",
+          "title": "Need for Process Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t4",
+          "title": "Basic Control Actions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t5",
+          "title": "Process Control Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t6",
+          "title": "Control System Evaluation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t7",
+          "title": "Control System Objective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t8",
+          "title": "Control System Evaluation Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t9",
+          "title": "Final Control Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t10",
+          "title": "Signal Conversion (Analogue and Digital Electrical Signals)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t11",
+          "title": "Actuators (Electric)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t12",
+          "title": "Pneumatic and Hydraulic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t13",
+          "title": "Control Elements (Mechanical and Electrical Valves)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t14",
+          "title": "Controller Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t15",
+          "title": "Process Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 1-t16",
+          "title": "Control System Parameters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t1",
+          "title": "Discontinuous Controller Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t2",
+          "title": "Two Position Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t3",
+          "title": "Multi-Position Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t4",
+          "title": "Floating Control Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t5",
+          "title": "Continuous Controller Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t6",
+          "title": "Proportional Controller Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t7",
+          "title": "Integral Controller Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t8",
+          "title": "Derivative Controller Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t9",
+          "title": "Composite Controller Modes - PI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t10",
+          "title": "PD and Three Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t11",
+          "title": "Control Systems with Multiple Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t12",
+          "title": "Feed Forward Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t13",
+          "title": "Practical Aspects of the Design of Feed Forward Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t14",
+          "title": "Feed Forward - Feedback Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 2-t15",
+          "title": "Ratio Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t1",
+          "title": "Electronic Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t2",
+          "title": "General Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t3",
+          "title": "Single Mode and Composite Controller Modes (P and PI Controller Design using OP AMP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t4",
+          "title": "Pneumatic Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t5",
+          "title": "Continuous Controller Modes (Principle and Design of P, PI, PD, PID Control Modes)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t6",
+          "title": "Process Loop Tuning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t7",
+          "title": "Tuning of Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t8",
+          "title": "Coon Method of Tuning (Process Reaction Curve Method)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t9",
+          "title": "Ultimate Cycle Method (Ziegler Nichol's Method)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t10",
+          "title": "Damped Oscillation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t11",
+          "title": "Frequency Response Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 3-t12",
+          "title": "Comparing Tuning Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t1",
+          "title": "Programmable Logic Controller (PLC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t2",
+          "title": "PLC versus Relay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t3",
+          "title": "Evolution of PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t4",
+          "title": "Functions of PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t5",
+          "title": "Advantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t6",
+          "title": "PLC Programming - Basics of Ladder Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t7",
+          "title": "On/Off Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t8",
+          "title": "Internal Relay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t9",
+          "title": "Jump Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t10",
+          "title": "Data Handling Instruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t11",
+          "title": "Data Manipulation Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t12",
+          "title": "Arithmetic and Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t13",
+          "title": "PID and Other Important Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t14",
+          "title": "Timers and Counters in PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t15",
+          "title": "Distributed Control System (DCS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t16",
+          "title": "Introduction to DCS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t17",
+          "title": "Evolution of DCS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t18",
+          "title": "DCS Flow Sheet Symbols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t19",
+          "title": "Architecture of DCS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t20",
+          "title": "SCADA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-pcict502-mModule 4-t21",
+          "title": "Introduction to Supervisory Computer Tasks and DCS Configuration: Supervisory Computer Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

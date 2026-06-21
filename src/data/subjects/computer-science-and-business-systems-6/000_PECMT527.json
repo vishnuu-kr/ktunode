@@ -1,0 +1,135 @@
+{
+  "id": "pecmt527-computer-science-and-business-systems-s6",
+  "code": "PECMT527",
+  "name": "INTRODUCTION TO COMPILER DESIGN",
+  "branchId": "computer-science-and-business-systems",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 1-t1",
+          "title": "Compilers - The Translation Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 1-t2",
+          "title": "Major Data Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 1-t3",
+          "title": "Other Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 1-t4",
+          "title": "Bootstrapping and Porting. Scanning Process - Finite State Automata and Regular Expressions (Basic Idea Only). Use of LEX to Generate Automatic Scanners (Basic Idea Only). Parsing Process - Context Free Grammars (Basic Idea Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 1-t5",
+          "title": "Parse Trees and Abstract Syntax Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 1-t6",
+          "title": "Ambiguity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 2-t1",
+          "title": "Top-Down Parsing - Recursive Descent",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 2-t2",
+          "title": "LL(1)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 2-t3",
+          "title": "First and Follow. Error Recovery in Top-Down Parsers. Bottom-Up Parsing - Overview of Bottom-Up Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 2-t4",
+          "title": "Shift-Reduce Parser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 2-t5",
+          "title": "LR(0) Items and LR(0) Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 2-t6",
+          "title": "SLR(1) Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 2-t7",
+          "title": "General LR(1) and LALR(1) Parsing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 3-t1",
+          "title": "Attributes and Attribute Grammars. Dependency Graphs and Evaluation Order, Synthesized and Inherited Attributes. Intermediate Code Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 3-t2",
+          "title": "Three Address Code, P",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 3-t3",
+          "title": "Code. Intermediate Code as a Synthesized Attribute",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pecmt527-mModule 4-t1",
+          "title": "Principal Sources of Code Optimization, Classification of Optimizations, Data Structures and Implementation Techniques for Optimizations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

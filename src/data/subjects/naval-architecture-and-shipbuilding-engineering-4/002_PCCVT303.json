@@ -1,0 +1,147 @@
+{
+  "id": "pccvt303-naval-architecture-and-shipbuilding-engineering-s4",
+  "code": "PCCVT303",
+  "name": "ANALYSIS OF STRUCTURES",
+  "branchId": "naval-architecture-and-shipbuilding-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 1-t1",
+          "title": "Method of Joints and Method of Sections (Simple Illustrative Numerical Problems Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 1-t2",
+          "title": "Deflection of Statically Determinate Structures: Introduction and Simple Illustrative Examples of Simple Beams and Cantilever Beams Only on (a) Method of Successive Integrations, (b) Moment Area Method, and (c) Castigliano's Theorem Part I; Principle of Virtual Work, Betti's Theorem, Maxwell's Law of Reciprocal Deflections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 1-t3",
+          "title": "Unit Load Method for Determination of Deflection of Statically Determinate Beams and Trusses (Simple Illustrative Numerical Problems Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 2-t1",
+          "title": "Degree of Static and Kinematic Indeterminacies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 2-t2",
+          "title": "Introduction to Force and Displacement Methods; Method of Consistent Deformations: Analysis of Beams (Simple Problems with One Redundant, Illustration Only for Two-Redundant Problems); Concepts of Effect of Pre-Strain, Lack of Fit, Temperature Changes and Support Settlement (No Numerical Problems); Castigliano's Theorem Part II, Theorem of Least Work; Minimum Strain Energy Method for Analysing Statically Indeterminate Structures (Illustrative Simple Examples Only); Slope Deflection Method and Moment Distribution Method: Analysis of Continuous Beams and Portal Frames Without Sway",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 2-t3",
+          "title": "Frames with Sway (Illustration Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 2-t4",
+          "title": "Settlement Effects (Illustration Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 3-t1",
+          "title": "Analysis of Forces in Cables Under Concentrated and Uniformly Distributed Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 3-t2",
+          "title": "Arches: Theory of Arches - Eddy's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 3-t3",
+          "title": "Analysis of Three-Hinged Arches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 3-t4",
+          "title": "Normal Thrust and Radial Shear Due to Simple Cases of Loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 3-t5",
+          "title": "Introduction to Plastic Theory; Approximate Methods of Analysis of Multistoried Frames (No Numerical Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 3-t6",
+          "title": "Matrix Analysis of Structures: Definition of Flexibility and Stiffness Influence Coefficients; Flexibility Method and Stiffness Method - Flexibility and Stiffness Matrices for Truss and Frame Elements, Load Transformation Matrix, Development of Total Flexibility and Stiffness Matrix of the Structure, Analysis of Simple Structures (Plane Truss and Plane Frame), Nodal Loads and Element Loads, Lack of Fit and Temperature Effects",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 4-t1",
+          "title": "Introduction - Degrees of Freedom - Equation of Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 4-t2",
+          "title": "D'Alembert's Principle, Damping, Free Response of Damped and Undamped Systems, Logarithmic Decrement; Single Degree of Freedom Systems Subjected to Harmonic Load - Transient and Steady State Responses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 4-t3",
+          "title": "Simple Portal Frame Problems; Moving Loads and Influence Lines: Introduction to Moving Loads, Concept of Influence Lines, Influence Lines for Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 4-t4",
+          "title": "Shear Force and Bending Moment in Simply Supported Beams and Overhanging Beams - Analysis for Single Concentrated Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 4-t5",
+          "title": "Several Concentrated Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pccvt303-mModule 4-t6",
+          "title": "Uniformly Distributed Load Shorter and Longer Than the Span - Conditions for Maximum Bending Moment and Shear Force",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

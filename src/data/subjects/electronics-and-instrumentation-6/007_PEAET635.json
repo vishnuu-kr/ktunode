@@ -1,0 +1,219 @@
+{
+  "id": "peaet635-electronics-and-instrumentation-s6",
+  "code": "PEAET635",
+  "name": "DIGITAL IMAGE PROCESSING",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t1",
+          "title": "Digital Image Fundamentals - Image Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t2",
+          "title": "Basic Relationship Between Pixels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t3",
+          "title": "Elements of DIP System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t4",
+          "title": "Elements of Visual Perception, Simple Image Formation Model, Digital Camera Working Principles - Brightness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t5",
+          "title": "Contrast",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t6",
+          "title": "Saturation, Colour Image Fundamentals - RGB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t7",
+          "title": "HSI Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t8",
+          "title": "2D Sampling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t9",
+          "title": "Quantization, Review of Matrix Theory - Row and Column Ordering - Toeplitz",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 1-t10",
+          "title": "Circulant and Block Matrix",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 2-t1",
+          "title": "2D Image Transforms - DFT and Its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 2-t2",
+          "title": "KL Transform and Singular Value Decomposition, Image Enhancement - Spatial Domain Methods - Point Processing, Intensity Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 2-t3",
+          "title": "Histogram Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 2-t4",
+          "title": "Image Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 2-t5",
+          "title": "Image Averaging, Spatial Filtering - Smoothing Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 2-t6",
+          "title": "Sharpening Filters, Frequency Domain Methods - Low Pass Filtering and High Pass Filtering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 3-t1",
+          "title": "Image Restoration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 3-t2",
+          "title": "Degradation Model, Unconstrained Restoration - Lagrange Multiplier, Constraint Restoration, Inverse Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 3-t3",
+          "title": "Removal of Blur Caused by Uniform Linear Motion, Feature Extraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 3-t4",
+          "title": "Introduction to Feature Extraction Techniques - Harris Corner Detection, SIFT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t1",
+          "title": "Feature Descriptors - Histogram of Oriented Gradients (HOG)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t2",
+          "title": "Scale Invariant Features, Image Classification - Support Vector Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t3",
+          "title": "Decision Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t4",
+          "title": "Object Detection using HOG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t5",
+          "title": "Object Detection Using Viola-Jones Algorithm, Image Segmentation - Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t6",
+          "title": "Region-Based Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t7",
+          "title": "Clustering Techniques (K-Means), Morphological Operations - Dilation and Erosion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t8",
+          "title": "Opening and Closing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t9",
+          "title": "Hit-or-Miss Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t10",
+          "title": "Boundary Extraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet635-mModule 4-t11",
+          "title": "Region Filling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

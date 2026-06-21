@@ -1,0 +1,327 @@
+{
+  "id": "pecst416-computer-science-and-engineering-and-business-systems-s4",
+  "code": "PECST416",
+  "name": "SIGNALS AND SYSTEMS",
+  "branchId": "computer-science-and-engineering-and-business-systems",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t1",
+          "title": "1D Signals - A General Introduction to Real Time Signals - CT and DT Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t2",
+          "title": "Sinusoids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t3",
+          "title": "Spectrum Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t4",
+          "title": "Representation of Discrete Time Signals - Graphical Representation, Functional Representation, Sequence Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t5",
+          "title": "Properties of DT Signals - Even and Odd",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t6",
+          "title": "Support of Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t7",
+          "title": "Time Reversal (Reflection)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t8",
+          "title": "Properties of Discrete-Time Fourier Series - Linearity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t9",
+          "title": "Translation (Time Shifting)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t10",
+          "title": "Modulation (Frequency Shifting)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t11",
+          "title": "Reflection (Time Reversal)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t12",
+          "title": "Conjugation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t13",
+          "title": "Duality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t14",
+          "title": "Multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t15",
+          "title": "Parseval's Relation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 1-t16",
+          "title": "Even/Odd Symmetry",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t1",
+          "title": "Linearity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t2",
+          "title": "Translation (Time Shifting)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t3",
+          "title": "Modulation (Frequency-Domain Shifting)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t4",
+          "title": "Conjugation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t5",
+          "title": "Time Reversal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t6",
+          "title": "Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t7",
+          "title": "Multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t8",
+          "title": "Frequency-Domain Differentiation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t9",
+          "title": "Differencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t10",
+          "title": "Parseval's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t11",
+          "title": "Even/Odd Symmetry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t12",
+          "title": "Real Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t13",
+          "title": "Bandwidth of Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t14",
+          "title": "Energy Density Spectra",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 2-t15",
+          "title": "Characterizing LTI Systems Using the Fourier Transform",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 3-t1",
+          "title": "Recursive DT Systems and Non-Recursive Discrete Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 3-t2",
+          "title": "Relaxed System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 3-t3",
+          "title": "Properties of Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 3-t4",
+          "title": "Characterizing LTI Systems and Convolution - Impulse Response of an LTI System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 3-t5",
+          "title": "Difference Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 3-t6",
+          "title": "Eigen Sequences/Eigen Functions for Discrete-Time LTI Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t1",
+          "title": "Z Transform - Motivation for Z Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t2",
+          "title": "Relationship Between Z Transform and Discrete-Time Fourier Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t3",
+          "title": "Complex Modulation (Z-Domain Scaling)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t4",
+          "title": "Conjugation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t5",
+          "title": "Time Reversal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t6",
+          "title": "Upsampling (Time Expansion)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t7",
+          "title": "Downsampling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t8",
+          "title": "Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t9",
+          "title": "Z-Domain Differentiation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t10",
+          "title": "Differencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t11",
+          "title": "Characterizing LTI Systems Using Z Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-4-pecst416-mModule 4-t12",
+          "title": "Interconnection of LTI Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": "oeitt832-information-technology-s8",
+  "code": "OEITT832",
+  "name": "DEEP LEARNING",
+  "branchId": "information-technology",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t1",
+          "title": "Traditional Machine Learning to Deep Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t2",
+          "title": "Neural Networks - Feedforward Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t3",
+          "title": "Activation Functions - Sigmoid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t4",
+          "title": "ReLU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t5",
+          "title": "Tanh",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t6",
+          "title": "Softmax",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t7",
+          "title": "Training Neural Networks - Forward and Backward Propagation Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t8",
+          "title": "Optimization Algorithms - Gradient Descent",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t9",
+          "title": "Stochastic Gradient Descent",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 1-t10",
+          "title": "Adam",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt832-mModule 2-t1",
+          "title": "CNN Basics - Convolutional Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 2-t2",
+          "title": "Pooling Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 2-t3",
+          "title": "CNN Architectures - LeNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 2-t4",
+          "title": "AlexNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 2-t5",
+          "title": "ResNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 2-t6",
+          "title": "Applications of CNNs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt832-mModule 3-t1",
+          "title": "RNN Basics - RNN Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 3-t2",
+          "title": "Backpropagation Through Time (BPTT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 3-t3",
+          "title": "Vanishing and Exploding Gradients",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 3-t4",
+          "title": "Advanced RNN Architectures - Long Short-Term Memory (LSTM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 3-t5",
+          "title": "Gated Recurrent Units (GRU)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 3-t6",
+          "title": "Transformers and Attention Mechanisms - Attention Mechanism Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 3-t7",
+          "title": "Transformer Architecture (BERT)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt832-mModule 4-t1",
+          "title": "Generative Adversarial Networks (GANs) - GAN Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 4-t2",
+          "title": "Applications of GANs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 4-t3",
+          "title": "Autoencoders - Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 4-t4",
+          "title": "Transfer Learning and Fine-Tuning - Pre-trained Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt832-mModule 4-t5",
+          "title": "Fine-Tuning Strategies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

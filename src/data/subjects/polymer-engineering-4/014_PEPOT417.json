@@ -1,0 +1,207 @@
+{
+  "id": "pepot417-polymer-engineering-s4",
+  "code": "PEPOT417",
+  "name": "OPERATIONS RESEARCH",
+  "branchId": "polymer-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t1",
+          "title": "Introduction to Operations Research: Concept of Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t2",
+          "title": "Decision Making Through Operations Research",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t3",
+          "title": "Models and Modelling in OR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t4",
+          "title": "General Methods for Solving OR Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t5",
+          "title": "Application and Scope of OR - Basic OR Models. Linear Programming: Formulation of LPP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t6",
+          "title": "Graphical Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t7",
+          "title": "Simplex Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t8",
+          "title": "Maximization Problems - Minimization Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t9",
+          "title": "Problems Involving Artificial Variables. Concepts of Duality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t10",
+          "title": "Sensitivity Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 1-t11",
+          "title": "Degeneracy in LPP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t1",
+          "title": "Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t2",
+          "title": "Methods of Finding Initial Solution (North West Corner Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t3",
+          "title": "Least Cost Method and Vogel's Approximation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t4",
+          "title": "Test for Optimality (MODI Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t5",
+          "title": "Unbalanced Transportation Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t6",
+          "title": "Maximization Transportation Problems. Assignment Problems: Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t7",
+          "title": "Methods of Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t8",
+          "title": "Hungarian Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t9",
+          "title": "Unbalanced Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 2-t10",
+          "title": "Maximization Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 3-t1",
+          "title": "Introduction to Queuing Theory: Terminologies - Classification of Queuing Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 3-t2",
+          "title": "Single Server Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 3-t3",
+          "title": "Multi Server Problems. Inventory Control: Variables - Deterministic Inventory Models - Purchasing Model Without Shortages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 3-t4",
+          "title": "Manufacturing Model Without Shortages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 3-t5",
+          "title": "Purchasing Model With Shortages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 3-t6",
+          "title": "Manufacturing Model With Shortages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 4-t1",
+          "title": "CPM and PERT - Time Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "polymer-engineering-4-pepot417-mModule 4-t2",
+          "title": "Critical Path, Basic Concepts of Crashing. Replacement Problems: Replacement of Assets That Deteriorate with Time, Replacement of Assets That Fail Completely",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

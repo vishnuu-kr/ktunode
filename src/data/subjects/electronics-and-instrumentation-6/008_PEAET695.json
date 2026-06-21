@@ -1,0 +1,279 @@
+{
+  "id": "peaet695-electronics-and-instrumentation-s6",
+  "code": "PEAET695",
+  "name": "EMBEDDED SYSTEM DESIGN",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 1-t1",
+          "title": "Introduction to Embedded Systems and Definition of Embedded System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 1-t2",
+          "title": "Embedded Systems vs General Computing Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 1-t3",
+          "title": "History of Embedded Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 1-t4",
+          "title": "Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 1-t5",
+          "title": "Major Application Areas",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 1-t6",
+          "title": "Purpose of Embedded Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 1-t7",
+          "title": "Characteristics and Quality Attributes of Embedded Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t1",
+          "title": "Typical Embedded System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t2",
+          "title": "Core of the Embedded System: General Purpose and Domain Specific Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t3",
+          "title": "ASICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t4",
+          "title": "PLDs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t5",
+          "title": "Commercial Off-The-Shelf Components (COTS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t6",
+          "title": "Memory: ROM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t7",
+          "title": "Memory According to the Type of Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t8",
+          "title": "Memory Shadowing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t9",
+          "title": "Memory Selection for Embedded Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t10",
+          "title": "Sensors and Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 2-t11",
+          "title": "Communication Interface: Onboard and External Communication Interfaces",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t1",
+          "title": "RTOS Based Embedded System Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t2",
+          "title": "Operating System Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t3",
+          "title": "Types of Operating Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t4",
+          "title": "Tasks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t5",
+          "title": "Process and Threads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t6",
+          "title": "Multiprocessing and Multitasking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t7",
+          "title": "Task Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t8",
+          "title": "Task Communication: Shared Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t9",
+          "title": "Message Passing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t10",
+          "title": "Device Drivers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 3-t11",
+          "title": "How to Choose an RTOS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t1",
+          "title": "Embedded System Development Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t2",
+          "title": "Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t3",
+          "title": "Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t4",
+          "title": "Selection of Operating System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t5",
+          "title": "Processor Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t6",
+          "title": "Development Platform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t7",
+          "title": "Programming Language and Coding Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t8",
+          "title": "Code Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t9",
+          "title": "Efficient Input/Output",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t10",
+          "title": "Testing and Debugging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t11",
+          "title": "Verify the Software on the Host System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peaet695-mModule 4-t12",
+          "title": "Verify the Software on the Embedded System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

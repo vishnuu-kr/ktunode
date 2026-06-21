@@ -1,0 +1,105 @@
+{
+  "id": "pecst755-computer-science-and-engineering-artificial-intelligence-s7",
+  "code": "PECST755",
+  "name": "INTERNET OF THINGS",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 1-t1",
+          "title": "Introduction: Why IoT, Trends in IT Space, Internet of Things Era, Device-to-Device/Machine-to-Machine Integration, Device-to-Cloud (D2C) Integration, IoT Platform as a Service (PaaS), Cloud-to-Cloud (C2C) Integration, IoT Key Application Domains, Emerging IoT Flavors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 1-t2",
+          "title": "IoT Ecosystem: Architecture for IoT, Mobile Technologies, Mobile Application Development Platforms, LPWAN",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 2-t1",
+          "title": "Infrastructure and Service Discovery Protocols: Layered Architecture for IoT, Protocol Architecture of IoT, Infrastructure Protocols, Device or Service Discovery for IoT, Protocols & Products for IoT Service Discovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 2-t2",
+          "title": "Integration Technologies and Tools: Smart Enterprises and Environments, Sensor and Actuator Networks, The IoT Device Integration Concepts, Standards, and Implementations, The Device Integration Protocols and Middleware, The Protocol Landscape",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 3-t1",
+          "title": "Platforms for IoT Applications and Analytics: The IoT Building Blocks, Use Cases, M2M Application Platform, IoT Architectural Building Blocks, Data Analytics Platforms, IoT Data Virtualization Platforms and Capabilities, The IoT Edge Data Analytics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 3-t2",
+          "title": "Clouds for IoT Applications and Analytics: Reflecting the Cloud Journey, The Key Motivations for Cloud-Enabled Environments, IoT and Cloud-Inspired Smarter Environments, Hybrid, Federated, and Special-Purpose Cloud, The Emergence of Edge/Fog Clouds, SDN and SDS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 4-t1",
+          "title": "Introduction to Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 4-t2",
+          "title": "Creating Your First Project",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 4-t3",
+          "title": "Creating a Sensor to Measure Ambient Light",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 4-t4",
+          "title": "Creating an Actuator for Controlling Illumination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 4-t5",
+          "title": "Publishing Information Using MQTT & HTTP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecst755-mModule 4-t6",
+          "title": "Creating Web Pages for Your Devices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

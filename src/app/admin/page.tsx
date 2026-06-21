@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import { Suspense } from "react";
 import { AlertTriangle } from "lucide-react";
 import AdminPanel from "@/components/admin/AdminPanel";
@@ -8,6 +6,9 @@ import { getTimetable } from "@/lib/timetableData";
 import { readSiteConfig } from "@/lib/siteConfig";
 import { cookies } from "next/headers";
 import { validateAdminSession } from "@/lib/session";
+import path from "path";
+import { fileExists, readJsonFile, readTextFile, readDir, statIsDir } from "@/lib/fsHelper";
+import fs from "fs";
 
 export const dynamic = "force-dynamic";
 
@@ -18,8 +19,8 @@ interface PageProps {
 function getTopicPathMap() {
   try {
     const mapPath = path.join(process.cwd(), "src", "data", "topic-path-map.json");
-    if (fs.existsSync(mapPath)) {
-      return JSON.parse(fs.readFileSync(mapPath, "utf8"));
+    if (fileExists(mapPath)) {
+      return readJsonFile(mapPath);
     }
   } catch (error) {
     console.error("Failed to load topic-path-map.json", error);
@@ -29,15 +30,23 @@ function getTopicPathMap() {
 
 function getSubjects(branch: string, sem: number) {
   try {
-    const subjectFilePath = path.join(
+    const folderPath = path.join(
       process.cwd(),
       "src",
       "data",
       "subjects",
-      `${branch.toLowerCase()}-${sem}.json`
+      `${branch.toLowerCase()}-${sem}`
     );
-    if (fs.existsSync(subjectFilePath)) {
-      return JSON.parse(fs.readFileSync(subjectFilePath, "utf8"));
+    if (fileExists(folderPath) && statIsDir(folderPath)) {
+      const files = readDir(folderPath);
+      const subjects: any[] = [];
+      for (const file of files) {
+        if (file.endsWith(".json")) {
+          const s = readJsonFile(path.join(folderPath, file));
+          subjects.push(s);
+        }
+      }
+      return subjects;
     }
   } catch (e) {
     console.error("Failed to load subjects file:", e);
@@ -47,15 +56,15 @@ function getSubjects(branch: string, sem: number) {
 
 function getNotesSize(dirPath: string): number {
   let size = 0;
-  if (!fs.existsSync(dirPath)) return 0;
+  if (!fileExists(dirPath)) return 0;
   try {
-    const files = fs.readdirSync(dirPath);
+    const files = readDir(dirPath);
     for (const file of files) {
       const filePath = path.join(dirPath, file);
-      const stats = fs.statSync(filePath);
-      if (stats.isDirectory()) {
+      if (statIsDir(filePath)) {
         size += getNotesSize(filePath);
       } else {
+        const stats = fs.statSync(filePath);
         size += stats.size;
       }
     }
@@ -89,51 +98,63 @@ function runSyllabusAudit(allowedBranches: string[]): AuditResult {
   let coveredTopics = 0;
   const missingNotes: AuditResult["missingNotes"] = [];
 
-  if (!fs.existsSync(subjectsDir)) {
+  if (!fileExists(subjectsDir)) {
     return { totalSubjects: 0, totalTopics: 0, coveredTopics: 0, coveragePercentage: 0, missingNotes: [] };
   }
 
   try {
-    const files = fs.readdirSync(subjectsDir);
-    for (const file of files) {
-      if (!file.endsWith(".json")) continue;
-      const parts = file.split("-");
-      const branch = parts[0];
+    const folders = readDir(subjectsDir);
+    for (const folder of folders) {
+      const folderPath = path.join(subjectsDir, folder);
+      if (!statIsDir(folderPath)) continue;
+
+      const lastDashIndex = folder.lastIndexOf("-");
+      if (lastDashIndex === -1) continue;
+
+      const branch = folder.substring(0, lastDashIndex);
+      const semStr = folder.substring(lastDashIndex + 1);
+      const sem = Number(semStr);
+      if (isNaN(sem)) continue;
+
       if (!allowedBranches.includes(branch)) continue;
 
-      const subjectData = JSON.parse(fs.readFileSync(path.join(subjectsDir, file), "utf8"));
-      if (!Array.isArray(subjectData)) continue;
-
-      for (const subject of subjectData) {
-        totalSubjects++;
-        if (!subject.modules) continue;
-        for (const mod of subject.modules) {
-          if (!mod.topics) continue;
-          for (const topic of mod.topics) {
-            totalTopics++;
-            const relativePath = topicPathMap[topic.id];
-            let exists = false;
-            if (relativePath) {
-              const fullPath = path.join(process.cwd(), "public", relativePath);
-              if (fs.existsSync(fullPath)) {
-                const stat = fs.statSync(fullPath);
-                if (stat.size > 10) exists = true;
+      try {
+        const files = readDir(folderPath);
+        for (const file of files) {
+          if (!file.endsWith(".json")) continue;
+          const subject = readJsonFile(path.join(folderPath, file));
+          totalSubjects++;
+          if (!subject.modules) continue;
+          for (const mod of subject.modules) {
+            if (!mod.topics) continue;
+            for (const topic of mod.topics) {
+              totalTopics++;
+              const relativePath = topicPathMap[topic.id];
+              let exists = false;
+              if (relativePath) {
+                const fullPath = path.join(process.cwd(), "public", relativePath);
+                if (fileExists(fullPath)) {
+                  const stat = fs.statSync(fullPath);
+                  if (stat.size > 10) exists = true;
+                }
               }
-            }
-            if (exists) {
-              coveredTopics++;
-            } else {
-              missingNotes.push({
-                subject: subject.name,
-                subjectId: subject.id,
-                semester: subject.semester,
-                branch: branch.toUpperCase(),
-                topicTitle: topic.title,
-                topicId: topic.id,
-              });
+              if (exists) {
+                coveredTopics++;
+              } else {
+                missingNotes.push({
+                  subject: subject.name,
+                  subjectId: subject.id,
+                  semester: sem,
+                  branch: branch.toUpperCase(),
+                  topicTitle: topic.title,
+                  topicId: topic.id,
+                });
+              }
             }
           }
         }
+      } catch (innerError) {
+        // skip corrupt files/folders
       }
     }
   } catch (e) {
@@ -262,8 +283,8 @@ export default async function AdminDashboard({ searchParams }: PageProps) {
     currentNotePath = topicPathMap[cmsTopicId] || "";
     if (currentNotePath) {
       const fullNotePath = path.join(process.cwd(), "public", currentNotePath);
-      if (fs.existsSync(fullNotePath)) {
-        currentNoteContent = fs.readFileSync(fullNotePath, "utf8");
+      if (fileExists(fullNotePath)) {
+        currentNoteContent = readTextFile(fullNotePath);
       }
     }
   }

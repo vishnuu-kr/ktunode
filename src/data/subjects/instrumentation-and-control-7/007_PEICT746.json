@@ -1,0 +1,243 @@
+{
+  "id": "peict746-instrumentation-and-control-s7",
+  "code": "PEICT746",
+  "name": "MULTIVARIABLE CONTROL",
+  "branchId": "instrumentation-and-control",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t1",
+          "title": "Introduction to Process and Instrumentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t2",
+          "title": "Process Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t3",
+          "title": "The Process Behavior",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t4",
+          "title": "Control Aims",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t5",
+          "title": "Modes of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t6",
+          "title": "The Need for Feedback",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t7",
+          "title": "Model-Free vs. Model-Based Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t8",
+          "title": "The Importance of Considering Modelling Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t9",
+          "title": "Multivariable Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 1-t10",
+          "title": "Implementation and Structural Issues",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t1",
+          "title": "Models and Equivalence: Introduction, Objectives of Modelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t2",
+          "title": "Types of Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t3",
+          "title": "First-Principle Models: Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t4",
+          "title": "Internal Representation: State Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t5",
+          "title": "Linear Models and Linearization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t6",
+          "title": "Input/Output Representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t7",
+          "title": "Polynomial Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t8",
+          "title": "Transfer Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t9",
+          "title": "Systems and Subsystems: Interconnection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t10",
+          "title": "Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t11",
+          "title": "Parallel and Feedback Connection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 2-t12",
+          "title": "Generalised Interconnection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 3-t1",
+          "title": "Simple Distillation Column",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t1",
+          "title": "The Control Variable Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t2",
+          "title": "Feedback",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t3",
+          "title": "Closed-Loop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t4",
+          "title": "Interactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t5",
+          "title": "Generalised Plant",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t6",
+          "title": "Performance Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t7",
+          "title": "Feedforward Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t8",
+          "title": "Manual Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t9",
+          "title": "Open-Loop Inversion and Trajectory Tracking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t10",
+          "title": "Disturbances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t11",
+          "title": "Hierarchical",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-7-peict746-mModule 4-t12",
+          "title": "Case Study",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

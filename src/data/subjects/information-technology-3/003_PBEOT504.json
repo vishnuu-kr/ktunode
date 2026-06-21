@@ -1,0 +1,321 @@
+{
+  "id": "pbeot504-information-technology-s3",
+  "code": "PBEOT504",
+  "name": "DATABASE MANAGEMENT SYSTEM",
+  "branchId": "information-technology",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t1",
+          "title": "Concept and Overview of Database Management Systems (DBMS) - Characteristics of Database System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t2",
+          "title": "Structured, Semi-Structured and Unstructured Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t3",
+          "title": "Data Models and Schema - Three Schema Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t4",
+          "title": "Database Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t5",
+          "title": "ER Model - Basic Concepts, Entity Set and Attributes, Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t6",
+          "title": "Relationships and Constraints, Cardinality, Participation, Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t7",
+          "title": "Weak Entities, Relationships of Degree 3",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t8",
+          "title": "Physical Data Organization - Review of Terms: Physical and Logical Records",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t9",
+          "title": "Blocking Factor, Pinned and Unpinned Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t10",
+          "title": "Heap Files",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t11",
+          "title": "Indexing, Single Level Indices, Numerical Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 1-t12",
+          "title": "Multi-Level Indices, Numerical Examples",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t1",
+          "title": "Structure of Relational Databases - Integrity Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t2",
+          "title": "Synthesizing ER Diagram to Relational Schema",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t3",
+          "title": "Structured Query Language (SQL)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t4",
+          "title": "Data Definition Language (DDL) - Table Definitions and Operations: CREATE, DROP, ALTER, INSERT, DELETE, UPDATE",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t5",
+          "title": "SQL DML (Data Manipulation Language) - SQL Queries on Single and Multiple Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t6",
+          "title": "Nested Queries (Correlated and Non-Correlated)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t7",
+          "title": "Aggregation and Grouping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t8",
+          "title": "Views, Assertions, Triggers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t9",
+          "title": "SQL Data Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t10",
+          "title": "Recursive Queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 2-t11",
+          "title": "Accessing SQL from a Programming Language",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t1",
+          "title": "Different Anomalies in Designing a Database",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t2",
+          "title": "The Idea of Normalization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t3",
+          "title": "Functional Dependency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t4",
+          "title": "Armstrong's Axioms (Proofs Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t5",
+          "title": "Closures and Their Computation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t6",
+          "title": "Equivalence of Functional Dependencies (FD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t7",
+          "title": "Minimal Cover (Proofs Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t8",
+          "title": "First Normal Form (1NF), Second Normal Form (2NF), Third Normal Form (3NF), Boyce Codd Normal Form (BCNF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t9",
+          "title": "Lossless Join and Dependency Preserving Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 3-t10",
+          "title": "Algorithms for Checking Lossless Join (LJ) and Dependency Preserving (DP) Properties",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t1",
+          "title": "Transaction Processing Concepts - Overview of Concurrency Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t2",
+          "title": "Transaction Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t3",
+          "title": "Significance of Concurrency Control and Recovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t4",
+          "title": "Transaction States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t5",
+          "title": "System Log",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t6",
+          "title": "Desirable Properties of Transactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t7",
+          "title": "Serial Schedules, Concurrent and Serializable Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t8",
+          "title": "Conflict Equivalence and Conflict Serializability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t9",
+          "title": "Recoverable and Cascade-Less Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t10",
+          "title": "Locking, Two-Phase Locking and Its Variations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t11",
+          "title": "Log-Based Recovery, Deferred Database Modification, Check-Pointing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t12",
+          "title": "Introduction to NoSQL Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t13",
+          "title": "Main Characteristics of Key-Value DB (Examples from Redis)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t14",
+          "title": "Document DB (Examples from MongoDB)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbeot504-mModule 4-t15",
+          "title": "Main Characteristics of Column-Family DB (Examples from Cassandra) and Graph DB (Examples from ArangoDB)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

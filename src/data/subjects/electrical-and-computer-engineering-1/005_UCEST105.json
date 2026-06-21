@@ -1,0 +1,507 @@
+{
+  "id": "ucest105-electrical-and-computer-engineering-s1",
+  "code": "UCEST105",
+  "name": "ALGORITHMIC THINKING WITH PYTHON",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 1,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t1",
+          "title": "Problem-Solving Strategies: Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t2",
+          "title": "Importance of Understanding Multiple Problem-Solving Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t3",
+          "title": "Trial and Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t4",
+          "title": "Heuristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t5",
+          "title": "Means-Ends Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t6",
+          "title": "Backtracking (Working Backward)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t7",
+          "title": "The Problem-Solving Process: Computer as a Model of Computation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t8",
+          "title": "Understanding the Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t9",
+          "title": "Formulating a Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t10",
+          "title": "Developing an Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t11",
+          "title": "Writing the Program",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t12",
+          "title": "Testing the Program",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t13",
+          "title": "Evaluating the Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t14",
+          "title": "Essentials of Python Programming: Creating and Using Variables in Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t15",
+          "title": "Numeric and String Data Types in Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t16",
+          "title": "Using the Math Module",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t17",
+          "title": "Using the Python Standard Library for Handling Basic I/O - print and input",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 1-t18",
+          "title": "Python Operators and Their Precedence",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t1",
+          "title": "Algorithm and Pseudocode Representation: Meaning and Definition of Pseudocode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t2",
+          "title": "Reasons for Using Pseudocode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t3",
+          "title": "Main Constructs of Pseudocode - Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t4",
+          "title": "Selection Constructs: if-else Structure and case Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t5",
+          "title": "Repetition Constructs: for, while, and repeat-until Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t6",
+          "title": "Flowcharts: Symbols Used in Creating a Flowchart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t7",
+          "title": "Start and End Symbols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t8",
+          "title": "Arithmetic Calculations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t9",
+          "title": "Input/Output Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t10",
+          "title": "Decision (Selection) Symbol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t11",
+          "title": "Module Name (Call) Symbol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t12",
+          "title": "For Loop (Hexagon) Symbol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t13",
+          "title": "Flow-Lines, On-Page Connector, and Off-Page Connector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t14",
+          "title": "Sample Problems: Evaluate an Expression (d=a+b*c)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t15",
+          "title": "Find Simple Interest",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t16",
+          "title": "Determine the Larger of Two Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t17",
+          "title": "Determine the Smallest of Three Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t18",
+          "title": "Determine the Grade Earned by a Student Based on KTU Grade Scale (Using if-else and case Structures)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t19",
+          "title": "Print the Numbers from 1 to 50 in Descending Order",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t20",
+          "title": "Find the Sum of n Numbers Input by the User (Using All Three Loop Variants)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t21",
+          "title": "Factorial of a Number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t22",
+          "title": "Largest of n Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t23",
+          "title": "Use of Tools like RAPTOR for Visualizing Control Flow of Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 2-t24",
+          "title": "Flowcharts for the Sample Problems Listed Earlier",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t1",
+          "title": "Selection and Iteration Using Python: if-else, elif",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t2",
+          "title": "for Loop and range",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t3",
+          "title": "while Loop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t4",
+          "title": "Sequence Data Types in Python - list, tuple, strings, dictionary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t5",
+          "title": "Creating and Using Arrays in Python (Using NumPy Library)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t6",
+          "title": "Decomposition and Modularization: Problem Decomposition as a Strategy for Solving Complex Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t7",
+          "title": "Modularization and Motivation for Modularization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t8",
+          "title": "Defining and Using Functions in Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t9",
+          "title": "Functions with Multiple Return Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t10",
+          "title": "Introduction to Merge Sort and Top Three Integers from a List as Examples of Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t11",
+          "title": "Recursion: Definition and Reasons for Using Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t12",
+          "title": "The Call Stack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t13",
+          "title": "Recursion and the Stack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t14",
+          "title": "Avoiding Circularity in Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t15",
+          "title": "Sample Recursion Problems: Finding the nth Fibonacci Number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t16",
+          "title": "Greatest Common Divisor of Two Positive Integers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t17",
+          "title": "Factorial of a Positive Integer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t18",
+          "title": "Adding Two Positive Integers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 3-t19",
+          "title": "Sum of Digits of a Positive Number",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t1",
+          "title": "Computational Approaches to Problem-Solving: Brute-Force Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t2",
+          "title": "Brute-Force Examples: Padlock and Password Guessing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t3",
+          "title": "Divide-and-Conquer Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t4",
+          "title": "Divide-and-Conquer Example: The Merge Sort Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t5",
+          "title": "Advantages of Divide-and-Conquer Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t6",
+          "title": "Disadvantages of Divide-and-Conquer Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t7",
+          "title": "Dynamic Programming Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t8",
+          "title": "Dynamic Programming Example: Fibonacci Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t9",
+          "title": "Recursion vs Dynamic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t10",
+          "title": "Greedy Algorithm Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t11",
+          "title": "Greedy Algorithm Example: Maximum Number of Tasks Completed in Limited Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t12",
+          "title": "Motivations for the Greedy Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t13",
+          "title": "Characteristics of the Greedy Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t14",
+          "title": "Greedy Algorithms vs Dynamic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t15",
+          "title": "Randomized Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t16",
+          "title": "Randomized Example 1: Coupon Collection Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t17",
+          "title": "Randomized Example 2: Hat-Check Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-ucest105-mModule 4-t18",
+          "title": "Motivations for the Randomized Approach",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

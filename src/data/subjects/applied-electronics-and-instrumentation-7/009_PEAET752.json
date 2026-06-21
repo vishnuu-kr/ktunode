@@ -1,0 +1,159 @@
+{
+  "id": "peaet752-applied-electronics-and-instrumentation-s7",
+  "code": "PEAET752",
+  "name": "LOW POWER VLSI",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 1-t1",
+          "title": "Sources of Power Dissipation in CMOS Circuits: Dynamic Power Dissipation - Charging and Discharging Capacitance Power Dissipation; Short Circuit Power Dissipation - Short Circuit Current of Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 1-t2",
+          "title": "Short Circuit Current Dependency with Input and Output Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 1-t3",
+          "title": "Glitching Power; Static Power Dissipation - Leakage Power Dissipation; Gate Level Power Analysis - Capacitive, Internal, and Static Power Dissipation of Gate Level Circuit",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 2-t1",
+          "title": "Power Reduction Techniques; Supply Voltage Scaling Approaches - Multi VDD and Dynamic VDD; Leakage Power Reduction Techniques - Transistor Stacking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 2-t2",
+          "title": "VTCMOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 2-t3",
+          "title": "MTCMOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 2-t4",
+          "title": "DTCMOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 2-t5",
+          "title": "Dynamic Power Dissipation - Power Gating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 2-t6",
+          "title": "Clock Gating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 2-t7",
+          "title": "Transistor and Gate Sizing for Dynamic and Leakage Power Reduction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 3-t1",
+          "title": "Circuit Design Styles; Clocked Design Style - Basic Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 3-t2",
+          "title": "Domino Logic (Domino NAND Gate)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 3-t3",
+          "title": "Differential Current Switch Logic; Non-Clocked Circuit Design Style - Fully Complementary Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 3-t4",
+          "title": "NMOS and Pseudo-NMOS Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 3-t5",
+          "title": "Differential Cascade Voltage Switch Logic (DCVS)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 4-t1",
+          "title": "Adiabatic Switching; Adiabatic Charging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 4-t2",
+          "title": "Adiabatic Amplification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 4-t3",
+          "title": "One Stage and Two Stage Adiabatic Buffer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 4-t4",
+          "title": "Adiabatic Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 4-t5",
+          "title": "Pulsed Power Supplies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet752-mModule 4-t6",
+          "title": "Reversible Logic Basic Concepts",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

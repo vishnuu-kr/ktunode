@@ -1,0 +1,249 @@
+{
+  "id": "pcaet302-electronics-and-instrumentation-s3",
+  "code": "PCAET302",
+  "name": "ELECTRONIC DEVICES AND CIRCUITS",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t1",
+          "title": "Differentiator and Integrator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t2",
+          "title": "Diode Clipping Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t3",
+          "title": "Diode Clamping Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t4",
+          "title": "Voltage Multipliers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t5",
+          "title": "Transistor Biasing: Concept of DC and AC Load Lines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t6",
+          "title": "Types - Fixed Bias Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t7",
+          "title": "Self-Bias",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t8",
+          "title": "Voltage Divider Bias",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t9",
+          "title": "Bias Stabilization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t10",
+          "title": "Switching Circuits: Astable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t11",
+          "title": "Bistable and Monostable Multivibrators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 1-t12",
+          "title": "Schmitt Trigger",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 2-t1",
+          "title": "Voltage Gain and Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 2-t2",
+          "title": "High Frequency Equivalent Circuits of BJT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 2-t3",
+          "title": "Miller Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 2-t4",
+          "title": "Analysis of High Frequency Response of CE Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 2-t5",
+          "title": "Multistage Amplifiers - Cascade and Cascode Amplifiers: Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 2-t6",
+          "title": "Effect on Gain and Bandwidth",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 3-t1",
+          "title": "Frequency Response and Distortion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 3-t2",
+          "title": "Feedback Topologies and Its Effect on Input and Output Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 3-t3",
+          "title": "Feedback Amplifier Circuits Using BJT in Each Feedback Topologies (Analysis of Only Voltage Series Feedback Circuit is Required)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t1",
+          "title": "Barkhausen Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t2",
+          "title": "Classification of Oscillators - RC Phase Shift",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t3",
+          "title": "Wien Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t4",
+          "title": "Hartley",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t5",
+          "title": "Colpitts and Crystal Oscillators (Working Principle and Design Equations of the Circuits Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t6",
+          "title": "Analysis of RC Phase Shift Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t7",
+          "title": "Power Amplifiers: Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t8",
+          "title": "Transformer Coupled Class A Power Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t9",
+          "title": "Push Pull Class B and Class AB Power Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t10",
+          "title": "Complementary Symmetry Class B and Class AB Power Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t11",
+          "title": "Class C Power Amplifier Efficiency and Distortion (No Analysis Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t12",
+          "title": "Regulated Power Supplies: Load and Line Regulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t13",
+          "title": "Series Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t14",
+          "title": "Shunt Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pcaet302-mModule 4-t15",
+          "title": "Short Circuit Protection and Fold Back Protection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

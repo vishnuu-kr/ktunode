@@ -1,0 +1,189 @@
+{
+  "id": "peert861-mechatronics-engineering-s6",
+  "code": "PEERT861",
+  "name": "PLC AND DATA ACQUISITION SYSTEM",
+  "branchId": "mechatronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 1-t1",
+          "title": "Basics of PLC, PLC Advantages and Disadvantages, Architecture of PLC, Scan Cycles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 1-t2",
+          "title": "Types of PLC, PLC Programming Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 1-t3",
+          "title": "Relay Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 1-t4",
+          "title": "Ladder Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 1-t5",
+          "title": "Connecting PLC to Computer, PLC Troubleshooting and Maintenance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 2-t1",
+          "title": "Programming of Timers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 2-t2",
+          "title": "ON Delay, OFF Delay, Retentive Timers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 2-t3",
+          "title": "PLC Timer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 2-t4",
+          "title": "Examples of Timer Function Industrial Application, Programming Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 2-t5",
+          "title": "Up/Down Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 2-t6",
+          "title": "Examples of Counter Function Industrial Application, PLC Arithmetic Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 2-t7",
+          "title": "PLC Number Comparison Function",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 3-t1",
+          "title": "Master Control Reset",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 3-t2",
+          "title": "Skip",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 3-t3",
+          "title": "Jump and Move Instructions, Sequencer Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 3-t4",
+          "title": "Types of PLC Analog Modules and Systems, PLC Analog Signal Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 3-t5",
+          "title": "Case Study of Tank Level Control System, Bottle Filling System, and Sequential Switching of Motors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t1",
+          "title": "Sampling Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t2",
+          "title": "Sampling and Digitizing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t3",
+          "title": "Aliasing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t4",
+          "title": "Sample and Hold Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t5",
+          "title": "Practical Implementation of Sampling and Digitizing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t6",
+          "title": "Definition, Design and Need for Data Acquisition Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t7",
+          "title": "Interfacing ADC and DAC with Microprocessor/Multiplexer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t8",
+          "title": "Multiplexed Channel Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-peert861-mModule 4-t9",
+          "title": "Microprocessor/PC Based Acquisition Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

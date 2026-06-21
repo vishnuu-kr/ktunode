@@ -1,0 +1,117 @@
+{
+  "id": "perat635-robotics-and-artificial-intelligence-s6",
+  "code": "PERAT635",
+  "name": "ADVANCED CONTROL SYSTEMS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 1-t1",
+          "title": "State Space Representation of Systems: Introduction to State Space and State Model Concepts, State Equation of Linear Continuous Time Systems, Matrix Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 1-t2",
+          "title": "Examples of Electrical Circuits and DC Servomotors, Phase Variable Forms of State Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 1-t3",
+          "title": "Diagonal Canonical Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 1-t4",
+          "title": "Similarity Transformations to Diagonal Canonical Form",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 2-t1",
+          "title": "Solution of Time Response of Autonomous Systems and Forced Systems, State Space Analysis of Discrete Time Control Systems: Phase Variable Form and Diagonal Canonical Form Representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 2-t2",
+          "title": "Pulse Transfer Function from State Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 2-t3",
+          "title": "Computation of State Transition Matrix (problems from 2nd order systems only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 3-t1",
+          "title": "Kalman's, Gilbert's and PBH Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 3-t2",
+          "title": "Duality Principle, State Feedback Controller Design: State Feedback Design via Pole Placement Technique, State Observers for LTI Systems - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 3-t3",
+          "title": "Design of Full Order Observer",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 4-t1",
+          "title": "Singular Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 4-t2",
+          "title": "Classification of Singular Points, Definition of Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 4-t3",
+          "title": "Asymptotic Stability and Instability, Construction of Phase Trajectories Using Isocline Method for Linear and Nonlinear Systems, Lyapunov Stability Analysis: Lyapunov Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat635-mModule 4-t4",
+          "title": "Lyapunov Methods to Stability of Nonlinear Systems, Lyapunov Methods to LTI Continuous Time Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

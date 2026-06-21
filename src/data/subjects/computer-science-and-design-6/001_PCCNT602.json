@@ -1,0 +1,171 @@
+{
+  "id": "pccnt602-computer-science-and-design-s6",
+  "code": "PCCNT602",
+  "name": "COMPUTER GRAPHICS AND IMAGE PROCESSING",
+  "branchId": "computer-science-and-design",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 1-t1",
+          "title": "Basics of Computer Graphics and its Applications. Video Display Devices - Refresh Cathode Ray Tubes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 1-t2",
+          "title": "Random Scan Displays and Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 1-t3",
+          "title": "Raster Scan Displays and Systems. Line Drawing Algorithms - DDA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 1-t4",
+          "title": "Bresenham's Algorithm. Circle Drawing Algorithms - Midpoint Circle Generation Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 1-t5",
+          "title": "Bresenham's Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t1",
+          "title": "Filled Area Primitives and Transformations: Filled Area Primitives - Scan Line Polygon Filling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t2",
+          "title": "Boundary Filling and Flood Filling. Two Dimensional Transformations - Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t3",
+          "title": "Rotation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t4",
+          "title": "Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t5",
+          "title": "Reflection and Shearing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t6",
+          "title": "Composite Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t7",
+          "title": "Matrix Representations of Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t8",
+          "title": "Homogeneous Coordinates. Basic 3D Transformations. Clipping and Projections: Window to Viewport Transformation, Cohen-Sutherland Line Clipping Algorithm, Sutherland-Hodgeman Polygon Clipping Algorithm. Three Dimensional Viewing Pipeline. Projections - Parallel and Perspective Projections. Visible Surface Detection Algorithms - Depth Buffer Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 2-t9",
+          "title": "Scan Line Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 3-t1",
+          "title": "Introduction to Image Processing and Applications. Image as 2D Data. Image Representation in Gray Scale, Binary and Colour Images. Fundamental Steps in Image Processing. Components of Image Processing System. Coordinate Conventions. Sampling and Quantization. Spatial and Gray Level Resolution. Basic Relationship Between Pixels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 3-t2",
+          "title": "Neighbourhood, Adjacency, Connectivity. Fundamentals of Spatial Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 3-t3",
+          "title": "Convolution Operation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 4-t1",
+          "title": "Basic Gray Level Transformation Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 4-t2",
+          "title": "Log Transformations, Power-Law Transformations, Contrast Stretching. Histogram Equalization. Basics of Spatial Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 4-t3",
+          "title": "Smoothing Spatial Filter - Linear and Nonlinear Filters, and Sharpening Spatial Filters - Gradient and Laplacian. Fundamentals of Image Segmentation. Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 4-t4",
+          "title": "Basics of Intensity Thresholding and Global Thresholding. Region Based Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 4-t5",
+          "title": "Region Growing, Region Splitting and Merging. Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-6-pccnt602-mModule 4-t6",
+          "title": "Edge Operators - Sobel and Prewitt",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

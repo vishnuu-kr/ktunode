@@ -1,0 +1,249 @@
+{
+  "id": "pecit751-computer-science-and-engineering-s7",
+  "code": "PECIT751",
+  "name": "COMPILER DESIGN",
+  "branchId": "computer-science-and-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 1-t1",
+          "title": "The Front End",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 1-t2",
+          "title": "The Optimizer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 1-t3",
+          "title": "The Back End",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 1-t4",
+          "title": "Scanners - Recognizing Words",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 1-t5",
+          "title": "Regular Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 1-t6",
+          "title": "From Regular Expression to Scanner: FSA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 1-t7",
+          "title": "Implementing Scanners",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 2-t1",
+          "title": "Eliminating Left Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 2-t2",
+          "title": "Backtrack-free Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 2-t3",
+          "title": "Left-Factoring to Eliminate Backtracking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 2-t4",
+          "title": "Recursive Descent Parsers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 2-t5",
+          "title": "Table-Driven LL(1) Parsers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t1",
+          "title": "IR Taxonomy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t2",
+          "title": "Graphical IRs - Syntax-Related Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t3",
+          "title": "Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t4",
+          "title": "Linear IRs - Stack-Machine Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t5",
+          "title": "Three-Address Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t6",
+          "title": "Representing Linear Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t7",
+          "title": "Syntax-Driven Translation: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t8",
+          "title": "Translating Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 3-t9",
+          "title": "Translating Control-Flow Statements",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t1",
+          "title": "Code Shape - Arithmetic Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t2",
+          "title": "Boolean and Relational Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t3",
+          "title": "Control-Flow Constructs - Conditional Execution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t4",
+          "title": "Loops and Iteration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t5",
+          "title": "Case Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t6",
+          "title": "Procedure Calls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t7",
+          "title": "Code Optimization - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t8",
+          "title": "Opportunities for Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t9",
+          "title": "Scope of Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t10",
+          "title": "Local Optimization: Local Value Numbering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t11",
+          "title": "Tree-Height Balancing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t12",
+          "title": "Regional Optimization: Superlocal Value Numbering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t13",
+          "title": "Loop Unrolling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t14",
+          "title": "Global Optimization: Finding Uninitialized Variables with Live Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-7-pecit751-mModule 4-t15",
+          "title": "Global Code Placement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

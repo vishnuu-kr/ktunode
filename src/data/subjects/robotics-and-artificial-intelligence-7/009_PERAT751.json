@@ -1,0 +1,309 @@
+{
+  "id": "perat751-robotics-and-artificial-intelligence-s7",
+  "code": "PERAT751",
+  "name": "DATA STRUCTURES & ALGORITHMS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t1",
+          "title": "Basic Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t2",
+          "title": "Classifications of Data Structures: ADT and CDT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t3",
+          "title": "Linear and Non-Linear",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t4",
+          "title": "Static and Dynamic, Operations on Data Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t5",
+          "title": "Asymptotic Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t6",
+          "title": "Notion of Recursive Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t7",
+          "title": "Recurrence Relations, Representation of Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t8",
+          "title": "Applications of Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t9",
+          "title": "Sparse Matrix and Its Representation, Stack Definitions and Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t10",
+          "title": "Operations on Stacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t11",
+          "title": "Applications of Stacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t12",
+          "title": "Polish Expression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t13",
+          "title": "Reverse Polish Expression and Their Compilation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 1-t14",
+          "title": "Recursion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t1",
+          "title": "Representation of Queues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t2",
+          "title": "Operations on Queues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t3",
+          "title": "Circular Queue",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t4",
+          "title": "Priority Queue",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t5",
+          "title": "Double-Ended Queue",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t6",
+          "title": "Applications of Queues, Notion of Linked Lists",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t7",
+          "title": "Singly Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t8",
+          "title": "Doubly Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t9",
+          "title": "Circular Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t10",
+          "title": "Operations on Linked List, Concepts and Types of Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t11",
+          "title": "Tree Traversal Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t12",
+          "title": "Search Trees, Definition of Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t13",
+          "title": "Directed and Undirected Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 2-t14",
+          "title": "Adjacency Matrix and Adjacency List Representation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t1",
+          "title": "Concepts and Implementations of B-Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t2",
+          "title": "B+ Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t3",
+          "title": "Hashing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t4",
+          "title": "Dictionary, Graph Algorithms: Depth-First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t5",
+          "title": "Breadth-First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t6",
+          "title": "Shortest Path Problem: Dijkstra's Algorithm, Searching and Sorting Algorithms: Linear Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t7",
+          "title": "Binary Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t8",
+          "title": "Hash Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t9",
+          "title": "Internal and External Sorting Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 3-t10",
+          "title": "Sorting Without Comparison",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t1",
+          "title": "Greedy Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t2",
+          "title": "Divide and Conquer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t3",
+          "title": "Dynamic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t4",
+          "title": "Backtracking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t5",
+          "title": "Branch and Bound",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t6",
+          "title": "Randomized Algorithms, Asymptotic Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t7",
+          "title": "Recurrences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat751-mModule 4-t8",
+          "title": "NP-Complete Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

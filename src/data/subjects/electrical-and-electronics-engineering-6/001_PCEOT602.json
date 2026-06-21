@@ -1,0 +1,273 @@
+{
+  "id": "pceot602-electrical-and-electronics-engineering-s6",
+  "code": "PCEOT602",
+  "name": "COMPUTER COMMUNICATION & NETWORK SECURITY",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t1",
+          "title": "Line Coding Schemes: Unipolar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t2",
+          "title": "Polar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t3",
+          "title": "Bipolar and Block Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t4",
+          "title": "Scrambling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t5",
+          "title": "Analog-to-Digital Conversion: Pulse Code Modulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t6",
+          "title": "Delta Modulation, Digital-to-Analog Conversion: ASK",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t7",
+          "title": "PSK, Transmission Modes: Parallel and Serial Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t8",
+          "title": "Asynchronous",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t9",
+          "title": "Synchronous",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t10",
+          "title": "Isochronous Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 1-t11",
+          "title": "Multiplexing: TDM",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t1",
+          "title": "Overview of Computer Communication, Introduction, Types of Computer Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t2",
+          "title": "Network Software, Protocol Hierarchies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t3",
+          "title": "Connection-Oriented and Connectionless Hierarchies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t4",
+          "title": "Reference Models, ISO-OSI Reference Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t5",
+          "title": "TCP/IP Reference Model, Comparison of OSI and TCP/IP Reference Models, Physical Layer: Guided Transmission Media, Twisted Pair",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t6",
+          "title": "Coaxial and Fiber Optics, Data Link Layer: Design Issues, Error Detection: Parity Check",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t7",
+          "title": "Checksum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t8",
+          "title": "Error Correction: Hamming Code, Flow Control: Stop-and-Wait",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t9",
+          "title": "Go-Back-N",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t10",
+          "title": "Selective Repeat, Multiple Access Protocols: ALOHA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t11",
+          "title": "CSMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t12",
+          "title": "CSMA/CD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 2-t13",
+          "title": "Collision-Free Protocols",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t1",
+          "title": "Network Layer and Transport Layer, Network Layer Design Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t2",
+          "title": "Routing Algorithm, Optimality Principle, Flooding, Distance Vector Routing, Link State Routing, Congestion Control Algorithms, General Principles, Congestion Prevention Policies, Choke Packets, Random Early Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t3",
+          "title": "Transport Layer, Transport Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t4",
+          "title": "Elements of Transport Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t5",
+          "title": "Introduction to UDP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t6",
+          "title": "Introduction to TCP, TCP Service Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t7",
+          "title": "TCP Segment Header",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 3-t8",
+          "title": "TCP Connection Establishment and Release",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t1",
+          "title": "Network Security, Introduction to Network Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t2",
+          "title": "Principles of Cryptography, Symmetric Key Cryptography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t3",
+          "title": "Public Key Cryptography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t4",
+          "title": "Message Integrity and Digital Signatures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t5",
+          "title": "Securing E-mail",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t6",
+          "title": "Securing TCP Connections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t7",
+          "title": "IPSec",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-pceot602-mModule 4-t8",
+          "title": "Firewalls and Intrusion Detection Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

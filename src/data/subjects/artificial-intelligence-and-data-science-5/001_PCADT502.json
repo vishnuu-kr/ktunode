@@ -1,0 +1,225 @@
+{
+  "id": "pcadt502-artificial-intelligence-and-data-science-s5",
+  "code": "PCADT502",
+  "name": "ROBOTICS AND INTELLIGENT SYSTEMS",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t1",
+          "title": "Introduction to Robotics - Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t2",
+          "title": "Robot Types - Manipulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t3",
+          "title": "Anatomy of a Robotic Manipulator - Links, Joints, Actuators, Sensors, Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t4",
+          "title": "Robot Configurations - PPP, RRR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t5",
+          "title": "Mobile Robots - Wheeled, Legged, Aerial, Underwater, Surface Water Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t6",
+          "title": "Dynamic Characteristics - Speed of Motion, Load Carrying Capacity, Speed of Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t7",
+          "title": "End Effectors - Mechanical, Special Tools, Magnetic, Vacuum, Adhesive, Active and Passive Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 1-t8",
+          "title": "Ethics in Robotics - Three Laws and Applications of Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 2-t1",
+          "title": "Sensor Classification - Touch, Force, Proximity, Vision Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 2-t2",
+          "title": "Internal Sensors - Position, Velocity, Acceleration, Force Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 2-t3",
+          "title": "External Sensors - Contact Type, Non-Contact Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 2-t4",
+          "title": "Digital Cameras - CCD, CMOS, Omnidirectional",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 2-t5",
+          "title": "Sensor Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 2-t6",
+          "title": "Actuators - DC Motors, H-Bridge, Pulse Width Modulation, Stepper Motors, Servos",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 2-t7",
+          "title": "Hydraulic and Pneumatic Actuators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 3-t1",
+          "title": "Image Processing - Sensing, Pre-processing, Segmentation, Description, Recognition, Interpretation, Feature Extraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 3-t2",
+          "title": "Camera Sensor Hardware Interfacing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 3-t3",
+          "title": "Representation of Transformations - Pure Translation, Pure Rotation about an Axis, Combined Transformations, Transformations Relative to the Rotating Frame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 3-t4",
+          "title": "Differential-Drive Wheeled Mobile Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 3-t5",
+          "title": "Degree of Mobility - Wheel Configurations, Holonomic and Nonholonomic Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 3-t6",
+          "title": "Omnidirectional Wheeled Mobile Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t1",
+          "title": "Position and Orientation - Representing Robot Position",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t2",
+          "title": "Basics of Reactive Navigation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t3",
+          "title": "Robot Localization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t4",
+          "title": "Challenges in Localization - Continuous Representations, Decomposition Strategies, Map Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t5",
+          "title": "Probabilistic Map-Based Localization (Kalman Method)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t6",
+          "title": "Autonomous Map Building",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t7",
+          "title": "Simultaneous Localization and Mapping (SLAM) - Mathematical Definition and Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t8",
+          "title": "Path Planning - Graph Search, Breadth First Search, Depth First Search, Dijkstra's Algorithm, A*, D*",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t9",
+          "title": "Potential Field Based Path Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t10",
+          "title": "Obstacle Avoidance - Bug Algorithm, Vector Field Histogram, Dynamic Window Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pcadt502-mModule 4-t11",
+          "title": "Navigation Architectures - Modularity for Code Reuse and Sharing, Control Localization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "pecst751-artificial-intelligence-and-machine-learning-s7",
+  "code": "PECST751",
+  "name": "ADVANCED COMPUTER NETWORKS",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 1-t1",
+          "title": "Overview and Use Cases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 1-t2",
+          "title": "Network Security Basics - Firewalls, ACLs, and NAT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 1-t3",
+          "title": "Working of NAT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 1-t4",
+          "title": "Virtual Private Networks (VPNs) - Types and Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 1-t5",
+          "title": "Overview of Data Center Networks: Key Components and Topologies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 2-t1",
+          "title": "DLL switching - Overview, VLANs, Inter-VLAN Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 2-t2",
+          "title": "Spanning Tree Protocol (STP) - IEEE 802.1D, Rapid Spanning Tree Protocol (RSTP) - IEEE 802.1w, Multiple Spanning Tree Protocol (MSTP) - IEEE 802.1s, STP Enhancements - BPDU Guard, Root Guard, and Loop Guard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 2-t3",
+          "title": "Data Center Network Architectures - Traditional vs. Modern Data Center Designs (Spine-Leaf, Clos Networks), Ethernet Fabrics and TRILL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 2-t4",
+          "title": "Data Center Design Considerations - Scalability, Redundancy, and Latency",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 3-t1",
+          "title": "SDN Architecture and Components - Control Plane, Data Plane, and Application Plane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 3-t2",
+          "title": "OpenFlow Protocol and its Role in SDN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 3-t3",
+          "title": "SDN Controllers - Ryu, OpenDaylight, and ONOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 3-t4",
+          "title": "SDN Use Cases - Traffic Engineering, Network Function Virtualization (NFV) - NFV Concepts, Virtualizing Network Functions and Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 3-t5",
+          "title": "NFV Infrastructure (NFVI) and Management (MANO)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 3-t6",
+          "title": "Service Function Chaining (SFC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 3-t7",
+          "title": "NFV in Telecom Networks",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 4-t1",
+          "title": "Data Center Interconnect (DCI) - Technologies for Data Center Interconnection (VPLS, OTV, and VXLAN), DCI Design and Deployment Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 4-t2",
+          "title": "Intent-Based Networking (IBN) - Introduction to Intent-Based Networking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 4-t3",
+          "title": "Content Distribution on the Internet - Architectures for Information-Centric Networking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 4-t4",
+          "title": "Content Naming, Routing and Caching, Security in Named Data Networking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 4-t5",
+          "title": "Network Automation and Orchestration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 4-t6",
+          "title": "Automation Tools - Ansible, Terraform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-7-pecst751-mModule 4-t7",
+          "title": "Orchestration Frameworks - Kubernetes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

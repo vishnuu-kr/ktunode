@@ -1,0 +1,117 @@
+{
+  "id": "peiet412-industrial-engineering-s4",
+  "code": "PEIET412",
+  "name": "INDUSTRIAL REFRIGERATION AND AIR CONDITIONING",
+  "branchId": "industrial-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 1-t1",
+          "title": "History, Applications, and Importance of Refrigeration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 1-t2",
+          "title": "Thermodynamics of Refrigeration: Reversed Carnot Cycle, Heat Pumps, Refrigeration Machines, Limitations of the Reversed Carnot Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 1-t3",
+          "title": "Units of Refrigeration: Definition and Practical Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 1-t4",
+          "title": "Air Refrigeration Systems: Reversed Joule Cycle, Aircraft Refrigeration Systems (Simple, Bootstrap, Regenerative, and Reduced Ambient Systems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 1-t5",
+          "title": "Special Refrigeration Systems: Vortex Tube Refrigeration, Thermoelectric Refrigeration (Peltier Effect), Magnetic Refrigeration, Steam Jet Refrigeration",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 2-t1",
+          "title": "Simple Cycle, Representation on T-s and P-h Diagrams, Coefficient of Performance (COP), and Methods to Improve COP (Superheating, Undercooling, Liquid Suction Heat Exchanger)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 2-t2",
+          "title": "Multi-pressure Systems: Multi-compression and Multi-evaporator Systems, Inter-cooling, Flash Intercooling, Flash Gas Removal, Cascade Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 2-t3",
+          "title": "Refrigerants: Properties, Eco-friendly Refrigerants, Mixed Refrigerants, Selection Criteria for Different Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 3-t1",
+          "title": "Ammonia-water System, Lithium Bromide-water Systems, Electrolux Systems, Comparison with Vapour Compression Systems and Drawbacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 3-t2",
+          "title": "Applications of Refrigeration: Domestic Refrigerators, Water Coolers, Ice Plants, Cold Storage, Food Preservation (Plate Freezing, Quick-freezing)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 3-t3",
+          "title": "Refrigeration System Components: Compressors, Condensers, Expansion Devices, Evaporators, Cooling Towers (Types and Applications), Refrigerant Leakage Detection, Refrigerant Charging, and System Controls",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 4-t1",
+          "title": "Properties of Air (Saturated, Unsaturated, Dew Point, Humidity Levels, Thermodynamic Equations, Adiabatic Saturation Process, Psychrometric Charts, Processes - Sensible Heating/Cooling, Humidifying/Dehumidifying, Air Washers, Bypass Factors, Sensible Heat Factor, RSHF, GSHF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 4-t2",
+          "title": "Air Conditioning Design: Comfort and Industrial Air Conditioning, Comfort Air Conditioning Factors, Effective Temperature, Comfort Charts, Cooling Load Estimation, Design Conditions, Supply Conditions, Fresh Air Supply",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-4-peiet412-mModule 4-t3",
+          "title": "Air Conditioning Systems: Room Air Conditioners, Split Systems, Packaged Systems, All-air Systems, Chilled Water Systems, Winter and Summer Air Conditioning, Heating Systems, Humidifiers, Year-round AC System and Controls (Thermostat, Humidistat), Air Distribution Systems (Duct Design), Air Conditioning for Various Environments (Restaurants, Hospitals, Retail Outlets, Computer Centers, Theaters, Industrial Applications)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

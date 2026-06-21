@@ -1,0 +1,147 @@
+{
+  "id": "pbcmt604-computer-science-and-engineering-ai-and-ml-s6",
+  "code": "PBCMT604",
+  "name": "CONCEPTS IN DATA ANALYTICS",
+  "branchId": "computer-science-and-engineering-ai-and-ml",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 1-t1",
+          "title": "Introduction to Data Analytics: Analytics Process Model, Analytical Model Requirements, Data Analytics Life Cycle Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 1-t2",
+          "title": "Association of Two Variables: Discrete Variables, Ordinal and Continuous Variable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 1-t3",
+          "title": "Probability Calculus: Probability Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 1-t4",
+          "title": "Hypothesis Testing: Basic Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 1-t5",
+          "title": "Proximity Measures: Data Objects, Attribute Types, Dissimilarity and Similarity Measures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 2-t1",
+          "title": "Association of Two Variables: Summarizing the Distribution of Two Discrete Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 2-t2",
+          "title": "Contingency Tables for Discrete Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 2-t3",
+          "title": "Joint, Marginal, and Conditional Frequency Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 2-t4",
+          "title": "Graphical Representation of Two Nominal or Ordinal Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 2-t5",
+          "title": "Measures of Association for Two Discrete Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 2-t6",
+          "title": "Association Between Ordinal and Continuous Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 2-t7",
+          "title": "Visualization of Variables from Different Scales",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 3-t1",
+          "title": "Statistical Description of Data: Central Tendency, Dispersion, Range, Quartiles, Variance, Standard Deviation, and Interquartile Range",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 3-t2",
+          "title": "Data Preprocessing: Cleaning, Integration, Reduction, Transformation, Discretization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 3-t3",
+          "title": "Mining Frequent Patterns: Associations, Correlations, and Apriori Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 3-t4",
+          "title": "Classification: General Approach to Classification, Attribute Selection Measures, Naïve Bayesian Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 3-t5",
+          "title": "Clustering: K-Means, Agglomerative versus Divisive Hierarchical Clustering, BIRCH, DBSCAN",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 4-t1",
+          "title": "Text Processing: Boolean Retrieval, Example IR Problem, Inverted Index, Processing Boolean Queries, Tokenization, Stemming, Phrase Queries, Vector Space Model, Finite Automata and Language Model, Query Likelihood Model, Naïve Bayes Text Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-ai-and-ml-6-pbcmt604-mModule 4-t2",
+          "title": "Sample Project Topics: 1. Develop a system to analyse social media posts for sentiment and detect trends over time. The system will gather posts from various social media platforms, analyse the sentiment of these posts, and identify trending topics or keywords. The insights gained can be used for market research, brand monitoring, or understanding public opinion. 2. Develop a system to detect and analyse topics from social media posts. The system will collect posts related to specific keywords or hashtags, perform topic modelling to identify and categorize main discussion themes, and visualize topic trends over time. 3. Develop a system to analyse and mine data from student marks to uncover patterns, trends, and insights related to academic performance. The system will process historical student performance data to identify factors influencing grades, detect patterns in performance, and provide predictive analytics to assist in improving student outcomes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

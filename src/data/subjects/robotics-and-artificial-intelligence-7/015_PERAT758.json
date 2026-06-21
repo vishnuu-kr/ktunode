@@ -1,0 +1,123 @@
+{
+  "id": "perat758-robotics-and-artificial-intelligence-s7",
+  "code": "PERAT758",
+  "name": "DIGITAL FILTER DESIGN",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 1-t1",
+          "title": "Digital Filtering - Review of Z-Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 1-t2",
+          "title": "Z-Domain Transfer Function, Concept of Poles and Zeroes, Location of Poles and Zeroes and Their Effect on Filter Responses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 1-t3",
+          "title": "FIR and IIR Type of Digital Filters, Ideal and Practical Responses of Low Pass, High Pass, Band Pass and Band Reject Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 1-t4",
+          "title": "Analog Filter Responses - Butterworth, Chebyshev and Elliptic Responses, Applications and Advantages of Digital Filtering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 2-t1",
+          "title": "FIR Filter Design - Linear Phase Filters, Location of Zeroes, Design Using Fourier Series, Window Method - Rectangular, Hanning, Hamming Windows, Comparison of Window Frequency Responses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 2-t2",
+          "title": "LP, HP, BP and BR Type Designs, FIR Filter Banks - Quadrature Mirror Sub Band Filters, Tree Structured Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 3-t1",
+          "title": "IIR Filter Design from Analog Filters - Design of Butterworth Analog Filter Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 3-t2",
+          "title": "Specifications of Analog and Digital Frequency Responses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 3-t3",
+          "title": "Conversion to Digital Responses - Impulse Invariant and Bi-linear Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 3-t4",
+          "title": "Frequency Transformation in Analog Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 3-t5",
+          "title": "Design of LP and HP Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 3-t6",
+          "title": "Design of Comb Filter by Pole-Zero Placement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 4-t1",
+          "title": "FIR Filter Structures - Direct, Linear Phase and Lattice Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 4-t2",
+          "title": "IIR Filter Structures - Direct, Cascade, Parallel and Lattice Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat758-mModule 4-t3",
+          "title": "Coefficient Quantization Effects in FIR and IIR Filters - Basic Concepts",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

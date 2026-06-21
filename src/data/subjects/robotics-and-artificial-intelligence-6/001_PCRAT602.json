@@ -1,0 +1,93 @@
+{
+  "id": "pcrat602-robotics-and-artificial-intelligence-s6",
+  "code": "PCRAT602",
+  "name": "ROBOTIC VISION",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 1-t1",
+          "title": "Fundamentals of Image Formation, Transformation: Orthogonal, Euclidean, Affine, Projective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 1-t2",
+          "title": "Fourier Transform, Convolution and Filtering, Image Enhancement, Restoration, Histogram Processing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 2-t1",
+          "title": "Perspective, Binocular Stereopsis: Camera and Epipolar Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 2-t2",
+          "title": "Homography, Rectification, DLT, RANSAC, 3D Reconstruction Framework",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 2-t3",
+          "title": "Auto-Calibration",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 3-t1",
+          "title": "Edges - Canny, LOG, DOG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 3-t2",
+          "title": "Line Detectors (Hough Transform), Corners - Harris and Hessian Affine, Orientation Histogram, SIFT, SURF, HOG, GLOH",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 3-t3",
+          "title": "Scale-Space Analysis - Image Pyramids and Gaussian Derivative Filters, Gabor Filters and DWT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 4-t1",
+          "title": "Region Growing, Edge-Based Approaches to Segmentation, Graph-Cut, Mean-Shift, MRFs, Texture Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pcrat602-mModule 4-t2",
+          "title": "Object Detection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "pcbml507-biomedical-and-robotic-engineering-s5",
+  "code": "PCBML507",
+  "name": "BIOMEDICAL SIGNAL PROCESSING LAB",
+  "branchId": "biomedical-and-robotic-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t1",
+          "title": "Acquisition and basic operations of bio signals using standard signal acquisition systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t2",
+          "title": "Implementation of I/D sampling rate converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t3",
+          "title": "Impulse response of first order and second order systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t4",
+          "title": "Implement DCT/IDCT computation using MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t5",
+          "title": "Implementation of FIR and IIR Butterworth filters using MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t6",
+          "title": "Implement DFT and FFT on simulated discrete-time signals using MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t7",
+          "title": "Perform (i) Addition (ii) Multiplication (iii) Scaling (iv) Linear Convolution (v) Circular Convolution using MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t8",
+          "title": "Implement FFT and power spectrum of ECG/EMG/EEG using MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t9",
+          "title": "Implement medical data compression (Lossy vs. Lossless signals)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t10",
+          "title": "Perform spectral modelling and analysis of PCG signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t11",
+          "title": "Design of 50 Hz notch filter for ECG signal and display PSD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t12",
+          "title": "Detection of events and waves of EEG signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t13",
+          "title": "Detection of events and heart rate measurement from PPG and ECG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t14",
+          "title": "Processing of ECG signals for acquiring parameters like heart rate, QRS complex, P wave, etc.",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-pcbml507-mModule Experiment 2-t15",
+          "title": "Medical data compression (Lossy vs. Lossless signals)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

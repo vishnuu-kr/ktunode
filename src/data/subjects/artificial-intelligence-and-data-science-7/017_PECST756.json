@@ -1,0 +1,105 @@
+{
+  "id": "pecst756-artificial-intelligence-and-data-science-s7",
+  "code": "PECST756",
+  "name": "GAME THEORY AND MECHANISM DESIGN",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 1-t1",
+          "title": "Introduction to Game Theory - Competitive Equilibrium, Rationality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 1-t2",
+          "title": "Strategic Games - Dominance, Nash Equilibrium, Maxmin Strategies, Elimination of Dominated Strategies, Preservation of Pure Nash Equilibrium (PSNE), Matrix Games, Relation Between Maxmin and PSNE in Matrix Games, Mixed Strategies, Mixed Strategy Nash Equilibrium (MSNE), Finding MSNE, MSNE Characterization Theorem, Algorithm to Find MSNE",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 2-t1",
+          "title": "Correlated Equilibrium (CE) - Computing CE, Extensive Form Games, Subgame Perfection, Limitations of Subgame Perfect Nash Equilibrium",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 2-t2",
+          "title": "Imperfect Information Extensive Form Games (IIEFG) - Strategies in IIEFGs, Equivalence of Strategies in IIEFGs, Perfect Recall, Equilibrium in IIEFG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 2-t3",
+          "title": "Game Theory Application - P2P File Sharing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 2-t4",
+          "title": "Bayesian Games - Strategy and Utility in Bayesian Games, Equilibrium in Bayesian Games",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 3-t1",
+          "title": "Introduction to Mechanism Design - Revelation Principle, Introduction and Proof of Arrow’s Impossibility Result, Introduction to Social Choice Setup",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 3-t2",
+          "title": "Introduction and Proof of Gibbard-Satterthwaite Theorem, Domain Restriction, Median Voter Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 3-t3",
+          "title": "Task Sharing Domain, Uniform Rule, Mechanism Design with Transfers, Examples of Quasi-linear Preferences, Pareto Optimality and Groves Payments",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 4-t1",
+          "title": "Introduction to VCG Mechanism, VCG in Combinatorial Allocations, Applications to Internet Advertising, Slot Allocation and Payments in Position Auctions, Pros and Cons of VCG Mechanism",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 4-t2",
+          "title": "Affine Maximizers, Single Object Allocation, Myerson’s Lemma, Optimal Mechanism Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecst756-mModule 4-t3",
+          "title": "Single and Multi-agent Optimal Mechanism Design, Examples of Optimal Mechanisms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

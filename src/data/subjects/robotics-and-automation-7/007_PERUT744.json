@@ -1,0 +1,93 @@
+{
+  "id": "perut744-robotics-and-automation-s7",
+  "code": "PERUT744",
+  "name": "ANALOG AND DIGITAL COMMUNICATION",
+  "branchId": "robotics-and-automation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 1-t1",
+          "title": "Block diagram of a communication system. Need for analog modulation. Amplitude modulation. Equation and spectrum of AM signal. DSB-SC and SSB systems. Block diagram of SSB transmitter and receiver. Frequency and phase modulation. Narrow and wide band FM and their spectra. FM transmitter and receiver",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 2-t1",
+          "title": "Stochastic processes and source coding: review of probability. Bayes theorem and conditional probability. Stochastic processes, stationarity. Conditions for WSS and SSS. Autocorrelation and power spectral density. LTI systems with WSS as input. Sampling and quantization. Pulse code modulation, transmitter and receiver. Companding. Practical 15 level A and mu-law companders. DPCM transmitter and receiver. Delta modulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 3-t1",
+          "title": "Gram-Schmitt procedure and effects in the channel: definition of signal. Basic operation on signals. Gram-Schmitt procedure. Signal space. Baseband transmission through AWGN channel. Inter symbol interference. Nyquist criterion for zero ISI. Raised cosine and square root raised cosine spectrum. Partial response signalling and duobinary coding. Equalization. Vector model of AWGN channel. Matched filter and correlation receivers. MAP receiver, maximum likelihood receiver and probability of error",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 4-t1",
+          "title": "Digital modulation schemes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 4-t2",
+          "title": "Baseband BPSK system and the signal constellation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 4-t3",
+          "title": "BPSK transmitter and receiver",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 4-t4",
+          "title": "Baseband QPSK system and signal constellations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 4-t5",
+          "title": "Plots of BER vs SNR with analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 4-t6",
+          "title": "QPSK transmitter and receiver",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-perut744-mModule 4-t7",
+          "title": "Quadrature amplitude modulation and signal constellation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "id": "oecst612-artificial-intelligence-and-data-science-s6",
+  "code": "OECST612",
+  "name": "DATA COMMUNICATION",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t1",
+          "title": "Communication Model - Simplex",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t2",
+          "title": "Half Duplex",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t3",
+          "title": "Full Duplex Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t4",
+          "title": "Periodic Analog Signals - Sine Wave",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t5",
+          "title": "Amplitude",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t6",
+          "title": "Phase",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t7",
+          "title": "Wavelength",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t8",
+          "title": "Time and Frequency Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t9",
+          "title": "Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t10",
+          "title": "Analog & Digital Data and Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t11",
+          "title": "Transmission Impairments - Attenuation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t12",
+          "title": "Delay Distortion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t13",
+          "title": "Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t14",
+          "title": "Data Rate Limits - Noiseless Channel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t15",
+          "title": "Nyquist Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t16",
+          "title": "Noisy Channel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t17",
+          "title": "Shannon's Capacity Formula",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t18",
+          "title": "Guided Transmission Media - Twisted Pair",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t19",
+          "title": "Coaxial Cable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t20",
+          "title": "Optical Fiber",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t21",
+          "title": "Unguided Media - Radio Waves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t22",
+          "title": "Terrestrial Microwave",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t23",
+          "title": "Satellite Microwave",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t24",
+          "title": "Infrared",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t25",
+          "title": "Wireless Propagation - Ground Wave Propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t26",
+          "title": "Sky Wave Propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 1-t27",
+          "title": "Line-of-Sight (LoS) Propagation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t1",
+          "title": "Digital Data to Digital Signal - Non-Return-to-Zero (NRZ)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t2",
+          "title": "Return-to-Zero (RZ)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t3",
+          "title": "Multilevel Binary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t4",
+          "title": "Biphase",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t5",
+          "title": "Analog Data to Digital Signal - Sampling Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t6",
+          "title": "Pulse Code Modulation (PCM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t7",
+          "title": "Delta Modulation (DM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t8",
+          "title": "Digital Data to Analog Signal - Amplitude Shift Keying (ASK)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t9",
+          "title": "Frequency Shift Keying (FSK)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t10",
+          "title": "Phase Shift Keying (PSK)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t11",
+          "title": "Analog Data to Analog Signal - Amplitude Modulation (AM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t12",
+          "title": "Frequency Modulation (FM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 2-t13",
+          "title": "Phase Modulation (PM)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t1",
+          "title": "Multiplexing - Frequency Division Multiplexing (FDM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t2",
+          "title": "Wavelength Division Multiplexing (WDM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t3",
+          "title": "Time Division Multiplexing (TDM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t4",
+          "title": "Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t5",
+          "title": "Synchronous TDM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t6",
+          "title": "Statistical TDM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t7",
+          "title": "Spread Spectrum Techniques - Direct Sequence Spread Spectrum (DSSS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t8",
+          "title": "Frequency Hopping Spread Spectrum (FHSS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t9",
+          "title": "Code Division Multiplexing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 3-t10",
+          "title": "Code Division Multiple Access (CDMA)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t1",
+          "title": "Digital Data Communication Techniques - Asynchronous Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t2",
+          "title": "Synchronous Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t3",
+          "title": "Detecting and Correcting Errors - Types of Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t4",
+          "title": "Parity Check",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t5",
+          "title": "Checksum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t6",
+          "title": "Cyclic Redundancy Check (CRC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t7",
+          "title": "Forward Error Correction (FEC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t8",
+          "title": "Hamming Distance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t9",
+          "title": "Hamming Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t10",
+          "title": "Basic Principles of Switching - Circuit Switching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t11",
+          "title": "Packet Switching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst612-mModule 4-t12",
+          "title": "Message Switching",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

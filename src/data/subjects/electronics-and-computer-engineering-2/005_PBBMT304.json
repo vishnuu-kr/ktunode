@@ -1,0 +1,321 @@
+{
+  "id": "pbbmt304-electronics-and-computer-engineering-s2",
+  "code": "PBBMT304",
+  "name": "DIGITAL ELECTRONICS",
+  "branchId": "electronics-and-computer-engineering",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t1",
+          "title": "Binary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t2",
+          "title": "Octal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t3",
+          "title": "Hexadecimal and Conversions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t4",
+          "title": "Binary Codes: BCD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t5",
+          "title": "XS-3 Gray Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t6",
+          "title": "Binary Addition and Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t7",
+          "title": "Boolean Algebra: Boolean Laws and Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t8",
+          "title": "Logic Gates - Basic Gates and Universal Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t9",
+          "title": "Realization of Different Gates Using Universal Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t10",
+          "title": "SOP and POS - Minterm and Maxterm Expansion; Minimization Techniques: Algebraic and Karnaugh Map",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 1-t11",
+          "title": "Don't Care Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t1",
+          "title": "Adders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t2",
+          "title": "Subtractors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t3",
+          "title": "Ripple Carry and Carry Look Ahead Adders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t4",
+          "title": "Code Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t5",
+          "title": "Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t6",
+          "title": "Demultiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t7",
+          "title": "Decoders and Encoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t8",
+          "title": "Sequential Logic Circuits and Design: Latches - SR Latch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t9",
+          "title": "Flip-Flops: SR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t10",
+          "title": "T and D Flip-Flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t11",
+          "title": "Master-Slave JK Flip-Flop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 2-t12",
+          "title": "Conversion Between Flip-Flops",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t1",
+          "title": "SISO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t2",
+          "title": "SIPO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t3",
+          "title": "PISO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t4",
+          "title": "PIPO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t5",
+          "title": "Bidirectional and Universal Shift Registers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t6",
+          "title": "Counters: Asynchronous Counters - Modulus of a Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t7",
+          "title": "Up/Down Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t8",
+          "title": "Mod-N Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t9",
+          "title": "Ring Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t10",
+          "title": "Johnson Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 3-t11",
+          "title": "Design of Synchronous Counters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t1",
+          "title": "Introduction to State Machines: Mealy and Moore Machines - Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t2",
+          "title": "Logic Families: Characteristics - Threshold Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t3",
+          "title": "Propagation Delay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t4",
+          "title": "Power Dissipation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t5",
+          "title": "Noise Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t6",
+          "title": "Logic Voltage Level",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t7",
+          "title": "Fan-In",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t8",
+          "title": "Fan-Out",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t9",
+          "title": "Speed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t10",
+          "title": "Operating Temperature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t11",
+          "title": "TTL: Basic Working Principle of TTL NAND Gate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t12",
+          "title": "Totem Pole and Open Collector Gate Output",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t13",
+          "title": "Tristate Logic Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pbbmt304-mModule 4-t14",
+          "title": "Project Topics: Digital Electronics Applications in Biomedical Field - Literature Review and Presentation, Component Selection, Analysis and Presentation, Design, Development and Testing, Implementation, and Project Evaluation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

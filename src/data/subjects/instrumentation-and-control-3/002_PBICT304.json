@@ -1,0 +1,261 @@
+{
+  "id": "pbict304-instrumentation-and-control-s3",
+  "code": "PBICT304",
+  "name": "DESIGN OF LOGIC CIRCUITS",
+  "branchId": "instrumentation-and-control",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t1",
+          "title": "Binary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t2",
+          "title": "Octal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t3",
+          "title": "Hexadecimal, Representation of Negative Numbers in Binary, Binary Arithmetic, Binary Codes: BCD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t4",
+          "title": "BCD Addition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t5",
+          "title": "Excess-3",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t6",
+          "title": "Gray Code, Concept of Parity, Logic Gates: Introduction to Logic Families, Basic Gates and Universal Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t7",
+          "title": "Realisation of Logic Gates Using Transistors and Diodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 1-t8",
+          "title": "Internal Diagram and Basic Working of TTL NAND and CMOS NOT Gates",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t1",
+          "title": "Minimization Techniques - Boolean Algebra Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t2",
+          "title": "Laws and Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t3",
+          "title": "De Morgan's Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t4",
+          "title": "SOP and POS Boolean Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t5",
+          "title": "Truth Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t6",
+          "title": "Karnaugh Map (Up to 4 Variables)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t7",
+          "title": "Minterm and Maxterm Expansions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t8",
+          "title": "Incompletely Specified Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t9",
+          "title": "Formation of Switching Functions from Word Statement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t10",
+          "title": "Realization Using Basic Gates and Universal Gates, Functions of Combinational Logic, Adders and Subtractors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t11",
+          "title": "Ripple Carry Adders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t12",
+          "title": "BCD Adder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t13",
+          "title": "Binary to Gray and Gray to Binary Code Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t14",
+          "title": "Comparators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t15",
+          "title": "Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t16",
+          "title": "Demultiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t17",
+          "title": "Decoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 2-t18",
+          "title": "Encoders",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t1",
+          "title": "Sequential Logic Circuits, Latches - SR Latch, Flip-Flops - SR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t2",
+          "title": "D & T Flip Flops - Level & Edge Triggered Flip Flops - Synchronous & Asynchronous Inputs - Conversion Between Flip Flops, Master Slave Flip Flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t3",
+          "title": "Waveform Diagrams, Shift Registers - SISO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t4",
+          "title": "SIPO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t5",
+          "title": "PISO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t6",
+          "title": "PIPO Shift Registers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t7",
+          "title": "Right & Left Shifts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 3-t8",
+          "title": "Universal Shift Registers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 4-t1",
+          "title": "Counters, Asynchronous Counters - Up",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 4-t2",
+          "title": "Down and Up/Down Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 4-t3",
+          "title": "Mod N Counters - Ring Counter - Johnson Counter, Introduction to Design of Synchronous Sequential Circuits Using Finite State Machines - Mealy & Moore Types with Single Input-Single Output Problems - Design of Sequence Detectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pbict304-mModule 4-t4",
+          "title": "Synchronous Counters and Sequence Generators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": "peeot751-electrical-and-computer-engineering-s7",
+  "code": "PEEOT751",
+  "name": "COMPILER DESIGN",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 1-t1",
+          "title": "Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 1-t2",
+          "title": "Context-Free Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 1-t3",
+          "title": "Derivation Trees and Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 1-t4",
+          "title": "Ambiguity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 2-t1",
+          "title": "Recursive Descent Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 2-t2",
+          "title": "Predictive Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 2-t3",
+          "title": "LL(1) Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 2-t4",
+          "title": "Bottom-Up Parsing: Shift Reduce Parsing, Operator Precedence Parsing (Concepts only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 2-t5",
+          "title": "LR Parsing: Constructing SLR Parsing Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 2-t6",
+          "title": "Constructing Canonical LR Parsing Tables and Constructing LALR Parsing Tables",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t1",
+          "title": "Syntax Directed Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t2",
+          "title": "Bottom-up Evaluation of S-Attributed Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t3",
+          "title": "L-Attributed Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t4",
+          "title": "Bottom-up Evaluation of Inherited Attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t5",
+          "title": "Type Checking: Type Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t6",
+          "title": "Specification of a Simple Type Checker",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t7",
+          "title": "Run-Time Environments: Source Language Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t8",
+          "title": "Storage Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 3-t9",
+          "title": "Storage Allocation Strategies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t1",
+          "title": "Intermediate Languages: Graphical Representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t2",
+          "title": "Three-Address Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t3",
+          "title": "Quadruples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t4",
+          "title": "Triples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t5",
+          "title": "Code Optimization: Principal Sources of Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t6",
+          "title": "Optimization of Basic Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t7",
+          "title": "Code Generation: Issues in the Design of a Code Generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t8",
+          "title": "The Target Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeot751-mModule 4-t9",
+          "title": "A Simple Code Generator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

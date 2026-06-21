@@ -1,0 +1,177 @@
+{
+  "id": "peebt635-biomedical-and-robotic-engineering-s5",
+  "code": "PEEBT635",
+  "name": "MEDICAL ROBOTICS",
+  "branchId": "biomedical-and-robotic-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 1-t1",
+          "title": "History of Medical Robots, Classification of Medical Robots, Present Status and Future Trends",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 1-t2",
+          "title": "Basic Components of Robotic System, Basic Terminology - Accuracy, Repeatability, Resolution, Degree of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 1-t3",
+          "title": "Mechanisms and Transmission, End Effectors, Grippers and Different Methods of Gripping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 1-t4",
+          "title": "Mechanical Grippers - Slider Crank Mechanism, Screw Type, Rotary Actuators, Cam Type Gripper, Magnetic Grippers, Vacuum Grippers, Air Operated Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 1-t5",
+          "title": "Specifications of Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t1",
+          "title": "Drive Systems and Sensors - Pneumatic Drives, Hydraulic Drives, Mechanical Drives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t2",
+          "title": "Electrical Drives - D.C. Servo Motors, Stepper Motors, A.C. Servo Motors - Salient Features, Applications and Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t3",
+          "title": "Sensors in Robots - Touch Sensors, Tactile Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t4",
+          "title": "Proximity and Range Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t5",
+          "title": "Robotic Vision Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t6",
+          "title": "Force Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t7",
+          "title": "Light Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 2-t8",
+          "title": "Pressure Sensors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 3-t1",
+          "title": "Robot Kinematics and Robot Programming - Forward Kinematics, Inverse Kinematics and Difference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 3-t2",
+          "title": "Forward Kinematics and Reverse Kinematics of Manipulators with Two, Three Degrees of Freedom (in 2D), Four Degrees of Freedom (in 3D)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 3-t3",
+          "title": "Jacobians, Velocity and Forces, Manipulator Dynamics, Trajectory Generator, Manipulator Mechanism Design - Derivations and Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 3-t4",
+          "title": "Lead Through Programming, Robot Programming Languages - VAL Programming",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 4-t1",
+          "title": "Tele-Operated Robot-Assisted Minimally Invasive Surgery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 4-t2",
+          "title": "Robot Design Concepts, Robot-Assisted Image-Guided Interventions: CT, Ultrasound",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 4-t3",
+          "title": "Other Applications: Robotic Catheters for Heart Electrophysiology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 4-t4",
+          "title": "Humanoids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 4-t5",
+          "title": "Micro/Nano Robots for Biomedicine - Delivery, Surgery, Sensing, and Detoxification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 4-t6",
+          "title": "Case Studies: Characterization of Gestures to the Design of Robots - Design Methodologies, Technological Choices, Security. Cardiac, Abdominal, and Urologic Procedures with Tele-Operated Robots (3 Procedures Each)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-5-peebt635-mModule 4-t7",
+          "title": "Neurosurgery and Orthopaedic Surgery with Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

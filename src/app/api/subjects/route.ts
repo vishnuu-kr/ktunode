@@ -1,7 +1,7 @@
 import { type NextRequest } from "next/server";
-import fs from "fs";
 import path from "path";
 import { VALID_BRANCHES } from "@/types/session";
+import { fileExists, readDir, statIsDir, readJsonFile } from "@/lib/fsHelper";
 
 export const dynamic = "force-dynamic";
 
@@ -33,13 +33,12 @@ export async function GET(request: NextRequest) {
     // e.g. src/data/subjects/cs-6/000_CST302.json
     // Files are read in sorted order so the original subject order is preserved.
     const folderPath = path.join(subjectsDir, `${branch}-${sem}`);
-    if (fs.existsSync(folderPath) && fs.statSync(folderPath).isDirectory()) {
-      const subjects = fs
-        .readdirSync(folderPath)
+    if (fileExists(folderPath) && statIsDir(folderPath)) {
+      const subjects = readDir(folderPath)
         .filter((name) => name.endsWith(".json"))
         .sort()
         .map((name) => {
-          const subject = JSON.parse(fs.readFileSync(path.join(folderPath, name), "utf8"));
+          const subject = readJsonFile(path.join(folderPath, name));
           if (subject.modules) {
             subject.modules = subject.modules.map((mod: any) => {
               if (mod.topics) {
@@ -58,11 +57,11 @@ export async function GET(request: NextRequest) {
 
     // Backward-compatible fallback: legacy flat file.
     const filePath = path.join(subjectsDir, `${branch}-${sem}.json`);
-    if (!fs.existsSync(filePath)) {
+    if (!fileExists(filePath)) {
       return json([]);
     }
 
-    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const data = readJsonFile(filePath);
     if (Array.isArray(data)) {
       const stripped = data.map((subject: any) => {
         if (subject.modules) {

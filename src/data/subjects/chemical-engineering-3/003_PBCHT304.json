@@ -1,0 +1,93 @@
+{
+  "id": "pbcht304-chemical-engineering-s3",
+  "code": "PBCHT304",
+  "name": "FLUID AND PARTICLE MECHANICS",
+  "branchId": "chemical-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 1-t1",
+          "title": "The principles of pressure measurement using the concepts of hydrostatic equilibrium",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 1-t2",
+          "title": "The type of flow such as laminar or turbulent",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 1-t3",
+          "title": "How to verify the continuity, momentum, and energy balance equations with reference to the selected flow system",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 2-t1",
+          "title": "The use of pumping devices in flow systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 2-t2",
+          "title": "How to calculate the pressure drop in the selected flow system",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 2-t3",
+          "title": "The use of friction factor in calculating the pressure drop induced by various pipe fitting and auxiliaries",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 3-t1",
+          "title": "The working of various flow measuring devices used in flow system and the at least one flow measuring device should be there in the selected system",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 3-t2",
+          "title": "How to calculate the pressure drop in flow system falls into the category of external flow",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 4-t1",
+          "title": "The pressure drop estimation in packed and fluidized beds",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-3-pbcht304-mModule 4-t2",
+          "title": "How to do the modelling and simulation of such simple systems selected using any appropriate software/experimental validation of such system",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

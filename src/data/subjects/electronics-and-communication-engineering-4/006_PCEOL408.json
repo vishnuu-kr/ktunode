@@ -1,0 +1,129 @@
+{
+  "id": "pceol408-electronics-and-communication-engineering-s4",
+  "code": "PCEOL408",
+  "name": "OBJECT ORIENTED PROGRAMMING (JAVA) LAB",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t1",
+          "title": "Write a Java program to print a string to the console",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t2",
+          "title": "Write a Java program to find the average of three numbers entered by the user",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t3",
+          "title": "Write a Java program to find the frequency of a given character in a string",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t4",
+          "title": "Write a Java program to multiply two given matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t5",
+          "title": "Write a menu-driven Java program for vector operations: create a vector of 5 student names, insert an element at the third position, insert 3 elements at the end, delete an element from the second position, and delete all elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t6",
+          "title": "Write a Java program to read a line of integers, display each integer, and the sum of all integers using StringTokenizer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t7",
+          "title": "Write a Java program to select a random element from an array of color names using the Random class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t8",
+          "title": "Write a Java program to display the calendar for a specified month and year, showing the correct days of the week for each date",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t9",
+          "title": "Write a Java program to create a Student class with instance variables rollno and name, initialize two student objects using the insertRecord method, and display data using the displayInformation() method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t10",
+          "title": "Write a Java program to create a Student class with instance variables id and name, and initialize two student objects using a parameterized constructor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t11",
+          "title": "Write a Java program to calculate the area of circle, rectangle, and triangle using the concept of method overloading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t12",
+          "title": "Write a Java program with an Employee class having Name, Phone number, Address, and Salary as members and a printSalary() method, with Officer and Manager classes inheriting from Employee and having 'specialization' and 'department' as data members respectively",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t13",
+          "title": "Write two Java classes Employee and Engineer where Engineer inherits from Employee, with display() and calcSalary() methods demonstrating single object instantiation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t14",
+          "title": "Write a Java program to demonstrate the usage of try, catch, throws, and finally",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t15",
+          "title": "Write a Java program to demonstrate thread synchronization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t16",
+          "title": "Write a Java program implementing a multi-threaded application with two threads: one displaying \"Java is simple\" every 1 second and another displaying \"Java is robust\" every 2 seconds",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t17",
+          "title": "Write a Java program for a simple calculator using Java Swing with buttons for digits and the + - * % operations, a text field to display the result, and exception handling for divide by zero",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t18",
+          "title": "Write a Java program using Swing to create a frame with two text fields, two labels, and a button to calculate the factorial of a number entered in the first text field and display it in the second text field",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-pceol408-mModule Experiment 2-t19",
+          "title": "Write a Java program to display all records from a table using Java Database Connectivity (JDBC)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "id": "pccgt601-computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-s6",
+  "code": "PCCGT601",
+  "name": "BLOCKCHAIN TECHNOLOGIES AND APPLICATIONS",
+  "branchId": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t1",
+          "title": "Introduction to Blockchain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t2",
+          "title": "Objective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t3",
+          "title": "Blockchain Terminologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t4",
+          "title": "Distinction Between Databases and Blockchain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t5",
+          "title": "Blockchain Ecosystem and Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t6",
+          "title": "Types of Blockchain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t7",
+          "title": "Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 1-t8",
+          "title": "Benefits and Limitations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t1",
+          "title": "Consensus - Definition and Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t2",
+          "title": "Consensus Interaction with Architectural Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t3",
+          "title": "Consensus Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t4",
+          "title": "Crash Fault Tolerance (CFT) Algorithms - Paxos",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t5",
+          "title": "Raft",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t6",
+          "title": "Byzantine Fault Tolerance (BFT) Algorithms - Practical Byzantine Fault Tolerance (PBFT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t7",
+          "title": "Proof of Work (PoW)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t8",
+          "title": "Proof of Stake (PoS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 2-t9",
+          "title": "Types of PoS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t1",
+          "title": "Smart Contracts - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t2",
+          "title": "Smart Contract Templates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t3",
+          "title": "Oracles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t4",
+          "title": "Types of Oracles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t5",
+          "title": "Deploying Smart Contracts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t6",
+          "title": "Decentralization Terminology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t7",
+          "title": "Decentralized Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t8",
+          "title": "Decentralized Autonomous Organizations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t9",
+          "title": "Use Cases of Blockchain Technology - Government",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t10",
+          "title": "Health Care",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t11",
+          "title": "Finance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t12",
+          "title": "Supply Chain Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t13",
+          "title": "Blockchain and Allied Technologies - Blockchain and Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 3-t14",
+          "title": "Blockchain and Artificial Intelligence",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t1",
+          "title": "Bitcoin - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t2",
+          "title": "Challenges and Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t3",
+          "title": "Cryptographic Keys - Private Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t4",
+          "title": "Public Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t5",
+          "title": "Addresses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t6",
+          "title": "Transactions - Lifecycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t7",
+          "title": "Coinbase Transactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t8",
+          "title": "Transaction Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t9",
+          "title": "Bitcoin Mining - Purpose",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t10",
+          "title": "Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t11",
+          "title": "Mining Hardware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t12",
+          "title": "Bitcoin Mining Pools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t13",
+          "title": "Security and Centralization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t14",
+          "title": "Ethereum - The Ethereum Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t15",
+          "title": "Components of the Ethereum Ecosystem - Keys and Addresses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t16",
+          "title": "Accounts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t17",
+          "title": "Transactions and Messages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-6-pccgt601-mModule 4-t18",
+          "title": "The Ethereum Virtual Machine",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

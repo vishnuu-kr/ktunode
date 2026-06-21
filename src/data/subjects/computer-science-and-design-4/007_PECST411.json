@@ -1,0 +1,375 @@
+{
+  "id": "pecst411-computer-science-and-design-s4",
+  "code": "PECST411",
+  "name": "SOFTWARE ENGINEERING",
+  "branchId": "computer-science-and-design",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 1-t1",
+          "title": "SRS for College Library Management Software",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t1",
+          "title": "Component and Connector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t2",
+          "title": "Layered",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t3",
+          "title": "Repository",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t4",
+          "title": "Client-Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t5",
+          "title": "Publish-Subscribe",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t6",
+          "title": "Functional Independence - Coupling and Cohesion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t7",
+          "title": "Case Study: Ariane Launch Failure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t8",
+          "title": "Object-Oriented Software Design - UML Diagrams and Relationships - Static and Dynamic Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t9",
+          "title": "Class Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t10",
+          "title": "State Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t11",
+          "title": "Use Case Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t12",
+          "title": "Sequence Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t13",
+          "title": "Case Studies: Voice Mail System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t14",
+          "title": "ATM Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t15",
+          "title": "Software Pattern - Model View Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t16",
+          "title": "Creational Design Pattern Types - Factory Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t17",
+          "title": "Abstract Factory Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t18",
+          "title": "Singleton Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t19",
+          "title": "Prototype Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t20",
+          "title": "Builder Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t21",
+          "title": "Structural Design Pattern and its Types - Adapter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t22",
+          "title": "Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t23",
+          "title": "Proxy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t24",
+          "title": "Composite",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t25",
+          "title": "Decorator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t26",
+          "title": "Façade",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t27",
+          "title": "Flyweight",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 2-t28",
+          "title": "Behavioral Design Pattern",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t1",
+          "title": "Coding Guidelines - Code Review",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t2",
+          "title": "Code Walkthrough and Code Inspection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t3",
+          "title": "Code Debugging and its Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t4",
+          "title": "Testing - Unit Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t5",
+          "title": "Integration Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t6",
+          "title": "System Testing and its Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t7",
+          "title": "Black Box Testing and White Box Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t8",
+          "title": "Regression Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t9",
+          "title": "Overview of DevOps and Code Management - Code Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t10",
+          "title": "DevOps Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t11",
+          "title": "Continuous Integration, Delivery, and Deployment (CI/CD/CD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t12",
+          "title": "Case Study - Netflix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t13",
+          "title": "Software Maintenance and its Types - Adaptive, Preventive, Corrective, and Perfective Maintenance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 3-t14",
+          "title": "Boehm's Maintenance Models (both legacy and non-legacy)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t1",
+          "title": "Risk and its Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t2",
+          "title": "Risk Monitoring and Management Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t3",
+          "title": "Software Project Management - Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t4",
+          "title": "Staffing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t5",
+          "title": "Organizational Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t6",
+          "title": "Scheduling using Gantt Chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t7",
+          "title": "Software Configuration Management and its Phases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t8",
+          "title": "Software Quality Management - ISO 9000",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t9",
+          "title": "Six Sigma for Software Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t10",
+          "title": "Cloud-based Software - Virtualisation and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t11",
+          "title": "Everything as a Service (IaaS, PaaS, Software as a Service)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t12",
+          "title": "Microservices Architecture - Microservices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t13",
+          "title": "Microservices Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst411-mModule 4-t14",
+          "title": "Microservice Deployment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

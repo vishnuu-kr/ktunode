@@ -1,0 +1,177 @@
+{
+  "id": "pccst402-artificial-intelligence-s4",
+  "code": "PCCST402",
+  "name": "DATABASE MANAGEMENT SYSTEMS",
+  "branchId": "artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t1",
+          "title": "Introduction to Databases: Database System Concepts, Architecture, and Data Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t2",
+          "title": "Schemas and Instances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t3",
+          "title": "Three-Schema Architecture and Data Independence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t4",
+          "title": "Database Languages and Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t5",
+          "title": "Centralized and Client/Server Architectures for DBMSs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t6",
+          "title": "Conceptual Data Modelling and Database Design: Data Modelling Using the Entity-Relationship (ER) Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t7",
+          "title": "Entity Types, Entity Sets, Attributes, and Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t8",
+          "title": "Relationship Types, Relationship Sets, Roles, and Structural Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t9",
+          "title": "Weak Entity Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 1-t10",
+          "title": "Refining the ER Design for the Company Database",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t1",
+          "title": "The Relational Data Model and SQL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t2",
+          "title": "The Relational Data Model and Relational Database Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t3",
+          "title": "Relational Algebra and Relational Calculus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t4",
+          "title": "Structured Query Language (SQL)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t5",
+          "title": "Data Definition Language",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t6",
+          "title": "Data Manipulation Language",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t7",
+          "title": "Assertions, Triggers, and Views",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 2-t8",
+          "title": "Relational Database Design Using ER-to-Relational Mapping",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 3-t1",
+          "title": "Introduction to Transactions: Problems and Failures, Desirable Properties of Transactions, Characterizing Schedules Based on Recoverability and Serializability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 3-t2",
+          "title": "Concurrency Control with Two-Phase Locking Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 3-t3",
+          "title": "Database Recovery Management: Deferred Update, Immediate Update, and Shadow Paging",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 4-t1",
+          "title": "Introduction to NoSQL Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 4-t2",
+          "title": "Types of NoSQL Databases: CAP Theorem, BASE Properties, Use Cases, and Limitations of NoSQL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-pccst402-mModule 4-t3",
+          "title": "NoSQL Architectural Patterns: Key-Value Stores, Graph Stores, Column Family Stores, and Document Stores",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

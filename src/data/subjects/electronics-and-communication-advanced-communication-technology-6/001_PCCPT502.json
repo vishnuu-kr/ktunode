@@ -1,0 +1,405 @@
+{
+  "id": "pccpt502-electronics-and-communication-advanced-communication-technology-s6",
+  "code": "PCCPT502",
+  "name": "INTRODUCTION TO WIRELESS COMMUNICATION",
+  "branchId": "electronics-and-communication-advanced-communication-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t1",
+          "title": "Evolution of Mobile Communications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t2",
+          "title": "Mobile Radio System Around the World",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t3",
+          "title": "Types of Wireless Communication System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t4",
+          "title": "Comparison of Common Wireless System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t5",
+          "title": "Trend in Cellular Radio and Personal Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t6",
+          "title": "Second Generation Cellular Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t7",
+          "title": "Third Generation (3G) Wireless Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t8",
+          "title": "Wireless Local Loop (WLL)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t9",
+          "title": "Wireless Local Area Network (WLAN)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t10",
+          "title": "Bluetooth and Personal Area Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t11",
+          "title": "Introduction to Wi-Fi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t12",
+          "title": "WiMAX",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 1-t13",
+          "title": "ZigBee Networks",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t1",
+          "title": "Cellular System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t2",
+          "title": "Hexagonal Geometry Cell and Concept of Frequency Reuse",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t3",
+          "title": "Channel Assignment Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t4",
+          "title": "Distance to Frequency Reuse Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t5",
+          "title": "Channel and Co-channel Interference Reduction Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t6",
+          "title": "S/I Ratio Consideration and Calculation for Minimum Co-channel and Adjacent Interference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t7",
+          "title": "Handoff Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t8",
+          "title": "Umbrella Cell Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t9",
+          "title": "Trunking and Grade of Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t10",
+          "title": "Improving Coverage and Capacity in Cellular System - Cell Splitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t11",
+          "title": "Cell Sectorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t12",
+          "title": "Repeaters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t13",
+          "title": "Micro Cell Zone Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 2-t14",
+          "title": "Channel Antenna System Design Considerations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t1",
+          "title": "Large Scale Path Loss",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t2",
+          "title": "Free Space Propagation Loss Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t3",
+          "title": "Path Loss of NLOS and LOS Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t4",
+          "title": "Reflection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t5",
+          "title": "Ray Ground Reflection Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t6",
+          "title": "Diffraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t7",
+          "title": "Scattering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t8",
+          "title": "Link Budget Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t9",
+          "title": "Maximum Distance Coverage Formula",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t10",
+          "title": "Empirical Formula for Path Loss",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t11",
+          "title": "Indoor and Outdoor Propagation Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t12",
+          "title": "Small Scale Multipath Propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 3-t13",
+          "title": "Statistical Models for Multipath Fading Channels and Diversity Techniques in Brief",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t2",
+          "title": "Comparisons of Multiple Access Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t3",
+          "title": "TDMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t4",
+          "title": "CDMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t5",
+          "title": "FDMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t6",
+          "title": "OFDM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t7",
+          "title": "CSMA Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t8",
+          "title": "Wireless Systems: GSM System Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t9",
+          "title": "Radio Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t10",
+          "title": "Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t11",
+          "title": "Localization and Calling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t12",
+          "title": "Handover",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t13",
+          "title": "Authentication and Security in GSM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t14",
+          "title": "GSM Speech Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t15",
+          "title": "Concept of Spread Spectrum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t16",
+          "title": "GPRS System Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t17",
+          "title": "Wi-Fi and IEEE 802.11 Wireless LAN Standards: IEEE 802 Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t18",
+          "title": "IEEE 802.11 Architecture and Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t19",
+          "title": "802.11 Medium Access Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t20",
+          "title": "802.11 Physical Layer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t21",
+          "title": "Other IEEE 802.11 Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-pccpt502-mModule 4-t22",
+          "title": "Wi-Fi Protected Access",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

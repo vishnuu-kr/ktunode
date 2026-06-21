@@ -1,0 +1,177 @@
+{
+  "id": "pccpt402-cyber-physical-systems-s4",
+  "code": "PCCPT402",
+  "name": "SIGNAL PROCESSING FOR ROBOTICS",
+  "branchId": "cyber-physical-systems",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t1",
+          "title": "Characterization and Classification of Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t2",
+          "title": "Typical Signal Processing Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t3",
+          "title": "Example of Typical Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t4",
+          "title": "Time Domain Representation of Signals and Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t5",
+          "title": "Discrete Time Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t6",
+          "title": "Operations on Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t7",
+          "title": "The Sampling Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t8",
+          "title": "Quantization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t9",
+          "title": "Discrete-Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t10",
+          "title": "Time Domain Characterization of LTI Discrete-Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 1-t11",
+          "title": "Convolution and Impulse Response",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 2-t1",
+          "title": "Discrete Fourier Transform (DFT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 2-t2",
+          "title": "DFT Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 2-t3",
+          "title": "Computation of the DFT of Real Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 2-t4",
+          "title": "Fast Fourier Transform (FFT)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 3-t1",
+          "title": "Filtering and Noise Reduction, Types of Filters (Low-Pass, High-Pass, Band-Pass, Band-Stop)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 3-t2",
+          "title": "Design and Implementation of Digital Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 3-t3",
+          "title": "Noise Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 4-t1",
+          "title": "Introduction to Wavelets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 4-t2",
+          "title": "Continuous Wavelet Transform (CWT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 4-t3",
+          "title": "Discrete Wavelet Transform (DWT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 4-t4",
+          "title": "Sensor Data Processing, Processing Data from Cameras, LIDAR, and IMUs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 4-t5",
+          "title": "Sensor Fusion Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "cyber-physical-systems-4-pccpt402-mModule 4-t6",
+          "title": "Real-Time Data Processing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

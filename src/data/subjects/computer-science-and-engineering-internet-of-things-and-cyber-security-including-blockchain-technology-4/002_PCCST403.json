@@ -1,0 +1,375 @@
+{
+  "id": "pccst403-computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-s4",
+  "code": "PCCST403",
+  "name": "OPERATING SYSTEMS",
+  "branchId": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t1",
+          "title": "Process Creation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t2",
+          "title": "Process States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t3",
+          "title": "Data Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t4",
+          "title": "Process API",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t5",
+          "title": "Sharing Processor Among Processes - User and Kernel Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t6",
+          "title": "Context Switching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t7",
+          "title": "System Boot Sequence; Case Study: Linux Kernel Process Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t8",
+          "title": "Threads and Concurrency: Concept of a Thread",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t9",
+          "title": "Multithreading Benefits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t10",
+          "title": "Multithreading Models; Case Study: The Linux Implementation of Threads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t11",
+          "title": "Process Scheduling: Concepts and Basic Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t12",
+          "title": "The Multilevel Feedback Queue: Basic Rules; Case Study: The Linux Completely Fair Scheduler (CFS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t13",
+          "title": "Implementation with RB Trees (Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t14",
+          "title": "The Linux Scheduling Implementation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 1-t15",
+          "title": "Preemption and Context Switching",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t1",
+          "title": "The Basic Idea",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t2",
+          "title": "Building Spin Locks with Test-and-Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t3",
+          "title": "Compare and Swap",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t4",
+          "title": "Using Queues: Sleeping Instead of Spinning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t5",
+          "title": "Semaphores - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t6",
+          "title": "Binary Semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t7",
+          "title": "The Producer/Consumer (Bounded Buffer) Problem and Its Solution Using Semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t8",
+          "title": "Reader-Writer Locks; Case Study: Linux Kernel Synchronization Methods - Spin Locks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t9",
+          "title": "Semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t10",
+          "title": "Mutexes; Concurrency: Deadlock and Starvation - Deadlock Characterization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t11",
+          "title": "Deadlock Prevention and Avoidance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t12",
+          "title": "Deadlock Detection and Recovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 2-t13",
+          "title": "Dining Philosophers Problem and Its Solution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t1",
+          "title": "Generalized Base/Bounds",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t2",
+          "title": "Address Translation in Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t3",
+          "title": "Support for Sharing; Virtual Memory - Paging: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t4",
+          "title": "Page Tables and Hardware Support",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t5",
+          "title": "TLBs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t6",
+          "title": "Example: Accessing an Array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t7",
+          "title": "TLB Hits and Misses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t8",
+          "title": "Handling TLB Misses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t9",
+          "title": "TLB Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t10",
+          "title": "Reducing the Page Table Size; Going Beyond Physical Memory - Swap Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t11",
+          "title": "Page Fault and Its Control Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t12",
+          "title": "Page Replacement Policies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 3-t13",
+          "title": "Thrashing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t1",
+          "title": "Modern System Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t2",
+          "title": "Programmed I/O",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t3",
+          "title": "Interrupts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t4",
+          "title": "Device Interaction Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t5",
+          "title": "The Device Driver",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t6",
+          "title": "Hard Disk: Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t7",
+          "title": "Disk Scheduling; Case Study: Linux I/O Schedulers - Elevator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t8",
+          "title": "Complete Fair Queuing; Files and Directories: The File System Interface - File Descriptor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t9",
+          "title": "Reading and Writing Files (Sequential and Random Access)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t10",
+          "title": "Removing Files - Hard Links and Symbolic Links",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t11",
+          "title": "Creating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t12",
+          "title": "Reading and Deleting Directories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t13",
+          "title": "Permission Bits and Access Control Lists",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t14",
+          "title": "Mounting a File System; File Organization: The Inode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t15",
+          "title": "The Multi-Level Index; Case Study: VFS Objects and Their Data Structures - The Inode Object",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology-4-pccst403-mModule 4-t16",
+          "title": "Inode Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

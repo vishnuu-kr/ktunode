@@ -1,0 +1,321 @@
+{
+  "id": "pecdt695-computer-science-and-engineering-data-science-s6",
+  "code": "PECDT695",
+  "name": "DEEP LEARNING",
+  "branchId": "computer-science-and-engineering-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t1",
+          "title": "The Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t2",
+          "title": "Multilayer Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t3",
+          "title": "Activation Functions: Sign, Sigmoid, Tanh, ReLU, Leaky ReLU, Hard Tanh, Softmax",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t4",
+          "title": "Loss Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t5",
+          "title": "Training a Neural Network with Backpropagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t6",
+          "title": "Practical Issues in Neural Network Training",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t7",
+          "title": "Overfitting and Underfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t8",
+          "title": "Hyperparameters and Validation Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t9",
+          "title": "Estimators - Bias and Variance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t10",
+          "title": "Introduction to Deep Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t11",
+          "title": "Deep Feed Forward Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t12",
+          "title": "Introduction to PyTorch/TensorFlow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 1-t13",
+          "title": "Implementing Image Classification Algorithms on CIFAR10 Dataset Using PyTorch",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t1",
+          "title": "Optimization Techniques - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t2",
+          "title": "Setup and Initialization - Kaiming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t3",
+          "title": "Xavier Weight Initializations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t4",
+          "title": "Vanishing and Exploding Gradient Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t5",
+          "title": "Gradient Descent (GD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t6",
+          "title": "Stochastic GD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t7",
+          "title": "GD with Momentum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t8",
+          "title": "GD with Nesterov Momentum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t9",
+          "title": "AdaGrad",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t10",
+          "title": "RMSProp",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t11",
+          "title": "Adam",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t12",
+          "title": "Regularization Techniques - L1 and L2 Regularization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t13",
+          "title": "Early Stopping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t14",
+          "title": "Dataset Augmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t15",
+          "title": "Parameter Tying and Sharing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t16",
+          "title": "Ensemble Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t17",
+          "title": "Dropout",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 2-t18",
+          "title": "Batch Normalization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 3-t1",
+          "title": "AlexNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 3-t2",
+          "title": "VGGNet-19",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 3-t3",
+          "title": "ResNet-50",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 3-t4",
+          "title": "YOLO: Implementing Object Classification and Detection Using CNN Networks in Python with Deep Libraries Like TensorFlow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 3-t5",
+          "title": "Keras",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 3-t6",
+          "title": "Caffe",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t1",
+          "title": "Transformer Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t2",
+          "title": "Self-Attention and Positional Encoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t3",
+          "title": "Autoencoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t4",
+          "title": "Variational Autoencoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t5",
+          "title": "Undercomplete Autoencoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t6",
+          "title": "Stochastic Encoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t7",
+          "title": "Denoising Encoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t8",
+          "title": "Applications of Autoencoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t9",
+          "title": "Generative Models: Generative Adversarial Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t10",
+          "title": "Case Study: BERT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pecdt695-mModule 4-t11",
+          "title": "Social Media Sentiment Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

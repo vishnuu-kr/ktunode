@@ -1,0 +1,99 @@
+{
+  "id": "pecdt742-artificial-intelligence-and-data-science-s7",
+  "code": "PECDT742",
+  "name": "FINANCIAL DATA SCIENCE",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 1-t1",
+          "title": "Overview of Financial Systems - Financial Markets, Instruments, and Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 1-t2",
+          "title": "Data Science in Finance - Role of Data Science, Types of Data in Finance (Structured, Unstructured, Time-Series, etc.)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 1-t3",
+          "title": "Financial Data Acquisition - Sources of Financial Data, Data Retrieval from the Internet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 1-t4",
+          "title": "Data Preprocessing - Data Cleaning, Handling Missing Data, Outlier Detection, Normalization, and Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 1-t5",
+          "title": "Exploratory Data Analysis - Visualizing Financial Data (Candlestick Charts, Histograms), Statistical Summaries",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 2-t1",
+          "title": "Evaluation Metrics like RMSE, Confusion Matrix, Accuracy, Precision, and Recall",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 3-t1",
+          "title": "Implementing a Credit Risk Scoring Model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 4-t1",
+          "title": "Introduction to Algorithmic Trading - Basics of Trading Strategies, High-Frequency Trading, Algo-Bots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 4-t2",
+          "title": "Financial Portfolio Theory - Modern Portfolio Theory (MPT), Efficient Frontier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 4-t3",
+          "title": "Optimization Algorithms - Gradient Descent, Genetic Algorithms for Portfolio Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-7-pecdt742-mModule 4-t4",
+          "title": "Backtesting Trading Strategies - Python Libraries for Backtesting (e.g., Backtrader, QuantConnect)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

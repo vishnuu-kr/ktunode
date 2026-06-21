@@ -1,0 +1,57 @@
+{
+  "id": "oeeet611-electrical-and-computer-engineering-s6",
+  "code": "OEEET611",
+  "name": "INTRODUCTION TO CONTROL SYSTEMS",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-6-oeeet611-mModule 1-t1",
+          "title": "LTI Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-oeeet611-mModule 1-t2",
+          "title": "Transfer Function Representation of Differential Equation in Laplace Domain, Electrical, Translational and Rotational Mechanical Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-6-oeeet611-mModule 2-t1",
+          "title": "Time Domain Analysis of Control Systems: Impulse and Step Responses of First and Second Order Systems, Pole Dominance for Higher Order Systems, Time Domain Specifications, Steady State Error Analysis and Static Error Constants, Characteristic Equation, Routh Stability Criterion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-6-oeeet611-mModule 4-t1",
+          "title": "Bode Plot: Construction, Concept of Gain Margin and Phase Margin, Stability Analysis, Frequency Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-oeeet611-mModule 4-t2",
+          "title": "Correlation Between Time Domain and Frequency Domain Responses (Resonant Peak and Resonant Frequency), Polar Plot: Gain Margin and Phase Margin, Stability Analysis, Nyquist Stability Criterion, Concept of Nichols Chart",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

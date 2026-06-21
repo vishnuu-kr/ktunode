@@ -1,0 +1,177 @@
+{
+  "id": "pbbmt404-biomedical-engineering-s4",
+  "code": "PBBMT404",
+  "name": "BIOSENSORS & TRANSDUCERS",
+  "branchId": "biomedical-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 1-t1",
+          "title": "Definition and historical development of biosensors; overview of biosensor components: biorecognition elements, transducers, signal processors; applications of biosensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 1-t2",
+          "title": "Biorecognition Elements: enzymes - catalysis, specificity, enzyme-based biosensors; antibodies - antigen-antibody interactions, immunosensors; nucleic acids - DNA/RNA hybridization, aptamers; cells and tissues - whole-cell biosensors, tissue-based biosensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 1-t3",
+          "title": "Immobilization Techniques: physical adsorption, covalent bonding, cross-linking, entrapment; advantages and limitations of each immobilization method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 2-t1",
+          "title": "Electrochemical biosensors: potentiometric, amperometric, conductometric",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 2-t2",
+          "title": "Optical biosensors: fluorescence, surface plasmon resonance, bioluminescence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 2-t3",
+          "title": "Thermal biosensors: calorimetric detection methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 2-t4",
+          "title": "Piezoelectric biosensors: quartz crystal microbalance, surface acoustic wave devices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 3-t1",
+          "title": "Types and classification of transducers: primary, secondary, active, and passive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 3-t2",
+          "title": "Electrical Transducers: resistive, capacitive, inductive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 3-t3",
+          "title": "Mechanical Transducers: strain gauges, piezoelectric transducer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 3-t4",
+          "title": "Thermal Transducers: thermocouples, thermistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 3-t5",
+          "title": "Magnetic Transducers: Hall effect transducers, LVDT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 3-t6",
+          "title": "Transducer Characteristics: Static Characteristics - accuracy, precision, resolution, sensitivity, linearity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 3-t7",
+          "title": "Transducer Characteristics: Dynamic Characteristics - response time, frequency response, bandwidth",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t1",
+          "title": "Evolution of microsensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t2",
+          "title": "Nanotechnology: use of nanomaterials (nanoparticles, nanotubes, nanowires) in biosensors, nanobiosensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t3",
+          "title": "Lab-on-a-Chip: integration of biosensing and microfluidics, advantages of miniaturization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t4",
+          "title": "Implantable sensors and wearable health sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t5",
+          "title": "Project Based Learning: literature review and presentation on a selected biosensor application (e.g., glucose monitoring, detection of pollutants in water)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t6",
+          "title": "Project Based Learning: selection of a specific type of transducer for the given application",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t7",
+          "title": "Project Based Learning: analysis and presentation of working principles, characteristics, and application considerations of the selected transducer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t8",
+          "title": "Project Based Learning: design, development, and testing of a comprehensive biosensor system based on knowledge and skills acquired throughout the course",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t9",
+          "title": "Project Based Learning: team work to create a fully functional biosensor, document the process, and present the project to the class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-4-pbbmt404-mModule 4-t10",
+          "title": "Project Based Learning: two evaluations - after one month of commencement of classes and at the end of the course",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

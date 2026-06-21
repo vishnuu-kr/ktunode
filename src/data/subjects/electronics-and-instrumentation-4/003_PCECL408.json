@@ -1,0 +1,33 @@
+{
+  "id": "pcecl408-electronics-and-instrumentation-s4",
+  "code": "PCECL408",
+  "name": "MICROCONTROLLERS LAB",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-4-pcecl408-mModule Experiment 2-t1",
+          "title": "UART interface to Bluetooth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-4-pcecl408-mModule Experiment 2-t2",
+          "title": "SPI/I2C interface to display",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-4-pcecl408-mModule Experiment 2-t3",
+          "title": "Real-time clock",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

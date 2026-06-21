@@ -1,0 +1,99 @@
+{
+  "id": "peiet413-mechanical-engineering-s5",
+  "code": "PEIET413",
+  "name": "DYNAMICS OF MACHINERY",
+  "branchId": "mechanical-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 1-t1",
+          "title": "Mechanisms Such as Four Bar Chain, Slider Crank, Quick Return Motion, Steering Mechanism, Universal Coupling; Static & Dynamic Force Analysis: Static Equilibrium Conditions, Two & Three Force Members, Four-Bar and Slider-Crank Mechanisms, Method of Virtual Work",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 1-t2",
+          "title": "Force & Moment Equilibrium, Inertial Forces, D'Alembert's Principle; Dynamic Analysis of Four-Bar and Slider-Crank Mechanisms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 2-t1",
+          "title": "Gyroscopic Couple: Gyroscopes, Effect of Gyroscopic Couple on Bearings, Stability of Two-Wheel and Four-Wheel Vehicles; Balancing of Rotating Masses: Single Mass, Several Masses in Same and in Different Planes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 2-t2",
+          "title": "Balancing of Reciprocating Masses, Partial Balancing of Single Cylinder and Multi-Cylinder Inline Engines",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 3-t1",
+          "title": "Applications in Punching Press, IC Engines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 3-t2",
+          "title": "Turning Moment Diagrams for Four-Stroke IC Engines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 3-t3",
+          "title": "Coefficient of Fluctuation of Energy, Speed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 3-t4",
+          "title": "Design of Flywheels; Governors: Types of Governors, Watt, Porter and Proell Governors, Isochronism, Sensitivity and Stability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 4-t1",
+          "title": "Undamped Free Vibrations of SDOF Systems – Natural Frequency of Longitudinal, Transverse and Torsional Vibrations by Newton's Method and Energy Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 4-t2",
+          "title": "Damped Systems and Critical Damping, Logarithmic Decrement; Forced Vibrations: Forced Harmonic Vibration, Rotating Unbalance, Magnification Factor, Resonance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-peiet413-mModule 4-t3",
+          "title": "Whirling of Rotating Shafts, Vibration Isolation and Transmissibility",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

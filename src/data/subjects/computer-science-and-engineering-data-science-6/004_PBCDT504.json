@@ -1,0 +1,333 @@
+{
+  "id": "pbcdt504-computer-science-and-engineering-data-science-s6",
+  "code": "PBCDT504",
+  "name": "BIG DATA PROCESSING",
+  "branchId": "computer-science-and-engineering-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t1",
+          "title": "Introduction to Big Data and Hadoop Distributed File System: Evolution of Big Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t2",
+          "title": "Big Data Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t3",
+          "title": "RDBMS and Big Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t4",
+          "title": "History of Hadoop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t5",
+          "title": "Hadoop Ecosystem and Core Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t6",
+          "title": "HDFS Architecture: Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t7",
+          "title": "Name Nodes and Data Nodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t8",
+          "title": "Using HDFS Files - Basic File System Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t9",
+          "title": "Hadoop Specific File Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 1-t10",
+          "title": "Anatomy of a File Read and Write",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t1",
+          "title": "MapReduce Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t2",
+          "title": "Data Processing with MapReduce: Execution Pipeline",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t3",
+          "title": "Runtime Coordination and Task Management in MapReduce",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t4",
+          "title": "Designing MapReduce Implementations: Using MapReduce as a Framework for Parallel Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t5",
+          "title": "Face Recognition Example: Simple Data Processing with MapReduce",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t6",
+          "title": "Inverted Indexes Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t7",
+          "title": "Road Enrichment Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t8",
+          "title": "Projects using R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t9",
+          "title": "Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 2-t10",
+          "title": "Java",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t1",
+          "title": "HBase and Stream Data Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t2",
+          "title": "HBase Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t3",
+          "title": "HBase Schema Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t4",
+          "title": "Introduction to Stream Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t5",
+          "title": "Stream Data Model and Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t6",
+          "title": "Sampling Data in a Stream",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t7",
+          "title": "Filtering Streams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 3-t8",
+          "title": "Counting Distinct Elements in a Stream",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t1",
+          "title": "Hive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t2",
+          "title": "Hive Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t3",
+          "title": "Data Types and File Formats",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t4",
+          "title": "Primitive and Collection Data Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t5",
+          "title": "HiveQL - Creating Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t6",
+          "title": "Dropping Tables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t7",
+          "title": "Alter Table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t8",
+          "title": "Pig: Data Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t9",
+          "title": "Pig Latin: Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t10",
+          "title": "Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t11",
+          "title": "Spark: Storage Layers for Spark",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t12",
+          "title": "Core Spark Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t13",
+          "title": "RDD Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t14",
+          "title": "RDD Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t15",
+          "title": "Projects using R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t16",
+          "title": "Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t17",
+          "title": "Java",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t18",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t19",
+          "title": "Log File Analysis: Collect log files from web servers or applications and analyze them to extract useful information like error rates, traffic patterns, and popular pages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t20",
+          "title": "Sentiment Analysis on Social Media Data: Collect tweets or social media posts and perform sentiment analysis to understand public opinion on a particular topic or product",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t21",
+          "title": "Recommendation System: Build a recommendation system based on user behavior data, such as purchase history or viewing patterns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-6-pbcdt504-mModule 4-t22",
+          "title": "Word Count with MapReduce: Implement the classic word count problem where you count the frequency of each word in a large set of text documents",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

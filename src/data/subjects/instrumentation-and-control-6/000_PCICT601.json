@@ -1,0 +1,171 @@
+{
+  "id": "pcict601-instrumentation-and-control-s6",
+  "code": "PCICT601",
+  "name": "DISCRETE TIME SIGNAL PROCESSING",
+  "branchId": "instrumentation-and-control",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 1-t1",
+          "title": "Discrete Fourier Transform: Review of Discrete Time Fourier Transform, Frequency Domain Sampling and Reconstruction of Discrete Time Signals, DFT, Properties of DFT, Circular Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 1-t2",
+          "title": "Definition, Linear Convolution Using DFT, Computation of DFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 1-t3",
+          "title": "Direct Computation of DFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 1-t4",
+          "title": "DFT as Linear Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 1-t5",
+          "title": "Fast Fourier Transform (Radix-2 FFT Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 1-t6",
+          "title": "Decimation in Time and Decimation in Frequency Algorithms, Problem Solving Using Software Tools",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 2-t1",
+          "title": "Digital Filter Structures: Z-Transform Representation of FIR and IIR Filters, FIR Filter Structures - Direct Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 2-t2",
+          "title": "Cascade Form and Lattice Structures, IIR Filter Structure: Direct Form, Transpose Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 2-t3",
+          "title": "Cascade Form and Parallel Form Structures, Finite Word Length Effects, Quantization Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 2-t4",
+          "title": "Round-off Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 2-t5",
+          "title": "Limit Cycle Oscillations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 3-t1",
+          "title": "IIR Digital Filters: Digital Filter Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 3-t2",
+          "title": "Design of IIR Digital Filters from Analog Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 3-t3",
+          "title": "Butterworth and Chebyshev Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 3-t4",
+          "title": "Design of Low-Pass Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 3-t5",
+          "title": "Spectral Transformation of IIR Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 3-t6",
+          "title": "Analogue to Digital Transfer Function: Impulse Invariant Method, Bilinear Transformation Method, Problem Solving Using Software Tools",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 4-t1",
+          "title": "Estimation of Filter Order",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 4-t2",
+          "title": "FIR Filter Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 4-t3",
+          "title": "Impulse Response of Ideal Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 4-t4",
+          "title": "Gibbs Phenomenon",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 4-t5",
+          "title": "Fixed Window Functions: Rectangular, Hamming, Blackman",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pcict601-mModule 4-t6",
+          "title": "Adjustable Window Function: Kaiser Window, Problem Solving Using Software Tools",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

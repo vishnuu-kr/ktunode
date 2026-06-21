@@ -1,0 +1,243 @@
+{
+  "id": "gymat101-electrical-and-computer-engineering-s1",
+  "code": "GYMAT101",
+  "name": "MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL  SCIENCE - 1",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 1,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t1",
+          "title": "Gauss Elimination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t2",
+          "title": "Row Echelon Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t3",
+          "title": "Linear Independence: Rank of a Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t4",
+          "title": "Solutions of Linear Systems: Existence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t5",
+          "title": "Uniqueness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t6",
+          "title": "The Matrix Eigenvalue Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t7",
+          "title": "Determining Eigenvalues and Eigenvectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 1-t8",
+          "title": "Diagonalization of Matrices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t1",
+          "title": "Homogeneous Linear ODEs of Second Order",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t2",
+          "title": "Superposition Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t3",
+          "title": "General Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t4",
+          "title": "Homogeneous Linear ODEs of Second Order with Constant Coefficients (Method to Find General Solution, Solution of Linear Initial Value Problem)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t5",
+          "title": "Non-Homogeneous ODEs (with Constant Coefficients) - General Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t6",
+          "title": "Particular Solution by the Method of Undetermined Coefficients (Particular Solutions for the Functions ke^γx, kx^n, ka cos ωx, ka sin ωx, ke^αx a cos ωx, ke^αx a sin ωx)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t7",
+          "title": "Initial Value Problem for Non-Homogeneous Second Order Linear ODE (with Constant Coefficients)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 2-t8",
+          "title": "Solution by Variation of Parameters (Second Order)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t1",
+          "title": "Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t2",
+          "title": "Inverse Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t3",
+          "title": "Linearity Property",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t4",
+          "title": "First Shifting Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t5",
+          "title": "Transform of Derivatives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t6",
+          "title": "Solution of Initial Value Problems by Laplace Transform (Second Order Linear ODE with Constant Coefficients with Initial Conditions at t=0 Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t7",
+          "title": "Unit Step Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t8",
+          "title": "Second Shifting Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t9",
+          "title": "Dirac Delta Function and its Transform (Initial Value Problems Involving Unit Step Function and Dirac Delta Function are Excluded)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 3-t10",
+          "title": "Convolution Theorem (without proof) and its Application to Finding Inverse Laplace Transform of Products of Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t1",
+          "title": "Taylor Series Representation (without proof, Assuming the Possibility of Power Series Expansion in Appropriate Domains)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t2",
+          "title": "Maclaurin Series Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t3",
+          "title": "Fourier Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t4",
+          "title": "Euler Formulas",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t5",
+          "title": "Convergence of Fourier Series (Dirichlet's Conditions)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t6",
+          "title": "Fourier Series of 2π Periodic Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t7",
+          "title": "Fourier Series of 2l Periodic Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t8",
+          "title": "Half Range Sine Series Expansion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-1-gymat101-mModule 4-t9",
+          "title": "Half Range Cosine Series Expansion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

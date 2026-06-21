@@ -1,0 +1,201 @@
+{
+  "id": "pbbmt604-biomedical-and-robotic-engineering-s6",
+  "code": "PBBMT604",
+  "name": "PRINCIPLES OF MEDICAL IMAGE PROCESSING",
+  "branchId": "biomedical-and-robotic-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t1",
+          "title": "Image Perception and Light",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t2",
+          "title": "Luminance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t3",
+          "title": "Brightness and Contrast",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t4",
+          "title": "Simultaneous Contrast",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t5",
+          "title": "Mach Bands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t6",
+          "title": "Monochrome Vision Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t7",
+          "title": "Color Vision Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t8",
+          "title": "Image Sampling and Quantization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t9",
+          "title": "Two-Dimensional Sampling Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t10",
+          "title": "Representing Digital Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 1-t11",
+          "title": "Basic Relationship Between Pixels",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 2-t1",
+          "title": "Point Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 2-t2",
+          "title": "Contrast Stretching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 2-t3",
+          "title": "Clipping and Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 2-t4",
+          "title": "Digital Negative",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 2-t5",
+          "title": "Intensity Level Slicing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 2-t6",
+          "title": "Bit Extraction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 3-t1",
+          "title": "Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 3-t2",
+          "title": "Gradient Operators, Laplace Operators and Zero Crossings",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t1",
+          "title": "Image Segmentation: Techniques Such as Thresholding, Region-Based Segmentation, and Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t2",
+          "title": "Image Enhancement: Methods Like Histogram Equalization, Contrast Adjustment, and Noise Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t3",
+          "title": "Image Reconstruction: Methods for Reconstructing Images from Raw Data, Including CT and MRI Reconstruction Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t4",
+          "title": "Feature Extraction: Techniques for Identifying and Extracting Significant Features from Images, Such as Texture Analysis and Morphological Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t5",
+          "title": "Implement the Selected Image Processing Technique on a Set of Medical Images Using Matlab, Python, or C++",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t6",
+          "title": "Develop a Codebase That Accurately Applies the Chosen Technique to Biomedical Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t7",
+          "title": "Collaborate in Teams to Document the Entire Process, from Literature Review to Implementation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t8",
+          "title": "Prepare a Comprehensive Project Report Detailing the Methodology, Implementation Steps, Results, and Conclusions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-6-pbbmt604-mModule 4-t9",
+          "title": "Present the Project and Findings to the Class, Highlighting the Technique's Effectiveness and Potential Applications in Medical Imaging",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

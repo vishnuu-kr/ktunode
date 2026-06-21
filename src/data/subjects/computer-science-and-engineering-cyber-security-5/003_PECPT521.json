@@ -1,0 +1,177 @@
+{
+  "id": "pecpt521-computer-science-and-engineering-cyber-security-s5",
+  "code": "PECPT521",
+  "name": "SENSOR AND ACTUATOR INTEGRATION",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 1-t1",
+          "title": "Introduction: Overview of Embedded System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 1-t2",
+          "title": "Importance of Sensors, Actuators and Interfacing Circuits in Embedded Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 1-t3",
+          "title": "Embedded Sensors and Actuators: Various Types of Important Sensors, Actuators and Their Working Principles (Thermal, Mechanical, Electrical, Magnetic, Optical, Chemical, Smart Material and Meta Material Based)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t1",
+          "title": "Signal Conditioning Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t2",
+          "title": "Op-Amp Based Interfacing Circuit Implementation: Amplifier, Filter, ADC, DAC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t3",
+          "title": "Serial Communication Protocols for Interfacing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t4",
+          "title": "Advancement in Interfacing Schemes of Resistive Sensors for Linearity Improvement and Error Reduction: Resistive Sensor Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t5",
+          "title": "Non-Idealities in Basic Interfacing Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t6",
+          "title": "Linearization Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t7",
+          "title": "Error Reduction Schemes Due to Environmental Effects and Remote Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t8",
+          "title": "Advanced Techniques for Direct Interfacing of Resistive Sensors with Embedded Controller: Embedded Controller Based Excitation System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t9",
+          "title": "Direct Interfacing Schemes of Various Resistive Sensor Topologies (Single, Differential and Bridge Type) to Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 2-t10",
+          "title": "Interfacing Scheme for Sensor Array",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 3-t1",
+          "title": "Capacitive Sensor Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 3-t2",
+          "title": "Interfacing Scheme for Different Capacitive Sensor Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 3-t3",
+          "title": "Direct Interfacing Schemes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 3-t4",
+          "title": "Advancement in Design of Interfacing Circuits for Lossy Capacitive Sensors: Lossy Capacitive Sensor Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 3-t5",
+          "title": "Various Advanced Interfacing Schemes for Lossy Capacitive Sensors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 4-t1",
+          "title": "Background of Miniaturization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 4-t2",
+          "title": "Miniaturized Device Fabrication Process Technology for Smart Sensors and Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 4-t3",
+          "title": "Miniaturized Sensors, Actuators and Their Interfacing Electronics: Various Types of Important MEMS Sensors and Actuators: Design and Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 4-t4",
+          "title": "Interfacing Electronics for MEMS Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 4-t5",
+          "title": "System-on-Chip Integration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt521-mModule 4-t6",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "id": "peaet746-computer-science-and-engineering-cyber-security-s5",
+  "code": "PEAET746",
+  "name": "CRYPTOGRAPHY",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t1",
+          "title": "Introduction to Cryptography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t2",
+          "title": "Need for Cryptography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t3",
+          "title": "Kirchhoff's Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t4",
+          "title": "Symmetric Cipher Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t5",
+          "title": "Substitution Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t6",
+          "title": "Transposition Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t7",
+          "title": "Rotor Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t8",
+          "title": "Steganography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t9",
+          "title": "Block Cipher - Design Principles and Modes of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t10",
+          "title": "The Data Encryption Standard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 1-t11",
+          "title": "Strength of DES, Differential and Linear Cryptanalysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t1",
+          "title": "IDEA - Primitive Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t2",
+          "title": "Key Expansions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t3",
+          "title": "One Round",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t4",
+          "title": "Odd Round",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t5",
+          "title": "Even Round",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t6",
+          "title": "Inverse Keys for Decryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t7",
+          "title": "AES - Basic Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t8",
+          "title": "Primitive Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t9",
+          "title": "Inverse Cipher - Key Expansion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t10",
+          "title": "Rounds",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t11",
+          "title": "Inverse Rounds",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 2-t12",
+          "title": "Stream Cipher - RC4",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t1",
+          "title": "Number Theory - Fundamental Theorem of Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t2",
+          "title": "Fermat's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t3",
+          "title": "Euler's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t4",
+          "title": "Euler's Totient Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t5",
+          "title": "Extended Euclid's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t6",
+          "title": "Modular Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t7",
+          "title": "Public Key Cryptography - Principles of Public Key Cryptography Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t8",
+          "title": "RSA Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 3-t9",
+          "title": "Key Management - Diffie-Hellman Key Exchange",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 4-t1",
+          "title": "Basics of Elliptic Curve Cryptography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 4-t2",
+          "title": "Authentication - Authentication Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 4-t3",
+          "title": "Message Authentication Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 4-t4",
+          "title": "Hash Functions - SHA-1",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 4-t5",
+          "title": "Security of Hash Functions and MACs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-peaet746-mModule 4-t6",
+          "title": "Introduction to Digital Signatures - Digital Signature Standards",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

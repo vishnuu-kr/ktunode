@@ -1,0 +1,261 @@
+{
+  "id": "pcbmt403-biomedical-and-robotic-engineering-s4",
+  "code": "PCBMT403",
+  "name": "ELECTRICAL AND ELECTRONIC INSTRUMENTATION",
+  "branchId": "biomedical-and-robotic-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 1-t1",
+          "title": "Electric and Magnetic Units, SI Units",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 1-t2",
+          "title": "Types of Errors - Gross Errors, Systematic and Random Errors in Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 1-t3",
+          "title": "Propagation of Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 1-t4",
+          "title": "Expression of Uncertainty - Accuracy, Precision, Sensitivity, Resolution, Loading Effect. Classification of Instruments, Secondary Instruments - Indicating, Integrating and Recording. Operating Forces - Deflecting, Damping, Controlling Torques. Electromechanical Indicating Instruments: Suspension Galvanometer, PMMC Mechanism, DC Ammeters and Voltmeters, Ohmmeter, Multimeters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 1-t5",
+          "title": "AC Indicating Instruments - Dynamometer, Watt-Hour Meter, Power Factor Meter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 2-t1",
+          "title": "Wheatstone and Kelvin Bridges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 2-t2",
+          "title": "AC Bridges - Maxwell, Hay and Wein Bridges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 2-t3",
+          "title": "Measurement of R, L, C. Motors (Basic Concepts Only Required): Motor Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 2-t4",
+          "title": "DC Motors - DC Shunt Motor, Separately Excited and Self Excited, DC Series Motor, DC Compound Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 2-t5",
+          "title": "Permanent Magnet DC Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 2-t6",
+          "title": "AC Motors - Synchronous Motor, Three-Phase Induction Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 2-t7",
+          "title": "Special Electrical Motors - Stepper Motor, Servo Motor, BLDC Motor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t1",
+          "title": "Analog Active Filters - Sallen and Key",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t2",
+          "title": "Generalized Impedance Converter AFs for Very Low Frequencies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t3",
+          "title": "Two-Op Amp ECG Amplifier, Instrumentation Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t4",
+          "title": "Medical Isolation Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t5",
+          "title": "Safety Standards in Medical Electronic Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t6",
+          "title": "Phase Sensitive Rectifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t7",
+          "title": "Phase Detectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t8",
+          "title": "Phase Locked Loops, Digital Interfaces: Aliasing and the Sampling Theorem, Digital-to-Analog Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t9",
+          "title": "DAC Designs - Weighted Resistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t10",
+          "title": "R-2R Ladder, Analog-to-Digital Converters (Tracking Converters)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t11",
+          "title": "The Successive Approximation ADC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t12",
+          "title": "Integrating Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t13",
+          "title": "Flash Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 3-t14",
+          "title": "Delta-Sigma Converters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t1",
+          "title": "Cathode Ray Oscilloscope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t2",
+          "title": "Digital Storage Oscilloscopes - DSO Applications, Method of Measuring Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t3",
+          "title": "Current",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t4",
+          "title": "Phase",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t5",
+          "title": "Frequency and Period using CRO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t6",
+          "title": "DSO, Strip Chart Recorder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t7",
+          "title": "X-Y Recorder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t8",
+          "title": "Plotter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t9",
+          "title": "Liquid Crystal Display (LCD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t10",
+          "title": "Waveform Analysing Instruments - Distortion Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t11",
+          "title": "Spectrum Analyser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-and-robotic-engineering-4-pcbmt403-mModule 4-t12",
+          "title": "Digital Spectrum Analyser",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

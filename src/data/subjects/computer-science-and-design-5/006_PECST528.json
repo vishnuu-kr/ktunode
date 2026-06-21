@@ -1,0 +1,333 @@
+{
+  "id": "pecst528-computer-science-and-design-s5",
+  "code": "PECST528",
+  "name": "ADVANCED COMPUTER ARCHITECTURE",
+  "branchId": "computer-science-and-design",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t1",
+          "title": "Introduction: The Impact of Hardware and Software Technology Trends; Self Review - Instruction Set Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t2",
+          "title": "Memory Addressing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t3",
+          "title": "Addressing Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t4",
+          "title": "Classes of Computers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t5",
+          "title": "Concept of Computer Hardware and Organization (Patterson and Hennessy, 5th Edition) - Measuring Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t6",
+          "title": "Reporting and Summarizing Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t7",
+          "title": "Benchmarks - Desktop and Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t8",
+          "title": "Amdahl's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t9",
+          "title": "Processor Performance Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 1-t10",
+          "title": "Activity: Beyond the Books - Visit www.spec.org, explore High Performance Computing benchmarks, compare vendor results for the same benchmark, appreciate the need for benchmarks, learn about retired benchmarks, and write/publish a paper based on a retired benchmark",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t1",
+          "title": "Review of Basic Concepts of Parallel Processing and Pipelining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t2",
+          "title": "Instruction Level Parallelism",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t3",
+          "title": "Data Dependencies and Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t4",
+          "title": "Different Types of Dependences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t5",
+          "title": "Compiler Techniques for ILP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t6",
+          "title": "Branch Prediction - Correlating Branch Predictor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t7",
+          "title": "Dynamic Scheduling - Idea",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t8",
+          "title": "Introduction to Tomasulo's Scheme",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t9",
+          "title": "Register Renaming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t10",
+          "title": "Hardware Speculation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t11",
+          "title": "Reorder Buffers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t12",
+          "title": "Multiple Issue and Static Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 2-t13",
+          "title": "VLIW",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t1",
+          "title": "Data Level Parallelism",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t2",
+          "title": "Vector Processors - How Do They Work",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t3",
+          "title": "Memory Banks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t4",
+          "title": "Stride",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t5",
+          "title": "Scatter-Gather",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t6",
+          "title": "SIMD - Comparison with Vector GPU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t7",
+          "title": "Comparison of Loops in C vs CUDA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t8",
+          "title": "NVIDIA GPU Memory Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t9",
+          "title": "Vector Processor vs GPU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t10",
+          "title": "Multimedia SIMD Computers vs GPU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t11",
+          "title": "Multiprocessor Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t12",
+          "title": "Centralized Shared Memory Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t13",
+          "title": "Cache Coherence and Snooping Protocol (Implementation Details Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t14",
+          "title": "Performance of Symmetric Shared-Memory Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t15",
+          "title": "Distributed Shared Memory and Directory-Based Protocol - Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t16",
+          "title": "Synchronization - Basic Hardware Primitives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 3-t17",
+          "title": "Memory Consistency Models - Sequential and Relaxed",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t1",
+          "title": "Warehouse Scale Computers - Goals and Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t2",
+          "title": "Programming Frameworks for Batch Processing - MapReduce and Hadoop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t3",
+          "title": "Computer Architecture of Warehouse-Scale Computers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t4",
+          "title": "Moore's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t5",
+          "title": "Dennard Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t6",
+          "title": "Dark Silicon and the Transition Towards Heterogeneous Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t7",
+          "title": "Asymmetric Multi-Core Architecture - Static and Dynamic (Overall Idea, Example Processors)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t8",
+          "title": "Functional Heterogeneous Multicore Architecture - GPUs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t9",
+          "title": "Accelerators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-5-pecst528-mModule 4-t10",
+          "title": "Reconfigurable Computing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

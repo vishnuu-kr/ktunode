@@ -1,0 +1,267 @@
+{
+  "id": "penst635-naval-architecture-and-shipbuilding-engineering-s6",
+  "code": "PENST635",
+  "name": "COMPUTATIONAL FLUID DYNAMICS IN MARINE TECHNOLOGY",
+  "branchId": "naval-architecture-and-shipbuilding-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t1",
+          "title": "Introduction to Computational Fluid Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t2",
+          "title": "CFD Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t3",
+          "title": "Numerical vs Analytical vs Experimental",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t4",
+          "title": "Modelling vs Experimentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t5",
+          "title": "Fundamental Principles of Conservation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t6",
+          "title": "Reynolds Transport Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t7",
+          "title": "Conservation Equations for Mass",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t8",
+          "title": "Momentum and Energy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 1-t9",
+          "title": "Convective Forms of the Equations and General Description",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t1",
+          "title": "Numerical Methods for Solving CFD Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t2",
+          "title": "Classification and Overview of Numerical Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t3",
+          "title": "Classification into Various Types of Equations such as Parabolic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t4",
+          "title": "Elliptic and Hyperbolic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t5",
+          "title": "Boundary and Initial Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t6",
+          "title": "Overview of Numerical Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t7",
+          "title": "Finite Difference Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 2-t8",
+          "title": "Finite Element Method and Finite Volume Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t1",
+          "title": "The Basic Structure of a CFD Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t2",
+          "title": "Pre-Processor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t3",
+          "title": "Solver and Postprocessor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t4",
+          "title": "User-Defined Subroutines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t5",
+          "title": "Numerical Grid Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t6",
+          "title": "Transformation and Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t7",
+          "title": "Solution to Some Basic Problems in Fluid Flow: Free Surface Flows and N-S Equations Around a Body in Water",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 3-t8",
+          "title": "Numerical Flow Simulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t1",
+          "title": "Features of Turbulent Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t2",
+          "title": "Vorticity Transport Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t3",
+          "title": "General Properties of Turbulent Quantities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t4",
+          "title": "Reynolds Average Navier Stokes (RANS) Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t5",
+          "title": "Closure Problem in Turbulence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t6",
+          "title": "Types of Turbulence Models like Eddy Viscosity Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t7",
+          "title": "Mixing Length Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t8",
+          "title": "Turbulent Kinetic Energy and Dissipation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t9",
+          "title": "κ-ε Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t10",
+          "title": "RNG κ-ε Model and κ-ω Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t11",
+          "title": "Reynolds Stress Model (RSM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t12",
+          "title": "Large Eddy Simulation (LES)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t13",
+          "title": "Direct Numerical Simulation (DNS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-6-penst635-mModule 4-t14",
+          "title": "A Minor CFD Project in Ship Hydrodynamics using any Commercial or Open-Source CFD Package",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "id": "pbect304-electronics-and-instrumentation-s3",
+  "code": "PBECT304",
+  "name": "LOGIC CIRCUIT DESIGN",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 1-t1",
+          "title": "Review of Number Systems Representation and Conversions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 1-t2",
+          "title": "Arithmetic of Binary Number Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 1-t3",
+          "title": "Signed and Unsigned Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 1-t4",
+          "title": "BCD and Boolean Algebra Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 1-t5",
+          "title": "Canonical Forms: Min Term and Max Term",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 1-t6",
+          "title": "Simplification of Boolean Expressions Using Karnaugh Map (up to 4 variables)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 1-t7",
+          "title": "Implementation of Boolean Expressions Using Universal Gates",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t1",
+          "title": "Combinational Logic Circuits: Half Adder and Full Adders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t2",
+          "title": "Subtractors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t3",
+          "title": "BCD Adder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t4",
+          "title": "Ripple Carry and Carry Look Ahead Adders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t5",
+          "title": "Decoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t6",
+          "title": "Encoders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t7",
+          "title": "Code Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t8",
+          "title": "Comparators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t9",
+          "title": "Parity Generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t10",
+          "title": "Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t11",
+          "title": "De-multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t12",
+          "title": "Implementation of Boolean Algebra Using MUX and Introduction to Verilog HDL Basic Language Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 2-t13",
+          "title": "Basic Implementation of Logic Gates and Combinational Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 3-t1",
+          "title": "SR Latch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 3-t2",
+          "title": "Flip Flops: SR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 3-t3",
+          "title": "Master-Slave JK",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 3-t4",
+          "title": "D and T Flip Flops and Conversion of Flip Flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 3-t5",
+          "title": "Excitation Table and Characteristic Equation; Shift Registers: SIPO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 3-t6",
+          "title": "Synchronous and Mod N Counters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t1",
+          "title": "Finite State Machines: Mealy and Moore Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t2",
+          "title": "State Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t3",
+          "title": "State Assignment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t4",
+          "title": "State Table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t5",
+          "title": "State Reduction and Logic Families: Electrical Characteristics of Logic Gates (Noise Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t6",
+          "title": "Fan-in",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t7",
+          "title": "Fan-out",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t8",
+          "title": "Propagation Delay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t9",
+          "title": "Transition Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbect304-mModule 4-t10",
+          "title": "CMOS Circuit Description and Working of TTL and CMOS Inverter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

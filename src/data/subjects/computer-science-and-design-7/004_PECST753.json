@@ -1,0 +1,225 @@
+{
+  "id": "pecst753-computer-science-and-design-s7",
+  "code": "PECST753",
+  "name": "GAME THEORY AND MECHANISM DESIGN",
+  "branchId": "computer-science-and-design",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t1",
+          "title": "Basic Fuzzy Set Theory: Introduction - Uncertainty",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t2",
+          "title": "Imprecision and Vagueness, Crisp vs Fuzzy Sets, Representation of Fuzzy Sets, Membership Functions - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t3",
+          "title": "Basic Operations - Dilation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t4",
+          "title": "Concentration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t5",
+          "title": "Normalization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t6",
+          "title": "Linguistic Hedges, Properties of Fuzzy Set - Level Sets - Alpha Cut Representation, Operations on Fuzzy Sets - Fuzzy Complement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t7",
+          "title": "Fuzzy Intersection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t8",
+          "title": "Fuzzy Union",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 1-t9",
+          "title": "Aggregation Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 2-t1",
+          "title": "Fuzzy Relations: Operations on Fuzzy Relations - Union",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 2-t2",
+          "title": "Intersection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 2-t3",
+          "title": "Complement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 2-t4",
+          "title": "Cartesian Product, Fuzzy Composition - Max-Min",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 2-t5",
+          "title": "Max-Product, Extension Principle, Fuzzy Arithmetic - Fuzzy Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 2-t6",
+          "title": "Arithmetic Operations on Fuzzy Numbers, Fuzzy Reasoning - Generalized Modus Ponens (GMP) and Generalized Modus Tollens (GMT)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t1",
+          "title": "Fuzzification and Defuzzification Methods: Fuzzy Inference - Zadeh Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t2",
+          "title": "Mamdani Rule, Development of Membership Functions - Intuition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t3",
+          "title": "Inference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t4",
+          "title": "Rank Ordering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t5",
+          "title": "Inductive Reasoning, Defuzzification to Scalars - Max Membership Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t6",
+          "title": "Centroid Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t7",
+          "title": "Weighted Average Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t8",
+          "title": "Mean Max Membership",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t9",
+          "title": "Center of Sums",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t10",
+          "title": "Center of Largest Area",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 3-t11",
+          "title": "First (or Last) of Maxima",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 4-t1",
+          "title": "Fuzzy Inference Systems: Approximate Reasoning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 4-t2",
+          "title": "Fuzzy (Rule-Based) Systems - Multiple Conjunctive Antecedents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 4-t3",
+          "title": "Multiple Disjunctive Antecedents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 4-t4",
+          "title": "Aggregation of Fuzzy Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 4-t5",
+          "title": "Graphical Techniques of Inference, Fuzzy Controllers - Mamdani FIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-7-pecst753-mModule 4-t6",
+          "title": "Larsen Model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

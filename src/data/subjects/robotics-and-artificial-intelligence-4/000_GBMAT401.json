@@ -11,19 +11,19 @@
       "topics": [
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t1",
-          "title": "Random variables",
+          "title": "Random Variables",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t2",
-          "title": "Discrete random variables and their probability distributions",
+          "title": "Discrete Random Variables and Their Probability Distributions",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t3",
-          "title": "Cumulative distribution function",
+          "title": "Cumulative Distribution Function",
           "content": "",
           "pyqs": []
         },
@@ -35,49 +35,49 @@
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t5",
-          "title": "Mean and variance",
+          "title": "Mean and Variance",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t6",
-          "title": "Binomial distribution",
+          "title": "Binomial Distribution",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t7",
-          "title": "Poisson distribution",
+          "title": "Poisson Distribution",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t8",
-          "title": "Poisson distribution as a limit of the binomial distribution",
+          "title": "Poisson Distribution as a Limit of the Binomial Distribution",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t9",
-          "title": "Joint pmf of two discrete random variables",
+          "title": "Joint PMF of Two Discrete Random Variables",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t10",
-          "title": "Marginal pmf",
+          "title": "Marginal PMF",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t11",
-          "title": "Independent random variables",
+          "title": "Independent Random Variables",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 1-t12",
-          "title": "Expected value of a function of two discrete variables",
+          "title": "Expected Value of a Function of Two Discrete Variables",
           "content": "",
           "pyqs": []
         }
@@ -89,13 +89,13 @@
       "topics": [
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t1",
-          "title": "Continuous random variables and their probability distributions",
+          "title": "Continuous Random Variables and Their Probability Distributions",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t2",
-          "title": "Cumulative distribution function",
+          "title": "Cumulative Distribution Function",
           "content": "",
           "pyqs": []
         },
@@ -107,37 +107,43 @@
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t4",
-          "title": "Mean and variance",
+          "title": "Mean and Variance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t5",
+          "title": "Uniform",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t6",
-          "title": "Normal and Exponential distributions",
+          "title": "Normal and Exponential Distributions",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t7",
-          "title": "Joint pdf of two continuous random variables",
+          "title": "Joint PDF of Two Continuous Random Variables",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t8",
-          "title": "Marginal pdf",
+          "title": "Marginal PDF",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t9",
-          "title": "Independent random variables",
+          "title": "Independent Random Variables",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 2-t10",
-          "title": "Expected value of a function of two continuous variables",
+          "title": "Expected Value of a Function of Two Continuous Variables",
           "content": "",
           "pyqs": []
         }
@@ -148,14 +154,50 @@
       "title": "Module 3",
       "topics": [
         {
+          "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t1",
+          "title": "Confidence Intervals",
+          "content": "",
+          "pyqs": []
+        },
+        {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t2",
-          "title": "t-Test for Hypotheses about a Population Mean (for small sample)",
+          "title": "Confidence Level",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t3",
-          "title": "Tests concerning a Population Proportion for large and small samples",
+          "title": "Confidence Intervals and One-Side Confidence Intervals for a Population Mean for Large and Small Samples (Normal Distribution and t-Distribution)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t4",
+          "title": "Hypotheses and Test Procedures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t5",
+          "title": "Type I and Type II Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t6",
+          "title": "z Tests for Hypotheses about a Population Mean (for Large Sample)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t7",
+          "title": "t Test for Hypotheses about a Population Mean (for Small Sample)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 3-t8",
+          "title": "Tests Concerning a Population Proportion for Large and Small Samples",
           "content": "",
           "pyqs": []
         }
@@ -167,31 +209,31 @@
       "topics": [
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t1",
-          "title": "Random process concept",
+          "title": "Random Process Concept",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t2",
-          "title": "Classification of process",
+          "title": "Classification of Process",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t3",
-          "title": "Methods of description of random process",
+          "title": "Methods of Description of Random Process",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t4",
-          "title": "Special classes",
+          "title": "Special Classes",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t5",
-          "title": "Average values of random process",
+          "title": "Average Values of Random Process",
           "content": "",
           "pyqs": []
         },
@@ -203,7 +245,7 @@
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t7",
-          "title": "Autocorrelation functions and its properties",
+          "title": "Autocorrelation Functions and Its Properties",
           "content": "",
           "pyqs": []
         },
@@ -215,25 +257,25 @@
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t9",
-          "title": "Mean-Ergodic process",
+          "title": "Mean-Ergodic Process",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t10",
-          "title": "Mean-Ergodic theorem",
+          "title": "Mean-Ergodic Theorem",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t11",
-          "title": "Correlation Ergodic process",
+          "title": "Correlation Ergodic Process",
           "content": "",
           "pyqs": []
         },
         {
           "id": "robotics-and-artificial-intelligence-4-gbmat401-mModule 4-t12",
-          "title": "Distribution Ergodic process",
+          "title": "Distribution Ergodic Process",
           "content": "",
           "pyqs": []
         }

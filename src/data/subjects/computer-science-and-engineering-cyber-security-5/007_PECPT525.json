@@ -1,0 +1,309 @@
+{
+  "id": "pecpt525-computer-science-and-engineering-cyber-security-s5",
+  "code": "PECPT525",
+  "name": "CLOUD COMPUTING",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t1",
+          "title": "Traditional Computing - Limitations. Overview of Computing Paradigms - Grid Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t2",
+          "title": "Cluster Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t3",
+          "title": "Distributed Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t4",
+          "title": "Utility Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t5",
+          "title": "Cloud Computing. NIST Reference Model - Basic Terminology and Concepts. Cloud Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t6",
+          "title": "Benefits and Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t7",
+          "title": "Roles and Boundaries. Cloud Delivery (Service) Models - Infrastructure-as-a-Service (IaaS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t8",
+          "title": "Platform-as-a-Service (PaaS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t9",
+          "title": "Software-as-a-Service (SaaS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t10",
+          "title": "XaaS (Anything-as-a-Service) - Cloud Deployment Models - Public Cloud",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t11",
+          "title": "Community Cloud",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t12",
+          "title": "Private Cloud",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 1-t13",
+          "title": "Hybrid Cloud",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 2-t1",
+          "title": "Para-virtualization, VMware: Full Virtualization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t1",
+          "title": "Broadband Networks and Internet Architecture - Internet Service Providers (ISPs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t2",
+          "title": "Data Centre Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t3",
+          "title": "Web Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t4",
+          "title": "Multitenant Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t5",
+          "title": "Service Technology. Resource Provisioning Techniques - Static and Dynamic Provisioning. Open-Source Software Platforms for Private Cloud - OpenStack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t6",
+          "title": "CloudStack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t7",
+          "title": "Basics of Eucalyptus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t8",
+          "title": "Open Nebula",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t9",
+          "title": "Nimbus. Basic Terms and Concepts in Security: Threat Agents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t10",
+          "title": "Cloud Security Threats/Risks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t11",
+          "title": "Trust. Operating System Security - Virtual Machine Security - Security of Virtualization - Security Risks Posed by Shared Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 3-t12",
+          "title": "Security Risks Posed by Management OS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t1",
+          "title": "Popular Cloud Platforms: Amazon Web Services (AWS) - AWS Ecosystem - Computing Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t2",
+          "title": "Amazon Machine Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t3",
+          "title": "Elastic Compute Cloud (EC2)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t4",
+          "title": "Advanced Compute Services. Storage Services - Simple Storage System (Amazon S3)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t5",
+          "title": "Elastic Block Store (Amazon EBS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t6",
+          "title": "Database Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t7",
+          "title": "Amazon CDN Services and Communication Services. Google Cloud Platform - IaaS Offerings: Compute Engine (GCE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t8",
+          "title": "Cloud Storage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t9",
+          "title": "PaaS Offerings: Google App Engine (GAE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t10",
+          "title": "Storage Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t11",
+          "title": "Application Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t12",
+          "title": "Compute Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t13",
+          "title": "Database Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t14",
+          "title": "SaaS Offerings: Gmail",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t15",
+          "title": "Docs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t16",
+          "title": "Google Drive. Microsoft Azure: Azure Platform Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t17",
+          "title": "Hyper-V",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t18",
+          "title": "Azure Virtual Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t19",
+          "title": "Compute Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt525-mModule 4-t20",
+          "title": "Storage Services",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

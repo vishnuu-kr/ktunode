@@ -1,0 +1,243 @@
+{
+  "id": "oeitt831-information-technology-s8",
+  "code": "OEITT831",
+  "name": "COMPUTER VISION",
+  "branchId": "information-technology",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t1",
+          "title": "Image Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t2",
+          "title": "Image Enhancement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t3",
+          "title": "Image Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t4",
+          "title": "Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t5",
+          "title": "Image Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t6",
+          "title": "Color Image Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t7",
+          "title": "Mathematical Morphology and Use in Texture Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 1-t8",
+          "title": "Binary Shape Analysis and Connectedness",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt831-mModule 2-t1",
+          "title": "Reflectance and BRDF (Basics Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 2-t2",
+          "title": "Monocular and Binocular Imaging System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 2-t3",
+          "title": "Geometric Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 2-t4",
+          "title": "Orthographic and Perspective Projection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 2-t5",
+          "title": "Camera Model - Basic Pinhole Camera Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 2-t6",
+          "title": "Stereo Vision: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 2-t7",
+          "title": "Concept of Disparity and Its Relationship with Depth",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t1",
+          "title": "Harris Corner Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t2",
+          "title": "Canny Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t3",
+          "title": "Blob Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t4",
+          "title": "Line and Curve Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t5",
+          "title": "Hough Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t6",
+          "title": "Feature Descriptors: Histogram of Oriented Gradients",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t7",
+          "title": "Scale Invariant Feature Transform (SIFT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t8",
+          "title": "Mosaics and Snakes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t9",
+          "title": "Feature Matching Algorithms: Brute Force Matcher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 3-t10",
+          "title": "Need for Feature Detection and Description and Limitations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t1",
+          "title": "Shape from X - Shape from Shading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t2",
+          "title": "Photometric Stereo",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t3",
+          "title": "Occluding Contour Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t4",
+          "title": "Motion Analysis - Regularization Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t5",
+          "title": "Optical Flow: Brightness Constancy Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t6",
+          "title": "Lucas-Kanade Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t7",
+          "title": "Principles of Structure from Motion (Introduction)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t8",
+          "title": "Object Recognition: Hough Transforms and Other Simple Object Recognition Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t9",
+          "title": "Application: Face Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-8-oeitt831-mModule 4-t10",
+          "title": "Face Recognition and Eigenfaces",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

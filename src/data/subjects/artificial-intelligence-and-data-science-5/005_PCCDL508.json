@@ -1,0 +1,81 @@
+{
+  "id": "pccdl508-artificial-intelligence-and-data-science-s5",
+  "code": "PCCDL508",
+  "name": "DATA ANALYTICS LAB",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t1",
+          "title": "Implement a word count program using Map Reduce to find the number of occurrences of specific keywords from an input file",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t2",
+          "title": "Implement matrix multiplication with Hadoop Map Reduce",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t3",
+          "title": "Implement Pig Latin scripts to sort, group, join, project, and filter data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t4",
+          "title": "Implement Database Operations on Hive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t5",
+          "title": "Write an R program to find the factorial and check for palindromes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t6",
+          "title": "Implement a program to find variance, covariance and correlation between different types of attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t7",
+          "title": "Write an R program to solve linear regression and make predictions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t8",
+          "title": "Write an R program to solve logistic regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t9",
+          "title": "Implement SVM and Decision tree Classifier using R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t10",
+          "title": "Implement KNN and Naive Bayes Classifier using R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccdl508-mModule Experiment 2-t11",
+          "title": "Implement clustering techniques using Spark",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

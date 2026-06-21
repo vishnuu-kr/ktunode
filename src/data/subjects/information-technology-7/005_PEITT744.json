@@ -1,0 +1,243 @@
+{
+  "id": "peitt744-information-technology-s7",
+  "code": "PEITT744",
+  "name": "MOBILE APP DEVELOPMENT",
+  "branchId": "information-technology",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t1",
+          "title": "History, Trends, and Importance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t2",
+          "title": "Mobile Platforms: Android and Cross-Platform Development",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t3",
+          "title": "Development Environments: Android Studio, Xcode, and Visual Studio Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t4",
+          "title": "Basic App Development Lifecycle: Design, Development, Testing, and Deployment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t5",
+          "title": "Introduction to Programming Languages: Java, Kotlin, Swift, and Dart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t6",
+          "title": "Lab: Setting up Development Environments (Android Studio, Xcode, Visual Studio Code)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t7",
+          "title": "Building a Simple 'Hello World' App Using Java (Android) and Swift (iOS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 1-t8",
+          "title": "Exploring Cross-Platform Development with Flutter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t1",
+          "title": "Visual Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t2",
+          "title": "Information Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t3",
+          "title": "Interaction Design - Wireframing and Prototyping Tools: Figma, Sketch, and Adobe XD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t4",
+          "title": "Responsive Design for Multiple Devices and Screen Sizes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t5",
+          "title": "Material Design Guidelines for Android and Human Interface Guidelines for iOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t6",
+          "title": "Accessibility in Mobile App Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t7",
+          "title": "Lab: Creating Wireframes and Prototypes Using Figma or Sketch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t8",
+          "title": "Lab: Implementing Responsive Design in Android and iOS Apps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t9",
+          "title": "Lab: Applying Material Design and Human Interface Guidelines in Simple UI Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 2-t10",
+          "title": "Lab: Testing App Accessibility Features on Various Devices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t1",
+          "title": "RESTful APIs and GraphQL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t2",
+          "title": "Cloud Services for Mobile Apps: Firebase, AWS Amplify, and Google Cloud",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t3",
+          "title": "Working with Databases: SQLite, Realm, and Firebase Realtime Database",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t4",
+          "title": "Data Storage and Management in Mobile Apps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t5",
+          "title": "Implementing Push Notifications and In-App Messaging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t6",
+          "title": "Lab: Setting up and Integrating a Firebase Backend with a Mobile App",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t7",
+          "title": "Lab: Implementing RESTful API Calls in an App Using Retrofit (Android) and URLSession (iOS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t8",
+          "title": "Lab: Storing and Retrieving Data Using SQLite and Firebase Realtime Database",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 3-t9",
+          "title": "Lab: Configuring Push Notifications and Sending In-App Messages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t1",
+          "title": "Profiling, Memory Management, and Battery Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t2",
+          "title": "Mobile App Security: Secure Coding Practices, Encryption, and Authentication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t3",
+          "title": "Cross-Platform Development: React Native, Flutter, and Xamarin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t4",
+          "title": "App Store Deployment: Google Play Store and Apple App Store",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t5",
+          "title": "Lab: Profiling and Optimizing App Performance Using Android Studio and Xcode Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t6",
+          "title": "Lab: Implementing Secure Coding Practices and Encryption in Mobile Apps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t7",
+          "title": "Lab: Developing and Deploying a Cross-Platform App Using Flutter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt744-mModule 4-t8",
+          "title": "Lab: Preparing and Submitting Apps to the Google Play Store and Apple App Store",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

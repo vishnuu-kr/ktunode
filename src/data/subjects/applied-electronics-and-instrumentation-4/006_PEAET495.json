@@ -1,0 +1,207 @@
+{
+  "id": "peaet495-applied-electronics-and-instrumentation-s4",
+  "code": "PEAET495",
+  "name": "MACHINE LEARNING",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t1",
+          "title": "Overview of Machine Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t2",
+          "title": "Examples of Machine Learning Applications, Machine Learning Paradigms - Supervised",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t3",
+          "title": "Semi-supervised",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t4",
+          "title": "Unsupervised",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t5",
+          "title": "Reinforcement Learning, Types of Supervised Learning - Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t6",
+          "title": "Regression, Bayes' Theorem, Classification - Bayes' Decision Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t7",
+          "title": "Discriminant Functions and Decision Surfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t8",
+          "title": "Bayesian Classification for Normal Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t9",
+          "title": "Naive Bayes Classifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 1-t10",
+          "title": "Logistic Regression",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 2-t1",
+          "title": "Formulation of the Optimization Problem and Solutions, Multiclass Case",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t1",
+          "title": "Neural Networks - Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t2",
+          "title": "Neural Network - Multilayer Feed Forward Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t3",
+          "title": "Activation Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t4",
+          "title": "ReLU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t5",
+          "title": "Tanh",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t6",
+          "title": "Backpropagation Algorithm, Unsupervised Learning Clustering - Distance Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t7",
+          "title": "K-Means Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 3-t8",
+          "title": "Hierarchical Clustering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t1",
+          "title": "Dimensionality Reduction - Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t2",
+          "title": "Fischer's Discriminant Analysis, Model Selection - Cross Validation - K-Fold",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t3",
+          "title": "Leave One Out",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t4",
+          "title": "Bootstrapping, Model Evaluation - Classification - Confusion Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t5",
+          "title": "Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t6",
+          "title": "Recall",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t7",
+          "title": "Accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t8",
+          "title": "F-Measure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t9",
+          "title": "Receiver Operating Characteristic Curve (ROC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-peaet495-mModule 4-t10",
+          "title": "Area Under Curve (AUC)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

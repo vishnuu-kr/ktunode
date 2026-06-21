@@ -1,0 +1,159 @@
+{
+  "id": "pecat746-computer-science-and-engineering-artificial-intelligence-s7",
+  "code": "PECAT746",
+  "name": "PROGRAMMING IN R",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 1-t1",
+          "title": "Introduction to R: The R Environment - Overview, Command Line Interface, and Batch Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 1-t2",
+          "title": "R Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 1-t3",
+          "title": "Basic Data Types - Vectors, Lists, Data Frames, Matrices, and Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 1-t4",
+          "title": "Control Statements - If-Else, Switch, For Loops, and While Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 1-t5",
+          "title": "Functions - Writing and Using Functions, Scope of Variables, Function Arguments, and Returning Values",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 2-t1",
+          "title": "Data Import, Cleaning, and Preprocessing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 2-t2",
+          "title": "Data Import and Export - Reading and Writing Data from/to Text Files, Excel, and Other Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 2-t3",
+          "title": "Database Connections - Connecting to Databases and Importing Data Using Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 2-t4",
+          "title": "Handling Missing Data - NA and NULL Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 2-t5",
+          "title": "Data Cleaning and Preprocessing - Detecting and Removing Duplicates, Handling Outliers, Data Transformation and Normalization, Combining Data Sets, Binning Data, Subsets, and Summarizing Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 3-t1",
+          "title": "Statistical Analysis and Data Visualization: Introduction to Data Analytics and Summary Statistics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 3-t2",
+          "title": "Statistical Tests - Continuous Data and Discrete Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 3-t3",
+          "title": "Common Distributions - Type Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 3-t4",
+          "title": "Probability Distributions - Normal Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 3-t5",
+          "title": "R Graphics - Overview, Customizing Charts, Graphical Parameters, and Basic Graphics Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 3-t6",
+          "title": "Lattice Graphics - Lattice Functions and Customizing Lattice Graphics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 3-t7",
+          "title": "Ggplot",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 4-t1",
+          "title": "Machine Learning with R: Basic Concepts, Supervised vs. Unsupervised Learning, Simple Regression, and Classification Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 4-t2",
+          "title": "Building Linear Models - Model Fitting, Predicting Values Using Models, Analyzing the Fit, and Refining the Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 4-t3",
+          "title": "Regression - Types, Unusual Observations and Corrective Measures, and Comparison of Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-7-pecat746-mModule 4-t4",
+          "title": "Case Studies and Applications - Real-World Applications of R in Various Fields Like Finance, Healthcare, and Social Sciences",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

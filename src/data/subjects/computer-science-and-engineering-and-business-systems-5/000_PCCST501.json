@@ -1,0 +1,237 @@
+{
+  "id": "pccst501-computer-science-and-engineering-and-business-systems-s5",
+  "code": "PCCST501",
+  "name": "COMPUTER NETWORKS",
+  "branchId": "computer-science-and-engineering-and-business-systems",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 1-t1",
+          "title": "Application-Layer Paradigms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 1-t2",
+          "title": "Client-Server Applications: World Wide Web and HTTP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 1-t3",
+          "title": "FTP and Electronic Mail",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 1-t4",
+          "title": "DNS and Peer-to-Peer Paradigm: P2P Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 1-t5",
+          "title": "Case Study: BitTorrent",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t1",
+          "title": "Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t2",
+          "title": "Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t3",
+          "title": "TCP and Hands-on: Sockets Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t4",
+          "title": "Elementary TCP Sockets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t5",
+          "title": "TCP Client/Server Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t6",
+          "title": "I/O Multiplexing: The select and poll Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t7",
+          "title": "Elementary UDP Sockets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t8",
+          "title": "Advanced I/O Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t9",
+          "title": "Network Layer: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t10",
+          "title": "Network-Layer Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t11",
+          "title": "Unicast Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t12",
+          "title": "Multicast Routing: Multicasting Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t13",
+          "title": "Intra-Domain and Inter-Domain Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t14",
+          "title": "Next Generation IP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t15",
+          "title": "Quality of Service and Hands-on: Linux Kernel Implementation of Routing Table and Caches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t16",
+          "title": "Routing Cache Implementation Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 2-t17",
+          "title": "Adding New Entry in the Routing Table Using IP Command",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 3-t1",
+          "title": "Data Link Control (DLC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 3-t2",
+          "title": "Multiple Access Protocols (MAC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 3-t3",
+          "title": "Link-Layer Addressing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 3-t4",
+          "title": "Ethernet Protocol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 3-t5",
+          "title": "Connecting Devices and Wireless LANs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 3-t6",
+          "title": "Mobile IP and Hands-on: Datalink Provider Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 3-t7",
+          "title": "SOCK_PACKET and PF_PACKET",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 4-t1",
+          "title": "Data and Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 4-t2",
+          "title": "Digital Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 4-t3",
+          "title": "Analog Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 4-t4",
+          "title": "Bandwidth Utilization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-and-business-systems-5-pccst501-mModule 4-t5",
+          "title": "Transmission Media",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

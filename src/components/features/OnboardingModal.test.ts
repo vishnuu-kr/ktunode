@@ -3,7 +3,7 @@ import { validateSession } from "../../types/session";
 
 describe("Onboarding Flow - Session Validation", () => {
   it("should validate a correct session object", () => {
-    const valid = { branch: "cs", semester: 3 };
+    const valid = { branch: "computer-science-and-engineering", semester: 3 };
     expect(validateSession(valid)).toBe(true);
   });
 
@@ -13,9 +13,9 @@ describe("Onboarding Flow - Session Validation", () => {
   });
 
   it("should reject a session object with invalid semester", () => {
-    const invalidSemLow = { branch: "cs", semester: 0 };
-    const invalidSemHigh = { branch: "cs", semester: 9 };
-    const invalidSemFloat = { branch: "cs", semester: 3.5 };
+    const invalidSemLow = { branch: "computer-science-and-engineering", semester: 0 };
+    const invalidSemHigh = { branch: "computer-science-and-engineering", semester: 9 };
+    const invalidSemFloat = { branch: "computer-science-and-engineering", semester: 3.5 };
     expect(validateSession(invalidSemLow)).toBe(false);
     expect(validateSession(invalidSemHigh)).toBe(false);
     expect(validateSession(invalidSemFloat)).toBe(false);

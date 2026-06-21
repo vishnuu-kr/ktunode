@@ -1,0 +1,267 @@
+{
+  "id": "peeet632-electrical-and-electronics-engineering-s6",
+  "code": "PEEET632",
+  "name": "OPERATING SYSTEMS",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 1-t1",
+          "title": "Operating System Overview - Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 1-t2",
+          "title": "Boot Process - Process States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 1-t3",
+          "title": "Process Control Block",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 1-t4",
+          "title": "Threads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 1-t5",
+          "title": "Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 1-t6",
+          "title": "Operations on Processes - Process Creation and Termination, Inter-Process Communication - Shared Memory Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 1-t7",
+          "title": "Message Passing Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t1",
+          "title": "Process Scheduling - Basic Concepts, Scheduling Criteria, Scheduling Algorithms - First Come First Served",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t2",
+          "title": "Shortest Job First",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t3",
+          "title": "Priority Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t4",
+          "title": "Round Robin Scheduling, Process Synchronization - Race Conditions, Critical Section Problem - Peterson's Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t5",
+          "title": "Synchronization Hardware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t6",
+          "title": "Mutex Locks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t7",
+          "title": "Semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t8",
+          "title": "Monitors - Synchronization Problems - Producer-Consumer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 2-t9",
+          "title": "Dining Philosophers and Readers-Writers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t1",
+          "title": "Necessary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t2",
+          "title": "Resource Allocation Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t3",
+          "title": "Deadlock Prevention",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t4",
+          "title": "Deadlock Avoidance - Banker's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t5",
+          "title": "Deadlock Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t6",
+          "title": "Recovery from Deadlock, Memory Management: Concept of Address Spaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t7",
+          "title": "Swapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t8",
+          "title": "Contiguous Memory Allocation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t9",
+          "title": "Fixed and Variable Partitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t10",
+          "title": "Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t11",
+          "title": "Paging, Virtual Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t12",
+          "title": "Demand Paging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 3-t13",
+          "title": "Page Replacement Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t1",
+          "title": "File Concept - Attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t2",
+          "title": "Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t3",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t4",
+          "title": "Structure - Access Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t5",
+          "title": "Protection, File-System Implementation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t6",
+          "title": "Directory Implementation, Allocation Methods, Storage Management: Magnetic Disks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t7",
+          "title": "Solid-State Disks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t8",
+          "title": "Disk Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t9",
+          "title": "Disk Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-6-peeet632-mModule 4-t10",
+          "title": "Disk Formatting",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

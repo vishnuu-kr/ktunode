@@ -1,0 +1,351 @@
+{
+  "id": "pecst415-computer-science-and-design-s4",
+  "code": "PECST415",
+  "name": "VLSI DESIGN",
+  "branchId": "computer-science-and-design",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t1",
+          "title": "PN Junction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t2",
+          "title": "MOS Transistor Theory and Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t3",
+          "title": "PMOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t4",
+          "title": "NMOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t5",
+          "title": "CMOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t6",
+          "title": "CMOS Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t7",
+          "title": "Voltage Transfer Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t8",
+          "title": "CMOS Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t9",
+          "title": "Tristate Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t10",
+          "title": "Tristate Buffer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t11",
+          "title": "Combinational Circuits Timing - Rise Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t12",
+          "title": "Fall Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t13",
+          "title": "Propagation Delay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t14",
+          "title": "Introduction to Sequential Logic Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t15",
+          "title": "Flip-Flops and Latches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t16",
+          "title": "Timing Analysis - Set-up Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t17",
+          "title": "Hold Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t18",
+          "title": "Propagation Delay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t19",
+          "title": "Frequency of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t20",
+          "title": "Static and Dynamic Timing Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 1-t21",
+          "title": "Pipelining",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t1",
+          "title": "CMOS Fabrication Process Overview - Photolithography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t2",
+          "title": "Structure of an Integrated Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t3",
+          "title": "Types of Design Flow - Custom Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t4",
+          "title": "Semi-Custom Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t5",
+          "title": "Array Based Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t6",
+          "title": "A System Perspective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t7",
+          "title": "Hardware-Software Partitioning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t8",
+          "title": "Example: Video Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t9",
+          "title": "Functional Specification to RTL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 2-t10",
+          "title": "Behavioural Synthesis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t1",
+          "title": "Semi-Custom Design Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t2",
+          "title": "Abstraction in VLSI Design Flow - Gajski-Kuhn's Y-chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t3",
+          "title": "Hardware Design Using Hardware Description Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t4",
+          "title": "Design Verification - Simulation Using Testbench",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t5",
+          "title": "Property Checking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t6",
+          "title": "Equivalence Checking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t7",
+          "title": "Static Timing Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t8",
+          "title": "Logic Synthesis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t9",
+          "title": "Physical Design - Min-Cut Partitioning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t10",
+          "title": "Floorplan",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t11",
+          "title": "Global and Detailed Placement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t12",
+          "title": "Global and Detailed Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 3-t13",
+          "title": "Micro Project",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t1",
+          "title": "Mealy and Moore Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t2",
+          "title": "Verilog HDL Design and Implementation of RISC Stored Programmed Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t3",
+          "title": "Field Programmable Gate Arrays (FPGAs) - FPGA Architecture - Programming Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t4",
+          "title": "Programmable Logic Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t5",
+          "title": "Programmable Interconnects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t6",
+          "title": "Programmable I/O Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t7",
+          "title": "FPGA Design Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t8",
+          "title": "SoC Design on FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-4-pecst415-mModule 4-t9",
+          "title": "Micro Project (FPGA / Semi-Custom Flow)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

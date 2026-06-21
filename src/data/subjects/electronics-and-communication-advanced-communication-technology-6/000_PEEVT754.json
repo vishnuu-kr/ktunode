@@ -1,0 +1,333 @@
+{
+  "id": "peevt754-electronics-and-communication-advanced-communication-technology-s6",
+  "code": "PEEVT754",
+  "name": "INFORMATION THEORY & CODING",
+  "branchId": "electronics-and-communication-advanced-communication-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t1",
+          "title": "Entropy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t2",
+          "title": "Properties of Entropy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t3",
+          "title": "Joint and Conditional Entropy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t4",
+          "title": "Mutual Information",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t5",
+          "title": "Properties of Mutual Information",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t6",
+          "title": "Discrete Memoryless Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t7",
+          "title": "Source Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t8",
+          "title": "Average Length of Source Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t9",
+          "title": "Bounds on Average Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t10",
+          "title": "Uniquely Decodable and Prefix-Free Source Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t11",
+          "title": "Kraft Inequality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t12",
+          "title": "Huffman Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 1-t13",
+          "title": "Shannon's Source Coding Theorem (Achievability and Converse) and Operational Meaning of Entropy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t1",
+          "title": "Discrete Memoryless Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t2",
+          "title": "Capacity of Discrete Memoryless Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t3",
+          "title": "Binary Symmetric Channels (BSC) and Binary Erasure Channels (BEC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t4",
+          "title": "Capacity of BSC and BEC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t5",
+          "title": "Channel Code and Rate of Channel Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t6",
+          "title": "Shannon's Channel Coding Theorem (Achievability and Converse) and Operational Meaning of Channel Capacity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t7",
+          "title": "Modeling of Additive White Gaussian Channels and Continuous-Input Channels with Average Power Constraint",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t8",
+          "title": "Differential Entropy and Differential Entropy of Gaussian Random Variable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t9",
+          "title": "Relation Between Differential Entropy and Entropy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t10",
+          "title": "Shannon-Hartley Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 2-t11",
+          "title": "Inferences from Shannon-Hartley Theorem: Spectral Efficiency Versus SNR per Bit, Power-Limited and Bandwidth-Limited Regions, Shannon Limit, Ultimate Shannon Limit",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t1",
+          "title": "Overview of Groups, Rings, Finite Fields, and Vector Spaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t2",
+          "title": "Construction of Finite Fields from Polynomial Rings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t3",
+          "title": "Block Codes and Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t4",
+          "title": "Error Detecting and Correcting Capability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t5",
+          "title": "Linear Block Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t6",
+          "title": "Two Simple Examples: Repetition Code and Single Parity Check Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t7",
+          "title": "Generator and Parity Check Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t8",
+          "title": "Systematic Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t9",
+          "title": "Maximum Likelihood Decoding of Linear Block Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t10",
+          "title": "Bounded Distance Decoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t11",
+          "title": "Syndrome",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 3-t12",
+          "title": "Standard Array Decoding",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t1",
+          "title": "Cyclic Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t2",
+          "title": "Polynomial and Matrix Description of Cyclic Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t3",
+          "title": "Interrelation Between Polynomial and Matrix Viewpoint",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t4",
+          "title": "Systematic Encoding and Decoding of Cyclic Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t5",
+          "title": "Hamming Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t6",
+          "title": "BCH Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t7",
+          "title": "Reed-Solomon Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t8",
+          "title": "Convolutional Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t9",
+          "title": "State Diagram and Trellis Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t10",
+          "title": "Maximum Likelihood Decoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t11",
+          "title": "Viterbi Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t12",
+          "title": "Low-Density Parity Check (LDPC) Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t13",
+          "title": "Tanner Graph Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-6-peevt754-mModule 4-t14",
+          "title": "Message Passing Decoding for Transmission Over Binary Erasure Channel",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

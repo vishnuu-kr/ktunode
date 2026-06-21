@@ -1,0 +1,231 @@
+{
+  "id": "peaet414-electrical-and-computer-engineering-s3",
+  "code": "PEAET414",
+  "name": "DATA STRUCTURES AND ALGORITHMS",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t1",
+          "title": "Introduction to Data Structures and System Life Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t2",
+          "title": "Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t3",
+          "title": "Performance Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t4",
+          "title": "Space Complexity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t5",
+          "title": "Time Complexity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t6",
+          "title": "Asymptotic Notation (Big O Notation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t7",
+          "title": "Complexity Calculation of Simple Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t8",
+          "title": "Primitive and Non-primitive Data Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t9",
+          "title": "Abstract Data Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t10",
+          "title": "Array as ADT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t11",
+          "title": "Operations on ADT (Insert, Delete, Search, Sort)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t12",
+          "title": "Queue as ADT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t13",
+          "title": "Circular Queue",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t14",
+          "title": "Priority Queue",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 1-t15",
+          "title": "Stack as ADT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 2-t1",
+          "title": "Sorting and Searching Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 2-t2",
+          "title": "Sorting Algorithms - Selection, Insertion, Merge, Quick Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 2-t3",
+          "title": "Searching Algorithms - Linear and Binary Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 2-t4",
+          "title": "Hashing - Basic Concepts and Hash Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 3-t1",
+          "title": "Linked List and Self-Referential Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 3-t2",
+          "title": "Dynamic Memory Allocation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 3-t3",
+          "title": "Singly Linked List - Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 3-t4",
+          "title": "Doubly Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 3-t5",
+          "title": "Circular Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 3-t6",
+          "title": "Stacks and Queues using Linked List",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t1",
+          "title": "Trees and Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t2",
+          "title": "Binary Trees - Tree Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t3",
+          "title": "Binary Tree Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t4",
+          "title": "Tree Traversals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t5",
+          "title": "Binary Search Trees - BST Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t6",
+          "title": "Graphs - Representation of Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t7",
+          "title": "Depth First Search and Breadth First Search on Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-3-peaet414-mModule 4-t8",
+          "title": "Applications of Graphs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

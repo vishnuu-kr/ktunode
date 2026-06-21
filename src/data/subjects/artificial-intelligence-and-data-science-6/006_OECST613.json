@@ -1,0 +1,135 @@
+{
+  "id": "oecst613-artificial-intelligence-and-data-science-s6",
+  "code": "OECST613",
+  "name": "FOUNDATIONS OF CRYPTOGRAPHY",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 1-t1",
+          "title": "Integer Arithmetic - Divisibility, Greatest Common Divisor, Euclid's and Extended Euclid's Algorithm for GCD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 1-t2",
+          "title": "Modular Arithmetic - Operations, Properties, Polynomial Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 1-t3",
+          "title": "Algebraic Structures - Groups, Rings and Fields",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t1",
+          "title": "Prime Numbers and Prime Factorisation - Primitive Roots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t2",
+          "title": "Existence of Primitive Roots for Primes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t3",
+          "title": "Fermat's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t4",
+          "title": "Primality Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t5",
+          "title": "Euler's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t6",
+          "title": "Euler's Totient Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t7",
+          "title": "Discrete Logarithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t8",
+          "title": "Modular Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 2-t9",
+          "title": "Chinese Remainder Theorem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 3-t1",
+          "title": "Principles of Security - Types of Security Attacks, Security Services, Security Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 3-t2",
+          "title": "Cryptography - Introduction, Cryptographic Notations, Substitution Techniques, Transposition Techniques, Limitations of Classical Cryptography",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 4-t1",
+          "title": "Symmetric Key Ciphers - Block Cipher Principles and Algorithms - DES, AES, Differential and Linear Cryptanalysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 4-t2",
+          "title": "Asymmetric Key Ciphers - RSA, ECC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst613-mModule 4-t3",
+          "title": "Hash Functions - MD5, SHA-1",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

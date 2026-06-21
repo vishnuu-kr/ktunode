@@ -1,0 +1,123 @@
+{
+  "id": "peebt636-electronics-and-biomedical-engineering-s6",
+  "code": "PEEBT636",
+  "name": "COMPUTATIONAL METHODS IN BIOMEDICAL ENGINEERING",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t1",
+          "title": "Overview of Computational Methods in Biomedical Engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t2",
+          "title": "Basic Programming Skills (Python/MATLAB): Variables and Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t3",
+          "title": "Conditional Statements (if, elif, else) and Loops (for, while)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t4",
+          "title": "Defining and Calling Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t5",
+          "title": "Data Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t6",
+          "title": "File Handling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t7",
+          "title": "Libraries for Numerical Computing and Data Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 1-t8",
+          "title": "Data Visualization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 2-t1",
+          "title": "Root Finding Methods (Bisection, Newton-Raphson), Solving Linear and Nonlinear Equations, Applications in Biomedical Engineering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 3-t1",
+          "title": "Ordinary Differential Equations (ODEs) and Their Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 3-t2",
+          "title": "Modeling of Biological Processes (Neuronal Dynamics, Cell Electrophysiology)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 3-t3",
+          "title": "Partial Differential Equations (PDEs): Describing Spatial and Temporal Variations in Phenomena such as Heat Transfer in Tissues and Fluid Flow in Blood Vessels",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 4-t1",
+          "title": "Sequence Analysis: Algorithms for DNA, RNA, and Protein Sequence Alignment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 4-t2",
+          "title": "Structural Bioinformatics: Molecular Modeling and Simulation Techniques for Studying Protein Structures and Interactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-6-peebt636-mModule 4-t3",
+          "title": "Genomics and Proteomics: Computational Tools for Analyzing Genomic and Proteomic Data to Understand Gene Expression and Protein Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "pcmrt601-mechatronics-engineering-s6",
+  "code": "PCMRT601",
+  "name": "ROBOTICS & MACHINE VISION",
+  "branchId": "mechatronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 1-t1",
+          "title": "Introduction to Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 1-t2",
+          "title": "Basic Structure, Classification of Robot and Robotic System, Law of Robotics, Robot Motion, Wrist Configuration, Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 1-t3",
+          "title": "Roll",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 1-t4",
+          "title": "Pitch, Yaw, Drives, Hydraulic Motors, DC Motor, Stepper Motor, Power Transmission Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 2-t1",
+          "title": "Position Sensor, Potentiometer, Encoders, LVDT, Velocity Sensor, Acceleration Sensor, Force, Pressure and Torque Sensor, Touch and Tactile Sensor, Proximity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 2-t2",
+          "title": "Range and Sniff Sensor, Robot End Effectors, Types of End Effectors, Mechanical Gripper",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 2-t3",
+          "title": "Types of Gripper Mechanism",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t1",
+          "title": "Position and Orientation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t2",
+          "title": "Frames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t3",
+          "title": "Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t4",
+          "title": "Changing Description from Frames to Frames, Transformation Arithmetics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t5",
+          "title": "Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t6",
+          "title": "Rotation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t7",
+          "title": "Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t8",
+          "title": "Transforms Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t9",
+          "title": "Transformation of Vectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t10",
+          "title": "Introduction to Manipulations, Forward Kinematics and Inverse Kinematics, D-H Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 3-t11",
+          "title": "Method of Robotic Programming (Qualitative Treatment Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 4-t1",
+          "title": "Machine Vision as a Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 4-t2",
+          "title": "Low and Higher Level Vision, 1D and 3D Vision, Image Acquisition and Digitization, Cameras, CCD, CID, CPD, Illumination and Types, Image Processing and Analysis, Feature Extraction, Applications of Vision in Industrial Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pcmrt601-mModule 4-t3",
+          "title": "Control Systems Using Vision for Decision Making and Feedback, Visual Servoing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

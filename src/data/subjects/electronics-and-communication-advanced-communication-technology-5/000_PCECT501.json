@@ -1,0 +1,207 @@
+{
+  "id": "pcect501-electronics-and-communication-advanced-communication-technology-s5",
+  "code": "PCECT501",
+  "name": "ELECTROMAGNETICS",
+  "branchId": "electronics-and-communication-advanced-communication-technology",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t1",
+          "title": "Review of Coordinate System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t2",
+          "title": "Rectangular, Cylindrical, and Spherical Coordinate Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t3",
+          "title": "Review of Vector Calculus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t4",
+          "title": "Curl, Divergence, Gradient",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t5",
+          "title": "Review of Coulomb's Law, Gauss's Law, and Ampere's Current Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t6",
+          "title": "Derivation of Capacitance and Inductance of Two-Wire Transmission Line and Coaxial Cable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t7",
+          "title": "Magnetic Scalar and Vector Potential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t8",
+          "title": "Poisson and Laplace Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 1-t9",
+          "title": "Determination of Voltage and Electric Field Using Laplace and Poisson's Equation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t1",
+          "title": "Maxwell's Equation from Fundamental Laws",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t2",
+          "title": "Boundary Condition of Electric Field and Magnetic Field from Maxwell's Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t3",
+          "title": "Solution to Wave Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t4",
+          "title": "Propagation of Plane EM Wave in Perfect Dielectric",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t5",
+          "title": "Lossy Medium",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t6",
+          "title": "Good Conductor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t7",
+          "title": "Skin Depth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 2-t8",
+          "title": "Polarization of Waves",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 3-t1",
+          "title": "Reflection and Refraction of Plane Electromagnetic Waves at Boundaries for Normal and Oblique Incidence (Parallel and Perpendicular Polarization)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 3-t2",
+          "title": "Snell's Law of Refraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 3-t3",
+          "title": "Brewster Angle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 3-t4",
+          "title": "Power Density of EM Wave",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 3-t5",
+          "title": "Poynting Vector Theorem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 4-t1",
+          "title": "Transmission Line as Circuit Elements (L and C)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 4-t2",
+          "title": "Transmission Line Equations and Characteristic Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 4-t3",
+          "title": "Reflection Coefficient and VSWR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 4-t4",
+          "title": "Derivation of Input Impedance of Transmission Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 4-t5",
+          "title": "Calculation of Line Impedance and VSWR Using Smith Chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 4-t6",
+          "title": "The Hollow Rectangular Waveguide",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-advanced-communication-technology-5-pcect501-mModule 4-t7",
+          "title": "TE and TM Wave-Dominant Mode, Group Velocity, and Phase Velocity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

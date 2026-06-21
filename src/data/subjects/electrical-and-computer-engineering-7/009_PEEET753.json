@@ -1,0 +1,255 @@
+{
+  "id": "peeet753-electrical-and-computer-engineering-s7",
+  "code": "PEEET753",
+  "name": "DEEP LEARNING",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t1",
+          "title": "Introduction to Neural Networks - Single Layer Perceptrons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t2",
+          "title": "Multi Layer Perceptrons (MLPs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t3",
+          "title": "Activation Functions - Sigmoid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t4",
+          "title": "Tanh",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t5",
+          "title": "ReLU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t6",
+          "title": "Softmax",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t7",
+          "title": "Risk Minimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t8",
+          "title": "Loss Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t9",
+          "title": "Training MLPs with Backpropagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t10",
+          "title": "Practical Issues in Neural Network Training - The Problem of Overfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t11",
+          "title": "Vanishing and Exploding Gradient Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t12",
+          "title": "Difficulties in Convergence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t13",
+          "title": "Local and Spurious Optima",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t14",
+          "title": "Computational Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 1-t15",
+          "title": "Applications of Neural Networks",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t1",
+          "title": "Introduction to Deep Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t2",
+          "title": "Deep Feed Forward Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t3",
+          "title": "Training Deep Learning Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t4",
+          "title": "Optimization Techniques - Gradient Descent (GD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t5",
+          "title": "GD with Momentum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t6",
+          "title": "Nesterov Accelerated GD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t7",
+          "title": "Batch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t8",
+          "title": "Mini-batch and Stochastic GD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t9",
+          "title": "AdaGrad",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t10",
+          "title": "RMSProp",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 2-t11",
+          "title": "Adam",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 3-t1",
+          "title": "Introduction to CNN - Convolution and Pooling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 3-t2",
+          "title": "Convolution and Pooling as an Infinitely Strong Prior",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 3-t3",
+          "title": "Variants of Convolution Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 3-t4",
+          "title": "Efficient Convolution Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 3-t5",
+          "title": "Applications - Computer Vision",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 4-t1",
+          "title": "Introduction to RNN - Computational Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 4-t2",
+          "title": "RNN Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 4-t3",
+          "title": "Encoder-Decoder Sequence to Sequence Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 4-t4",
+          "title": "Deep RNNs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 4-t5",
+          "title": "Modern RNN - LSTM and GRU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet753-mModule 4-t6",
+          "title": "Applications - Natural Language Processing (NLP)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

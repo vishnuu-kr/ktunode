@@ -1,0 +1,207 @@
+{
+  "id": "peeet741-electrical-and-computer-engineering-s7",
+  "code": "PEEET741",
+  "name": "POWER SYSTEM OPERATION AND CONTROL",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 1-t1",
+          "title": "Introduction to Optimum Load Dispatch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 1-t2",
+          "title": "First Order Gradient Method, Base Point and Participation Factors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 1-t3",
+          "title": "Economic Dispatch Versus Unit Commitment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 1-t4",
+          "title": "Unit Commitment Solution Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 1-t5",
+          "title": "Priority-List Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 1-t6",
+          "title": "Security Constrained Unit Commitment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t1",
+          "title": "Generation with Limited Supply",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t2",
+          "title": "Take or Pay Fuel Supply Contract",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t3",
+          "title": "Introduction to Hydrothermal Coordination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t4",
+          "title": "Long Range and Short Range Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t5",
+          "title": "Hydro-Electric Plant Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t6",
+          "title": "Scheduling Energy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t7",
+          "title": "Types of Scheduling Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t8",
+          "title": "The Hydrothermal Scheduling Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t9",
+          "title": "Hydro Scheduling with Storage Limitation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 2-t10",
+          "title": "Introduction to Pumped Storage Hydro Plants",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 3-t1",
+          "title": "Detection of Network Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 3-t2",
+          "title": "Generation Outages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 3-t3",
+          "title": "Transmission Outages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 3-t4",
+          "title": "An Overview of Security Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t1",
+          "title": "Introduction to State Estimation in Power System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t2",
+          "title": "Maximum Likelihood Weighted Least Squares Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t3",
+          "title": "State Estimation of an AC Network - Sources of Error in State Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t4",
+          "title": "Detection and Identification of Bad Measurements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t5",
+          "title": "Estimation of Quantities Not Being Measured",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t6",
+          "title": "Network Observability and Pseudo-Measurements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t7",
+          "title": "The Use of Phasor Measurement Units (PMUs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t8",
+          "title": "Application of Power Systems State Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-peeet741-mModule 4-t9",
+          "title": "Importance of Data Verification and Validation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

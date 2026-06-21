@@ -1,0 +1,123 @@
+{
+  "id": "pcait302-artificial-intelligence-and-data-science-s3",
+  "code": "PCAIT302",
+  "name": "FOUNDATIONS OF ARTIFICIAL INTELLIGENCE",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 1-t1",
+          "title": "Introduction to Artificial Intelligence: AI Definition, Foundations of AI, History and Applications of AI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 1-t2",
+          "title": "Intelligent Agents - Agents and Environments, The Concept of Rationality, The Nature of Environments, Structure of Agents",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 2-t1",
+          "title": "Problem Solving by Searching: Problem Solving Agents and Examples, Searching for Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 2-t2",
+          "title": "Uninformed Search Strategies - Breadth First Search, Uniform Cost Search, Depth First Search, Depth Limited Search, Iterative Deepening DFS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 2-t3",
+          "title": "Heuristic Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 2-t4",
+          "title": "Informed Search Strategies - Greedy Search, A* Search, AO* Search",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 3-t1",
+          "title": "Advanced Search and Game Playing: Adversarial Search, Games, Optimal Decisions in Games, MinMax Algorithm, Alpha-Beta Pruning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 3-t2",
+          "title": "Constraint Satisfaction Problems - Constraint Propagation, Inferences in CSPs, Backtracking Search for CSPs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 4-t1",
+          "title": "Knowledge, Logic, and Reasoning Patterns: Knowledge Based Agents, The Wumpus World",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 4-t2",
+          "title": "Logic - Propositional Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 4-t3",
+          "title": "First Order Logic - Syntax and Semantics, Using First Order Logic, Knowledge Engineering in First Order Logic, Inference in First Order Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 4-t4",
+          "title": "Propositional vs. First Order Inference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 4-t5",
+          "title": "Unification and Lifting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 4-t6",
+          "title": "Forward Chaining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-3-pcait302-mModule 4-t7",
+          "title": "Backward Chaining",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}
