@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { Play, Pause, Square, Volume2, VolumeX, Sparkles } from "lucide-react";
+import { Play, Pause, Square } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface AudioNoteReaderProps {
@@ -22,7 +22,7 @@ export default function AudioNoteReader({
   const [rate, setRate] = useState(1.0);
   const [progress, setProgress] = useState(0);
   const [muted, setMuted] = useState(false);
-  const [currentSegmentIndex, setCurrentSegmentIndex] = useState(0);
+  const [_currentSegmentIndex, setCurrentSegmentIndex] = useState(0);
   
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
   const segmentsRef = useRef<{ text: string; pauseMs: number }[]>([]);
@@ -253,7 +253,7 @@ export default function AudioNoteReader({
     }
   }
 
-  function toggleMute() {
+  function _toggleMute() {
     const nextMute = !muted;
     setMuted(nextMute);
     triggerHaptic("light");

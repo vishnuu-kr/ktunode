@@ -21,7 +21,7 @@ interface ConfigDiffPreviewProps {
 }
 
 export default function ConfigDiffPreview({
-  currentConfigJson,
+  currentConfigJson: _currentConfigJson,
 }: ConfigDiffPreviewProps) {
   const [newConfigText, setNewConfigText] = useState("");
   const [diffChanges, setDiffChanges] = useState<DiffChange[] | null>(null);

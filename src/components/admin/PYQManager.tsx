@@ -52,7 +52,7 @@ interface PYQManagerProps {
 
 export default function PYQManager({
   allowedBranches,
-  visibleSemesters,
+  visibleSemesters: _visibleSemesters,
   initialSubjects,
   currentBranch,
   currentSem,

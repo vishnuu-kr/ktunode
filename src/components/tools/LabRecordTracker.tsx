@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  FlaskConical, Plus, Trash2, Info, Brain, 
-  BookOpen, MessageSquare, ShieldCheck, Check, Sparkles
+  FlaskConical, Plus, Trash2, Info, Brain,
+  BookOpen, ShieldCheck, Check, Sparkles
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
 import { getDefaultLabsForSession, LabCourse, LabExercise } from "@/data/lab_templates";

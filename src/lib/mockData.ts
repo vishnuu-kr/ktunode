@@ -1,5 +1,3 @@
-import { parsedSubjects } from "./syllabusData";
-
 export interface PYQ {
   id: string;
   year: string;

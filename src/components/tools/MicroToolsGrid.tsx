@@ -3,12 +3,12 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Search, Calculator, Calendar, Award, BookOpen, Sparkles, 
-  Clock, Activity, Shield, CheckCircle2, AlertTriangle, 
-  Check, FileText, Share2, HelpCircle, Code, ShieldAlert,
-  GraduationCap, AlertCircle, Plus, Info, RefreshCw,
-  Flame, Timer, ShieldCheck, TrendingUp, Zap, Send,
-  CheckSquare, Dices, Map, Globe, Binary, Split, FlaskConical, LayoutGrid, ArrowUpRight, Star, Briefcase
+  Search, Calculator, Calendar, Award, Sparkles,
+  Clock, Activity,
+  FileText, Share2, Code,
+  GraduationCap, AlertCircle, Plus, RefreshCw,
+  Timer, ShieldCheck, TrendingUp, Zap, Send,
+  Dices, Map, Globe, Binary, Split, FlaskConical, LayoutGrid, ArrowUpRight, Star, Briefcase
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
 
@@ -18,7 +18,7 @@ interface MicroToolsGridProps {
   triggerNotification: (msg: string) => void;
 }
 
-export default function MicroToolsGrid({ branch, sem, triggerNotification }: MicroToolsGridProps) {
+export default function MicroToolsGrid({ branch: _branch, sem: _sem, triggerNotification }: MicroToolsGridProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<"all" | "internals" | "exams" | "credits" | "labs" | "hacks">("all");
   const [expandedTool, setExpandedTool] = useState<string | null>(null);
@@ -58,10 +58,6 @@ export default function MicroToolsGrid({ branch, sem, triggerNotification }: Mic
   // Tool 1: ESE Target Finder
   const [eseInt, setEseInt] = useState(28);
   const [eseGrade, setEseGrade] = useState("B+");
-
-  // Tool 2: Exam Pacer
-  const [pacerScheme, setPacerScheme] = useState<"kt24">("kt24");
-  const [pacerExamHours, setPacerExamHours] = useState(2.5);
 
   // Tool 3: Grace Mark Optimizer
   const [gracePool, setGracePool] = useState(8);
@@ -114,7 +110,7 @@ export default function MicroToolsGrid({ branch, sem, triggerNotification }: Mic
   const [cramModules, setCramModules] = useState(3);
 
   // Tool 13: Broadcast Generator
-  const [bunkSubject, setBunkSubject] = useState("Operating Systems");
+  const [bunkSubject, _setBunkSubject] = useState("Operating Systems");
   const [bunkReason, setBunkReason] = useState("heavy rain & buffer sessions completion");
 
   // Tool 14: Revaluation Gamble

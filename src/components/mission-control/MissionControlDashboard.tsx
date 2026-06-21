@@ -5,7 +5,7 @@ import TelemetryStrip from "./TelemetryStrip";
 import DailyGauntlet from "./DailyGauntlet";
 import BunkSafetyAnalyzer from "./BunkSafetyAnalyzer";
 import ConfigDrawer from "./ConfigDrawer";
-import { Settings, RefreshCw, Zap, Sparkles, BookOpen, ArrowRight, Upload, Menu, Smartphone, X } from "lucide-react";
+import { Settings, RefreshCw, Zap, ArrowRight, Menu, Smartphone, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { triggerHaptic } from "@/lib/haptic";
 

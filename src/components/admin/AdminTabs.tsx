@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import Link from "next/link";
 import {
   LayoutDashboard,
@@ -9,15 +9,12 @@ import {
   Bell,
   Calendar,
   MessageSquare,
-  Activity,
   Download,
   LogOut,
   ArrowLeft,
   RefreshCw,
-  Shield,
   Users,
   Server,
-  Wrench,
   Globe,
 } from "lucide-react";
 import { logoutAdmin } from "@/app/admin/auth";

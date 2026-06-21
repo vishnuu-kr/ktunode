@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, ArrowUp, BookOpen, FileText, Compass, Mail } from "lucide-react";
+import { ArrowUp, BookOpen, FileText, Compass, Mail } from "lucide-react";
 import Link from "next/link";
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Star, Quote, Heart } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {

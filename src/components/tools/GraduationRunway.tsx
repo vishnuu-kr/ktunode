@@ -3,11 +3,11 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Award, ShieldCheck, AlertTriangle, X, Search, FileText, Plus, Trash2, CheckCircle2, ShieldAlert, Info, ChevronDown 
+  Award, ShieldCheck, AlertTriangle, X, Search, FileText, Plus, Trash2, CheckCircle2, ShieldAlert, ChevronDown
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
 import { 
-  ActivityClaim, KTU_ACTIVITIES, KTU_ACTIVITY_GROUPS, calculateActivityPoints 
+  ActivityClaim, KTU_ACTIVITIES, calculateActivityPoints
 } from "@/data/ktu_activities";
 
 interface BacklogSubject {
@@ -31,6 +31,11 @@ interface GraduationRunwayProps {
   backlogSubjects: BacklogSubject[];
   setBacklogSubjects: React.Dispatch<React.SetStateAction<BacklogSubject[]>>;
   triggerNotification: (msg: string) => void;
+}
+
+// Module-scope id generator (impure) kept out of the component render body.
+function makeId(prefix: string): string {
+  return `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
 }
 
 export default function GraduationRunway({
@@ -63,10 +68,6 @@ export default function GraduationRunway({
   const [backlogCode, setBacklogCode] = useState("");
   const [backlogName, setBacklogName] = useState("");
   const [backlogSemester, setBacklogSemester] = useState(1);
-
-  // Info toggles
-  const [showActivityInfo, setShowActivityInfo] = useState(false);
-  const [showProgressionInfo, setShowProgressionInfo] = useState(false);
 
   // Calculate points
   const calculatedPoints = useMemo(() => {
@@ -111,7 +112,7 @@ export default function GraduationRunway({
     }
 
     const newClaim: ActivityClaim = {
-      id: `act_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+      id: makeId("act"),
       activityCode: act.code,
       points: pointsAwarded,
       level: act.type === "level" ? inlineSelLevel : undefined,
@@ -128,7 +129,7 @@ export default function GraduationRunway({
   const handleDirectAddFixed = (act: any) => {
     triggerHaptic("success");
     const newClaim: ActivityClaim = {
-      id: `act_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+      id: makeId("act"),
       activityCode: act.code,
       points: act.pointsPerUnit || 5
     };
@@ -162,7 +163,7 @@ export default function GraduationRunway({
   const handleAddBacklog = () => {
     if (!backlogCode.trim() || !backlogName.trim()) return;
     const newBacklog: BacklogSubject = {
-      id: `bl_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+      id: makeId("bl"),
       code: backlogCode.trim().toUpperCase(),
       name: backlogName.trim(),
       semester: backlogSemester,
@@ -697,7 +698,7 @@ export default function GraduationRunway({
               <div className="text-center py-10 border border-dashed border-slate-200 dark:border-slate-800 rounded-2xl bg-slate-50/20 dark:bg-slate-900/10">
                 <AlertTriangle className="w-8 h-8 text-slate-350 dark:text-slate-650 mx-auto mb-2" />
                 <div className="text-xs font-bold text-slate-500 dark:text-slate-450 uppercase tracking-widest block">No Logged Backlogs</div>
-                <div className="text-[10px] text-slate-450 dark:text-slate-500 mt-1.5 max-w-xs mx-auto leading-normal">Awesome! Either you have no backlogs or haven't logged any yet. Add below to track progress.</div>
+                <div className="text-[10px] text-slate-450 dark:text-slate-500 mt-1.5 max-w-xs mx-auto leading-normal">Awesome! Either you have no backlogs or haven&apos;t logged any yet. Add below to track progress.</div>
               </div>
             ) : (
               backlogSubjects.map(bl => (

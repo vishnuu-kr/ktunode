@@ -10,10 +10,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import useSessionPersistence from "@/hooks/useSessionPersistence";
 import { triggerHaptic } from "@/lib/haptic";
 import { ContinueSessionButton } from "@/components/features/ContinueSessionButton";
-import { SEMESTERS } from "@/lib/constants";
 import { UpgradeBanner } from "@/components/ui/upgrade-banner";
-import { VALID_BRANCHES } from "@/types/session";
-import { useTheme } from "next-themes";
 
 function LazySection({ children, height = "400px" }: { children: React.ReactNode; height?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -38,270 +35,16 @@ const CtaBanner = dynamic(() => import("@/components/features/CtaBanner"));
 const CinematicFooter = dynamic(() => import("@/components/ui/motion-footer").then(mod => mod.CinematicFooter), { ssr: false });
 const OnboardingModal = dynamic(() => import("@/components/features/OnboardingModal"), { ssr: false });
 import {
-  BookOpen, Calendar, ArrowRight, ShieldCheck,
-  FileText, ChevronDown, Sparkles, X
+  BookOpen, ArrowRight, ShieldCheck,
+  FileText
 } from "lucide-react";
 
-const branchLabels: Record<string, string> = {
-  "aeronautical-engineering": "Aeronautical Engineering",
-  "agriculture-engineering": "Agriculture Engineering",
-  "applied-electronics-and-instrumentation": "Applied Electronics and Instrumentation",
-  "artificial-intelligence": "Artificial Intelligence",
-  "artificial-intelligence-and-machine-learning": "Artificial Intelligence & Machine Learning",
-  "artificial-intelligence-and-data-science": "Artificial Intelligence and Data Science",
-  "automobile-engineering": "Automobile Engineering",
-  "biomedical-and-robotic-engineering": "Biomedical & Robotic Engineering",
-  "biomedical-engineering": "Biomedical Engineering",
-  "biotechnology-engineering": "Biotechnology Engineering",
-  "biotechnology-and-biochemical-engineering": "Biotechnology and Biochemical Engineering",
-  "chemical-engineering": "Chemical Engineering",
-  "civil-engineering": "Civil Engineering",
-  "civil-and-environmental-engineering": "Civil and Environmental Engineering",
-  "computer-science-and-business-systems": "Computer Science and Business Systems",
-  "computer-science-and-design": "Computer Science and Design",
-  "computer-science-and-engineering": "Computer Science and Engineering",
-  "computer-science-and-engineering-ai-and-ml": "Computer Science and Engineering (AI & ML)",
-  "computer-science-and-engineering-artificial-intelligence": "Computer Science and Engineering (Artificial Intelligence)",
-  "computer-science-and-engineering-cyber-security": "Computer Science and Engineering (Cyber Security)",
-  "computer-science-and-engineering-data-science": "Computer Science and Engineering (Data Science)",
-  "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology": "Computer Science and Engineering (Internet of Things and Cyber Security including Blockchain Technology)",
-  "computer-science-and-engineering-iot": "Computer Science and Engineering (IoT)",
-  "computer-science-and-engineering-and-business-systems": "Computer Science and Engineering and Business Systems",
-  "cyber-physical-systems": "Cyber Physical Systems",
-  "electrical-and-computer-engineering": "Electrical and Computer Engineering",
-  "electrical-and-electronics-engineering": "Electrical and Electronics Engineering",
-  "electronics-and-biomedical-engineering": "Electronics & Biomedical Engineering",
-  "electronics-and-communication-advanced-communication-technology": "Electronics & Communication (Advanced Communication Technology)",
-  "electronics-and-communication-engineering": "Electronics & Communication Engineering",
-  "electronics-and-computer-engineering": "Electronics & Computer Engineering",
-  "electronics-engineering-vlsi-design-and-technology": "Electronics Engineering (VLSI Design and Technology)",
-  "electronics-and-instrumentation": "Electronics and Instrumentation",
-  "food-technology": "Food Technology",
-  "industrial-engineering": "Industrial Engineering",
-  "information-technology": "Information Technology",
-  "instrumentation-and-control": "Instrumentation and Control",
-  "mechanical-automobile-engineering": "Mechanical (Automobile) Engineering",
-  "mechanical-engineering": "Mechanical Engineering",
-  "mechatronics-engineering": "Mechatronics Engineering",
-  "naval-architecture-and-shipbuilding-engineering": "Naval Architecture & Shipbuilding Engineering",
-  "polymer-engineering": "Polymer Engineering",
-  "production-engineering": "Production Engineering",
-  "robotics-and-artificial-intelligence": "Robotics and Artificial Intelligence",
-  "robotics-and-automation": "Robotics and Automation",
-  "safety-and-fire-engineering": "Safety & Fire Engineering"
-};
-
-const branches = VALID_BRANCHES.map((id) => ({
-  id,
-  label: branchLabels[id] ?? id.toUpperCase(),
-}));
-
-const semesters = SEMESTERS;
-
-
-function PremiumSelect({
-  value,
-  onChange,
-  options,
-  placeholder,
-  icon: Icon,
-  hasError,
-  onOpenChange
-}: {
-  value: string | number;
-  onChange: (val: string | number) => void;
-  options: { label: string; value: string | number; disabled?: boolean }[];
-  placeholder: string;
-  icon: React.ComponentType<{ className?: string }>;
-  hasError?: boolean;
-  onOpenChange?: (open: boolean) => void;
-}) {
-  const [open, setOpen] = useState(false);
-  const [focusedIndex, setFocusedIndex] = useState(-1);
-  const ref = useRef<HTMLDivElement>(null);
-  const triggerRef = useRef<HTMLButtonElement>(null);
-  const listContainerRef = useRef<HTMLDivElement>(null);
-
-  const handleOpenChange = (newOpen: boolean) => {
-    setOpen(newOpen);
-    onOpenChange?.(newOpen);
-  };
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
-        handleOpenChange(false);
-        setFocusedIndex(-1);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [handleOpenChange]);
-
-  useEffect(() => {
-    if (open) {
-      queueMicrotask(() => {
-        setFocusedIndex(options.findIndex((o) => o.value === value));
-      });
-    }
-  }, [open, options, value]);
-
-  // Accessibility: scroll active keyboard-focused item into view automatically
-  useEffect(() => {
-    if (open && focusedIndex >= 0 && listContainerRef.current) {
-      const container = listContainerRef.current;
-      const activeElement = container.children[focusedIndex] as HTMLElement;
-      if (activeElement) {
-        const containerTop = container.scrollTop;
-        const containerBottom = containerTop + container.clientHeight;
-        const elemTop = activeElement.offsetTop;
-        const elemBottom = elemTop + activeElement.offsetHeight;
-
-        if (elemTop < containerTop) {
-          container.scrollTop = elemTop;
-        } else if (elemBottom > containerBottom) {
-          container.scrollTop = elemBottom - container.clientHeight;
-        }
-      }
-    }
-  }, [focusedIndex, open]);
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (!open) {
-      if (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        handleOpenChange(true);
-      }
-      return;
-    }
-    switch (e.key) {
-      case "ArrowDown":
-        e.preventDefault();
-        setFocusedIndex((prev) => (prev < options.length - 1 ? prev + 1 : 0));
-        break;
-      case "ArrowUp":
-        e.preventDefault();
-        setFocusedIndex((prev) => (prev > 0 ? prev - 1 : options.length - 1));
-        break;
-      case "Enter":
-      case " ":
-        e.preventDefault();
-        if (focusedIndex >= 0) {
-          const opt = options[focusedIndex];
-          if (opt && !opt.disabled) {
-            onChange(opt.value);
-            handleOpenChange(false);
-            setFocusedIndex(-1);
-            triggerRef.current?.focus();
-          }
-        }
-        break;
-      case "Escape":
-        e.preventDefault();
-        handleOpenChange(false);
-        setFocusedIndex(-1);
-        triggerRef.current?.focus();
-        break;
-      case "Tab":
-        handleOpenChange(false);
-        setFocusedIndex(-1);
-        break;
-    }
-  };
-
-  const selectedOption = options.find((o) => o.value === value);
-
-  return (
-    <div className="relative w-full" ref={ref}>
-      <motion.button
-        ref={triggerRef}
-        type="button"
-        onClick={(e) => {
-          handleOpenChange(!open);
-          triggerHaptic("light", e);
-        }}
-        onKeyDown={handleKeyDown}
-        role="combobox"
-        aria-expanded={open}
-        aria-haspopup="listbox"
-        aria-controls={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
-        aria-label={selectedOption ? `${placeholder}: ${selectedOption.label}` : placeholder}
-        className={`w-full flex items-center justify-between bg-white/70 dark:bg-slate-900/70 hover:bg-white/95 dark:hover:bg-slate-900/95 border ${hasError ? 'border-red-400 text-red-600 bg-red-50/30 shadow-[0_0_0_2px_rgba(248,113,113,0.1)]' : 'border-slate-200/80 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800 focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 text-slate-700 dark:text-slate-200'} rounded-2xl px-4 py-3.5 pl-11 text-sm font-bold cursor-pointer focus:outline-none transition-colors duration-200 shadow-sm`}
-        animate={hasError ? { x: [-6, 6, -5, 5, -3, 3, 0] } : { x: 0 }}
-        transition={{ duration: 0.4 }}
-      >
-        <span className={selectedOption ? "text-slate-800 dark:text-slate-100" : hasError ? "text-red-500 font-semibold" : "text-slate-400 dark:text-slate-500 font-semibold"}>
-          {selectedOption ? selectedOption.label : placeholder}
-        </span>
-        <ChevronDown
-          className={`w-4 h-4 transition-transform duration-300 ${
-            open ? "rotate-180 text-blue-500" : hasError ? "text-red-400" : "text-slate-400 dark:text-slate-500"
-          }`}
-        />
-      </motion.button>
-      <Icon className={`absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none transition-colors ${hasError ? 'text-red-400' : 'text-blue-500'}`} />
-      
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            id={`listbox-${placeholder.replace(/\s/g, "-").toLowerCase()}`}
-            role="listbox"
-            initial={{ opacity: 0, y: -8, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -8, scale: 0.98 }}
-            transition={{ duration: 0.15, ease: "easeOut" }}
-            className="absolute z-50 w-full mt-2 top-full left-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl border border-blue-100 dark:border-slate-800 rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] dark:shadow-[0_16px_48px_rgba(0,0,0,0.4)] py-2 overflow-hidden"
-          >
-            <div 
-              ref={listContainerRef}
-              className="max-h-[240px] overflow-y-auto scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-800"
-            >
-              {options.map((opt, index) => {
-                const isDisabled = opt.disabled;
-                return (
-                  <button
-                    key={opt.value}
-                    type="button"
-                    disabled={isDisabled}
-                    role="option"
-                    aria-selected={value === opt.value}
-                    className={`w-full text-left px-4 py-3 text-sm font-semibold transition-colors duration-150 ${
-                      isDisabled
-                        ? "opacity-35 cursor-not-allowed text-slate-400 dark:text-slate-600"
-                        : value === opt.value
-                          ? "bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold"
-                          : "text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-slate-100"
-                    } ${focusedIndex === index && !isDisabled ? "bg-slate-50 dark:bg-slate-800/60" : ""}`}
-                    onClick={(e) => {
-                      if (isDisabled) return;
-                      onChange(opt.value);
-                      handleOpenChange(false);
-                      setFocusedIndex(-1);
-                      triggerRef.current?.focus();
-                      triggerHaptic("medium", e);
-                    }}
-                    onMouseEnter={() => {
-                      if (!isDisabled) setFocusedIndex(index);
-                    }}
-                  >
-                    {opt.label}
-                  </button>
-                );
-              })}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
 
 export default function Home() {
   const router = useRouter();
-  const { resolvedTheme } = useTheme();
-  const { savedSession, saveSession, clearSession } = useSessionPersistence();
-  const [selectedBranch, setSelectedBranch] = useState("");
-  const [selectedSemester, setSelectedSemester] = useState<number | "">("");
+  const { savedSession, clearSession } = useSessionPersistence();
+  const [selectedBranch, _setSelectedBranch] = useState("");
+  const [selectedSemester, _setSelectedSemester] = useState<number | "">("");
   const [mounted, setMounted] = useState(false);
   const [isLaunching, setIsLaunching] = useState(false);
   const [isRedirecting, setIsRedirecting] = useState(false);
@@ -514,7 +257,7 @@ export default function Home() {
             onClick={handleLaunch}
             className="w-full sm:w-auto whitespace-nowrap !rounded-2xl !px-8 !py-4 !text-base !font-black shadow-lg shadow-blue-500/25 hover:shadow-blue-500/35 transition-all duration-200"
           >
-            Get Started — It's Free
+            Get Started — It&apos;s Free
             <ArrowRight className="w-5 h-5 ml-1.5" />
           </MagneticButton>
           

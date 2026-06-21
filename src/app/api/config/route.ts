@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 import { readSiteConfig } from "@/lib/siteConfig";
-import { cookies } from "next/headers";
-import { safeEqual } from "@/lib/crypto";
 
 export const dynamic = "force-dynamic";
 

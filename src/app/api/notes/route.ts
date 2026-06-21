@@ -140,8 +140,27 @@ export async function GET(request: NextRequest) {
 
           if (topic) {
             // Serve the authored content when present — this is the real study note.
-            if (typeof topic.content === "string" && topic.content.trim().length > 0) {
-              return json({ content: stripFrontmatter(topic.content), path: `/api/notes?id=${id}` });
+            let noteContent: string | null = null;
+            const notesDir = path.join(process.cwd(), "src", "data", "notes");
+            const notePath = path.join(notesDir, `${subjectCode.toUpperCase()}.json`);
+            
+            if (fs.existsSync(notePath)) {
+              try {
+                const notesData = JSON.parse(fs.readFileSync(notePath, "utf8"));
+                const normalizedTitle = (topic.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                const matchedTopic = notesData.topics && notesData.topics[normalizedTitle];
+                if (matchedTopic && typeof matchedTopic.content === "string" && matchedTopic.content.trim().length > 0) {
+                  noteContent = matchedTopic.content;
+                }
+              } catch (err) {
+                console.error(`Failed to read note from unified store for ${subjectCode}:`, err);
+              }
+            }
+
+            const finalContent = noteContent || (typeof topic.content === "string" ? topic.content : "");
+
+            if (finalContent.trim().length > 0) {
+              return json({ content: stripFrontmatter(finalContent), path: `/api/notes?id=${id}` });
             }
 
             // Otherwise render a premium "coming soon" placeholder from the syllabus schema.

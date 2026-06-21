@@ -4,8 +4,8 @@ import React, { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import { 
-  Calculator, Sparkles, Award, GraduationCap, X, 
-  Info, AlertTriangle, CheckCircle2, ChevronRight, HelpCircle 
+  Calculator, Sparkles, GraduationCap, X,
+  Info, AlertTriangle, CheckCircle2
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
 import ktu2024Scheme from "@/data/ktu_2024_scheme.json";
@@ -163,7 +163,7 @@ export default function GradeGpaCalculator({
   sem,
   attendanceSubjects,
   subjects,
-  triggerNotification
+  triggerNotification: _triggerNotification
 }: GradeGpaCalculatorProps) {
   // Converter States
   const [converterGpa, setConverterGpa] = useState("8.50");

@@ -126,7 +126,7 @@ const branchLabels: Record<string, string> = {
   "safety-and-fire-engineering": "Safety & Fire Engineering"
 };
 
-const PRIMARY_BRANCHES = [
+const _PRIMARY_BRANCHES = [
   { id: "cs", label: "Computer Science", desc: "CS & Allied Branches", icon: Laptop },
   { id: "ec", label: "Electronics", desc: "EC & Allied Branches", icon: Cpu },
   { id: "me", label: "Mechanical", desc: "ME & Allied Branches", icon: Wrench },
