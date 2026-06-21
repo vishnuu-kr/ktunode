@@ -413,7 +413,8 @@ function DashboardContent() {
     const qParams = new URLSearchParams(window.location.search);
     let subjectId = qParams.get("subject");
     let topicId = qParams.get("topic");
-    const segments = window.location.pathname.split("/").filter(Boolean);
+    const decodedPath = decodeURIComponent(window.location.pathname);
+    const segments = decodedPath.split("/").filter(Boolean);
     if (segments[0] === "notes") {
       if (segments.length === 4) {
         if (!subjectId) subjectId = segments[3];
@@ -1162,7 +1163,8 @@ function DashboardContent() {
     // Resolve IDs using query or path segments
     let subjectId = qParams.get("subject");
     let topicId = qParams.get("topic");
-    const segments = window.location.pathname.split("/").filter(Boolean);
+    const decodedPath = decodeURIComponent(window.location.pathname);
+    const segments = decodedPath.split("/").filter(Boolean);
     if (segments[0] === "notes") {
       if (segments.length === 4) {
         if (!subjectId) subjectId = segments[3];
@@ -1213,7 +1215,8 @@ function DashboardContent() {
       const qParams = new URLSearchParams(window.location.search);
       let subjectId = qParams.get("subject");
       let topicId = qParams.get("topic");
-      const segments = window.location.pathname.split("/").filter(Boolean);
+      const decodedPath = decodeURIComponent(window.location.pathname);
+      const segments = decodedPath.split("/").filter(Boolean);
       if (segments[0] === "notes") {
         if (segments.length === 4) {
           if (!subjectId) subjectId = segments[3];
