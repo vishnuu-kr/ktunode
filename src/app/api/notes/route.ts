@@ -67,68 +67,149 @@ export async function GET(request: NextRequest) {
 
   try {
     let relativePath = readTopicPathMap()[id];
-    if (!relativePath) {
-      const match = id.match(/^([a-z0-9-]+)-([1-8])-([a-z0-9-]+)-m([1-5])-t([0-9]+)$/i);
-      if (match) {
-        const [_, branch, sem, subjectCode, modNum, topicIdx] = match;
-        const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
-        const folderPath = path.join(subjectsDir, `${branch}-${sem}`);
-        if (fs.existsSync(folderPath) && fs.statSync(folderPath).isDirectory()) {
-          const files = fs.readdirSync(folderPath);
-          const matchedFile = files.find(f => f.toUpperCase().endsWith(`_${subjectCode.toUpperCase()}.json`));
-          if (matchedFile) {
-            const subjectData = JSON.parse(fs.readFileSync(path.join(folderPath, matchedFile), "utf8"));
-            const modId = `m${modNum}`;
-            const targetMod = subjectData.modules?.find((m: any) => m.id === modId || m.id === `mModule ${modNum}`);
-            if (targetMod && targetMod.topics) {
-              const idx = parseInt(topicIdx, 10) - 1;
-              const topic = targetMod.topics[idx];
-              if (topic && topic.content) {
-                return json({ content: topic.content, path: `/api/notes?id=${id}` });
-              }
+    let fileContent: string | null = null;
+
+    if (relativePath) {
+      if (relativePath.startsWith("public/")) {
+        relativePath = relativePath.substring(7);
+      }
+
+      if (!validateNotePath(relativePath)) {
+        return json({ error: "Invalid path segment" }, 400);
+      }
+
+      if (relativePath.toLowerCase().endsWith(".pdf")) {
+        return json({
+          content: `[Open PDF note](/${relativePath})`,
+          path: `/${relativePath}`,
+        });
+      }
+
+      const fullPath = path.join(process.cwd(), "public", relativePath);
+      if (fs.existsSync(fullPath)) {
+        try {
+          fileContent = fs.readFileSync(fullPath, "utf8");
+        } catch {
+          fileContent = null;
+        }
+      }
+
+      if (!fileContent) {
+        fileContent = await fetchStaticFile(relativePath);
+      }
+    }
+
+    if (fileContent) {
+      const markdown = stripFrontmatter(fileContent);
+      return json({ content: markdown, path: `/${relativePath}` });
+    }
+
+    // Dynamic Syllabus Fallback: Extract details from subjects schema to render a premium placeholder
+    const match = id.match(/^([a-z0-9-]+)-([1-8])-([a-z0-9-]+)-m([1-5])-t([0-9]+)$/i);
+    if (match) {
+      const [_, branch, sem, subjectCode, modNum, topicIdx] = match;
+      const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
+      const folderPath = path.join(subjectsDir, `${branch}-${sem}`);
+      
+      if (fs.existsSync(folderPath) && fs.statSync(folderPath).isDirectory()) {
+        const files = fs.readdirSync(folderPath);
+        const matchedFile = files.find(f => f.toUpperCase().endsWith(`_${subjectCode.toUpperCase()}.json`));
+        
+        if (matchedFile) {
+          const subjectData = JSON.parse(fs.readFileSync(path.join(folderPath, matchedFile), "utf8"));
+          const modId = `m${modNum}`;
+          const targetMod = subjectData.modules?.find(
+            (m: any) => m.id === modId || m.id === `mModule ${modNum}` || m.title?.toLowerCase().includes(`module ${modNum}`)
+          );
+          
+          if (targetMod && targetMod.topics) {
+            const idx = parseInt(topicIdx, 10) - 1;
+            const topic = targetMod.topics[idx];
+            
+            if (topic) {
+              const topicTitle = typeof topic === "string" ? topic : (topic.title || `Topic ${topicIdx}`);
+              const subjectName = subjectData.name || subjectCode.toUpperCase();
+              const subjectCodeDisplay = subjectData.code || subjectCode.toUpperCase();
+
+              // Clean branch display mapping
+              const branchMap: Record<string, string> = {
+                "aeronautical-engineering": "Aeronautical Engineering",
+                "agriculture-engineering": "Agriculture Engineering",
+                "applied-electronics-and-instrumentation": "Applied Electronics and Instrumentation",
+                "artificial-intelligence": "Artificial Intelligence",
+                "artificial-intelligence-and-machine-learning": "Artificial Intelligence & Machine Learning",
+                "artificial-intelligence-and-data-science": "Artificial Intelligence and Data Science",
+                "automobile-engineering": "Automobile Engineering",
+                "biomedical-and-robotic-engineering": "Biomedical & Robotic Engineering",
+                "biomedical-engineering": "Biomedical Engineering",
+                "biotechnology-engineering": "Biotechnology Engineering",
+                "biotechnology-and-biochemical-engineering": "Biotechnology and Biochemical Engineering",
+                "chemical-engineering": "Chemical Engineering",
+                "civil-engineering": "Civil Engineering",
+                "civil-and-environmental-engineering": "Civil and Environmental Engineering",
+                "computer-science-and-business-systems": "Computer Science and Business Systems",
+                "computer-science-and-design": "Computer Science and Design",
+                "computer-science-and-engineering": "Computer Science and Engineering",
+                "computer-science-and-engineering-ai-and-ml": "Computer Science and Engineering (AI & ML)",
+                "computer-science-and-engineering-artificial-intelligence": "Computer Science and Engineering (Artificial Intelligence)",
+                "computer-science-and-engineering-cyber-security": "Computer Science and Engineering (Cyber Security)",
+                "computer-science-and-engineering-data-science": "Computer Science and Engineering (Data Science)",
+                "computer-science-and-engineering-internet-of-things-and-cyber-security-including-blockchain-technology": "Computer Science and Engineering (Internet of Things and Cyber Security including Blockchain Technology)",
+                "computer-science-and-engineering-iot": "Computer Science and Engineering (IoT)",
+                "computer-science-and-engineering-and-business-systems": "Computer Science and Engineering and Business Systems",
+                "cyber-physical-systems": "Cyber Physical Systems",
+                "electrical-and-computer-engineering": "Electrical and Computer Engineering",
+                "electrical-and-electronics-engineering": "Electrical and Electronics Engineering",
+                "electronics-and-biomedical-engineering": "Electronics & Biomedical Engineering",
+                "electronics-and-communication-advanced-communication-technology": "Electronics & Communication (Advanced Communication Technology)",
+                "electronics-and-communication-engineering": "Electronics & Communication Engineering",
+                "electronics-and-computer-engineering": "Electronics & Computer Engineering",
+                "electronics-engineering-vlsi-design-and-technology": "Electronics Engineering (VLSI Design and Technology)",
+                "electronics-and-instrumentation": "Electronics and Instrumentation",
+                "food-technology": "Food Technology",
+                "industrial-engineering": "Industrial Engineering",
+                "information-technology": "Information Technology",
+                "instrumentation-and-control": "Instrumentation and Control",
+                "mechanical-automobile-engineering": "Mechanical (Automobile) Engineering",
+                "mechanical-engineering": "Mechanical Engineering",
+                "mechatronics-engineering": "Mechatronics Engineering",
+                "naval-architecture-and-shipbuilding-engineering": "Naval Architecture & Shipbuilding Engineering",
+                "polymer-engineering": "Polymer Engineering",
+                "production-engineering": "Production Engineering",
+                "robotics-and-artificial-intelligence": "Robotics and Artificial Intelligence",
+                "robotics-and-automation": "Robotics and Automation",
+                "safety-and-fire-engineering": "Safety & Fire Engineering"
+              };
+              const branchDisplayName = branchMap[branch.toLowerCase()] || branch;
+
+              const placeholderMarkdown = `# ${topicTitle}
+
+> [!NOTE]
+> This study note for **${subjectName} (${subjectCodeDisplay})** is currently under review by our subject matter experts to ensure alignment with the latest APJ Abdul Kalam Technological University (KTU) 2024 scheme syllabus.
+
+## Syllabus details
+- **Branch**: ${branchDisplayName}
+- **Semester**: Semester ${sem}
+- **Subject**: ${subjectName} (${subjectCodeDisplay})
+- **Module**: Module ${modNum}
+- **Topic**: ${topicTitle}
+
+## What you should learn under this topic:
+- Review the core concepts of **${topicTitle}**.
+- Refer to the recommended textbooks in your syllabus for **${subjectName}**.
+- Solve related problems from previous year question papers.
+
+---
+*Stay tuned! We are constantly updating our repository with high-quality, comprehensive study notes.*`;
+
+              return json({ content: placeholderMarkdown, path: `/api/notes?id=${id}` });
             }
           }
         }
       }
-      return json({ error: "Note not found in lookup mapping or subjects" }, 404);
     }
 
-    if (relativePath.startsWith("public/")) {
-      relativePath = relativePath.substring(7);
-    }
-
-    if (!validateNotePath(relativePath)) {
-      return json({ error: "Invalid path segment" }, 400);
-    }
-
-    if (relativePath.toLowerCase().endsWith(".pdf")) {
-      return json({
-        content: `[Open PDF note](/${relativePath})`,
-        path: `/${relativePath}`,
-      });
-    }
-
-    let fileContent: string | null = null;
-
-    const fullPath = path.join(process.cwd(), "public", relativePath);
-    if (fs.existsSync(fullPath)) {
-      try {
-        fileContent = fs.readFileSync(fullPath, "utf8");
-      } catch {
-        fileContent = null;
-      }
-    }
-
-    if (!fileContent) {
-      fileContent = await fetchStaticFile(relativePath);
-    }
-
-    if (!fileContent) {
-      return json({ error: "Note file is mapped but missing on disk" }, 404);
-    }
-
-    const markdown = stripFrontmatter(fileContent);
-    return json({ content: markdown, path: `/${relativePath}` });
+    return json({ error: "Note not found and syllabus fallback could not be generated" }, 404);
   } catch (error: any) {
     console.error("Error loading note content:", error);
     return json({ error: "Internal Server Error" }, 500);

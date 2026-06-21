@@ -478,7 +478,7 @@ export default function OnboardingModal({
                             <Icon className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                           </div>
                           <div className="flex-1 min-w-0 pr-4">
-                            <span className="block text-xs font-black leading-snug truncate group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">{name}</span>
+                            <span className="block text-xs font-black leading-snug whitespace-normal break-words group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">{name}</span>
                             <span className="block text-[10px] text-slate-400 font-extrabold uppercase mt-1 tracking-wider">{short}</span>
                           </div>
                         </button>
@@ -517,10 +517,10 @@ export default function OnboardingModal({
                                 type="button"
                                 onMouseDown={(e) => e.preventDefault()} // prevent input blur before click resolves
                                 onClick={() => selectBranch(item.id)}
-                                className="w-full text-left px-4 py-3 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-900/60 hover:text-blue-500 flex items-center justify-between cursor-pointer"
+                                className="w-full text-left px-4 py-3 text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-900/60 hover:text-blue-500 flex items-start justify-between gap-3 cursor-pointer"
                               >
-                                <span>{item.label}</span>
-                                <span className="text-[10px] text-slate-400 font-extrabold uppercase px-1.5 py-0.5 bg-slate-100 dark:bg-slate-900 rounded">{item.id}</span>
+                                <span className="break-words whitespace-normal flex-1">{item.label}</span>
+                                <span className="text-[10px] text-slate-400 font-extrabold uppercase px-1.5 py-0.5 bg-slate-100 dark:bg-slate-900 rounded shrink-0">{item.id}</span>
                               </button>
                             </li>
                           ))}
