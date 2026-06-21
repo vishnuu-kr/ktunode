@@ -61,7 +61,10 @@ async function fetchStaticFile(relativePath: string): Promise<string | null> {
 export async function GET(request: NextRequest) {
   const id = request.nextUrl.searchParams.get("id");
 
-  if (!id || !/^[a-z0-9][a-z0-9._-]*$/i.test(id)) {
+  // Topic ids embed module names that may contain spaces (e.g. "...-mExperiment 2-t1"),
+  // so spaces are permitted here. The id is only ever used as an object key or to derive
+  // sanitized branch/sem/code segments below — never spliced into a filesystem path directly.
+  if (!id || !/^[a-z0-9][a-z0-9 :/._-]*$/i.test(id)) {
     return json({ error: "Missing or invalid topic id parameter" }, 400);
   }
 
@@ -104,32 +107,49 @@ export async function GET(request: NextRequest) {
       return json({ content: markdown, path: `/${relativePath}` });
     }
 
-    // Dynamic Syllabus Fallback: Extract details from subjects schema to render a premium placeholder
-    const match = id.match(/^([a-z0-9-]+)-([1-8])-([a-z0-9-]+)-m([1-5])-t([0-9]+)$/i);
+    // Primary source for dashboard topic ids: the authored note content embedded in each
+    // subject JSON. Topic id format is `${branchId}-${sem}-${code}-${moduleId}-t${index}`,
+    // where branchId may contain dashes and moduleId may contain spaces/dashes — so we anchor
+    // on the single-digit semester and the alphanumeric subject code rather than greedy splits.
+    // branch/code are constrained to filesystem-safe charsets so the derived path can never
+    // traverse out of the subjects dir; only the module segment may contain spaces/":"/"/".
+    const match = id.match(/^([a-z0-9-]+)-([1-8])-([a-z0-9]+)-m(.+)-t(\d+)$/i);
     if (match) {
-      const [_, branch, sem, subjectCode, modNum, topicIdx] = match;
+      const [, branch, sem, subjectCode] = match;
       const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
       const folderPath = path.join(subjectsDir, `${branch}-${sem}`);
-      
+
       if (fs.existsSync(folderPath) && fs.statSync(folderPath).isDirectory()) {
         const files = fs.readdirSync(folderPath);
-        const matchedFile = files.find(f => f.toUpperCase().endsWith(`_${subjectCode.toUpperCase()}.json`));
-        
+        const matchedFile = files.find(f => f.toLowerCase().endsWith(`_${subjectCode.toLowerCase()}.json`));
+
         if (matchedFile) {
           const subjectData = JSON.parse(fs.readFileSync(path.join(folderPath, matchedFile), "utf8"));
-          const modId = `m${modNum}`;
-          const targetMod = subjectData.modules?.find(
-            (m: any) => m.id === modId || m.id === `mModule ${modNum}` || m.title?.toLowerCase().includes(`module ${modNum}`)
-          );
-          
-          if (targetMod && targetMod.topics) {
-            const idx = parseInt(topicIdx, 10) - 1;
-            const topic = targetMod.topics[idx];
-            
-            if (topic) {
-              const topicTitle = typeof topic === "string" ? topic : (topic.title || `Topic ${topicIdx}`);
+
+          // Locate the exact topic by id across all modules (robust to module-name variations).
+          let topic: any = null;
+          let targetMod: any = null;
+          for (const mod of subjectData.modules || []) {
+            const found = (mod.topics || []).find((t: any) => t.id === id);
+            if (found) {
+              topic = found;
+              targetMod = mod;
+              break;
+            }
+          }
+
+          if (topic) {
+            // Serve the authored content when present — this is the real study note.
+            if (typeof topic.content === "string" && topic.content.trim().length > 0) {
+              return json({ content: stripFrontmatter(topic.content), path: `/api/notes?id=${id}` });
+            }
+
+            // Otherwise render a premium "coming soon" placeholder from the syllabus schema.
+            {
+              const topicTitle = topic.title || "this topic";
               const subjectName = subjectData.name || subjectCode.toUpperCase();
               const subjectCodeDisplay = subjectData.code || subjectCode.toUpperCase();
+              const modTitle = targetMod?.title || (targetMod?.id || "").replace(/^m/, "Module ");
 
               // Clean branch display mapping
               const branchMap: Record<string, string> = {
@@ -191,7 +211,7 @@ export async function GET(request: NextRequest) {
 - **Branch**: ${branchDisplayName}
 - **Semester**: Semester ${sem}
 - **Subject**: ${subjectName} (${subjectCodeDisplay})
-- **Module**: Module ${modNum}
+- **Module**: ${modTitle}
 - **Topic**: ${topicTitle}
 
 ## What you should learn under this topic:

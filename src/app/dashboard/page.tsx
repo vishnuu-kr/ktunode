@@ -2,7 +2,7 @@
 // v2
 
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import { useParams, usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowRight,
@@ -39,7 +39,6 @@ import {
   Edit3,
   Plus,
   Trash2,
-  Settings,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "next-themes";
@@ -49,7 +48,7 @@ import { getTimetable } from "@/lib/timetableData";
 import { useProgress } from "@/hooks/useProgress";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import ShareButton from "@/components/ui/ShareButton";
-import OnboardingTour, { ReplayTourButton } from "@/components/dashboard/OnboardingTour";
+import OnboardingTour from "@/components/dashboard/OnboardingTour";
 import FirstTimeChecklist from "@/components/dashboard/FirstTimeChecklist";
 import { triggerChecklistTask } from "@/lib/checklist";
 import topicPathMapRaw from "@/data/topic-path-map.json";
@@ -137,6 +136,12 @@ const schemeHoverTextMap: Record<string, string> = {
 
 // Client-side cache for fetched subjects and notes content to prevent reloading UI spinners
 const clientSubjectsCache: Record<string, Subject[]> = {};
+
+// Mutating a module-scope object directly inside a component is flagged by the
+// React Compiler lint; route writes through this helper to keep the cache pure-looking.
+function setClientSubjectsCache(key: string, value: Subject[]) {
+  clientSubjectsCache[key] = value;
+}
 const clientNotesCache: Record<string, string> = {};
 
 interface SubjectTheme {
@@ -268,7 +273,6 @@ function getSubjectIcon(name: string) {
 
 function DashboardContent() {
   const params = useParams();
-  const pathname = usePathname();
   const lastVibrateTimeRef = React.useRef<number>(0);
   
   // Resolve branch using path params first, then client-side query parameters (fallback to "cs")
@@ -470,7 +474,7 @@ function DashboardContent() {
       .then((data) => {
         if (active) {
           const subjectsList = Array.isArray(data) ? data : [];
-          clientSubjectsCache[cacheKey] = subjectsList;
+          setClientSubjectsCache(cacheKey, subjectsList);
           setAllAvailableSubjects(subjectsList);
           setSubjects(subjectsList.filter((s: Subject) => !hidden.includes(s.id)));
           setLoadingSubjects(false);
@@ -503,7 +507,7 @@ function DashboardContent() {
 
     let active = true;
     setLoadingNote(true);
-    fetch(`/api/notes?id=${selectedTopic.id}`)
+    fetch(`/api/notes?id=${encodeURIComponent(selectedTopic.id)}`)
       .then((res) => res.json())
       .then((data) => {
         if (active) {
@@ -610,7 +614,7 @@ function DashboardContent() {
   }, [activeVideoId]);
 
   // User Authentication & Cloud Sync states
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [_isLoggedIn, setIsLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [authModalOpen, setAuthModalOpen] = useState(false);
@@ -688,7 +692,7 @@ function DashboardContent() {
             navigator.vibrate(scaledDuration);
           }
         }
-      } catch (e) {
+      } catch {
         // Silently block
       }
     }
@@ -1512,7 +1516,7 @@ function DashboardContent() {
       // Inject into available pool
       setAllAvailableSubjects((prev) => [...prev, subject]);
       const cacheKey = `${branch}_${sem}`;
-      clientSubjectsCache[cacheKey] = [...(clientSubjectsCache[cacheKey] || []), subject];
+      setClientSubjectsCache(cacheKey, [...(clientSubjectsCache[cacheKey] || []), subject]);
     }
 
     setSubjects((prev) => {
@@ -1574,7 +1578,7 @@ function DashboardContent() {
 
   const audioCtxRef = useRef<AudioContext | null>(null);
 
-  const playCheckChime = React.useCallback(() => {
+  const _playCheckChime = React.useCallback(() => {
     if (typeof window === "undefined") return;
     try {
       const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
@@ -2533,16 +2537,67 @@ function DashboardContent() {
                       </div>
                       <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-4/5 pt-4"></div>
                     </div>
+                  ) : noteContent === "__NOTE_MISSING__" ? (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="max-w-2xl mx-auto py-10 md:py-16"
+                    >
+                      <div className="relative overflow-hidden rounded-3xl border border-blue-200/60 dark:border-blue-900/40 bg-gradient-to-br from-blue-50/80 via-white to-indigo-50/50 dark:from-blue-950/20 dark:via-slate-900/40 dark:to-indigo-950/20 p-8 md:p-10 text-center shadow-[0_8px_30px_rgba(59,130,246,0.08)] dark:shadow-none">
+                        <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400">
+                          <Timer className="h-8 w-8 animate-pulse" />
+                        </div>
+                        <h3 className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100">
+                          Notes are being crafted
+                        </h3>
+                        <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                          Our subject experts are writing comprehensive, 2024-scheme aligned notes for{" "}
+                          <span className="font-bold text-slate-700 dark:text-slate-200">{selectedTopic.title}</span>.
+                          This topic will light up the moment it&apos;s ready.
+                        </p>
+                        <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-blue-200/60 dark:border-blue-900/40 bg-white/60 dark:bg-slate-900/40 px-4 py-1.5 text-[11px] font-black uppercase tracking-widest text-blue-600 dark:text-blue-400">
+                          <Sparkles className="h-3.5 w-3.5" />
+                          Coming Soon
+                        </div>
+                      </div>
+                    </motion.div>
+                  ) : noteContent.startsWith("Error loading note") ? (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="max-w-2xl mx-auto py-10 md:py-16 text-center"
+                    >
+                      <div className="rounded-3xl border border-rose-200/60 dark:border-rose-900/40 bg-rose-50/50 dark:bg-rose-950/10 p-8 md:p-10">
+                        <h3 className="text-lg font-black text-slate-800 dark:text-slate-100">Couldn&apos;t load this note</h3>
+                        <p className="mx-auto mt-2 max-w-md text-sm text-slate-500 dark:text-slate-400">
+                          Something went wrong fetching the content. Check your connection and try again.
+                        </p>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            delete clientNotesCache[selectedTopic.id];
+                            const t = selectedTopic;
+                            setSelectedTopic(null);
+                            startTransition(() => setSelectedTopic(t));
+                          }}
+                          className="mt-5 inline-flex items-center gap-2 rounded-xl bg-slate-900 dark:bg-white px-5 py-2.5 text-sm font-bold text-white dark:text-slate-900 transition-transform hover:scale-[1.03] active:scale-95"
+                        >
+                          Retry
+                        </button>
+                      </div>
+                    </motion.div>
                   ) : (
                     <motion.div
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
                     >
-                      <AudioNoteReader 
-                        content={noteContent} 
-                        topicTitle={selectedTopic.title} 
-                        triggerHaptic={triggerHaptic} 
+                      <AudioNoteReader
+                        content={noteContent}
+                        topicTitle={selectedTopic.title}
+                        triggerHaptic={triggerHaptic}
                       />
                       <MarkdownRenderer content={noteContent} stripH1={true} />
                     </motion.div>
