@@ -1,0 +1,171 @@
+{
+  "id": "pcaet601-applied-electronics-and-instrumentation-s6",
+  "code": "PCAET601",
+  "name": "ELECTRIC DRIVES AND CONTROL",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t1",
+          "title": "DC and AC Machines: DC Machines - Principle of Operation of DC Generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t2",
+          "title": "Constructional Details",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t3",
+          "title": "EMF Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t4",
+          "title": "Types of Generators, Principle of Operation of DC Motors, Electrical and Mechanical Characteristics of DC Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t5",
+          "title": "Shunt and Compound Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t6",
+          "title": "Applications, AC Machines - Principle of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t7",
+          "title": "Rotating Magnetic Field",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 1-t8",
+          "title": "Single Phase and Three Phase Induction Motors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 2-t1",
+          "title": "Power Devices and Controlled Rectifiers: Power Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 2-t2",
+          "title": "Power BJT, Power MOSFET and IGBT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 2-t3",
+          "title": "Steady State and Switching Characteristics, Drive Requirements, Design of Simple Drive Circuits for Power BJT, Power MOSFET and IGBT, Principle of DC Motor Control, Principle of PWM Switching Control, Two Quadrant and Four Quadrant Converter Circuit, Controlled Rectifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 2-t4",
+          "title": "Principle of Phase Controlled Converter Operation, Single Phase Half Wave and Full Wave Controlled Rectifiers with R, RL and Battery Loads",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 3-t1",
+          "title": "Inverters: Single Phase Inverters - Half Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 3-t2",
+          "title": "Full Bridge and Push Pull Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 3-t3",
+          "title": "Three Phase Voltage Source Inverter, Fundamental Concepts of PWM Schemes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 3-t4",
+          "title": "Sine Triangle PWM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 3-t5",
+          "title": "Space Vector PWM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 3-t6",
+          "title": "Harmonic Distortion Factors for Three Phase Inverters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 4-t1",
+          "title": "Induction Motor Drives and Vector Control Techniques: Induction Motor Drives - Torque-Speed Characteristics of Induction Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 4-t2",
+          "title": "Speed Control by Varying Stator Frequency and Voltage, Voltage Source Inverter Driven Induction Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 4-t3",
+          "title": "Application of PWM for Induction Motor Drive, Vector Control Techniques - Concepts of Direct Torque Control (DTC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 4-t4",
+          "title": "Field Oriented Control (FOC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-pcaet601-mModule 4-t5",
+          "title": "Comparison of Vector Control and Scalar Control, Application of Vector Control Drives",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

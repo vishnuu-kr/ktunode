@@ -1,0 +1,195 @@
+{
+  "id": "pebmt631-biomedical-engineering-s6",
+  "code": "PEBMT631",
+  "name": "EMBEDDED SYSTEM DESIGN",
+  "branchId": "biomedical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 1-t1",
+          "title": "Embedded System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 1-t2",
+          "title": "Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 1-t3",
+          "title": "Features, Categories, Requirements, Challenges and Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 1-t4",
+          "title": "Applications of Embedded Systems in Consumer Electronics and Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 1-t5",
+          "title": "Applications of Embedded Systems in Instrumentation and Biomedical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 1-t6",
+          "title": "Case Study of Low Power Mode of MSP430 and Its Use in Embedded Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 2-t1",
+          "title": "Hardware Software Co-Design and Program Modelling - Fundamental Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 2-t2",
+          "title": "Computational Models - Data Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 2-t3",
+          "title": "Control Data Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 2-t4",
+          "title": "State Machine and Sequential Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 2-t5",
+          "title": "Concurrent Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 2-t6",
+          "title": "Object-Oriented Model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 3-t1",
+          "title": "Integration and Testing of Embedded Hardware and Firmware - Embedded Firmware Design Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 3-t2",
+          "title": "Embedded System Development Environment - IDEs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 3-t3",
+          "title": "Cross Compilers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 3-t4",
+          "title": "Disassemblers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 3-t5",
+          "title": "Decompilers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 3-t6",
+          "title": "Simulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 3-t7",
+          "title": "Emulators, Debuggers, and Features of Embedded C",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t1",
+          "title": "RTOS-Based Design - Basic Operating System Services - Structure - Kernel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t2",
+          "title": "Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t3",
+          "title": "Tasks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t4",
+          "title": "Threads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t5",
+          "title": "Process Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t6",
+          "title": "Memory Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t7",
+          "title": "Device Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt631-mModule 4-t8",
+          "title": "Task Scheduling Algorithms - Non-Pre-emptive Scheduling and Pre-emptive Scheduling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "pecst862-computer-science-and-business-systems-s8",
+  "code": "PECST862",
+  "name": "NATURAL LANGUAGE PROCESSING",
+  "branchId": "computer-science-and-business-systems",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 1-t1",
+          "title": "Introduction to Natural Language Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 1-t2",
+          "title": "Various Stages of Traditional NLP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 1-t3",
+          "title": "Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 1-t4",
+          "title": "Basic Text Processing Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 1-t5",
+          "title": "Common NLP Tasks: N-gram Language Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 1-t6",
+          "title": "Naive Bayes for Text Classification and Sentiment Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 1-t7",
+          "title": "Evaluation: Precision, Recall and F-measure, Test Sets and Cross Validation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 2-t1",
+          "title": "Annotating Linguistic Structures - Context-Free Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 2-t2",
+          "title": "Constituency Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 2-t3",
+          "title": "Ambiguity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 2-t4",
+          "title": "CYK Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 2-t5",
+          "title": "Dependency Parsing - Transition-Based Dependency Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 2-t6",
+          "title": "Graph-Based Dependency Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 2-t7",
+          "title": "Evaluation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 3-t1",
+          "title": "Word Representations - Lexical Semantics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 3-t2",
+          "title": "Vector Semantics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 3-t3",
+          "title": "TF-IDF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 3-t4",
+          "title": "Pointwise Mutual Information (PMI)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 3-t5",
+          "title": "Neural Word Embeddings - Word2Vec",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 3-t6",
+          "title": "GloVe",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 3-t7",
+          "title": "Contextual Word Embeddings, Evaluating Vector Models, Feedforward Neural Networks for Text Classification",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t1",
+          "title": "Sequence Modelling - Recurrent Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t2",
+          "title": "RNNs as Language Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t3",
+          "title": "RNNs for NLP Tasks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t4",
+          "title": "Stacked and Bidirectional RNN Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t5",
+          "title": "Recursive Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t6",
+          "title": "LSTM and GRU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t7",
+          "title": "Common RNN NLP Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t8",
+          "title": "Encoder-Decoder Model with RNNs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t9",
+          "title": "Attention Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t10",
+          "title": "Transformers, NLP Applications - Machine Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t11",
+          "title": "Question Answering and Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-8-pecst862-mModule 4-t12",
+          "title": "Introduction to Large Language Models",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

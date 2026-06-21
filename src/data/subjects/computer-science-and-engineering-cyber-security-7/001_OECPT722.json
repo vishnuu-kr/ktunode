@@ -1,0 +1,135 @@
+{
+  "id": "oecpt722-computer-science-and-engineering-cyber-security-s7",
+  "code": "OECPT722",
+  "name": "INTRODUCTION TO ROBOTICS",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 1-t1",
+          "title": "Introduction to Robotics: Overview of Robotics and Its Applications, Historical Development and Current Trends, Basic Components and Classifications of Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 1-t2",
+          "title": "Robot Anatomy and Components: Sensors (Types, Functions, and Integration), Actuators (Motors, Servos, and Their Control), Control Systems and Feedback Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 1-t3",
+          "title": "Robot Kinematics: Coordinate Systems and Transformations, Forward and Inverse Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 1-t4",
+          "title": "Robot Dynamics: Introduction to Dynamic Modeling (Newton-Euler and Lagrangian Methods)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 2-t1",
+          "title": "Control Systems Fundamentals: Control Theory Basics (PID Control, State-Space Models), Implementing Control Algorithms in Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 2-t2",
+          "title": "Programming Robots: Introduction to Robot Programming Languages and Environments, Basic Programming Constructs and Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 2-t3",
+          "title": "Perception and Sensor Integration: Types of Sensors (Vision, Rangefinders, IMUs), Sensor Fusion and Data Interpretation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 3-t1",
+          "title": "Motion Planning: Path Planning Algorithms (A*, PRM), Motion Planning in Dynamic Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 3-t2",
+          "title": "Robotic Systems Integration: Integration of Hardware and Software Components, Communication Protocols and Data Exchange",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 3-t3",
+          "title": "Robotics in Industry: Applications in Manufacturing, Healthcare, and Other Fields, Case Studies, Current Trends and Future Directions in Robotics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 4-t1",
+          "title": "Human-Robot Interaction: Techniques and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 4-t2",
+          "title": "Autonomous Robots: Navigation and Decision-Making",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 4-t3",
+          "title": "Robotics and AI: Integration and Future Trends",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 4-t4",
+          "title": "Emerging Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 4-t5",
+          "title": "Soft Robotics and Bio-Inspired Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 4-t6",
+          "title": "Collaborative Robots (Cobots) and Their Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-oecpt722-mModule 4-t7",
+          "title": "Swarm Robotics and Collective Behavior",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

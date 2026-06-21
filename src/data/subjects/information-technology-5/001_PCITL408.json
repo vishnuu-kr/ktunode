@@ -1,0 +1,87 @@
+{
+  "id": "pcitl408-information-technology-s5",
+  "code": "PCITL408",
+  "name": "OPERATING SYSTEMS LAB",
+  "branchId": "information-technology",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t1",
+          "title": "Familiarization of system calls (fork, exec, getpid, exit, wait, close, stat etc) in operating system and demonstration of creating partition and installing operating system",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t2",
+          "title": "Implementation of process and thread (life cycle of process): (i) process creation and termination, (ii) thread creation and termination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t3",
+          "title": "Implement process scheduling algorithms (FCFS, SJF, round robin, priority) and compute average waiting time and average turn-around time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t4",
+          "title": "Inter-process communication using pipes, message queues and shared memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t5",
+          "title": "Implement producer-consumer problem and solve the problem using semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t6",
+          "title": "Implementation of dining philosophers' problem using threads and semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t7",
+          "title": "Implementation of banker's algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t8",
+          "title": "Implement memory management schemes (first fit, best fit and worst fit)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t9",
+          "title": "Implement page replacement algorithms: FIFO, LRU and optimal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t10",
+          "title": "Implementation of disk scheduling using FCFS, SCAN, C-SCAN, LOOK, C-LOOK and SSTF algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t11",
+          "title": "Implement file organization technique (single level and multi-level directory) and allocation strategies (sequential, linked and indexed)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-pcitl408-mExperiment 2-t12",
+          "title": "Familiarization of cloud platforms and virtualization tools (e.g., VMWare)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

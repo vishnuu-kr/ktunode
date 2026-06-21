@@ -1,0 +1,273 @@
+{
+  "id": "peaet864-applied-electronics-and-instrumentation-s8",
+  "code": "PEAET864",
+  "name": "MEMS AND NANOELECTRONICS",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t1",
+          "title": "Introduction and Overview of Nano and Microelectromechanical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t2",
+          "title": "Applications of Micro and Nanoelectromechanical Systems and MEMS Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t3",
+          "title": "MEMS Devices and Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t4",
+          "title": "Materials for MEMS: Silicon",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t5",
+          "title": "Silicon Compounds: Silicon Nitride",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t6",
+          "title": "Silicon Dioxide",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t7",
+          "title": "Polysilicon",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t8",
+          "title": "Silicon Piezo Resistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t9",
+          "title": "Polymers in MEMS: SU-8",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t10",
+          "title": "PMMA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t11",
+          "title": "PDMS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t12",
+          "title": "Langmuir-Blodgett Films",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 1-t13",
+          "title": "Stress-Strain Relationship and Mechanical Properties of Silicon",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t1",
+          "title": "Microsystem Fabrication Processes: Photolithography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t2",
+          "title": "Ion Implantation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t3",
+          "title": "Diffusion and Oxidation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t4",
+          "title": "Thin Film Depositions: LPCVD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t5",
+          "title": "Sputtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t6",
+          "title": "Evaporation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t7",
+          "title": "Electroplating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t8",
+          "title": "Etching Techniques: Dry and Wet Etching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t9",
+          "title": "Electrochemical Etching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t10",
+          "title": "Micromachining: Bulk Micromachining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t11",
+          "title": "Surface Micromachining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 2-t12",
+          "title": "High Aspect-Ratio (LIGA and LIGA-like) Technology",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t1",
+          "title": "MEMS Sensors: Design of Acoustic Wave Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t2",
+          "title": "Resonant Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t3",
+          "title": "Vibratory Gyroscope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t4",
+          "title": "Capacitive and Piezo Resistive Pressure Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t5",
+          "title": "Micro Actuator: Design of Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t6",
+          "title": "Actuations Using Thermal Forces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t7",
+          "title": "Shape Memory Alloys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t8",
+          "title": "Piezoelectric Crystals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t9",
+          "title": "Electrostatic Forces (Parallel Plate, Comb Drive) Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 3-t10",
+          "title": "Micromechanical Pumps",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 4-t1",
+          "title": "Nanoelectronics and Quantum Mechanics: Atomic Structures and Quantum Mechanics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 4-t2",
+          "title": "Basics of Molecular and Nanostructure Dynamics: Schrodinger Equation and Wave Function Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 4-t3",
+          "title": "Density Functional Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 4-t4",
+          "title": "Nanostructures and Molecular Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet864-mModule 4-t5",
+          "title": "Molecular Wires and Molecular Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

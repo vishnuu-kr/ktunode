@@ -1,0 +1,123 @@
+{
+  "id": "peict412-instrumentation-and-control-s4",
+  "code": "PEICT412",
+  "name": "NETWORK THEORY",
+  "branchId": "instrumentation-and-control",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 1-t1",
+          "title": "Phase Sequence - Star and Delta Connection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 1-t2",
+          "title": "Relation Between Line and Phase Voltages and Currents in Balanced Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 1-t3",
+          "title": "Analysis of Balanced and Unbalanced 3 Phase Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 1-t4",
+          "title": "Measurement of Active and Reactive Power",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 2-t1",
+          "title": "Transfer Function - Driving Point and Transfer Functions for One Port and Two Port Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 2-t2",
+          "title": "Impulse Function and Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 2-t3",
+          "title": "Concept and Significance of Poles and Zeros",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 2-t4",
+          "title": "Time Domain Response from Pole Zero Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 2-t5",
+          "title": "Routh-Hurwitz Criterion - Analysis of Marginally Stable, Unstable and Stable Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 3-t1",
+          "title": "Behaviour of Energy Storage Elements in the Presence of Sources - Analysis of Source Free Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 3-t2",
+          "title": "Transient Response of R-L Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 3-t3",
+          "title": "R-L-C Circuits (Series and Parallel Combination) for Sinusoidal Excitations - Initial Conditions - Solution Method Using Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 4-t1",
+          "title": "Application of Phasor Analysis in RLC Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 4-t2",
+          "title": "Filters: Low Pass, High Pass, Band Pass and Band Elimination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict412-mModule 4-t3",
+          "title": "Filter Design and Implementation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "peeet417-electrical-and-electronics-engineering-s4",
+  "code": "PEEET417",
+  "name": "SOLID STATE DEVICES",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t1",
+          "title": "First Order RC Low Pass and High Pass Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t2",
+          "title": "Differentiator and Integrator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t3",
+          "title": "Diode Clipping Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t4",
+          "title": "Diode Clamping Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t5",
+          "title": "Voltage Multipliers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t6",
+          "title": "Transistor Biasing: Concept of DC and AC Load Lines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t7",
+          "title": "Types - Fixed Bias Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t8",
+          "title": "Self-Bias",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t9",
+          "title": "Voltage Divider Bias",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t10",
+          "title": "Bias Stabilization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 1-t12",
+          "title": "Schmitt Trigger",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t1",
+          "title": "RC Coupled Amplifier - Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t2",
+          "title": "Voltage Gain and Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t3",
+          "title": "Small Signal Analysis of CE Configuration - Small Signal Hybrid-Pi Model for Mid and Low Frequency (Gain, Input and Output Impedance)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t4",
+          "title": "High Frequency Equivalent Circuits of BJT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t5",
+          "title": "Miller Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t6",
+          "title": "Analysis of High Frequency Response of CE Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t7",
+          "title": "Multistage Amplifiers - Cascade and Cascode Amplifiers: Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 2-t8",
+          "title": "Effect on Gain and Bandwidth",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 3-t1",
+          "title": "Effect of Positive and Negative Feedback on Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 3-t2",
+          "title": "Frequency Response and Distortion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 3-t3",
+          "title": "Feedback Topologies and Its Effect on Input and Output Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 3-t4",
+          "title": "Feedback Amplifier Circuits Using BJT in Each Feedback Topologies (Analysis of Only Voltage Series Feedback Circuit is Required)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t2",
+          "title": "Barkhausen Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t4",
+          "title": "Analysis of RC Phase Shift Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t5",
+          "title": "Power Amplifiers: Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t6",
+          "title": "Transformer Coupled Class A Power Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t7",
+          "title": "Push Pull Class B and Class AB Power Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t8",
+          "title": "Complementary Symmetry Class B and Class AB Power Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t9",
+          "title": "Class C Power Amplifier Efficiency and Distortion (No Analysis Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t10",
+          "title": "Regulated Power Supplies: Load and Line Regulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t11",
+          "title": "Series Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t12",
+          "title": "Shunt Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-peeet417-mModule 4-t13",
+          "title": "Short Circuit Protection and Fold Back Protection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

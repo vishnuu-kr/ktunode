@@ -1,0 +1,213 @@
+{
+  "id": "pemet525-mechanical-automobile-engineering-s5",
+  "code": "PEMET525",
+  "name": "INSTRUMENTATION AND CONTROL SYSTEMS",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 1-t1",
+          "title": "Industrial Measurement Systems - Different Types of Industrial Variables and Measurement Systems Elements. Sensors - Sensor Components - Resistive Sensors - Inductive Sensors - Capacitive Sensors - Thermoelectric Sensors - Piezoelectric Sensors. Transducers - Definition and Classification. LVDT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 1-t2",
+          "title": "Electromagnetic and Ultrasonic Flow Meters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 1-t3",
+          "title": "Piezoelectric Transducers - Modes of Operation - Force Transducer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 1-t4",
+          "title": "Load Cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 1-t5",
+          "title": "Strain Gauge",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t1",
+          "title": "Industrial Signal Conditioning Systems - Operational Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t2",
+          "title": "Amplifier Circuits with Ideal Operational Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t3",
+          "title": "Current-to-Voltage Converters - Inverting Voltage Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t4",
+          "title": "Non-Inverting Voltage Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t5",
+          "title": "Differential Amplifiers - Instrumentation Amplifiers - Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t6",
+          "title": "Passive Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t7",
+          "title": "First and Second Order RC Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t8",
+          "title": "Low-Pass First-Order RC Filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t9",
+          "title": "High-Pass First-Order RC Filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t10",
+          "title": "Band Pass Filters, A/D Converters for Industrial Measurement Systems. Data Acquisition Systems (DAS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 2-t11",
+          "title": "Objectives of DAS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 3-t1",
+          "title": "Transfer Functions of DC and AC Servo Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 3-t2",
+          "title": "Control Applications of Tacho Generator and Stepper Motor. Characteristic Equation of Closed Loop Systems. Controllers - P, PI, and PID Controllers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t1",
+          "title": "Time Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t2",
+          "title": "Impulse and Step Responses of First Order and Second Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t3",
+          "title": "Error Analysis: Steady State Error Analysis - Static Error Coefficients of Type 0, 1, 2 Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t4",
+          "title": "Stability Analysis: Concept of Stability - Routh's Stability Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t5",
+          "title": "Root Locus Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t6",
+          "title": "Frequency Domain Analysis: Frequency Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t7",
+          "title": "Stability in Frequency Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t8",
+          "title": "Gain Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t9",
+          "title": "Phase Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t10",
+          "title": "Bode Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t11",
+          "title": "Polar Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet525-mModule 4-t12",
+          "title": "Nyquist Plot",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

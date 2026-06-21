@@ -1,0 +1,183 @@
+{
+  "id": "pbsft504-safety-and-fire-engineering-s5",
+  "code": "PBSFT504",
+  "name": "HEAT AND MASS TRANSFER OPERATIONS",
+  "branchId": "safety-and-fire-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 1-t1",
+          "title": "Concept of Heat Transfer by Convection, Concept of Boundary Layers - Natural and Forced Convection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 1-t2",
+          "title": "Heat Transfer from Condensing Vapours, Heat Transfer to Boiling Liquids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 1-t3",
+          "title": "Radiation: Concept of Thermal Radiation - Black Body Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 1-t4",
+          "title": "Laws of Radiation - Concept of Grey Body, Radiation Between Surfaces",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 2-t1",
+          "title": "Parallel and Counterflow Heat Exchangers, Single Pass and Multipass Heat Exchangers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 2-t2",
+          "title": "Plate Heat Exchangers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 2-t3",
+          "title": "Log Mean Temperature Difference - Heat Exchangers Effectiveness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 2-t4",
+          "title": "Number of Transfer Units",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 2-t5",
+          "title": "Evaporators: Types of Evaporation - Single Effect and Multiple Effect Evaporator, Natural and Forced Circulation Evaporator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 3-t1",
+          "title": "Principles of Mass Transfer - Fick's Law of Molecular Diffusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 3-t2",
+          "title": "Diffusion in Solids and Liquids, Concept of Mass Transfer Coefficients",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 3-t3",
+          "title": "Theories of Mass Transfer and Their Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 3-t4",
+          "title": "Interphase Mass Transfer and Overall Mass Transfer Coefficients in Binary Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 3-t5",
+          "title": "Absorption: Types of Absorbers - Plate Column, Packed Column, Operating Characteristics of Stagewise and Differential Contactors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t1",
+          "title": "Relative Volatility - Simple Distillation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t2",
+          "title": "Steam Distillation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t3",
+          "title": "Distillation with Reflux",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t4",
+          "title": "Principle of Azeotropic and Extractive Distillation, McCabe Thiele Method of Calculation of Number of Theoretical Stages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t5",
+          "title": "Total, Minimum and Optimum Reflux",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t6",
+          "title": "Drying: Equilibrium Moisture and Free Moisture, Critical Moisture Content, Bound and Unbound Water",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t7",
+          "title": "Rate of Drying Curves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t8",
+          "title": "Drying Equipments - Tray Dryers, Tower Dryers, Rotary Dryers, Fluid-Bed Dryers, Spray Dryers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t9",
+          "title": "Extraction and Leaching: Liquid Extraction, Liquid-Liquid Equilibrium",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t10",
+          "title": "Equipment for Liquid Extraction - Mixer Settlers, Spray Towers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pbsft504-mModule 4-t11",
+          "title": "Solid-Liquid Extraction - Simple Leaching, Bollmann Extractor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

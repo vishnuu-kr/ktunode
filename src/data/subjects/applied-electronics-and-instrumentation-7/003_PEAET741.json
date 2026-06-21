@@ -1,0 +1,213 @@
+{
+  "id": "peaet741-applied-electronics-and-instrumentation-s7",
+  "code": "PEAET741",
+  "name": "ELECTRONIC DESIGN AUTOMATION",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 1-t1",
+          "title": "Graph Terminology - Basic Graph Theory Terminology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 1-t2",
+          "title": "Data Structures for Representation of Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 1-t3",
+          "title": "Graph Search Algorithms - Breadth First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 1-t4",
+          "title": "Depth First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 1-t5",
+          "title": "Topological Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 1-t6",
+          "title": "Shortest Path Algorithms - Dijkstra's Shortest Path Algorithm and Floyd Warshall Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 2-t1",
+          "title": "Design Automation - VLSI Design Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 2-t2",
+          "title": "VLSI Design Styles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 2-t3",
+          "title": "Partitioning Algorithms - Kernighan-Lin Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 2-t4",
+          "title": "Fiduccia-Mattheyses Algorithm (Basic Algorithmic Description Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 2-t5",
+          "title": "Layout - Layout Layers and Design Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 2-t6",
+          "title": "Physical Design Optimizations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t1",
+          "title": "Compaction - Applications of Compaction Maximum Distance Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t2",
+          "title": "Placement - Wirelength Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t3",
+          "title": "Weighted Wirelength",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t4",
+          "title": "Maximum Cut Size",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t5",
+          "title": "Wire Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t6",
+          "title": "Placement Algorithm - Quadratic Placement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t7",
+          "title": "Floorplanning - Slicing Floorplan",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t8",
+          "title": "Non-Slicing Floorplan",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t9",
+          "title": "Floorplan Representations - Constraint Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 3-t10",
+          "title": "Sequence Pair",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t1",
+          "title": "Global Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t2",
+          "title": "Terminology and Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t3",
+          "title": "Maze Routing Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t4",
+          "title": "Lee's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t5",
+          "title": "Detailed Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t6",
+          "title": "Horizontal and Vertical Constraint Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t7",
+          "title": "Channel Routing Algorithm - Left-Edge Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet741-mModule 4-t8",
+          "title": "Basic Concepts of Static Timing Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

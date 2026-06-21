@@ -1,0 +1,189 @@
+{
+  "id": "pccst601-computer-science-and-business-systems-s6",
+  "code": "PCCST601",
+  "name": "COMPILER DESIGN",
+  "branchId": "computer-science-and-business-systems",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 1-t1",
+          "title": "The Front End",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 1-t2",
+          "title": "The Optimizer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 1-t3",
+          "title": "The Back End",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 1-t4",
+          "title": "Scanners - Recognizing Words, Regular Expressions, From Regular Expression to Scanner: FSA, Implementing Scanners, Hands-On: Recognizing Words with Lex, Regular Expressions in Lex",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 2-t1",
+          "title": "Eliminating Left Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 2-t2",
+          "title": "Backtrack-free Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 2-t3",
+          "title": "Left-Factoring to Eliminate Backtracking, Recursive Descent Parsers, Table-Driven LL(1) Parsers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 3-t1",
+          "title": "Building a Calculator with YACC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 3-t2",
+          "title": "Intermediate Representations: An IR Taxonomy, Graphical IRs - Syntax-Related Trees, Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 3-t3",
+          "title": "Linear IRs - Stack-Machine Code, Three-Address Code, Representing Linear Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 3-t4",
+          "title": "Syntax-Driven Translation: Introduction, Translating Expressions, Translating Control-Flow Statements",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t1",
+          "title": "Code Shape - Arithmetic Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t2",
+          "title": "Boolean and Relational Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t3",
+          "title": "Control-Flow Constructs: Conditional Execution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t4",
+          "title": "Loops and Iteration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t5",
+          "title": "Case Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t6",
+          "title": "Procedure Calls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t7",
+          "title": "Code Optimization - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t8",
+          "title": "Opportunities for Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t9",
+          "title": "Scope of Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t10",
+          "title": "Local Optimization: Local Value Numbering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t11",
+          "title": "Tree-Height Balancing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t12",
+          "title": "Regional Optimization: Superlocal Value Numbering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t13",
+          "title": "Loop Unrolling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t14",
+          "title": "Global Optimization: Finding Uninitialized Variables with Live Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-6-pccst601-mModule 4-t15",
+          "title": "Global Code Placement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

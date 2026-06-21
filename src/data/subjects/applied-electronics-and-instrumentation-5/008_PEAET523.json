@@ -1,0 +1,129 @@
+{
+  "id": "peaet523-applied-electronics-and-instrumentation-s5",
+  "code": "PEAET523",
+  "name": "SOFT COMPUTING",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 1-t1",
+          "title": "Introduction to Soft Computing, Difference Between Hard Computing and Soft Computing, Applications of Soft Computing, Artificial Neurons vs Biological Neurons, Basic Models of Artificial Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 1-t2",
+          "title": "Connections, Learning, Types of Activation Functions, McCulloch and Pitts Neuron, Realization of Logic Gates Using McCulloch-Pitts Neuron Model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 2-t1",
+          "title": "Perceptron Networks - Learning Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 2-t2",
+          "title": "Supervised and Unsupervised Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 2-t3",
+          "title": "Training and Testing Algorithm, Adaptive Linear Neuron - Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 2-t4",
+          "title": "Training and Testing Algorithm, Back Propagation Network - Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 2-t5",
+          "title": "Training and Testing Algorithm, Fuzzy Sets - Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 2-t6",
+          "title": "Operations on Fuzzy Set, Fuzzy Membership Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 3-t1",
+          "title": "Methods of Membership Value Assignments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 3-t2",
+          "title": "Intuition, Inference, Rank Ordering, Fuzzy Relations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 3-t3",
+          "title": "Operations on Fuzzy Relation, Fuzzy Propositions, Fuzzy Implications, Defuzzification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 3-t4",
+          "title": "Lambda Cuts, Defuzzification Methods, Fuzzy Inference Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 3-t5",
+          "title": "Mamdani and Sugeno Types, Fuzzy Logic Control Systems, Applications of Neural Networks, Neural Networks in Control Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 4-t1",
+          "title": "Concepts of Genetic Algorithm, Operators in Genetic Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 4-t2",
+          "title": "Coding, Selection, Cross Over, Mutation, Stopping Condition for Genetic Algorithm, Rank Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet523-mModule 4-t3",
+          "title": "Rank Space Method, AI Search Algorithm, Neuro-Fuzzy Hybrid Systems, Genetic-Neuro Hybrid Systems, Integration of Neural Networks, Fuzzy Logic and Genetic Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

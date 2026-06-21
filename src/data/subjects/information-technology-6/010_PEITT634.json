@@ -1,0 +1,171 @@
+{
+  "id": "peitt634-information-technology-s6",
+  "code": "PEITT634",
+  "name": "QUANTUM COMPUTING",
+  "branchId": "information-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt634-mModule 1-t1",
+          "title": "History of Quantum Computation and Quantum Information, Quantum Bits, Quantum Computation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 1-t2",
+          "title": "Single Qubit Gates, Multiple Qubit Gates, Quantum Circuits, Qubit Copying Circuit, Example: Bell States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 1-t3",
+          "title": "Quantum Algorithms, Classical Computations on a Quantum Computer, Quantum Parallelism, Deutsch's Algorithm, The Deutsch-Jozsa Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt634-mModule 2-t1",
+          "title": "Linear Algebra, Bases and Linear Independence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 2-t2",
+          "title": "Linear Operators and Matrices, The Pauli Matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 2-t3",
+          "title": "Inner Products",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 2-t4",
+          "title": "Eigenvectors and Eigenvalues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 2-t5",
+          "title": "Adjoints and Hermitian Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 2-t6",
+          "title": "Tensor Products",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 2-t7",
+          "title": "Operator Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt634-mModule 3-t1",
+          "title": "State Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 3-t2",
+          "title": "Evolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 3-t3",
+          "title": "Quantum Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 3-t4",
+          "title": "Distinguishing Quantum States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 3-t5",
+          "title": "Projective Measurements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 3-t6",
+          "title": "POVM Measurements, Phase",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 3-t7",
+          "title": "Composite Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-6-peitt634-mModule 4-t1",
+          "title": "Quantum Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 4-t2",
+          "title": "Universal Quantum Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 4-t3",
+          "title": "Simulation of Quantum Systems, The Quantum Fourier Transform, Phase Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 4-t4",
+          "title": "Application: Order Finding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 4-t5",
+          "title": "Quantum Search Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-peitt634-mModule 4-t6",
+          "title": "Quantum Search as a Quantum Simulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

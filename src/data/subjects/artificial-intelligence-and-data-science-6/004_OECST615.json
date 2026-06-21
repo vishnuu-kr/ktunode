@@ -1,0 +1,237 @@
+{
+  "id": "oecst615-artificial-intelligence-and-data-science-s6",
+  "code": "OECST615",
+  "name": "OBJECT ORIENTED PROGRAMMING",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t1",
+          "title": "Introduction to Java - Java Programming Environment and Runtime Environment (Command Line & IDE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t2",
+          "title": "Java Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t3",
+          "title": "Java Virtual Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t4",
+          "title": "Primitive Data Types and Wrapper Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t5",
+          "title": "Casting and Autoboxing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t6",
+          "title": "Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t7",
+          "title": "Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t8",
+          "title": "Vector Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t9",
+          "title": "Operators - Arithmetic, Bitwise, Relational, Boolean Logical, Assignment, Conditional (Ternary)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t10",
+          "title": "Operator Precedence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t11",
+          "title": "Control Statements - Selection Statements, Iteration Statements and Jump Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t12",
+          "title": "Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t13",
+          "title": "Command Line Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t14",
+          "title": "Variable Length Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t15",
+          "title": "Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t16",
+          "title": "Abstract Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t17",
+          "title": "Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t18",
+          "title": "OOP Concepts - Data Abstraction, Encapsulation, Inheritance, Polymorphism, Procedural and Object Oriented Programming Paradigm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t19",
+          "title": "Microservices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t20",
+          "title": "Object Oriented Programming in Java - Declaring Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t21",
+          "title": "Object Reference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t22",
+          "title": "Introduction to Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t23",
+          "title": "Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t24",
+          "title": "Access Modifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 1-t25",
+          "title": "this Keyword",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 2-t1",
+          "title": "Polymorphism - Method Overloading, Using Objects as Parameters, Returning Objects, Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 2-t2",
+          "title": "Static Members, Final Variables, Inner Classes, Inheritance - Super Class, Sub Class, Types of Inheritance, The super Keyword, protected Members, Calling Order of Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 2-t3",
+          "title": "Method Overriding, Dynamic Method Dispatch, Using final with Inheritance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 3-t1",
+          "title": "Packages and Interfaces - Packages - Defining a Package, CLASSPATH, Access Protection, Importing Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 3-t2",
+          "title": "Interfaces - Interfaces v/s Abstract Classes, Defining an Interface, Implementing Interfaces, Accessing Implementations through Interface References, Extending Interface(s)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 3-t3",
+          "title": "Exception Handling - Checked Exceptions, Unchecked Exceptions, try Block and catch Clause, Multiple catch Clauses, Nested try Statements, throw, throws and finally, Java Built-in Exceptions, Custom Exceptions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 4-t1",
+          "title": "Swings Fundamentals - Overview of AWT, Swing v/s AWT, Swing Key Features, Swing Controls, Components and Containers, Swing Packages, Event Handling in Swings, Swing Layout Managers, Exploring Swings - JFrame, JLabel, The Swing Buttons, JTextField",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 4-t2",
+          "title": "Event Handling - Event Handling Mechanisms, Delegation Event Model, Event Classes, Sources of Events, Event Listener Interfaces, Using the Delegation Event Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-oecst615-mModule 4-t3",
+          "title": "Developing Database Applications using JDBC - JDBC Overview, Types, Steps, Common JDBC Components, Connection Establishment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

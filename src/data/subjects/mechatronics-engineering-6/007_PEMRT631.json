@@ -1,0 +1,423 @@
+{
+  "id": "pemrt631-mechatronics-engineering-s6",
+  "code": "PEMRT631",
+  "name": "NETWORK & DATA SECURITY",
+  "branchId": "mechatronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t1",
+          "title": "Network Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t2",
+          "title": "Physical Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t3",
+          "title": "Network Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t4",
+          "title": "Categories of Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t5",
+          "title": "Interconnection of Networks: Internetwork",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t6",
+          "title": "Network Models: Layered Tasks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t7",
+          "title": "OSI Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t8",
+          "title": "Layers in OSI Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t9",
+          "title": "TCP/IP Protocol Suite",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t10",
+          "title": "Application Layer: Principles of Network Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t11",
+          "title": "Network Application Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t12",
+          "title": "Processes Communicating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t13",
+          "title": "Transport Services Available to Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t14",
+          "title": "Transport Services Provided by the Internet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t15",
+          "title": "Application-Layer Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t16",
+          "title": "Guided and Unguided Transmission Media - Co-axial Cable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 1-t17",
+          "title": "Fiber Optic Cable",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t1",
+          "title": "Introduction and Transport-Layer Services: Relationship Between Transport and Network Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t2",
+          "title": "Overview of the Transport Layer in the Internet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t3",
+          "title": "Multiplexing and Demultiplexing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t4",
+          "title": "Connectionless Transport: UDP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t5",
+          "title": "UDP Segment Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t6",
+          "title": "UDP Checksum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t7",
+          "title": "Principles of Reliable Data Transfer: Building a Reliable Data Transfer Protocol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t8",
+          "title": "Pipelined Reliable Data Transfer Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t9",
+          "title": "Go-Back-N",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t10",
+          "title": "Selective Repeat",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t11",
+          "title": "Connection-Oriented Transport TCP: The TCP Connection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t12",
+          "title": "TCP Segment Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t13",
+          "title": "Reliable Data Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t14",
+          "title": "Flow Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t15",
+          "title": "TCP Connection Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t16",
+          "title": "Principles of Congestion Control: The Causes and the Costs of Congestion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t17",
+          "title": "Approaches to Congestion Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t18",
+          "title": "Network-Assisted Congestion-Control Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t19",
+          "title": "ATM ABR Congestion Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 2-t20",
+          "title": "TCP Congestion Control: Fairness",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t1",
+          "title": "Router: Input Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t2",
+          "title": "Switching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t3",
+          "title": "Output Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t4",
+          "title": "Routing: Routing and Forwarding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t5",
+          "title": "Static and Dynamic Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t6",
+          "title": "Routing Control Plane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t7",
+          "title": "IPv6",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t8",
+          "title": "A Brief Foray into IP Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t9",
+          "title": "Routing Algorithms: The Link-State (LS) Routing Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t10",
+          "title": "The Distance-Vector (DV) Routing Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t11",
+          "title": "Hierarchical Routing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t12",
+          "title": "Routing in the Internet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t13",
+          "title": "Intra-AS Routing in the Internet: RIP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t14",
+          "title": "Intra-AS Routing in the Internet: OSPF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t15",
+          "title": "Inter-AS Routing: BGP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 3-t16",
+          "title": "Broadcast Routing Algorithms and Multicast",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t1",
+          "title": "Overview of Network Security: Elements of Network Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t2",
+          "title": "Classification of Network Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t3",
+          "title": "Security Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t4",
+          "title": "Symmetric-Key Cryptography: Data Encryption Standard (DES)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t5",
+          "title": "Advanced Encryption Standard (AES)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t6",
+          "title": "Public-Key Cryptography: RSA Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t7",
+          "title": "Diffie-Hellman Key-Exchange Protocol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t8",
+          "title": "Authentication: Hash Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t9",
+          "title": "Secure Hash Algorithm (SHA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t10",
+          "title": "Digital Signatures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t11",
+          "title": "Firewalls and Packet Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt631-mModule 4-t12",
+          "title": "Proxy Server",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

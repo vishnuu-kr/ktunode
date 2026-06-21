@@ -1,0 +1,441 @@
+{
+  "id": "peaet595-applied-electronics-and-instrumentation-s5",
+  "code": "PEAET595",
+  "name": "ROBOTICS AND AUTOMATION",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t1",
+          "title": "Fundamentals of Robotics and Automation - Definition and History of Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t2",
+          "title": "Differences between Robotics and Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t3",
+          "title": "Applications of Robotics in Industry and Service Sectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t4",
+          "title": "Robot Anatomy - Basic Components - Links",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t5",
+          "title": "Joints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t6",
+          "title": "End Effectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t7",
+          "title": "Degrees of Freedom (DOF) and Their Significance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t8",
+          "title": "Configurations of Robots - Cartesian",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t9",
+          "title": "Cylindrical",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t10",
+          "title": "Spherical",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t11",
+          "title": "Articulated",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t12",
+          "title": "SCARA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t13",
+          "title": "Work Volume and Workspace Analysis - Definition and Importance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t14",
+          "title": "Factors Affecting Workspace",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t15",
+          "title": "Manipulator Kinematics - Position Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t16",
+          "title": "Introduction to Forward and Inverse Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t17",
+          "title": "Homogeneous Transformations and Their Application in Robot Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 1-t18",
+          "title": "D-H Notations - Formulating and Solving Kinematic Equations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t1",
+          "title": "Control Systems for Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t2",
+          "title": "Basic Control System Models - Open-Loop and Closed-Loop Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t3",
+          "title": "Block Diagrams and Transfer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t4",
+          "title": "Robot Motions - Types of Motions - Slew Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t5",
+          "title": "Joint-Interpolated Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t6",
+          "title": "Straight-Line Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t7",
+          "title": "Path Planning and Trajectory Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t8",
+          "title": "Controllers - On/Off Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t9",
+          "title": "Proportional (P) Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t10",
+          "title": "Integral (I) Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t11",
+          "title": "Proportional plus Integral (PI) Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 2-t12",
+          "title": "Proportional plus Derivative (PD) Control and Proportional plus Integral plus Derivative (PID) Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t1",
+          "title": "Actuation and Feedback Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t2",
+          "title": "Sensors - Types of Sensors - Position and Velocity Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t3",
+          "title": "Working Principles of Encoders and Resolvers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t4",
+          "title": "Potentiometers and Tachometers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t5",
+          "title": "Actuators - Electric Actuators - DC Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t6",
+          "title": "Stepper Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t7",
+          "title": "Servomotors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t8",
+          "title": "Hydraulic Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t9",
+          "title": "Pneumatic Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t10",
+          "title": "Power Transmission Devices - Gears",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t11",
+          "title": "Belts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t12",
+          "title": "Chains",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t13",
+          "title": "Lead Screws and Ball Screws",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t14",
+          "title": "End Effectors - Types of Grippers - Mechanical",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t15",
+          "title": "Vacuum and Magnetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t16",
+          "title": "Design Considerations for Grippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t17",
+          "title": "Methods of Power and Control Signal Transmission - Electrical",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 3-t18",
+          "title": "Hydraulic and Pneumatic Transmission",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t1",
+          "title": "Industrial Applications and Work Cell Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t2",
+          "title": "Material Handling - General Considerations for Material Handling with Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t3",
+          "title": "Material Transfer Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t4",
+          "title": "Pick and Place Operations - Techniques and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t5",
+          "title": "Integration with Production Lines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t6",
+          "title": "Palletizing and Related Operations - Methods and Case Studies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t7",
+          "title": "Manufacturing Processes - Die Casting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t8",
+          "title": "Plastic Molding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t9",
+          "title": "Forging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t10",
+          "title": "Machining Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t11",
+          "title": "Stamping Press Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t12",
+          "title": "Role of Robots in Automation of These Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t13",
+          "title": "Robot Cell Layouts - Design Considerations for Multiple Robots and Machine Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t14",
+          "title": "Examples of Typical Robot Cell Layouts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t15",
+          "title": "Work Cell Control - Interlocks and Safety Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t16",
+          "title": "Error Detection and Recovery Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t17",
+          "title": "Work Cell Controllers - Types and Functions of Work Cell Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t18",
+          "title": "Integration with Other Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t19",
+          "title": "Cycle Time Analysis - Techniques for Analyzing and Optimizing Robot Cycle Times",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet595-mModule 4-t20",
+          "title": "Factors Affecting Cycle Time and Productivity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "pecst869-artificial-intelligence-and-machine-learning-s8",
+  "code": "PECST869",
+  "name": "COMPUTATIONAL NUMBER THEORY",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 1-t1",
+          "title": "Introduction to Number Theory: Basic Concepts and Definitions, Greatest Common Divisor (GCD) and Euclidean Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 1-t2",
+          "title": "Modular Arithmetic: Congruences and Modular Arithmetic, Applications of Modular Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 1-t3",
+          "title": "Integer Factorization: Prime Numbers and Factorization, Algorithms for Integer Factorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 1-t4",
+          "title": "Basic Algorithms: Algorithms for Modular Arithmetic, Fast Exponentiation Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 2-t1",
+          "title": "Advanced Factorization Algorithms: Pollard's Rho Algorithm, Elliptic Curve Factorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 2-t2",
+          "title": "Public-Key Cryptography: RSA Algorithm, Security Analysis of RSA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 2-t3",
+          "title": "Elliptic Curve Cryptography: Introduction to Elliptic Curves, Algorithms for Elliptic Curve Cryptosystems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 3-t1",
+          "title": "Public Key Cryptography: RSA Algorithm and Its Implementation, Security Aspects and Cryptanalysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 3-t2",
+          "title": "Elliptic Curve Cryptography: Basics of Elliptic Curves, Elliptic Curve Cryptosystems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 3-t3",
+          "title": "Cryptographic Protocols: Key Exchange Protocols, Digital Signatures and Authentication",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 4-t1",
+          "title": "Algebraic Number Theory: Algebraic Integers and Number Fields, Factorization in Number Fields",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 4-t2",
+          "title": "Computational Methods: Algorithms for Solving Diophantine Equations, Applications in Computational Algebra",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-8-pecst869-mModule 4-t3",
+          "title": "Recent Developments and Applications: Applications in Modern Cryptography and Coding Theory",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

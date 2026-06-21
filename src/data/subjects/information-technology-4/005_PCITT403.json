@@ -1,0 +1,357 @@
+{
+  "id": "pcitt403-information-technology-s4",
+  "code": "PCITT403",
+  "name": "OPERATING SYSTEMS",
+  "branchId": "information-technology",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t1",
+          "title": "Functions of OS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t2",
+          "title": "Types of OS - Batch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t3",
+          "title": "Multiprogrammed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t4",
+          "title": "Time-Sharing and Real-Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t5",
+          "title": "System Calls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t6",
+          "title": "System Structure - Simple Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t7",
+          "title": "Layered Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t8",
+          "title": "Microkernel System Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t9",
+          "title": "Monolithic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t10",
+          "title": "Modules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t11",
+          "title": "Hybrid Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t12",
+          "title": "System Boot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t13",
+          "title": "Process Management: Process Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t14",
+          "title": "Process State",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t15",
+          "title": "PCB - Multithreading - Benefits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t16",
+          "title": "Case Study: Linux System - Process Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t17",
+          "title": "Process Scheduling: Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t18",
+          "title": "Non-Preemptive Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t19",
+          "title": "Preemptive Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t20",
+          "title": "Dispatcher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t21",
+          "title": "Scheduling Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t22",
+          "title": "Scheduling Algorithms - FCFS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t23",
+          "title": "Priority Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 1-t24",
+          "title": "Round Robin Scheduling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-4-pcitt403-mModule 2-t1",
+          "title": "Race Conditions - Critical Sections - Peterson's Solution - Mutual Exclusion - Busy Waiting - Sleep and Wakeup - Bakery Algorithm - Semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 2-t2",
+          "title": "Deadlocks: Deadlock Characteristics - Conditions for Deadlock - Prevention - Avoidance - Safe State",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 2-t3",
+          "title": "Resource Allocation Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 2-t4",
+          "title": "Banker's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 2-t5",
+          "title": "Deadlock Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 2-t6",
+          "title": "Recovery from Deadlock",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t1",
+          "title": "Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t2",
+          "title": "Swapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t3",
+          "title": "Memory Allocation - Fixed Partitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t4",
+          "title": "Variable Partitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t5",
+          "title": "Fragmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t6",
+          "title": "Paging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t7",
+          "title": "Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t8",
+          "title": "Virtual Memory Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t9",
+          "title": "Demand Paging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t10",
+          "title": "Page Replacement Algorithms - FIFO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t11",
+          "title": "Optimal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t12",
+          "title": "Allocation of Frames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 3-t13",
+          "title": "Thrashing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t1",
+          "title": "File Concept - Attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t2",
+          "title": "Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t3",
+          "title": "File Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t4",
+          "title": "File Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t5",
+          "title": "File Access Methods (Sequential Access, Direct Access, Indexed Access)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t6",
+          "title": "File Allocation Methods (Contiguous, Linked, and Indexed Allocation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t7",
+          "title": "Directory Structure (Single-Level, Two-Level, Tree-Structured, Acyclic Graph, General Graph)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t8",
+          "title": "Case Study: Linux File Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t9",
+          "title": "Disk Management: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t10",
+          "title": "Disk Scheduling Algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-4-pcitt403-mModule 4-t11",
+          "title": "Virtual Machines: Benefits & Features - Building Blocks - Types of VMs - Virtualization & Operating System Components",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

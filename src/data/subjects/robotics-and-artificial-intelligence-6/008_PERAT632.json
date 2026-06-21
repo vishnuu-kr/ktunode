@@ -1,0 +1,177 @@
+{
+  "id": "perat632-robotics-and-artificial-intelligence-s6",
+  "code": "PERAT632",
+  "name": "ADAPTIVE CONTROL",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 1-t1",
+          "title": "Adaptive Control - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 1-t2",
+          "title": "Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 1-t3",
+          "title": "Adaptive Systems - Four Approaches with Block Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 1-t4",
+          "title": "Applications of Adaptive Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 1-t5",
+          "title": "Importance of Adaptive Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 1-t6",
+          "title": "Robust Adaptive Control - Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 1-t7",
+          "title": "Robust Control Laws",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 2-t1",
+          "title": "Pole Placement Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 2-t2",
+          "title": "Indirect Self Tuning Regulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 2-t3",
+          "title": "Continuous Time Self Tuners",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 2-t4",
+          "title": "Direct Self Tuning Regulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 2-t5",
+          "title": "Disturbances with Known Characteristics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 3-t1",
+          "title": "Design of Minimum Variance and Moving Average Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 3-t2",
+          "title": "Stochastic Self Tuning Regulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 3-t3",
+          "title": "Unification of Direct Self Tuning Regulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 3-t4",
+          "title": "Linear Quadratic STR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 3-t5",
+          "title": "Adaptive Predictive Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 4-t1",
+          "title": "The MIT Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 4-t2",
+          "title": "Determination of Adaptation Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 4-t3",
+          "title": "Lyapunov Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 4-t4",
+          "title": "Design of MRAS Using Lyapunov Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 4-t5",
+          "title": "BIBO Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 4-t6",
+          "title": "Output Feedback",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat632-mModule 4-t7",
+          "title": "Relations between MRAS and STR",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

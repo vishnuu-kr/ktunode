@@ -1,0 +1,333 @@
+{
+  "id": "pbect604-electronics-and-communication-engineering-s6",
+  "code": "PBECT604",
+  "name": "VLSI CIRCUIT DESIGN",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t2",
+          "title": "Moore's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t3",
+          "title": "ASIC Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t4",
+          "title": "Full Custom ASICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t5",
+          "title": "Standard Cell Based ASICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t6",
+          "title": "Gate Array Based ASICs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t7",
+          "title": "SoCs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t8",
+          "title": "FPGA Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t9",
+          "title": "ASIC and FPGA Design Flows",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t10",
+          "title": "Top-Down and Bottom-Up Design Methodologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 1-t11",
+          "title": "Logical and Physical Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t1",
+          "title": "Material Preparation, Purification and Crystal Growth (CZ Process)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t2",
+          "title": "Wafer Preparation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t3",
+          "title": "Epitaxy: Molecular Beam Epitaxy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t4",
+          "title": "Thermal Oxidation: Dry and Wet Oxidation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t5",
+          "title": "Diffusion and Ion Implantation Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t6",
+          "title": "Lithography: Photolithographic Sequence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t7",
+          "title": "Electron Beam Lithography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t8",
+          "title": "Etching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t9",
+          "title": "Chemical Vapor Deposition and Physical Vapor Deposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t10",
+          "title": "MOSFET Fabrication Techniques: Twin-Tub Fabrication Sequence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 2-t11",
+          "title": "Fabrication Process Flow",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t1",
+          "title": "MOSFET Logic Design: NMOS Inverter (Static Analysis Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t2",
+          "title": "Basic Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t3",
+          "title": "CMOS Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t4",
+          "title": "Static and Transient Analysis of CMOS Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t5",
+          "title": "Static and Dynamic Power Dissipation (Detailed Analysis Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t6",
+          "title": "Propagation Delays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t7",
+          "title": "Realization of Logic Functions with Static CMOS Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t8",
+          "title": "Layout Design and Design Rules: Stick Diagram, Micron Rules, and Lambda Rules (Definitions Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t9",
+          "title": "Layout of CMOS Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 3-t10",
+          "title": "Two-Input NAND and NOR Gates",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t1",
+          "title": "Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t2",
+          "title": "Realization of Logic Gates Using Pass Transistors and Complementary Pass Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t3",
+          "title": "Dynamic Logic Design: Pre-Charge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t4",
+          "title": "Logic Evaluation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t5",
+          "title": "Issues in Dynamic Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t6",
+          "title": "Domino Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t7",
+          "title": "NP Domino Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t8",
+          "title": "Realization of Logic Gate Circuits Using Dynamic Logic (NAND and NOR)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t9",
+          "title": "Sequential Logic and Memory Design: Behavior of Bistable Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t10",
+          "title": "CMOS D Latch and Edge-Triggered Flip-Flop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t11",
+          "title": "Read Only Memory: 4x4 MOS ROM Cell Arrays (NOR and NAND)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t12",
+          "title": "Random Access Memory - SRAM: Six-Transistor CMOS SRAM Cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t13",
+          "title": "DRAM: Three-Transistor and One-Transistor Dynamic Memory Cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t14",
+          "title": "Project: Create a Standard Cell Library Including Basic Logic Gates, Flip-Flops, and Multiplexers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t15",
+          "title": "Project: Design and Implement a Simple RISC Processor on an FPGA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t16",
+          "title": "Project: Simulate the Fabrication Process of a MOSFET Using TCAD Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t17",
+          "title": "Project: Create the Layout of CMOS Logic Gates and Perform Design Rule Checking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pbect604-mModule 4-t18",
+          "title": "Project: Design and Simulate Basic Memory Cells Including SRAM and DRAM",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

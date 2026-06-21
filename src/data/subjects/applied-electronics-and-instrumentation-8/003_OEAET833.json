@@ -1,0 +1,357 @@
+{
+  "id": "oeaet833-applied-electronics-and-instrumentation-s8",
+  "code": "OEAET833",
+  "name": "VIRTUAL INSTRUMENTATION",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t1",
+          "title": "Introduction to Virtual Instrumentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t2",
+          "title": "Definition of Virtual Instrumentation (VI)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t3",
+          "title": "Block Diagram and Architecture of a Virtual Instrument",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t4",
+          "title": "Virtual Instruments Versus Traditional Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t5",
+          "title": "Advantages of VI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t6",
+          "title": "Overview of Virtual Instrumentation in the Engineering Process - Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t7",
+          "title": "Test and Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t8",
+          "title": "Virtual Instruments Beyond the Personal Computer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t9",
+          "title": "Overview of Graphical Programming for VI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t10",
+          "title": "Software Tools Used in VI (Features and Advantages Only) - LabVIEW",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t11",
+          "title": "MATLAB/Scilab",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t12",
+          "title": "Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 1-t13",
+          "title": "Introduction to Smart Instruments (Basic Concepts Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t1",
+          "title": "Introduction to LabVIEW",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t2",
+          "title": "Introduction to Graphical System Design Using LabVIEW",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t3",
+          "title": "Advantages of LabVIEW",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t4",
+          "title": "Key Elements in LabVIEW (Overview Only) - Front Panel and Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t5",
+          "title": "Concept of Virtual Instruments (VIs) and SubVIs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t6",
+          "title": "Steps Involved in Developing Virtual Instruments Using LabVIEW",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t7",
+          "title": "Real Time Data Acquisition - Analog and Digital Input/Output Operations in LabVIEW",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t8",
+          "title": "Basic Concept of Clusters in LabVIEW",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t9",
+          "title": "Simple Design Examples Using LabVIEW (Data Logging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t10",
+          "title": "Monitoring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t11",
+          "title": "Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t12",
+          "title": "Introduction to LabVIEW Real-Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 2-t13",
+          "title": "LabVIEW FPGA and LabVIEW Embedded",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t1",
+          "title": "Data Acquisition Systems (DAQ)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t2",
+          "title": "Introduction to Data Acquisition on PC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t3",
+          "title": "Components of a Data Acquisition System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t4",
+          "title": "Analog vs. Digital Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t5",
+          "title": "Sampling Fundamentals and Sampling Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t6",
+          "title": "Basics of ADC and DAC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t7",
+          "title": "Overview and Need of Signal Conditioning (Amplification and Filtering)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t8",
+          "title": "Interfacing Sensors with Data Acquisition Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t9",
+          "title": "Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t10",
+          "title": "Resolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 3-t11",
+          "title": "Data Acquisition Interface Requirements",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t1",
+          "title": "Common Instrument Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t2",
+          "title": "Overview of Instrument Control Using VISA (Virtual Instrument Software Architecture)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t3",
+          "title": "Basics of 4-20mA Current Loop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t4",
+          "title": "Serial Versus Parallel Data Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t5",
+          "title": "Concept of Baud Rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t6",
+          "title": "Overview of RS-232",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t7",
+          "title": "GPIB - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t8",
+          "title": "Types of Messages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t9",
+          "title": "Overview of Physical Bus Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t10",
+          "title": "Advantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t11",
+          "title": "Overview of IEEE 488.2",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t12",
+          "title": "Basics of Standard Commands for Programmable Instruments (SCPI)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t13",
+          "title": "USB - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t14",
+          "title": "Need for USB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t15",
+          "title": "Overview of USB Data Format",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t16",
+          "title": "Advantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-oeaet833-mModule 4-t17",
+          "title": "Overview of MOD Bus",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

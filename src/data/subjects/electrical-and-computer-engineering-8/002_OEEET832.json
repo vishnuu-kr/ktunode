@@ -1,0 +1,147 @@
+{
+  "id": "oeeet832-electrical-and-computer-engineering-s8",
+  "code": "OEEET832",
+  "name": "PLC AND AUTOMATION",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 1-t1",
+          "title": "Introduction, Evolution, Relay vs PLC vs Computer",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t1",
+          "title": "PLC Hardware and Internal Architecture, Input-Output Devices, Basics of Ladder Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t2",
+          "title": "On/Off Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t3",
+          "title": "Internal Relay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t4",
+          "title": "Jump Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t5",
+          "title": "Data Handling Instruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t6",
+          "title": "Data Manipulation Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t7",
+          "title": "Arithmetic and Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 2-t8",
+          "title": "PID and Other Important Instructions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 3-t1",
+          "title": "Timers and Counters in PLC: Problems, Design, Development, and Simulation of PLC Programs for Temperature Control and Valve Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 3-t2",
+          "title": "Conveyor Belt Control and Control of a Process, PLC Installation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 3-t3",
+          "title": "Trouble Shooting and Maintenance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 3-t4",
+          "title": "Design of Alarms and Interlocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 3-t5",
+          "title": "Networks of PLC: Distributed Control System (DCS) - Evolution, Various Architectures, Comparison, Local Control Unit",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 4-t1",
+          "title": "DCS - LCU Languages, Process Interfacing Issues, Communication Facilities, Operator Interface, Low Level and High Level Operator Interface, Displays, Engineering Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 4-t2",
+          "title": "Low Level and High Level Engineering Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 4-t3",
+          "title": "Factors to be Considered in Selecting DCS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 4-t4",
+          "title": "Other Key Issues in DCS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-oeeet832-mModule 4-t5",
+          "title": "Packaging and Power System Issues",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "pceet402-electrical-and-electronics-engineering-s4",
+  "code": "PCEET402",
+  "name": "SYNCHRONOUS & INDUCTION MACHINES",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 1-t1",
+          "title": "Principle of Operation of 3-Phase Alternators - Classification - Constructional Features - Types of Armature Windings - Winding Diagram of a 3-Phase, 12-Slot, 2-Pole, Single Layer Full-Pitched Armature Winding (Winding Diagram not for Evaluation) - Coil-Span Factor and Distribution Factor (Sinusoidal Flux Distribution only) - EMF Equation - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 1-t2",
+          "title": "Cylindrical-Rotor Type Synchronous Generator on No-Load - Open Circuit Characteristics - Synchronous Generator on Load - Armature Reaction - Effect of Armature Reaction - Synchronous Impedance - Equivalent Circuit - Phasor Diagram - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 1-t3",
+          "title": "Voltage Regulation - OC and SC Tests - EMF and MMF Methods - ZPF Test - Potier Method - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 2-t1",
+          "title": "Power Flow Equations in Cylindrical-Rotor Type Synchronous Generator - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 2-t2",
+          "title": "Parallel Operation - Synchronous Generator on Infinite Bus-Bar - Conditions - Methods of Synchronisation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 2-t3",
+          "title": "Effect of Change of Mechanical Input - Effect of Change of Excitation - V-Curves and Inverted V-Curves - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 2-t4",
+          "title": "Salient-Pole Synchronous Generator - Two Reaction Theory - Phasor Diagram - Slip Test for Determination of Xd and Xq - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 2-t5",
+          "title": "Synchronous Motor - Rotating Magnetic Field - Principle of Operation - Starting Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 2-t6",
+          "title": "Power Developed (Both Cylindrical Rotor Type and Salient-Pole Type) - Excitation Power & Reluctance Power - Power Angle Characteristics - Losses and Efficiency - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 2-t7",
+          "title": "V-Curves and Inverted V-Curves",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 3-t1",
+          "title": "3-Phase Induction Motor - Principle of Operation - Classification - Constructional Features - Torque Equation - Torque-Slip Characteristics - Relation between Starting Torque, Maximum Torque and Full-Load Torque - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 3-t2",
+          "title": "Phasor Diagram - Equivalent Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 3-t3",
+          "title": "Power Flow Diagram - Losses and Efficiency - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 3-t4",
+          "title": "No-Load and Blocked-Rotor Tests - Circle Diagram - Numerical Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 3-t5",
+          "title": "Starting of Induction Motors - Types of Starters - DOL Starter - Autotransformer Starter - Star-Delta Starter - Numerical Problems - Rotor Resistance Starter (No Design)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 4-t1",
+          "title": "Braking of Induction Motors - Plugging - Dynamic Braking - Regenerative Braking (Concepts only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 4-t2",
+          "title": "Speed Control - Stator Voltage Control - V/f Control - Rotor Resistance Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 4-t3",
+          "title": "Induction Generator - Line Excited and Self-Excited Induction Generators (Principle of Operation only) - Torque-Slip Characteristics for Braking, Motoring and Regeneration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 4-t4",
+          "title": "Single-Phase Induction Motors - Double Revolving Field Theory - Equivalent Circuit - Torque Slip Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pceet402-mModule 4-t5",
+          "title": "Types of 1-Phase Induction Motors - Split-Phase - Capacitor-Start Induction-Run - Permanent Capacitor Types - Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

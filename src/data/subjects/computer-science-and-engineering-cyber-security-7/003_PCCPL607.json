@@ -1,0 +1,57 @@
+{
+  "id": "pccpl607-computer-science-and-engineering-cyber-security-s7",
+  "code": "PCCPL607",
+  "name": "PCCPL607",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pccpl607-mExperiment 2-t1",
+          "title": "For the computer controlled 2D planar robot, when the desired destination position (X, Y) is given, move the end effector to this point and display the computed values of joint angles. Demonstrate importance of singularities.",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pccpl607-mExperiment 2-t2",
+          "title": "Graphically simulate the forward kinematics of the following 3 joint manipulators: Cartesian robot, Cylindrical robot, Spherical robot, and Articulated robot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pccpl607-mExperiment 2-t3",
+          "title": "Using suitable programming language, find the homogeneous transformation matrix for a set of sequential joint movements (translation and rotation) if the parameters of joint movements are specified with respect to the fixed frame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pccpl607-mExperiment 2-t4",
+          "title": "Repeat the above experiment, if the parameters of joint movements are specified relative to the moving frames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pccpl607-mExperiment 2-t5",
+          "title": "Using a DC motor and suitable measuring instruments, plot the torque versus current, torque versus angular velocity, and power versus angular velocity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pccpl607-mExperiment 2-t6",
+          "title": "Using ultrasonic sensors, stepper/servo motors and infrared sensors, develop a line follower robot that will follow a trajectory, avoiding obstacles on its path",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pccpl607-mExperiment 2-t7",
+          "title": "Using DC servo/stepper motors, implement a pick and place SCARA robot arm in 3D plane",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

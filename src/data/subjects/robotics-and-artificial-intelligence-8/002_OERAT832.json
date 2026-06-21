@@ -1,0 +1,237 @@
+{
+  "id": "oerat832-robotics-and-artificial-intelligence-s8",
+  "code": "OERAT832",
+  "name": "IMAGE PROCESSING AND ROBOT VISION",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 1-t1",
+          "title": "Elements of Visual Perception",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 1-t2",
+          "title": "Image Sensing and Acquisition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 1-t3",
+          "title": "A Simple Image Formation Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 1-t4",
+          "title": "Image Sampling and Quantization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 1-t5",
+          "title": "Basic Relationship Between Pixels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 1-t6",
+          "title": "Distance Measures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t1",
+          "title": "Intensity Transformation Functions - Image Negatives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t2",
+          "title": "Log Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t3",
+          "title": "Power Law Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t4",
+          "title": "Piecewise-Linear Transformation Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t5",
+          "title": "Contrast Stretching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t6",
+          "title": "Intensity Level Slicing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t7",
+          "title": "Bit Plane Slicing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t8",
+          "title": "Fundamentals of Spatial Filtering - Mechanics of Spatial Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t9",
+          "title": "Vector Representation of Linear Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t10",
+          "title": "Generating Spatial Filter Masks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 2-t11",
+          "title": "Smoothing Linear Filters and Nonlinear Filters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t1",
+          "title": "Reflection of a Set and Translation of a Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t2",
+          "title": "Erosion and Dilation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t3",
+          "title": "Duality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t4",
+          "title": "Opening and Closing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t5",
+          "title": "Image Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t6",
+          "title": "Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t7",
+          "title": "Region Approach to Image Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t8",
+          "title": "Clustering Techniques - Hierarchical",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t9",
+          "title": "K-Means",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t10",
+          "title": "Thresholding - Global Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 3-t11",
+          "title": "Adaptive Thresholding",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 4-t1",
+          "title": "Camera and Epipolar Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 4-t2",
+          "title": "Homography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 4-t3",
+          "title": "Rectification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 4-t4",
+          "title": "RANSAC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 4-t5",
+          "title": "3-D Reconstruction Framework",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat832-mModule 4-t6",
+          "title": "Background Subtraction and Modelling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

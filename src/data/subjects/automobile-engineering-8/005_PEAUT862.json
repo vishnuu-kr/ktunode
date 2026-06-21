@@ -1,0 +1,207 @@
+{
+  "id": "peaut862-automobile-engineering-s8",
+  "code": "PEAUT862",
+  "name": "ADVANCED AUTOMOTIVE ELECTRICAL AND ELECTRONIC SYSTEMS",
+  "branchId": "automobile-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 1-t1",
+          "title": "Vehicle Network Systems - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 1-t2",
+          "title": "Network Architecture - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 1-t3",
+          "title": "Network Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 1-t4",
+          "title": "Vehicle Networks - CAN, LIN, MOST, FlexRay Protocol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 1-t5",
+          "title": "Vehicle Network Diagnosis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 1-t6",
+          "title": "Real-Time Operating Systems (RTOS) - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 1-t7",
+          "title": "AUTOSAR - Introduction, System Architecture, Software Architecture",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 2-t1",
+          "title": "Ethernet in Automobiles. Connected Car - Cyber-Physical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 2-t2",
+          "title": "Wireless Sensor Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 2-t3",
+          "title": "Telematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 2-t4",
+          "title": "Vehicle to Network (V2N), Vehicle to Infrastructure (V2I), Vehicle to Vehicle (V2V), Vehicle to Cloud (V2C), Vehicle to Pedestrian (V2P), Vehicle to Device (V2D), Vehicle to Grid (V2G). In-Vehicle Networks: Types of IVNs - Body, Powertrain, Chassis, and Infotainment Networks",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 3-t1",
+          "title": "Electronic Fuel Control, Engine Control Sequence, Open Loop and Closed Control, Cold Starting, Acceleration and Full Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 3-t2",
+          "title": "Enrichment, Deceleration Leaning, Overrun Fuel Cut Off, Idle Speed Control and EGR Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 3-t3",
+          "title": "Fuel Injection System Parameters Affecting Combustion, Noise and Emissions in CI Engines. Pilot, Main, Advanced Post Injection and Retarded Post Injection. Electronic Ignition Control, Ignition Timing Map, Ignition Timing Calculation (Initial Timing, Basic Advance Angle, Corrective Advance Angle), Spark Advance Correction Scheme",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t1",
+          "title": "Adaptive Cruise Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t2",
+          "title": "Anti-Lock Braking System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t3",
+          "title": "Traction Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t4",
+          "title": "Electronic Brake Force Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t5",
+          "title": "Electronic Stability Program",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t6",
+          "title": "Airbags",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t7",
+          "title": "Collision Avoidance Radar Warning System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t8",
+          "title": "Tyre Pressure Monitoring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t9",
+          "title": "Lane Departure Warning System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t10",
+          "title": "Night Vision System. Electronic Control Transmission: Control of Shift Timing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t11",
+          "title": "Control of Lock-Up",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t12",
+          "title": "Neutral to Drive Squat Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t13",
+          "title": "Engine Torque Control. Dual Clutch Automatic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t14",
+          "title": "Automated Manual Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-8-peaut862-mModule 4-t15",
+          "title": "Continuously Variable Transmission. GPS Navigation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

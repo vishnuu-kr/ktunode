@@ -1,0 +1,225 @@
+{
+  "id": "pemet521-mechanical-automobile-engineering-s5",
+  "code": "PEMET521",
+  "name": "COMPUTATIONAL FLUID DYNAMICS",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t1",
+          "title": "Introduction to Computational Fluid Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t2",
+          "title": "Governing Equations of Fluid Flow and Heat Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t3",
+          "title": "Conservative Form of Navier-Stokes Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t4",
+          "title": "General Transport Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t5",
+          "title": "Physical and Mathematical Classifications of Partial Differential Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t6",
+          "title": "Elliptic, Parabolic, and Hyperbolic Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t7",
+          "title": "Comparison of Experimental, Theoretical, and Numerical Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 1-t8",
+          "title": "Applications of CFD",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t1",
+          "title": "Discretization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t2",
+          "title": "Converting Derivatives to Their Finite Difference Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t3",
+          "title": "Taylor's Series Approach and Polynomial Fitting Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t4",
+          "title": "Central Difference, Backward Difference, and Forward Difference of First and Second Order Derivatives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t5",
+          "title": "Solution of Partial Differential Equations Using Finite Difference Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t6",
+          "title": "Discretization Error, Truncation Error, Round Off Error, Consistency, and Numerical Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t7",
+          "title": "Iterative Convergence: Condition for Convergence, Rate of Convergence, and Termination of Iteration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 2-t8",
+          "title": "Boundary and Initial Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t1",
+          "title": "Introduction to Finite Volume Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t2",
+          "title": "Finite Volume Method for Steady One-Dimensional Conduction Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t3",
+          "title": "One-Dimensional Transient Heat Conduction Problems: Explicit, Implicit, and Crank-Nicholson Schemes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t4",
+          "title": "Under and Over Relaxations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t5",
+          "title": "Handling of Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t6",
+          "title": "Dealing with Dirichlet, Neumann, and Robins Type Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t7",
+          "title": "Two-Dimensional Steady State Conduction Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t8",
+          "title": "Point-by-Point and Line-by-Line Method of Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 3-t9",
+          "title": "Tri-Diagonal Matrix Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 4-t1",
+          "title": "Finite Volume Method for Steady-State Diffusion and Convection-Diffusion Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 4-t2",
+          "title": "Central Difference and Upwind Schemes for Convection and Diffusion Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 4-t3",
+          "title": "Two-Dimensional Incompressible Viscous Flows",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 4-t4",
+          "title": "Staggered Grid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 4-t5",
+          "title": "Pressure Correction Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 4-t6",
+          "title": "Solution Algorithm for Pressure-Velocity Coupling in Steady Flows: SIMPLE Algorithm to Solve Navier-Stokes Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pemet521-mModule 4-t7",
+          "title": "Computer Graphics Techniques to Present CFD Results",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

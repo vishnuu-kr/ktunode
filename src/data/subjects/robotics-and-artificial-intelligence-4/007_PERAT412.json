@@ -1,0 +1,171 @@
+{
+  "id": "perat412-robotics-and-artificial-intelligence-s4",
+  "code": "PERAT412",
+  "name": "PLC & DISTRIBUTED CONTROL SYSTEMS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 1-t1",
+          "title": "Architecture of PLC - Types of PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 1-t2",
+          "title": "PLC Modules, Input and Output Modules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 1-t3",
+          "title": "Digital and Analog Input/Output - Examples of Digital and Analog Inputs/Outputs in PLC - AC-DC Power Supplies in PLC - Isolators - PLC Configuration - Scan Cycle - Capabilities of PLC - Selection Criteria for PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 1-t4",
+          "title": "PLC Communication with PC and Software - PLC Wiring - Installation of PLC and its Modules. PLC Programming Languages: Ladder Logic, Functional Block Diagram (FBD), Sequential Flow Chart (SFC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 1-t5",
+          "title": "Structured Text",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 1-t6",
+          "title": "Instruction List",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 2-t1",
+          "title": "Programming of PLC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 2-t2",
+          "title": "Ladder Logic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 2-t3",
+          "title": "Realization of Simple Logic Circuits Programming on-off Inputs/Outputs. Auxiliary Commands and Functions: PLC Basic Functions - Register Basics - Timer Functions - Counter Functions. Program Control Instructions - Math Instructions - Sequencers - PLC Based Traffic Light System, Stepper Motor and Servo Motor Control using PLC, Analog Sensor Interfacing with PLC. Applications of PLC: Case Studies of Manufacturing Automation and Process Automation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 3-t1",
+          "title": "PLC Programming Tools as per IEC 61131 - Developing Programs using Sequential Function Chart and FBD. Networking PLC: Using RS232",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 3-t2",
+          "title": "RS485",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 3-t3",
+          "title": "Protocols - Ethernet - Modbus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 3-t4",
+          "title": "CANOpen",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 3-t5",
+          "title": "OPC - Open Platform Communication - OPC UA. Industrial Automation: General Block Diagrams of DDC - Supervisory Control - Data Acquisition System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t1",
+          "title": "DCS Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t2",
+          "title": "Various Function Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t3",
+          "title": "DCS Components/Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t4",
+          "title": "DCS Architecture of Different Makes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t5",
+          "title": "Comparison of these Architectures with Automation Pyramid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t6",
+          "title": "DCS Specification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t7",
+          "title": "Latest Trends and Developments in DCS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t8",
+          "title": "DCS Support to Enterprise Resources Planning (ERP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-perat412-mModule 4-t9",
+          "title": "Performance Criteria for DCS and other Automation Tools",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

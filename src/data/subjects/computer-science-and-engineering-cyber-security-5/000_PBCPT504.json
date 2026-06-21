@@ -1,0 +1,237 @@
+{
+  "id": "pbcpt504-computer-science-and-engineering-cyber-security-s5",
+  "code": "PBCPT504",
+  "name": "FUNDAMENTALS OF REAL TIME DIGITAL SIGNAL PROCESSING",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t1",
+          "title": "Basic Elements of Real-Time Signal Processing Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t2",
+          "title": "Analog Interface - Sampling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t3",
+          "title": "Quantization and Encoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t4",
+          "title": "Smoothing Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t5",
+          "title": "Data Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t6",
+          "title": "DSP Hardware and DSP Hardware Options",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t7",
+          "title": "Digital Signal Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t8",
+          "title": "Fixed Point and Floating Point Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t9",
+          "title": "Real-Time Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t10",
+          "title": "DSP System Design - Algorithm Development",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t11",
+          "title": "Selection of DSP Hardware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 1-t12",
+          "title": "Software Development and Tools",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t1",
+          "title": "Introduction to a Popular DSP from Texas Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t2",
+          "title": "CPU Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t3",
+          "title": "CPU Data Paths and Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t4",
+          "title": "Timers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t5",
+          "title": "Interrupts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t6",
+          "title": "Internal Data/Program Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t7",
+          "title": "External Memory Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t8",
+          "title": "Pipelining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t9",
+          "title": "Number System (Fixed and Floating Point Format)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t10",
+          "title": "Fixed Point Instruction Set and Addressing Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 2-t11",
+          "title": "TMS 320C67XX CPU Simple Programming Examples Using C and Assembly",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 3-t1",
+          "title": "FIR and IIR Digital Filter Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 3-t2",
+          "title": "Filter Design Programs Using MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 3-t3",
+          "title": "Fourier Transform: DFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 3-t4",
+          "title": "FFT Programs Using MATLAB",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 4-t1",
+          "title": "Sine Wave Generators - Lookup Table Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 4-t2",
+          "title": "Linear Chirp Signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 4-t3",
+          "title": "Noise Generators - Linear Congruential Sequence Generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 4-t4",
+          "title": "Pseudo Random Binary Sequence Generator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 4-t5",
+          "title": "White Colour and Gaussian Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 4-t6",
+          "title": "DTMF Generation and Detection - DTMF Generator and Detector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pbcpt504-mModule 4-t7",
+          "title": "Project Based Learning: The objective of project based learning is to strengthen the understanding of students' fundamentals through effective application of theoretical concepts. Projects can help to boost students' skills and widen the horizon of their thinking. The ultimate aim of an engineering student is to resolve a problem by applying theoretical knowledge. In the beginning, students shall be given an awareness and/or guideline on how to implement and learn this course through a project and form groups in the first few weeks. Each group should identify a project that can be done to understand a part of the contents of this course and perform a literature survey. Choose a suitable platform for your application and the input output devices to be interfaced. Develop the block diagram and present before the jury within first month after the commencement of classes. Implement necessary hardware and software to develop the prototype. Prepare a report and present before the jury for final evaluation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "pceet205-electronics-and-instrumentation-s2",
+  "code": "PCEET205",
+  "name": "MEASUREMENTS AND INSTRUMENTATION (ELECTRICAL AND ELECTRONICS ENGINEERING)",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 1-t1",
+          "title": "Functional Elements of Measurements Systems - Block Schematic and Brief Operation of Building Blocks, Standards of Measurements, Static Characteristics (Accuracy, Precision, Linearity, Resolution), Need for Calibration, Types of Errors in Instruments, Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 1-t2",
+          "title": "Operating Forces and Torques: Deflecting, Controlling and Damping Torques - Gravity and Spring Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 1-t3",
+          "title": "Air, Fluid Friction and Eddy Current Damping, Measurement of Voltage and Current - Moving Coil and Moving Iron Types, Range Extension - Shunts and Multipliers (Include Simple Problems of Range Extension)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t1",
+          "title": "Magnetic Measurement - Flux Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t2",
+          "title": "Determination of BH Curve - Hysteresis Loop (Method of Reversal), Measurement of Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t3",
+          "title": "Wheatstone's Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t4",
+          "title": "Kelvin's Double Bridge (Simple Problems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t5",
+          "title": "Loss of Charge Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t6",
+          "title": "Measurement of Earth Resistance, Measurement of Inductance - Maxwell's Inductance Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t7",
+          "title": "Measurement of Capacitance - Schering's Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t8",
+          "title": "Measurement of Frequency - Wien Bridge (Include Simple Problems), Q-Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 2-t9",
+          "title": "LCR Meters (Description Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t1",
+          "title": "Measurement of Power Using Dynamometer Type Wattmeter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t2",
+          "title": "Three Phase Power Measurement Using Two Wattmeter Method (Include Phasor Diagrams and Expressions)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t3",
+          "title": "Simple Problems of Two Wattmeter Method, Measurement of Energy Using Induction Type Energy Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t4",
+          "title": "Two Element Energy Meter, Instrument Transformers - CT and PT - Principle of Operation - Range Extension, Basic Principles of Electronic Multimeter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t5",
+          "title": "Digital Voltmeter, Digital Energy Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t6",
+          "title": "TOD Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t7",
+          "title": "Smart Metering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 3-t8",
+          "title": "Bidirectional Meters (Description Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 4-t1",
+          "title": "Basic Working Principle, Types and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-2-pceet205-mModule 4-t2",
+          "title": "Measurement of Angular Speed and Luminous Intensity, Principles of Digital Data Acquisition Systems, Role of Signal Conditioning Systems (Basic Principles Only), Phasor Measurement Unit (Block Schematic and Description Only), CRO, DSO and Harmonic Analyzers: Block Diagram, Basic Principles and Applications Only, Virtual Instrumentation Systems: Block Schematic and Description Only, IoT and Data Analytics for Industrial Process - Case Study on Smart Grid",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

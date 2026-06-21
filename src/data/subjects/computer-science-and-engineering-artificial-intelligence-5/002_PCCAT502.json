@@ -1,0 +1,225 @@
+{
+  "id": "pccat502-computer-science-and-engineering-artificial-intelligence-s5",
+  "code": "PCCAT502",
+  "name": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE",
+  "branchId": "computer-science-and-engineering-artificial-intelligence",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 1-t1",
+          "title": "Definitions and scope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 1-t2",
+          "title": "Historical milestones in AI development",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 1-t3",
+          "title": "Intelligent agents: concepts of agents and environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 1-t4",
+          "title": "Rationality and the nature of environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 1-t5",
+          "title": "Structures of agents: simple reflex, model-based, goal-based, and utility-based",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 1-t6",
+          "title": "Problem-solving agents: problem formulation and agent-based problem solving",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 1-t7",
+          "title": "Examples of problem-solving scenarios",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t1",
+          "title": "Uninformed search strategies: breadth-first search (BFS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t2",
+          "title": "Depth-first search (DFS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t3",
+          "title": "Heuristic search: hill climbing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t4",
+          "title": "A* algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t5",
+          "title": "Problem reduction techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t6",
+          "title": "Game playing and adversarial search: concepts of adversarial search and game theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t7",
+          "title": "Minimax algorithm for optimal decision-making",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t8",
+          "title": "Challenges in game playing and problem-solving in multiplayer games",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t9",
+          "title": "Alpha-beta pruning for efficient game tree exploration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 2-t10",
+          "title": "Evaluation functions and heuristics in game playing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 3-t1",
+          "title": "Predicate logic and logic programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 3-t2",
+          "title": "Semantic networks, frames, and inheritance systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 3-t3",
+          "title": "Rule-based systems and constraint propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 3-t4",
+          "title": "Reasoning under uncertainty: basics of probability theory and Bayesian reasoning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 3-t5",
+          "title": "Dempster-Shafer theory for managing uncertainty",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 3-t6",
+          "title": "Applications of reasoning under uncertainty in AI systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t1",
+          "title": "Inductive learning and decision trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t2",
+          "title": "Explanation-based learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t3",
+          "title": "Statistical learning methods and reinforcement learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t4",
+          "title": "Expert systems: introduction and basic concepts of expert systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t5",
+          "title": "Structure and functioning of expert systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t6",
+          "title": "Knowledge engineering and acquisition methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t7",
+          "title": "Societal impacts and ethical considerations in AI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t8",
+          "title": "Reasoning techniques: rule-based, frame-based, model-based, and case-based",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-artificial-intelligence-5-pccat502-mModule 4-t9",
+          "title": "Handling uncertainty in expert systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

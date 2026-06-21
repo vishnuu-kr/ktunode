@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Activity, Flame, ListTodo, Plus, Share2, 
-  AlertCircle, Calculator, AlertTriangle, 
-  HelpCircle, CheckCircle2, Info, ArrowRight, Sparkles,
+  Activity, ListTodo, Plus, Share2,
+  AlertCircle, Calculator, AlertTriangle,
+  HelpCircle, CheckCircle2, Info,
   Trash2, Edit, Check
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
@@ -105,7 +105,7 @@ export default function AttendanceTracker({
   branch,
   sem,
   attendanceSubjects,
-  attendanceStreak,
+  attendanceStreak: _attendanceStreak,
   setAttendanceSubjects,
   triggerNotification,
   loadSemesterData
@@ -186,13 +186,13 @@ export default function AttendanceTracker({
   const isTrackerEmpty = attendanceSubjects.length === 0;
 
   // Calculate free attendance marks according to KTU rules
-  let freeMarks = 0;
+  let _freeMarks = 0;
   let freeMarksLabel = "0 / 5 Marks";
   let freeMarksColor = "text-rose-500 dark:text-rose-400";
-  if (avg >= 90) { freeMarks = 5; freeMarksLabel = "5 / 5 Marks (Excellent)"; freeMarksColor = "text-emerald-500 dark:text-emerald-400"; }
-  else if (avg >= 85) { freeMarks = 4; freeMarksLabel = "4 / 5 Marks (Good)"; freeMarksColor = "text-emerald-500 dark:text-emerald-400"; }
-  else if (avg >= 80) { freeMarks = 3; freeMarksLabel = "3 / 5 Marks (Average)"; freeMarksColor = "text-blue-500 dark:text-blue-400"; }
-  else if (avg >= 75) { freeMarks = 2; freeMarksLabel = "2 / 5 Marks (Marginal)"; freeMarksColor = "text-amber-500 dark:text-amber-400"; }  const handleShareRunway = () => {
+  if (avg >= 90) { _freeMarks = 5; freeMarksLabel = "5 / 5 Marks (Excellent)"; freeMarksColor = "text-emerald-500 dark:text-emerald-400"; }
+  else if (avg >= 85) { _freeMarks = 4; freeMarksLabel = "4 / 5 Marks (Good)"; freeMarksColor = "text-emerald-500 dark:text-emerald-400"; }
+  else if (avg >= 80) { _freeMarks = 3; freeMarksLabel = "3 / 5 Marks (Average)"; freeMarksColor = "text-blue-500 dark:text-blue-400"; }
+  else if (avg >= 75) { _freeMarks = 2; freeMarksLabel = "2 / 5 Marks (Marginal)"; freeMarksColor = "text-amber-500 dark:text-amber-400"; }  const handleShareRunway = () => {
     let message = "My KTU Attendance Runway:\n";
     attendanceSubjects.forEach(sub => {
       const pct = sub.total > 0 ? Math.round((sub.attended / sub.total) * 100) : 0;

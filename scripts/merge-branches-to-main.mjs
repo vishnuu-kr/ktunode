@@ -10,7 +10,6 @@ import fs from "fs";
 import path from "path";
 
 const SEMS = (process.argv.slice(2).length ? process.argv.slice(2) : ["3", "4", "5"]).map(String);
-const CODES = ["ce", "cs", "ec", "ee", "me"];
 const DIR = path.join(process.cwd(), "src", "data", "subjects");
 const MAXB = 256 * 1024 * 1024;
 
@@ -32,18 +31,51 @@ for (const sem of SEMS) {
     .filter((l) => new RegExp(`origin/auto-notes-sem-${sem}-chunk-\\d+$`).test(l));
   if (refs.length === 0) { console.log(`sem ${sem}: no branches`); continue; }
 
-  for (const code of CODES) {
-    const folder = path.join(DIR, `${code}-${sem}`);
-    if (!fs.existsSync(folder)) continue;
+  // Pre-calculate which files are different in each branch to avoid useless git show calls
+  const branchDiffs = new Map();
+  for (const ref of refs) {
+    try {
+      const diffFiles = execSync(`git diff --name-only HEAD..${ref}`, { maxBuffer: MAXB, encoding: "utf8" })
+        .split("\n")
+        .map((l) => l.trim())
+        .filter(Boolean);
+      branchDiffs.set(ref, new Set(diffFiles));
+    } catch (e) {
+      console.warn(`Warning: Could not get diff for ${ref}: ${e.message}`);
+      // Fallback: assume all files might be changed
+      branchDiffs.set(ref, null);
+    }
+  }
+
+  const folders = fs.readdirSync(DIR)
+    .filter((f) => f.endsWith(`-${sem}`) && fs.statSync(path.join(DIR, f)).isDirectory());
+
+  for (const folderName of folders) {
+    const folder = path.join(DIR, folderName);
     for (const fname of fs.readdirSync(folder)) {
       if (!fname.endsWith(".json")) continue;
       const fpath = path.join(folder, fname);
-      const rel = `src/data/subjects/${code}-${sem}/${fname}`;
+      const rel = `src/data/subjects/${folderName}/${fname}`;
+      
+      // Check if any branch modified this file. If not, we don't need to check any branch.
+      let anyBranchChanged = false;
+      for (const ref of refs) {
+        const diffSet = branchDiffs.get(ref);
+        if (diffSet === null || diffSet.has(rel)) {
+          anyBranchChanged = true;
+          break;
+        }
+      }
+      if (!anyBranchChanged) continue;
+
       const base = JSON.parse(fs.readFileSync(fpath, "utf8"));
 
       // best content per topic from all branch versions
       const best = new Map();
       for (const ref of refs) {
+        const diffSet = branchDiffs.get(ref);
+        if (diffSet !== null && !diffSet.has(rel)) continue;
+
         const raw = show(ref, rel);
         if (!raw) continue;
         let v; try { v = JSON.parse(raw); } catch { continue; }

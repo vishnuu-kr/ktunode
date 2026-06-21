@@ -1,0 +1,105 @@
+{
+  "id": "pesft415-safety-and-fire-engineering-s3",
+  "code": "PESFT415",
+  "name": "COMPUTATIONAL FLUID DYNAMICS",
+  "branchId": "safety-and-fire-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 1-t1",
+          "title": "Introduction to Computational Fluid Dynamics, Governing Equations of Fluid Flow and Heat Transfer, Conservative Form of Navier-Stokes Equation, General Transport Equation, Physical and Mathematical Classifications of Partial Differential Equations, Elliptic, Parabolic and Hyperbolic Equations, Comparison of Experimental, Theoretical and Numerical Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 1-t2",
+          "title": "Applications of CFD",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 2-t1",
+          "title": "Discretization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 2-t2",
+          "title": "Converting Derivatives to Their Finite Difference Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 2-t3",
+          "title": "Taylor's Series Approach and Polynomial Fitting Approach, Central Difference, Backward Difference, and Forward Difference of First and Second Order Derivatives, Solution of Partial Differential Equations Using Finite Difference Equations, Discretization Error, Truncation Error, Round Off Error, Consistency and Numerical Stability, Iterative Convergence, Condition for Convergence, Rate of Convergence, Termination of Iteration, Boundary and Initial Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 3-t1",
+          "title": "Introduction to Finite Volume Method, Finite Volume Method for Steady One-Dimensional Conduction Problems, One-Dimensional Transient Heat Conduction Problems - Explicit, Implicit, Crank-Nicholson Schemes, Under and Over Relaxations, Handling of Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 3-t2",
+          "title": "Dealing with Dirichlet, Neumann, and Robin Type Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 3-t3",
+          "title": "Two-Dimensional Steady State Conduction Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 3-t4",
+          "title": "Point-by-Point and Line-by-Line Method of Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 3-t5",
+          "title": "Tri-Diagonal Matrix Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 4-t1",
+          "title": "Finite Volume Method for Steady-State Diffusion and Convection-Diffusion Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-3-pesft415-mModule 4-t2",
+          "title": "Central Difference and Upwind Schemes for Convection and Diffusion Problems, Two-Dimensional Incompressible Viscous Flows, Staggered Grid, Pressure Correction Methods, Solution Algorithm for Pressure-Velocity Coupling in Steady Flows - SIMPLE Algorithm to Solve Navier-Stokes Equations, Computer Graphics Techniques to Present CFD Results",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

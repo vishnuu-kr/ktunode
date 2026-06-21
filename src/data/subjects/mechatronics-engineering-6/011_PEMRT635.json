@@ -1,0 +1,153 @@
+{
+  "id": "pemrt635-mechatronics-engineering-s6",
+  "code": "PEMRT635",
+  "name": "SOFT COMPUTING",
+  "branchId": "mechatronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 1-t1",
+          "title": "Types and Uses of Neural Network Architectures: Single Layer Feedforward Networks, Multilayer Feedforward Networks, Recurrent Networks; Learning Process in Neural Networks: Supervised vs. Unsupervised Learning, Learning Rules: Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 1-t2",
+          "title": "Widrow-Hoff",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 1-t3",
+          "title": "Delta Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 1-t4",
+          "title": "Hebbian and Competitive Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 1-t5",
+          "title": "Applications: Pattern Association, Recognition, and Function Approximation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 2-t1",
+          "title": "Detailed Working, Issues, and Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 2-t2",
+          "title": "XOR Problem and Decision Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 2-t3",
+          "title": "Introduction to MADALINE",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 2-t4",
+          "title": "Radial Basis Neural Networks: Concept and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 2-t5",
+          "title": "Network Training and Regularisation Theory: Comparison with Multilayer Perceptron",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 3-t1",
+          "title": "Basics of Fuzzy Logic: Introduction to Fuzzy Sets - Properties, Operations, and Relations; Membership Functions and Fuzzy Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 3-t2",
+          "title": "Fuzzy Rule-Based Systems: Canonical Rule Forms, Composite Rules and Their Decomposition, Aggregation of Fuzzy Rules and Decision-Making",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 3-t3",
+          "title": "Introduction to Genetic Algorithms: Evolutionary Concepts and GA Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 3-t4",
+          "title": "Coding, Selection, Crossover, and Mutation: Basic GA Structure and Operators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 4-t1",
+          "title": "Hybrid Systems: Concept of Neuro-Fuzzy Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 4-t2",
+          "title": "Integration of Neural Networks and Fuzzy Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 4-t3",
+          "title": "Introduction to Neuro-Genetic Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 4-t4",
+          "title": "Advanced Topics and Cross-Validation: Cross-Validation Methods and Model Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 4-t5",
+          "title": "Early Stopping Methods and Their Importance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-pemrt635-mModule 4-t6",
+          "title": "Introduction to Boltzmann Machines and Mean Field Theory (Brief Overview)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

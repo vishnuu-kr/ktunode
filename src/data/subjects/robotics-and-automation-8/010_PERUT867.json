@@ -1,0 +1,207 @@
+{
+  "id": "perut867-robotics-and-automation-s8",
+  "code": "PERUT867",
+  "name": "ENGINEERING OPTIMIZATION",
+  "branchId": "robotics-and-automation",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t1",
+          "title": "Statement of an Optimization Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t2",
+          "title": "Design Vector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t3",
+          "title": "Design Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t4",
+          "title": "Constraint Surface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t5",
+          "title": "Objective Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t6",
+          "title": "Classification of Optimization Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t7",
+          "title": "Classical Optimization Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t8",
+          "title": "Single Variable Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t9",
+          "title": "Multivariable Optimization Without Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t10",
+          "title": "Necessary and Sufficient Conditions for Minimum/Maximum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t11",
+          "title": "Multivariable Optimization with Equality Constraints, Solution by the Method of Lagrange Multipliers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t12",
+          "title": "Multivariable Optimization with Inequality Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 1-t13",
+          "title": "Kuhn-Tucker Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 2-t1",
+          "title": "One Dimensional Minimization Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 2-t2",
+          "title": "Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 2-t3",
+          "title": "Fibonacci Method and Quadratic Interpolation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 2-t4",
+          "title": "Unconstrained Optimization Techniques: Univariate Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 2-t5",
+          "title": "Powell's Method and Steepest Descent Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 3-t1",
+          "title": "Characteristics of a Constrained Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 3-t2",
+          "title": "Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 3-t3",
+          "title": "Basic Approach of Penalty Function Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 3-t4",
+          "title": "Basic Approaches of Interior and Exterior Penalty Function Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 3-t5",
+          "title": "Introduction to Convex Programming Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 4-t1",
+          "title": "Dynamic Programming Multistage Decision Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 4-t2",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 4-t3",
+          "title": "Concept of Sub-optimization and the Principle of Optimality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 4-t4",
+          "title": "Computational Procedure in Dynamic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 4-t5",
+          "title": "Examples Illustrating the Calculus Method of Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-perut867-mModule 4-t6",
+          "title": "Examples Illustrating the Tabular Method of Solution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

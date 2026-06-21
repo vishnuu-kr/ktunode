@@ -1,0 +1,249 @@
+{
+  "id": "oeeet722-electrical-and-computer-engineering-s7",
+  "code": "OEEET722",
+  "name": "HYBRID AND ELECTRIC VEHICLES",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t1",
+          "title": "History of Hybrid and Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t2",
+          "title": "Social and Environmental Importance of Hybrid and Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t3",
+          "title": "Vehicle Dynamics and Load Forces: Mathematical Models to Describe Vehicle Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t4",
+          "title": "Vehicle Load Forces: Aerodynamic Drag",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t5",
+          "title": "Rolling Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t6",
+          "title": "Grading Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t7",
+          "title": "Vehicle Acceleration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t8",
+          "title": "Calculation of Motor Power from Traction Torque",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t9",
+          "title": "Hybrid Electric Drive-trains: Basic Concept of Hybrid Traction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t10",
+          "title": "Introduction to Various Hybrid Drive-train Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t11",
+          "title": "Power Flow Control in Various Hybrid Drive-train Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t12",
+          "title": "Electric Drive-trains: Basic Concept of Electric Traction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t13",
+          "title": "Introduction to Various Electric Drive-train Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 1-t14",
+          "title": "Power Flow Control in Electric Drive-train Topologies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 2-t1",
+          "title": "Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 2-t2",
+          "title": "Introduction to Electric Motors Used in Hybrid and Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 2-t3",
+          "title": "DC Motor Drives: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 2-t4",
+          "title": "Configuration and Control of Separately Excited DC Motors, Motoring Using a PM DC Machine, DC Motor Drive Using DC-DC Converter, Generating/Braking Using a PM DC Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 2-t5",
+          "title": "Induction Motor Drives: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 2-t6",
+          "title": "Speed Control of Induction Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 2-t7",
+          "title": "V/f Control of Induction Motor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 3-t1",
+          "title": "Types of Battery, Battery Parameters, Units of Battery Energy Storage, Capacity Rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 3-t2",
+          "title": "Cell Voltage, Specific Energy, Cycle Life, Self-discharge, Static Battery Equivalent Circuit Model, Series-Parallel Battery Pack Equivalent Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 3-t3",
+          "title": "Other Storage Topologies: Fuel Cell Based Energy Storage Systems, Supercapacitors, Flywheel, Hybridization of Different Energy Storage Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 3-t4",
+          "title": "Types of Charging Stations: AC Level 1 & 2",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 3-t5",
+          "title": "DC Level 3, Types of Connectors, CHAdeMO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 3-t6",
+          "title": "CCS Type 1 and 2",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 3-t7",
+          "title": "GB/T: Pin Diagrams and Differences",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t1",
+          "title": "Introduction to Energy Management Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t2",
+          "title": "Classification of Battery Management System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t3",
+          "title": "Vehicle Communication Protocols: Need & Requirements, Functions of Control Pilot (CP) and Proximity Pilot (PP) Pins",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t4",
+          "title": "Communication Protocols: CAN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t5",
+          "title": "FLEXRAY",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t6",
+          "title": "Power Line Communication (PLC) in EV",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t7",
+          "title": "Autonomous Vehicles: Levels of Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-7-oeeet722-mModule 4-t8",
+          "title": "Significance and Effects of Automation in Vehicles",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

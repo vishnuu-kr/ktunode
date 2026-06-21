@@ -1,0 +1,207 @@
+{
+  "id": "pbect404-applied-electronics-and-instrumentation-s4",
+  "code": "PBECT404",
+  "name": "MICROCONTROLLERS & EMBEDDED SYSTEMS",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 1-t1",
+          "title": "Features of 8051 Microcontroller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 1-t2",
+          "title": "Block Diagram of 8051 - Program Status Word (PSW), Accumulator, Program Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 1-t3",
+          "title": "Memory Organization - RAM and ROM, Register Banks and Stack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 1-t4",
+          "title": "Special Function Registers (SFRs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 1-t5",
+          "title": "I/O Port Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 1-t6",
+          "title": "Interrupts",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 2-t1",
+          "title": "Classification of Instruction Set - Data Transfer Group",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 2-t2",
+          "title": "Arithmetic Group",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 2-t3",
+          "title": "Logical Group",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 2-t4",
+          "title": "Branching Group",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 2-t5",
+          "title": "Addressing Modes - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 2-t6",
+          "title": "Accessing Data from Internal and External Memory",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 3-t1",
+          "title": "Introduction to 8051 Assembly Language Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 3-t2",
+          "title": "Data Types and Directives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 3-t3",
+          "title": "Concept of Subroutine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 3-t4",
+          "title": "Software Delay Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 3-t5",
+          "title": "Programming 8051 Using Embedded C Language",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 3-t6",
+          "title": "Introduction to Embedded C - Advantages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t1",
+          "title": "Timer Registers - Timer0, Timer1",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t2",
+          "title": "Configuration of Timer Registers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t3",
+          "title": "Timer Mode Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t4",
+          "title": "Counter Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t5",
+          "title": "Serial Communication in 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t6",
+          "title": "Modes and Protocols, RS-232 Pin Configuration and Connection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t7",
+          "title": "Serial Port Programming - Transmitting and Receiving",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t8",
+          "title": "Programming the Interrupts - External, Timer and Serial Port Interrupts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t9",
+          "title": "Interrupt Priority Settings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t10",
+          "title": "Microproject Implementation using 8051 Microcontroller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-4-pbect404-mModule 4-t11",
+          "title": "Example Projects (ADC/LCD Interface, DAC/Sine Wave Generation, DC Motor Control, Stepper Motor Control, Temperature Sensor/LCD Display)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

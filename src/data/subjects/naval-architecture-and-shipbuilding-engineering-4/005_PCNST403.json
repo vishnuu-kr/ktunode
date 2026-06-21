@@ -1,0 +1,129 @@
+{
+  "id": "pcnst403-naval-architecture-and-shipbuilding-engineering-s4",
+  "code": "PCNST403",
+  "name": "ANALYSIS OF STRUCTURES",
+  "branchId": "naval-architecture-and-shipbuilding-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 1-t1",
+          "title": "Introduction to Structural Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 1-t2",
+          "title": "Determinate and Indeterminate Structures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 1-t3",
+          "title": "Static and Kinematic Indeterminacy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 1-t4",
+          "title": "Force and Displacement Method of Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 1-t5",
+          "title": "Clapeyron's Theorem of Three Moments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 1-t6",
+          "title": "Analysis of Beams with Different Support Conditions and Support Settlement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 2-t1",
+          "title": "Beams and Rigid Jointed Frames (with and without sway)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 2-t2",
+          "title": "Effect of Support Settlement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 2-t3",
+          "title": "Strain Energy Methods: Principle of Virtual Work, Castigliano's Theorems, and Clerk Maxwell's Reciprocal Theorem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 3-t1",
+          "title": "Vibration of Strings and Rods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 3-t2",
+          "title": "Vibration of Beams and Vibration of Shafts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 3-t3",
+          "title": "Introduction to Plastic Analysis: Assumptions of Plastic Theory, Plastic Hinge, Shape Factor, Load Factor, and Mechanism of Failure",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 4-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 4-t2",
+          "title": "Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 4-t3",
+          "title": "Equation of Motion, D'Alembert's Principle, Damping-Free Response of Damped and Undamped Systems, Logarithmic Decrement, and Single Degree of Freedom Systems Subjected to Harmonic Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-4-pcnst403-mModule 4-t4",
+          "title": "Transient and Steady State Responses, Simple Portal Frame Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

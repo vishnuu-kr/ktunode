@@ -44,7 +44,7 @@ const statusConfig: Record<
 };
 
 export default function ScheduledTasks({ initialTasks }: ScheduledTasksProps) {
-  const [tasks, setTasks] = useState<Task[]>(initialTasks);
+  const [tasks, _setTasks] = useState<Task[]>(initialTasks);
   const [isRefreshing, setIsRefreshing] = useState(false);
 
   const handleRefresh = () => {

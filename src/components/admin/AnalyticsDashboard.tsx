@@ -82,7 +82,6 @@ export default function AnalyticsDashboard({
     }));
   }, [branchCounts]);
 
-  const chartMaxValue = chartData.length > 0 ? Math.max(...chartData.map((d) => d.count), 1) : 1;
 
   return (
     <div className="space-y-6">

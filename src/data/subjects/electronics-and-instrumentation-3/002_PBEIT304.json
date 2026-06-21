@@ -1,0 +1,273 @@
+{
+  "id": "pbeit304-electronics-and-instrumentation-s3",
+  "code": "PBEIT304",
+  "name": "SENSORS AND MEASUREMENTS",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t1",
+          "title": "Generalized block diagram of Instrumentation system",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t2",
+          "title": "Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t3",
+          "title": "Calibration of meters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t4",
+          "title": "Static and Dynamic characteristics of transducers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t5",
+          "title": "Errors in measurements and its analysis. Measurement of resistance, capacitance and inductance: DC and AC bridges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t6",
+          "title": "Sources and detectors - Balance Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t7",
+          "title": "Wheatstone Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t8",
+          "title": "Kelvin's Double bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t9",
+          "title": "Maxwell's inductance bridge and Maxwell's inductance capacitance bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t10",
+          "title": "Schering bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 1-t11",
+          "title": "Wien's bridge",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t1",
+          "title": "Principle of operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t2",
+          "title": "Construction details",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t3",
+          "title": "Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t4",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t5",
+          "title": "Measuring circuits and applications of Resistance transducers: Potentiometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t6",
+          "title": "Strain gauge (gauge factor derivation), Strain gauge Load Cell, Resistance thermometer (2 wire, 3 wire & 4 wire), Thermistor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t7",
+          "title": "Inductive Transducers: LVDT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 2-t8",
+          "title": "Capacitive transducers: Variable air gap, Variable Area, Variable permittivity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t1",
+          "title": "Principle of operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t2",
+          "title": "Construction details",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t3",
+          "title": "Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t4",
+          "title": "Types and Applications of Thermocouple (cold junction compensation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t5",
+          "title": "Piezoelectric transducers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t6",
+          "title": "Hall effect transducers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t7",
+          "title": "Photovoltaic Cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t8",
+          "title": "Opto-electric Transducers: Photodiode, Phototransistor, Photoconductive cell, LDR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t9",
+          "title": "Accelerometers: Piezoelectric, Potentiometric, LVDT accelerometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t10",
+          "title": "Non-Contact type transducers: Infrared, Ultrasonic proximity sensors, Microwave Level Switches, Optical level sensor, Ultrasonic level sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 3-t11",
+          "title": "Pyrometers: Optical, Radiation pyrometer",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t1",
+          "title": "Working and Torque equations of PMMC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t2",
+          "title": "PMMI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t3",
+          "title": "Electrodynamometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t4",
+          "title": "Sampling Oscilloscope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t5",
+          "title": "Digital Storage oscilloscopes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t6",
+          "title": "LCD displays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t7",
+          "title": "Spectrum Analyzer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t8",
+          "title": "Instrument Transformers: Current Transformer, Potential Transformer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t9",
+          "title": "Peak response voltmeter, True RMS meter, Q meter, Strip chart recorder, XY Plotter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pbeit304-mModule 4-t10",
+          "title": "Suggestion on Project Topics: 1. The project proposal submitted by each group (4 to 8 students) must include a measurement system, which can be either analog or digital. 2. The sensor calibration is mandatory. 3. Students can incorporate suitable signal conditioning circuits, communication standards or display devices in the project work. They can evaluate the outputs and run necessary analytics on the data generated. 4. Sample projects: a. Implementation of a temperature transducer for low temperature measurement b. Wind measurement system using anemometers c. Vibration measurement using accelerometers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

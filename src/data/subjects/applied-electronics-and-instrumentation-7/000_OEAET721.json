@@ -1,0 +1,183 @@
+{
+  "id": "oeaet721-applied-electronics-and-instrumentation-s7",
+  "code": "OEAET721",
+  "name": "INTERNET OF THINGS",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 1-t1",
+          "title": "Introduction to Internet of Things - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 1-t2",
+          "title": "Basic IoT Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 1-t3",
+          "title": "Characteristics of IoT Devices - Power and Computational Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 1-t4",
+          "title": "IoT Architecture - Middleware Based Architecture and Service Oriented Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 1-t5",
+          "title": "M2M Communication - M2M System Model, Device Domain, Network Domain, Application Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 1-t6",
+          "title": "M2M vs IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 1-t7",
+          "title": "Typical Application Areas of IoT - Smart Homes, Agriculture and Smart City",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 2-t1",
+          "title": "IoT Hardware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 2-t2",
+          "title": "Commercially Available Sensors (Operating Principles Only) - Temperature and Humidity Sensor (DHT11/22), Gas Sensor (MQ Series), Ultrasonic Distance Sensor (HC-SR04)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 2-t3",
+          "title": "Actuators (Working Principles Only) - DC Motors, Solenoid Based Valves, Electro-Mechanical Relay, Solid State Relay, Stepper Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 2-t4",
+          "title": "Embedded Boards - Overview of Typical Microcontroller and Single Board Computers Used in IoT Applications - Arduino Uno, ESP32, Raspberry Pi (Overview Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 3-t1",
+          "title": "IoT Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 3-t2",
+          "title": "IoT Device Gateways",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 3-t3",
+          "title": "Overview of IP Addressing - IPv4 and IPv6",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 3-t4",
+          "title": "Network Address Translation (Overview Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 3-t5",
+          "title": "IoT Infrastructure Protocols (Only Overview and Key Features Required) - RFID, Zigbee, Bluetooth, DASH7, LoRa, 6LoWPAN, SigFox, NB-IoT, WiFi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 3-t6",
+          "title": "Overview of Cellular Communication for IoT (LTE 4G Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t1",
+          "title": "Application Protocols and Cloud Computing (Fundamental Concepts Only Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t2",
+          "title": "Message Queue Telemetry Transport (MQTT) - Architecture and Quality of Service Levels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t3",
+          "title": "HTTP REST API",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t4",
+          "title": "Constrained Application Protocol (CoAP) - Architecture and Request-Response Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t5",
+          "title": "Typical Use Cases of MQTT, CoAP and REST API in IoT Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t6",
+          "title": "Cloud Computing - Overview of Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t7",
+          "title": "Cloud Models - Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS) and Infrastructure-as-a-Service (IaaS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-oeaet721-mModule 4-t8",
+          "title": "Basic Overview of Fog Computing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

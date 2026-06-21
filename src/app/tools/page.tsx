@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import { triggerHaptic } from "@/lib/haptic";
 import { ToolsSchema } from "@/components/ToolsSchema";
 import {
-  Calculator, Sparkles, GraduationCap, Activity, Award, Clock, FlaskConical, LayoutDashboard, ShieldCheck, LayoutGrid,
+  Calculator, Sparkles, GraduationCap, Activity, Clock, FlaskConical, LayoutDashboard, ShieldCheck, LayoutGrid,
   ChevronDown
 } from "lucide-react";
 

@@ -1,0 +1,81 @@
+{
+  "id": "pbcht604-chemical-engineering-s6",
+  "code": "PBCHT604",
+  "name": "PROCESS DYNAMICS AND CONTROL",
+  "branchId": "chemical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 1-t1",
+          "title": "Develop a model for the selected system from fundamental conservation principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 1-t2",
+          "title": "Develop a feedback control system using the concept of block diagram development and reduction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 2-t1",
+          "title": "Implement the system model and controller in MATLAB or Simulink and simulate the response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 2-t2",
+          "title": "Stability analysis: Analyse the stability of the system using methods like Routh-Hurwitz criterion, root locus method, Bode stability criterion, etc.",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 3-t1",
+          "title": "Select a suitable controller for the process",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 4-t1",
+          "title": "Optimize the control parameter for desired performance using Ziegler-Nichols tuning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 4-t2",
+          "title": "Conduct experiment in the laboratory and evaluate the system performance with the experimental data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pbcht604-mModule 4-t3",
+          "title": "Report preparation and oral presentation: Prepare a detailed report and presentation before the evaluation committee",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

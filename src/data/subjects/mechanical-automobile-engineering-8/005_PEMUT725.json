@@ -1,0 +1,183 @@
+{
+  "id": "pemut725-mechanical-automobile-engineering-s8",
+  "code": "PEMUT725",
+  "name": "EMBEDDED SYSTEMS IN AUTOMOBILES",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 1-t1",
+          "title": "Introduction to Automotive Embedded Systems: Basic Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 1-t2",
+          "title": "Embedded vs General Computing Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 1-t3",
+          "title": "Components and Applications of Automotive Embedded Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 1-t4",
+          "title": "Microcontroller Based Embedded System Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 1-t5",
+          "title": "Microcontrollers Used in Automotives: Types, Features, and Selection Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 1-t6",
+          "title": "8051 Microcontroller: Features, Architecture, Pin Configurations, Interrupts, Registers, Timers, and Applications (Description Only, No Programming)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 2-t1",
+          "title": "Automotive Sensors and Actuators: Types and Functionality of Sensors - Position, Temperature, Lambda, Speed, Pressure, and Radar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 2-t2",
+          "title": "Linear and Rotary Actuators: Principle of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 2-t3",
+          "title": "Piezoelectric Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 2-t4",
+          "title": "Integration of Sensors and Actuators in Embedded Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 3-t1",
+          "title": "Vehicle Communication Protocols: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 3-t2",
+          "title": "Requirements of Communication Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 3-t3",
+          "title": "Vehicle Networking and Data Communication Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 3-t4",
+          "title": "Basic Functionalities of CAN, PSI5, FlexRay, and Automotive Ethernet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 3-t5",
+          "title": "Diagnosis System Protocols: OBD (General Descriptions Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 3-t6",
+          "title": "Automotive Real-Time Operating Systems (RTOS): Introduction, Types, and Importance (General Descriptions Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 3-t7",
+          "title": "Automotive Open System Architecture (AUTOSAR): Architecture, Advantages, and Applications (General Descriptions Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t1",
+          "title": "Embedded System Components, Functionalities, and Features: ADAS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t2",
+          "title": "Powertrain Control Module (PCM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t3",
+          "title": "Engine Control Module (ECM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t4",
+          "title": "Transmission Control Module (TCM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t5",
+          "title": "Brake and Stability Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t6",
+          "title": "Navigation and Telematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t7",
+          "title": "Vehicle to Vehicle Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut725-mModule 4-t8",
+          "title": "Vehicle to Everything Communication",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

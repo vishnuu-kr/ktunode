@@ -1,0 +1,519 @@
+{
+  "id": "pcict205-electronics-and-computer-engineering-s2",
+  "code": "PCICT205",
+  "name": "BASIC OF INSTRUMENTATION ENGINEERING (INSTRUMENTATION AND CONTROL ENGINEERING)",
+  "branchId": "electronics-and-computer-engineering",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t1",
+          "title": "Introduction to Instrument Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t2",
+          "title": "Typical Applications of Instrument Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t3",
+          "title": "Basic Description of the Functional Elements of the Measurement System with Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t4",
+          "title": "Transducers and Instrument Types: Definition of Transducers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t5",
+          "title": "Role of Transducers in Instrumentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t6",
+          "title": "Classification of Instruments: Active and Passive Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t7",
+          "title": "Null-Type and Deflection-Type Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t8",
+          "title": "Analogue and Digital Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t9",
+          "title": "Indicating Instruments and Instruments with a Signal Output",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t10",
+          "title": "Manually Operated and Automatic Type Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t11",
+          "title": "Self-Generating and Power Operated Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t12",
+          "title": "Contacting and Non-Contacting Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 1-t13",
+          "title": "Smart and Non-Smart Instruments",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t1",
+          "title": "Need of Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t2",
+          "title": "Role of Error Detectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t3",
+          "title": "Block Diagram for a Control System with Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t4",
+          "title": "Measurement System Performance: Static Characteristics of Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t5",
+          "title": "Accuracy and Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t6",
+          "title": "Static Sensitivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t7",
+          "title": "Linearity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t8",
+          "title": "Hysteresis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t9",
+          "title": "Threshold",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t10",
+          "title": "Dead Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t11",
+          "title": "Dead Zone",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t12",
+          "title": "Resolution or Discrimination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t13",
+          "title": "Static Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t14",
+          "title": "Static Correction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t15",
+          "title": "Scale Range and Span",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t16",
+          "title": "Reproducibility and Drift",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t17",
+          "title": "Repeatability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t18",
+          "title": "Dynamic Characteristics of Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t19",
+          "title": "Zero Order Instrument",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t20",
+          "title": "First Order Instrument",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 2-t21",
+          "title": "Second Order Instrument",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t1",
+          "title": "Standards and Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t2",
+          "title": "Necessity of Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t3",
+          "title": "Careful Instrument Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t4",
+          "title": "Principles of Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t5",
+          "title": "Control of Calibration Environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t6",
+          "title": "Calibration Chain and Traceability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t7",
+          "title": "Calibration Records",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t8",
+          "title": "Intelligent Instruments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t9",
+          "title": "Types of Inputs: Input Output Configuration of Measuring Instruments and Measurement Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t10",
+          "title": "Desired Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t11",
+          "title": "Interfering Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t12",
+          "title": "Modifying Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t13",
+          "title": "Methods of Correction for Interfering and Modifying Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t14",
+          "title": "Loading Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t15",
+          "title": "Input and Output Impedances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t16",
+          "title": "Input Impedances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t17",
+          "title": "Input Admittance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t18",
+          "title": "Output Impedances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 3-t19",
+          "title": "Output Admittance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t1",
+          "title": "Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t2",
+          "title": "Signal to Noise Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t3",
+          "title": "Sources of Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t4",
+          "title": "Johnson Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t5",
+          "title": "Power Spectrum Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t6",
+          "title": "Sources of Measurement Noise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t7",
+          "title": "Inductive Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t8",
+          "title": "Capacitive (Electrostatic) Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t9",
+          "title": "Noise Due to Multiple Earths",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t10",
+          "title": "Noise in the Form of Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t11",
+          "title": "Errors During the Measurement Process: Errors in Measurements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t12",
+          "title": "True Value",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t13",
+          "title": "Limiting Errors (Guarantee Errors)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t14",
+          "title": "Relative (Fractional) Limiting Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t15",
+          "title": "Combination of Quantities with Limiting Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t16",
+          "title": "Known Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t17",
+          "title": "Types of Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t18",
+          "title": "Gross Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t19",
+          "title": "Systematic Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t20",
+          "title": "Instrumental Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t21",
+          "title": "Environmental Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t22",
+          "title": "Observational Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t23",
+          "title": "Random (Residual) Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t24",
+          "title": "Reduction of Systematic Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t25",
+          "title": "Careful Instrument Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t26",
+          "title": "Method of Opposing Inputs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t27",
+          "title": "Calibration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-2-pcict205-mModule 4-t28",
+          "title": "Manual Correction of Output Reading",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

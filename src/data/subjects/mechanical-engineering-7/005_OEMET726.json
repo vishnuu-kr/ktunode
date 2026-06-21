@@ -1,0 +1,141 @@
+{
+  "id": "oemet726-mechanical-engineering-s7",
+  "code": "OEMET726",
+  "name": "COMPUTATIONAL HEAT TRANSFER",
+  "branchId": "mechanical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 1-t1",
+          "title": "Basics of Heat Transfer – Conduction, Convection and Radiation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 1-t2",
+          "title": "Mathematical Description of Fluid Flow and Heat Transfer: Conservation Equations for Mass, Momentum, Energy and Chemical Species in Cartesian and Cylindrical Coordinates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 1-t3",
+          "title": "Classification of Partial Differential Equations – Elliptic, Parabolic and Hyperbolic Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 1-t4",
+          "title": "Initial and Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 2-t1",
+          "title": "Finite Difference Form of PDE Equations – Taylor's Series Approach: Central, Backward and Forward Difference of First and Second Order Derivatives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 2-t2",
+          "title": "Solution of Laplace Equation (Conduction Problems) Using Finite Difference Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 2-t3",
+          "title": "Discretization Error, Truncation Error and Round Off Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 2-t4",
+          "title": "Convergence of Iteration",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 3-t1",
+          "title": "Solution of Unsteady Conduction Equation Using Finite Difference Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 3-t2",
+          "title": "Explicit, Implicit and Semi-Implicit Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 3-t3",
+          "title": "Stability of Numerical Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 3-t4",
+          "title": "Solution of Linear Algebraic Equations – Direct Methods and Indirect Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 3-t5",
+          "title": "Point by Point Iterations, Tri-Diagonal Matrix Method (TDMA)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 4-t1",
+          "title": "Introduction to Finite Volume Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 4-t2",
+          "title": "Solution of One-Dimensional Steady State Conduction Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 4-t3",
+          "title": "Handling Different Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 4-t4",
+          "title": "Solution of One-Dimensional Convection Diffusion Problems Using Central Difference Schemes and Upwind Scheme",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-7-oemet726-mModule 4-t5",
+          "title": "Introduction to SIMPLE Algorithm for Incompressible Flows",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

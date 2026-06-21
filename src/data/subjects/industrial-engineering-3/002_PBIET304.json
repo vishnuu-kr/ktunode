@@ -1,0 +1,333 @@
+{
+  "id": "pbiet304-industrial-engineering-s3",
+  "code": "PBIET304",
+  "name": "OPERATIONS MANAGEMENT",
+  "branchId": "industrial-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t1",
+          "title": "Role of Operations in an Organisation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t2",
+          "title": "Historical Evolution and Perspectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t3",
+          "title": "Operations Strategies and Productivity in Organisations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t4",
+          "title": "Demand Forecasting: Forecasting Methods - Causal and Time Series Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t5",
+          "title": "Moving Average and Exponential Smoothing Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t6",
+          "title": "Trend, Cycle, and Seasonality Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t7",
+          "title": "Winter's Complete Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t8",
+          "title": "Analysis of Forecast Error and Comparison of Forecasting Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t9",
+          "title": "Facility Location and Layout: Factors Influencing Location Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t10",
+          "title": "Factor Rating and Center of Gravity Methods of Location Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t11",
+          "title": "Types of Facility Layouts and Their Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t12",
+          "title": "Systematic Layout Planning (SLP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 1-t13",
+          "title": "Software Packages for SLP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t1",
+          "title": "Inventory Management Objectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t2",
+          "title": "Types of Inventories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t3",
+          "title": "EOQ and EBQ Models for Uniform and Variable Demand with and Without Shortages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t4",
+          "title": "Quantity Discount Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t5",
+          "title": "Probabilistic Inventory Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t6",
+          "title": "Inventory Systems Under Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t7",
+          "title": "Service Levels and Safety Stock",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t8",
+          "title": "Selective Inventory Control: ABC Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t9",
+          "title": "XYZ Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 2-t10",
+          "title": "VED Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t1",
+          "title": "Decision Rules: Definition and Value",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t2",
+          "title": "Pure and Mixed Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t3",
+          "title": "Mathematical Models for Aggregate Planning - Transportation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t4",
+          "title": "Linear Programming Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t5",
+          "title": "Linear Decision Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t6",
+          "title": "Master Production Schedule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t7",
+          "title": "Bill of Material (BOM) and Structuring BOM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t8",
+          "title": "MRP - Lot Sizing Methods and Implementation Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t9",
+          "title": "MRP-II",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 3-t10",
+          "title": "Introduction to ERP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t1",
+          "title": "Activity Planning, Scheduling, Shop Loading, and Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t2",
+          "title": "Priority Rules for Dispatching Jobs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t3",
+          "title": "Modern Production Systems: Introduction to Business Process Re-engineering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t4",
+          "title": "Lean Manufacturing, Kaizen, and Toyota Production System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t5",
+          "title": "World Class Manufacturing Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t6",
+          "title": "Kanban - Push vs Pull Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t7",
+          "title": "Just-in-Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t8",
+          "title": "Project Suggestion: Forecasting Model Implementation - Apply Different Forecasting Methods (Causal, Time Series, Moving Average, Exponential Smoothing) to Predict Future Demand",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t9",
+          "title": "Project Suggestion: Location Planning Analysis - Apply Factor Rating and Center of Gravity Methods to Determine Optimal Location",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t10",
+          "title": "Project Suggestion: Layout Design - Design and Compare Different Facility Layouts (Process, Product) for a Business Scenario",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t11",
+          "title": "Project Suggestion: EOQ/EBQ Model Development - Develop Advanced Models Accounting for Variable Demand, Lead Times, and Shortages Using Python or MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t12",
+          "title": "Project Suggestion: Optimization of Inventory Costs with Quantity Discounts - Create an Optimization Algorithm Using Excel Solver, Python, or MATLAB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t13",
+          "title": "Project Suggestion: MPS Optimization for a Manufacturing Firm - Design an Optimized Master Production Schedule Using Linear Decision Rules and Software Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t14",
+          "title": "Project Suggestion: BOM Structuring and MRP System Development - Develop a Comprehensive BOM and Implement MRP Using MS Project or Specialized Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t15",
+          "title": "Project Suggestion: Case Study on Real-World ERP Implementation - Analyze Challenges, Solutions, and Outcomes in a Large Enterprise",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t16",
+          "title": "Project Suggestion: Business Process Re-engineering (BPR) Case Study - Identify Processes for Re-engineering, Propose Improvements, and Evaluate Impacts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-3-pbiet304-mModule 4-t17",
+          "title": "Project Suggestion: Lean Manufacturing Implementation - Develop a Plan Applying Value Stream Mapping and Waste Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

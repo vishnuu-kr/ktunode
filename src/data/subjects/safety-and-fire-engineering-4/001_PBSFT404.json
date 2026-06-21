@@ -1,0 +1,405 @@
+{
+  "id": "pbsft404-safety-and-fire-engineering-s4",
+  "code": "PBSFT404",
+  "name": "HAZARD IDENTIFICATION AND RISK ASSESSMENT & MITIGATION",
+  "branchId": "safety-and-fire-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t1",
+          "title": "Inventory Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t2",
+          "title": "Fire and Explosion Hazard Rating of Process Plants - The Dow Fire and Explosion Hazard Index",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t3",
+          "title": "The Mond Index",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t4",
+          "title": "Plant Layout and Unit Hazard Rating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t5",
+          "title": "Preliminary Hazard Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t6",
+          "title": "Hazard and Operability Study (HAZOP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t7",
+          "title": "What If Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 1-t8",
+          "title": "Case Studies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t1",
+          "title": "Plant Availability and Process Reliability: Ways of Improving Plant Availability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t2",
+          "title": "MTBF and MTTF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t3",
+          "title": "The Reliability Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t4",
+          "title": "Failure Rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t5",
+          "title": "Bathtub Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t6",
+          "title": "Probability Relationships",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t7",
+          "title": "Simple Reliability Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t8",
+          "title": "Estimation of Frequency of Occurrence of a Hazard: The Logic Tree Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t9",
+          "title": "Set Theory and Boolean Algebra",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t10",
+          "title": "Application to Probability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t11",
+          "title": "Boolean Manipulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t12",
+          "title": "Fault Tree Analysis - Logic Symbols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t13",
+          "title": "Minimal Cut Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t14",
+          "title": "Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t15",
+          "title": "Fault Tree Quantification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t16",
+          "title": "Event Tree Analysis - Notation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t17",
+          "title": "Event Tree Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t18",
+          "title": "Advantages and Disadvantages of ETA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t19",
+          "title": "Process Hazard Analysis (PHA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t20",
+          "title": "Failure Mode and Effect Analysis (FMEA) - Methodology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t21",
+          "title": "Criticality Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 2-t22",
+          "title": "Corrective Action and Follow-up",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t1",
+          "title": "Source Models - Discharge Rate Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t2",
+          "title": "Flash and Evaporation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t3",
+          "title": "Dispersion Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t4",
+          "title": "Explosions and Fires - Vapour Cloud Explosions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t5",
+          "title": "Flash Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t6",
+          "title": "Physical Explosions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t7",
+          "title": "BLEVE and Fire Ball",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t8",
+          "title": "Confined Explosions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t9",
+          "title": "Pool Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t10",
+          "title": "Jet Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t11",
+          "title": "Effect Models - Dose-Response Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t12",
+          "title": "Probit Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t13",
+          "title": "Toxic Gas Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t14",
+          "title": "Thermal Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 3-t15",
+          "title": "Explosion Effects - Software Application for Effect and Damage Calculations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t1",
+          "title": "Vulnerability Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t2",
+          "title": "Accepted and Imposed Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t3",
+          "title": "Perception of Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t4",
+          "title": "Risk Indices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t5",
+          "title": "Individual Risk and Societal Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t6",
+          "title": "Acceptance Criteria for Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t7",
+          "title": "ALARP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t8",
+          "title": "Presentation of Measures of Risk - Risk Contour",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t9",
+          "title": "F-N Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t10",
+          "title": "Calculation of Individual Risk and Societal Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t11",
+          "title": "Human Reliability Analysis (HRA): Factors Leading to Human Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t12",
+          "title": "Characteristics of HRA Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t13",
+          "title": "Technique for Human Error Rate Prediction (THERP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t14",
+          "title": "Accident Sequence Evaluation Program (ASEP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t15",
+          "title": "Techniques Using Expert Judgment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t16",
+          "title": "Operator Action Tree (OAT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-4-pbsft404-mModule 4-t17",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

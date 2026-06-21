@@ -1,0 +1,237 @@
+{
+  "id": "oeevt833-electronics-engineering-vlsi-design-and-technology-s8",
+  "code": "OEEVT833",
+  "name": "COMPUTER VISION",
+  "branchId": "electronics-engineering-vlsi-design-and-technology",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t1",
+          "title": "Digital Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t2",
+          "title": "Linear Filters - Homomorphic Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t3",
+          "title": "Point Operators - Histogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t4",
+          "title": "Neighbourhood Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t5",
+          "title": "Thresholding Mathematical Morphology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t6",
+          "title": "Binary Shape Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t7",
+          "title": "Erosion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t8",
+          "title": "Dilation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t9",
+          "title": "Opening and Closing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t10",
+          "title": "Hit-or-Miss Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t11",
+          "title": "Connectedness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t12",
+          "title": "Object Labelling and Counting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t13",
+          "title": "Boundary Descriptors - Chain Codes, Properties of Binary Regions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t14",
+          "title": "Geometric Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 1-t15",
+          "title": "Statistical Shape Properties",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t1",
+          "title": "Feature Detection and Image Synthesis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t2",
+          "title": "Edge Detection - Edges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t3",
+          "title": "Lines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t4",
+          "title": "Active Contours",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t5",
+          "title": "Split and Merge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t6",
+          "title": "Mean Shift and Mode Finding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t7",
+          "title": "Normalized Cuts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t8",
+          "title": "Graph Cuts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t9",
+          "title": "Energy-Based Methods - Cranny's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t10",
+          "title": "Corner Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 2-t11",
+          "title": "Harris Corner Detection Algorithm, Hough Transform - Line and Curve Detection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 3-t1",
+          "title": "Shape from X - Shape from Shading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 3-t2",
+          "title": "Photometric Stereo",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 3-t3",
+          "title": "Texture, Occluding Contour Detection, Motion Analysis - Regularization Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 3-t4",
+          "title": "Optical Flow - Brightness Constancy Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 3-t5",
+          "title": "Aperture Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 3-t6",
+          "title": "Horn-Shunck Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 3-t7",
+          "title": "Lucas-Kanade Method, Structure from Motion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-8-oeevt833-mModule 4-t1",
+          "title": "Scene Analysis - Examples of Real Time Applications, In-Vehicle Vision System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

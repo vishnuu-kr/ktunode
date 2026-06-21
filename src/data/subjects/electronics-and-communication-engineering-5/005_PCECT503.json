@@ -1,0 +1,195 @@
+{
+  "id": "pcect503-electronics-and-communication-engineering-s5",
+  "code": "PCECT503",
+  "name": "CONTROL SYSTEMS",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 1-t1",
+          "title": "Basic Components of Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 1-t2",
+          "title": "Open-Loop and Closed-Loop Control Systems with Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 1-t3",
+          "title": "Mathematical Modelling of Control Systems: Electrical Systems and Mechanical Translational Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 1-t4",
+          "title": "Transfer Function: Block Diagram Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 1-t5",
+          "title": "Signal Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 1-t6",
+          "title": "Mason's Gain Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 2-t1",
+          "title": "Standard Test Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 2-t2",
+          "title": "Time Response of First Order Systems (Unit Impulse, Step and Ramp Inputs) and Second Order Systems (Step Input Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 2-t3",
+          "title": "Time Response of Undamped, Underdamped, Critically Damped Second Order System to Unit Step Signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 2-t4",
+          "title": "Time Domain Specifications for a Second Order Underdamped System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 2-t5",
+          "title": "Steady State Error and Static Error Coefficients",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t1",
+          "title": "Concept of BIBO Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t2",
+          "title": "Absolute Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t3",
+          "title": "Routh Hurwitz Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t4",
+          "title": "Root Locus Techniques: Introduction, Properties and Its Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t5",
+          "title": "Frequency Domain Analysis: Frequency Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t6",
+          "title": "Relative Stability: Gain Margin and Phase Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t7",
+          "title": "Stability Analysis using Bode Plot and Nyquist Stability Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t8",
+          "title": "P, PI and PID Controllers: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 3-t9",
+          "title": "Design of Compensators: Need for Compensators, Lag and Lead Compensators Using Bode Plots (Only Design Steps)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 4-t1",
+          "title": "State Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 4-t2",
+          "title": "State Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 4-t3",
+          "title": "State Variable Representation of Electrical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 4-t4",
+          "title": "Transfer Function from State Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 4-t5",
+          "title": "Solutions of the State Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 4-t6",
+          "title": "State Transition Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-5-pcect503-mModule 4-t7",
+          "title": "Controllability and Observability -Kalman's Test",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

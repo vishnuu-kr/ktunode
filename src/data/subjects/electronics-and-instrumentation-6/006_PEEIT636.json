@@ -1,0 +1,153 @@
+{
+  "id": "peeit636-electronics-and-instrumentation-s6",
+  "code": "PEEIT636",
+  "name": "ADVANCED CONTROL THEORY",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 1-t1",
+          "title": "Realization of Compensators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 1-t2",
+          "title": "Lag, Lead and Lag-Lead",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 1-t3",
+          "title": "Design of Compensator Using Bode Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 1-t4",
+          "title": "Design of P, PI and PID Controller Using Ziegler-Nichols Tuning Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 2-t1",
+          "title": "Controllability and Observability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 2-t2",
+          "title": "State Feedback Design via Pole Placement Technique",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 2-t3",
+          "title": "Sampled Data Control System: Pulse Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 2-t4",
+          "title": "Stability of Sampled Data System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 2-t5",
+          "title": "Routh Hurwitz Criterion and Jury's Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 2-t6",
+          "title": "Introduction to State-Space Representation of Sampled Data Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 3-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 3-t2",
+          "title": "Characteristics of Nonlinear Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 3-t3",
+          "title": "Types of Nonlinearities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 3-t4",
+          "title": "Analysis through Harmonic Linearisation – Determination of Describing Function of Nonlinearities (Relay, Dead Zone and Saturation Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 3-t5",
+          "title": "Application of Describing Function for Stability Analysis of Autonomous System with Single Nonlinearity",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 4-t1",
+          "title": "Concepts – Construction of Phase Trajectories for Nonlinear Systems and Linear Systems with Static Nonlinearities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 4-t2",
+          "title": "Singular Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 4-t3",
+          "title": "Classification of Singular Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 4-t4",
+          "title": "Definition of Stability: Asymptotic Stability and Instability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-6-peeit636-mModule 4-t5",
+          "title": "Liapunov Methods for Stability of Linear and Nonlinear Continuous Time Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

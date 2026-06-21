@@ -56,7 +56,7 @@ export function triggerHaptic(
         const scaledDuration = Math.round(duration * (0.5 + pressureVal));
         navigator.vibrate(scaledDuration);
       }
-    } catch (e) {}
+    } catch {}
   }
 
   // 2. Synthesized Web Audio Tones
@@ -139,5 +139,5 @@ export function triggerHaptic(
         }, 140);
         break;
     }
-  } catch (e) {}
+  } catch {}
 }

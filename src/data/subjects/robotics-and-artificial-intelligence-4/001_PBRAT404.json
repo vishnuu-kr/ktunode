@@ -1,0 +1,237 @@
+{
+  "id": "pbrat404-robotics-and-artificial-intelligence-s4",
+  "code": "PBRAT404",
+  "name": "ARTIFICIAL INTELLIGENCE & MACHINE LEARNING",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t1",
+          "title": "Basics of Artificial Intelligent Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t2",
+          "title": "Different Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t3",
+          "title": "Intelligent Agents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t4",
+          "title": "Problem Solving by Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t5",
+          "title": "Basics of Machine Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t6",
+          "title": "Different Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t7",
+          "title": "Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t8",
+          "title": "Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t9",
+          "title": "Feature Vector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t10",
+          "title": "Training Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t11",
+          "title": "Target Vector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t12",
+          "title": "Test Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t13",
+          "title": "Feature Extraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t14",
+          "title": "Over-Fitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t15",
+          "title": "Curse of Dimensionality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t16",
+          "title": "Data Transformation: Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t17",
+          "title": "Normalization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 1-t18",
+          "title": "Encoding",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 2-t1",
+          "title": "Linear Discriminant-Based Algorithm: Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 2-t2",
+          "title": "Gradient Descent Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 2-t3",
+          "title": "Perceptron Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 2-t4",
+          "title": "Support Vector Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 2-t5",
+          "title": "Separable Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 2-t6",
+          "title": "Non-Separable Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 2-t7",
+          "title": "Multiclass Case",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 3-t1",
+          "title": "Introduction to Robot Localization Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 3-t2",
+          "title": "Probabilistic Techniques for Robot Pose Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 3-t3",
+          "title": "Monte Carlo Localization (MCL)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 3-t4",
+          "title": "Bayes Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 3-t5",
+          "title": "Theorem of Total Probability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 4-t1",
+          "title": "Introduction to Motion Planning Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 4-t2",
+          "title": "Search Algorithms - Breadth-First Search (BFS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 4-t3",
+          "title": "A* Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pbrat404-mModule 4-t4",
+          "title": "Dynamic Programming",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

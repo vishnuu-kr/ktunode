@@ -11,7 +11,7 @@ type TelemetryStripProps = {
   timings: string[];
 };
 
-export default function TelemetryStrip({ slots, logs, gpa = "8.42", timings }: TelemetryStripProps) {
+export default function TelemetryStrip({ slots, logs, gpa: _gpa = "8.42", timings }: TelemetryStripProps) {
   const [stressIndex, setStressIndex] = useState(42);
   const [freedomPct, setFreedomPct] = useState(0);
   const [countdownText, setCountdownText] = useState("—");

@@ -246,7 +246,7 @@ export function Features() {
                 ))}
               </div>
               <div className="p-3.5 bg-slate-50/70 dark:bg-slate-950/40 border border-slate-200/50 dark:border-slate-800 rounded-2xl h-[105px] overflow-y-auto">
-                <div className="text-[10px] font-bold text-blue-650 dark:text-blue-400 uppercase tracking-wider mb-1">
+                <div className="text-[10px] font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">
                   {noteData.title}
                 </div>
                 <p className="text-[11px] text-slate-600 dark:text-slate-350 leading-relaxed">
@@ -337,7 +337,7 @@ export function Features() {
             <div>
               <div className="flex items-center justify-between mb-4">
                 <div className="w-9 h-9 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50 flex items-center justify-center">
-                  <GraduationCap className="w-[18px] h-[18px] text-emerald-500 dark:text-emerald-450" strokeWidth={1.8} />
+                  <GraduationCap className="w-[18px] h-[18px] text-emerald-500 dark:text-emerald-400" strokeWidth={1.8} />
                 </div>
                 <span className={`text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider transition-colors duration-300 ${
                   isFullyComplete ? "bg-emerald-500 text-white shadow-sm" : "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400"
@@ -492,7 +492,7 @@ export function Features() {
         <div className="flex justify-center mt-12">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-50 dark:bg-blue-950/30 border border-blue-150 dark:border-blue-900/55 text-blue-600 dark:text-blue-400 font-extrabold text-sm hover:bg-blue-100/50 hover:dark:bg-blue-950/50 active:scale-95 transition-all shadow-sm cursor-pointer select-none"
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/55 text-blue-600 dark:text-blue-400 font-extrabold text-sm hover:bg-blue-100/50 hover:dark:bg-blue-950/50 active:scale-95 transition-all shadow-sm cursor-pointer select-none"
           >
             {showAll ? "Show Less Tools" : "View All Tools"}
           </button>

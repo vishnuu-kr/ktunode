@@ -1,0 +1,195 @@
+{
+  "id": "pemrt523-mechatronics-engineering-s5",
+  "code": "PEMRT523",
+  "name": "OPERATIONAL RESEARCH",
+  "branchId": "mechatronics-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 1-t1",
+          "title": "Introduction to Linear Programming Problems and Convex Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 1-t2",
+          "title": "Linear Programming Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 1-t3",
+          "title": "Graphical Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 1-t4",
+          "title": "Basic Feasible Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 1-t5",
+          "title": "Optimal Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 1-t6",
+          "title": "The Simplex Method – The Simplex Method in Tabular Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 1-t7",
+          "title": "Tie-Breaking in Simplex Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t1",
+          "title": "Transportation and Assignment Problems – Transportation Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t2",
+          "title": "Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t3",
+          "title": "Existence of Solutions of Transportation Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t4",
+          "title": "Solutions of Transportation Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t5",
+          "title": "Finding an Initial Basic Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t6",
+          "title": "Vogel's Approximation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t7",
+          "title": "Assignment Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 2-t8",
+          "title": "A Special Algorithm for the Assignment Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 3-t1",
+          "title": "Network Optimization Models: The Terminology of Networks – The Shortest Path Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 3-t2",
+          "title": "Dijkstra's Algorithm – The Minimum Spanning Tree Problem – The Maximum Flow Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 3-t3",
+          "title": "Ford-Fulkerson Algorithm – The Minimum Cost Flow Problem – The Network Simplex Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t1",
+          "title": "Theory of Games – Introduction to Game Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t2",
+          "title": "Matrix (Rectangular) Games",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t3",
+          "title": "Problem of Game Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t4",
+          "title": "Minimax Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t5",
+          "title": "Saddle Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t6",
+          "title": "Strategies and Payoff – Theorems of Matrix Games",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t7",
+          "title": "Graphical Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t8",
+          "title": "Notion of Dominance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pemrt523-mModule 4-t9",
+          "title": "Rectangular Game as a Linear Programming Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

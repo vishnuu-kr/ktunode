@@ -1,0 +1,171 @@
+{
+  "id": "gcest103-civil-and-environmental-engineering-s1",
+  "code": "GCEST103",
+  "name": "ENGINEERING MECHANICS",
+  "branchId": "civil-and-environmental-engineering",
+  "semester": 1,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t1",
+          "title": "Introduction to Statics: Branches of Mechanics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t2",
+          "title": "Concept of Rigid Body, Scalars, and Vectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t3",
+          "title": "Vector Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t4",
+          "title": "Forces in Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t5",
+          "title": "Support Reactions of Beams (Point Load and UDL Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t6",
+          "title": "Force Systems: Rectangular Components in 2D and 3D",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t7",
+          "title": "Moment and Couple",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t8",
+          "title": "Resultants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t9",
+          "title": "Equilibrium: System Isolation and the Free-Body Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 1-t10",
+          "title": "Equilibrium Conditions in 2D and 3D",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 2-t1",
+          "title": "Friction: Laws of Friction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 2-t2",
+          "title": "Analysis of Blocks and Ladder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 2-t3",
+          "title": "Centroid of Composite Areas",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 2-t4",
+          "title": "Moment of Inertia: Parallel Axis and Perpendicular Axis Theorems, Polar Moment of Inertia, Radius of Gyration, Mass Moment of Inertia of Ring and Disc",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 3-t1",
+          "title": "Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 3-t2",
+          "title": "Rectilinear Translation: Equations of Motion in Kinematics and Kinetics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 3-t3",
+          "title": "D'Alembert's Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 3-t4",
+          "title": "Motion on Horizontal and Inclined Surfaces, Motion of Connected Bodies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 4-t1",
+          "title": "Curvilinear Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 4-t2",
+          "title": "Equations of Kinematics and Projectile Motion (Solution Starting from Differential Equations)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 4-t3",
+          "title": "Rotation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 4-t4",
+          "title": "Kinematics of Rotation: Equation of Motion for a Rigid Body Rotating About a Fixed Axis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-and-environmental-engineering-1-gcest103-mModule 4-t5",
+          "title": "Rotation Under a Constant Moment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

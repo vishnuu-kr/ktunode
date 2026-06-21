@@ -1,0 +1,339 @@
+{
+  "id": "oerut721-robotics-and-automation-s7",
+  "code": "OERUT721",
+  "name": "BASICS OF MOBILE ROBOTICS",
+  "branchId": "robotics-and-automation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t2",
+          "title": "Key Issues for Locomotion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t3",
+          "title": "Wheeled Mobile Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t4",
+          "title": "Wheeled Locomotion: The Design Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t5",
+          "title": "Wheeled Locomotion: Case Studies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t6",
+          "title": "Legged Mobile Robots - Leg Configurations and Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t7",
+          "title": "Examples of Legged Robot Locomotion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t8",
+          "title": "Aerial Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 1-t9",
+          "title": "Underwater Robots and Surface Water Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t1",
+          "title": "Sensor Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t2",
+          "title": "Characterizing Sensor Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t3",
+          "title": "Wheel/Motor Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t4",
+          "title": "Heading Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t5",
+          "title": "Accelerometers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t6",
+          "title": "IMUs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t7",
+          "title": "Ground-Based Beacons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t8",
+          "title": "Active Ranging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t9",
+          "title": "Motion/Speed Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t10",
+          "title": "Robot Vision: Sensing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t11",
+          "title": "Pre-Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t12",
+          "title": "Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t13",
+          "title": "Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t14",
+          "title": "Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t15",
+          "title": "Interpretation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 2-t16",
+          "title": "Feature Extraction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t2",
+          "title": "Kinematic Models and Constraints - Representing Robot Position",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t3",
+          "title": "Forward Kinematic Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t4",
+          "title": "Wheel Kinematic Constraints for Fixed Standard Wheel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t5",
+          "title": "Steered Standard Wheel and Castor Wheel Only",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t6",
+          "title": "Robot Kinematic Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t7",
+          "title": "Examples of Robot Kinematic Models and Constraints: Differential-Drive Robot Only",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t8",
+          "title": "Mobile Robot Maneuverability - Degree of Mobility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t9",
+          "title": "Degree of Steerability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t10",
+          "title": "Robot Maneuverability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t11",
+          "title": "Mobile Robot Workspace - Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 3-t12",
+          "title": "Holonomic Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t1",
+          "title": "Robot Localization: Challenges in Localization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t2",
+          "title": "An Error Model for Odometric Position Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t3",
+          "title": "Localization-Based Navigation versus Programmed Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t4",
+          "title": "Belief Representation - Single-Hypothesis Belief",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t5",
+          "title": "Multiple-Hypothesis Belief",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t6",
+          "title": "Markov versus Kalman Localization (Basics Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t7",
+          "title": "Path Planning: Local vs Global Path Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t8",
+          "title": "Joint Space versus Cartesian Space Trajectory Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t9",
+          "title": "Cubic Polynomial and LSPB Methods of Joint Space Trajectory Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t10",
+          "title": "Graph Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t11",
+          "title": "Dijkstra's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t12",
+          "title": "D* Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t13",
+          "title": "Potential Field Based Path Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-oerut721-mModule 4-t14",
+          "title": "Bug Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "oeevt613-electronics-engineering-vlsi-design-and-technology-s6",
+  "code": "OEEVT613",
+  "name": "POWER ELECTRONICS",
+  "branchId": "electronics-engineering-vlsi-design-and-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 1-t1",
+          "title": "Scope and Applications of Power Electronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 1-t2",
+          "title": "Properties of Ideal Switch, Structure and Static Characteristics: Power Diodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 1-t3",
+          "title": "Power BJT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 1-t4",
+          "title": "Power MOSFET and IGBT Comparison, Basic Principles of Wide Band Gap Devices - SiC and GaN, Safe Operating Area: Power BJT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 1-t5",
+          "title": "Power MOSFET and IGBT, Drive Circuits: Power BJT and Power MOSFET",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 2-t1",
+          "title": "Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 2-t2",
+          "title": "Two Transistor Analogy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 2-t3",
+          "title": "Static Characteristics. Rectifiers: Three Phase Diode Bridge Rectifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 2-t4",
+          "title": "Single Phase Half Controlled Rectifier with R Load, Single Phase Fully Controlled Bridge Rectifier (Continuous Conduction) and Output Voltage Equation, Principle of Three Phase Half Wave Controlled Rectifier (Average Output Voltage Equation for Continuous Load Current), Related Simple Problems in 1-Phase and 3-Phase",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 3-t1",
+          "title": "Buck",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 3-t2",
+          "title": "Boost and Buck-Boost DC-DC Converters. Waveforms and Expression of DC-DC Converters for Output Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 3-t3",
+          "title": "Voltage and Current Ripple under Continuous Conduction Mode. Isolated Converters: Flyback",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 3-t4",
+          "title": "Forward",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 3-t5",
+          "title": "Push Pull",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 3-t6",
+          "title": "Half Bridge and Full Bridge Converters - Waveforms and Governing Equations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 4-t1",
+          "title": "Inverter Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 4-t2",
+          "title": "Driven Inverters: Push-Pull",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 4-t3",
+          "title": "Half Bridge and Full Bridge Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-6-oeevt613-mModule 4-t4",
+          "title": "Single Phase PWM Inverters (Single Pulse Width and Sinusoidal Pulse Width Modulation) - RMS Output Voltage Equation and Output Voltage Waveforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

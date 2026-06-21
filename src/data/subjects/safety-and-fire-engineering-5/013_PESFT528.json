@@ -1,0 +1,723 @@
+{
+  "id": "pesft528-safety-and-fire-engineering-s5",
+  "code": "PESFT528",
+  "name": "THEORY OF FIRE PROPAGATION AND DYNAMICS",
+  "branchId": "safety-and-fire-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t1",
+          "title": "Basics of Fire",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t2",
+          "title": "Fire Triangle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t3",
+          "title": "Classification of Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t4",
+          "title": "Properties of Combustible Materials",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t5",
+          "title": "Calorific Value",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t6",
+          "title": "Stoichiometric Air",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t7",
+          "title": "Standard Heat of Combustion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t8",
+          "title": "Standard Enthalpy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t9",
+          "title": "Adiabatic Flame Temperature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t10",
+          "title": "Liquid Fuel Properties - Flash Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t11",
+          "title": "Fire Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t12",
+          "title": "Boiling Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t13",
+          "title": "Latent Heat of Vaporization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t14",
+          "title": "Surface Tension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t15",
+          "title": "Marangoni Convection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t16",
+          "title": "Solid Fuel Properties - Proximate Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t17",
+          "title": "Heat of Pyrolysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t18",
+          "title": "Latent Heat of Melting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t19",
+          "title": "Latent Heat of Sublimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t20",
+          "title": "Ignition Temperature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t21",
+          "title": "Critical Heat Flux",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t22",
+          "title": "Thermal Inertia",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t23",
+          "title": "Thermal Response Parameter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t24",
+          "title": "Smoldering and Factors Affecting Smoldering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t25",
+          "title": "Backdraft",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t26",
+          "title": "Smoke",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t27",
+          "title": "Flame Heat Flux",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t28",
+          "title": "Flame Spread Rate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t29",
+          "title": "Flame Propagation Index",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 1-t30",
+          "title": "Heat Release Rate",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t1",
+          "title": "Estimation of Convective Heat Release",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t2",
+          "title": "Estimation of Radiative Heat Release",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t3",
+          "title": "Estimation of Smoke Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t4",
+          "title": "Non-Dimensional Numbers for Fire Study",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t5",
+          "title": "Heat Calculations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t6",
+          "title": "Fire Loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t7",
+          "title": "Standard Heat of Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t8",
+          "title": "Oxygen Calorimetry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t9",
+          "title": "Carbon Dioxide Calorimetry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t10",
+          "title": "Sensible Enthalpy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t11",
+          "title": "Heat Calculation for Multicomponent Fuel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t12",
+          "title": "Standard Heat of Reaction of LPG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t13",
+          "title": "Enthalpy of Formation of Solid Fuel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t14",
+          "title": "Equilibrium Flame Temperature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t15",
+          "title": "Analysis of Systems - Reaction at Constant Pressure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t16",
+          "title": "Analysis of Systems - Reaction at Constant Volume",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t17",
+          "title": "Chemical Kinetics - Global Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t18",
+          "title": "Elementary Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t19",
+          "title": "Molecularity of Elementary Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t20",
+          "title": "Law of Mass Action",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t21",
+          "title": "Molecularity and Order",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t22",
+          "title": "Rate of a Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t23",
+          "title": "Activated Complex",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t24",
+          "title": "Rate Coefficient",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t25",
+          "title": "Equilibrium Constants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t26",
+          "title": "Net Reaction Rates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 2-t27",
+          "title": "Global Reaction Rate",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t1",
+          "title": "Premixed and Diffusion Flames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t2",
+          "title": "Bunsen Burner",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t3",
+          "title": "Adiabatic Flame Temperature vs. Equivalence Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t4",
+          "title": "Laminar Flame Speed vs. Equivalence Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t5",
+          "title": "Laminar Flame Speed for Various Fuels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t6",
+          "title": "Structure of Premixed Flames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t7",
+          "title": "Preheat and Reaction Zones",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t8",
+          "title": "Formation of Diffusion Flames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t9",
+          "title": "Flammability Limits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t10",
+          "title": "Correlations for Flammability Limits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t11",
+          "title": "Premixed Flame Theories - Thermal Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t12",
+          "title": "Premixed Flame Theories - Diffusion Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t13",
+          "title": "Premixed Flame Theories - Comprehensive Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t14",
+          "title": "Laminar Flame Speed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t15",
+          "title": "Flame Thickness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t16",
+          "title": "Premixed Flame Quenching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t17",
+          "title": "Quenching Distance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t18",
+          "title": "Quenching Distance for Various Fuels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t19",
+          "title": "Laminar Diffusion Flame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t20",
+          "title": "Candle Flame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t21",
+          "title": "Structure of Diffusion Flame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t22",
+          "title": "Flame Colour",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t23",
+          "title": "Flame Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t24",
+          "title": "Soot Formation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t25",
+          "title": "Soot Oxidation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t26",
+          "title": "Flame Tip Oscillations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 3-t27",
+          "title": "Smoke Point of Saturated, Unsaturated and Aromatic Hydrocarbons",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t1",
+          "title": "Scaling Analysis of Diffusion Flames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t2",
+          "title": "Flame Froude Number - Momentum and Buoyancy Controlled Flames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t3",
+          "title": "Roper's Flame Height Correlation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t4",
+          "title": "Laminar Diffusion Flame Height Correlations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t5",
+          "title": "Jet Flame Heights",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t6",
+          "title": "Turbulent Jet Diffusion Flames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t7",
+          "title": "Flame Liftoff and Blowoff",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t8",
+          "title": "Turbulent Mass Diffusivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t9",
+          "title": "Eddy Viscosity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t10",
+          "title": "Turbulent Mixing Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t11",
+          "title": "Turbulent Intensity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t12",
+          "title": "Turbulent Diffusion Flame Height - Thomas and Heskestad's Correlations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t13",
+          "title": "Flame Height of Wall Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t14",
+          "title": "Mass Diffusivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t15",
+          "title": "Kinematic Viscosity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t16",
+          "title": "Lewis Number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t17",
+          "title": "Prandtl Number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t18",
+          "title": "Schmidt Number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t19",
+          "title": "Chemical Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t20",
+          "title": "Residence Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t21",
+          "title": "Damköhler Number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t22",
+          "title": "Kinetically Controlled and Transport Controlled Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t23",
+          "title": "Classification of Liquid Fuels Based on Flash Point Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t24",
+          "title": "Liquid Fuel Evaporation - Steady Evaporation using Stefan's Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t25",
+          "title": "Fick's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t26",
+          "title": "Burning of Solid Fuels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t27",
+          "title": "Analysis of Fire Plumes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t28",
+          "title": "Enclosure Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t29",
+          "title": "Introduction to Dust Ignition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t30",
+          "title": "Dust Explosion and Forest Fires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-5-pesft528-mModule 4-t31",
+          "title": "Fire Safety Aspects",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

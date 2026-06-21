@@ -1,0 +1,219 @@
+{
+  "id": "pesft865-safety-and-fire-engineering-s8",
+  "code": "PESFT865",
+  "name": "STATISTICAL AND COMPUTATIONAL METHODS",
+  "branchId": "safety-and-fire-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 1-t1",
+          "title": "Motivation and Applications of Statistical and Numerical Methods, Significant Digits, Accuracy and Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 1-t2",
+          "title": "Truncation and Round-off Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 1-t3",
+          "title": "Roots of Nonlinear Equations - Bisection Method, Newton-Raphson Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 1-t4",
+          "title": "Solution of System of Linear Equations - Gauss Elimination, Gauss-Jordan, Gauss-Seidel, LU Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 1-t5",
+          "title": "Numerical Differentiation - Difference Formula, Newton's Forward, Backward and Divided Difference Method, Sterling's Formula",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 1-t6",
+          "title": "Numerical Integration - Trapezoidal, Simpson's One-Third Rule, Simpson's Three-Eighth Rule, Gauss Quadrature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 1-t7",
+          "title": "Taylor's Method, Euler Method, Modified Euler Method, Runge-Kutta Fourth Order Method for First Order",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t1",
+          "title": "Solving Using Simplex Method, Big-M Method and Graphical Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t2",
+          "title": "Single Variable Optimization Methods - Fibonacci Search Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t3",
+          "title": "Multi-Variable Methods - Hook-Jeeves Pattern Search Method, Cauchy's (Steepest Descent) Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t4",
+          "title": "Introduction to Network Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t5",
+          "title": "Minimal Spanning Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t6",
+          "title": "Prim's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t7",
+          "title": "Shortest Path Problems - Solution Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 2-t8",
+          "title": "Dijkstra's Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t1",
+          "title": "Decision Under Certainty",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t2",
+          "title": "Risk and Uncertainty: Decision Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t3",
+          "title": "EMV Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t4",
+          "title": "EOL Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t5",
+          "title": "Maximin Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t6",
+          "title": "Minimax Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t7",
+          "title": "Sequencing Problem: Basic Terminologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 3-t8",
+          "title": "Processing of n Jobs Through 2, 3 and m Machines",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t1",
+          "title": "Games with Saddle Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t2",
+          "title": "Games Without Saddle Points - 2 x 2 Games",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t3",
+          "title": "Graphical Method for m x 2 and 2 x n Games",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t4",
+          "title": "Queuing Theory: Scope, Terminology, Classification, Importance and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t5",
+          "title": "Performance Measures in Queuing Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t6",
+          "title": "Single-Server Exponential Arrival and Service Times",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t7",
+          "title": "Multi-Server Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-8-pesft865-mModule 4-t8",
+          "title": "Simulation: Monte Carlo Simulation - Queuing Simulation Model - Generation of Random Numbers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

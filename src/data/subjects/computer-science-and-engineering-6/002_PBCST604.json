@@ -1,0 +1,321 @@
+{
+  "id": "pbcst604-computer-science-and-engineering-s6",
+  "code": "PBCST604",
+  "name": "FUNDAMENTALS OF CYBER SECURITY",
+  "branchId": "computer-science-and-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t1",
+          "title": "Information Security Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t2",
+          "title": "Threats to Information Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t3",
+          "title": "Cyber Security and Security Risk Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t4",
+          "title": "Information Gathering: Reconnaissance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t5",
+          "title": "Reco-ng",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t6",
+          "title": "Software Vulnerabilities: Buffer Overflow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t7",
+          "title": "Stack Overflow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t8",
+          "title": "Format String",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t9",
+          "title": "Vulnerability Assessment and Penetration Testing: Burpsuite",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 1-t10",
+          "title": "Metasploit",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t1",
+          "title": "Web Security: Web Attacks, SQL Injection Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t2",
+          "title": "Cross-Site Scripting (XSS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t3",
+          "title": "Cross-Site Request Forgery (CSRF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t4",
+          "title": "Domain Name System: Security Issues with DNS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t5",
+          "title": "DNS Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t6",
+          "title": "DNSSEC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t7",
+          "title": "OWASP ZAP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t8",
+          "title": "WebGoat",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t9",
+          "title": "Damn Vulnerable Web Application (DVWA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t10",
+          "title": "Website Mirroring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t11",
+          "title": "HTTRACK",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t12",
+          "title": "Email Security: Email Risks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t13",
+          "title": "Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 2-t14",
+          "title": "Operating Safely When Using Email",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t1",
+          "title": "Network Security Terminologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t2",
+          "title": "DDoS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t3",
+          "title": "ARP Spoofing and Session Hijacking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t4",
+          "title": "Capturing the Network Traffic: Promiscuous Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t5",
+          "title": "Flooding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t6",
+          "title": "DHCP Redirection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t7",
+          "title": "Redirection and Interception with ICMP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t8",
+          "title": "Port Scanning: TCP and UDP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t9",
+          "title": "Port Scanning Tools: Nmap",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t10",
+          "title": "SuperScan",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 3-t11",
+          "title": "Wireshark: Analysing and Filtering Traffic",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t1",
+          "title": "Windows Security: Attacks Against Windows System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t2",
+          "title": "Installing Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t3",
+          "title": "Authentication and Access Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t4",
+          "title": "Upgrades and Patches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t5",
+          "title": "Operating Windows Safely",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t6",
+          "title": "Windows Defender Firewall",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t7",
+          "title": "Linux Security: Attacks in Linux System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t8",
+          "title": "Physical Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t9",
+          "title": "Controlling the Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t10",
+          "title": "Authentication and Access Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t11",
+          "title": "Upgrades and Patches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t12",
+          "title": "Operating Linux Safely",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pbcst604-mModule 4-t13",
+          "title": "SELinux",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

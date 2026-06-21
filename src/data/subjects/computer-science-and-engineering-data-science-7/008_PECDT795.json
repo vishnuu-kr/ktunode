@@ -1,0 +1,333 @@
+{
+  "id": "pecdt795-computer-science-and-engineering-data-science-s7",
+  "code": "PECDT795",
+  "name": "ADVANCED DATABASE SYSTEMS",
+  "branchId": "computer-science-and-engineering-data-science",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t1",
+          "title": "Measures of Query Cost",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t2",
+          "title": "Algorithms for Selection with Cost Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t3",
+          "title": "Algorithms for Join with Cost Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t4",
+          "title": "Algorithms for Project and Set Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t5",
+          "title": "Evaluation of Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t6",
+          "title": "Heuristics in Query Optimization: Optimization of Relational Algebra Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t7",
+          "title": "Physical Database Design and Tuning: Introduction to Physical Database Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t8",
+          "title": "Factors Influencing Physical Database Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t9",
+          "title": "Overview of Database Tuning: Tuning the Conceptual Schema",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 1-t10",
+          "title": "Tuning Queries and Views - Impact of Concurrency",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t1",
+          "title": "Distributed Database Concepts: Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t2",
+          "title": "Distributed Data Storage: Data Fragmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t3",
+          "title": "Replication and Allocation Techniques for Distributed Database Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t4",
+          "title": "Types of Distributed Database Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t5",
+          "title": "Query Processing and Decomposition: Query Processing Objectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t6",
+          "title": "Characterization of Query Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t7",
+          "title": "Layers of Query Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t8",
+          "title": "Query Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t9",
+          "title": "Localization of Distributed Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 2-t10",
+          "title": "Concurrency Control and Recovery in Distributed Database Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t1",
+          "title": "XML: Introduction to Semi Structured Data and XML Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t2",
+          "title": "XML Data Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t3",
+          "title": "XML Documents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t4",
+          "title": "DTD and XML Schema",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t5",
+          "title": "XML Presentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t6",
+          "title": "XPath Queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t7",
+          "title": "XQuery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t8",
+          "title": "NoSQL Databases: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t9",
+          "title": "Comparison of NoSQL and Relational Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t10",
+          "title": "Database Sharding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t11",
+          "title": "CAP Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t12",
+          "title": "Overview of MongoDB: MongoDB Data Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t13",
+          "title": "CRUD Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t14",
+          "title": "Indexing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t15",
+          "title": "Application Integration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t16",
+          "title": "Replication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t17",
+          "title": "Sharding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t18",
+          "title": "Deployment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t19",
+          "title": "Cassandra: Data Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 3-t20",
+          "title": "CRUD Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t2",
+          "title": "Data Modelling with Graphs: Building a Graph Database Application",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t3",
+          "title": "Data Modeling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t4",
+          "title": "Predictive Analysis with Graph Theory: Depth and Breadth First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t5",
+          "title": "Path-Finding with Dijkstra's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t6",
+          "title": "Graph Theory and Predictive Modeling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t7",
+          "title": "Geographic Information Systems (GIS): Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t8",
+          "title": "Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t9",
+          "title": "Data Models for GIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt795-mModule 4-t10",
+          "title": "GIS Standards and Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

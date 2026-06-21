@@ -1,0 +1,213 @@
+{
+  "id": "pecht631-chemical-engineering-s6",
+  "code": "PECHT631",
+  "name": "PROCESS MODELLING AND SIMULATION",
+  "branchId": "chemical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t1",
+          "title": "Definition of Modelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t2",
+          "title": "Simulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t3",
+          "title": "Advantages and Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t4",
+          "title": "Applications, Models and Classification of Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t5",
+          "title": "Alternate Classification of Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t6",
+          "title": "Mathematical Modelling Based on Transport Phenomena",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t7",
+          "title": "Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t8",
+          "title": "Basic Modelling Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t9",
+          "title": "Energy Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t10",
+          "title": "Continuity Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t11",
+          "title": "Equation of Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t12",
+          "title": "Transport Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t13",
+          "title": "Equations of State",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 1-t14",
+          "title": "Equilibrium States and Chemical Kinetics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 2-t1",
+          "title": "Continuous Flow Tanks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 2-t2",
+          "title": "Mixing Vessel Without Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 2-t3",
+          "title": "Isothermal Reactor with Irreversible and Reversible Reaction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 2-t4",
+          "title": "Non-Isothermal Steam Jacketed Reactor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 2-t5",
+          "title": "Boiling-Open and Enclosed Vessel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 2-t6",
+          "title": "Batch Distillation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 2-t7",
+          "title": "Ideal Binary Distillation Column - Simulation Using MATLAB/SciLab or Any Other Process Simulator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 3-t1",
+          "title": "Jacketed Tubular Reactor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 3-t2",
+          "title": "Counter-Current Liquid-Liquid Double-Pipe Heat Exchanger",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 3-t3",
+          "title": "Unsteady Heat Conduction Through a Rod",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 3-t4",
+          "title": "Tubular Permeation Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 3-t5",
+          "title": "Gas Absorber - Simulation Using MATLAB/SciLab or Any Other Process Simulator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 4-t1",
+          "title": "Algorithm for Solving Continuous Flow Tank",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 4-t2",
+          "title": "Isothermal CSTR in Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 4-t3",
+          "title": "Non-Isothermal CSTR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-6-pecht631-mModule 4-t4",
+          "title": "Binary Distillation Column",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

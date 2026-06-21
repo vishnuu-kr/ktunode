@@ -1,0 +1,105 @@
+{
+  "id": "peebt755-electronics-and-biomedical-engineering-s7",
+  "code": "PEEBT755",
+  "name": "ADVANCED BIOMEDICAL SIGNAL PROCESSING",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 1-t1",
+          "title": "Direct Data Compression Techniques: Turning Point-AZTEC. Transformation Compression Techniques: Karhunen-Loeve Transform. Other Data Compression Techniques: Huffman Coding. ECG Signal Processing Techniques: Filtering: Baseline Removal by Linear Time Variant Filtering. Powerline Interference Removal by Linear Filter. Event Detection: QRS Detection Basic Steps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 1-t2",
+          "title": "P Wave Detection Using Time Domain Analysis. Morphological Analysis of ECG: Correlation Coefficient - Minimum Phase Component. Heart Rate Variability Analysis: Time Domain Measures - Spectrum Analysis of Heart Rate Variability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 2-t1",
+          "title": "Articulatory Phonetics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 2-t2",
+          "title": "Production and Classification of Speech Sounds - Articulation - Voicing - Articulatory Model. Speech Analysis: Short Time Speech Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 2-t3",
+          "title": "Short Time Energy - Short Time Average Magnitude - Short Time Zero Crossing Rate - Short Time ACF. Frequency Domain Analysis: Filter Banks - STFT - Spectrogram - Formant Estimation & Analysis - Cepstral Analysis - MFCC",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 3-t1",
+          "title": "Signal Processing Techniques in EEG. Modelling the EEG Signals: Linear and Stochastic EEG Models - Time Varying AR Modelling. Artefacts in EEG: Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 3-t2",
+          "title": "Artefact Reduction Methods - Linear Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 3-t3",
+          "title": "Artifact Cancellation Using Linearly Combined Reference Signals - Adaptive Artefact Cancellation. Non-Parametric Spectral Analysis - Spectral Parameters: Power in Bands, Spectral Slope, Peak Frequency. Parametric Spectrum Estimation: Burg Method. EEG Segmentation - Basics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 4-t1",
+          "title": "Diagnostic EMG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 4-t2",
+          "title": "Kinesiology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 4-t3",
+          "title": "Ergonomics. Prosthesis Control. Amplitude Estimation in the Surface EMG - Signal Model and ML Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt755-mModule 4-t4",
+          "title": "Spectral Analysis of Surface EMG - Conduction Velocity Estimation - Intramuscular EMG Signal Decomposition",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

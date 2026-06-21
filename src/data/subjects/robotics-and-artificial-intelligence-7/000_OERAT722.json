@@ -1,0 +1,255 @@
+{
+  "id": "oerat722-robotics-and-artificial-intelligence-s7",
+  "code": "OERAT722",
+  "name": "INTRODUCTION TO ROBOT OPERATING SYSTEM",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t1",
+          "title": "The ROS Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t2",
+          "title": "roscore",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t3",
+          "title": "catkin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t4",
+          "title": "Workspaces and ROS Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t5",
+          "title": "rosrun",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t6",
+          "title": "Names, Namespaces, and Remapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t7",
+          "title": "roslaunch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t8",
+          "title": "tf: Coordinate Transforms - Poses, Positions, and Orientations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t9",
+          "title": "Publishing to a Topic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t10",
+          "title": "Subscribing to a Topic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t11",
+          "title": "Latched Topics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t12",
+          "title": "Defining Message Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 1-t13",
+          "title": "Mixing Publishers and Subscribers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t1",
+          "title": "Defining a Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t2",
+          "title": "Implementing a Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t3",
+          "title": "Using a Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t4",
+          "title": "Defining an Action",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t5",
+          "title": "Implementing a Basic Action Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t6",
+          "title": "Using an Action",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t7",
+          "title": "Implementing a More Sophisticated Action Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 2-t8",
+          "title": "Using the More Sophisticated Action",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t1",
+          "title": "Subsystems - Actuation: Mobile Platform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t2",
+          "title": "Actuation: Manipulator Arm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t3",
+          "title": "Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t4",
+          "title": "Computation Complete Robots - PR2",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t5",
+          "title": "Fetch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t6",
+          "title": "Robonaut 2",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t7",
+          "title": "TurtleBot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t8",
+          "title": "Simulators - Stage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 3-t9",
+          "title": "Gazebo and Other Simulators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 4-t1",
+          "title": "Maps in ROS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 4-t2",
+          "title": "Recording Data with rosbag",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 4-t3",
+          "title": "Building Maps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 4-t4",
+          "title": "Starting a Map Server and Looking at a Map",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 4-t5",
+          "title": "Localizing the Robot in a Map",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 4-t6",
+          "title": "Using the ROS Navigation Stack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-oerat722-mModule 4-t7",
+          "title": "Navigating in Code",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "id": "oecht724-chemical-engineering-s7",
+  "code": "OECHT724",
+  "name": "INDUSTRIAL INSTRUMENTATION",
+  "branchId": "chemical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 1-t1",
+          "title": "Introduction: Definition of Instrumentation, Concept of an Instrument, Functional Elements and Functions of an Instrument, Classification of Instruments, Performance Characteristics of an Instrument (Static and Dynamic)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 1-t2",
+          "title": "Temperature Measurement: Electrical and Non-Electrical, Contact and Non-Contact Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 1-t3",
+          "title": "Thermometers: Liquid-Filled, Vapour Pressure, Gas-Filled, Bimetallic, and Resistance Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 1-t4",
+          "title": "Thermocouple Type: Thermoelectric Principles (Seebeck Effect, Peltier Effect, and Thomson Effect), Laws of Thermoelectricity, Thermocouple Output Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 1-t5",
+          "title": "Radiation Methods: Radiation and Optical Pyrometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 1-t6",
+          "title": "Thermistors: Resistance Characteristics and Their Application in Temperature Measurement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t1",
+          "title": "Manometers: U-Tube, Well Type, and Inclined Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t2",
+          "title": "Prandtl and Air Type Micromanometers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t3",
+          "title": "Barometer Method for Atmospheric Pressure Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t4",
+          "title": "Low Pressure Measurement by Kenetometer, McLeod Gage, and Thermal Conductivity Gauge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t5",
+          "title": "Pressure Measurement Using Bourdon Tube, Flat and Corrugated Diaphragms, and Capsules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t6",
+          "title": "Measurement of Pressure in Corrosive Fluids Using Liquid Seal and Diaphragm Seal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t7",
+          "title": "Transducers of Electrical and Mechanical Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 2-t8",
+          "title": "Density Measurement Using Constant Volume Hydrometer and Air Pressure Balance Method, Gas Density Detector, and Gas Specific Gravity Measuring System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 3-t1",
+          "title": "Flow Measurement Using Head Type Flowmeters Based on Differential Pressure: Orifice Meter, Venturi Meter, Flow Nozzle, and Pitot Tube",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 3-t2",
+          "title": "Open Channel Meters: Weirs and Flumes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 3-t3",
+          "title": "Electromagnetic Flowmeters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 3-t4",
+          "title": "Variable Area Meters: Rotameter and Cone and Float Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 3-t5",
+          "title": "Mechanical Flowmeters of Positive Displacement Type: Rotating Disk, Turbine Type, and Anemometers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 3-t6",
+          "title": "Level Measurement: Direct Type and Indirect Type, Differential Pressure Method for Pressurized Vessels, and Solid Level Detectors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 4-t1",
+          "title": "Moisture Content and Humidity: Definition, Moisture Content Determination by Thermal Drying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 4-t2",
+          "title": "Instruments for Measuring Humidity: Hygrometer, Psychrometer, and Dew Point Apparatus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 4-t3",
+          "title": "pH Measurement Using Calomel Electrode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 4-t4",
+          "title": "Composition Analysis Using Spectroscopic Methods: Absorption, Emission, and Mass Spectrometers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 4-t5",
+          "title": "Analysis of Solids by X-Ray Diffraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-7-oecht724-mModule 4-t6",
+          "title": "Gas Analysis by Thermal Conductivity, Polarography, and Chromatography",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

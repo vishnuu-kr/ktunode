@@ -1,0 +1,195 @@
+{
+  "id": "pbitt304-information-technology-s3",
+  "code": "PBITT304",
+  "name": "DATABASE MANAGEMENT SYSTEM",
+  "branchId": "information-technology",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 1-t1",
+          "title": "Introduction: Overview of a database project, its scope and objectives, and the importance of database management systems in real-world applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 1-t2",
+          "title": "Database Design: Conceptual Design using an Entity-Relationship Diagram (ERD) to model entities, relationships, and attributes; and Logical Design to translate the ERD into a relational schema",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 1-t3",
+          "title": "Database Creation: Implement a sample schema in a DBMS of your choice (e.g., MySQL, PostgreSQL, SQLite)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 1-t4",
+          "title": "Tables and Relationships: Define tables with appropriate attributes (columns) and establish relationships (foreign keys) between tables",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 2-t1",
+          "title": "Normalization: Ensure your schema is normalized to minimize redundancy and dependency issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 2-t2",
+          "title": "SQL Queries: Develop a set of SQL queries to demonstrate CRUD operations (Create, Read, Update, Delete), complex joins, aggregations, and any specialized queries required by your project",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 2-t3",
+          "title": "Timeline: Create a timeline or project plan with milestones to ensure timely completion",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 3-t1",
+          "title": "Constraints: Entity Integrity, Referential Integrity, and Domain Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 3-t2",
+          "title": "Transaction Management: Definition of transactions and transaction properties (ACID properties), and implementation of transaction processing logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 3-t3",
+          "title": "Concurrency Control: Techniques to manage concurrent access (e.g., locking, time stamping)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 3-t4",
+          "title": "Backup and Recovery: Strategies for database backup and recovery in case of failures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 4-t1",
+          "title": "Testing and Validation: Execute queries to validate the correctness of the schema and constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 4-t2",
+          "title": "Integration with Applications: Develop simple applications (e.g., using Python) to interact with the database",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 4-t3",
+          "title": "Documentation: Prepare comprehensive documentation covering project objectives, database schema, constraints, transactions, and implementation details",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pbitt304-mModule 4-t4",
+          "title": "Project Topic Suggestions: Sample project ideas for database management systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 5-t1",
+          "title": "Pharmacy Database Management System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 6-t1",
+          "title": "Restaurant Database Management",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 7-t1",
+          "title": "Payroll Database Management System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 8-t1",
+          "title": "Insurance Products Database Management",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 9-t1",
+          "title": "Hospital Management System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "topics": [
+        {
+          "id": "information-technology-3-pbitt304-mModule 10-t1",
+          "title": "Bank Transactions Management System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

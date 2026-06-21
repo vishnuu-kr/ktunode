@@ -1,0 +1,159 @@
+{
+  "id": "pcbmt302-biomedical-engineering-s3",
+  "code": "PCBMT302",
+  "name": "ANALOG ELECTRONICS",
+  "branchId": "biomedical-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t1",
+          "title": "Sinusoidal and Non-Sinusoidal Wave Shapes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t2",
+          "title": "Principle and Working of RC Differentiating and Integrating Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t3",
+          "title": "Clipping Circuits - Positive, Negative and Biased Clippers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t4",
+          "title": "Transistor Biasing: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t5",
+          "title": "Operating Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t6",
+          "title": "Concept of Load Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t7",
+          "title": "Fixed Bias, Self-Bias and Voltage Divider Bias",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 1-t8",
+          "title": "h-Parameter Model of BJT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 2-t1",
+          "title": "Classification of Amplifiers, RC Coupled Amplifier - Frequency Response, Analysis for Mid Frequency Gain, Typical Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 2-t2",
+          "title": "Power Amplifiers: Definitions and Classification, Typical Circuits of Class A, Class B, Class AB and Class C Amplifiers, Analysis for Conversion Efficiency of Class B and AB, Simple Examples",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 3-t1",
+          "title": "Op-Amp Basics: Block Diagram and Ideal Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 3-t2",
+          "title": "Op-Amp Parameters: Gain, Bandwidth, Slew Rate, CMRR, Offset Voltage and Offset Current",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 3-t3",
+          "title": "IC741 Op-Amp Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 3-t4",
+          "title": "Simple Op-Amp Circuits: Inverting Amplifier, Non-Inverting Amplifier, Summing Amplifier, Integrator, Difference Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 3-t5",
+          "title": "Op-Amp Applications: Instrumentation Amplifier, Schmitt Trigger, Precision Rectifiers, Comparators, Zero Crossing Detector, Level Detector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 3-t6",
+          "title": "Active Filters: Design of LPF, BPF and Notch Filters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 4-t1",
+          "title": "Feedback Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 4-t2",
+          "title": "Basic Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 4-t3",
+          "title": "Effect of Negative Feedback on Amplifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 4-t4",
+          "title": "Oscillators: Classification, Criterion for Oscillation, RC Phase Shift and Wien Bridge Oscillator (both using BJT), Design Equations and Working of the Circuits (analysis not required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-3-pcbmt302-mModule 4-t5",
+          "title": "Regulated Power Supplies: Simple Zener Voltage Regulator, Series Voltage Regulator, IC 723 Regulators (Block Diagram, Typical Low/High Voltage Circuits), 3-Pin Regulators: 78XX and 79XX",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

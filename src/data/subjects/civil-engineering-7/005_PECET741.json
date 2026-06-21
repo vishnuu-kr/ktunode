@@ -1,0 +1,75 @@
+{
+  "id": "pecet741-civil-engineering-s7",
+  "code": "PECET741",
+  "name": "STRUCTURAL DYNAMICS",
+  "branchId": "civil-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "civil-engineering-7-pecet741-mModule 1-t1",
+          "title": "Introduction, Classification of Dynamic Loads, Essential Characteristics of a Dynamic Problem, Methods of Discretization, Single Degree of Freedom Systems, Basic Components of a Dynamic System, Formulation of Equation of Motion, Newton's 2nd Law and D'Alembert's Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-7-pecet741-mModule 1-t2",
+          "title": "Influence of Gravitational Forces, Generalized SDOF Systems, Solution of the Equation of Motion, Undamped Free Vibration, Damped Free Vibration, Critically Damped, Under Damped and Over Damped SDOF Systems, Logarithmic Decrement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "civil-engineering-7-pecet741-mModule 2-t1",
+          "title": "Response to Harmonic Loading, Steady State and Transient States, Steady State Amplitude, Dynamic Magnification Factor, Force Transmissibility and Vibration Isolation, Response to Periodic Loading, Fourier Series Representation of Periodic Loads in Time Domain, Response of SDOF Systems, Response to Impulse Loading, Half-sine, Rectangular and Triangular Pulses",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "civil-engineering-7-pecet741-mModule 3-t1",
+          "title": "Natural Frequencies and Mode Shapes, Orthogonality of Normal Modes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "civil-engineering-7-pecet741-mModule 4-t1",
+          "title": "Rayleigh's Method, Dunkarley's Method, Stodola's Method, Distributed Mass (Continuous) Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-7-pecet741-mModule 4-t2",
+          "title": "Differential Equation of Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-7-pecet741-mModule 4-t3",
+          "title": "Axial Vibration of Rods, Flexural Vibration of Beams, Natural Frequencies and Mode Shapes of Simply Supported Beam, Evaluation of Frequencies and Mode Shapes of Cantilever Beam and Fixed Beam (Formulation Only)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

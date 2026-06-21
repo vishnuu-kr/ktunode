@@ -1,0 +1,219 @@
+{
+  "id": "pecdt753-computer-science-and-engineering-data-science-s7",
+  "code": "PECDT753",
+  "name": "MOBILE APPLICATIONS",
+  "branchId": "computer-science-and-engineering-data-science",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t1",
+          "title": "Overview and Key Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t2",
+          "title": "Overview of Mobile Platforms: iOS and Android",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t3",
+          "title": "Introduction to Cross Platform Development with Flutter: Key Benefits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t4",
+          "title": "Flutter vs. Other Cross-Platform Frameworks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t5",
+          "title": "Setting Up the Flutter Development Environment: Installing Flutter SDK and Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t6",
+          "title": "Building and Running the 'Hello World' App",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t7",
+          "title": "Brief Introduction to Git: Cloning and Basic Commands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t8",
+          "title": "Mobile App Architectures: Overview of MVC and MVVM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t9",
+          "title": "Brief Introduction to the BLoC Pattern in Flutter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t10",
+          "title": "Basics of Dart Programming Language: Syntax and Data Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 1-t11",
+          "title": "Introduction to Asynchronous Programming",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t1",
+          "title": "Principles of Mobile UI/UX Design: Overview and Importance of Usability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t2",
+          "title": "Accessibility and User-Centered Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t3",
+          "title": "Designing Responsive UIs with Flutter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t4",
+          "title": "Using Flutter Widgets: Stateless and Stateful Widgets - Practical Examples and Use Cases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t5",
+          "title": "Layouts in Flutter: Deep Dive into Layout Widgets (Container, Column, Stack) - Aligning and Positioning Widgets Effectively",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t6",
+          "title": "Navigation and Routing in Flutter: Implementing Basic Navigation (Navigator and Routes) and Managing Multiple Screens with Data Passing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t7",
+          "title": "Customizing UI with Themes and Styles: Introduction to Flutter's Theming Capabilities and Creating Custom Themes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 2-t8",
+          "title": "Introduction to Material Design and Cupertino Widgets: Overview of Material Design Principles and Components and Using Cupertino Widgets for iOS Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 3-t1",
+          "title": "State Management in Flutter: Overview, Provider, Riverpod, and the BLoC Pattern",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 3-t2",
+          "title": "Networking in Flutter: Making HTTP Requests (GET, POST, DELETE), JSON Parsing, and Integrating RESTful APIs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 3-t3",
+          "title": "Data Persistence: Introduction to SQLite, Shared Preferences, and Hive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 3-t4",
+          "title": "Asynchronous Programming with Dart: Futures, async/await, and Streams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 3-t5",
+          "title": "Working with Firebase: Setting Up and Firebase Authentication (Sign-In/Sign-Up Flow)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 4-t1",
+          "title": "Advanced UI Components and Animations: Building Complex UI Components and Implementing Animations in Flutter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 4-t2",
+          "title": "App Security Best Practices: Securing Mobile Applications - Common Threats and Mitigations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 4-t3",
+          "title": "Implementing Secure Authentication and Data Storage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 4-t4",
+          "title": "Testing and Debugging Flutter Applications: Introduction to Unit Testing, Widget Testing, and Integration Testing, and Debugging Techniques and Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 4-t5",
+          "title": "Continuous Integration/Continuous Deployment (CI/CD) with Flutter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 4-t6",
+          "title": "Publishing Apps to Google Play Store and Apple App Store",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt753-mModule 4-t7",
+          "title": "Industry Trends and Future of Mobile Development with Flutter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

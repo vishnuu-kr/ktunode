@@ -1,0 +1,111 @@
+{
+  "id": "peiet861-industrial-engineering-s8",
+  "code": "PEIET861",
+  "name": "DATA SCIENCE WITH JULIA",
+  "branchId": "industrial-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 1-t1",
+          "title": "Overview of Julia software package, installation and set up, variables, data types and operations, data structures - arrays, tuples, dictionaries, sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 1-t2",
+          "title": "Conditionals and loops, functions, methods and constructors, modules and packages, input and output",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 2-t1",
+          "title": "Object oriented programming and functional programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 2-t2",
+          "title": "Parallel programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 2-t3",
+          "title": "Metaprogramming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 2-t4",
+          "title": "Working with dates and time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 2-t5",
+          "title": "Working with data frames",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 3-t1",
+          "title": "Exploratory data analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 3-t2",
+          "title": "Hypothesis testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 3-t3",
+          "title": "Time series analysis. Machine learning with Julia: Regression analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 3-t4",
+          "title": "Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 3-t5",
+          "title": "Clustering and dimensionality reduction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet861-mModule 4-t1",
+          "title": "Solving linear programming problems, mixed integer programming and vehicle routing problems, solving non-linear and mixed integer non-linear programming problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

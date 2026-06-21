@@ -1,0 +1,351 @@
+{
+  "id": "pcitt303-information-technology-s3",
+  "code": "PCITT303",
+  "name": "DATA STRUCTURES",
+  "branchId": "information-technology",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t1",
+          "title": "Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t2",
+          "title": "Classifications of Data Structures - ADT and CDT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t3",
+          "title": "Linear and Non-Linear",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t4",
+          "title": "Static and Dynamic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t5",
+          "title": "Algorithm/Program Development",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t6",
+          "title": "Analysis of Algorithms - Space Complexity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t7",
+          "title": "Understanding the notion of Time Complexity using graphical and tabular representation for Linear, Quadratic, Cubical, Logarithmic and Exponential functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t8",
+          "title": "Asymptotic Notations - Best Case, Worst Case, Average Case",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t9",
+          "title": "Arrays: Definition, Properties of Array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t10",
+          "title": "Representation of Single/Two-dimensional Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t11",
+          "title": "Sparse Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t12",
+          "title": "Polynomial representation and manipulation using Arrays (Addition only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t13",
+          "title": "Stack: Operations on Stack using Array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t14",
+          "title": "Queues: Definition, Operations on Queue using Array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t15",
+          "title": "Circular Queue implementation using Array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t16",
+          "title": "Other types of Queues: Dequeue, Priority Queue (Concept only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 1-t17",
+          "title": "Applications of Stack: Infix to Postfix conversion and Postfix evaluation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t1",
+          "title": "Linear Search and Binary Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t2",
+          "title": "Sorting: Bubble Sort, Selection Sort, Insertion Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t3",
+          "title": "Quicksort and Merge Sort (Recursive Algorithms only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t4",
+          "title": "Complexity analysis of sorting algorithms (Detailed analysis is not required) and Heap sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t5",
+          "title": "Hash Tables: Different Hash Functions: Division method, Multiplication Method, Mid Square Method, Folding Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t6",
+          "title": "Collision Resolution Techniques: Closed Hashing (Linear Probing) - Drawbacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t7",
+          "title": "Open Hashing (Separate Chaining)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t8",
+          "title": "Remedies - Random Probing, Quadratic Probing, Double Hashing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 2-t9",
+          "title": "Load Factor and Re-hashing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t1",
+          "title": "Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t2",
+          "title": "Array Vs Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t3",
+          "title": "Dynamic memory management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t4",
+          "title": "Representation of a Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t5",
+          "title": "Classification (Singly Linked List, Doubly Linked List, Circular singly linked list)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t6",
+          "title": "Operations on Singly Linked List - Traversal, Insertion, Deletion and Searching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t7",
+          "title": "Applications of Linked List: Polynomial representation and manipulation (Addition only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t8",
+          "title": "Operations on Doubly Linked List - Traversal, Insertion, Deletion and Searching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t9",
+          "title": "Circular Linked List (Concept only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t10",
+          "title": "Linked List representation of Stack and Queue",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t11",
+          "title": "Stack implementation and Operations on Stack using Linked List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 3-t12",
+          "title": "Queue implementation and Operations on Queue using Linked List",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t1",
+          "title": "Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t2",
+          "title": "Height, Depth, Degree, Level",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t3",
+          "title": "Binary Trees: Properties of Binary Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t4",
+          "title": "Complete, Perfect and Full Binary Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t5",
+          "title": "Linear and Linked List representations of Binary Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t6",
+          "title": "Binary Tree Traversals - Preorder, Inorder, and Postorder (Recursive Algorithms only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t7",
+          "title": "Binary Tree Applications: Expression Tree creation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t8",
+          "title": "Binary Search Tree: Creation, Insertion, Deletion, and Search operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t9",
+          "title": "Heap: Creation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t10",
+          "title": "Graph: Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t11",
+          "title": "Set representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t12",
+          "title": "Directed and Undirected Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t13",
+          "title": "Adjacency Matrix and Adjacency List representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t14",
+          "title": "Graph Traversal: Breadth First Search (BFS), Depth First Search (DFS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt303-mModule 4-t15",
+          "title": "Graph Applications: Shortest Path Problem - Dijkstra's Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

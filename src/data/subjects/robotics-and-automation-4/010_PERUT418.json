@@ -1,0 +1,243 @@
+{
+  "id": "perut418-robotics-and-automation-s4",
+  "code": "PERUT418",
+  "name": "COMPUTER ORGANISATION AND ARCHITECTURE",
+  "branchId": "robotics-and-automation",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 1-t1",
+          "title": "Functional Units - Basic Operational Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 1-t2",
+          "title": "Bus Structures - Bus Operations - Arbitration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 1-t3",
+          "title": "Instruction Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 1-t4",
+          "title": "Instruction Sequencing and Execution - Fundamental Concepts - Execution of a Complete Instruction - Data Path - Single Bus and Multiple Bus Organization - Hardwired Control - Microprogrammed Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t1",
+          "title": "Assembly Language",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t2",
+          "title": "Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t3",
+          "title": "Operands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t4",
+          "title": "Registers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t5",
+          "title": "Memory and Constants; Machine Language: R-Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t6",
+          "title": "I-Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t7",
+          "title": "J-Type Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t8",
+          "title": "Interpreting Machine Language Code; MIPS Addressing Modes - Register Only",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t9",
+          "title": "Immediate",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t10",
+          "title": "Base",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t11",
+          "title": "PC-Relative",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t12",
+          "title": "Pseudo-Direct",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t13",
+          "title": "Steps for Executing a Program - Compilation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t14",
+          "title": "Assembling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t15",
+          "title": "Linking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 2-t16",
+          "title": "Loading",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 3-t1",
+          "title": "A Basic MIPS Implementation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 3-t2",
+          "title": "Building a Datapath",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 3-t3",
+          "title": "Control Implementation Scheme",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 3-t4",
+          "title": "Pipelining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 3-t5",
+          "title": "Pipelined Datapath and Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 3-t6",
+          "title": "Handling Data Hazards and Control Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 3-t7",
+          "title": "Exceptions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t1",
+          "title": "Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t2",
+          "title": "Semiconductor RAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t3",
+          "title": "Memory Characteristics and Hierarchy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t4",
+          "title": "Cache Memories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t5",
+          "title": "Improving Cache Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t6",
+          "title": "Virtual Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t7",
+          "title": "Input/Output Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut418-mModule 4-t8",
+          "title": "Programmed I/O, Interrupt-Driven I/O, DMA",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "id": "oemrt831-mechatronics-engineering-s6",
+  "code": "OEMRT831",
+  "name": "AUTOTRONICS",
+  "branchId": "mechatronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t1",
+          "title": "The Engine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t2",
+          "title": "Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t3",
+          "title": "Drive Train",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t4",
+          "title": "Starting & Charging Systems Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t5",
+          "title": "Ignition System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t6",
+          "title": "Suspension Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t7",
+          "title": "Brakes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t8",
+          "title": "Steering System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t9",
+          "title": "Sensors and Actuators for Power Train and Chassis Systems: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t10",
+          "title": "Working Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t11",
+          "title": "Throttle Position",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t12",
+          "title": "Manifold Absolute Pressure (MAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t13",
+          "title": "Lambda Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t14",
+          "title": "Detonation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 1-t15",
+          "title": "Emission",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t1",
+          "title": "Feedback Carburettor System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t2",
+          "title": "Throttle Body Injection and Multi Point Fuel Injection System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t3",
+          "title": "Injection System Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t4",
+          "title": "Advantage of Electronic Ignition Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t5",
+          "title": "Three Way Catalytic Converter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t6",
+          "title": "Group and Sequential Injection Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t7",
+          "title": "Working of the Fuel System Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t8",
+          "title": "Advantages of Electronic Ignition Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t9",
+          "title": "CI Engine Management: Parameters Affecting Combustion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t10",
+          "title": "Noise and Emissions in CI Engines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t11",
+          "title": "Pilot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t12",
+          "title": "Main",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t13",
+          "title": "Advanced",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t14",
+          "title": "Post Injection and Retarded Post Injection Layout of the Common Rail Fuel Injection System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t15",
+          "title": "Working of Components Like Fuel Injector",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t16",
+          "title": "Fuel Pump",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t17",
+          "title": "Rail Pressure Limiter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t18",
+          "title": "Flow Limiter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 2-t19",
+          "title": "EGR Valve Control in Electronically Controlled Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t1",
+          "title": "Antilock Braking System (ABS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t2",
+          "title": "Electronic Stability Control (ESC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t3",
+          "title": "Roll Stability Control (RSC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t4",
+          "title": "Traction Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t5",
+          "title": "Adaptive Cruise Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t6",
+          "title": "Electric Power Steering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t7",
+          "title": "Electronic Clutch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t8",
+          "title": "Electronic Suspension System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t9",
+          "title": "Airbags",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t10",
+          "title": "Electric Vehicles and Hybrid Vehicles: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t11",
+          "title": "Electric Vehicle Development",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t12",
+          "title": "System Layout",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t13",
+          "title": "Basic System Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t14",
+          "title": "Fuel Cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t15",
+          "title": "Electric Vehicle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t16",
+          "title": "Hybrid Vehicle: Series Hybrid Vehicle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t17",
+          "title": "Parallel Hybrid Vehicle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 3-t18",
+          "title": "CNG-Electric Hybrid Vehicle",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t2",
+          "title": "Basic Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t3",
+          "title": "Vision Based Autonomous Road Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t4",
+          "title": "Architecture for Dynamic Vision System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t5",
+          "title": "Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t6",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t7",
+          "title": "Application of Mobile Robot Vision to a Vehicle Information System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t8",
+          "title": "Object Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t9",
+          "title": "Collision Warning and Avoidance System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt831-mModule 4-t10",
+          "title": "Low Tire Pressure Warning System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

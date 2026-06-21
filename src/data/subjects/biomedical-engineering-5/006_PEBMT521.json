@@ -1,0 +1,231 @@
+{
+  "id": "pebmt521-biomedical-engineering-s5",
+  "code": "PEBMT521",
+  "name": "CONTROL SYSTEMS ENGINEERING",
+  "branchId": "biomedical-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t1",
+          "title": "Introduction to Control System: Concepts and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t2",
+          "title": "Examples (Including Physiological Control Systems)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t3",
+          "title": "Open Loop and Closed Loop Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t4",
+          "title": "Control System Design Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t5",
+          "title": "Review of Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t6",
+          "title": "Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t7",
+          "title": "Mathematical Modelling of Simple Electrical and Mechanical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t8",
+          "title": "Block Diagram Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 1-t9",
+          "title": "Signal Flow Graphs: Mason's Gain Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t1",
+          "title": "Time Domain Analysis: Standard Test Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t2",
+          "title": "Transient and Steady State Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t3",
+          "title": "Time Response of First Order System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t4",
+          "title": "Time Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t5",
+          "title": "Step Response of Second Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t6",
+          "title": "Steady State Error and Static Error Coefficients",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t7",
+          "title": "Concept of Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 2-t8",
+          "title": "Effect of Location of Poles on Stability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 3-t1",
+          "title": "Routh-Hurwitz Stability Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 3-t2",
+          "title": "Root Locus: Construction of Root Locus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 3-t3",
+          "title": "Frequency Domain Analysis and Frequency Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 3-t4",
+          "title": "Stability in Frequency Domain: Frequency Response Plots - Polar Plots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 3-t5",
+          "title": "Bode Plots: Determination of Phase Margin and Gain Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 3-t6",
+          "title": "Minimum Phase and Non-Minimum Phase Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t1",
+          "title": "State Space Modelling: Concepts of State",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t2",
+          "title": "State Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t3",
+          "title": "State Space and State Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t4",
+          "title": "State Space Representation of nth Order Differential Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t5",
+          "title": "State Model of Simple Mechanical and Electrical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t6",
+          "title": "State-Space Representation of Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t7",
+          "title": "Transfer Function from State Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t8",
+          "title": "State Transition Matrix: Properties of State Transition Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t9",
+          "title": "Computation of State Transition Matrix Using Laplace Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pebmt521-mModule 4-t10",
+          "title": "Controllability and Observability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

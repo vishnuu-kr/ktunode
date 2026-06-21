@@ -1,0 +1,411 @@
+{
+  "id": "pecmt535-artificial-intelligence-and-machine-learning-s5",
+  "code": "PECMT535",
+  "name": "OBJECT ORIENTED PROGRAMMING CONCEPTS",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t1",
+          "title": "Introduction to Java - Structure of a Simple Java Program",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t2",
+          "title": "Java Programming Environment and Runtime Environment (Command Line and IDE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t3",
+          "title": "Java Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t4",
+          "title": "Java Virtual Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t5",
+          "title": "Primitive Data Types and Wrapper Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t6",
+          "title": "Casting and Autoboxing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t7",
+          "title": "Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t8",
+          "title": "Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t9",
+          "title": "Vector Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t10",
+          "title": "Operators - Arithmetic, Bitwise, Relational, Boolean Logical, Assignment, Conditional (Ternary)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t11",
+          "title": "Operator Precedence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t12",
+          "title": "Control Statements - Selection Statements, Iteration Statements and Jump Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t13",
+          "title": "Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t14",
+          "title": "Command Line Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t15",
+          "title": "Variable Length Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t16",
+          "title": "Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t17",
+          "title": "Abstract Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t18",
+          "title": "Interfaces. OOP Concepts - Data Abstraction, Encapsulation, Inheritance, Polymorphism, Procedural and Object Oriented Programming Paradigm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t19",
+          "title": "Microservices. Object Oriented Programming in Java - Declaring Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t20",
+          "title": "Object Reference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t21",
+          "title": "Introduction to Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t22",
+          "title": "Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t23",
+          "title": "Access Modifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 1-t24",
+          "title": "This Keyword",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t1",
+          "title": "Polymorphism - Method Overloading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t2",
+          "title": "Using Objects as Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t3",
+          "title": "Returning Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t4",
+          "title": "Recursion. Static Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t5",
+          "title": "Final Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t6",
+          "title": "Inner Classes. Inheritance - Super Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t7",
+          "title": "Sub Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t8",
+          "title": "Types of Inheritance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t9",
+          "title": "The Super Keyword",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t10",
+          "title": "Protected Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t11",
+          "title": "Calling Order of Constructors. Method Overriding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t12",
+          "title": "Dynamic Method Dispatch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 2-t13",
+          "title": "Using Final with Inheritance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 3-t1",
+          "title": "Singleton and Adaptor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t1",
+          "title": "SOLID Principles in Java. Swings Fundamentals - Overview of AWT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t2",
+          "title": "Swing v/s AWT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t3",
+          "title": "Swing Key Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t4",
+          "title": "Model View Controller (MVC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t5",
+          "title": "Swing Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t6",
+          "title": "Components and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t7",
+          "title": "Swing Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t8",
+          "title": "Event Handling in Swings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t9",
+          "title": "Swing Layout Managers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t10",
+          "title": "Exploring Swings - JFrame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t11",
+          "title": "JLabel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t12",
+          "title": "The Swing Buttons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t13",
+          "title": "JTextField. Event Handling - Event Handling Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t14",
+          "title": "Delegation Event Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t15",
+          "title": "Event Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t16",
+          "title": "Sources of Events",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t17",
+          "title": "Event Listener Interfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t18",
+          "title": "Using the Delegation Event Model. Developing Database Applications using JDBC - JDBC Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t19",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t20",
+          "title": "Steps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t21",
+          "title": "Common JDBC Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t22",
+          "title": "Connection Establishment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t23",
+          "title": "SQL Fundamentals - Creating and Executing Basic SQL Queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t24",
+          "title": "Working with Result Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt535-mModule 4-t25",
+          "title": "Performing CRUD Operations with JDBC",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

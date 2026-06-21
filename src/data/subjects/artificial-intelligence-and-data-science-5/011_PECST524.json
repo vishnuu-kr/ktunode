@@ -1,0 +1,177 @@
+{
+  "id": "pecst524-artificial-intelligence-and-data-science-s5",
+  "code": "PECST524",
+  "name": "DATA COMPRESSION",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t1",
+          "title": "Basic Compression Techniques: Data Compression Approaches - Variable-Length Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t2",
+          "title": "Run-Length Encoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t3",
+          "title": "Space-Filling Curves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t4",
+          "title": "Dictionary-Based Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t5",
+          "title": "Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t6",
+          "title": "Quantization, Huffman Encoding - Huffman Decoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t7",
+          "title": "Adaptive Huffman Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t8",
+          "title": "Facsimile Compression, Run Length Encoding (RLE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t9",
+          "title": "RLE Text Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t10",
+          "title": "Dictionary-Based Coding - LZ77",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t11",
+          "title": "LZ78",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 1-t12",
+          "title": "LZW and Deflate: Zip and Gzip Compression",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 2-t1",
+          "title": "Advanced Techniques: Arithmetic Coding - The Basic Idea, Implementation, Underflow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 2-t2",
+          "title": "Image Compression - Introduction, Approaches to Image Compression, History of Gray Codes, Image Transforms, Orthogonal Transforms, The Discrete Cosine Transform, Intermezzo: Statistical Distributions, JPEG, Human Vision and Color, The Wavelet Transform, Filter Banks, WSQ, Fingerprint Compression",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 3-t1",
+          "title": "Video Compression - Analog Video",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 3-t2",
+          "title": "Digital Video",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 3-t3",
+          "title": "Motion Compensation, MPEG Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 3-t4",
+          "title": "H.261",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 4-t1",
+          "title": "Audio Compression - Companding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 4-t2",
+          "title": "The Human Auditory System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 4-t3",
+          "title": "Heinrich Georg Barkhausen",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 4-t4",
+          "title": "Linear Prediction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 4-t5",
+          "title": "µ-Law and A-Law Companding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pecst524-mModule 4-t6",
+          "title": "Shorten",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

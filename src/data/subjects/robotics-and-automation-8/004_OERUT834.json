@@ -1,0 +1,225 @@
+{
+  "id": "oerut834-robotics-and-automation-s8",
+  "code": "OERUT834",
+  "name": "MACHINE VISION",
+  "branchId": "robotics-and-automation",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t1",
+          "title": "Geometric Primitives and Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t2",
+          "title": "2D Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t3",
+          "title": "3D Transformations - Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t4",
+          "title": "Rotation and Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t5",
+          "title": "3D to 2D Projections - Orthography and Para-Perspective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t6",
+          "title": "Perspective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t7",
+          "title": "Camera Intrinsics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t8",
+          "title": "Camera Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t9",
+          "title": "Photometric Image Formation - Lighting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t10",
+          "title": "The Digital Camera - Image Sensing Pipeline",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 1-t11",
+          "title": "Factors Affecting the Performance of a Digital Image Sensor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 2-t1",
+          "title": "Point Operators - Pixel Transforms, Color Transforms, Histogram Equalization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 2-t2",
+          "title": "Linear Filtering (Basic Explanation Only), Non-Linear Filtering - Median Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 2-t3",
+          "title": "Binary Image Processing - Morphology, Distance Transforms, Connected Components",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 3-t1",
+          "title": "Traditional, Machine Learning, and Deep Learning Pipelines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 3-t2",
+          "title": "Supervised Learning - Nearest Neighbors, Bayesian Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 3-t3",
+          "title": "Unsupervised Learning - Clustering, K-Means and Gaussian Mixture Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 3-t4",
+          "title": "Deep Neural Networks - Perceptron Unit, Weights and Layers, Activation Functions, Loss Functions, Backpropagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 3-t5",
+          "title": "Convolutional Neural Networks",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t1",
+          "title": "Instance Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t2",
+          "title": "Image Classification - Feature-Based Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t3",
+          "title": "Deep Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t4",
+          "title": "Object Detection - Face Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t5",
+          "title": "General Object Detection - Precision vs. Recall",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t6",
+          "title": "Semantic Segmentation - Basic Understanding Only",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t7",
+          "title": "Feature Detection and Matching: Points and Patches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t8",
+          "title": "Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t9",
+          "title": "Contour Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t10",
+          "title": "Lines and Vanishing Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t11",
+          "title": "Segmentation - Region Splitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t12",
+          "title": "Region Merging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-8-oerut834-mModule 4-t13",
+          "title": "Watershed",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

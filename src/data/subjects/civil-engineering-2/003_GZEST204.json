@@ -1,0 +1,153 @@
+{
+  "id": "gzest204-civil-engineering-s2",
+  "code": "GZEST204",
+  "name": "BASIC ELECTRICAL & ELECTRONICS ENGINEERING",
+  "branchId": "civil-engineering",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "civil-engineering-2-gzest204-mModule 1-t1",
+          "title": "Generation of Alternating Voltages: Faraday's Laws of Electromagnetic Induction, Generation of Alternating Voltage, Elementary Generator, Representation of AC Voltage and Currents, Sinusoidal Waveforms (Frequency, Period, Average and RMS Values, Form Factor of Waveform)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 1-t2",
+          "title": "DC Circuits: Resistance in Series and Parallel, Ohm's Law and Kirchhoff's Laws, Voltage and Current Divider Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 1-t3",
+          "title": "AC Circuits: Purely Resistive, Inductive and Capacitive Circuits, Inductive and Capacitive Reactance, Concept of Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 1-t4",
+          "title": "Three Phase AC Systems: Representation of Three Phase Voltages, Star and Delta Connections (Balanced Only), Relation Between Line and Phase Voltages, Line and Phase Currents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 1-t5",
+          "title": "Power in AC Circuits: Power Factor, Active, Reactive and Apparent Power in Single Phase and Three Phase Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "civil-engineering-2-gzest204-mModule 2-t1",
+          "title": "Conventional and Non-Conventional Energy Sources: Hydro, Thermal and Nuclear Plants (Block Diagram Description), Solar, Wind, Small Hydro Plants, PV System for Domestic Application",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 2-t2",
+          "title": "Transformers: Principle of Operation, Step-Up and Step-Down Transformers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 2-t3",
+          "title": "AC Power Supply, Transmission and Distribution Systems: Single Phase and Three Phase System, Three Phase 3-Wire and 4-Wire Systems, Transmission System, Distribution System (Feeder, Distributor, Service Mains)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 2-t4",
+          "title": "Electric Motors: Principle of Operation (Block Diagram Showing Power Stages, Losses and Efficiency), Classification and Types of DC and AC Motors, Common Applications, Principle of Traction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 2-t5",
+          "title": "Earthing: Need for Earthing, Types of Earthing (Pipe Earthing, Plate Earthing)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 2-t6",
+          "title": "Protective Devices: Principle of Operation of MCB, ELCB/RCCB",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "civil-engineering-2-gzest204-mModule 3-t1",
+          "title": "Electronic Components: Passive and Active Components, Resistors, Capacitors and Inductors (Types, Specifications, Standard Values, Colour Coding)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 3-t2",
+          "title": "PN Junction Diode: Principle of Operation, V-I Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 3-t3",
+          "title": "Bipolar Junction Transistors: PNP and NPN Structures, Principle of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 3-t4",
+          "title": "Digital Electronics: Binary Number System, Boolean Algebra, Logic Gates, Universal Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 3-t5",
+          "title": "Rectifiers and Power Supplies: Block Diagram Description of a DC Power Supply, Working of a Full Wave Bridge Rectifier, Capacitor Filter, Working of Simple Zener Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 3-t6",
+          "title": "Amplifiers: Transistor as an Amplifier, Block Diagram of Public Address System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "civil-engineering-2-gzest204-mModule 4-t1",
+          "title": "Quality of Measurements: Accuracy, Precision, Sensitivity and Resolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 4-t2",
+          "title": "Sensors: Working Principle and Applications - Pressure (Strain Gauge, Bourden Gauge), Temperature (RTD, Thermocouple), Proximity (Capacitive Sensor, Ultrasonic Sensor), Accelerometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-2-gzest204-mModule 4-t3",
+          "title": "Internet of Things (IoT): Introduction, Architecture of IoT, Implementation of Smart City (Street Lighting, Smart Parking)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

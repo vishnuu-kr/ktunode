@@ -1,0 +1,429 @@
+{
+  "id": "pecdt523-computer-science-and-engineering-iot-s5",
+  "code": "PECDT523",
+  "name": "DATA PRIVACY AND SECURITY",
+  "branchId": "computer-science-and-engineering-iot",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t1",
+          "title": "Security Goals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t2",
+          "title": "Cryptographic Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t3",
+          "title": "Services and Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t4",
+          "title": "Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t5",
+          "title": "Traditional Symmetric Key Ciphers: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t6",
+          "title": "Substitution Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t7",
+          "title": "Transposition Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t8",
+          "title": "Stream and Block Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t9",
+          "title": "Introduction to Modern Symmetric-Key Ciphers: Modern Block Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 1-t10",
+          "title": "Modern Stream Ciphers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t2",
+          "title": "DES Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t3",
+          "title": "DES Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t4",
+          "title": "Multiple DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t5",
+          "title": "Security of DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t6",
+          "title": "Advanced Encryption Standard (AES): Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t7",
+          "title": "Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t8",
+          "title": "Key Expansion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t9",
+          "title": "AES Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t10",
+          "title": "Analysis of AES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t11",
+          "title": "Asymmetric-Key Cryptography: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t12",
+          "title": "RSA Cryptosystem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t13",
+          "title": "Rabin Cryptosystem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t14",
+          "title": "ElGamal Cryptosystem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 2-t15",
+          "title": "Elliptic Curve Cryptosystems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t2",
+          "title": "Iterated Hash Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t3",
+          "title": "SHA-512",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t4",
+          "title": "WHIRLPOOL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t5",
+          "title": "Digital Signature: Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t6",
+          "title": "Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t7",
+          "title": "Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t8",
+          "title": "Attacks on Digital Signature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t9",
+          "title": "Digital Signature Standard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t10",
+          "title": "Data Hiding in Text: Basic Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t11",
+          "title": "Applications of Data Hiding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t12",
+          "title": "Watermarking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t13",
+          "title": "Intuitive Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t14",
+          "title": "Simple Digital Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t15",
+          "title": "Data Hiding in Text",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t16",
+          "title": "Innocuous Text",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t17",
+          "title": "Mimic Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t18",
+          "title": "Data Hiding in Images: LSB Encoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t19",
+          "title": "BPCS Steganography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t20",
+          "title": "Lossless Data Hiding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t21",
+          "title": "Spread Spectrum Steganography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t22",
+          "title": "Data Hiding by Quantization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t23",
+          "title": "Patchwork",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t24",
+          "title": "Signature Casting in Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t25",
+          "title": "Transform Domain Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t26",
+          "title": "Robust Data Hiding in JPEG Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t27",
+          "title": "Robust Frequency Domain Watermarking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 3-t28",
+          "title": "Detecting Malicious Tampering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t1",
+          "title": "Privacy Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t2",
+          "title": "Privacy Principles and Policies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t3",
+          "title": "Authentication and Privacy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t4",
+          "title": "Data Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t5",
+          "title": "Privacy on the Web",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t6",
+          "title": "Email Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t7",
+          "title": "Impacts on Emerging Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t8",
+          "title": "Legal and Ethical Issues in Computer Security: Protecting Programs and Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t9",
+          "title": "Information and the Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t10",
+          "title": "Rights of Employees and Employers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t11",
+          "title": "Redress for Software Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t12",
+          "title": "Computer Crime",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pecdt523-mModule 4-t13",
+          "title": "Ethical Issues in Computer Security",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

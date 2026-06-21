@@ -1,0 +1,141 @@
+{
+  "id": "pbcst404-artificial-intelligence-and-data-science-s4",
+  "code": "PBCST404",
+  "name": "COMPUTER ORGANIZATION AND ARCHITECTURE",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 1-t1",
+          "title": "Basic Structure of Computers: Functional Units, Basic Operational Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 1-t2",
+          "title": "Memory Map",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 1-t3",
+          "title": "Endianness, CISC vs RISC Architectures: RISC Introduction, Assembly Language, Assembler Directives, Assembling, Programming Concepts - Program Flow, Branching, Conditional Statements, Loops, Arrays, Function Calls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 1-t4",
+          "title": "Instruction Execution Cycle, Machine Language - Instructions, Addressing Modes, Stored Program Concept, Evolution of the RISC Architecture",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 2-t1",
+          "title": "Hazards, Solving Data/Control Hazards, Performance Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 3-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 3-t2",
+          "title": "Performance Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 3-t3",
+          "title": "Caches: Basic Concepts, Cache Mapping, Cache Replacement, Multiple-Level Caches, Reducing Miss Rate, Write Policy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 3-t4",
+          "title": "Virtual Memory: Address Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 3-t5",
+          "title": "Page Table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 3-t6",
+          "title": "Translation Lookaside Buffer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 3-t7",
+          "title": "Memory Protection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 4-t1",
+          "title": "Input/Output: External Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 4-t2",
+          "title": "I/O Modules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 4-t3",
+          "title": "Programmed I/O, Interrupt Driven I/O",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 4-t4",
+          "title": "Direct Memory Access",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 4-t5",
+          "title": "Embedded I/O Systems: Embedded I/O, General Purpose I/O, Serial I/O, Other Peripherals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-pbcst404-mModule 4-t6",
+          "title": "Suggestion on Project Topics: Use Simulators Such as Ripes (https://github.com/mortbopet/Ripes) / GEM5 (https://www.gem5.org/) to Implement Components of Computer Systems Such as Various Cache Organization and Study the Effect, Solutions to Hazards, TLBs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

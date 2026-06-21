@@ -1,0 +1,243 @@
+{
+  "id": "peeet864-electrical-and-computer-engineering-s8",
+  "code": "PEEET864",
+  "name": "ELECTRONIC COMMUNICATION",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t1",
+          "title": "Introduction to Communication Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t2",
+          "title": "Classification of Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t3",
+          "title": "Need for Modulation. Amplitude Modulation: Equation and Frequency Spectrum of AM Signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t4",
+          "title": "Double-Side Band Suppressed Carrier (DSB-SC) Modulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t5",
+          "title": "Single Sideband Modulation (SSB)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t6",
+          "title": "Comparison of Spectrum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t7",
+          "title": "Power and Efficiency of All the Three Variants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t8",
+          "title": "Amplitude Modulator Circuits - Balanced Modulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 1-t9",
+          "title": "AM Demodulators - Envelope Detector",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t1",
+          "title": "Frequency and Phase Modulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t2",
+          "title": "Narrow and Wide Band FM and their Spectra",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t3",
+          "title": "Modulation and Demodulation Techniques for FM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t4",
+          "title": "Pre-emphasis and De-emphasis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t5",
+          "title": "FM Transmitter and Receiver",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t6",
+          "title": "Noise in Receivers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t7",
+          "title": "Noise Figures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 2-t8",
+          "title": "Performance of Analog Modulation Schemes in AWGN: SNR and Figure of Merit for Different Schemes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t1",
+          "title": "Elements of Digital Communication System. Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t2",
+          "title": "Channels and Receivers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t3",
+          "title": "Sampling and Reconstruction of Analog Signals: Nyquist Sampling Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t4",
+          "title": "Ideal Reconstruction Filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t5",
+          "title": "Pulse Amplitude Modulation (PAM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t6",
+          "title": "Time Division Multiplexing with PAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t7",
+          "title": "Pulse Code Modulation (PCM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 3-t8",
+          "title": "A-law and Mu-law Quantization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t1",
+          "title": "Digital Bandpass Communication System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t2",
+          "title": "Bandpass Modulation Techniques: Amplitude Shift Keying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t3",
+          "title": "Phase Shift Keying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t4",
+          "title": "Frequency Shift Keying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t5",
+          "title": "Methods of Generation and Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t6",
+          "title": "Signal Constellations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t7",
+          "title": "M-ary Digital Modulation Schemes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t8",
+          "title": "Quadrature Phase Shift Keying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t9",
+          "title": "Minimum Shift Keying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet864-mModule 4-t10",
+          "title": "Quadrature Amplitude Modulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

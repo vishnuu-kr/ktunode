@@ -1,0 +1,153 @@
+{
+  "id": "pecst495-computer-science-and-design-s3",
+  "code": "PECST495",
+  "name": "ADVANCED DATA STRUCTURES",
+  "branchId": "computer-science-and-design",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 1-t1",
+          "title": "Foundational Data Structures - Overview of Arrays and Linked Lists, Implementation of Pointers and Objects, Representing Rooted Trees, Hashing - Hash Tables, Hash Functions, Cuckoo Hashing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 1-t2",
+          "title": "Bloom Filters - Count-Min Sketch, Applications to Networks - Click Stream Processing using Bloom Filters, Applications to Data Science - Heavy Hitters and Count-Min Structures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t1",
+          "title": "Advanced Tree Data Structures - Balanced Trees - AVL Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t2",
+          "title": "Red-Black Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t3",
+          "title": "Suffix Trees and Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t4",
+          "title": "Segment Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t5",
+          "title": "Heaps and Related Structures - Binomial Heap",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t6",
+          "title": "Fibonacci Heaps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t7",
+          "title": "Merkle Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 2-t8",
+          "title": "Applications to Information Retrieval and WWW - AutoComplete using Tries",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 3-t2",
+          "title": "R-trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 3-t3",
+          "title": "Temporal Data Structures - Persistence, Retroactivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 3-t4",
+          "title": "Search and Optimization Trees - Skip List, Tango Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 3-t5",
+          "title": "Applications to Data Science - Approximate Nearest Neighbor Search, Applications to Information Retrieval and WWW, Posting List Intersection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 4-t2",
+          "title": "Consistent Hashing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 4-t3",
+          "title": "Distributed BST",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 4-t4",
+          "title": "Data Compression and Transformations - Burrows-Wheeler Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 4-t5",
+          "title": "Histogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 4-t6",
+          "title": "Wavelet Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pecst495-mModule 4-t7",
+          "title": "Cryptographic Applications - Hashing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

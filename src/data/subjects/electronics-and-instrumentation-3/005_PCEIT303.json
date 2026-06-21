@@ -1,0 +1,189 @@
+{
+  "id": "pceit303-electronics-and-instrumentation-s3",
+  "code": "PCEIT303",
+  "name": "NETWORK THEORY",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t1",
+          "title": "Network Theorems: Review of Mesh and Node Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t2",
+          "title": "Super Mesh and Super Node Analysis: Analysis of DC and AC Circuits Containing Independent and Dependent Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t3",
+          "title": "Network Theorems: Thevenin's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t4",
+          "title": "Norton's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t5",
+          "title": "Superposition Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t6",
+          "title": "Reciprocity Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t7",
+          "title": "Maximum Power Transfer Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 1-t8",
+          "title": "Steady State AC Analysis: Application of Network Theorems to Solve AC Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 2-t1",
+          "title": "Circuit Analysis through Laplace Transform: Review of Laplace Transform and Inverse Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 2-t2",
+          "title": "Initial Value Theorem and Final Value Theorem (no proof required): Transformation of Circuits into s-Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 2-t3",
+          "title": "Transient Analysis of RL, RC and RLC Circuits through Laplace Transform with Impulse, Step and Sinusoidal Inputs (with and without initial conditions)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 2-t4",
+          "title": "Analysis of Networks with Transformed Impedance and Dependent Sources",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t1",
+          "title": "Network Functions - Poles & Zeros: Network Functions of Single Port and Two Port Networks - Driving Point Impedance and Transfer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t2",
+          "title": "Computation of Network Functions for Ladder and Non-Ladder Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t3",
+          "title": "Poles and Zeros of Network Functions: Significance of Poles and Zeros",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t4",
+          "title": "Properties of Driving Point and Transfer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t5",
+          "title": "Necessary Conditions for Driving Point and Transfer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t6",
+          "title": "Time Domain Response from Pole-Zero Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t7",
+          "title": "Amplitude and Phase Response from Pole-Zero Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 3-t8",
+          "title": "Stability Criteria",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 4-t1",
+          "title": "Two Port Network Parameters: Two Port Networks - Impedance, Admittance, Hybrid and Transmission Parameters - Conditions for Reciprocity and Symmetry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 4-t2",
+          "title": "Interrelationships of Different Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 4-t3",
+          "title": "Interconnection of Two Port Networks - Series, Parallel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 4-t4",
+          "title": "T and π Equivalent of a Two-Port Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 4-t5",
+          "title": "Image Impedance Parameter Description of a Two-Port Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-3-pceit303-mModule 4-t6",
+          "title": "Characteristic Impedance and Propagation Constant of a Symmetrical Two Port Network (derivation not required)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

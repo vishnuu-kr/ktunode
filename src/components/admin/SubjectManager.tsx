@@ -56,7 +56,7 @@ function generateId(): string {
 
 export default function SubjectManager({
   allowedBranches,
-  visibleSemesters,
+  visibleSemesters: _visibleSemesters,
   initialSubjects,
   currentBranch,
   currentSem,

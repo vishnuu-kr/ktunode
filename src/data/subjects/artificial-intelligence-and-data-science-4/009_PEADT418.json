@@ -1,0 +1,189 @@
+{
+  "id": "peadt418-artificial-intelligence-and-data-science-s4",
+  "code": "PEADT418",
+  "name": "MICROCONTROLLERS",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t1",
+          "title": "Introduction to Embedded Systems and ARM Cortex-M Architecture: Overview of Embedded Systems Including Definition, Applications, and Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t2",
+          "title": "Embedded C Programming Basics and Key Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t3",
+          "title": "Differences and Use Cases of Microcontrollers Versus Microprocessors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t4",
+          "title": "Classification of Processors Including RISC, CISC, and Other Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t5",
+          "title": "Overview of ARM Cortex-M Series Features and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t6",
+          "title": "Introduction to Cortex-M23 and Cortex-M33 Processors: Armv8-M Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t7",
+          "title": "Core Features: Registers, Memory, and Bus Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 1-t8",
+          "title": "Comparison with Previous Cortex-M Generations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 2-t1",
+          "title": "STM32 Microcontroller Overview and Development Environment Setup: Overview of the STM32 Family and Features of the STM32U575, Development Environment and HAL, Introduction, Writing, and Debugging Your First Program (LED Interfacing)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 2-t2",
+          "title": "Interfacing: Seven-Segment Display, LCD Display, Matrix Keypad, and Relay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 2-t3",
+          "title": "Analog to Digital Conversion: Potentiometer, Temperature Sensor, LDR, and Microphone",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 2-t4",
+          "title": "Digital to Analog Conversion: Simple DAC Output, Sine Wave Generation, and Audio Signal Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 2-t5",
+          "title": "Interrupt Handling Basics and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 2-t6",
+          "title": "Timers and PWM: Configuration, Real-Time Clock (RTC), LED Brightness Control, and Motor Speed Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 3-t1",
+          "title": "Communication Protocols: Overview of Serial Communication Protocols - USART, I2C, and SPI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 3-t2",
+          "title": "Interfacing an I2C Temperature Sensor and Displaying Data on an LCD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 3-t3",
+          "title": "Writing to and Reading from an SPI-based EEPROM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 3-t4",
+          "title": "Implementing CAN Communication Between STM32 Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 3-t5",
+          "title": "Creating a USB HID Device for Keyboard and Mouse Emulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 4-t1",
+          "title": "IoT and RTOS: Introduction to IoT and its Layers of Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 4-t2",
+          "title": "Introduction to IoT Communication Protocols Including MQTT, CoAP, and HTTP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 4-t3",
+          "title": "Securing IoT Data Using Encryption Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 4-t4",
+          "title": "Wireless Communication Basics: GSM, Interfacing GSM (Sending SMS, Making Calls, Internet Connectivity Using AT Commands)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 4-t5",
+          "title": "Bluetooth: Data Transfer between STM32U575 and Mobile Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 4-t6",
+          "title": "RTOS Concepts: FreeRTOS Overview, Task Creation, Scheduling, Timers, and Inter-task Communication (Queues and Semaphores)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-4-peadt418-mModule 4-t7",
+          "title": "Designing an IoT-Based Home Automation System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

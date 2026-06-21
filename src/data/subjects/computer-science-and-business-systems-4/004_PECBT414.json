@@ -1,0 +1,285 @@
+{
+  "id": "pecbt414-computer-science-and-business-systems-s4",
+  "code": "PECBT414",
+  "name": "CONCEPTS IN MACHINE LEARNING",
+  "branchId": "computer-science-and-business-systems",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 1-t1",
+          "title": "Overview of Machine Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 1-t2",
+          "title": "Machine Learning Paradigms - Supervised, Semi-Supervised, Unsupervised, Reinforcement Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 1-t3",
+          "title": "Basics of Parameter Estimation - Maximum Likelihood Estimation (MLE) and Maximum a Posteriori Estimation (MAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 1-t4",
+          "title": "Introduction to Bayesian Formulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t1",
+          "title": "Supervised and Unsupervised Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t2",
+          "title": "Regression - Linear Regression with One Variable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t3",
+          "title": "Linear Regression with Multiple Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t4",
+          "title": "Solution Using Gradient Descent Algorithm and Matrix Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t5",
+          "title": "Basic Idea of Overfitting in Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t6",
+          "title": "Linear Methods for Classification - Logistic Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t7",
+          "title": "Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t8",
+          "title": "Naive Bayes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t9",
+          "title": "Decision Tree Algorithm ID3",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t10",
+          "title": "Clustering - Similarity Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t11",
+          "title": "Hierarchical Agglomerative Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t12",
+          "title": "K-Means Partitional Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t13",
+          "title": "Expectation Maximization (EM) for Soft Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t14",
+          "title": "Dimensionality Reduction - Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t15",
+          "title": "Factor Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t16",
+          "title": "Multidimensional Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 2-t17",
+          "title": "Linear Discriminant Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t1",
+          "title": "Neural Networks (NN) and Support Vector Machines (SVM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t2",
+          "title": "NN - Multilayer Feed Forward Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t3",
+          "title": "Activation Functions (Sigmoid, ReLU, Tanh)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t4",
+          "title": "Backpropagation Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t5",
+          "title": "SVM - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t6",
+          "title": "Maximum Margin Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t7",
+          "title": "Mathematics behind Maximum Margin Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t8",
+          "title": "Maximum Margin Linear Separators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t9",
+          "title": "Soft Margin SVM Classifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t10",
+          "title": "Non-Linear SVM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t11",
+          "title": "Kernels for Learning Non-Linear Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t12",
+          "title": "Polynomial Kernel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 3-t13",
+          "title": "Radial Basis Function (RBF)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t1",
+          "title": "Develop a Classifier for Face Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t2",
+          "title": "Motivation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t3",
+          "title": "Genetic Algorithms: Representing Hypotheses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t4",
+          "title": "Genetic Operator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t5",
+          "title": "Fitness Function and Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t6",
+          "title": "An Illustrative Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t7",
+          "title": "Hypothesis Space Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-business-systems-4-pecbt414-mModule 4-t8",
+          "title": "Genetic Programming",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

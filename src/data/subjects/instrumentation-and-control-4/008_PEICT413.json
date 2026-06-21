@@ -1,0 +1,183 @@
+{
+  "id": "peict413-instrumentation-and-control-s4",
+  "code": "PEICT413",
+  "name": "ANALOG CIRCUITS",
+  "branchId": "instrumentation-and-control",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 1-t1",
+          "title": "CE Configuration Using Small Signal Hybrid-Pi Model for Mid Frequency and Low Frequency (Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 1-t2",
+          "title": "Input and Output Impedance)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 1-t3",
+          "title": "High Frequency Equivalent Circuits of BJT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 1-t4",
+          "title": "Miller Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 1-t5",
+          "title": "Analysis of High Frequency Response of CE Amplifier",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 2-t1",
+          "title": "Clippers and Clampers, Multivibrators: Types of Multivibrators - Monostable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 2-t2",
+          "title": "Bistable and Astable Multivibrators - Duty Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 2-t3",
+          "title": "Frequency, Schmidt Trigger Circuit, Oscillators: Barkhausen's Criterion for Oscillation, Types of Oscillators - Phase Shift",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 2-t4",
+          "title": "Wien Bridge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 2-t5",
+          "title": "Hartley",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 2-t6",
+          "title": "Colpitt's and Crystal Oscillators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t1",
+          "title": "Thyristor Family: UJT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t2",
+          "title": "Triac",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t3",
+          "title": "Diac - Operation and VI Characteristics, Transferred Electron Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t4",
+          "title": "Hot Electron Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t5",
+          "title": "Varactor Diode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t6",
+          "title": "Power Diodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t7",
+          "title": "Power Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 3-t8",
+          "title": "IGBT and GTO - Operation and VI Characteristics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 4-t1",
+          "title": "Linear Voltage Regulators: Load and Line Regulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 4-t2",
+          "title": "Types of Voltage Regulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 4-t3",
+          "title": "Block Diagram of a Series Voltage Regulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 4-t4",
+          "title": "Series Voltage Regulator (Working Principle and Design for a Specific Output Voltage and Current)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 4-t5",
+          "title": "Short Circuit Protection and Fold Back Protection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict413-mModule 4-t6",
+          "title": "Output Current Boosting Using Darlington Pair Transistor",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "pcitt602-information-technology-s6",
+  "code": "PCITT602",
+  "name": "ADVANCED ARTIFICIAL INTELLIGENCE",
+  "branchId": "information-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-6-pcitt602-mModule 1-t1",
+          "title": "Introduction to AI - Historical Overview and Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 1-t2",
+          "title": "AI System Categories - Systems that Think Like Humans, Act Like Humans, Think Rationally, and Act Rationally",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 1-t3",
+          "title": "AI Agents and Environment - Simple Reflex, Model Based, Goal Based, and Utility Based Agents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 1-t4",
+          "title": "Traditional AI Techniques - Knowledge Based Systems and Expert Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 1-t5",
+          "title": "Modern AI Techniques - Federated Learning, Reinforcement Learning, and Transfer Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t1",
+          "title": "Uninformed Search Strategies - Depth First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t2",
+          "title": "Breadth First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t3",
+          "title": "Depth Limited Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t4",
+          "title": "Iterative Deepening Depth-First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t5",
+          "title": "Informed Search Strategies - Hill Climbing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t6",
+          "title": "Best First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t7",
+          "title": "A* Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t8",
+          "title": "AO* Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t9",
+          "title": "Game Playing - Minimax Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t10",
+          "title": "Alpha Beta Pruning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t11",
+          "title": "Constraint Satisfaction Problem - Backtracking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t12",
+          "title": "Constraint Propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 2-t13",
+          "title": "Comparison between Informed and Uninformed Search Strategies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t1",
+          "title": "Introduction to Explainable AI - Importance and Challenges of XAI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t2",
+          "title": "Overview of XAI Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t3",
+          "title": "Interpretable Models - Decision Trees, Linear Models, and Rule-Based Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t4",
+          "title": "Trade-offs between Interpretability and Accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t5",
+          "title": "Post-Hoc Explanation Techniques - Local Interpretable Model-Agnostic Explanations (LIME)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t6",
+          "title": "SHapley Additive exPlanations (SHAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t7",
+          "title": "Counterfactual Explanation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t8",
+          "title": "Evaluating Explanations - Metrics for Evaluating the Quality and Usefulness of Explanations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t9",
+          "title": "User Studies and Feedback Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t10",
+          "title": "Regulatory and Ethical Considerations - Compliance with Regulations like GDPR and the AI Act",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 3-t11",
+          "title": "Balancing Transparency with Privacy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-6-pcitt602-mModule 4-t1",
+          "title": "Responsible AI Practices - Principles of Responsible AI (Fairness, Accountability, Transparency)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 4-t2",
+          "title": "Designing and Auditing AI Systems for Ethical Compliance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 4-t3",
+          "title": "Societal Impact of AI - AI's Role in Various Sectors (Healthcare, Finance, Transportation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 4-t4",
+          "title": "Privacy Concerns and Data Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 4-t5",
+          "title": "Future Directions and Emerging Trends - Advances in AI Research: Neuromorphic Computing, Quantum AI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-6-pcitt602-mModule 4-t6",
+          "title": "Potential Societal Transformations and Ethical Considerations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

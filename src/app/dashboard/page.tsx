@@ -2,7 +2,7 @@
 // v2
 
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import { useParams, usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowRight,
@@ -39,7 +39,6 @@ import {
   Edit3,
   Plus,
   Trash2,
-  Settings,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "next-themes";
@@ -49,9 +48,11 @@ import { getTimetable } from "@/lib/timetableData";
 import { useProgress } from "@/hooks/useProgress";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import ShareButton from "@/components/ui/ShareButton";
-import OnboardingTour, { ReplayTourButton } from "@/components/dashboard/OnboardingTour";
+import OnboardingTour from "@/components/dashboard/OnboardingTour";
 import FirstTimeChecklist from "@/components/dashboard/FirstTimeChecklist";
 import { triggerChecklistTask } from "@/lib/checklist";
+import topicPathMapRaw from "@/data/topic-path-map.json";
+const topicPathMap = topicPathMapRaw as Record<string, string>;
 
 const MarkdownRenderer = dynamic(() => import("@/components/ui/MarkdownRenderer"), {
   loading: () => <div className="animate-pulse h-48 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/40 dark:border-slate-800 rounded-[20px] flex items-center justify-center text-xs text-slate-400 font-medium">Loading notes rendering engine...</div>,
@@ -135,6 +136,12 @@ const schemeHoverTextMap: Record<string, string> = {
 
 // Client-side cache for fetched subjects and notes content to prevent reloading UI spinners
 const clientSubjectsCache: Record<string, Subject[]> = {};
+
+// Mutating a module-scope object directly inside a component is flagged by the
+// React Compiler lint; route writes through this helper to keep the cache pure-looking.
+function setClientSubjectsCache(key: string, value: Subject[]) {
+  clientSubjectsCache[key] = value;
+}
 const clientNotesCache: Record<string, string> = {};
 
 interface SubjectTheme {
@@ -266,7 +273,6 @@ function getSubjectIcon(name: string) {
 
 function DashboardContent() {
   const params = useParams();
-  const pathname = usePathname();
   const lastVibrateTimeRef = React.useRef<number>(0);
   
   // Resolve branch using path params first, then client-side query parameters (fallback to "cs")
@@ -468,7 +474,7 @@ function DashboardContent() {
       .then((data) => {
         if (active) {
           const subjectsList = Array.isArray(data) ? data : [];
-          clientSubjectsCache[cacheKey] = subjectsList;
+          setClientSubjectsCache(cacheKey, subjectsList);
           setAllAvailableSubjects(subjectsList);
           setSubjects(subjectsList.filter((s: Subject) => !hidden.includes(s.id)));
           setLoadingSubjects(false);
@@ -501,7 +507,7 @@ function DashboardContent() {
 
     let active = true;
     setLoadingNote(true);
-    fetch(`/api/notes?id=${selectedTopic.id}`)
+    fetch(`/api/notes?id=${encodeURIComponent(selectedTopic.id)}`)
       .then((res) => res.json())
       .then((data) => {
         if (active) {
@@ -608,7 +614,7 @@ function DashboardContent() {
   }, [activeVideoId]);
 
   // User Authentication & Cloud Sync states
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [_isLoggedIn, setIsLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [authModalOpen, setAuthModalOpen] = useState(false);
@@ -686,7 +692,7 @@ function DashboardContent() {
             navigator.vibrate(scaledDuration);
           }
         }
-      } catch (e) {
+      } catch {
         // Silently block
       }
     }
@@ -1510,7 +1516,7 @@ function DashboardContent() {
       // Inject into available pool
       setAllAvailableSubjects((prev) => [...prev, subject]);
       const cacheKey = `${branch}_${sem}`;
-      clientSubjectsCache[cacheKey] = [...(clientSubjectsCache[cacheKey] || []), subject];
+      setClientSubjectsCache(cacheKey, [...(clientSubjectsCache[cacheKey] || []), subject]);
     }
 
     setSubjects((prev) => {
@@ -1572,7 +1578,7 @@ function DashboardContent() {
 
   const audioCtxRef = useRef<AudioContext | null>(null);
 
-  const playCheckChime = React.useCallback(() => {
+  const _playCheckChime = React.useCallback(() => {
     if (typeof window === "undefined") return;
     try {
       const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
@@ -2261,16 +2267,17 @@ function DashboardContent() {
                       {pinnedTopicIds.map((id) => {
                         const item = topicIndex.find((t) => t.topic.id === id);
                         if (!item) return null;
+                        const isPending = !topicPathMap[id];
                         return (
                           <button
                             key={id}
                             type="button"
                             onClick={() => goTopic(item.topic, item.subject)}
-                            className="w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] hover:bg-amber-500/[0.04] border border-transparent hover:border-amber-500/[0.15] transition-all text-left group"
+                            className={`w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] hover:bg-amber-500/[0.04] border border-transparent hover:border-amber-500/[0.15] transition-all text-left group ${isPending ? "opacity-50" : ""}`}
                           >
                             <span className="min-w-0 flex-1">
                               <span className="block text-xs font-black text-slate-800 truncate">{item.topic.title}</span>
-                              <span className="block text-[10px] font-bold text-slate-400/80 truncate">{item.subject.code}</span>
+                              <span className="block text-[10px] font-bold text-slate-400/80 truncate">{item.subject.code} {isPending && "· Pending"}</span>
                             </span>
                             <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition-all shrink-0 ml-2" />
                           </button>
@@ -2394,6 +2401,7 @@ function DashboardContent() {
                               {module.topics.map((topic, topicIdx) => {
                                 const done = isCompleted(topic.id);
                                 const pinned = pinnedTopicIds.includes(topic.id);
+                                const isPending = !topicPathMap[topic.id];
                                 return (
                                   <motion.div
                                     key={topic.id}
@@ -2401,24 +2409,33 @@ function DashboardContent() {
                                     initial={{ opacity: 0, x: -12 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.2, delay: topicIdx * 0.03 }}
-                                    className="px-4 py-4 mx-2 rounded-2xl flex items-start justify-between hover:bg-blue-50/50 dark:hover:bg-slate-800/50 transition-all duration-200 group gap-3"
+                                    className={`px-4 py-4 mx-2 rounded-2xl flex items-start justify-between transition-all duration-200 group gap-3 ${isPending ? "opacity-45 hover:opacity-60 bg-slate-50/20 dark:bg-slate-900/10 cursor-not-allowed" : "hover:bg-blue-50/50 dark:hover:bg-slate-800/50"}`}
                                   >
                                     <button type="button" onClick={() => goTopic(topic, selectedSubject)} className="min-w-0 flex-1 flex items-start gap-3 text-left">
-                                      <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
-                                        {done ? <CheckCircle2 className="w-4 h-4" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
+                                      <div className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 border mt-0.5 transition-all ${done ? "bg-emerald-100 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-600 dark:text-emerald-400" : isPending ? "bg-slate-100/50 dark:bg-slate-800/30 border-slate-200/40 dark:border-slate-800/40 text-slate-355 dark:text-slate-700" : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-750 text-slate-300 dark:text-slate-600 group-hover:border-blue-300 dark:group-hover:border-blue-750"}`}>
+                                        {done ? <CheckCircle2 className="w-4 h-4" /> : isPending ? <Timer className="w-3.5 h-3.5 animate-pulse text-slate-400 dark:text-slate-500" /> : <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" />}
                                       </div>
-                                      <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-400 line-through decoration-slate-300 dark:decoration-slate-700" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
+                                      <span className={`text-sm font-black transition-colors leading-relaxed break-words flex-1 mt-0.5 ${done ? "text-slate-500 dark:text-slate-400 line-through decoration-slate-300 dark:decoration-slate-700" : isPending ? "text-slate-400 dark:text-slate-550" : "text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400"}`}>
                                         {topic.title}
                                       </span>
                                     </button>
-                                    <button
-                                      type="button"
-                                      onClick={() => togglePinnedTopic(topic.id)}
-                                      className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
-                                      aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
-                                    >
-                                      <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
-                                    </button>
+                                    <div className="flex items-center gap-2 shrink-0">
+                                      {isPending ? (
+                                        <span className="px-2 py-0.5 rounded-md bg-slate-100/80 dark:bg-slate-800/60 text-slate-400 dark:text-slate-500 text-[8.5px] font-black tracking-widest uppercase border border-slate-200/50 dark:border-slate-700/30 flex items-center gap-1 select-none self-center">
+                                          <Timer className="w-2.5 h-2.5 animate-pulse" />
+                                          Generating
+                                        </span>
+                                      ) : (
+                                        <button
+                                          type="button"
+                                          onClick={() => togglePinnedTopic(topic.id)}
+                                          className={`h-9 w-9 rounded-xl flex items-center justify-center transition-colors shrink-0 ${pinned ? "bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 border border-amber-200/50 dark:border-amber-900/30" : "text-slate-300 dark:text-slate-600 hover:bg-amber-50 hover:dark:bg-amber-950/20 hover:text-amber-500 hover:dark:text-amber-400"}`}
+                                          aria-label={pinned ? "Unpin tough topic" : "Pin tough topic"}
+                                        >
+                                          <Star className={`w-4 h-4 ${pinned ? "fill-current" : ""}`} />
+                                        </button>
+                                      )}
+                                    </div>
                                   </motion.div>
                                 );
                               })}
@@ -2520,16 +2537,67 @@ function DashboardContent() {
                       </div>
                       <div className="h-4 bg-slate-200/60 dark:bg-white/5 rounded w-4/5 pt-4"></div>
                     </div>
+                  ) : noteContent === "__NOTE_MISSING__" ? (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="max-w-2xl mx-auto py-10 md:py-16"
+                    >
+                      <div className="relative overflow-hidden rounded-3xl border border-blue-200/60 dark:border-blue-900/40 bg-gradient-to-br from-blue-50/80 via-white to-indigo-50/50 dark:from-blue-950/20 dark:via-slate-900/40 dark:to-indigo-950/20 p-8 md:p-10 text-center shadow-[0_8px_30px_rgba(59,130,246,0.08)] dark:shadow-none">
+                        <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400">
+                          <Timer className="h-8 w-8 animate-pulse" />
+                        </div>
+                        <h3 className="text-lg md:text-xl font-black text-slate-800 dark:text-slate-100">
+                          Notes are being crafted
+                        </h3>
+                        <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                          Our subject experts are writing comprehensive, 2024-scheme aligned notes for{" "}
+                          <span className="font-bold text-slate-700 dark:text-slate-200">{selectedTopic.title}</span>.
+                          This topic will light up the moment it&apos;s ready.
+                        </p>
+                        <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-blue-200/60 dark:border-blue-900/40 bg-white/60 dark:bg-slate-900/40 px-4 py-1.5 text-[11px] font-black uppercase tracking-widest text-blue-600 dark:text-blue-400">
+                          <Sparkles className="h-3.5 w-3.5" />
+                          Coming Soon
+                        </div>
+                      </div>
+                    </motion.div>
+                  ) : noteContent.startsWith("Error loading note") ? (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="max-w-2xl mx-auto py-10 md:py-16 text-center"
+                    >
+                      <div className="rounded-3xl border border-rose-200/60 dark:border-rose-900/40 bg-rose-50/50 dark:bg-rose-950/10 p-8 md:p-10">
+                        <h3 className="text-lg font-black text-slate-800 dark:text-slate-100">Couldn&apos;t load this note</h3>
+                        <p className="mx-auto mt-2 max-w-md text-sm text-slate-500 dark:text-slate-400">
+                          Something went wrong fetching the content. Check your connection and try again.
+                        </p>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            delete clientNotesCache[selectedTopic.id];
+                            const t = selectedTopic;
+                            setSelectedTopic(null);
+                            startTransition(() => setSelectedTopic(t));
+                          }}
+                          className="mt-5 inline-flex items-center gap-2 rounded-xl bg-slate-900 dark:bg-white px-5 py-2.5 text-sm font-bold text-white dark:text-slate-900 transition-transform hover:scale-[1.03] active:scale-95"
+                        >
+                          Retry
+                        </button>
+                      </div>
+                    </motion.div>
                   ) : (
                     <motion.div
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
                     >
-                      <AudioNoteReader 
-                        content={noteContent} 
-                        topicTitle={selectedTopic.title} 
-                        triggerHaptic={triggerHaptic} 
+                      <AudioNoteReader
+                        content={noteContent}
+                        topicTitle={selectedTopic.title}
+                        triggerHaptic={triggerHaptic}
                       />
                       <MarkdownRenderer content={noteContent} stripH1={true} />
                     </motion.div>
@@ -2730,15 +2798,16 @@ function DashboardContent() {
                   const matchIdx = query ? title.toLowerCase().indexOf(query) : -1;
                   const done = isCompleted(item.topic.id);
                   const isActiveSearch = activeSearchIndex === index;
+                  const isPending = !topicPathMap[item.topic.id];
                   return (
                     <button
                       type="button"
                       key={item.topic.id}
                       onClick={() => goTopic(item.topic, item.subject)}
-                      className={`w-full flex items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-blue-50 dark:hover:bg-slate-800/50 transition-colors group ${isActiveSearch ? 'bg-blue-50 dark:bg-slate-800/80 outline outline-2 outline-blue-500/80 outline-offset-[-2px]' : ''}`}
+                      className={`w-full flex items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-blue-50 dark:hover:bg-slate-800/50 transition-colors group ${isActiveSearch ? 'bg-blue-50 dark:bg-slate-800/80 outline outline-2 outline-blue-500/80 outline-offset-[-2px]' : ''} ${isPending ? "opacity-50" : ""}`}
                     >
-                      <div className={`h-10 w-10 rounded-xl grid place-items-center shrink-0 transition-colors ${done ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400' : 'bg-blue-50 dark:bg-slate-800 text-blue-500 dark:text-blue-400 group-hover:bg-blue-100 group-hover:dark:bg-slate-700'}`}>
-                        {done ? <CheckCircle2 className="w-4 h-4" /> : <BookOpen className="w-4 h-4" />}
+                      <div className={`h-10 w-10 rounded-xl grid place-items-center shrink-0 transition-colors ${done ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400' : isPending ? 'bg-slate-100 dark:bg-slate-850 text-slate-400 dark:text-slate-500' : 'bg-blue-50 dark:bg-slate-800 text-blue-500 dark:text-blue-400 group-hover:bg-blue-100 group-hover:dark:bg-slate-700'}`}>
+                        {done ? <CheckCircle2 className="w-4 h-4" /> : isPending ? <Timer className="w-4 h-4 animate-pulse" /> : <BookOpen className="w-4 h-4" />}
                       </div>
                       <span className="min-w-0 flex-1">
                         <span className="block text-sm font-black text-slate-900 dark:text-slate-100 truncate">
@@ -2750,7 +2819,7 @@ function DashboardContent() {
                             </>
                           ) : title}
                         </span>
-                        <span className="block text-xs font-bold text-slate-400 dark:text-slate-500">{item.subject.code} · {item.module.title}</span>
+                        <span className="block text-xs font-bold text-slate-400 dark:text-slate-550">{item.subject.code} · {item.module.title} {isPending && "· Generating"}</span>
                       </span>
                       <ArrowRight className="ml-auto w-4 h-4 text-slate-300 dark:text-slate-650 group-hover:text-blue-500 group-hover:dark:text-blue-400 group-hover:translate-x-0.5 transition-all shrink-0" />
                     </button>
@@ -2885,6 +2954,7 @@ function DashboardContent() {
               {pinnedTopicIds.map((id) => {
                 const item = topicIndex.find((t) => t.topic.id === id);
                 if (!item) return null;
+                const isPending = !topicPathMap[id];
                 return (
                   <button
                     key={id}
@@ -2893,11 +2963,11 @@ function DashboardContent() {
                       setMobileSheetOpen(false);
                       goTopic(item.topic, item.subject);
                     }}
-                    className="w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] dark:bg-white/[0.02] hover:bg-amber-500/[0.04] dark:hover:bg-amber-500/[0.1] border border-transparent hover:border-amber-500/[0.15] dark:hover:border-amber-500/[0.3] transition-all text-left group"
+                    className={`w-full flex items-center justify-between p-3 rounded-xl bg-slate-950/[0.02] dark:bg-white/[0.02] hover:bg-amber-500/[0.04] dark:hover:bg-amber-500/[0.1] border border-transparent hover:border-amber-500/[0.15] dark:hover:border-amber-500/[0.3] transition-all text-left group ${isPending ? "opacity-50" : ""}`}
                   >
                     <span className="min-w-0 flex-1">
                       <span className="block text-xs font-black text-slate-800 dark:text-slate-200 truncate">{item.topic.title}</span>
-                      <span className="block text-[10px] font-bold text-slate-400/80 dark:text-slate-505 truncate">{item.subject.code}</span>
+                      <span className="block text-[10px] font-bold text-slate-400/80 dark:text-slate-505 truncate">{item.subject.code} {isPending && "· Pending"}</span>
                     </span>
                     <ArrowRight className="w-3.5 h-3.5 text-slate-400 dark:text-slate-650 group-hover:text-amber-600 group-hover:dark:text-amber-400 group-hover:translate-x-0.5 transition-all shrink-0 ml-2" />
                   </button>

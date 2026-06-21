@@ -1,0 +1,291 @@
+{
+  "id": "peert526-electronics-and-computer-engineering-s5",
+  "code": "PEERT526",
+  "name": "PYTHON BASICS FOR MACHINE LEARNING",
+  "branchId": "electronics-and-computer-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t1",
+          "title": "Getting Started with Python Programming - Interactive Shell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t2",
+          "title": "Editing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t3",
+          "title": "Saving",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t4",
+          "title": "And Running a Script. How Python Works? Using Editors - IDLE",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t5",
+          "title": "Jupyter. Basic Coding Skills - Working with Data Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t6",
+          "title": "Numeric Data Types and Character Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t7",
+          "title": "Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t8",
+          "title": "Keywords",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t9",
+          "title": "Variables and Assignment Statement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t10",
+          "title": "Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t11",
+          "title": "Expressions. Type Conversions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t12",
+          "title": "Comments in the Program. Input",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t13",
+          "title": "Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 1-t14",
+          "title": "And Output. Formatting Text for Output",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t1",
+          "title": "Data Representation: List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t2",
+          "title": "Tuple",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t3",
+          "title": "Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t4",
+          "title": "Dictionary. Work with Dates and Times. Control Statements - Selection Structure (If-Else",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t5",
+          "title": "Switch-Case",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t6",
+          "title": "Iteration with For/While Loop",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t7",
+          "title": "Testing the Control Statements. Functions - Hiding Redundancy and Complexity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t8",
+          "title": "Arguments and Return Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t9",
+          "title": "Variable Scopes and Parameter Passing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t10",
+          "title": "Named Arguments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t11",
+          "title": "Main Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t12",
+          "title": "Working with Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 2-t13",
+          "title": "Lambda Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 3-t1",
+          "title": "Design with Classes - Objects and Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 3-t2",
+          "title": "Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 3-t3",
+          "title": "Instance Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 3-t4",
+          "title": "Constructor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 3-t5",
+          "title": "Accessors and Mutators. Structuring Classes with Inheritance and Polymorphism. Abstract Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 3-t6",
+          "title": "Interfaces. Exceptions - Handle a Single Exception",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 3-t7",
+          "title": "Handle Multiple Exceptions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t1",
+          "title": "The os and sys Modules. Introduction to File I/O - Reading and Writing Text Files",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t2",
+          "title": "Manipulating Binary Files. NumPy - Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t3",
+          "title": "Creating Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t4",
+          "title": "Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t5",
+          "title": "Slicing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t6",
+          "title": "Matrix Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t7",
+          "title": "Random Numbers. Plotting and Visualization. Working with CSV Files. Pandas - Reading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t8",
+          "title": "Manipulating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-peert526-mModule 4-t9",
+          "title": "And Processing Data. Introduction to Micro Service Using Flask",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

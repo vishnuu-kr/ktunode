@@ -1,0 +1,267 @@
+{
+  "id": "perut525-robotics-and-automation-s5",
+  "code": "PERUT525",
+  "name": "ROBOT OPERATING SYSTEM (ROS)",
+  "branchId": "robotics-and-automation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t1",
+          "title": "ROS Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t2",
+          "title": "ROS Master",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t3",
+          "title": "roscore",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t4",
+          "title": "Catkin: Workspaces and ROS Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t5",
+          "title": "rosrun",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t6",
+          "title": "Names, Namespaces, and Remapping Using roslaunch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t7",
+          "title": "tf: Coordinate Transforms - Poses, Positions, and Orientations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t8",
+          "title": "Publishing to a Topic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t9",
+          "title": "Subscribing to a Topic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t10",
+          "title": "Latched Topic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t11",
+          "title": "Defining Message Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 1-t12",
+          "title": "Mixing Publishers and Subscribers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t1",
+          "title": "Defining a Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t2",
+          "title": "Implementing a Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t3",
+          "title": "Using a Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t4",
+          "title": "Defining an Action",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t5",
+          "title": "Implementing a Basic Action Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t6",
+          "title": "Using an Action",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t7",
+          "title": "Implementing a More Sophisticated Action Server",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 2-t8",
+          "title": "Using the More Sophisticated Action",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t1",
+          "title": "Subsystems - Actuation: Mobile Platform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t2",
+          "title": "Actuation: Manipulator Arm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t3",
+          "title": "Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t4",
+          "title": "Computation Complete Robots - PR2",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t5",
+          "title": "Fetch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t6",
+          "title": "Robonaut 2",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t7",
+          "title": "TurtleBot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t8",
+          "title": "Simulators - Stage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 3-t9",
+          "title": "Gazebo and Other Simulators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t1",
+          "title": "Maps in ROS: Representation and Formats",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t2",
+          "title": "SLAM (Simultaneous Localization and Mapping)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t3",
+          "title": "rosbag and its Functionalities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t4",
+          "title": "Recording and Playing Back Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t5",
+          "title": "Techniques for Building Maps from Sensor Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t6",
+          "title": "GMapping and Cartographer for Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t7",
+          "title": "Map Server in ROS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t8",
+          "title": "Loading and Serving Maps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t9",
+          "title": "Localization Techniques (e.g., AMCL)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut525-mModule 4-t10",
+          "title": "Implementing Localization in ROS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

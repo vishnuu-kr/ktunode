@@ -1,0 +1,327 @@
+{
+  "id": "oeiet614-industrial-engineering-s6",
+  "code": "OEIET614",
+  "name": "HEURISTICS SOLUTION TECHNIQUES",
+  "branchId": "industrial-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t1",
+          "title": "Genetic Algorithm (GA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t2",
+          "title": "Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t3",
+          "title": "Types of Encoding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t4",
+          "title": "Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t5",
+          "title": "Crossover and Mutation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t6",
+          "title": "Binary",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t7",
+          "title": "Continuous",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t8",
+          "title": "Hybrid and Parallel GA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t9",
+          "title": "Application of GA in Solving Constrained and Combinatorial Optimization Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 1-t10",
+          "title": "Sequencing and Scheduling Problems and Transportation Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t1",
+          "title": "Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t2",
+          "title": "Basic Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t3",
+          "title": "Variants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t4",
+          "title": "Formalization and Properties of Ant Colony Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t5",
+          "title": "Applications in Scheduling and Vehicle Routing Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t6",
+          "title": "Particle Swarm Optimization (PSO): Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t7",
+          "title": "Swarm Intelligence Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t8",
+          "title": "Computational Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t9",
+          "title": "Parameter Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t10",
+          "title": "Discrete PSO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 2-t11",
+          "title": "Variants and Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t1",
+          "title": "Scatter Search - Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t2",
+          "title": "Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t3",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t4",
+          "title": "Greedy Randomized Adaptive Search Procedure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t5",
+          "title": "Tabu Search (TS) - Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t6",
+          "title": "Neighbourhood",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t7",
+          "title": "Candidate List",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t8",
+          "title": "Short-Term and Long-Term Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t9",
+          "title": "Threshold Accepting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t10",
+          "title": "Application of TS in Decision Making",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t11",
+          "title": "Simulated Annealing: Main Components of Simulated Annealing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t12",
+          "title": "Homogeneous vs. In-homogenous Simulated Annealing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t13",
+          "title": "Annealing Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t14",
+          "title": "Applications in Sequencing and Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t15",
+          "title": "Travelling Salesman Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 3-t16",
+          "title": "Variants of Simulated Annealing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t1",
+          "title": "Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t2",
+          "title": "Biological and Artificial Neurons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t3",
+          "title": "Learning Rules and Activation Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t4",
+          "title": "ANN Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t5",
+          "title": "Single Layer and Multi Layer Feed Forward Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t6",
+          "title": "Back Propagation Networks and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t7",
+          "title": "Fuzzy Systems: Crisp Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t8",
+          "title": "Predicate Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t9",
+          "title": "Fuzzy Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t10",
+          "title": "Fuzzy Rule Based System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t11",
+          "title": "Defuzzification Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-oeiet614-mModule 4-t12",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

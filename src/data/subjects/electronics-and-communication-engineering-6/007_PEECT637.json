@@ -1,0 +1,117 @@
+{
+  "id": "peect637-electronics-and-communication-engineering-s6",
+  "code": "PEECT637",
+  "name": "OPTIMIZATION TECHNIQUES",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 1-t1",
+          "title": "Engineering Application of Optimization - Statement of an Optimization Problem - Classification, Review of Basic Calculus Concepts - Stationary Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 1-t2",
+          "title": "Functions of Single and Two Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 1-t3",
+          "title": "Convexity and Concavity of Functions - Definition of Global and Local Optima - Optimality Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 1-t4",
+          "title": "Linear Programming Methods for Optimum Design - Standard Form of Linear Programming (LP) Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 1-t5",
+          "title": "Canonical Form of LP Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 1-t6",
+          "title": "Simplex Method, Duality, Application of LPP Models in Engineering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 2-t1",
+          "title": "Direct Search: Fibonacci and Golden Section Search, Hookes and Jeeves, Gradient Based Method: Newton's Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 3-t1",
+          "title": "Optimization Algorithms for Solving Constrained Optimization Problems - Direct Methods - Penalty Function Methods, Barrier Method - Optimization of Function of Multiple Variables Subject to Equality Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 3-t2",
+          "title": "Lagrangian Function - Inequality Constrained Techniques - KKT Conditions - Constrained Steepest Descent Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 4-t1",
+          "title": "Genetic Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 4-t2",
+          "title": "Simulated Annealing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 4-t3",
+          "title": "Particle Swarm Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 4-t4",
+          "title": "Ant Colony Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-peect637-mModule 4-t5",
+          "title": "Use of Matlab/Scilab to Solve Optimization Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

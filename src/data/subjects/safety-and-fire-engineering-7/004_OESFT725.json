@@ -1,0 +1,537 @@
+{
+  "id": "oesft725-safety-and-fire-engineering-s7",
+  "code": "OESFT725",
+  "name": "SAFETY IN ENGINEERING INDUSTRY",
+  "branchId": "safety-and-fire-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t1",
+          "title": "General Safety Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t2",
+          "title": "Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t3",
+          "title": "Maintenance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t4",
+          "title": "Inspection of Turning Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t5",
+          "title": "Boring Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t6",
+          "title": "Milling Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t7",
+          "title": "Planning Machine and Grinding Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t8",
+          "title": "CNC Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t9",
+          "title": "Woodworking Machinery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t10",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t11",
+          "title": "Safety Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t12",
+          "title": "Electrical Guards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t13",
+          "title": "Work Area",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t14",
+          "title": "Material Handling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t15",
+          "title": "Inspection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t16",
+          "title": "Standards and Codes - Saws",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t17",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 1-t18",
+          "title": "Hazards",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t1",
+          "title": "Design Aspects of Machine Guarding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t2",
+          "title": "Guarding During Maintenance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t3",
+          "title": "Zero Mechanical State (ZMS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t4",
+          "title": "Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t5",
+          "title": "Policy for ZMS - Guarding of Hazards - Point of Operation Protective Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t6",
+          "title": "Machine Guarding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t7",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t8",
+          "title": "Fixed Guard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t9",
+          "title": "Interlock Guard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t10",
+          "title": "Automatic Guard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t11",
+          "title": "Trip Guard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t12",
+          "title": "Electronic Eye",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t13",
+          "title": "Positional Control Guard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t14",
+          "title": "Fixed Guard Fencing, Guard Construction, and Guard Opening",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t15",
+          "title": "Selection and Suitability of Guards for Various Machines (Lathe, Drilling, Boring, Milling, Grinding, Shaping, Sawing, Shearing, Presses, Forge Hammer, Flywheels, Shafts, Couplings, Gears, Sprockets Wheels and Chains, Pulleys and Belts)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t16",
+          "title": "Authorized Entry to Hazardous Installations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 2-t17",
+          "title": "Benefits of Good Guarding Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t1",
+          "title": "Gas Welding and Oxygen Cutting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t2",
+          "title": "Resistance Welding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t3",
+          "title": "Arc Welding and Cutting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t4",
+          "title": "Common Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t5",
+          "title": "Personal Protective Equipment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t6",
+          "title": "Training",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t7",
+          "title": "Safety Precautions in Brazing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t8",
+          "title": "Soldering and Metalizing - Explosive Welding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t9",
+          "title": "Selection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t10",
+          "title": "Care and Maintenance of Associated Equipment and Instruments - Safety in Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t11",
+          "title": "Distribution and Handling of Industrial Gases - Colour Coding - Flashback Arrestor - Leak Detection - Pipeline Safety - Storage and Handling of Gas Cylinders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t12",
+          "title": "Cold Working",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t13",
+          "title": "Power Presses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t14",
+          "title": "Point of Operation Safeguarding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t15",
+          "title": "Auxiliary Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t16",
+          "title": "Feeding and Cutting Mechanism",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t17",
+          "title": "Hand or Foot-Operated Presses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t18",
+          "title": "Power Press Electric Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t19",
+          "title": "Power Press Set Up and Die Removal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 3-t20",
+          "title": "Inspection and Maintenance - Metal Shears - Press Brakes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t1",
+          "title": "Hot Working Safety in Forging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t2",
+          "title": "Hot Rolling Mill Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t3",
+          "title": "Safeguards in Hot Rolling Mills - Hot Bending of Pipes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t4",
+          "title": "Hazards and Control Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t5",
+          "title": "Safety in Gas Furnace Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t6",
+          "title": "Cupola",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t7",
+          "title": "Crucibles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t8",
+          "title": "Ovens",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t9",
+          "title": "Foundry Health Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t10",
+          "title": "Work Environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t11",
+          "title": "Material Handling in Foundries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t12",
+          "title": "Foundry Production Cleaning and Finishing Foundry Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t13",
+          "title": "Heat Treatment Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t14",
+          "title": "Electroplating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t15",
+          "title": "Paint Shops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t16",
+          "title": "Sand and Shot Blasting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t17",
+          "title": "Safety in Inspection and Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t18",
+          "title": "Dynamic Balancing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t19",
+          "title": "Hydro Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t20",
+          "title": "Valves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t21",
+          "title": "Boiler Drums and Headers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t22",
+          "title": "Pressure Vessels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t23",
+          "title": "Air Leak Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t24",
+          "title": "Steam Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t25",
+          "title": "Safety in Radiography",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t26",
+          "title": "Personal Monitoring Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t27",
+          "title": "Radiation Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t28",
+          "title": "Engineering and Administrative Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-7-oesft725-mModule 4-t29",
+          "title": "Indian Boilers Regulation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "gxest204-computer-science-and-design-s2",
+  "code": "GXEST204",
+  "name": "PROGRAMMING IN C",
+  "branchId": "computer-science-and-design",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 1-t1",
+          "title": "C Fundamentals - Character Set, Constants, Identifiers, Keywords, Basic Data Types, Variables, Operators and its Precedence, Bit-wise Operators, Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 1-t2",
+          "title": "Statements - Input and Output Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 1-t3",
+          "title": "Structure of a C Program",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 1-t4",
+          "title": "Simple Programs; Control Statements - if, if-else, nested if, switch, while, do-while, for, break & continue, nested loops",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t1",
+          "title": "Arrays - Single Dimensional Arrays, Defining an Array, Array Initialization, Accessing Array Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t2",
+          "title": "Enumerated Data Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t3",
+          "title": "Type Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t4",
+          "title": "Two-dimensional Arrays - Defining a Two-dimensional Array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t5",
+          "title": "Programs for Matrix Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t6",
+          "title": "Programs for Sequential Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t7",
+          "title": "Bubble Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 2-t8",
+          "title": "Strings - Declaring a String Variable, Reading and Displaying Strings, String Related Library Functions, Programs for String Matching",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 3-t1",
+          "title": "Functions - Function Definition, Function Call, Function Prototype, Parameter Passing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 3-t2",
+          "title": "Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 3-t3",
+          "title": "Passing Array to Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 3-t4",
+          "title": "Macros - Defining and Calling Macros",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 3-t5",
+          "title": "Command Line Arguments; Structures - Defining a Structure Variable, Accessing Members, Array of Structures, Passing Structure to Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 3-t6",
+          "title": "Union; Storage Class - Storage Classes Associated with Variables: Automatic, Static, External and Register",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t1",
+          "title": "Pointers - Declaration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t2",
+          "title": "Operations on Pointers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t3",
+          "title": "Passing Pointer to a Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t4",
+          "title": "Accessing Array Elements Using Pointers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t5",
+          "title": "Processing Strings Using Pointers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t6",
+          "title": "Pointer to Pointer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t7",
+          "title": "Array of Pointers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t8",
+          "title": "Pointer to Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t9",
+          "title": "Pointer to Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t10",
+          "title": "Dynamic Memory Allocation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t11",
+          "title": "Files - Different Types of Files in C",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t12",
+          "title": "Opening & Closing a File",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t13",
+          "title": "Writing to and Reading from a File",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t14",
+          "title": "Processing Files",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-2-gxest204-mModule 4-t15",
+          "title": "Library Functions Related to File - fseek, ftell, fread, fwrite",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

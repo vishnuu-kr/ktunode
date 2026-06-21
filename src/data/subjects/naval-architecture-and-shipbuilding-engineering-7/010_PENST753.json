@@ -1,0 +1,225 @@
+{
+  "id": "penst753-naval-architecture-and-shipbuilding-engineering-s7",
+  "code": "PENST753",
+  "name": "FINITE ELEMENT ANALYSIS IN NAVAL ARCHITECTURE",
+  "branchId": "naval-architecture-and-shipbuilding-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 1-t1",
+          "title": "Scope of Finite Element Method in Solving Engineering Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 1-t2",
+          "title": "General Steps in Finite Element Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 1-t3",
+          "title": "Variational Formulations and Weighted Residual Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 1-t4",
+          "title": "Analysis of Trusses, Beams, and Frames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 1-t5",
+          "title": "Analysis of Plates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 1-t6",
+          "title": "Analysis of Three-Dimensional Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 2-t1",
+          "title": "Shape Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 2-t2",
+          "title": "Convergence Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 2-t3",
+          "title": "General Equations for Calculation of Stiffness Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 2-t4",
+          "title": "Derivation of Stiffness Matrix for Truss Beam",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 2-t5",
+          "title": "Plane Stress, Plane Strain, and Axisymmetric Elements",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 3-t1",
+          "title": "Ship Structural Analysis Using FEM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 3-t2",
+          "title": "Formulation of Plate Finite Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 3-t3",
+          "title": "Issues Associated with Plate Formulation of Finite Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 3-t4",
+          "title": "Numerical Examples on Simple Plate Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 3-t5",
+          "title": "One-Dimensional and Two-Dimensional Finite Element Modelling of Ship Structure",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t1",
+          "title": "Preprocessing - Preliminary Checks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t2",
+          "title": "Engineering Model Checks - Analysis Type and Assumptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t3",
+          "title": "Geometry Assumptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t4",
+          "title": "Material Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t5",
+          "title": "Stiffness and Mass Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t6",
+          "title": "Loads and Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t7",
+          "title": "Finite Element Model Checks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t8",
+          "title": "Element Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t9",
+          "title": "Mesh Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t10",
+          "title": "Substructures and Sub-Modelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t11",
+          "title": "FE Model Loads and Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t12",
+          "title": "Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t13",
+          "title": "Post Processing - Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t14",
+          "title": "Displacement Results",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t15",
+          "title": "Stress Results",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "naval-architecture-and-shipbuilding-engineering-7-penst753-mModule 4-t16",
+          "title": "Fatigue and Fracture Results",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

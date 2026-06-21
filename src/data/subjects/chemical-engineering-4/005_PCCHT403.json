@@ -1,0 +1,477 @@
+{
+  "id": "pccht403-chemical-engineering-s4",
+  "code": "PCCHT403",
+  "name": "MASS TRANSFER OPERATIONS 1",
+  "branchId": "chemical-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t1",
+          "title": "Mass and Molar Flux",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t2",
+          "title": "Fick's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t3",
+          "title": "Diffusivity and Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t4",
+          "title": "Steady State Diffusion of A Through Stagnant B and Equimolar Counter Diffusion in Binary Gases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t5",
+          "title": "Liquids and Multi-Component Gas Mixtures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t6",
+          "title": "Mass Transfer Coefficients: Introduction to Mass Transfer Coefficients",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t7",
+          "title": "Dimensionless Groups",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t8",
+          "title": "Analogy Between Mass, Heat and Momentum Transfer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t9",
+          "title": "Basic Concepts and Assumptions Involved in Theories of Mass Transfer: Penetration and Surface Renewal Theories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t10",
+          "title": "Inter-Phase Mass Transfer: Equilibrium",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t11",
+          "title": "Diffusion Between Phases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t12",
+          "title": "Two-Film Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t13",
+          "title": "Local and Overall k-Type Coefficients",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t14",
+          "title": "Problem Solving in Molecular Diffusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 1-t15",
+          "title": "Mass Transfer Coefficient Calculation Using Excel/Matlab/Scilab/Python – Self Study/Microproject/Assignment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t1",
+          "title": "Tray Towers: Tray Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t2",
+          "title": "Wetted-Wall Columns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t3",
+          "title": "Venturi Scrubbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t4",
+          "title": "Packed Columns: Packing Materials and Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t5",
+          "title": "Factors Affecting Column Performance: Flooding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t6",
+          "title": "Priming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t7",
+          "title": "Coning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t8",
+          "title": "Weeping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t9",
+          "title": "Loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t10",
+          "title": "Comparison Between Plate and Packed Columns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t11",
+          "title": "Gas Absorption: Solubility of Gases in Liquid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t12",
+          "title": "Choice of Solvent",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t13",
+          "title": "Material Balance in Counter-Current and Co-Current Absorption and Stripping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t14",
+          "title": "L/G Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t15",
+          "title": "Minimum Gas-Liquid Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t16",
+          "title": "Multistage Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t17",
+          "title": "Number of Plates by Graphical Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t18",
+          "title": "Kremser Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t19",
+          "title": "Tray Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t20",
+          "title": "Design of Packed Columns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t21",
+          "title": "Transfer Unit and General Graphical Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t22",
+          "title": "Dilute Solutions and Simplified Design Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 2-t23",
+          "title": "Problem Solving in Absorption Using Excel/Matlab/Scilab/Python – Self Study/Microproject/Assignment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t1",
+          "title": "Use of Humidity Chart to Find Properties of Air",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t2",
+          "title": "Lewis Relation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t3",
+          "title": "Water Cooling with Air",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t4",
+          "title": "Types of Cooling Towers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t5",
+          "title": "Design Calculations of Cooling Tower",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t6",
+          "title": "Spray Chambers for Air Humidification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t7",
+          "title": "Principles of Gas Dehumidification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t8",
+          "title": "Adsorption: Types of Adsorption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t9",
+          "title": "Properties of Adsorbents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t10",
+          "title": "Adsorption of Single Gases, Vapours, and Dilute Liquid Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t11",
+          "title": "Adsorption Isotherms: Freundlich and Langmuir",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t12",
+          "title": "Fixed Bed Adsorption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t13",
+          "title": "Adsorption Wave",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t14",
+          "title": "Rate of Adsorption and Breakthrough Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 3-t15",
+          "title": "Problem Solving in Humidification and Adsorption Using Excel/Matlab/Scilab/Python – Self Study/Microproject/Assignment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t1",
+          "title": "Equilibrium",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t2",
+          "title": "Bound and Unbound Moisture Content",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t3",
+          "title": "Batch Drying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t4",
+          "title": "Rate of Drying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t5",
+          "title": "Mechanism of Moisture Movement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t6",
+          "title": "Continuous Drying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t7",
+          "title": "Parallel and Counter-Current Drying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t8",
+          "title": "Material and Enthalpy Balances",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t9",
+          "title": "Classification of Industrial Dryers for Batch and Continuous Drying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t10",
+          "title": "Crystallization: Principles of Crystallization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t11",
+          "title": "Purity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t12",
+          "title": "Yield",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t13",
+          "title": "Super-Saturation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t14",
+          "title": "Nucleation: Primary and Secondary Nucleation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t15",
+          "title": "Growth of Crystals: Delta-L Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t16",
+          "title": "Ostwald Ripening",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t17",
+          "title": "Crystallisation Equipment: Classification of Crystallizers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t18",
+          "title": "Working and Schematic Diagram of Forced Circulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t19",
+          "title": "Draft Tube Baffled and Oslo Crystallizers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t20",
+          "title": "MSMPR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-4-pccht403-mModule 4-t21",
+          "title": "Problem Solving in Drying and Crystallisation Using Excel/Matlab/Scilab/Python – Self Study/Microproject/Assignment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

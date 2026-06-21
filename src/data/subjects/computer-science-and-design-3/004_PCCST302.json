@@ -1,0 +1,255 @@
+{
+  "id": "pccst302-computer-science-and-design-s3",
+  "code": "PCCST302",
+  "name": "THEORY OF COMPUTATION",
+  "branchId": "computer-science-and-design",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t1",
+          "title": "Alphabet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t2",
+          "title": "Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t3",
+          "title": "Languages and Finite Automata",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t4",
+          "title": "Formal Definition of a Finite Automaton",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t5",
+          "title": "Deterministic Finite Automata (DFA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t6",
+          "title": "Regular Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t7",
+          "title": "Nondeterminism (Guess and Verify Paradigm)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t8",
+          "title": "Formal Definition of a Nondeterministic Finite Automaton",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t9",
+          "title": "NFA with Epsilon Transitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t10",
+          "title": "Eliminating Epsilon Transitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t12",
+          "title": "Applications of Finite Automata - Text Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 1-t13",
+          "title": "Keyword Recognition",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t2",
+          "title": "Building Regular Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t4",
+          "title": "Converting Regular Expressions to FA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t5",
+          "title": "Pattern Matching and Regular Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t6",
+          "title": "Regular Grammar",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t7",
+          "title": "Equivalence with FA - Conversion in Both Directions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t8",
+          "title": "Properties of Regular Languages: Closure and Decision Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t9",
+          "title": "Pumping Lemma for Regular Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t10",
+          "title": "Pumping Lemma as a Tool to Prove Non-regularity of Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t12",
+          "title": "Designing Context-Free Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t14",
+          "title": "Parse Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t15",
+          "title": "Ambiguous Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t16",
+          "title": "Resolving Ambiguity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t17",
+          "title": "Inherent Ambiguity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 2-t18",
+          "title": "CFGs and Programming Languages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t2",
+          "title": "DPDA and NPDA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t3",
+          "title": "Examples of Pushdown Automata",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t4",
+          "title": "Equivalence of NPDAs and CFGs - Conversions in Both Directions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t6",
+          "title": "Eliminating Epsilon Productions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t7",
+          "title": "Eliminating Unit Productions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t8",
+          "title": "Chomsky Normal Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t9",
+          "title": "Greibach Normal Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t10",
+          "title": "Pumping Lemma for Context-Free Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 3-t11",
+          "title": "Closure and Decision Properties of Context-Free Languages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 4-t3",
+          "title": "Turing Machines as Computers of Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-design-3-pccst302-mModule 4-t4",
+          "title": "Variants of Turing Machines",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

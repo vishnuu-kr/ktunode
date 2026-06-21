@@ -1,0 +1,129 @@
+{
+  "id": "oemet833-mechanical-engineering-s8",
+  "code": "OEMET833",
+  "name": "NUMERICAL TECHNIQUES  ENGINEERING",
+  "branchId": "mechanical-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 1-t1",
+          "title": "Motivation and Applications of Numerical Methods, Significant Digits, Accuracy and Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 1-t2",
+          "title": "Truncation and Round-off Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 1-t3",
+          "title": "Roots of Nonlinear Equations - Bisection Method, Newton Raphson Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 1-t4",
+          "title": "Solution of System of Linear Equations - Gauss Elimination, Gauss Jordan, Gauss Seidel, LU Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 1-t5",
+          "title": "Curve Fitting: Least Square Regression - Linear Regression, Linearization of Nonlinear Relationships, Polynomial and Multiple Linear Regression",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 2-t1",
+          "title": "Interpolation - Newton's Forward, Backward, Divided Difference, Lagrange's Interpolation, Cubic Spline",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 2-t2",
+          "title": "Numerical Differentiation - Difference Formula, Newton's Forward, Backward and Divided Difference Method, Sterling's Formula",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 2-t3",
+          "title": "Numerical Integration - Trapezoidal, Simpson's One-Third Rule, Simpson's Three-Eight Rule, Gauss Quadrature",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 3-t1",
+          "title": "Numerical Solution of Ordinary Differential Equations - Initial Value and Boundary Value Problems, Taylor's Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 3-t2",
+          "title": "Euler Method, Modified Euler Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 3-t3",
+          "title": "Runge Kutta Fourth Order Method for First Order, Second Order and Simultaneous First Order Differential Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 3-t4",
+          "title": "Predictor Corrector Method, Shooting Method, Finite Difference Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 4-t1",
+          "title": "Numerical Solution of Partial Differential Equation - Types, Difference Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 4-t2",
+          "title": "Elliptic Equation - Laplace Equation, Poisson's Equation, Liebmann's Iterative Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 4-t3",
+          "title": "Parabolic Equation - Explicit and Implicit Method, Convergence and Stability, Crank Nicolson Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-8-oemet833-mModule 4-t4",
+          "title": "Hyperbolic Equation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

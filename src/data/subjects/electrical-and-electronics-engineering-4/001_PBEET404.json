@@ -1,0 +1,123 @@
+{
+  "id": "pbeet404-electrical-and-electronics-engineering-s4",
+  "code": "PBEET404",
+  "name": "DIGITAL ELECTRONICS",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 1-t1",
+          "title": "Number Systems and Codes - Binary, Octal and Hexadecimal - Conversions - ASCII Code, Excess-3 Code, Gray Code, BCD Code",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 1-t2",
+          "title": "Signed Numbers - 1's Complement and 2's Complement - Addition and Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 1-t3",
+          "title": "Basic Logic Gates - Universal Gates - TTL - CMOS - Internal Diagram of TTL NAND Gate and CMOS NOR Gate - Comparison of CMOS and TTL Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 1-t4",
+          "title": "Boolean Laws and Theorems - Sum of Products and Product of Sums Forms - K-Map Representation and Simplification (Up to Four Variables) - Pairs, Quads, Octets - Don't Care Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 2-t1",
+          "title": "Combinational Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 2-t2",
+          "title": "Half Adder and Full Adder, Half Subtractor and Full Subtractor, 4-Bit Parallel Binary Adder/Subtractor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 2-t3",
+          "title": "Comparators, Parity Generators and Checkers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 2-t4",
+          "title": "Encoders, Decoders, BCD to Seven Segment Decoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 2-t5",
+          "title": "Multiplexers - Implementation of Boolean Expressions Using Multiplexers, Demultiplexers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 3-t1",
+          "title": "Flip-Flops - SR, D and T Flip-Flops - Characteristic Table and Excitation Table - JK Master Slave Flip-Flop - Conversion of Flip-Flops - SR to JK and JK to SR Only. Up/Down Counters - Asynchronous Counters - Mod-6 and Mod-10 Counters. Synchronous Counters - Design of Synchronous Counters - Ring Counter - Johnson Counter. Shift Registers - SISO, SIPO, PISO, PIPO",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 4-t1",
+          "title": "State Machines - State Transition Diagram - Moore and Mealy Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 4-t2",
+          "title": "Digital to Analog Converter - Weighted Resistor Type, R-2R Ladder Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 4-t3",
+          "title": "Analog to Digital Converter - Flash Type, Successive Approximation Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 4-t4",
+          "title": "Introduction to Verilog - Implementation of AND, Half Adder and Full Adder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-4-pbeet404-mModule 4-t5",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

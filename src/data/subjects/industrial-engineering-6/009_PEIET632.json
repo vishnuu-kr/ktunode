@@ -1,0 +1,339 @@
+{
+  "id": "peiet632-industrial-engineering-s6",
+  "code": "PEIET632",
+  "name": "RELIABILITY ENGINEERING",
+  "branchId": "industrial-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t1",
+          "title": "Definition of Reliability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t2",
+          "title": "Reliability vs. Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t3",
+          "title": "Reliability Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t4",
+          "title": "MTTF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t5",
+          "title": "Hazard Rate Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t6",
+          "title": "Bathtub Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t7",
+          "title": "Derivation of the Reliability Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t8",
+          "title": "Failure and Failure Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t9",
+          "title": "Causes of Failures and Unreliability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t10",
+          "title": "Reliability Models: Constant Failure Rate Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t11",
+          "title": "Time Dependent Failure Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t12",
+          "title": "Weibull Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t13",
+          "title": "Normal Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t14",
+          "title": "Lognormal Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t15",
+          "title": "Serial Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t16",
+          "title": "Parallel Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t17",
+          "title": "Combined Series Parallel Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 1-t18",
+          "title": "K-out-of-M Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t1",
+          "title": "Component vs. Unit Redundancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t2",
+          "title": "Weakest-Link Technique",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t3",
+          "title": "Mixed Redundancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t4",
+          "title": "Standby Redundancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t5",
+          "title": "Redundancy Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t6",
+          "title": "Double Failures and Redundancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t7",
+          "title": "Markov Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t8",
+          "title": "Load Sharing Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t9",
+          "title": "Standby Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t10",
+          "title": "Degraded Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t11",
+          "title": "Three State Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 2-t12",
+          "title": "Covariate Models",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 3-t1",
+          "title": "Reliability in Design Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 3-t2",
+          "title": "System Effectiveness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 3-t3",
+          "title": "Economic Analysis and Life Cycle Cost",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 3-t4",
+          "title": "Reliability Allocation - Optimal Allocations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 3-t5",
+          "title": "ARINC and AGREE Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 3-t6",
+          "title": "System Safety and Fault Tree Analysis - Tieset and Cut-Set Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 3-t7",
+          "title": "Use of Boolean Algebra in Reliability Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t1",
+          "title": "Definitions and Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t2",
+          "title": "Relationship Between Reliability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t3",
+          "title": "Availability and Maintainability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t4",
+          "title": "Inherent Availability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t5",
+          "title": "Achieved Availability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t6",
+          "title": "Operational Availability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t7",
+          "title": "Economics of Reliability: Economic Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t8",
+          "title": "Manufacturer's Cost",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t9",
+          "title": "Customer's Cost",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t10",
+          "title": "Reliability Achievement Cost Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t11",
+          "title": "Reliability Utility Cost Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t12",
+          "title": "Depreciation Cost Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t13",
+          "title": "Availability Cost Model for Parallel Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet632-mModule 4-t14",
+          "title": "Reliability Management and Reliability Management by Objectives",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "oebmt721-biomedical-engineering-s7",
+  "code": "OEBMT721",
+  "name": "BIOMEDICAL INSTRUMENTATION",
+  "branchId": "biomedical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 1-t1",
+          "title": "Introduction to Biomedical Instrumentation - Definition, Importance in Healthcare, Origin of Bioelectric Potentials, Resting and Action Potentials, Propagation of Action Potentials, Examples of Bioelectric Potentials, ECG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 1-t2",
+          "title": "Electrodes for Measurement of Biopotentials",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 2-t1",
+          "title": "Cardiovascular System - Electrocardiography (ECG) - Electrical Activity of Heart, Electrocardiogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 2-t2",
+          "title": "ECG Lead Systems, ECG Machine Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 2-t3",
+          "title": "Measurement of Heart Sounds, Phonocardiography, Blood Pressure Measurement - Sphygmomanometer and Oscillometric Methods, Photoplethysmography for Pulse Rate Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 2-t4",
+          "title": "Pulse Oximeters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 3-t1",
+          "title": "Respiratory System - Spirometry and Lung Volume Measurements, Measurement of Respiratory Parameters, Nervous System - Electroencephalography (EEG) - Electrical Activity of Brain, Electroencephalogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 3-t2",
+          "title": "EEG Measurement and Waveforms, Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 3-t3",
+          "title": "Evoked Potential - Types and Applications, Electromyography (EMG) - Electrical Activity of Muscle, Types of Electrodes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 4-t1",
+          "title": "Diagnostic Imaging Systems - X-ray Radiography, Principles of X-ray Generation, Block Diagram of X-ray Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 4-t2",
+          "title": "Computed Tomography (CT) - Principle of Operation, Magnetic Resonance Imaging (MRI) - Basic Principle, Ultrasound Imaging, Basic Principles - Ultrasonic Transducers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-oebmt721-mModule 4-t3",
+          "title": "Therapeutic Devices - Pacemakers, Internal and External Pacemakers, Defibrillators, Basic Principles",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

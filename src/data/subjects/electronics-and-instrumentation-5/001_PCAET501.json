@@ -1,0 +1,111 @@
+{
+  "id": "pcaet501-electronics-and-instrumentation-s5",
+  "code": "PCAET501",
+  "name": "CONTROL SYSTEM THEORY",
+  "branchId": "electronics-and-instrumentation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 1-t2",
+          "title": "Classification of Control Systems: Open Loop and Closed Loop Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 1-t3",
+          "title": "Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 1-t5",
+          "title": "Block Diagram Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 1-t6",
+          "title": "Signal Flow Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 1-t7",
+          "title": "Mason's Gain Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 3-t3",
+          "title": "Frequency Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 3-t4",
+          "title": "Stability in the Frequency Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 3-t5",
+          "title": "Nyquist Stability Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 3-t6",
+          "title": "Stability Analysis Using Polar and Bode Plots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 3-t7",
+          "title": "Relative Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 3-t8",
+          "title": "Gain Margin and Phase Margin",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 4-t2",
+          "title": "Solution of State Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 4-t3",
+          "title": "State Transition Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-instrumentation-5-pcaet501-mModule 4-t4",
+          "title": "Controllability and Observability - Kalman's Test",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

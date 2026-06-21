@@ -1,0 +1,117 @@
+{
+  "id": "pepet633-production-engineering-s6",
+  "code": "PEPET633",
+  "name": "DEEP LEARNING",
+  "branchId": "production-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "production-engineering-6-pepet633-mModule 1-t1",
+          "title": "Differences Between Machine Learning and Deep Learning, Comparisons in Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 1-t2",
+          "title": "Introduction to Neural Networks: Neurons, Layers, Activation Functions, Concepts of Forward and Backward Propagation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "production-engineering-6-pepet633-mModule 2-t1",
+          "title": "TensorFlow, Keras, PyTorch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 2-t2",
+          "title": "Setting Up the Environment and Basic Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 2-t3",
+          "title": "Building and Training a Simple Neural Network Using TensorFlow/Keras/PyTorch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 2-t4",
+          "title": "Introduction to Deep Feedforward Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 2-t5",
+          "title": "Convolutional Neural Networks (CNNs) - Architecture, Operations, and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 2-t6",
+          "title": "Recurrent Neural Networks (RNNs) - Architecture, Operations, and Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "production-engineering-6-pepet633-mModule 3-t1",
+          "title": "Loss Functions and Optimization Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 3-t2",
+          "title": "Techniques to Avoid Overfitting - Regularization, Dropout, and Batch Normalization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 3-t3",
+          "title": "Identification of Suitable Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "production-engineering-6-pepet633-mModule 4-t1",
+          "title": "Generative Adversarial Networks (GANs) - Concepts and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 4-t2",
+          "title": "Autoencoders and Their Applications in Anomaly Detection and Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-6-pepet633-mModule 4-t3",
+          "title": "Case Studies of Deep Learning Applications in Various Industries",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

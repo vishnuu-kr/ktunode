@@ -1,0 +1,459 @@
+{
+  "id": "pcect602-electronics-and-communication-engineering-s6",
+  "code": "PCECT602",
+  "name": "MICROWAVES & ANTENNAS",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t1",
+          "title": "Electromagnetic Spectrum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t2",
+          "title": "Frequency Bands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t3",
+          "title": "Features of Microwaves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t4",
+          "title": "Advantages and Disadvantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t5",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t6",
+          "title": "Atmospheric Propagation Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t7",
+          "title": "Cavity Resonator: TE and TM Modes in Waveguides (Review only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t8",
+          "title": "Rectangular Cavity Resonator - Resonance Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t9",
+          "title": "Q Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t10",
+          "title": "Excitation and Tuning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t11",
+          "title": "Re-entrant Cavity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t12",
+          "title": "Microwave Hybrid Circuits: E Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t13",
+          "title": "H Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t14",
+          "title": "Hybrid Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t15",
+          "title": "Hybrid Ring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t16",
+          "title": "Two-hole Directional Coupler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t17",
+          "title": "Isolator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t18",
+          "title": "Circulator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t19",
+          "title": "Phase Shifter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t20",
+          "title": "Attenuator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t21",
+          "title": "Scattering Parameters: Properties of S Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t22",
+          "title": "S Matrix Formulation of E Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t23",
+          "title": "H Plane Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t24",
+          "title": "Magic Tee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t25",
+          "title": "Directional Coupler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t26",
+          "title": "Microwave Semiconductor Devices: Principle of Operation of Tunnel Diode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 1-t27",
+          "title": "Gunn Diode - Different Modes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 2-t1",
+          "title": "Types, Structure and Principles of Operation of Two Cavity Klystron - Velocity Modulation, Bunching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 2-t2",
+          "title": "Reflex Klystron - Velocity Modulation, Power Output and Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 2-t3",
+          "title": "Traveling Wave Tube Amplifier - Slow Wave Structures, Helix TWT Amplification Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 2-t4",
+          "title": "Magnetron Oscillator - Cylindrical Magnetron, Cyclotron Angular Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 2-t5",
+          "title": "Microwave Measurements: Measurement of Power, VSWR, Frequency, Wavelength, Insertion Loss, Impedance and Attenuation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 2-t6",
+          "title": "Basic Concept of Network Analyzer and Anechoic Chamber",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t1",
+          "title": "Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t2",
+          "title": "Radiation Mechanism",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t3",
+          "title": "Polarisation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t4",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t5",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t6",
+          "title": "Basic Antenna Parameters: Radiation Pattern",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t7",
+          "title": "Radiation Power Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t8",
+          "title": "Radiation Intensity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t9",
+          "title": "Radiation Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t10",
+          "title": "Beamwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t11",
+          "title": "Directivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t12",
+          "title": "Antenna Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t13",
+          "title": "Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t14",
+          "title": "Beam Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t15",
+          "title": "Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t16",
+          "title": "Input Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t17",
+          "title": "Antenna Radiation Efficiency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t18",
+          "title": "Effective Aperture Area",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t19",
+          "title": "Effective Height",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t20",
+          "title": "Antenna Noise Temperature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t21",
+          "title": "Reciprocity Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t22",
+          "title": "Helmholtz Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t23",
+          "title": "Duality Theorem (No proof required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 3-t24",
+          "title": "Field, Directivity and Radiation Resistance of a Short Dipole and Half Wave Dipole (Far Field Derivation)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t1",
+          "title": "Field of Two Isotropic Point Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t2",
+          "title": "Principle of Pattern Multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t3",
+          "title": "Array Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t4",
+          "title": "Linear Arrays of 'n' Isotropic Point Sources with Equal Amplitude",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t5",
+          "title": "Grating Lobes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t6",
+          "title": "Design of Broadside and End Fire Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t7",
+          "title": "Phased Array Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t8",
+          "title": "Adaptive Antenna Array Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t9",
+          "title": "Broadband Antennas: Log Periodic Antenna Array - Principle and Design Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t10",
+          "title": "Helical Antenna: Design Equations, Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t11",
+          "title": "Microstrip Rectangular Patch Antennas - Design Equations, Important Feeding Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t12",
+          "title": "Horn Antenna - Types, Principles, Expressions for E, H and Gain (No derivation required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t13",
+          "title": "Parabolic Dish Antenna - Principle, Cassegrain Feed, Expression for E, H and Gain without Derivation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-6-pcect602-mModule 4-t14",
+          "title": "Mobile Phone Antenna - Inverted F Antenna",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

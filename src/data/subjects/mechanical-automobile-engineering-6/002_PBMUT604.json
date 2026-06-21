@@ -1,0 +1,231 @@
+{
+  "id": "pbmut604-mechanical-automobile-engineering-s6",
+  "code": "PBMUT604",
+  "name": "VEHICLE DYNAMICS",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 1-t1",
+          "title": "History of Road and Off-Road Vehicle System Dynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 1-t2",
+          "title": "Vehicle Coordinate Systems – Vehicle Fixed Coordinate System, Earth Fixed Coordinate System, SAE Coordinate System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 1-t3",
+          "title": "Fundamental Approaches to Vehicle Dynamics Modelling – Lumped Mass, Motion Variables, Euler Angles, Forces, Newton's Second Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 1-t4",
+          "title": "Modelling and Simulation of Dynamic Behaviour of Vehicle – Motion Analysis, Force Analysis, and Energy Analysis Using Software (Simple Models)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 1-t5",
+          "title": "Performance of Road Vehicles: Forces and Moments on Vehicle, Equation of Motion, Tire Forces, Rolling Resistance, Weight Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 1-t6",
+          "title": "Tractive Effort/Tractive Resistance and Power Available from the Engine/Power Required for Propulsion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 1-t7",
+          "title": "Road Performance Curves – Acceleration, Grade Ability, Drawbar Pull and the Problems Related to These Terms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t1",
+          "title": "Calculation of Maximum Acceleration, Braking Torque, Braking Force, Brake Proportioning, Braking Efficiency, Stopping Distance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t2",
+          "title": "Load Distribution (Three Wheeled and Four Wheeled Vehicles)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t3",
+          "title": "Calculation of Acceleration, Tractive Effort and Reactions for Different Drives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t4",
+          "title": "Stability of a Vehicle on Slope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t5",
+          "title": "Weight Transfer during Acceleration, Cornering and Braking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t6",
+          "title": "MATLAB Simulation for Longitudinal Dynamic Response during Acceleration and Braking of Automotive System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t7",
+          "title": "Vehicle Dynamic Control – Modelling of Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t8",
+          "title": "Sensors for Automobile Control and Sensors for Detecting Vehicle Environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t9",
+          "title": "Central Tyre Inflation System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 2-t10",
+          "title": "Prediction of Vehicle Performance – ABS, Stability Control, Traction Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 3-t1",
+          "title": "Introduction to Lateral Dynamics – Development of Lateral Forces, Slip Angle, Cornering Force, Cornering Stiffness, Pneumatic Trail, Self-Aligning Torque, Power Consumed by Tire, Tire Stiffness, Hysteresis Effect in Tires",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 3-t2",
+          "title": "Steady State Handling Characteristics – Yaw Velocity, Lateral Acceleration, Curvature Response and Directional Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 3-t3",
+          "title": "Stability of a Rigid Vehicle and Equations of Motion of a Rigid Vehicle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 3-t4",
+          "title": "Cross Wind Handling and the Problems Related to These Terms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 3-t5",
+          "title": "MATLAB Simulation for Lateral Dynamic Response during Cornering of Automotive System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 3-t6",
+          "title": "Stability of a Vehicle on a Curved Track and a Banked Road",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 3-t7",
+          "title": "Gyroscopic Effects",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t1",
+          "title": "Introduction to Vertical Dynamics – Human Response to Vibrations, Classification of Vibration, Specification and Vibration, Sources of Vibration, Suspension Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t2",
+          "title": "Modal Analysis – One DOF, Two DOF, Free and Forced Vibration, Damped Vibration, Magnification and Transmissibility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t3",
+          "title": "Body Vibrations: Bouncing and Pitching, Doubly Conjugate Points (Only Basic Idea), Body Rolling, Roll Centre and Roll Axis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t4",
+          "title": "Roll Axis and the Vehicle under the Action of Side Forces, Stability against Body Rolling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t5",
+          "title": "Vehicle Dynamics and Suspension Design for Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t6",
+          "title": "Design and Analysis of Passive, Semi-Active and Active Suspension Using Quarter Car, Half Car and Full Car Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t7",
+          "title": "MATLAB Simulation for Vertical Dynamic Response to Analyze Ride, Pitch and Roll of Automotive System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t8",
+          "title": "MATLAB Simulation for Half Car Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-6-pbmut604-mModule 4-t9",
+          "title": "MATLAB Simulation for Quarter Car Model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

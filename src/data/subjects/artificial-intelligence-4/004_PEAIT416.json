@@ -1,0 +1,171 @@
+{
+  "id": "peait416-artificial-intelligence-s4",
+  "code": "PEAIT416",
+  "name": "GRAPHICS AND MULTIMEDIA PRINCIPLES",
+  "branchId": "artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 1-t1",
+          "title": "Basics of Computer Graphics and its Applications. Video Display Devices - Refresh Cathode Ray Tubes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 1-t2",
+          "title": "Random Scan Displays and Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 1-t3",
+          "title": "Raster Scan Displays and Systems. Line Drawing Algorithms - DDA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 1-t4",
+          "title": "Bresenham's Algorithm. Circle Drawing Algorithms - Midpoint Circle Generation Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 1-t5",
+          "title": "Bresenham's Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 2-t1",
+          "title": "Filled Area Primitives - Scan Line Polygon Filling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 2-t2",
+          "title": "Boundary Filling and Flood Filling. Two Dimensional Transformations - Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 2-t3",
+          "title": "Rotation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 2-t4",
+          "title": "Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 2-t5",
+          "title": "Reflection and Shearing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 2-t6",
+          "title": "Composite Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 2-t7",
+          "title": "Matrix Representations and Homogeneous Coordinates. Basic 3D Transformations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 3-t1",
+          "title": "Window to Viewport Transformation. Cohen Sutherland Line Clipping Algorithm. Sutherland Hodgeman Polygon Clipping Algorithm. Three Dimensional Viewing Pipeline. Projections",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 3-t2",
+          "title": "Parallel and Perspective Projections. Visible Surface Detection Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 3-t3",
+          "title": "Depth Buffer Algorithm, Scan Line Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t1",
+          "title": "Multimedia Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t2",
+          "title": "Multimedia Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t3",
+          "title": "Multimedia System Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t4",
+          "title": "Evolving Technologies for Multimedia",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t5",
+          "title": "Defining Objects for Multimedia Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t6",
+          "title": "Multimedia Data Interface Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t7",
+          "title": "Multimedia Databases. Compression and Decompression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-4-peait416-mModule 4-t8",
+          "title": "Data and File Format Standard",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

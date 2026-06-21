@@ -1,0 +1,195 @@
+{
+  "id": "oerat831-robotics-and-artificial-intelligence-s8",
+  "code": "OERAT831",
+  "name": "INTRODUCTION TO SIGNAL PROCESSING FOR ROBOTICS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t1",
+          "title": "Elementary Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t2",
+          "title": "Continuous Time and Discrete Time Signals and Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t3",
+          "title": "Signal Classifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t4",
+          "title": "Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t5",
+          "title": "Linearity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t6",
+          "title": "Stability and Causality of Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t7",
+          "title": "LTI Systems - Definition and Examples, Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 1-t8",
+          "title": "Correlation and Orthogonality of Signals",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 2-t1",
+          "title": "Frequency Domain Representation - Continuous Time Fourier Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 2-t2",
+          "title": "Continuous Time Fourier Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 2-t3",
+          "title": "Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 2-t4",
+          "title": "Inverse Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 2-t5",
+          "title": "Differential Equation Representation of Continuous Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 2-t6",
+          "title": "Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 2-t7",
+          "title": "Frequency Response",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 3-t1",
+          "title": "Sampling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 3-t2",
+          "title": "Aliasing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 3-t3",
+          "title": "Z Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 3-t4",
+          "title": "Inverse Z Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 3-t5",
+          "title": "Difference Equation Representation of Discrete Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 3-t6",
+          "title": "Frequency Domain Representation of Discrete Time Signals - Discrete Time Fourier Transform (DTFT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 3-t7",
+          "title": "Analysis of Discrete Time LTI Systems Using the Above Transforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 4-t1",
+          "title": "Discrete Fourier Transform (DFT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 4-t2",
+          "title": "Computational Complexity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 4-t3",
+          "title": "Circular Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 4-t4",
+          "title": "Long Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-oerat831-mModule 4-t5",
+          "title": "Fast Fourier Transform (FFT) - Decimation in Time Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

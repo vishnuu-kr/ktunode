@@ -1,0 +1,153 @@
+{
+  "id": "peebt865-electronics-and-biomedical-engineering-s8",
+  "code": "PEEBT865",
+  "name": "MODELLING OF PHYSIOLOGICAL SYSTEMS",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 1-t1",
+          "title": "Physiological Complexity and Need for Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 1-t2",
+          "title": "Feedback and Control in Physiological Systems: Modeling Process Steps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 1-t3",
+          "title": "Different Approaches in System Modeling: Parametric and Nonparametric Modeling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 1-t4",
+          "title": "Linear and Nonlinear",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 1-t5",
+          "title": "Compartmental Modeling (Examples of Each Type in Physiological Systems)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 2-t1",
+          "title": "Basic Cardiac Anatomy and Electrocardiology Conduction System: The Electrocardiogram (ECG), Cardiac Action Potential Models, Biophysical Models (Noble)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 2-t2",
+          "title": "Noble Models, Reduced Cell Models, Mathematical Models of Cardiac Cell Arrangements: The Bidomain and Monodomain Models",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t1",
+          "title": "Electrophysiology of Neurons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t2",
+          "title": "Ionic Currents and Conductance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t3",
+          "title": "Equivalent Circuit Representation of a Patch of Cell Membrane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t4",
+          "title": "Resting Membrane Potential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t5",
+          "title": "Voltage-Gated Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t6",
+          "title": "Hodgkin-Huxley Model Formulation for Action Potential",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t7",
+          "title": "Compartmental Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 3-t8",
+          "title": "Simplified Models of Neurons: Integrate-and-Fire Neurons, Spike-Response Model Neurons, Rate-Based Models",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 4-t1",
+          "title": "Dynamical System Analysis: Types of Fixed Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 4-t2",
+          "title": "Phase Plane Analysis: Nullclines, Hopf Bifurcation and Limit Cycles, Van der Pol Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 4-t3",
+          "title": "Fitzhugh-Nagumo Model: Phase-Plane Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 4-t4",
+          "title": "Showing Excitability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-peebt865-mModule 4-t5",
+          "title": "Bistability and Oscillations: Simulation Studies of Simplified Models (e.g., Izhikevich Neuron Models)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

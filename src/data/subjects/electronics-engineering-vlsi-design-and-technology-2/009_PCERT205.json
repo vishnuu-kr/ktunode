@@ -1,0 +1,123 @@
+{
+  "id": "pcert205-electronics-engineering-vlsi-design-and-technology-s2",
+  "code": "PCERT205",
+  "name": "DIGITAL ELECTRONICS (ELECTRONICS AND COMPUTER ENGINEERING)",
+  "branchId": "electronics-engineering-vlsi-design-and-technology",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 1-t1",
+          "title": "Introduction to Number Systems (Decimal, Binary, Octal, Hexadecimal) and Their Bases - Conversion Methods Between Decimal, Binary, Octal and Hexadecimal Number Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 1-t2",
+          "title": "Arithmetic - Binary Addition, Binary Multiplication and Binary Division",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 1-t3",
+          "title": "Addition of BCD, Octal and Hexadecimal Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 1-t4",
+          "title": "Representing Negative Numbers - Signed Numbers and Complements, Subtraction with Complements (Binary, Octal and Hexadecimal)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 1-t5",
+          "title": "Introduction to Alternative Coding Schemes - BCD, Gray Codes, and Excess-3 Codes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 2-t1",
+          "title": "Introduction to Boolean Algebra - Postulates (Idempotence, Commutativity, Associativity, Distributive Property) and Basic Theorems (like De-Morgan's Theorem)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 2-t2",
+          "title": "Minimization of Boolean Expressions - Canonical and Standard Forms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 2-t3",
+          "title": "Karnaugh Map Minimization (up to four variables) and Don't-Care Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 2-t4",
+          "title": "Digital Logic Gates - Implementation of Boolean Functions Using Combinations of Basic Logic Gates and Universal Gates",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 3-t1",
+          "title": "Combinational and Arithmetic Circuits - Combinatorial Logic Systems, Data Encoders and Decoders, Data Selection and Distribution (Mux and Demux), Code Converters, Comparators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 3-t2",
+          "title": "Arithmetic Circuits - Half and Full Adder, Half and Full Subtractor, Binary Parallel Adder, BCD Adder",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 4-t1",
+          "title": "Sequential Circuits Fundamentals, Flip-Flops - SR, T and D, Conversion of Flip-Flops, Excitation Table and Characteristic Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 4-t2",
+          "title": "Asynchronous (Binary and BCD Counters) and Synchronous Counter Design (Binary Up, Down and Up-Down Counter, BCD Counter, Timing Sequences and State Diagrams, Mod N Counter)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 4-t3",
+          "title": "Shift Registers - SIPO, SISO, PISO, PIPO, Timing Sequences and State Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-2-pcert205-mModule 4-t4",
+          "title": "Shift Registers with Parallel Load/Shift, Ring Counter and Johnson Counter",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

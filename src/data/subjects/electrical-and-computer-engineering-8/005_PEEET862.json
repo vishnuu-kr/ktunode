@@ -1,0 +1,171 @@
+{
+  "id": "peeet862-electrical-and-computer-engineering-s8",
+  "code": "PEEET862",
+  "name": "HVDC AND FACTS",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t1",
+          "title": "Comparison of AC and DC Transmission - Types of HVDC System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t2",
+          "title": "Current Source Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t3",
+          "title": "Analysis Without and With Overlap Period, Voltage Source Converters (VSC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t4",
+          "title": "VSC with AC Current Control and VSC with AC Voltage Control, HVDC Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t5",
+          "title": "Functions of HVDC Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t6",
+          "title": "Equivalent Circuit for a Two Terminal DC Link",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t7",
+          "title": "Control Basics for a Two Terminal DC Link",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t8",
+          "title": "Current Margin Control Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t9",
+          "title": "Current Control at the Rectifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t10",
+          "title": "Inverter Extinction Angle Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 1-t11",
+          "title": "Hierarchy of Controls",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 2-t1",
+          "title": "Power Flow in Power Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 2-t2",
+          "title": "Voltage Regulation and Reactive Power Flow Control in Power Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 2-t3",
+          "title": "Power Flow Control - Constraints of Maximum Transmission Line Loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 2-t4",
+          "title": "Needs and Emergence of FACTS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 2-t5",
+          "title": "Types of FACTS Controllers - Advantages and Disadvantages, Transmission Line Compensation - Uncompensated Line, Shunt Compensation, Series Compensation, Phase Angle Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 3-t1",
+          "title": "Static Shunt Compensator - Objectives of Shunt Compensations - Variable Impedance Type VAR Generators - TCR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 3-t2",
+          "title": "FC-TCR (Principle of Operation and Schematic) and STATCOM (Principle of Operation and Schematic), Static Series Compensator - Objectives of Series Compensations - Variable Impedance Type Series Compensators - GCSC, TCSC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 3-t3",
+          "title": "TSSC (Principle of Operation and Schematic), Switching Converter Type Series Compensators - SSSC (Principle of Operation and Schematic)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 4-t1",
+          "title": "Unified Power Flow Controller: Circuit Arrangement, Operation of UPFC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 4-t2",
+          "title": "Basic Principle of P and Q Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 4-t3",
+          "title": "Independent Real and Reactive Power Flow Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-8-peeet862-mModule 4-t4",
+          "title": "Applications, Introduction to Interline Power Flow Controller (IPFC) (Principle of Operation and Schematic), Thyristor Controlled Voltage and Phase Angle Regulators (Principle of Operation and Schematic)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

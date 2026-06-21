@@ -1,0 +1,129 @@
+{
+  "id": "perat631-robotics-and-artificial-intelligence-s6",
+  "code": "PERAT631",
+  "name": "DIGITAL CONTROL SYSTEMS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 1-t1",
+          "title": "Basic Elements of Discrete Data Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 1-t2",
+          "title": "Advantages of Discrete Data Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 1-t3",
+          "title": "Signal Conversion & Processing: Digital Signals & Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 1-t4",
+          "title": "Data Conversion & Quantization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 1-t5",
+          "title": "Sample and Hold Devices, Mathematical Modelling of the Sampling Process, Zero Order Hold & First Order Hold",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 2-t1",
+          "title": "Pulse Transfer Function, Z-Transform Analysis of Closed Loop and Open Loop Systems, Modified Z-Transfer Function, Steady State Error Analysis of Digital Systems, Examples on Static Error Coefficients, Bilinear Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 2-t2",
+          "title": "Mapping from S-Plane to Z-Plane",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 3-t1",
+          "title": "Stability Analysis of Linear Digital Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 3-t2",
+          "title": "Routh Hurwitz Criteria, Jury's Test, Root Loci of Digital Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 3-t3",
+          "title": "Rules for Construction of Root Locus, Frequency Domain Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 3-t4",
+          "title": "Bode Plots, Gain Margin and Phase Margin",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 4-t1",
+          "title": "State Space Representation of Discrete Time Systems, Transfer Function from State Space Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 4-t2",
+          "title": "Various Canonical Forms, Discrete Time State Transition Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 4-t3",
+          "title": "Conversion of Transfer Function Model to State Space Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 4-t4",
+          "title": "Characteristics Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-perat631-mModule 4-t5",
+          "title": "Solution of Discrete State Equations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

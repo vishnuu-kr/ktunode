@@ -1,0 +1,135 @@
+{
+  "id": "pecst635-artificial-intelligence-and-machine-learning-s6",
+  "code": "PECST635",
+  "name": "CLOUD COMPUTING",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 1-t1",
+          "title": "Introduction - Limitations of Traditional Computing & Solution, Three Layers of Computing, Factors Behind Cloud Service Adoption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 1-t2",
+          "title": "Evolution and Enabling Technologies of Cloud",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 1-t3",
+          "title": "Benefits and Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 1-t4",
+          "title": "Fundamental Concepts and Models - Roles and Boundaries, Cloud Characteristics, Cloud Delivery Models, Cloud Deployment Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 1-t5",
+          "title": "Introduction to Cloud Providers (AWS, Azure, Google Cloud)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 1-t6",
+          "title": "Hands-On - Cloud Account Setup and Virtual Machine Deployment - Create Accounts on a Cloud Provider and Deploy Virtual Machine Instances, and Document the Process and Inferences",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 2-t1",
+          "title": "Cloud-Enabling Technology - Networks and Internet Architecture, Cloud Data Center Technology, Modern Virtualization, Multitenant Technology, Service Technology and Service APIs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 2-t2",
+          "title": "Understanding Containerization - Influencers, Fundamental Virtualization and Containerization, Understanding Containers, Understanding Container Images, Multi-Container Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 2-t3",
+          "title": "Hands-On - Hypervisor and Containers Installation - Install Hypervisors and Deploy VMs on Local Machines. Install Any Container Platform and Deploy Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 3-t1",
+          "title": "Resource Management - Resource Pooling, Sharing, Provisioning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 3-t2",
+          "title": "Scaling in Cloud and the Strategies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 3-t3",
+          "title": "Capacity Planning in Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 3-t4",
+          "title": "Storage and File System - Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 3-t5",
+          "title": "Cloud Native File System, Deployment Models, Storage Types, Popular Cloud Storages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 3-t6",
+          "title": "High Performance Computing Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 3-t7",
+          "title": "Hands-On - Use MapReduce to Implement Basic Big Data Applications Such as Word Count",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecst635-mModule 4-t1",
+          "title": "Identify Possible Attacks of Any Selected Cloud Applications and Suggest/Implement Solutions/Policies for Mitigation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

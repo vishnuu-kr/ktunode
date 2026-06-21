@@ -1,0 +1,339 @@
+{
+  "id": "pecdt745-computer-science-and-engineering-data-science-s7",
+  "code": "PECDT745",
+  "name": "INFORMATION RETRIEVAL",
+  "branchId": "computer-science-and-engineering-data-science",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t1",
+          "title": "Overview of Information Retrieval Systems: History and Evolution of IR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t2",
+          "title": "Basic Concepts of Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t3",
+          "title": "Differences Between Data Retrieval and Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t4",
+          "title": "IR Models: Boolean",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t5",
+          "title": "Vector Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t6",
+          "title": "Probabilistic Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t7",
+          "title": "Indexing and Search: Document Representation and Preprocessing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t8",
+          "title": "Tokenization, Stemming, and Lemmatization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t9",
+          "title": "Inverted Index and Boolean Queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t10",
+          "title": "Term Frequency and Document Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t11",
+          "title": "Relevance Feedback and Query Expansion: Query Reformation Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t12",
+          "title": "User Feedback in IR Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 1-t13",
+          "title": "Pseudo Relevance Feedback",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t1",
+          "title": "Retrieval Models and Evaluation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t2",
+          "title": "Vector Space Model (VSM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t3",
+          "title": "Probabilistic Retrieval Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t4",
+          "title": "Language Models for IR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t5",
+          "title": "Latent Semantic Indexing (LSI)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t6",
+          "title": "Topic Models (LDA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t7",
+          "title": "Evaluation of Information Retrieval Systems: Precision, Recall, and F-Measure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t8",
+          "title": "Receiver Operating Characteristic (ROC) Curves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t9",
+          "title": "Mean Average Precision (MAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t10",
+          "title": "Discounted Cumulative Gain (DCG)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t11",
+          "title": "Test Collections and Benchmarks (TREC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t12",
+          "title": "Text Similarity and Ranking: Cosine Similarity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t13",
+          "title": "TF-IDF Weighting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 2-t14",
+          "title": "BM25 Ranking Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t1",
+          "title": "Web Search and Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t2",
+          "title": "Web Search Fundamentals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t3",
+          "title": "Web Crawling and Indexing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t4",
+          "title": "Link Analysis Algorithms: PageRank and HITS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t5",
+          "title": "Search Engine Architecture and Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t6",
+          "title": "Web Content Mining and Structure Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t7",
+          "title": "Search Engine Optimization (SEO): Concepts of SEO and Ranking Factors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t8",
+          "title": "On-Page and Off-Page Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t9",
+          "title": "User Behavior Modeling and Personalized Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t10",
+          "title": "Distributed and Scalable Search: Distributed Indexing and Search Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t11",
+          "title": "MapReduce for Large Scale Search Engines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 3-t12",
+          "title": "Parallel Query Processing and Web-Scale IR",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t1",
+          "title": "Advanced Topics in Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t2",
+          "title": "Multimedia and Cross-Language Information Retrieval: Image and Video Retrieval Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t3",
+          "title": "Content-Based Image Retrieval (CBIR)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t4",
+          "title": "Cross-Language Information Retrieval (CLIR) and Challenges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t5",
+          "title": "Natural Language Processing (NLP) in IR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t6",
+          "title": "Social Media and Sentiment Analysis: Social Media Mining and Opinion Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t7",
+          "title": "Sentiment Analysis and Opinion Mining Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t8",
+          "title": "Collaborative Filtering and Recommendation Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t9",
+          "title": "Ethical Issues and Emerging Trends: Privacy and Bias in Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t10",
+          "title": "Ethics of Search Engines and IR Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t11",
+          "title": "AI in Information Retrieval: Deep Learning and Neural IR Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-data-science-7-pecdt745-mModule 4-t12",
+          "title": "Future Directions in IR Research",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

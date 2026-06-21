@@ -1,0 +1,285 @@
+{
+  "id": "pccit602-computer-science-and-engineering-s6",
+  "code": "PCCIT602",
+  "name": "CRYPTOGRAPHY FOR IOT APPLICATIONS",
+  "branchId": "computer-science-and-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t1",
+          "title": "Need for Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t2",
+          "title": "Security Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t3",
+          "title": "Principles of Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t4",
+          "title": "Types of Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t5",
+          "title": "OSI Security Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t6",
+          "title": "Public Key Cryptosystems vs. Symmetric Key Cryptosystems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t7",
+          "title": "Encrypting Communication Channels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t8",
+          "title": "Overview of Symmetric Key Cryptography and Block Cipher Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t9",
+          "title": "Data Encryption Standard (DES)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t10",
+          "title": "Triple DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t11",
+          "title": "International Data Encryption Algorithm (IDEA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t12",
+          "title": "Advanced Encryption Algorithm (AES)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t13",
+          "title": "Block Cipher Modes of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 1-t14",
+          "title": "Stream Cipher",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t1",
+          "title": "Principles of Public Key Cryptosystems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t2",
+          "title": "RSA Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t3",
+          "title": "RSA Illustration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t4",
+          "title": "Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t5",
+          "title": "ElGamal Cryptographic System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t6",
+          "title": "Knapsack Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t7",
+          "title": "Diffie-Hellman Key Exchange Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 2-t8",
+          "title": "Elliptical Curve Cryptosystems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t1",
+          "title": "Symmetric Key Distribution Using Asymmetric Encryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t2",
+          "title": "Distribution of Public Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t3",
+          "title": "Generating Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t4",
+          "title": "Transferring Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t5",
+          "title": "Verifying Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t6",
+          "title": "Updating Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t7",
+          "title": "Storing Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t8",
+          "title": "Backup Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t9",
+          "title": "Compromised Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t10",
+          "title": "Authentication and Message Authentication Codes (MAC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t11",
+          "title": "Hash Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t12",
+          "title": "Security of Hash Functions and MAC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t13",
+          "title": "Message Digest 5 (MD5)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 3-t14",
+          "title": "Secure Hash Algorithm (SHA-512)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 4-t1",
+          "title": "Cryptographic Solutions: Product Specific Security Based on RFID Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 4-t2",
+          "title": "Strengthening the Security of Machine-Readable Documents",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 4-t3",
+          "title": "Enhancing Security of Class I Generation 2 RFID Against Traceability and Cloning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 4-t4",
+          "title": "Lightweight Cryptographic Algorithms: Block Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 4-t5",
+          "title": "Stream Cipher - Permutation Based",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-6-pccit602-mModule 4-t6",
+          "title": "Examples and Comparisons",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

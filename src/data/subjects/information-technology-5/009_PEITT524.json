@@ -1,0 +1,285 @@
+{
+  "id": "peitt524-information-technology-s5",
+  "code": "PEITT524",
+  "name": "DATA MINING AND WAREHOUSING",
+  "branchId": "information-technology",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t1",
+          "title": "Data Mining Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t2",
+          "title": "Types of Data to Be Mined",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t3",
+          "title": "Data Mining Functionalities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t4",
+          "title": "Classification of Data Mining System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t5",
+          "title": "Data Mining Task Primitives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t6",
+          "title": "Major Issues in Data Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t7",
+          "title": "Data Pre-processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t8",
+          "title": "Need of Data Pre-processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t9",
+          "title": "Descriptive Data Summarization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t10",
+          "title": "Data Cleaning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t11",
+          "title": "Data Integration and Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t12",
+          "title": "Data Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 1-t13",
+          "title": "Data Discretization and Concept Hierarchy Generation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-5-peitt524-mModule 2-t1",
+          "title": "Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 2-t2",
+          "title": "Multidimensional Data Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 2-t3",
+          "title": "Data Warehouse Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 2-t4",
+          "title": "Data Warehouse Implementation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 2-t5",
+          "title": "From Data Warehousing to Data Mining",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t1",
+          "title": "Classification Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t2",
+          "title": "Decision Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t3",
+          "title": "Naive Bayes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t4",
+          "title": "k-Nearest Neighbors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t5",
+          "title": "Support Vector Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t6",
+          "title": "Clustering Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t7",
+          "title": "k-Means",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t8",
+          "title": "Hierarchical Clustering and DBSCAN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t9",
+          "title": "Association Rule Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t10",
+          "title": "Apriori Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t11",
+          "title": "FP-Growth Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t12",
+          "title": "Model Evaluation and Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 3-t13",
+          "title": "Cross-Validation, Confusion Matrix, ROC Curves",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t1",
+          "title": "Multimedia Data Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t2",
+          "title": "Text Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t3",
+          "title": "Text Data Analysis and Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t4",
+          "title": "Text Mining Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t5",
+          "title": "Web Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t6",
+          "title": "Web Content Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t7",
+          "title": "Web Structure Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t8",
+          "title": "Web Usage Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t9",
+          "title": "CRM Applications and Data Mining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t10",
+          "title": "Practical Data Mining Tools: Weka",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-5-peitt524-mModule 4-t11",
+          "title": "RapidMiner",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "id": "pcect205-biomedical-engineering-s2",
+  "code": "PCECT205",
+  "name": "NETWORK THEORY",
+  "branchId": "biomedical-engineering",
+  "semester": 2,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t1",
+          "title": "Concept of Networks and Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t2",
+          "title": "Circuit Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t3",
+          "title": "Ideal and Practical Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t4",
+          "title": "Independent and Dependent Sources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t5",
+          "title": "Source Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t6",
+          "title": "Kirchhoff's Laws, Mesh Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t7",
+          "title": "Node Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 1-t8",
+          "title": "Super-mesh Analysis and Super-node Analysis Applied to Both DC and AC Networks Containing Independent and Dependent Sources",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 2-t1",
+          "title": "Superposition Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 2-t2",
+          "title": "Reciprocity Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 2-t3",
+          "title": "Thevenin's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 2-t4",
+          "title": "Norton's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 2-t5",
+          "title": "Millman's Theorem and Maximum Power Transfer Theorem for the Analysis of DC and AC Networks Having Independent and Dependent Sources",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 3-t1",
+          "title": "Laplace Transforms of Standard Signals and Common Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 3-t2",
+          "title": "Laplace Transform Theorems (Proof Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 3-t3",
+          "title": "Inverse Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 3-t4",
+          "title": "Solution of Differential Equations, Transformation of Basic Signals and Circuits to s-domain with and without Initial Conditions, Transient Analysis of RL",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 3-t5",
+          "title": "RC and RLC Networks with DC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 3-t6",
+          "title": "Impulse",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 3-t7",
+          "title": "Step and Sinusoidal Inputs, Analysis of Low Pass and High Pass RC Circuits Using Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t1",
+          "title": "Network Functions for Single-port and Two-port Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t2",
+          "title": "Properties of Driving Point and Transfer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t3",
+          "title": "Significance of Poles and Zeros of Network Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t4",
+          "title": "Pole-zero Plot, Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t5",
+          "title": "Admittance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t6",
+          "title": "Hybrid and Transmission Parameters of Two-port Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t7",
+          "title": "Reciprocity and Symmetry Conditions (Derivation Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t8",
+          "title": "Inter-relationships between Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-2-pcect205-mModule 4-t9",
+          "title": "Series and Parallel Connections of Two-port Networks",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

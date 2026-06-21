@@ -1,0 +1,327 @@
+{
+  "id": "peaet634-applied-electronics-and-instrumentation-s6",
+  "code": "PEAET634",
+  "name": "AUTOMOTIVE ELECTRONICS",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 1-t1",
+          "title": "Basics of Electronic Engine Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 1-t2",
+          "title": "Overview of Electronics in Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 1-t3",
+          "title": "Need for Electronic Engine Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 1-t4",
+          "title": "Concept of an Electronic Engine Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 1-t5",
+          "title": "Inputs and Outputs to Engine Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 1-t6",
+          "title": "Electronic Fuel Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 1-t7",
+          "title": "Closed Loop Electronic Fuel Control System and Electronic Ignition System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t1",
+          "title": "Vehicle Motion Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t2",
+          "title": "Representative Cruise Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t3",
+          "title": "Digital Cruise Control Configuration and Block Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t4",
+          "title": "Cruise Control Speed Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t5",
+          "title": "Digital Speed Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t6",
+          "title": "Cruise Control Electronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t7",
+          "title": "Basic Concepts of Stepper Motor Based and Vacuum Operated Actuator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t8",
+          "title": "Basics of Antilock Braking System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t9",
+          "title": "Electronic Suspension Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 2-t10",
+          "title": "Electronic Steering Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t1",
+          "title": "Power Systems and Hybrid Drives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t2",
+          "title": "Battery Management System - Battery Types and Its Maintenance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t3",
+          "title": "Capacity Rating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t4",
+          "title": "Battery Charging Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t5",
+          "title": "Battery Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t6",
+          "title": "Modern Battery Types - Lithium-Ion Battery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t7",
+          "title": "Fuel Cells",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t8",
+          "title": "Ultra Capacitors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t9",
+          "title": "Charging System - Basic Charging System Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t10",
+          "title": "Alternator in Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t11",
+          "title": "Rectification of AC to DC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t12",
+          "title": "Example of Charging Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t13",
+          "title": "Smart Charging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t14",
+          "title": "Engine Starting System - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t15",
+          "title": "Starting Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t16",
+          "title": "Block Diagram of Starting System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t17",
+          "title": "Electronic Starter Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t18",
+          "title": "Concept of Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t19",
+          "title": "Hybrid Drive Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t20",
+          "title": "Types of Hybrid - Series, Parallel, Micro, Mild, and Strong Hybrid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 3-t21",
+          "title": "Concept of Recuperative Brake System",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t1",
+          "title": "Automotive Instrumentation and Diagnostics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t2",
+          "title": "Modern Automotive Instrumentation - General and Computer Based Instrumentation System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t3",
+          "title": "Advantages of Computer-Based Instrumentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t4",
+          "title": "Fuel Level Measurement and Indication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t5",
+          "title": "Vehicle Speed Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t6",
+          "title": "High-Speed Digital Communications - CAN Protocol (Basic Concepts Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t7",
+          "title": "Trip Information Computer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t8",
+          "title": "Airbag Deployment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t9",
+          "title": "Electronic Control System Diagnostics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t10",
+          "title": "Service Bay Diagnostic Tool",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet634-mModule 4-t11",
+          "title": "On-Board Diagnosis (OBD II)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

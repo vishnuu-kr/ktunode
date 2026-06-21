@@ -1,0 +1,213 @@
+{
+  "id": "peftt638-food-technology-s6",
+  "code": "PEFTT638",
+  "name": "PROCESS INSTRUMENTATION AND CONTROL",
+  "branchId": "food-technology",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t1",
+          "title": "Introduction to Process Dynamics and Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t2",
+          "title": "Definition of Terms and Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t3",
+          "title": "Transform of Simple Functions, Derivatives and Integrals, Properties of Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t4",
+          "title": "Final Value Theorem, Initial Value Theorem, Transition of Transforms and Functions, Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t5",
+          "title": "Inversion by Partial Fraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t6",
+          "title": "Solution of Differential Equation, Qualitative Nature of Solutions, Linear Loop Open System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t7",
+          "title": "First Order Systems, Mercury Thermometer, Liquid Level and Mixing Processes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t8",
+          "title": "Response of These to Different Types of Forcing Functions, Systems in Series",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 1-t9",
+          "title": "Interacting and Non-Interacting Types",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "food-technology-6-peftt638-mModule 2-t1",
+          "title": "Linear Open Loop Systems, Second Order Systems, Mercury Thermometer in Well and Manometer, Impulse and Step Response of Under Damped",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 2-t2",
+          "title": "Critically Damped and Over-Damped System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 2-t3",
+          "title": "Their Derivation, Closed Loop System, Servo and Regulator Problems, Block Diagram Development, Controllers Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 2-t4",
+          "title": "Basic Principles and Transfer Functions, PID",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 2-t5",
+          "title": "PI and PD",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "food-technology-6-peftt638-mModule 3-t1",
+          "title": "Introduction to Stability of Linear System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 3-t2",
+          "title": "Routh Hurwitz Criterion for Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 3-t3",
+          "title": "Root Locus Technique, Plotting the Root Locus Diagram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 3-t4",
+          "title": "Transportation Lag and Its Effect on Root Locus Diagram, Introduction to Frequency Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 3-t5",
+          "title": "Bode Diagram for First Order System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 3-t6",
+          "title": "Bode Stability Criterion, Gain Margin and Phase Margin",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t1",
+          "title": "Instrumentation Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t2",
+          "title": "Performance Characteristics of an Instrument, Static and Dynamic Characteristics, Temperature Measurement, Three Types of Thermometers, Liquid Filled",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t3",
+          "title": "Vapour Pressure and Gas Type, Bimetallic Thermometer, Resistance Thermometer, Principles of Thermoelectricity like Seebeck Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t4",
+          "title": "Peltier Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t5",
+          "title": "Thomson Effect, Radiation Methods like Pyrometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t6",
+          "title": "Optical Pyrometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t7",
+          "title": "Thermistor, Pressure Measurement, Manometer of U-Tube",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t8",
+          "title": "Well Type and Inclined Type, Bourdon Tube",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t9",
+          "title": "Flat and Corrugated Diaphragm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "food-technology-6-peftt638-mModule 4-t10",
+          "title": "Capsules",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

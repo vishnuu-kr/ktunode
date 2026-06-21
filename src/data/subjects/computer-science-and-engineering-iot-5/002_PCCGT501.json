@@ -1,0 +1,291 @@
+{
+  "id": "pccgt501-computer-science-and-engineering-iot-s5",
+  "code": "PCCGT501",
+  "name": "FOUNDATIONS OF CRYPTOGRAPHY",
+  "branchId": "computer-science-and-engineering-iot",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t1",
+          "title": "OSI Security Architecture - Security Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t2",
+          "title": "Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t3",
+          "title": "Mechanisms, Cryptography vs Cryptanalysis, Classical Encryption Techniques - Symmetric Cipher Model, Substitution Ciphers - Monoalphabetic vs Polyalphabetic Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t4",
+          "title": "Caesar Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t5",
+          "title": "Affine Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t6",
+          "title": "Playfair Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t7",
+          "title": "Vigenère Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t8",
+          "title": "Hill Cipher, Transposition Ciphers - Keyless",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t9",
+          "title": "Keyed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 1-t10",
+          "title": "Double Transposition",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t1",
+          "title": "Symmetric Key Ciphers - Block vs Stream Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t2",
+          "title": "Product Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t3",
+          "title": "Feistel and Non-Feistel Ciphers, Data Encryption Standard (DES) - Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t4",
+          "title": "Key Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t5",
+          "title": "Design Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t6",
+          "title": "Weaknesses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t7",
+          "title": "Double DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t8",
+          "title": "Triple DES, Advanced Encryption Standard (AES) - Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t9",
+          "title": "Key Expansion, Blowfish",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t10",
+          "title": "Block Cipher Modes of Operation - Electronic Codebook Mode (ECB)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t11",
+          "title": "Cipher Block Chaining Mode (CBC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t12",
+          "title": "Cipher Feedback Mode (CFB)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t13",
+          "title": "Output Feedback Mode (OFB)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 2-t14",
+          "title": "Counter Mode (CTR), Stream Ciphers - Structure",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t1",
+          "title": "Introduction to Public Key Cryptosystems - Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t2",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t3",
+          "title": "Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t4",
+          "title": "Conventional vs Public Key Cryptosystems, RSA Cryptosystem - Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t5",
+          "title": "Security",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t6",
+          "title": "Attacks, ElGamal Cryptosystem - Algorithm, Diffie-Hellman Key Exchange - Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t7",
+          "title": "Man-in-the-Middle Attack, Elliptic Curve Cryptography (ECC) - ElGamal ECC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 3-t8",
+          "title": "Key Exchange Using ECC",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t1",
+          "title": "Hash Functions - Security Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t2",
+          "title": "Secure Hash Algorithm (SHA-512), Message Authentication Code (MAC) - Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t3",
+          "title": "Uses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t4",
+          "title": "Hash-based MAC (HMAC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t5",
+          "title": "Cipher-based MAC (CMAC), Digital Signatures - Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t6",
+          "title": "Forgeries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t7",
+          "title": "Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t8",
+          "title": "Direct vs Arbitrated Digital Signatures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t9",
+          "title": "RSA Digital Signature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t10",
+          "title": "ElGamal Digital Signature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgt501-mModule 4-t11",
+          "title": "Digital Signature Standard (DSS)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "id": "pecpt742-computer-science-and-engineering-cyber-security-s7",
+  "code": "PECPT742",
+  "name": "DISTRIBUTED SYSTEMS AND MIDDLEWARE",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t1",
+          "title": "Definition and Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t2",
+          "title": "Examples and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t3",
+          "title": "Challenges in Distributed Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t4",
+          "title": "Communication in Distributed Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t5",
+          "title": "Interprocess Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t6",
+          "title": "Remote Procedure Call (RPC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t7",
+          "title": "Remote Method Invocation (RMI)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 1-t8",
+          "title": "Message-Oriented Communication",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 2-t1",
+          "title": "Overview of Middleware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 2-t2",
+          "title": "Types of Middleware (e.g., message-oriented, object-oriented, service-oriented)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 2-t3",
+          "title": "Middleware Platforms and Frameworks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 2-t4",
+          "title": "Synchronization and Coordination",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 2-t5",
+          "title": "Logical Clocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 2-t6",
+          "title": "Mutual Exclusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 2-t7",
+          "title": "Election Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 3-t1",
+          "title": "Middleware Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 3-t2",
+          "title": "Types of Middleware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 3-t3",
+          "title": "Case Studies (e.g., CORBA, DCOM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 3-t4",
+          "title": "Fault Tolerance and Reliability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 3-t5",
+          "title": "Fault Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 3-t6",
+          "title": "Replication Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 3-t7",
+          "title": "Consensus Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 4-t1",
+          "title": "Distributed File System Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 4-t2",
+          "title": "Distributed Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 4-t3",
+          "title": "Consistency Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 4-t4",
+          "title": "Security in Distributed Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 4-t5",
+          "title": "Security Threats and Vulnerabilities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 4-t6",
+          "title": "Authentication and Authorization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-7-pecpt742-mModule 4-t7",
+          "title": "Secure Communication Protocols",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

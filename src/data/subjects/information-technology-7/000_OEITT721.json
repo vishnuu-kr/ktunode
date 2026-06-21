@@ -1,0 +1,189 @@
+{
+  "id": "oeitt721-information-technology-s7",
+  "code": "OEITT721",
+  "name": "MACHINE LEARNING",
+  "branchId": "information-technology",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-7-oeitt721-mModule 1-t1",
+          "title": "Overview of Machine Learning - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 1-t2",
+          "title": "Types of Machine Learning - Supervised Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 1-t3",
+          "title": "Unsupervised Learning and Reinforcement Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 1-t4",
+          "title": "Data Preprocessing - Cleaning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 1-t5",
+          "title": "Normalization and Splitting Data - Training Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 1-t6",
+          "title": "Test Set and Validation Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 1-t7",
+          "title": "Feature Engineering - Feature Selection and Extraction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-7-oeitt721-mModule 2-t1",
+          "title": "Linear Models - Linear Regression and Logistic Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 2-t2",
+          "title": "Decision Trees - Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 2-t3",
+          "title": "Splitting Criteria and Overfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 2-t4",
+          "title": "Ensemble Methods - Random Forests and Gradient Boosting Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 2-t5",
+          "title": "Support Vector Machines (SVMs) - SVM Concepts and Kernels",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t1",
+          "title": "Model Evaluation Metrics - Accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t2",
+          "title": "Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t3",
+          "title": "Recall",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t4",
+          "title": "F1 Score",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t5",
+          "title": "Receiver Operating Characteristic Curve (ROC Curve)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t6",
+          "title": "Area Under ROC Curve (AUC Curve)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t7",
+          "title": "Model Selection - Cross-Validation and Bias-Variance Trade-off",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t8",
+          "title": "Regularization Techniques - L1 and L2 Regularization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t9",
+          "title": "Introduction to Neural Networks - Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 3-t10",
+          "title": "Multi-Layer Perceptron and Perceptron Training Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-7-oeitt721-mModule 4-t1",
+          "title": "Clustering - K-Means",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 4-t2",
+          "title": "Hierarchical Clustering and Density-Based Spatial Clustering of Applications with Noise (DBSCAN)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 4-t3",
+          "title": "Dimensionality Reduction - Principal Component Analysis (PCA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-oeitt721-mModule 4-t4",
+          "title": "Reinforcement Learning (RL) - RL Concepts and Q-Learning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

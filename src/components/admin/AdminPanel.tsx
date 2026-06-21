@@ -35,11 +35,7 @@ import {
 import {
   Settings,
   Bell,
-  AlertTriangle,
   CheckCircle,
-  Database,
-  FileText,
-  Shield,
 } from "lucide-react";
 
 const defaultLandingContent = {
@@ -80,7 +76,7 @@ export default function AdminPanel({
   currentNoteContent,
   currentNotePath,
   initialTimetableExams,
-  topicPathMap,
+  topicPathMap: _topicPathMap,
   notesSizeMB,
   announcements,
   auditResult,

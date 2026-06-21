@@ -1,0 +1,285 @@
+{
+  "id": "pcitt302-information-technology-s3",
+  "code": "PCITT302",
+  "name": "COMPUTER ORGANISATION AND ARCHITECTURE",
+  "branchId": "information-technology",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t1",
+          "title": "Basic Operational Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t2",
+          "title": "Memory Locations and Addresses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t3",
+          "title": "Instructions and Instruction Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t4",
+          "title": "Instruction Set Principles Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t5",
+          "title": "Classifying Instruction Set Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t6",
+          "title": "Memory Addressing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t7",
+          "title": "Type and Size of Operands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t8",
+          "title": "Operations in the Instruction Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t9",
+          "title": "Instructions for Control Flow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t10",
+          "title": "Encoding an Instruction Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 1-t11",
+          "title": "RISC Architecture",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t1",
+          "title": "Introduction to Single Cycle and Multi Cycle Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t2",
+          "title": "Pipelining - Basic and Intermediate Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t3",
+          "title": "Introduction to Pipelining",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t4",
+          "title": "Pipeline Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t5",
+          "title": "Structural Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t6",
+          "title": "Data Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t7",
+          "title": "Control Hazards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t8",
+          "title": "Pipelining Implementation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 2-t9",
+          "title": "RISC V Integer Pipeline to Handle Multicycle Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t1",
+          "title": "Introduction to Cache Memory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t2",
+          "title": "Cache Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t3",
+          "title": "Block Replacement Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t4",
+          "title": "Cache Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t5",
+          "title": "Six Basic Cache Optimizations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t6",
+          "title": "DRAM Memory System Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t7",
+          "title": "Basic Nomenclature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t8",
+          "title": "Memory Modules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t9",
+          "title": "Basic DRAM Memory Access Protocol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t10",
+          "title": "Basic DRAM Commands",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t11",
+          "title": "DRAM Controller Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t12",
+          "title": "Row Buffer Management Policy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t13",
+          "title": "Open Page Row Buffer Management Policy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 3-t14",
+          "title": "Close Page Row Buffer Management Policy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t1",
+          "title": "SISD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t2",
+          "title": "MIMD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t3",
+          "title": "SIMD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t4",
+          "title": "SPMD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t5",
+          "title": "Vector Hardware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t6",
+          "title": "Multithreading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t7",
+          "title": "Multicore and Other Shared Memory Multiprocessors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-3-pcitt302-mModule 4-t8",
+          "title": "Case Study: Intel Core i7",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "pecst634-artificial-intelligence-and-data-science-s6",
+  "code": "PECST634",
+  "name": "ADVANCED DATABASE SYSTEMS",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 1-t1",
+          "title": "Query Processing and Optimization: Measures of Query Cost, Algorithms for Selection with Cost Analysis, Algorithms for Join with Cost Analysis, Evaluation of Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 1-t2",
+          "title": "Heuristics in Query Optimization: Optimization of Relational Algebra Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 1-t3",
+          "title": "Physical Database Design and Tuning: Introduction to Physical Database Design, Overview of Database Tuning, Tuning the Conceptual Schema, Tuning Queries and Views",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 1-t4",
+          "title": "Impact of Concurrency",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 2-t1",
+          "title": "Distributed Databases: Distributed Systems, Introduction, Architecture, Distributed Database Concepts, Distributed Data Storage, Distributed Transactions, Commit Protocols, Concurrency Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 2-t2",
+          "title": "Query Processing and Decomposition: Query Processing Objectives, Characterization of Query Processors, Layers of Query Processing, Query Decomposition, Localization of Distributed Data",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 3-t1",
+          "title": "DTD and XML Schema, XML Presentation, XPath Queries, XQuery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 3-t2",
+          "title": "NoSQL Databases: CAP Theorem, Document Based",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 3-t3",
+          "title": "MongoDB Operation: Insert, Update, Delete, Query, Indexing, Application, Replication, Sharding, Deployment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 3-t4",
+          "title": "Cassandra: Data Model, Key Space, Table Operations, CRUD Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 4-t1",
+          "title": "Graph Database: Introduction, Data Modelling with Graphs, Building a Graph Database Application, Data Modeling, Predictive Analysis with Graph Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 4-t2",
+          "title": "Depth and Breadth First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 4-t3",
+          "title": "Path-Finding with Dijkstra's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst634-mModule 4-t4",
+          "title": "Graph Theory and Predictive Modeling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

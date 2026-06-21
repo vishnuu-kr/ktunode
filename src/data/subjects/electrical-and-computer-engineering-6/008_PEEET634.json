@@ -1,0 +1,183 @@
+{
+  "id": "peeet634-electrical-and-computer-engineering-s6",
+  "code": "PEEET634",
+  "name": "INTERNET OF THINGS",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 1-t1",
+          "title": "Definitions of IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 1-t2",
+          "title": "Characteristics of IoT Devices - Power and Computational Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 1-t3",
+          "title": "IoT Architectural View - Middleware Based Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 1-t4",
+          "title": "Service Oriented Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 1-t5",
+          "title": "M2M Communication and IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 1-t6",
+          "title": "Typical Application Areas of IoT Technology (Case Studies of at Least Four Domains) - Energy Management and Smart Grid, IoT for Home, Cities, Environment Monitoring, Agriculture, Supply Chain and Customer Monitoring",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 2-t1",
+          "title": "Identification/Addressing - Electronic Product Codes, RFID, Ubiquitous Code, IPv4, IPv6",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 2-t2",
+          "title": "Sensors and Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 2-t3",
+          "title": "IoT Hardware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 2-t4",
+          "title": "IoT Software - Overview of Operating Systems, Firmware, Middleware, Application Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 2-t5",
+          "title": "Connectivity for IoT Devices - Characteristics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t1",
+          "title": "Zigbee - Key Features, Architecture, Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t2",
+          "title": "Bluetooth Technology - Bluetooth Stack, Piconet, Scatternet, Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t3",
+          "title": "Bluetooth Low Energy - Key Features, Architecture, Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t4",
+          "title": "WiFi (IEEE 802.11) Technology - Key Features, Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t5",
+          "title": "Cellular Technology - GSM, 4G LTE (Overview, Features, Limitations)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t6",
+          "title": "LoRa Technology - Features, LoRaWAN Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t7",
+          "title": "6LoWPAN - Features, Protocol Stack",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t8",
+          "title": "Narrow Band (NB-IoT) - Features, Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 3-t9",
+          "title": "Sigfox - Features, Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 4-t1",
+          "title": "Storage Technologies for IoT Hardware - Volatile, Non-volatile, Embedded (MTP/OTP), External Flash (NAND/NOR), DRAM, eFlash, eMMC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 4-t2",
+          "title": "Cloud and IoT - Cloud Computing Architecture and Advantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 4-t3",
+          "title": "Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 4-t4",
+          "title": "Case Study of Commercial Cloud Computing Platforms - Microsoft Azure IoT Suite, Google Cloud's IoT Platform, IBM Watson IoT Platform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-6-peeet634-mModule 4-t5",
+          "title": "IoT Analytics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

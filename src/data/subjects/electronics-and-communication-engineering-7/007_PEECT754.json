@@ -1,0 +1,117 @@
+{
+  "id": "peect754-electronics-and-communication-engineering-s7",
+  "code": "PEECT754",
+  "name": "MIXED SIGNAL CIRCUITS",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 1-t1",
+          "title": "CMOS Amplifiers: Common Source Amplifier with Resistive and Active Loads, Common Source Amplifier with Source Degeneration, Common Gate and Common Drain Amplifier (Only Voltage Gain and Input and Output Impedances of the Circuits)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 1-t2",
+          "title": "Cascode Amplifier: Cascoded Amplifier with Cascade Loads, Folded Cascode Amplifier",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 2-t1",
+          "title": "Basic Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 2-t2",
+          "title": "PMOS and NMOS Current Mirrors, Simple and Cascode Current Mirror Circuits, CMOS Differential Amplifier: Differential Amplifier with Resistive Current Source and Current Mirror Loads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 2-t3",
+          "title": "MOS Telescopic Cascode Amplifier (Only Voltage Gain and Input and Output Impedance of the Circuits)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 3-t1",
+          "title": "CMOS Operational Amplifier, Two Stage Operational Amplifiers, Frequency Compensation of OPAMPS, Miller Compensation, Band Gap References",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 3-t2",
+          "title": "Supply Independent Biasing, Temperature Independent References - Band Gap Reference",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 4-t1",
+          "title": "DAC Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 4-t2",
+          "title": "ADC Specifications, DAC Architecture - Resistor String",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 4-t3",
+          "title": "R-2R Ladder Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 4-t4",
+          "title": "Current Steering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 4-t5",
+          "title": "Charge Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 4-t6",
+          "title": "Cyclic and Pipeline Types, ADC Architecture - Flash Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-7-peect754-mModule 4-t7",
+          "title": "The Successive Approximation Type and Oversampling ADCs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

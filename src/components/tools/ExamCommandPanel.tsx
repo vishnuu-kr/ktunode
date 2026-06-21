@@ -3,9 +3,8 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Clock, Play, Pause, RotateCcw, Volume2, Shield, 
-  HelpCircle, AlertCircle, FileText, Sparkles, Plus, 
-  Trash2, ShieldCheck, Check, Info, Calendar, Download, ListTodo, AlertTriangle 
+  Clock, Play, Pause, RotateCcw, Volume2, Shield,
+  Check, Info, ListTodo
 } from "lucide-react";
 import { triggerHaptic } from "@/lib/haptic";
 
@@ -52,7 +51,7 @@ export default function ExamCommandPanel({
   const audioRefs = useRef<Record<string, HTMLAudioElement | null>>({});
 
   // Checklist states
-  const [mtHallChecklist, setMtHallChecklist] = useState<string[]>([
+  const [mtHallChecklist, _setMtHallChecklist] = useState<string[]>([
     "Admit Card (Hall Ticket)",
     "University Approved Calculator (e.g. FX-991ES Plus)",
     "College ID Card",
@@ -186,7 +185,6 @@ export default function ExamCommandPanel({
 
   // Syllabus Milestones Studied checklists
   const activeCode = plannerActiveSubject.code;
-  const activeName = plannerActiveSubject.name;
   const moduleCount = 4;
   const defaultToggles = Array(moduleCount).fill(false);
   const moduleToggles = mtMilestones[activeCode] || defaultToggles;
@@ -196,7 +194,6 @@ export default function ExamCommandPanel({
     return acc;
   }, []);
   const untouchedCount = untouchedIndices.length;
-  const doneCount = moduleCount - untouchedCount;
 
   // Highlight first untouched module
   const currentModuleIdx = untouchedIndices.length > 0 ? untouchedIndices[0] : -1;
@@ -414,7 +411,7 @@ export default function ExamCommandPanel({
                 const isChecked = moduleToggles[idx];
                 const isHighlighted = idx === currentModuleIdx;
                 
-                let boxClass = isChecked 
+                const boxClass = isChecked
                   ? "bg-emerald-500/5 border-emerald-500/20 text-emerald-600 dark:text-emerald-450" 
                   : isHighlighted 
                     ? "bg-blue-500/[0.03] border-blue-500/25 text-blue-600 dark:text-blue-400" 

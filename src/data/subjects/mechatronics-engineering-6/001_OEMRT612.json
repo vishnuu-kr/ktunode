@@ -1,0 +1,153 @@
+{
+  "id": "oemrt612-mechatronics-engineering-s6",
+  "code": "OEMRT612",
+  "name": "PLC & DATA ACQUISITION SYSTEM",
+  "branchId": "mechatronics-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t1",
+          "title": "PLC Programming Methods Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t2",
+          "title": "Study of Different Types of Pneumatic and Hydraulic Valves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t3",
+          "title": "PLC Programming Languages - Relay Logic - Ladder Logic - Programming of Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t4",
+          "title": "PLC Timers - ON Delay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t5",
+          "title": "OFF Delay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t6",
+          "title": "Retentive Timers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t7",
+          "title": "Programming Counters - Up/Down Counter - Combining Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 1-t8",
+          "title": "PLC Arithmetic Functions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 2-t1",
+          "title": "Master Control Reset - Skip - Jump and Move Instruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 2-t2",
+          "title": "Sequencer Instructions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 2-t3",
+          "title": "Types of PLC Analog Modules and Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 2-t4",
+          "title": "PLC Analog Signal Processing - Case Study of Tank Level Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 2-t5",
+          "title": "Bottle Filling System and Sequential Switching of Motors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 3-t1",
+          "title": "Computer Control - Need of Computer in a Control System - Functional Block Diagram of a Computer Control System - Data Loggers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 3-t2",
+          "title": "Supervisory Computer Control - Direct Digital Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 3-t3",
+          "title": "SCADA - Programming of Robot (Pick and Place)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 4-t1",
+          "title": "Data Acquisition Systems - Sampling Theorem - Sampling and Digitizing - Aliasing - Sample and Hold Circuit - Signal Conditioning of Strain Gauge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 4-t2",
+          "title": "LVDT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 4-t3",
+          "title": "Thermocouple",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-6-oemrt612-mModule 4-t4",
+          "title": "Pressure Transducer - Interfacing ADC and DAC with Microprocessor/Multiplexer - Microprocessor/PC Based Acquisition Systems - Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "id": "pcrat502-robotics-and-artificial-intelligence-s5",
+  "code": "PCRAT502",
+  "name": "ADVANCED TOPICS IN ARTIFICIAL INTELLIGENCE & MACHINE LEARNING",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t1",
+          "title": "Convolutional Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t2",
+          "title": "Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t3",
+          "title": "Padding and Stride",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t4",
+          "title": "Activation Functions - ReLU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t5",
+          "title": "Sigmoid",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t6",
+          "title": "Tanh",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t7",
+          "title": "Pooling Layers - Average Pooling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t8",
+          "title": "Max Pooling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t9",
+          "title": "Fully Connected Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t10",
+          "title": "Training CNN - Loss Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t11",
+          "title": "Optimizers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t12",
+          "title": "Backpropagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t13",
+          "title": "Regularization Techniques - Overfitting and Underfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t14",
+          "title": "Dropout",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t15",
+          "title": "Data Augmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t16",
+          "title": "Advanced CNN Architectures - ResNets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t17",
+          "title": "VGG Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 1-t18",
+          "title": "Inception Network",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 2-t1",
+          "title": "Recurrent Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 2-t2",
+          "title": "Long Short-Term Memory (LSTM) Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 2-t3",
+          "title": "Gated Recurrent Units (GRUs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 2-t4",
+          "title": "Backpropagation Through Time (BPTT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 2-t5",
+          "title": "Gradient Clipping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 2-t6",
+          "title": "Attention Mechanism",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 3-t1",
+          "title": "Proportional-Integral-Derivative (PID) Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 3-t2",
+          "title": "Tuning PID Gains for Optimal Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 3-t3",
+          "title": "Model Predictive Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 3-t4",
+          "title": "Feedback Linearization Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t1",
+          "title": "Introduction to SLAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t2",
+          "title": "Sensor Modalities for SLAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t3",
+          "title": "Probabilistic Framework for SLAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t4",
+          "title": "SLAM Algorithms - Kalman Filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t5",
+          "title": "Extended Kalman Filter (EKF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t6",
+          "title": "Particle Filter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t7",
+          "title": "Mapping Algorithms: Occupancy Grids",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t8",
+          "title": "Landmark-Based Maps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t9",
+          "title": "SLAM for Dynamic Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-pcrat502-mModule 4-t10",
+          "title": "Loop Closure Detection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

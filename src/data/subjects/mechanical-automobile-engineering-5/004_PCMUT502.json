@@ -1,0 +1,135 @@
+{
+  "id": "pcmut502-mechanical-automobile-engineering-s5",
+  "code": "PCMUT502",
+  "name": "HEAT AND MASS TRANSFER",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t1",
+          "title": "Introduction to Heat Transfer: Basic Modes of Heat Transfer - Conduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t2",
+          "title": "Convection and Radiation, Thermal Conductivity, Effect of Temperature on Thermal Conductivity, Combined Heat Transfer Mechanism, Engineering Applications of Heat Transfer, Heat Conduction, Fourier Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t3",
+          "title": "One-Dimensional Steady State Conduction - Plane Wall",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t4",
+          "title": "Cylinder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t5",
+          "title": "Sphere - Concept of Thermal Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t6",
+          "title": "Critical Radius",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t7",
+          "title": "Conduction with Heat Generation, Heat Transfer from Rectangular Fins, Transient Heat Conduction, Lumped Capacitance Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 1-t8",
+          "title": "Concept of Heisler Chart and Schmidt Plot",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 2-t1",
+          "title": "Heat Transfer by Free and Forced Convection: Hydrodynamics and Thermal Boundary Layers, Thickness of Boundary Layer, Displacement, Momentum and Energy Thickness (Description Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 2-t2",
+          "title": "Newton's Law of Cooling, Reynold's Number, Prandtl Number, Nusselt Number, Grashoff's Number and Rayleigh's Number",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 2-t3",
+          "title": "Dimensional Analysis, Application of Dimensional Analysis to Free and Forced Convection, Empirical Relations, Problems Using Empirical Relations in Flow Over a Flat Plate, Cylinder, Vertical Wall etc.",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 3-t1",
+          "title": "Boiling Regimes and the Boiling Curve, Bubble Shape, Size, Growth and Collapse",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 3-t2",
+          "title": "Simplified Relations for Boiling Heat Transfer, Boiling and Condensation Heat Transfer Phenomena, Film and Dropwise Condensation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 3-t3",
+          "title": "Introduction to Heat Exchangers, Types of Heat Exchangers, The Overall Heat Transfer Coefficient, Fouling Factor, LMTD Analysis of Heat Exchangers Effectiveness, NTU Method, Analysis of Variable Properties, Compact Heat Exchangers, Heat Exchanger Design Considerations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 4-t1",
+          "title": "Nature of Thermal Radiation, Radiation Properties, Black Body Radiation, Planck's Law, Wein's Displacement Law, Stefan Boltzmann Law, Kirchoff's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 4-t2",
+          "title": "Gray Body Radiation Shape Factors, Heat Exchange Between Black/Gray Surfaces, Infinite Parallel Planes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-5-pcmut502-mModule 4-t3",
+          "title": "Mass Transfer: Introduction to Mass Transfer, Modes of Mass Transfer, Molecular Diffusion in Fluids, Steady State Molecular Diffusion in Fluids Under Stagnant and Laminar Flow Conditions, Fick's Law of Diffusion, Types of Solid Diffusion, Mass Transfer Coefficients in Laminar and Turbulent Flows, Equimolar Counter Diffusion, Correlation for Convective Mass Transfer Coefficient for Single Cylinder, Theories of Mass Transfer, Overall Mass Transfer Coefficients",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

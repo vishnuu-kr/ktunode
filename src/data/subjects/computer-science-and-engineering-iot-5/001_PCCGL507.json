@@ -1,0 +1,105 @@
+{
+  "id": "pccgl507-computer-science-and-engineering-iot-s5",
+  "code": "PCCGL507",
+  "name": "MICROPROCESSORS AND MICROCONTROLLERS LAB",
+  "branchId": "computer-science-and-engineering-iot",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t1",
+          "title": "Data Transfer/Exchange Between Specified Memory Locations Using 8015",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t2",
+          "title": "Largest/Smallest from a Series Using 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t3",
+          "title": "Sorting (Ascending/Descending) of Data Using 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t4",
+          "title": "LED Blinking Using Arduino",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t5",
+          "title": "Ultrasonic Distance Measurement Using Arduino",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t6",
+          "title": "Interfacing a 16x2 LCD and Displaying Text Using Arduino",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t7",
+          "title": "Reading Temperature and Humidity Data from a DHT11 Sensor and Displaying It Using Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t8",
+          "title": "Reading Analog Data from a Sensor Using an MCP3008 ADC with Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t9",
+          "title": "Controlling a Servo Motor Using the Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t10",
+          "title": "Displaying Text on an OLED Display Using I2C Communication with NodeMCU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t11",
+          "title": "Using PWM to Fade an LED In and Out Using NodeMCU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t12",
+          "title": "Reading the Value from an Analog Sensor Like an LDR and Printing It to the Serial Monitor Using NodeMCU",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t13",
+          "title": "Displaying Numbers 0-9 on a 7-Segment Display Connected to Port 2 Using 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t14",
+          "title": "Using Timer0 in Mode 1 to Generate a Delay and Blink an LED Using 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-5-pccgl507-mExperiment 2-t15",
+          "title": "Creating a Simple Web Server That Controls an LED Using Arduino",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

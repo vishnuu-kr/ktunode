@@ -1,0 +1,117 @@
+{
+  "id": "peert636-electronics-and-computer-engineering-s6",
+  "code": "PEERT636",
+  "name": "ALGORITHM ANALYSIS & DESIGN",
+  "branchId": "electronics-and-computer-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 1-t1",
+          "title": "Recurrence Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 1-t2",
+          "title": "Solving Recurrence Equations - Iteration Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 1-t3",
+          "title": "Recursion Tree Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 1-t4",
+          "title": "Substitution Method and Master's Theorem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 2-t1",
+          "title": "Self-Balancing Trees - AVL Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 2-t2",
+          "title": "DFS and BFS Traversals - Analysis, Strongly Connected Components of a Directed Graph, Topological Sorting",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 3-t1",
+          "title": "The Control Abstraction of Divide and Conquer - 2-Way Merge Sort",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 3-t2",
+          "title": "Strassen's Algorithm for Matrix Multiplication - Analysis. The Control Abstraction of Greedy Strategy - Fractional Knapsack Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 3-t3",
+          "title": "Minimum Cost Spanning Tree Computation - Kruskal's Algorithm - Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 3-t4",
+          "title": "Single Source Shortest Path Algorithm - Dijkstra's Algorithm - Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 4-t1",
+          "title": "The Control Abstraction - The Optimality Principle - Matrix Chain Multiplication - Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 4-t2",
+          "title": "All Pairs Shortest Path Algorithm - Floyd-Warshall Algorithm - Analysis. The Control Abstraction of Backtracking - The N Queen's Problem. Branch and Bound Algorithm for Travelling Salesman Problem. Introduction to Complexity Theory - Tractable and Intractable Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 4-t3",
+          "title": "Complexity Classes - P",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-6-peert636-mModule 4-t4",
+          "title": "NP-Hard and NP-Complete Classes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "peiet863-industrial-engineering-s8",
+  "code": "PEIET863",
+  "name": "QUANTUM COMPUTING WITH PYTHON",
+  "branchId": "industrial-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t1",
+          "title": "Basic Concepts - Dirac Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t2",
+          "title": "Qubits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t3",
+          "title": "Bell State",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t4",
+          "title": "Superposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t5",
+          "title": "Entanglement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t6",
+          "title": "Quantum States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t7",
+          "title": "Quantum Bits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t8",
+          "title": "The Bloch Sphere",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 1-t9",
+          "title": "Introduction to Quantum Gates and Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 2-t1",
+          "title": "Overview of Quantum Computation Algorithms - Cirq",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 2-t2",
+          "title": "Qiskit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 2-t3",
+          "title": "Deutsch-Jozsa",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 2-t4",
+          "title": "Bernstein-Vazirani",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 2-t5",
+          "title": "Simon's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 2-t6",
+          "title": "Grover's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 2-t7",
+          "title": "Shor's Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 3-t1",
+          "title": "Quantum Teleportation and Superdense Coding, Quantum Key Distribution (BB84 and E91 Protocols), Basics of Quantum Error Correction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 4-t1",
+          "title": "Review of Current Quantum Computers and Quantum Supremacy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 4-t2",
+          "title": "Quantum Hardware Technologies (Superconducting Qubits, Trapped Ions)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 4-t3",
+          "title": "Quantum Machine Learning and Deep Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet863-mModule 4-t4",
+          "title": "Future Trends and Challenges in Quantum Computing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

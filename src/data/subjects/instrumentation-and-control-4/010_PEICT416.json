@@ -1,0 +1,393 @@
+{
+  "id": "peict416-instrumentation-and-control-s4",
+  "code": "PEICT416",
+  "name": "MECHANICAL INSTRUMENTATION",
+  "branchId": "instrumentation-and-control",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t1",
+          "title": "The Generalized Measurement System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t2",
+          "title": "Direct and Indirect Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t3",
+          "title": "Types of Input Quantities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t4",
+          "title": "Measurement Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t5",
+          "title": "Uncertainty",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t6",
+          "title": "Introduction to Uncertainty",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t7",
+          "title": "Propagating Uncertainty: Kline and McClintock Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t8",
+          "title": "Simple Problems in Uncertainty",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t9",
+          "title": "Vernier Calliper: Principle and Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 1-t10",
+          "title": "Micrometer Parts and Measurements",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t1",
+          "title": "Displacement Measurement: Strain Gauge Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t2",
+          "title": "Inductance Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t3",
+          "title": "Capacitance Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t4",
+          "title": "Eddy Current Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t5",
+          "title": "Measurement of Force: Analytical Balance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t6",
+          "title": "Spring Balance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t7",
+          "title": "Load Cells: Magneto-elastic Load Cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t8",
+          "title": "Piezo-electric Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t9",
+          "title": "Elastic Load Cell",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t10",
+          "title": "Velocity Measurement: Capacitive Tachometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t11",
+          "title": "Drag-cup Type Tachometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t12",
+          "title": "Acceleration: Null Balance Accelerometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 2-t13",
+          "title": "Measurement of Torque by Relative Angular Twist",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t1",
+          "title": "Linear and Angular Measurement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t2",
+          "title": "Linear Displacement Transducer: Moire Fringe Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t3",
+          "title": "Slip Gauges: Stack of Slip Gauges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t4",
+          "title": "Method of Selecting Slip Gauges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t5",
+          "title": "Adjustable Slip Gauge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t6",
+          "title": "Measurement of Angles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t7",
+          "title": "Sine Bar: Checking Unknown Angles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t8",
+          "title": "Sine Center",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t9",
+          "title": "Sources of Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t10",
+          "title": "Angle Gauges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t11",
+          "title": "Basic Acoustical Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t12",
+          "title": "Sound Measuring Apparatus and Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t13",
+          "title": "Basic Theory of Seismic Instrument",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t14",
+          "title": "Detection of Nuclear Radiation: GM Counter, Ionization Chamber, Scintillation Counter, etc.",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 3-t15",
+          "title": "Measurement of Solar Radiation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t1",
+          "title": "Fluid Mechanics: Fluid Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t2",
+          "title": "Density",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t3",
+          "title": "Surface Tension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t4",
+          "title": "Capillarity and Viscosity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t5",
+          "title": "Newton's Law of Viscosity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t6",
+          "title": "Fluid Statics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t7",
+          "title": "Basic Equations of Fluid Flow: Continuity, Momentum and Energy Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t8",
+          "title": "Applications of Bernoulli's Equation: Venturimeter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t9",
+          "title": "Orifice Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t10",
+          "title": "Flow Nozzles and Pitot Tube",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t11",
+          "title": "Hot Wire Anemometer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t12",
+          "title": "Measurement of Surface Roughness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t13",
+          "title": "Surface Texture: Primary Texture and Secondary Texture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t14",
+          "title": "The Lay Specification for Surface Textures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t15",
+          "title": "Methods of Measuring Surface Finish",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t16",
+          "title": "The Talysurf Instrument",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t17",
+          "title": "The Profilograph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t18",
+          "title": "Tomlinson Surface Meter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t19",
+          "title": "Tracer Type Profilograph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t20",
+          "title": "Gear Tooth Measurement: Tooth Thickness and Tooth Spacing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t21",
+          "title": "Pitch Circle Diameter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-peict416-mModule 4-t22",
+          "title": "Parkinson's Gear Tester",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

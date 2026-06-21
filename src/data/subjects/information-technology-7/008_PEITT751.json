@@ -1,0 +1,273 @@
+{
+  "id": "peitt751-information-technology-s7",
+  "code": "PEITT751",
+  "name": "APPROXIMATION ALGORITHMS",
+  "branchId": "information-technology",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t1",
+          "title": "Overview of Computational Complexity: Decision Problem vs Optimization Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t2",
+          "title": "P, co-NP, NP-Hard, and NP-Complete Classes - Interrelationships",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t3",
+          "title": "Intractability of NP-Complete Problems - Challenges and Importance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t4",
+          "title": "Polynomial Time Reductions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t5",
+          "title": "Examples of NP-Complete Problems: SAT, 3-SAT, Clique, Vertex Cover",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t6",
+          "title": "Approaches to Solve NP-Complete Problems (Concept Only): Approximation Algorithms, Exact Algorithms, Randomized Algorithms, Fixed-Parameter Tractable Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t7",
+          "title": "Introduction to Approximation Algorithms: Definition and Motivation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t8",
+          "title": "Approximation Ratio: Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t9",
+          "title": "Basic Techniques: Greedy Algorithms and Local Search - Basic Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t10",
+          "title": "Algorithm and Analysis of Approximation Factor (Detailed Analysis Not Required) of Set Cover Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t11",
+          "title": "Scheduling Jobs on Identical Parallel Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t12",
+          "title": "Travelling Salesman Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 1-t13",
+          "title": "Metric Steiner Tree Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t1",
+          "title": "Advanced Techniques for Designing Approximation Algorithms: Primal Dual Schema - Introduction to Linear Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t2",
+          "title": "Concept of Primal Dual Schema: LP Duality Theorem, Complementary Slackness Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t3",
+          "title": "Linear Programming Formulation of Set Cover, Vertex Cover, Minimum Multicut, Multiwaycut, and Weighted Vertex Cover Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t4",
+          "title": "Approximation Algorithm for the Set Cover Problem Using Simple Rounding Technique and Primal Dual Schema - Analysis of Approximation Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t5",
+          "title": "Randomized Algorithms: Concept of Randomization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t6",
+          "title": "Randomized Rounding - Set Cover Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t7",
+          "title": "Randomized Algorithm for MAX CUT Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t8",
+          "title": "Derandomization of MAX CUT Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t9",
+          "title": "Semidefinite Programming (SDP): Basics of SDP and its Relation to LP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t10",
+          "title": "Formulating Approximation Problems Using SDP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 2-t11",
+          "title": "SDP-Based Approximation Algorithm and Analysis of Approximation Ratio for the MAX-CUT Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt751-mModule 3-t1",
+          "title": "Hardness of Approximation: Reductions, Gaps, and Hardness Factors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 3-t2",
+          "title": "PCP Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 3-t3",
+          "title": "Hardness of MAX-3SAT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 3-t4",
+          "title": "Hardness of MAX-3SAT with Bounded Occurrence of Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 3-t5",
+          "title": "Hardness of Vertex Cover and Steiner Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 3-t6",
+          "title": "Hardness of Clique",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t1",
+          "title": "Introduction to Parameterized Complexity Theory: Parameterized Problem - Definition and Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t2",
+          "title": "Fixed-Parameter Tractable (FPT) Algorithms - Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t3",
+          "title": "Design Techniques in Parameterized Complexity: Kernelization - Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t4",
+          "title": "FPT Algorithms for Vertex Cover Problem and 3-Hitting Set Problem (Kernelization)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t5",
+          "title": "Bounded Search Tree - Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t6",
+          "title": "FPT Algorithms for Vertex Cover Problem and Feedback Vertex Set Problem (Bounded Search Tree)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t7",
+          "title": "Iterative Compression - Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t8",
+          "title": "FPT Algorithms for Vertex Cover Problem (Iterative Compression)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t9",
+          "title": "Parameterized Intractability: Parameterized Reductions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt751-mModule 4-t10",
+          "title": "W-Hierarchy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

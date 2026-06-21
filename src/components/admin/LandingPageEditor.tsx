@@ -119,7 +119,7 @@ function AccordionSection({
   onToggle,
   enabled,
   onToggleEnabled,
-  enabledLabel,
+  enabledLabel: _enabledLabel,
   children,
 }: {
   title: string;

@@ -1,0 +1,315 @@
+{
+  "id": "peevt741-electronics-engineering-vlsi-design-and-technology-s7",
+  "code": "PEEVT741",
+  "name": "LOW POWER VLSI DESIGN",
+  "branchId": "electronics-engineering-vlsi-design-and-technology",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t1",
+          "title": "Short Channel Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t2",
+          "title": "Channel Length Modulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t3",
+          "title": "Surface Scattering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t4",
+          "title": "Punch Through",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t5",
+          "title": "Velocity Saturation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t6",
+          "title": "Impact Ionization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t7",
+          "title": "Hot Electron Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t8",
+          "title": "Body Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t9",
+          "title": "Narrow Width Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t10",
+          "title": "Vth Roll-Off",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t11",
+          "title": "Drain Induced Barrier Lowering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t12",
+          "title": "Gate Induced Drain Leakage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t13",
+          "title": "Tunneling Through Gate Oxide",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t14",
+          "title": "Subthreshold Leakage Current",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t15",
+          "title": "Emerging Technologies for Low Power: Hi-K Gate Dielectric",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t16",
+          "title": "Lightly Doped Drain-Source",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 1-t17",
+          "title": "Silicon on Insulator",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t1",
+          "title": "Short Circuit Power: Short Circuit Current of Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t2",
+          "title": "Short Circuit Current Dependency on Input Rise and Fall Time",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t3",
+          "title": "Variation of Short Circuit Current with Load Capacitance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t4",
+          "title": "Switching Power Dissipation: Switching Power of CMOS Inverter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t5",
+          "title": "Switching Activity and Its Effects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t6",
+          "title": "Glitching Power: Glitches and Its Effect on Power Dissipation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t7",
+          "title": "Static Power Dissipation: Sources of Leakage Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t8",
+          "title": "Effects of Vdd and Vt on Speed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 2-t9",
+          "title": "Constraints on Vt Reduction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t1",
+          "title": "Effect of Supply Voltage on Delay and Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t2",
+          "title": "Effect of Supply Voltage on Static and Dynamic Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t3",
+          "title": "Multi VDD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t4",
+          "title": "Dynamic VDD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t5",
+          "title": "Dynamic Voltage and Frequency Scaling (DVFS) Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t6",
+          "title": "Architectural Level Approaches: Pipelining and Parallel Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t7",
+          "title": "Leakage Power Reduction Techniques: Effect of Threshold Voltage on Leakage Power",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t8",
+          "title": "Transistor Stacking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t9",
+          "title": "MTCMOS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 3-t10",
+          "title": "VTCMOS, Power Gating & Clock Gating Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t1",
+          "title": "Fully Complementary Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t2",
+          "title": "NMOS and Pseudo-NMOS Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t3",
+          "title": "Differential Cascode Voltage Switch Logic (DCVS)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t4",
+          "title": "Clocked Design Style: Basic Concept",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t5",
+          "title": "Dynamic Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t6",
+          "title": "Domino Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t7",
+          "title": "Differential Current Switch Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t8",
+          "title": "Adiabatic Switching - Adiabatic Charging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t9",
+          "title": "Adiabatic Amplification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t10",
+          "title": "Adiabatic Logic Gates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-engineering-vlsi-design-and-technology-7-peevt741-mModule 4-t11",
+          "title": "Pulsed Power Supplies",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

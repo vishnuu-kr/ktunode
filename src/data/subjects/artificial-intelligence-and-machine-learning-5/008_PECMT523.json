@@ -1,0 +1,111 @@
+{
+  "id": "pecmt523-artificial-intelligence-and-machine-learning-s5",
+  "code": "PECMT523",
+  "name": "FUZZY SYSTEMS",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 1-t1",
+          "title": "Introduction to Fuzzy Set Theory - Uncertainty, Imprecision and Vagueness, Crisp vs Fuzzy Sets, Representation of Fuzzy Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 1-t2",
+          "title": "Membership Functions - Types and Basic Operations (Dilation, Concentration, Normalization), Linguistic Hedges",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 1-t3",
+          "title": "Properties of Fuzzy Sets - Level Sets, Alpha Cut Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 1-t4",
+          "title": "Operations on Fuzzy Sets - Complement, Intersection, Union, Aggregation Operations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 2-t1",
+          "title": "Fuzzy Relations - Operations: Union, Intersection, Complement, Cartesian Product",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 2-t2",
+          "title": "Fuzzy Composition - Max-Min, Max-Product",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 2-t3",
+          "title": "Extension Principle - Fuzzy Arithmetic, Fuzzy Numbers, Arithmetic Operations on Fuzzy Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 2-t4",
+          "title": "Fuzzy Reasoning - Generalized Modus Ponens (GMP) and Generalized Modus Tollens (GMT)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 3-t1",
+          "title": "Fuzzy Inference - Zadeh Rule, Mamdani Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 3-t2",
+          "title": "Development of Membership Functions - Intuition, Inference, Rank Ordering, Inductive Reasoning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 3-t3",
+          "title": "Defuzzification to Scalars - Max Membership Principle, Centroid Method, Weighted Average Method, Mean Max Membership, Center of Sums, Center of Largest Area, First (or Last) of Maxima",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 4-t1",
+          "title": "Approximate Reasoning and Fuzzy (Rule-Based) Systems - Multiple Conjunctive Antecedents, Multiple Disjunctive Antecedents, Aggregation of Fuzzy Rules, Graphical Techniques of Inference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-5-pecmt523-mModule 4-t2",
+          "title": "Fuzzy Controllers - Mamdani FIS, Larsen Model",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": "pecst637-artificial-intelligence-and-data-science-s6",
+  "code": "PECST637",
+  "name": "FUNDAMENTALS OF CRYPTOGRAPHY",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t1",
+          "title": "The Modulus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t2",
+          "title": "Properties of Congruences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t3",
+          "title": "Modular Arithmetic Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t4",
+          "title": "The Extended Euclidean Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t5",
+          "title": "Primitive Roots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t6",
+          "title": "Existence of Primitive Roots for Primes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t7",
+          "title": "Fermat's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t8",
+          "title": "Euler's Totient Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t9",
+          "title": "Euler's Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t10",
+          "title": "Testing for Primality: Miller-Rabin Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t11",
+          "title": "A Deterministic Primality Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t12",
+          "title": "Discrete Logarithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 1-t13",
+          "title": "Chinese Remainder Theorem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 2-t1",
+          "title": "Security Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 2-t2",
+          "title": "Security Services",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 2-t3",
+          "title": "Security Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 2-t4",
+          "title": "Fundamental Security Design Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 2-t5",
+          "title": "Cryptography: Symmetric Cipher Model, Substitution Techniques, Transposition Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 2-t6",
+          "title": "Traditional Block Cipher Structure",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 3-t1",
+          "title": "The Data Encryption Standard: DES Encryption and Decryption, Avalanche Effect, Strength of DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 3-t2",
+          "title": "Advanced Encryption Standard: AES Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 3-t3",
+          "title": "Stream Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 3-t4",
+          "title": "Principles of Public-Key Cryptosystems: Public-Key Cryptosystems, Applications for Public-Key Cryptosystems, Requirements for Public-Key Cryptography, The RSA Algorithm, Description of the Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 3-t5",
+          "title": "Diffie-Hellman Key Exchange",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 4-t1",
+          "title": "Cryptographic Hash Functions: Applications of Cryptographic Hash Functions, Secure Hash Algorithm (SHA), SHA-3",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 4-t2",
+          "title": "Digital Signatures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 4-t3",
+          "title": "Key Management and Distribution: Symmetric Key Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-6-pecst637-mModule 4-t4",
+          "title": "X.509 Certificates",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

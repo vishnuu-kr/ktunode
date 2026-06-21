@@ -1,0 +1,75 @@
+{
+  "id": "pcrul607-robotics-and-automation-s7",
+  "code": "PCRUL607",
+  "name": "ROBOTICS AND MACHINE VISION LAB",
+  "branchId": "robotics-and-automation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t1",
+          "title": "Programming of Robotic Manipulators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t2",
+          "title": "Obtain Forward and Inverse Kinematic Models (Check End Effector and Joint Positions with Theoretical and Actual Values)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t3",
+          "title": "Trajectory Planning for Robotic Manipulators (Joint Space and Cartesian Space Trajectory Planning)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t4",
+          "title": "Control of Mobile Robots (Moving to a Point, Following a Line, Moving to a Specific Target Orientation - Closed Loop Control Considering Kinematic Models)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t5",
+          "title": "Obstacle Avoidance for a Differential Drive Robot Using Ultrasonic Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t6",
+          "title": "Localization of a Mobile Robot Using LIDAR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t7",
+          "title": "Calibration of Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t8",
+          "title": "Deep Learning Based Object Detection and Tracking Using YOLO Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t9",
+          "title": "Visual Servoing (Enable Robotic Arm to Autonomously Locate and Manipulate Objects Based on Visual Feedback from an Attached Camera)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-7-pcrul607-mExperiment 2-t10",
+          "title": "Target Tracking from a Moving Vehicle",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

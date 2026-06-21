@@ -1,0 +1,201 @@
+{
+  "id": "perut412-robotics-and-automation-s4",
+  "code": "PERUT412",
+  "name": "CNC MACHINES",
+  "branchId": "robotics-and-automation",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t1",
+          "title": "Introduction to Computer Numerical Control (CNC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t2",
+          "title": "Numerical Control - Functions of a Machine Tool",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t3",
+          "title": "Concept of Numerical Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t4",
+          "title": "Historical Development",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t5",
+          "title": "Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t6",
+          "title": "Advantages of CNC Machine Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t7",
+          "title": "Evolution of CNC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t8",
+          "title": "Advantages of CNC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t9",
+          "title": "Limitations of CNC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t10",
+          "title": "Features of CNC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t11",
+          "title": "The Machine Control Unit (MCU) for CNC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t12",
+          "title": "Classification of CNC Machine Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 1-t13",
+          "title": "CNC Classifications and Features of CNC Machining Centers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 2-t1",
+          "title": "Numerical Controlled Machines - CNC Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 2-t2",
+          "title": "Basic Structures of Machining and Turning Centers, Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 2-t3",
+          "title": "Tool Holders and Tool Indexing, Axis Configurations and Fundamentals of CNC Codes, Datum and Tool Offset Settings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 2-t4",
+          "title": "Incremental and Absolute Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 2-t5",
+          "title": "Canned Cycles, Practical Programming (Simple) G",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 2-t6",
+          "title": "M Codes, APT Programming",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 3-t1",
+          "title": "CNC Turning and Milling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 3-t2",
+          "title": "Basics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 3-t3",
+          "title": "Fundamentals of CNC Lathe, Familiarization of Control Panel, Fundamentals of CNC Programming, Part Programming Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 3-t4",
+          "title": "Workpiece Setting Methods, Tool Setting Methods, Programming by Using Multiple Tools, Project on Machine by Using Different Cycles",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 4-t1",
+          "title": "Types of CNC Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 4-t2",
+          "title": "Pick and Place Machine, CNC 3D Printer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 4-t3",
+          "title": "CNC Drilling Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 4-t4",
+          "title": "CNC Lathe Machine",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-4-perut412-mModule 4-t5",
+          "title": "5 Axis CNC Machine, CNC Milling Machine, Laser Cutting CNC Machine, Grinding CNC Machine, Automatic Tool Changing Techniques and Its Advantages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

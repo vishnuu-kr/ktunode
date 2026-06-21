@@ -1,0 +1,279 @@
+{
+  "id": "peiet862-industrial-engineering-s8",
+  "code": "PEIET862",
+  "name": "PROGRAMMING AND DATA ANALYTICS WITH R",
+  "branchId": "industrial-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t1",
+          "title": "Setting up R and RStudio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t2",
+          "title": "Overview of the R Ecosystem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t3",
+          "title": "Installing and Loading R Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t4",
+          "title": "Getting Help with R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t5",
+          "title": "Basic Syntax and Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t6",
+          "title": "Introduction to R Script",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t7",
+          "title": "Basic Data Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t8",
+          "title": "Reading Data into R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t9",
+          "title": "Vectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t10",
+          "title": "Matrices and Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t11",
+          "title": "Data Frames",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t12",
+          "title": "Lists",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 1-t13",
+          "title": "Factors and Tables",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t1",
+          "title": "Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t2",
+          "title": "Control Statements and Loops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t3",
+          "title": "Math Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t4",
+          "title": "Simulation in R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t5",
+          "title": "Object-Oriented Programming - S3 Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t6",
+          "title": "S4 Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t7",
+          "title": "R6 Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t8",
+          "title": "Input and Output",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t9",
+          "title": "Reading and Writing Files",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t10",
+          "title": "Debugging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t11",
+          "title": "Performance Enhancement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t12",
+          "title": "Parallel R",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t13",
+          "title": "Rcpp: Setup, Basic Syntax, Writing Functions, and Interfacing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t14",
+          "title": "Optimizing R Performance with C++ for Statistical Computations and Data Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t15",
+          "title": "Compiling and Debugging Rcpp Modules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 2-t16",
+          "title": "Enhancing R Code Efficiency for Real-World Applications",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 3-t1",
+          "title": "Group Manipulation - Apply Family, Aggregate, plyr, data.table, Faster Group Manipulation with dplyr - Pipes, tbl, select, filter, slice, mutate, summarize, group_by, arrange, do",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 3-t2",
+          "title": "Iterating with purrr, Data Reshaping, tidyverse, String Manipulation, Manipulating Time Series Data with xts and zoo Packages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t1",
+          "title": "Probability Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t2",
+          "title": "Exploratory Data Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t3",
+          "title": "Creating and Customizing Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t4",
+          "title": "Inferential Statistics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t5",
+          "title": "Parametric and Nonparametric Inference",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t6",
+          "title": "Linear Regression Models - Simple and Multiple Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t7",
+          "title": "Generalized Linear Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t8",
+          "title": "Experimental Designs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t9",
+          "title": "Multivariate Statistical Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet862-mModule 4-t10",
+          "title": "Time Series Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

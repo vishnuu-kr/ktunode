@@ -1,0 +1,117 @@
+{
+  "id": "peaet633-applied-electronics-and-instrumentation-s6",
+  "code": "PEAET633",
+  "name": "DISCRETE CONTROL SYSTEMS",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 1-t1",
+          "title": "Digital signals and coding, data conversion and quantization, sample and hold devices, mathematical modelling of the sampling process, design of maximum sampling frequency of digital systems in terms of the sensor delay",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 1-t2",
+          "title": "Data reconstruction and filtering of sampled signals: zero order hold and first order hold",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 2-t1",
+          "title": "Discrete time control systems, pulse transfer function, Z transform analysis of closed loop and open loop systems, steady state error analysis of digital systems, examples on static error coefficients, bilinear transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 2-t2",
+          "title": "Mapping from s-plane to z-plane",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 3-t1",
+          "title": "Analysis of discrete time control systems, stability analysis of linear digital control systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 3-t2",
+          "title": "Routh Hurwitz criteria, Jury's test, root loci of digital control systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 3-t3",
+          "title": "Rules for construction of root locus, frequency domain analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 3-t4",
+          "title": "Bode plots, gain margin and phase margin",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 4-t1",
+          "title": "State space analysis, state space representation of discrete time systems, state space model, various canonical forms from transfer function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 4-t2",
+          "title": "Conversion of transfer function model to state space model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 4-t3",
+          "title": "Discrete time state transition matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 4-t4",
+          "title": "Solution of discrete state equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 4-t5",
+          "title": "Controllability and observability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet633-mModule 4-t6",
+          "title": "Pole placement using state feedback",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "pebmt634-biomedical-engineering-s6",
+  "code": "PEBMT634",
+  "name": "COMPUTATIONAL METHODS IN BIOMEDICAL ENGINEERING",
+  "branchId": "biomedical-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 1-t1",
+          "title": "Introduction to Numerical Techniques: Approximations - Accuracy and Precision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 1-t2",
+          "title": "Definitions of Round Off and Truncation Errors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 1-t3",
+          "title": "Error Propagation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 1-t4",
+          "title": "Algebraic Equations - Formulation and Solution of Linear Algebraic Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 1-t5",
+          "title": "Gauss Elimination Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 1-t6",
+          "title": "Introduction to Eigenvalue Analysis - Eigenvectors and Eigenvalues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 1-t7",
+          "title": "Eigenvalue Problems in Biomedical Engineering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 2-t1",
+          "title": "Newton-Raphson Method and Regula Falsi Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 2-t2",
+          "title": "Finite Differences, Newton's Forward and Backward Difference Method, Newton's Divided Difference Method and Lagrange's Method, Cubic Spline and Quadratic Spline Interpolation Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 3-t1",
+          "title": "Numerical Integration - Trapezoidal Rule, Simpson's 1/3rd and 3/8 Rules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 3-t2",
+          "title": "ODE - Taylor's Series Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 3-t3",
+          "title": "Euler's Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 3-t4",
+          "title": "Modified Euler's Method, R-K Method of Order Four",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 4-t1",
+          "title": "Introduction to Finite Element Method - Strong Form and Weak Form Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 4-t2",
+          "title": "Test and Trial Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 4-t3",
+          "title": "Discretization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 4-t4",
+          "title": "Boundary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 4-t5",
+          "title": "Numerical Assembly and Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-6-pebmt634-mModule 4-t6",
+          "title": "Finite Element Method for Nonlinear ODEs - Linearization and Newton-Raphson Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

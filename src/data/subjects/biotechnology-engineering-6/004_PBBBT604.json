@@ -1,0 +1,273 @@
+{
+  "id": "pbbbt604-biotechnology-engineering-s6",
+  "code": "PBBBT604",
+  "name": "BIOINFORMATICS",
+  "branchId": "biotechnology-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t1",
+          "title": "Introduction to Bioinformatics and Biological Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t2",
+          "title": "Historical Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t3",
+          "title": "Applications and Scope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t4",
+          "title": "Important Biological Databases: Retrieving and Analyzing Data from Biological Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t5",
+          "title": "GenBank",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t6",
+          "title": "NCBI",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t7",
+          "title": "DDBJ",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t8",
+          "title": "PubMed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t9",
+          "title": "UniProt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t10",
+          "title": "PROSITE",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t11",
+          "title": "SCOP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t12",
+          "title": "RCSB-PDB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 1-t13",
+          "title": "EMBL-EB",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t1",
+          "title": "Substitution Matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t2",
+          "title": "BLOSUM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t3",
+          "title": "Gap Penalties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t4",
+          "title": "Pairwise Sequence Alignment using Needleman-Wunsch",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t5",
+          "title": "Smith-Waterman",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t6",
+          "title": "Heuristic Programming Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t7",
+          "title": "FASTA and BLAST: Multiple Sequence Alignments - Common Multiple Alignment Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t8",
+          "title": "CLUSTALX",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t9",
+          "title": "Identification of Motifs and Patterns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t10",
+          "title": "Hidden Markov Model; Phylogenetic Analysis: Elements of Phylogenetic Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t11",
+          "title": "Determining the Substitution Model Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 2-t12",
+          "title": "Evaluating Phylogenetic Trees",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 3-t1",
+          "title": "Structure Prediction and Analysis: Predictive Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 3-t2",
+          "title": "Codon Bias Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 3-t3",
+          "title": "Modular Nature of Proteins",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 3-t4",
+          "title": "Protein Identity Based on Primary, Secondary, and Tertiary Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 3-t5",
+          "title": "Protein Homology Modeling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 3-t6",
+          "title": "Bioinformatics Approaches for Molecular Modeling in Drug Discovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 3-t7",
+          "title": "Protein-Protein Interactions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t1",
+          "title": "Human Genome Project",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t2",
+          "title": "Next Generation Sequencing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t3",
+          "title": "Detection of SNPs and Their Relevance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t4",
+          "title": "Detection of Functional Sites in DNA Sequences",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t5",
+          "title": "Gene Predictions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t6",
+          "title": "Microarray Data Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t7",
+          "title": "Gene Expression Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biotechnology-engineering-6-pbbbt604-mModule 4-t8",
+          "title": "Project-Based Learning in Bioinformatics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

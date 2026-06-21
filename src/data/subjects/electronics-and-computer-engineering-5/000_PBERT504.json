@@ -1,0 +1,381 @@
+{
+  "id": "pbert504-electronics-and-computer-engineering-s5",
+  "code": "PBERT504",
+  "name": "DATABASE MANAGEMENT SYSTEMS",
+  "branchId": "electronics-and-computer-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t1",
+          "title": "Basics of Database - Introduction and Applications of DBMS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t2",
+          "title": "Purpose of Database",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t3",
+          "title": "View of Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t4",
+          "title": "Database Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t5",
+          "title": "Database Architecture and Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t6",
+          "title": "Database Users and Administrators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t7",
+          "title": "ER Model - Entity Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t8",
+          "title": "Relationship Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t9",
+          "title": "Attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t10",
+          "title": "Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t11",
+          "title": "Removing Redundant Attributes in Entity Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t12",
+          "title": "Entity-Relationship Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t13",
+          "title": "Introduction to Relational Model - Structure of Relational Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t14",
+          "title": "Database Schema",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t15",
+          "title": "Keys",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t16",
+          "title": "Schema Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t17",
+          "title": "Relational Query Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t18",
+          "title": "Relational Algebra",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 1-t19",
+          "title": "Synthesizing ER Diagram to Relational Schema",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t1",
+          "title": "Introduction to Structured Query Language (SQL) - Overview of the SQL Query Language",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t2",
+          "title": "SQL Data Definition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t3",
+          "title": "Basic Structure of SQL Queries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t4",
+          "title": "Additional Basic Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t5",
+          "title": "Set Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t6",
+          "title": "Null Values",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t7",
+          "title": "Aggregate Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t8",
+          "title": "Nested Subqueries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t9",
+          "title": "Views",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t10",
+          "title": "Assertions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 2-t11",
+          "title": "Triggers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t1",
+          "title": "Relational Database Design - Different Anomalies in Designing a Database",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t2",
+          "title": "The Idea of Normalization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t3",
+          "title": "Functional Dependency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t4",
+          "title": "Armstrong's Axioms (Proofs Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t5",
+          "title": "Closures and Their Computation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t6",
+          "title": "Equivalence of Functional Dependencies (FD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t7",
+          "title": "Minimal Cover (Proofs Not Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t8",
+          "title": "First Normal Form (1NF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t9",
+          "title": "Second Normal Form (2NF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t10",
+          "title": "Third Normal Form (3NF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 3-t11",
+          "title": "Boyce Codd Normal Form (BCNF)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t1",
+          "title": "Transaction Processing Concepts - Overview of Concurrency Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t2",
+          "title": "Transaction Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t3",
+          "title": "Significance of Concurrency Control and Recovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t4",
+          "title": "Transaction States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t5",
+          "title": "System Log",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t6",
+          "title": "Desirable Properties of Transactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t7",
+          "title": "Serial Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t8",
+          "title": "Concurrent and Serializable Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t9",
+          "title": "Conflict Equivalence and Conflict Serializability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t10",
+          "title": "Recoverable and Cascade-Less Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t11",
+          "title": "Locking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t12",
+          "title": "Two-Phase Locking and Its Variations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t13",
+          "title": "Log-Based Recovery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t14",
+          "title": "Check-Pointing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t15",
+          "title": "NoSQL Databases - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t16",
+          "title": "Properties of NoSQL Databases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-5-pbert504-mModule 4-t17",
+          "title": "Types of NoSQL Databases",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

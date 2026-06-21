@@ -1,0 +1,237 @@
+{
+  "id": "pcict302-instrumentation-and-control-s3",
+  "code": "PCICT302",
+  "name": "ELECTRONIC CIRCUITS AND NETWORKS",
+  "branchId": "instrumentation-and-control",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t1",
+          "title": "Review of Biasing - AC and DC Load Lines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t2",
+          "title": "Q Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t3",
+          "title": "Fixing of Operating Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t4",
+          "title": "Biasing Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t5",
+          "title": "Stability Factors, Simple Biasing Circuit Design - Various Biasing Methods of BJT: Fixed",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t6",
+          "title": "Voltage Divider",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t7",
+          "title": "Biasing Independent of Power Supply, Thermal Stability, MOSFET: N Channel - Structure and Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t8",
+          "title": "Regions of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t9",
+          "title": "Pinch-off, Biasing Methods: by Fixing Gate Source Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t10",
+          "title": "Fixing Gate Voltage and Connecting Source Resistance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t11",
+          "title": "Using Two Power Supplies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t12",
+          "title": "Drain-Gate Feedback Resistor, MOSFET as Amplifier, Channel Length Modulation, Small Signal Analysis of MOSFET: Voltage Transfer Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t13",
+          "title": "Small Signal Operation - Equivalent Circuit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t14",
+          "title": "Hybrid Pi Model, CS Configuration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t15",
+          "title": "CD Configurations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t16",
+          "title": "Expressions for Characteristic Parameters: Input and Output Impedance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 1-t17",
+          "title": "Voltage Gain and Transconductance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 2-t1",
+          "title": "Multi Stage Amplifier, Differential Amplifier - Basic MOSFET Differential Pair Operation, Feedback Amplifiers: Effect of Negative Feedback on Bandwidth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 2-t2",
+          "title": "Gain and Noise Reduction, Voltage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 2-t3",
+          "title": "Current",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 2-t4",
+          "title": "Transconductance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 2-t5",
+          "title": "and Transresistance Amplifiers, Power Amplifiers: Classifications (Basic Operation using Input Output Signal and Circuit Diagram) and Power Efficiency - Class A (Series Fed/Transformer Coupled) - Class B (Transformer Coupled Push Pull Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 2-t6",
+          "title": "Complementary Symmetry) - Class C - Power Amplifier",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t1",
+          "title": "Review of Fundamental Laws: Ohm's Law",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t2",
+          "title": "Resistors in Series and Parallel Circuits, Voltage and Current Division",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t3",
+          "title": "Source Transformation Technique",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t4",
+          "title": "Star-Delta Transformation, Kirchhoff's Laws - Mesh Current and Node Voltage, Method of Mesh and Nodal Analysis, Network Theorems for Resistive Circuits with Dependent and Independent Sources: Thevenin's and Norton Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t5",
+          "title": "Superposition Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t6",
+          "title": "Maximum Power Transfer Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t7",
+          "title": "Reciprocity Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 3-t8",
+          "title": "Millman's Theorem, Related Problems, Laplace Transform: Review of Laplace Transform and Inverse Laplace Transform of Common Functions and Properties, Solution of Differential Equations using Laplace Transform",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 4-t1",
+          "title": "Types of Two Port Networks - Z",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 4-t2",
+          "title": "ABCD, Concept of Symmetry and Reciprocity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-3-pcict302-mModule 4-t3",
+          "title": "Conversions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

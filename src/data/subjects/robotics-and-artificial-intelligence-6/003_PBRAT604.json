@@ -1,0 +1,429 @@
+{
+  "id": "pbrat604-robotics-and-artificial-intelligence-s6",
+  "code": "PBRAT604",
+  "name": "MOBILE ROBOTICS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t2",
+          "title": "Key Issues for Locomotion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t3",
+          "title": "Legged Mobile Robots - Leg Configurations and Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t4",
+          "title": "Wheeled Mobile Robots - Wheeled Locomotion: The Design Space",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t5",
+          "title": "Wheel Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t6",
+          "title": "Wheel Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t7",
+          "title": "Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t8",
+          "title": "Maneuverability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t9",
+          "title": "Controllability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t10",
+          "title": "Aerial Robots - Advantages of UAVs Over Conventional Manned Aircraft",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t11",
+          "title": "Types of UAVs - Fixed-Wing UAV or Airplane - Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t12",
+          "title": "Rotary-Wing UAV - Multi-Rotor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t13",
+          "title": "Tricopter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t14",
+          "title": "Quadcopter or Quadrotor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t15",
+          "title": "Hexacopter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t16",
+          "title": "Y3/Y6",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t17",
+          "title": "Octocopter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t18",
+          "title": "Mobile Robot Kinematics: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t19",
+          "title": "Kinematic Models and Constraints - Representing Robot Position",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t20",
+          "title": "Forward Kinematic Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t21",
+          "title": "Wheel Kinematic Constraints for Fixed Standard Wheel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t22",
+          "title": "Steered Standard Wheel and Castor Wheel Only",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t23",
+          "title": "Robot Kinematic Constraints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t24",
+          "title": "Example of Robot Kinematic Models and Constraints: Differential-Drive Robot Only",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t25",
+          "title": "Mobile Robot Maneuverability - Degree of Mobility",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t26",
+          "title": "Degree of Steerability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t27",
+          "title": "Robot Maneuverability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t28",
+          "title": "Mobile Robot Workspace - Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 1-t29",
+          "title": "Holonomic Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t1",
+          "title": "Path Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t2",
+          "title": "Localization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t3",
+          "title": "Sensing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t4",
+          "title": "Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t5",
+          "title": "Simultaneous Localization and Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t6",
+          "title": "Mobile Robot Localization: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t7",
+          "title": "The Challenge of Localization - Noise and Aliasing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t8",
+          "title": "Localization-Based Navigation Versus Programmed Solutions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t9",
+          "title": "Belief Representation - Single-Hypothesis Belief",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t10",
+          "title": "Multiple-Hypothesis Belief",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t11",
+          "title": "Differences Between Markov and Kalman Localization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t12",
+          "title": "Representation and Reasoning About Space: Representing Space - Spatial Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t13",
+          "title": "Geometric Representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 2-t14",
+          "title": "Topological Representations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t1",
+          "title": "Free-Space Path Versus Semi-Free-Space Path",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t2",
+          "title": "Non-Homotopic Paths Versus Homotopic Paths",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t3",
+          "title": "Constructing a Discrete Search Space - Visibility Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t4",
+          "title": "Tangent Graph",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t5",
+          "title": "Retraction Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t6",
+          "title": "Searching a Discrete State Space - Graph Search - Depth-First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t7",
+          "title": "Breadth-First Search",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t8",
+          "title": "Dijkstra's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t9",
+          "title": "Best First Search - A and A* Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t10",
+          "title": "Searching a Continuous State Space - Potential Fields",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t11",
+          "title": "Vector Field Histogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t12",
+          "title": "Bug 1 and 2 and Tangent Bug Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 3-t13",
+          "title": "Probabilistic Path Planning - RPP",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t1",
+          "title": "Horizontal Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t2",
+          "title": "Vertical Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t3",
+          "title": "Hybrid Control Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t4",
+          "title": "Middleware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t5",
+          "title": "Alternative Control Formalisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t6",
+          "title": "The Human Robot Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t7",
+          "title": "Off-Board Communication: Tethered",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t8",
+          "title": "Untethered - Types of Untethered Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t9",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-6-pbrat604-mModule 4-t10",
+          "title": "Students May Be Given Projects on Modelling to Kinematics, Localization and Path Planning of Mobile Robots",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

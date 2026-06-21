@@ -1,0 +1,207 @@
+{
+  "id": "pcmrt402-mechatronics-engineering-s4",
+  "code": "PCMRT402",
+  "name": "DIGITAL ELECTRONICS",
+  "branchId": "mechatronics-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 1-t1",
+          "title": "Basics of Digital Electronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 1-t2",
+          "title": "Binary, Octal, and Hexadecimal Number Systems – Representations, Base Conversions, and Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 1-t3",
+          "title": "Signed Representation of Binary Numbers – Fixed and Floating Point",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 1-t4",
+          "title": "1's and 2's Complement of Binary Numbers and Their Arithmetic; BCD Number System – Conversion of BCD to Binary and Binary to BCD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 1-t5",
+          "title": "Gray Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 1-t6",
+          "title": "Excess 3 Codes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 1-t7",
+          "title": "Basics of Verilog – Basic Language Elements: Identifiers, Data Objects, Scalar Data Types, Operators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 2-t1",
+          "title": "Boolean Algebra and Logic Gates – Laws of Boolean Algebra, Postulates, Simplification of Boolean Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 2-t2",
+          "title": "De-Morgan's Law – Minimization of Boolean Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 2-t3",
+          "title": "Sum of Product (SOP), Product of Sum (POS), Canonical Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 2-t4",
+          "title": "Karnaugh Map Simplification (up to 4 Variables)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 2-t5",
+          "title": "Quine-McCluskey Method; Basic and Universal Gates – Universality of NAND and NOR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 2-t6",
+          "title": "Design of Simple Logic Circuits Using Logic Gates; TTL and CMOS Logic Families – Comparison; Internal Diagram of TTL NAND Gate and CMOS NOR Gate",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 3-t1",
+          "title": "Difference Between Combinational and Sequential Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 3-t2",
+          "title": "Half Adder/Subtractor, Full Adder/Subtractor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 3-t3",
+          "title": "Multiplexer (Using Logic Gates) – 4:1, 8:1, 16:1",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 3-t4",
+          "title": "De-Multiplexer (Using Logic Gates) – 1:4, 1:8, 1:16",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 3-t5",
+          "title": "Implementation of Functions Using Multiplexer IC 74151",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 3-t6",
+          "title": "Encoder (4:2, 8:3), Decoder (2:4, 3:8), BCD Adder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 3-t7",
+          "title": "Modelling and Simulation of Combinational Circuits with Verilog Codes at Gate Level (Adder, Subtractor, MUX, De-MUX)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t1",
+          "title": "Introduction to Latch, Flip Flops, FSM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t2",
+          "title": "Concept of Edge Triggering and Level Triggering in Flip Flops",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t3",
+          "title": "SR FF, JK FF, MS-JK FF, D FF, T FF – Truth Table, Excitation Table, and Characteristics Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t4",
+          "title": "Counter Designs – Asynchronous Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t5",
+          "title": "Synchronous Counter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t6",
+          "title": "MOD Counters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t7",
+          "title": "Ring Counter, Johnson Counter, Shift Registers Using FFs – SISO, SIPO, PIPO, PISO",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t8",
+          "title": "Programmable Logic Devices – PAL, PLA, FPGA (Basic Concepts Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-4-pcmrt402-mModule 4-t9",
+          "title": "Modelling and Simulation of JK and D Flip Flops in Verilog",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

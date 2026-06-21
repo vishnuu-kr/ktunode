@@ -1,0 +1,153 @@
+{
+  "id": "peiet865-industrial-engineering-s8",
+  "code": "PEIET865",
+  "name": "DATA ANALYTICS AND MACHINE LEARNING WITH PYTHON",
+  "branchId": "industrial-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 1-t1",
+          "title": "Introduction to Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 1-t2",
+          "title": "Using Pandas for Data Manipulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 1-t3",
+          "title": "Cleaning and Preparing Data: Feature Engineering with Pandas and NumPy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 1-t4",
+          "title": "Techniques for Creating and Transforming Features for Analytical Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 1-t5",
+          "title": "Introduction to Data Visualization with Matplotlib and Seaborn",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 1-t6",
+          "title": "Exploring Data Distributions and Relationships",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 2-t1",
+          "title": "Descriptive and Inferential Statistics with SciPy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 2-t2",
+          "title": "Understanding Data Through Statistical Metrics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 2-t3",
+          "title": "Feature Selection Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 2-t4",
+          "title": "Using Scikit-learn for Automated Feature Selection Methods Like RFE (Recursive Feature Elimination)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 2-t5",
+          "title": "Dimensionality Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 2-t6",
+          "title": "PCA and t-SNE with Scikit-learn for Feature Extraction and Data Visualization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 3-t1",
+          "title": "Overview of Machine Learning Algorithms (Classification, Regression) with Scikit-learn",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 3-t2",
+          "title": "Handling Imbalanced Datasets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 3-t3",
+          "title": "Techniques Like SMOTE and Balanced Random Forests with Imbalanced-learn",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 3-t4",
+          "title": "Model Evaluation and Hyperparameter Tuning Using Cross-Validation and GridSearchCV in Scikit-learn",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 4-t1",
+          "title": "Introduction to Deep Learning with TensorFlow and Keras",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 4-t2",
+          "title": "Basics of Neural Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 4-t3",
+          "title": "Building and Training Deep Learning Models for Classification and Regression Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-8-peiet865-mModule 4-t4",
+          "title": "Advanced Topics in Machine Learning: Ensemble Methods, Boosting, and Stacking Models to Improve Performance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

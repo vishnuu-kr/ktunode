@@ -1,0 +1,213 @@
+{
+  "id": "pcmrt501-mechatronics-engineering-s5",
+  "code": "PCMRT501",
+  "name": "LINEAR CONTROL SYSTEMS",
+  "branchId": "mechatronics-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t1",
+          "title": "Basic Components of a Control System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t2",
+          "title": "Open-Loop and Closed-Loop Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t3",
+          "title": "Examples of Control Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t4",
+          "title": "Transfer Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t5",
+          "title": "Block Diagram Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t6",
+          "title": "Signal Flow Graph and Mason's Gain Formula",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t7",
+          "title": "Differential Equations for Mass, Spring, and Dashpot Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t8",
+          "title": "Mathematical Modelling of Control Systems - Electrical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t9",
+          "title": "Translational and Rotational Mechanical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 1-t10",
+          "title": "Analogous Systems: Force-Voltage and Force-Current Analogy, Torque-Voltage and Torque-Current Analogy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 2-t1",
+          "title": "Continuous Systems and Standard Test Signals: Step, Ramp, Parabolic, and Impulse",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 2-t2",
+          "title": "Transient and Steady State Response",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 2-t3",
+          "title": "First Order Systems and Second Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 2-t4",
+          "title": "Step Responses of First and Second Order Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 2-t5",
+          "title": "Underdamped and Overdamped Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 2-t6",
+          "title": "Time Domain Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 2-t7",
+          "title": "Steady State Error and Static Error Constants: Position, Velocity, and Acceleration",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t1",
+          "title": "Concept of Stability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t2",
+          "title": "Stability and Location of Poles in S-Plane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t3",
+          "title": "Routh-Hurwitz Stability Criterion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t4",
+          "title": "Root Locus Method - Construction of Root Locus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t5",
+          "title": "Effect of Poles and Zeros and Their Location on the Root Locus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t6",
+          "title": "Frequency Response Representation and Polar Plot",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t7",
+          "title": "Relative Stability: Gain Margin and Phase Margin",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 3-t8",
+          "title": "Stability Analysis with Bode Plot",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 4-t1",
+          "title": "Need for Cascade Compensation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 4-t2",
+          "title": "Cascade Compensation - PI, PD, and PID Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 4-t3",
+          "title": "Tuning of PID Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 4-t4",
+          "title": "Lead, Lag, and Lead-Lag Compensation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechatronics-engineering-5-pcmrt501-mModule 4-t5",
+          "title": "Role of Control Systems in Mechatronics - Case Studies: Automatic Temperature Control, Automatic Traffic Light Control, and Automatic Street Light Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

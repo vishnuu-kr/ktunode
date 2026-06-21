@@ -1,0 +1,267 @@
+{
+  "id": "perat527-robotics-and-artificial-intelligence-s5",
+  "code": "PERAT527",
+  "name": "DYNAMICS OF MACHINERY",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t1",
+          "title": "Static Equilibrium",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t2",
+          "title": "Equilibrium of Two and Three Force Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t3",
+          "title": "Members with Two Forces and Torque",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t4",
+          "title": "Free Body Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t5",
+          "title": "Principle of Superposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t6",
+          "title": "Static Force Analysis of Four Bar Mechanism and Slider-Crank Mechanism without Friction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t7",
+          "title": "Dynamic Force Analysis: D'Alembert's Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t8",
+          "title": "Inertia Force",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 1-t9",
+          "title": "Inertia Torque",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t1",
+          "title": "Static and Dynamic Balancing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t2",
+          "title": "Balancing of Single Rotating Mass by Balancing Masses in Same Plane and in Different Planes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t3",
+          "title": "Balancing of Several Rotating Masses by Balancing Masses in Same Plane and in Different Planes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t4",
+          "title": "Analytical and/or Graphical Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t5",
+          "title": "Sliding Contact Bearings - Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t6",
+          "title": "Lubrication in Bush Bearings, Thick and Thin Film Lubrication, Coefficient of Friction in Boundary and Hydrodynamic Regions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t7",
+          "title": "Hydrostatic and Hydrodynamic Bearings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 2-t8",
+          "title": "Rolling Contact Bearings - Conformity, Types of Ball and Roller Bearings",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t1",
+          "title": "Angular Velocity Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t2",
+          "title": "Effect of Slip",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t3",
+          "title": "Law of Belting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t4",
+          "title": "Length of Open Belt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t5",
+          "title": "Length of Cross Belt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t6",
+          "title": "Angle of Arc of Contact",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t7",
+          "title": "Ratio of Belt Tensions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t8",
+          "title": "Power Transmitted",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t9",
+          "title": "Centrifugal Tension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t10",
+          "title": "Condition for Maximum Power Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t11",
+          "title": "Initial Belt Tension",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t12",
+          "title": "Effect of Initial Tension on Power Transmission",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t13",
+          "title": "Belt Creep",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t14",
+          "title": "Mechanical Brakes - Block Brake with Short Shoe",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t15",
+          "title": "Analysis of Forces Acting on Drum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t16",
+          "title": "Pivoted Block Brake with Long Shoe",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t17",
+          "title": "Band Brakes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 3-t18",
+          "title": "Differential Band Brake",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 4-t1",
+          "title": "Free Vibration of Single Degree Undamped Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 4-t2",
+          "title": "Classical Method, Energy Method, Equivalent Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 4-t3",
+          "title": "Damped Free Vibration - Viscous Damping - Underdamping, Critical Damping, Overdamping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-5-perat527-mModule 4-t4",
+          "title": "Coulomb Damping, Logarithmic Decrement",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

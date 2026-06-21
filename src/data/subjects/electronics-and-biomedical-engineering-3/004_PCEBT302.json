@@ -1,0 +1,93 @@
+{
+  "id": "pcebt302-electronics-and-biomedical-engineering-s3",
+  "code": "PCEBT302",
+  "name": "ELECTRONIC DEVICES & CIRCUITS",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 1-t1",
+          "title": "Operating Point and DC Load Line. Fixed, Emitter Stabilized and Voltage Divider Biasing. Bias Stabilization. BJT Amplifiers: RC Coupled Amplifier (CE Configuration) - Need of Various Components and Design. Small Signal Analysis: re and Hybrid Equivalent Models for CE Configuration - Small Signal Voltage Gain, Input and Output Impedance of CE Configuration",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 2-t1",
+          "title": "Structure, Principle of Operation and Characteristics of JFETs. Structure and Physical Operation and Characteristics of Enhancement and Depletion Type MOSFETs. MOSFET Amplifier Circuits: Biasing in MOSFET Amplifier - Single Stage MOSFET Amplifier Circuit (CS Configuration) Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 3-t1",
+          "title": "Power Amplifiers: Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 3-t2",
+          "title": "Class A and Class B Power Amplifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 3-t3",
+          "title": "Class AB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 3-t4",
+          "title": "Class C and Class D Power Amplifiers: Efficiency and Distortion (No Analysis is Required)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 3-t5",
+          "title": "Feedback Amplifiers: General Feedback Structure, Properties of Negative Feedback, and Four Basic Feedback Topologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 3-t6",
+          "title": "Sinusoidal Oscillators: Criterion for Oscillation, Basic Principles of RC and Crystal Oscillators",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 4-t1",
+          "title": "Pulse Shaping Using RC Circuits - Differentiating and Integrating Circuits - Applications. Multivibrators: Astable, Monostable and Bistable Circuits - Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-3-pcebt302-mModule 4-t2",
+          "title": "Differential Amplifiers: BJT Differential Pair, Operation with Common-Mode and Differential Mode Input Voltages, CMRR",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "id": "oeebt831-electronics-and-biomedical-engineering-s8",
+  "code": "OEEBT831",
+  "name": "IOT & BIOMEDICAL APPLICATIONS",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t1",
+          "title": "Introduction to Internet of Things: Definition and Characteristics of IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t2",
+          "title": "Physical Design of IoT: IoT Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t3",
+          "title": "Logical Design of IoT: IoT Communication Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t4",
+          "title": "IoT Communication APIs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t5",
+          "title": "IoT Enabled Technologies: Wireless Sensor Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t6",
+          "title": "Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t7",
+          "title": "Embedded Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t8",
+          "title": "Sensor Interfaces: ECG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t9",
+          "title": "Pulse Oximeter",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t10",
+          "title": "Temperature Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t11",
+          "title": "Pressure Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 1-t12",
+          "title": "Challenges of Using IoT in Healthcare",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t1",
+          "title": "IoT Protocols and Architecture: Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t2",
+          "title": "Protocol Standardization for IoT Efforts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t3",
+          "title": "M2M and WSN Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t4",
+          "title": "SCADA and RFID Protocols",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t5",
+          "title": "Issues with IoT Standardization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t6",
+          "title": "Unified Data Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t7",
+          "title": "IEEE 802.15.4",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t8",
+          "title": "BACnet Protocol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t9",
+          "title": "Modbus",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t10",
+          "title": "Zigbee",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t11",
+          "title": "Network and Security Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t12",
+          "title": "IoT Open Source Architecture (OIC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t13",
+          "title": "OIC Architecture and Design Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t14",
+          "title": "IoT Devices and Deployment Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t15",
+          "title": "IoTivity: An Open-source IoT Stack – Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t16",
+          "title": "IoTivity Stack Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 2-t17",
+          "title": "Resource Model and Abstraction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t1",
+          "title": "Wearable Health Monitoring System (WHMS): Basics of WHMS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t2",
+          "title": "Need for Wearable Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t3",
+          "title": "Applications of WHMS: Home Healthcare",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t4",
+          "title": "Sports/Fitness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t5",
+          "title": "Design of Wearables: Introduction and Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t6",
+          "title": "Design of Smart Textiles and Wearable Electronics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t7",
+          "title": "Issues of WHMS and Factors Inhibiting Growth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t8",
+          "title": "Building IoT with Arduino and Raspberry Pi: Programming – Python Program with Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t9",
+          "title": "Controlling Hardware: Controlling AC Power Devices with Relays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t10",
+          "title": "Controlling Servo Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t11",
+          "title": "DC Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t12",
+          "title": "Sensors: Light Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t13",
+          "title": "Motion Detection Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 3-t14",
+          "title": "Wireless Bluetooth Sensors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t1",
+          "title": "Data Handling and Analytics: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t2",
+          "title": "Big Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t3",
+          "title": "Types of Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t4",
+          "title": "Characteristics of Big Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t5",
+          "title": "Data Handling Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t6",
+          "title": "Data Acquisition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t7",
+          "title": "Data Storage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t8",
+          "title": "Introduction to Data Analytics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t9",
+          "title": "Types of Data Analytics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t10",
+          "title": "Local Analytics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t11",
+          "title": "Cloud Analytics and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t12",
+          "title": "IoT Physical Servers and Cloud Offerings: Introduction to Cloud Storage Models and Communication APIs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t13",
+          "title": "Webserver: Web Server for IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t14",
+          "title": "Cloud for IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t15",
+          "title": "Python Web Application Framework",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-8-oeebt831-mModule 4-t16",
+          "title": "Designing a RESTful Web API",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

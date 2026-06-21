@@ -1,0 +1,87 @@
+{
+  "id": "pccml508-artificial-intelligence-and-machine-learning-s6",
+  "code": "PCCML508",
+  "name": "DEEP LEARNING LAB",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t1",
+          "title": "Implement and demonstrate Single, Multi variable and Polynomial Regression for a given set of training data stored in a .CSV file and evaluate the accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t2",
+          "title": "Write a Python program to implement KNN classifiers and calculate the accuracy, precision, and recall for your data set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t3",
+          "title": "Assuming a set of data that need to be classified, use a Naive Bayes classifier to perform this task and evaluate the accuracy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t4",
+          "title": "Write a Python program to demonstrate the working of the decision tree based ID3 algorithm. Use an appropriate data set for building the decision tree and apply this knowledge to classify a new sample",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t5",
+          "title": "Implement hierarchical clustering algorithm on a given dataset to categorize the data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t6",
+          "title": "Implement k means clustering algorithm on a given dataset to categorize the data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t7",
+          "title": "Build an Artificial Neural Network using Backpropagation algorithm on a given dataset and test the same with appropriate dataset",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t8",
+          "title": "Implement Feed forward neural network with three hidden layers for classification on CIFAR-10 dataset. Analyse the impact of optimization and weight initialization techniques such as Xavier initialization, Kaiming Initialization, dropout and regularization techniques, and visualize the change in performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t9",
+          "title": "Digit classification using CNN architecture for MNIST dataset. Identify the performance change through pre-trained networks such as VGGNet or GoogleNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t10",
+          "title": "Implement a simple RNN for review classification using IMDB dataset. Analyze and visualize the performance change while using LSTM and GRU instead of simple RNN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t11",
+          "title": "Implement time series forecasting prediction for NIFTY-50 dataset",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pccml508-mExperiment 2-t12",
+          "title": "Implement a shallow auto encoder and decoder network for machine translation (by using any dataset in Kaggle such as English to Hindi neural translation dataset)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

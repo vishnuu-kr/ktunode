@@ -1,0 +1,309 @@
+{
+  "id": "oemut723-mechanical-automobile-engineering-s7",
+  "code": "OEMUT723",
+  "name": "AUTOMOTIVE NAVIGATION AND CONTROL",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t1",
+          "title": "Automotive Navigation Systems: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t2",
+          "title": "Recent Technology Developments in Navigation System and Key Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t3",
+          "title": "Navigation Data Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t4",
+          "title": "GPS-Based Navigation in Autonomous Vehicles: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t5",
+          "title": "Basic Architecture of Autonomous GPS Vehicle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t6",
+          "title": "Distance and Direction Calculation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t7",
+          "title": "Global Navigation Satellite System (GNSS) Based Positioning in Autonomous Vehicles: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t8",
+          "title": "Key Features and Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 1-t9",
+          "title": "GPS vs GNSS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t1",
+          "title": "Vision-Based Navigation Systems: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t2",
+          "title": "Lane Positioning Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t3",
+          "title": "Lidar-Based Positioning Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t4",
+          "title": "Camera-Based Positioning Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t5",
+          "title": "Position, Speed, and Heading Navigation with Vision Measurements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t6",
+          "title": "Basic Sensors Used in Vehicle Navigation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t7",
+          "title": "Speed Estimation Sensors: Types, Principle and Working",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t8",
+          "title": "Accelerometers: Types and Working",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t9",
+          "title": "GPS Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t10",
+          "title": "Wheel Speed Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t11",
+          "title": "Heading Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t12",
+          "title": "Yaw Rate Gyroscopes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t13",
+          "title": "Laser Radar: Principle and Working",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t14",
+          "title": "Non-Contact Ground Velocity Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t15",
+          "title": "Road Surface Recognition Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 2-t16",
+          "title": "Looking-Out Sensors and Looking-In Sensors",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t1",
+          "title": "Vehicle Dynamics Estimation Using GPS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t2",
+          "title": "Side Slip: Effects, Calculation, and Tyre Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t3",
+          "title": "Vehicle Control Using GNSS/GPS: Introduction and Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t4",
+          "title": "Speed Controlling Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t5",
+          "title": "Speed Controllers Used in Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t6",
+          "title": "Vehicle Steering Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t7",
+          "title": "Yaw Rate Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t8",
+          "title": "Lateral Movement Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 3-t9",
+          "title": "Lateral Position Controller",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t1",
+          "title": "Vision in Cars: Lane Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t2",
+          "title": "Traffic Sign Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t3",
+          "title": "Stereo Vision",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t4",
+          "title": "Road Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t5",
+          "title": "Object Recognition: Traffic Lights and Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t6",
+          "title": "Pedestrian Recognition: Basic Principle, Architecture, and Working",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t7",
+          "title": "Building Intelligent Systems in New Generation Cars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t8",
+          "title": "Communication Technologies in Vehicle Information System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t9",
+          "title": "Vision for ITS Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t10",
+          "title": "ITS Communication in Automobiles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t11",
+          "title": "Vehicle-to-Vehicle and Road-Vehicle Communication Systems: Basic Principle and Working",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-7-oemut723-mModule 4-t12",
+          "title": "Relative Merits and Demerits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

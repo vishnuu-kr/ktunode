@@ -1,0 +1,273 @@
+{
+  "id": "peitt741-information-technology-s7",
+  "code": "PEITT741",
+  "name": "NATURAL LANGUAGE PROCESSING",
+  "branchId": "information-technology",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t1",
+          "title": "Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t2",
+          "title": "Levels of NLP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t3",
+          "title": "Basic Text Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t4",
+          "title": "Empirical Laws",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t5",
+          "title": "Minimum Edit Distance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t6",
+          "title": "N-gram Language Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t7",
+          "title": "Evaluating Language Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t8",
+          "title": "Smoothing: Kneser-Ney Smoothing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t9",
+          "title": "Perplexity's Relation to Entropy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t10",
+          "title": "Naive Bayes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t11",
+          "title": "Text Classification and Sentiment: Naive Bayes Classifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t12",
+          "title": "Training the Naive Bayes Classifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t13",
+          "title": "Evaluation: Precision, Recall, F-measure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 1-t14",
+          "title": "Test Sets and Cross-Validation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t1",
+          "title": "POS Tagging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t2",
+          "title": "HMM POS Tagging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t3",
+          "title": "Viterbi Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t4",
+          "title": "Morphology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t5",
+          "title": "Named Entity Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t6",
+          "title": "Conditional Random Fields",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t7",
+          "title": "Lexical Semantics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t8",
+          "title": "Vector Semantics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t9",
+          "title": "TF-IDF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t10",
+          "title": "Word2Vec",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t11",
+          "title": "Word Senses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t12",
+          "title": "Word Sense Disambiguation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t13",
+          "title": "WordNet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t14",
+          "title": "Context-Free Grammars and Constituency Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 2-t15",
+          "title": "Treebank",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt741-mModule 3-t1",
+          "title": "Semantic Roles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 3-t2",
+          "title": "Logical Representations of Sentence Meaning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 3-t3",
+          "title": "Semantic Role Labeling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 3-t4",
+          "title": "Lexicons for Sentiment, Affect, and Connotation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 3-t5",
+          "title": "Coreference Resolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 3-t6",
+          "title": "Discourse Coherence",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "information-technology-7-peitt741-mModule 4-t1",
+          "title": "Machine Translation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 4-t2",
+          "title": "Question Answering and Information Retrieval",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 4-t3",
+          "title": "Chatbots and Dialogue Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 4-t4",
+          "title": "Automatic Speech Recognition and Text-to-Speech",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "information-technology-7-peitt741-mModule 4-t5",
+          "title": "Relation and Event Extraction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "peaet524-applied-electronics-and-instrumentation-s5",
+  "code": "PEAET524",
+  "name": "OPTIMIZATION TECHNIQUES",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t1",
+          "title": "Introduction to Optimization and Engineering Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t2",
+          "title": "Mathematical Formulation of an Optimization Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t3",
+          "title": "Transport Problem as an Example",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t4",
+          "title": "Concept of Convexity - Classification of Optimization Techniques (Constrained and Unconstrained)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t5",
+          "title": "Global and Local Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t6",
+          "title": "Stochastic and Deterministic Optimization - Classical Single Variable Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t7",
+          "title": "Unconstrained Multivariable Optimisation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t8",
+          "title": "Multivariable Optimization with Constraints (Basic Concept Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 1-t9",
+          "title": "Karush-Kuhn-Tucker Conditions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 2-t1",
+          "title": "Linear Programming Problems and Game Theory - Mathematical Formulation of LPP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 2-t2",
+          "title": "Solving Using Simplex Method and Graphical Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 2-t3",
+          "title": "Linear Programming Applications - Introduction to Game Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 2-t4",
+          "title": "Optimal Solution of Two-Person Zero-Sum Games - Graphical Solution to Games with Mixed Strategy",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 3-t1",
+          "title": "Network Optimization Models and Nonlinear Optimization - Minimum Spanning Tree",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 3-t2",
+          "title": "Prim's Algorithm - Shortest Path Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 3-t3",
+          "title": "Dijkstra's Algorithm - Single Variable Optimization Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 3-t4",
+          "title": "Fibonacci Search Method and Newton-Raphson Method - Multi-variable Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 3-t5",
+          "title": "Hook-Jeeves Pattern Search Method, Cauchy's (Steepest Descent) Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 4-t1",
+          "title": "Modern Methods of Optimization - Introduction to Genetic Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 4-t2",
+          "title": "GA Operators - Reproduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 4-t3",
+          "title": "Crossover",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 4-t4",
+          "title": "Mutation - Introduction to Fuzzy Logic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 4-t5",
+          "title": "Fuzzy Sets and Membership Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 4-t6",
+          "title": "Operations on Fuzzy Sets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-5-peaet524-mModule 4-t7",
+          "title": "Optimization of Fuzzy Systems - Basics of Neural Network Based Optimization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

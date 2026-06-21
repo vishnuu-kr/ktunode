@@ -1,0 +1,489 @@
+{
+  "id": "peert416-electronics-and-computer-engineering-s3",
+  "code": "PEERT416",
+  "name": "OBJECT ORIENTED PROGRAMMING USING JAVA",
+  "branchId": "electronics-and-computer-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t1",
+          "title": "Basic Object-Oriented Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t2",
+          "title": "Introduction to Java - Java Programming and Runtime Environment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t3",
+          "title": "Development Platforms - Java Virtual Machine (JVM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t4",
+          "title": "Java Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t5",
+          "title": "Bytecode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t6",
+          "title": "Java Buzzwords",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t7",
+          "title": "Java Program Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t8",
+          "title": "Comments, Primitive Data Types - Integers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t9",
+          "title": "Floating Point Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t10",
+          "title": "Characters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t11",
+          "title": "Boolean, Literals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t12",
+          "title": "Operators - Arithmetic Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t13",
+          "title": "Bitwise Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t14",
+          "title": "Relational Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t15",
+          "title": "Boolean Logical Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t16",
+          "title": "Assignment Operator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t17",
+          "title": "Conditional (Ternary) Operator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t18",
+          "title": "Operator Precedence, Control Statements - Selection Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 1-t19",
+          "title": "Iteration Statements and Jump Statements",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t1",
+          "title": "Object Oriented Programming in Java - Class Fundamentals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t2",
+          "title": "Declaring Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t3",
+          "title": "Introduction to Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t4",
+          "title": "Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t5",
+          "title": "this Keyword",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t6",
+          "title": "Method Overloading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t7",
+          "title": "Using Objects as Parameters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t8",
+          "title": "Returning Objects, Static Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t9",
+          "title": "Final Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t10",
+          "title": "Inner Classes, Inheritance - Super Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t11",
+          "title": "Sub Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t12",
+          "title": "The Keyword super",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t13",
+          "title": "protected Members",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t14",
+          "title": "Calling Order of Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t15",
+          "title": "Method Overriding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t16",
+          "title": "The Object Class",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t17",
+          "title": "Abstract Classes and Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t18",
+          "title": "Using final with Inheritance, Packages and Interfaces - Defining Package",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t19",
+          "title": "CLASSPATH",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t20",
+          "title": "Access Protection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t21",
+          "title": "Importing Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 2-t22",
+          "title": "Interfaces",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t1",
+          "title": "Exception Handling - Checked Exceptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t2",
+          "title": "Unchecked Exceptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t3",
+          "title": "try Block and catch Clause",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t4",
+          "title": "Multiple catch Clauses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t5",
+          "title": "Nested try Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t6",
+          "title": "throw",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t7",
+          "title": "throws and finally, Java Library - String Handling - String Constructors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t8",
+          "title": "String Length",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t9",
+          "title": "Special String Operations - Character Extraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t10",
+          "title": "String Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t11",
+          "title": "Searching Strings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t12",
+          "title": "Modifying Strings, Multithreaded Programming - The Java Thread Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t13",
+          "title": "The Main Thread",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t14",
+          "title": "Creating Thread",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t15",
+          "title": "Creating Multiple Threads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t16",
+          "title": "Synchronization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t17",
+          "title": "Suspending",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 3-t18",
+          "title": "Resuming and Stopping Threads",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t1",
+          "title": "Event Handling - Event Handling Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t2",
+          "title": "Delegation Event Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t3",
+          "title": "Event Classes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t4",
+          "title": "Sources of Events",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t5",
+          "title": "Event Listener Interfaces, Swings Fundamentals - Swing Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t6",
+          "title": "Components and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t7",
+          "title": "Swing Packages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t8",
+          "title": "Event Handling in Swings",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t9",
+          "title": "Swing Layout Managers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t10",
+          "title": "Exploring Swings - JFrame",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t11",
+          "title": "JLabel",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t12",
+          "title": "Swing Buttons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t13",
+          "title": "JText Field, Java Database Connectivity (JDBC) - JDBC Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t14",
+          "title": "Creating and Executing Queries - create table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t15",
+          "title": "delete",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t16",
+          "title": "insert",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-computer-engineering-3-peert416-mModule 4-t17",
+          "title": "select",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

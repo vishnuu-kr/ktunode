@@ -1,0 +1,657 @@
+{
+  "id": "pebmt746-biomedical-engineering-s7",
+  "code": "PEBMT746",
+  "name": "ADVANCED COMPUTER PROGRAMMING TECHNIQUES",
+  "branchId": "biomedical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t1",
+          "title": "Reasons for Studying Concepts of Programming Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t2",
+          "title": "Programming Domains",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t3",
+          "title": "Language Evaluation Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t4",
+          "title": "Influences on Language Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t5",
+          "title": "Language Categories",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t6",
+          "title": "Language Design Trade-offs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t7",
+          "title": "Implementation Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t8",
+          "title": "Programming Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t9",
+          "title": "Evolution of Major Programming Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t10",
+          "title": "Syntax and Semantics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t11",
+          "title": "General Problem of Describing Syntax",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t12",
+          "title": "Formal Methods of Describing Syntax",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t13",
+          "title": "Attribute Grammars",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 1-t14",
+          "title": "Describing the Meanings of Programs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t2",
+          "title": "Names",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t3",
+          "title": "Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t4",
+          "title": "Concept of Binding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t5",
+          "title": "Scope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t6",
+          "title": "Scope and Lifetime",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t7",
+          "title": "Referencing Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t8",
+          "title": "Named Constants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t9",
+          "title": "Data Types: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t10",
+          "title": "Primitive",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t11",
+          "title": "Character",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t12",
+          "title": "String Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t13",
+          "title": "User Defined Ordinal Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t14",
+          "title": "Array",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t15",
+          "title": "Associative Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t16",
+          "title": "Record",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t17",
+          "title": "Tuple Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t18",
+          "title": "List Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t19",
+          "title": "Union Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t20",
+          "title": "Pointer and Reference Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t21",
+          "title": "Type Checking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t22",
+          "title": "Strong Typing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t23",
+          "title": "Type Equivalence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t24",
+          "title": "Expressions and Statements: Arithmetic Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t25",
+          "title": "Overloaded Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t26",
+          "title": "Type Conversions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t27",
+          "title": "Relational and Boolean Expressions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t28",
+          "title": "Short-Circuit Evaluation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t29",
+          "title": "Assignment Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t30",
+          "title": "Mixed Mode Assignment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t31",
+          "title": "Control Structures: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t32",
+          "title": "Selection Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t33",
+          "title": "Iterative Statements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t34",
+          "title": "Unconditional Branching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 2-t35",
+          "title": "Guarded Commands",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t1",
+          "title": "Fundamentals of Subprograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t2",
+          "title": "Design Issues for Subprograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t3",
+          "title": "Local Referencing Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t4",
+          "title": "Parameter Passing Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t5",
+          "title": "Parameters that are Subprograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t6",
+          "title": "Calling Subprograms Indirectly",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t7",
+          "title": "Overloaded Subprograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t8",
+          "title": "Generic Subprograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t9",
+          "title": "Design Issues for Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t10",
+          "title": "User Defined Overloaded Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t11",
+          "title": "Closures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t12",
+          "title": "Co-routines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t13",
+          "title": "Implementing Subprograms: General Semantics of Calls and Returns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t14",
+          "title": "Implementing Simple Subprograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t15",
+          "title": "Implementing Subprograms with Stack-Dynamic Local Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t16",
+          "title": "Nested Subprograms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t17",
+          "title": "Blocks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t18",
+          "title": "Implementing Dynamic Scoping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t19",
+          "title": "Abstract Data Types: The Concept of Abstraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t20",
+          "title": "Introduction to Data Abstraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t21",
+          "title": "Design Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t22",
+          "title": "Language Examples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t23",
+          "title": "Parameterized ADT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t24",
+          "title": "Encapsulation Constructs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 3-t25",
+          "title": "Naming Encapsulations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t1",
+          "title": "Design Issues for OOP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t2",
+          "title": "OOP in Smalltalk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t3",
+          "title": "Java",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t4",
+          "title": "Ada 95",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t5",
+          "title": "Ruby",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t6",
+          "title": "Implementation of Object-Oriented Constructs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t7",
+          "title": "Concurrency: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t8",
+          "title": "Introduction to Subprogram Level Concurrency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t9",
+          "title": "Semaphores",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t10",
+          "title": "Monitors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t11",
+          "title": "Message Passing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t12",
+          "title": "Ada Support for Concurrency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t13",
+          "title": "Java Threads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t14",
+          "title": "Concurrency in Functional Languages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t15",
+          "title": "Statement Level Concurrency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t16",
+          "title": "Exception Handling and Event Handling: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t17",
+          "title": "Exception Handling in Ada",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t18",
+          "title": "Java",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t19",
+          "title": "Introduction to Event Handling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t20",
+          "title": "Event Handling with Java and C#",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t21",
+          "title": "Scripting Language: Pragmatics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t22",
+          "title": "Key Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t23",
+          "title": "Case Study: Python - Values and Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t24",
+          "title": "Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t25",
+          "title": "Storage and Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t26",
+          "title": "Bindings and Scope",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t27",
+          "title": "Procedural Abstraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t28",
+          "title": "Data Abstraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t29",
+          "title": "Separate Compilation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-7-pebmt746-mModule 4-t30",
+          "title": "Module Library",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

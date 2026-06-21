@@ -1,0 +1,237 @@
+{
+  "id": "pciet501-industrial-engineering-s5",
+  "code": "PCIET501",
+  "name": "DATA ANALYTICS",
+  "branchId": "industrial-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 1-t1",
+          "title": "Need for Data Analysis, Collection of Data, Organization and Presentation of Data, Primary Types of Measurement Scales - Nominal, Ordinal, Interval and Ratio Scales",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 1-t2",
+          "title": "Deciles, Quartiles and Percentiles, Descriptive Statistics: Measures of Central Tendency, Measures of Variability, Skewness and Kurtosis, Chebyshev's Theorem, the Empirical Rule, Exploratory Data Analysis, Overview of Discrete and Continuous Probability Distributions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t1",
+          "title": "Samples and Population",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t2",
+          "title": "Sampling Process",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t3",
+          "title": "Non-Probability and Probability Sampling - Different Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t4",
+          "title": "Determination of Sample Size",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t5",
+          "title": "Introduction to Sampling Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t6",
+          "title": "Central Limit Theorem, Estimators: Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t7",
+          "title": "Point Estimates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 2-t8",
+          "title": "Interval Estimates and Confidence Intervals",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t1",
+          "title": "Formulation of Hypothesis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t2",
+          "title": "Type I and Type II Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t3",
+          "title": "Power of the Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t4",
+          "title": "One Sample and Two Sample Tests - Z-Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t5",
+          "title": "T-Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t6",
+          "title": "Chi-Square Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t7",
+          "title": "F-Test, Non-Parametric Methods: K-S Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t8",
+          "title": "Sign Test for Paired Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t9",
+          "title": "One Sample Runs Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t10",
+          "title": "Rank Sum Tests - Mann-Whitney U-Test and Kruskal-Wallis Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t11",
+          "title": "Analysis of Variance: Theory and Computations of ANOVA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t12",
+          "title": "ANOVA Table",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t13",
+          "title": "Two-Way ANOVA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t14",
+          "title": "Blocking Designs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 3-t15",
+          "title": "Factorial Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t1",
+          "title": "Correlation Analysis - Pearson Correlation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t2",
+          "title": "Spearman's Rank Correlation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t3",
+          "title": "Significance of Correlation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t4",
+          "title": "Estimation Using the Regression Line",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t5",
+          "title": "Multiple Regression - K-Variable Multiple Regression Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t6",
+          "title": "F-Test of a Multiple Regression Model, Introduction to Index Numbers, Overview of Multivariate Techniques - Factor Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t7",
+          "title": "Multidimensional Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t8",
+          "title": "Cluster Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-5-pciet501-mModule 4-t9",
+          "title": "Discriminant Analysis and Conjoint Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

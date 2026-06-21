@@ -1,0 +1,141 @@
+{
+  "id": "pcmut402-automobile-engineering-s4",
+  "code": "PCMUT402",
+  "name": "MECHANICS OF SOLIDS",
+  "branchId": "automobile-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 1-t1",
+          "title": "Introduction to Analysis of Deformable Bodies and Types of External Loads - Normal, Shear, Bending and Bearing Stress",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 1-t2",
+          "title": "Linear and Shear Strains, Hooke's Law, Stress-Strain Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 1-t3",
+          "title": "Concepts of Isotropy, Orthotropy, and Anisotropy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 1-t4",
+          "title": "Young's Modulus, Bulk Modulus, Rigidity Modulus, Poisson's Ratio, Relationship Between Elastic Constants",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 1-t5",
+          "title": "Deformation in Axially Loaded Bars - Uniform Cross Section, Varying Cross Section, Dissimilar Materials, Principle of Superposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 1-t6",
+          "title": "Thermal Effects in Simple and Composite Bars",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 2-t1",
+          "title": "Shafts: Torsion Theory of Elastic Circular Bars, Assumptions and Limitations, Polar Modulus, Torsional Rigidity, Shaft Design for Torsional Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 2-t2",
+          "title": "Beams: Classification, Diagrammatic Conventions for Supports and Loading",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 2-t3",
+          "title": "Differential Equations Between Load, Shear Force, and Bending Moment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 2-t4",
+          "title": "Shear Force and Bending Moment Diagrams of Cantilever and Simply Supported Beam with Point Load/UDL, Point of Inflection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 3-t1",
+          "title": "Pure Bending: Flexure Formula for Beams, Assumptions and Limitations, Section Modulus, Flexural Rigidity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 3-t2",
+          "title": "Shearing Stress Formula for Beams, Shear Stress Distribution in Beam Section, Derivation and Problems for Rectangular Section Only, Assumptions and Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 3-t3",
+          "title": "Deflection of Beams: Moment-Curvature Relation, Assumptions and Limitations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 3-t4",
+          "title": "Double Integration Method, Macaulay's Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 4-t1",
+          "title": "Stress on an Inclined Plane due to Uniaxial Stress, Biaxial Stress, and Two Normal Stresses Accompanied by Shear Stresses",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 4-t2",
+          "title": "Principal Planes and Stresses, Mohr's Circle of Stress",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 4-t3",
+          "title": "Buckling and Stability of Long Columns, Euler's Buckling/Crippling Load for Columns with Different End Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "automobile-engineering-4-pcmut402-mModule 4-t4",
+          "title": "Euler Equation Derivation for Both Ends Hinged Only, Rankine's Formula",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

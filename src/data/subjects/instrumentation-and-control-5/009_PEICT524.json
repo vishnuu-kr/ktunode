@@ -1,0 +1,165 @@
+{
+  "id": "peict524-instrumentation-and-control-s5",
+  "code": "PEICT524",
+  "name": "NUMERICAL COMPUTATION USING PYTHON",
+  "branchId": "instrumentation-and-control",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 1-t1",
+          "title": "Bisection Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 1-t2",
+          "title": "Newton-Raphson Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 1-t3",
+          "title": "Secant Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 1-t4",
+          "title": "False Position Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 1-t5",
+          "title": "Fixed-Point Iteration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 1-t6",
+          "title": "Convergence and Error Analysis of Root-Finding Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 1-t7",
+          "title": "Solving Nonlinear Equations Using the Above Methods in Python",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 2-t1",
+          "title": "Newton's Forward and Backward Difference Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 2-t2",
+          "title": "Polynomial Interpolation: Lagrange Interpolation and Newton's Divided Difference Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 2-t3",
+          "title": "Spline Interpolation: Cubic Splines and B-Splines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 2-t4",
+          "title": "Error Analysis in Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 2-t5",
+          "title": "Implementing Interpolation Methods in Python",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 3-t1",
+          "title": "Finite Difference Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 3-t2",
+          "title": "Error Analysis in Numerical Differentiation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 3-t3",
+          "title": "Numerical Integration: Trapezoidal Rule, Simpson's Rule, Gaussian Quadrature, Adaptive Quadrature Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 3-t4",
+          "title": "Writing Python Programs to Perform Numerical Differentiation and Integration",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 4-t1",
+          "title": "Euler's Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 4-t2",
+          "title": "Runge-Kutta Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 4-t3",
+          "title": "Multistep Methods: Adams-Bashforth and Adams-Moulton Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 4-t4",
+          "title": "Boundary Value Problems: Shooting Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 4-t5",
+          "title": "Finite Difference Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-5-peict524-mModule 4-t6",
+          "title": "Solving ODEs Using Python",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

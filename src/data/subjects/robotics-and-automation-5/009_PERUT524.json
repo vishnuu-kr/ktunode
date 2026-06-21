@@ -1,0 +1,177 @@
+{
+  "id": "perut524-robotics-and-automation-s5",
+  "code": "PERUT524",
+  "name": "SIGNALS AND SYSTEMS",
+  "branchId": "robotics-and-automation",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 1-t1",
+          "title": "Differential Equation Representation of Continuous Time Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 1-t2",
+          "title": "Difference Equation Representation of Discrete Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t1",
+          "title": "Sampling of Continuous Time Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t2",
+          "title": "Sampling Theorem for Low Pass Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t3",
+          "title": "Aliasing, Z Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t4",
+          "title": "Inverse Z Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t5",
+          "title": "Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t6",
+          "title": "Unilateral Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t7",
+          "title": "Frequency Domain Representation of Discrete Time Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t8",
+          "title": "Discrete Time Fourier Series and its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 2-t9",
+          "title": "Discrete Time Fourier Transform (DTFT) and its Properties",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 3-t1",
+          "title": "The Discrete Fourier Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 3-t2",
+          "title": "Inverse Discrete Fourier Transform (IDFT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 3-t3",
+          "title": "Properties of DFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 3-t4",
+          "title": "Circular Convolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 3-t5",
+          "title": "Linear Filtering Methods Based on the DFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 3-t6",
+          "title": "Linear Convolution Using Circular Convolution, Overlap Save and Overlap Add Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 4-t1",
+          "title": "Radix-2 Decimation in Time and Decimation in Frequency FFT Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 4-t2",
+          "title": "IDFT Computation Using Radix-2 FFT Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 4-t3",
+          "title": "FIR and IIR Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 4-t4",
+          "title": "FIR Filter Structures: Direct Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 4-t5",
+          "title": "Cascade Form, IIR Filter Structures: Direct Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 4-t6",
+          "title": "Transposed Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-5-perut524-mModule 4-t7",
+          "title": "Cascade Form and Parallel Form",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

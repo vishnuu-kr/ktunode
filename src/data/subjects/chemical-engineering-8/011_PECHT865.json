@@ -1,0 +1,303 @@
+{
+  "id": "pecht865-chemical-engineering-s8",
+  "code": "PECHT865",
+  "name": "DESIGN AND ANALYSIS OF EXPERIMENTS",
+  "branchId": "chemical-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t1",
+          "title": "Strategy of Experimentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t2",
+          "title": "Typical Applications of Experimental Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t3",
+          "title": "Basic Principles of Experimental Design: Replication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t4",
+          "title": "Randomization and Blocking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t5",
+          "title": "Guidelines for Designing the Experiments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t6",
+          "title": "Basic Statistical Concepts: Concept of Random Variable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t7",
+          "title": "Probability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t8",
+          "title": "Density Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t9",
+          "title": "Cumulative Distribution Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t10",
+          "title": "Measure of Central Tendency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t11",
+          "title": "Measures of Variability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t12",
+          "title": "Sampling and Sampling Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t13",
+          "title": "Statistical Distributions: Normal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t14",
+          "title": "Log Normal & Weibull Distributions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t15",
+          "title": "Hypothesis Testing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 1-t16",
+          "title": "Use of R/Ms-Excel/MINITAB/Design Expert for Statistical Analysis of Data (Self Study)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t1",
+          "title": "Experiments with Single Factor: The Analysis of Variance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t2",
+          "title": "Analysis of Fixed Effect Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t3",
+          "title": "Model Adequacy Checking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t4",
+          "title": "Contrasts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t5",
+          "title": "Orthogonal Contrasts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t6",
+          "title": "Regression Models and ANOVA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t7",
+          "title": "Violation of Normality Assumption: Kruskal-Wallis Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t8",
+          "title": "Randomized Block Designs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t9",
+          "title": "Latin Square Designs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t10",
+          "title": "Balanced Incomplete Block Designs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 2-t11",
+          "title": "Use of MS-Excel/R/MINITAB/Design Expert for Analysis of ANOVA (Self Study)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 3-t1",
+          "title": "Definition, Estimating Model Parameters, Fitting Response Curves and Surfaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 3-t2",
+          "title": "The 2k Factorial Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 3-t3",
+          "title": "Blocking and Confounding in the 2k Factorial Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 3-t4",
+          "title": "Focus of 2² and 2³ Designs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 3-t5",
+          "title": "Use of R/MINITAB/Design Expert/Quantum Boost/Modde for Designing Experiments Using Factorial Design (Self Study)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t1",
+          "title": "Linear and Multiple Linear Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t2",
+          "title": "Estimation of Parameters in Linear Regression Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t3",
+          "title": "Hypothesis Testing in Multiple Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t4",
+          "title": "Confidence Intervals in Multiple Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t5",
+          "title": "Regression Model Diagnostics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t6",
+          "title": "Testing for Lack of Fit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t7",
+          "title": "Response Surface Methodology: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t8",
+          "title": "Method of Steepest Ascent",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t9",
+          "title": "Response Surface Designs for First-Order Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t10",
+          "title": "Analysis of a Second Order Response Surface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t11",
+          "title": "Central Composite Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t12",
+          "title": "Use of MS-Excel/MINITAB/Design Expert/Quantum Boost/Modde/R for Regression Analysis and Evaluation (Self Study)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "chemical-engineering-8-pecht865-mModule 4-t13",
+          "title": "Use of MINITAB/Design Expert/Quantum Boost/Modde/R for Analysis and Evaluation Using Response Surface Methodology (Self Study)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

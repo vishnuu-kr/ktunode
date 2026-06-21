@@ -1,0 +1,171 @@
+{
+  "id": "pccpl507-computer-science-and-engineering-cyber-security-s5",
+  "code": "PCCPL507",
+  "name": "DSP LAB",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t1",
+          "title": "Simulation of Signals: Unit Impulse Signal, Unit Pulse Signal, Unit Ramp Signal, Bipolar Pulse, and Triangular Signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t2",
+          "title": "Verification of Sampling Theorem Using Interpolation Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t3",
+          "title": "Verification of DFT Properties (Linearity and Parseval's Theorem)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t4",
+          "title": "Computation of DFT of Square Pulse and Sinc Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t5",
+          "title": "Finding DFT/IDFT of a Given DT Signal",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t6",
+          "title": "Linear Convolution Using DFT (Overlap-Add and Overlap-Save Methods)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t7",
+          "title": "Auto and Cross Correlation of Two Sequences and Verification of Their Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t8",
+          "title": "N-Point DFT of a Given Sequence and Plotting Magnitude and Phase Spectrum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t9",
+          "title": "Design and Implementation of Lowpass and Highpass FIR Filter Using Window Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t10",
+          "title": "Design and Implementation of Digital IIR Filter (Lowpass and Highpass)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t11",
+          "title": "Linear Convolution of Two Sequences Using DSP Kit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t12",
+          "title": "Circular Convolution of Two Sequences Using DSP Kit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t13",
+          "title": "N-Point DFT of a Given Sequence Using DSP Kit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t14",
+          "title": "Impulse Response of First Order and Second Order System Using DSP Kit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t15",
+          "title": "Generation of Sine Wave and Standard Test Signals Using DSP Kit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t16",
+          "title": "Sampling an Analog Signal and Studying Aliasing Effect Using DSP Kit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t17",
+          "title": "Study of Embedded Components Such as Sensors and Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t18",
+          "title": "Signal Integration, Differentiation, and Logarithmic Computation Activities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t19",
+          "title": "Signal Addition, Subtraction, and Multiplication Computation Activities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t20",
+          "title": "Implementation and Calibration of Humidity Sensor with Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t21",
+          "title": "Implementation and Calibration of Pressure Sensor with Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t22",
+          "title": "Implementation and Calibration of Temperature Sensor with Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t23",
+          "title": "Implementation and Validation of RPM Controller with Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t24",
+          "title": "Implementation and Validation of Illumination Controller with Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t25",
+          "title": "Implementation and Validation of Water Level Controller with Microcontrollers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pccpl507-mExperiment 2-t26",
+          "title": "Implementation and Validation of Temperature Controller with Microcontrollers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

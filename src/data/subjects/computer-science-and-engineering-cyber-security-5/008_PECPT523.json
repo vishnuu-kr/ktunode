@@ -1,0 +1,189 @@
+{
+  "id": "pecpt523-computer-science-and-engineering-cyber-security-s5",
+  "code": "PECPT523",
+  "name": "CRYPTOGRAPHY FOR CPS",
+  "branchId": "computer-science-and-engineering-cyber-security",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 1-t1",
+          "title": "Integer Arithmetic - Divisibility - Greatest Common Divisor - Extended Euclidean Algorithm - Linear Diophantine Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 1-t2",
+          "title": "Modular Arithmetic - Modulo Operator - Congruence - Addition and Multiplicative Inverse",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 1-t3",
+          "title": "Algebraic Structures - Field - Finite Fields of the Form GF(p) and GF(2^n) - Polynomial Arithmetic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 1-t4",
+          "title": "Prime Numbers - Fermat's and Euler's Theorem - Prime Factorization by Trial Division Method - Chinese Remainder Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 1-t5",
+          "title": "Security Goals - Security Services - Confidentiality - Integrity - Authentication - Non-repudiation - Access Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 1-t6",
+          "title": "Security Mechanisms - Encipherment - Data Integrity - Signature - Authentication Exchange - Traffic Padding - Routing Control - Notarization - Access Control",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t1",
+          "title": "Introduction to Cryptography - Classification of Cryptosystems - Cryptanalytic Attacks - Cipher Properties - Confusion - Diffusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t2",
+          "title": "Classical Cryptosystems - Substitution Techniques - Monoalphabetic Cipher - Caesar Cipher - Affine Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t3",
+          "title": "Polyalphabetic Ciphers - Autokey Cipher - Playfair Cipher - Hill Cipher - Vigenere Cipher - One Time Pad Cipher",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t4",
+          "title": "Stream and Block Ciphers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t5",
+          "title": "Modern Secret Key Ciphers - Substitution Box - Permutation Box - Product Ciphers - Data Encryption Standard - DES - Structure of DES - DES Attacks - 2-DES - 3-DES",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t6",
+          "title": "Advanced Encryption Standard - AES - Structure - Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t7",
+          "title": "Cryptographic Hash Functions - Properties - Secure Hash Algorithm - SHA-512 Logic - SHA-512 Round Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 2-t8",
+          "title": "Message Authentication Code - Hash-based Message Authentication Code - HMAC - Cipher-based Message Authentication Code - CMAC",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 3-t1",
+          "title": "Public Key Cryptosystems - PKC - Types of PKC - Trapdoor - One-way Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 3-t2",
+          "title": "RSA Cryptosystem - Key Generation - Encryption - Decryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 3-t3",
+          "title": "ElGamal Cryptosystem - Key Generation - Encryption - Decryption",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 3-t4",
+          "title": "Diffie-Hellman Key Exchange Protocol - Man in the Middle Attack on Diffie-Hellman Protocol",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 3-t5",
+          "title": "Digital Signature - Signing - Verification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 3-t6",
+          "title": "Digital Signature Forgery - Existential Forgery - Selective Forgery - Universal Forgery",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 3-t7",
+          "title": "RSA Digital Signature Scheme - ElGamal Signature Scheme",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 4-t1",
+          "title": "Symmetric Key Distribution using Symmetric and Asymmetric Encryption - Distribution of Public Keys - Public Announcement - Public Available Directory - Public-key Authority - Public Key Certificates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 4-t2",
+          "title": "Electronic Mail Security - Pretty Good Privacy - PGP Message Format - Transmission and Reception of PGP Messages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 4-t3",
+          "title": "IP Security Overview - IP Authentication Header - Encapsulating Security Payload - Distributed Denial of Service Attacks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 4-t4",
+          "title": "Secure Electronic Transaction - Payment Processing - Dual Signature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-cyber-security-5-pecpt523-mModule 4-t5",
+          "title": "Firewalls - Firewall Design Principles",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

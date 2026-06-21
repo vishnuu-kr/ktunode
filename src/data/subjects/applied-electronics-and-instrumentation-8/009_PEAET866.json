@@ -1,0 +1,195 @@
+{
+  "id": "peaet866-applied-electronics-and-instrumentation-s8",
+  "code": "PEAET866",
+  "name": "WAVELETS AND MULTIRATE ANALYSIS",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 1-t1",
+          "title": "Introduction to Multirate Signal Processing and Its Applications - Multirate System Fundamentals - Basic Multi-Rate Operations - Up Sampling and Down Sampling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 1-t2",
+          "title": "Time Domain and Frequency Domain Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 1-t3",
+          "title": "Need for Anti-Aliasing and Anti-Imaging Filters - Noble Identities - Fractional Sampling Rate Alteration - Type 1 and Type 2 Polyphase Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 1-t4",
+          "title": "Efficient Structures for Decimation and Interpolation Filters - Introduction to Digital Filter Banks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 1-t5",
+          "title": "Efficient Implementation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 1-t6",
+          "title": "Two Channel Quadrature Mirror Filter Bank (QMF)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 1-t7",
+          "title": "Perfect Reconstruction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t1",
+          "title": "Time-Frequency Analysis of Signals - Spectral Analysis of Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t2",
+          "title": "Spectral Leakage by Windowing Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t3",
+          "title": "Time and Frequency Localization of Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t4",
+          "title": "The Uncertainty Principle and Its Implications - Short Time Fourier Transform - Continuous Time and Discrete Time STFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t5",
+          "title": "Filter Bank Implementation of STFT - Continuous Wavelet Transform - Concept of Wavelets",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t6",
+          "title": "CWT for Signal Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t7",
+          "title": "Condition of Admissibility and Its Implications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t8",
+          "title": "Inverse Continuous Wavelet Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 2-t9",
+          "title": "Properties of CWT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 3-t1",
+          "title": "Concept of Discrete Wavelet Transform (DWT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 3-t2",
+          "title": "Time-Frequency Tiling of DWT and Comparison to STFT - Haar Scaling and Wavelet Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 3-t3",
+          "title": "Function Spaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 3-t4",
+          "title": "Refinement Relation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 3-t5",
+          "title": "Wavelet Decomposition of Signals - Designing Orthogonal Wavelet Systems - Relation of DWT to Filter Banks for Signal Decomposition and Reconstruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 3-t6",
+          "title": "Multi Resolution Analysis (MRA) - Concept of MRA and Relating It to Filter Banks - Computation of DWT Using Mallat Algorithm and Lifting Scheme",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 4-t1",
+          "title": "Wavelet Transform Applications in Image Processing - Wavelet Transform of Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 4-t2",
+          "title": "Wavelet Transform Based Image Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 4-t3",
+          "title": "EZW Coding - Applications of Wavelet Transform in Image Denoising - Edge Detection and Object Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 4-t4",
+          "title": "Wavelet Transform Applications in Audio Processing - Application of Wavelets in Audio Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-8-peaet866-mModule 4-t5",
+          "title": "Wavelet Based Audio Coding",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

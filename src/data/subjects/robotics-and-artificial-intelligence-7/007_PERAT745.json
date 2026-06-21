@@ -1,0 +1,195 @@
+{
+  "id": "perat745-robotics-and-artificial-intelligence-s7",
+  "code": "PERAT745",
+  "name": "AERIAL ROBOTICS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 1-t1",
+          "title": "Introduction to UAV Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 1-t2",
+          "title": "Classes of UAV Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 1-t3",
+          "title": "Basic Aerodynamics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 1-t4",
+          "title": "Stability and Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 1-t5",
+          "title": "Propulsion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 1-t6",
+          "title": "Payloads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 1-t7",
+          "title": "Launch and Recovery",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 2-t1",
+          "title": "Hardware Anatomy of Quadcopter - Power Train and Propellers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 2-t2",
+          "title": "Motors, Total Lift, Electronic Speed Controllers, Flight Battery, Radio Transmitter and Receiver, Flight Controller, Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 2-t3",
+          "title": "Compass",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 2-t4",
+          "title": "Camera Assembling for Quadcopter - Connectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 2-t5",
+          "title": "Mounting of Propellers and Powering Up",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 3-t1",
+          "title": "Crash Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 3-t2",
+          "title": "Common Issues",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 3-t3",
+          "title": "Voltage Testing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t1",
+          "title": "Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t2",
+          "title": "Control of Quadcopter and Case Studies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t3",
+          "title": "Flight Performance Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t4",
+          "title": "Dynamics and Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t5",
+          "title": "Design Challenge",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t6",
+          "title": "Guidance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t7",
+          "title": "Navigation and Control of Drones",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t8",
+          "title": "Applications of Drones in Agriculture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t9",
+          "title": "Smart Cities",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t10",
+          "title": "Delivery Drones",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t11",
+          "title": "Health Care",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-7-perat745-mModule 4-t12",
+          "title": "Defense Surveillance",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

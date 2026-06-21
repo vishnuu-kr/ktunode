@@ -1,0 +1,207 @@
+{
+  "id": "oecst834-artificial-intelligence-and-data-science-s8",
+  "code": "OECST834",
+  "name": "INTERNET OF THINGS",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 1-t1",
+          "title": "Introduction to IoT - Physical Design of IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 1-t2",
+          "title": "Logical Design of IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 1-t3",
+          "title": "IoT Levels and Deployment Templates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 1-t4",
+          "title": "Domain Specific IoT - Home Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 1-t5",
+          "title": "Energy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 1-t6",
+          "title": "Agriculture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 1-t7",
+          "title": "Health and Lifestyle",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t1",
+          "title": "IoT and M2M",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t2",
+          "title": "Difference Between IoT and M2M",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t3",
+          "title": "Software Defined Networking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t4",
+          "title": "Network Function Virtualization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t5",
+          "title": "Need for IoT System Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t6",
+          "title": "Simple Network Management Protocol (SNMP), NETCONF, and YANG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t7",
+          "title": "LPWAN Applications and Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t8",
+          "title": "Cellular (3GPP) and Non-3GPP Standards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 2-t9",
+          "title": "LPWAN Protocols - Sigfox, LoRa, LoRaWAN, Weightless, NB-IoT, and LTE-M",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 3-t1",
+          "title": "Developing IoT - IoT Design Methodology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 3-t2",
+          "title": "Case Study on IoT System for Weather Monitoring",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 3-t3",
+          "title": "Motivations for Using Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 3-t4",
+          "title": "IoT System Logical Design Using Python",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 3-t5",
+          "title": "Python Packages of Interest for IoT - JSON",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 3-t6",
+          "title": "HTTPLib and URLLib",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 3-t7",
+          "title": "SMTPLib",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 4-t1",
+          "title": "Programming Raspberry Pi with Python - Controlling LED with Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 4-t2",
+          "title": "Interfacing an LED and Switch with Raspberry Pi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 4-t3",
+          "title": "Other IoT Devices - PcDino",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 4-t4",
+          "title": "BeagleBone Black",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 4-t5",
+          "title": "Cubieboard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst834-mModule 4-t6",
+          "title": "Data Analytics for IoT",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "id": "pecst418-computer-science-and-engineering-s4",
+  "code": "PECST418",
+  "name": "COMPUTATIONAL GEOMETRY",
+  "branchId": "computer-science-and-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t1",
+          "title": "Introduction to Computational Geometry: Basics of Computational Geometry - Introduction and Applications of Computational Geometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t2",
+          "title": "Geometric Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t3",
+          "title": "and Their Representations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t4",
+          "title": "Basic Geometric Primitives: Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t5",
+          "title": "Lines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t6",
+          "title": "Segments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t7",
+          "title": "Polygons; Convex Hulls - Definition and Properties of Convex Hulls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t8",
+          "title": "Graham's Scan Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t9",
+          "title": "Jarvis's March (Gift Wrapping) Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t10",
+          "title": "Divide and Conquer Algorithm for Convex Hulls; Line Segment Intersection - Problem Definition and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t11",
+          "title": "Plane Sweep Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 1-t12",
+          "title": "Bentley-Ottmann Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t1",
+          "title": "Polygon Triangulation and Voronoi Diagrams: Polygon Triangulation - Definition and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t2",
+          "title": "Triangulation of Monotone Polygons",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t3",
+          "title": "Ear Clipping Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t4",
+          "title": "Chazelle's Algorithm; Voronoi Diagrams - Definition and Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t5",
+          "title": "Incremental Construction Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t6",
+          "title": "Fortune's Sweep Line Algorithm; Delaunay Triangulations - Definition and Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t7",
+          "title": "Relationship with Voronoi Diagrams",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t8",
+          "title": "Bowyer-Watson Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 2-t9",
+          "title": "Lawson's Flip Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t1",
+          "title": "Range Searching and Point Location: Range Searching - Problem Definition and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t2",
+          "title": "1-Dimensional Range Searching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t3",
+          "title": "K-Dimensional Range Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t4",
+          "title": "Fractional Cascading; Point Location - Problem Definition and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t5",
+          "title": "Trapezoidal Map and Randomized Incremental Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t6",
+          "title": "Kirkpatrick's Point Location Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t7",
+          "title": "Binary Space Partitioning - Definition and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t8",
+          "title": "BSP Trees Construction and Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 3-t9",
+          "title": "Use in Computer Graphics and Collision Detection",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t1",
+          "title": "Advanced Topics and Applications: Arrangements of Lines and Duality - Arrangements of Lines and Complexity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t2",
+          "title": "Zone Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t3",
+          "title": "Duality Transform and Its Applications; Motion Planning and Geometric Optimization - Problem Definition and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t4",
+          "title": "Visibility Graphs and Shortest Path Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t5",
+          "title": "Art Gallery Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t6",
+          "title": "Linear Programming in Geometry; Computational Geometry in Practice - Computational Geometry Libraries and Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t7",
+          "title": "Applications in Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-4-pecst418-mModule 4-t8",
+          "title": "Computer Graphics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

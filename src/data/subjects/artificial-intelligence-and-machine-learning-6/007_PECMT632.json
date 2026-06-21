@@ -1,0 +1,225 @@
+{
+  "id": "pecmt632-artificial-intelligence-and-machine-learning-s6",
+  "code": "PECMT632",
+  "name": "TOPICS IN COMPUTING SYSTEMS",
+  "branchId": "artificial-intelligence-and-machine-learning",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t1",
+          "title": "Distributed System Models and Enabling Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t2",
+          "title": "The Age of Internet Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t3",
+          "title": "High Performance and High Throughput Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t4",
+          "title": "Centralized, Parallel, Distributed and Cloud Computing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t5",
+          "title": "Design Objectives of HPC and HTC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t6",
+          "title": "IoT and Cyber Physical Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t7",
+          "title": "Technologies for Network-Based Systems: Multicore CPUs and Multithreading Technologies, GPU Computing, Virtual Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 1-t8",
+          "title": "System Models for Distributed and Cloud Computing: Clusters, Grids, P2P Systems, Clouds",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t1",
+          "title": "Computer Clusters: Clustering for Massive Parallelism - Design Objectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t2",
+          "title": "Design Issues: Ensuring High Availability, Cluster Families",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t3",
+          "title": "Cluster Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t4",
+          "title": "GPU Clusters - Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t5",
+          "title": "Computer Clusters - Design Principles - Single System Image Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t6",
+          "title": "High Availability through Redundancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t7",
+          "title": "Fault Tolerant Cluster Configurations, Checkpoint and Recovery Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 2-t8",
+          "title": "Cluster Job and Resource Management: Job Scheduling Methods, Job Management System - Administration, Job Types, Migration Schemes",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 3-t1",
+          "title": "Virtualization: Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 3-t2",
+          "title": "Virtualization at Different Levels and Their Comparison",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 3-t3",
+          "title": "VMM Design Requirements, OS Level Virtualization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 3-t4",
+          "title": "Virtualization Structures and Mechanisms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 3-t5",
+          "title": "CPU, Memory and I/O Virtualization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 3-t6",
+          "title": "Virtual Clusters and Resource Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 3-t7",
+          "title": "Live VM Migration Steps, Migration of Memory, Files and Network Resources",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t1",
+          "title": "Cloud Computing, Microservices and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t2",
+          "title": "Cloud Computing and Service Models: Private, Public and Hybrid Clouds",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t3",
+          "title": "Cloud Design Objectives and Cost Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t4",
+          "title": "Infrastructure-as-a-Service, Platform-as-a-Service, Software-as-a-Service",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t5",
+          "title": "Microservices: Introduction, Advantages and Disadvantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t6",
+          "title": "Interprocess Communication - Types of Interactions, Protocol, Standard and Message Format, Discovery Service, API Gateway, Service Registry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t7",
+          "title": "Containers - Comparison of Virtual Machines and Containers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t8",
+          "title": "Introduction to Docker",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-machine-learning-6-pecmt632-mModule 4-t9",
+          "title": "Case Study - Docker Containers - Architecture, Components, Examples",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

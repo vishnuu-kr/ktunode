@@ -1,0 +1,99 @@
+{
+  "id": "pecet521-civil-engineering-s5",
+  "code": "PECET521",
+  "name": "ADVANCED STRUCTURAL ANALYSIS",
+  "branchId": "civil-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "civil-engineering-5-pecet521-mModule 1-t1",
+          "title": "Analysis of Two Hinged Arches - Support Reactions, Normal Thrust and Radial Shear at Any Section of a Parabolic Arch Due to Simple Cases of Loading, Influence Line for Horizontal Thrust, Bending Moment, Normal Thrust and Radial Shear",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-5-pecet521-mModule 1-t2",
+          "title": "Matrix Analysis of Structures: Reviewing the Definition of Flexibility and Stiffness Influence Coefficients and Concepts of Physical Approach",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "civil-engineering-5-pecet521-mModule 2-t1",
+          "title": "Introduction to Direct Stiffness Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-5-pecet521-mModule 2-t2",
+          "title": "Rotation of Axes in Two Dimensions, Stiffness Matrix of Elements in Global Co-ordinates from Element Co-ordinates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-5-pecet521-mModule 2-t3",
+          "title": "Assembly of Load Vector and Stiffness Matrix, Solution of Two Span Continuous Beam-Single Bay Single Storey Portal Frame",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "civil-engineering-5-pecet521-mModule 3-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-5-pecet521-mModule 3-t2",
+          "title": "Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-5-pecet521-mModule 3-t3",
+          "title": "Equation of Motion, D'Alembert's Principle-Damping-Free Response of Damped and Undamped Systems-Logarithmic Decrement-Single Degree of Freedom Systems Subjected to Harmonic Load",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-5-pecet521-mModule 3-t4",
+          "title": "Transient and Steady State Responses, Simple Portal Frame Problems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "civil-engineering-5-pecet521-mModule 4-t1",
+          "title": "Boundary Value Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "civil-engineering-5-pecet521-mModule 4-t2",
+          "title": "Introduction to Approximate Numerical Solutions for Solving Differential Equations, Formulation Techniques: Element Equations Using Weighted Residual Approach - The Axial Element Example",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

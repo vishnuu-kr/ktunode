@@ -1,0 +1,261 @@
+{
+  "id": "pemet528-mechanical-engineering-s5",
+  "code": "PEMET528",
+  "name": "OPERATIONS RESEARCH",
+  "branchId": "mechanical-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t1",
+          "title": "Basics of OR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t2",
+          "title": "Modelling Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t3",
+          "title": "Linear Programming (LP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t4",
+          "title": "Formulation of LP Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t5",
+          "title": "Graphical Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t6",
+          "title": "Simplex Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t7",
+          "title": "Big-M Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t8",
+          "title": "Transportation Problem: Mathematical Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t9",
+          "title": "Initial Basic Feasible Solution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t10",
+          "title": "North West Corner Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t11",
+          "title": "Least Cost Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t12",
+          "title": "Vogel's Approximation Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t13",
+          "title": "Optimality Test by MODI Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t14",
+          "title": "Assignment Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 1-t15",
+          "title": "Hungarian Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 2-t1",
+          "title": "Basic Terminologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 2-t2",
+          "title": "Processing of n Jobs through 2 Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 2-t3",
+          "title": "Processing of n Jobs through 3 Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 2-t4",
+          "title": "Processing of n Jobs through m Machines",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 2-t5",
+          "title": "Game Theory: Games with Saddle Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 2-t6",
+          "title": "Games without Saddle Points - 2 x 2 Games",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 2-t7",
+          "title": "Graphical Method for m x 2 and 2 x n Games",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t1",
+          "title": "Genetic Algorithm (GA) - Working Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t2",
+          "title": "GA Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t3",
+          "title": "Parameters Setting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t4",
+          "title": "Constraints Handling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t5",
+          "title": "Solving Simple Problems using GA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t6",
+          "title": "Simulated Annealing and Particle Swarm Optimization (Theory Only) - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t7",
+          "title": "Key Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 3-t8",
+          "title": "Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t1",
+          "title": "Scope of Queuing Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t2",
+          "title": "Importance and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t3",
+          "title": "Kendall's Notations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t4",
+          "title": "Characteristics of Queuing Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t5",
+          "title": "Performance Measures in Queuing Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t6",
+          "title": "Classic Queuing Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t7",
+          "title": "Single-Server Exponential Arrival and Service Times",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-engineering-5-pemet528-mModule 4-t8",
+          "title": "Two-Server Exponential Arrival and Service Times",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

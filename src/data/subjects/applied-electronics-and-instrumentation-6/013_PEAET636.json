@@ -1,0 +1,129 @@
+{
+  "id": "peaet636-applied-electronics-and-instrumentation-s6",
+  "code": "PEAET636",
+  "name": "BIOMEDICAL IMAGING",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t1",
+          "title": "Introduction to Biomedical Imaging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t2",
+          "title": "Introduction to Biomedical Image Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t3",
+          "title": "Medical Imaging Modalities: X-ray",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t4",
+          "title": "Ultrasound",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t5",
+          "title": "PET and Microscopy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t6",
+          "title": "Image Acquisition and Reconstruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t7",
+          "title": "Image Storage, Retrieval, and Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 1-t8",
+          "title": "Applications of Biomedical Imaging",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 2-t1",
+          "title": "Sobel, Canny, and Laplacian",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 2-t2",
+          "title": "Image Restoration and De-noising Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 3-t1",
+          "title": "Watershed, Level Set, and Graph Cut",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 3-t2",
+          "title": "Feature Extraction: Shape, Texture, and Intensity-based Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 3-t3",
+          "title": "Feature Selection and Dimensionality Reduction Techniques",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 4-t1",
+          "title": "Tumor Detection, Organ Segmentation, and Disease Diagnosis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 4-t2",
+          "title": "Evaluation Metrics for Image Analysis: Sensitivity, Specificity, and ROC Curves",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-6-peaet636-mModule 4-t3",
+          "title": "Current Trends and Future Directions in Biomedical Image Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

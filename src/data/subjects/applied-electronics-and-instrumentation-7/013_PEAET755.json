@@ -1,0 +1,243 @@
+{
+  "id": "peaet755-applied-electronics-and-instrumentation-s7",
+  "code": "PEAET755",
+  "name": "PATTERN RECOGNITION",
+  "branchId": "applied-electronics-and-instrumentation",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t1",
+          "title": "Basics of Pattern Recognition System - Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t2",
+          "title": "Various Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t3",
+          "title": "Classification of Pattern Recognition Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t4",
+          "title": "Design of Pattern Recognition System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t5",
+          "title": "Pattern Recognition Life Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t6",
+          "title": "Statistical Pattern Recognition - Review of Probability Theory",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t7",
+          "title": "Gaussian Distribution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t8",
+          "title": "Bayes Decision Theory and Classifiers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t9",
+          "title": "Optimal Solutions for Minimum Error and Minimum Risk Criteria",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t10",
+          "title": "Normal Density and Discriminant Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 1-t11",
+          "title": "Decision Surfaces",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t1",
+          "title": "Parameter Estimation Methods - Maximum-Likelihood Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t2",
+          "title": "Expectation-Maximization Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t3",
+          "title": "Bayesian Parameter Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t4",
+          "title": "Concept of Feature Extraction and Dimensionality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t5",
+          "title": "Curse of Dimensionality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t6",
+          "title": "Dimension Reduction Methods - Fisher Discriminant Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t7",
+          "title": "Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t8",
+          "title": "Hidden Markov Models (HMM) Basic Concepts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 2-t9",
+          "title": "Gaussian Mixture Models",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t1",
+          "title": "Non-Parameter Methods - Non-Parametric Techniques for Density Estimation - Parzen-Window Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t2",
+          "title": "K-Nearest Neighbour Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t3",
+          "title": "Non-Metric Methods for Pattern Classification - Non-Numeric Data or Nominal Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t4",
+          "title": "Decision Trees",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t5",
+          "title": "Concept of Construction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t6",
+          "title": "Splitting of Nodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t7",
+          "title": "Choosing of Attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t8",
+          "title": "Overfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t9",
+          "title": "Pruning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 3-t10",
+          "title": "Linear Discriminant Based Algorithm - Perceptron",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 4-t1",
+          "title": "Bagging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 4-t2",
+          "title": "Boosting/AdaBoost",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 4-t3",
+          "title": "Unsupervised Learning - Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 4-t4",
+          "title": "Algorithms for Clustering: K-means and Hierarchical Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "applied-electronics-and-instrumentation-7-peaet755-mModule 4-t5",
+          "title": "Cluster Validation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

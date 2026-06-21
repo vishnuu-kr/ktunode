@@ -1,0 +1,219 @@
+{
+  "id": "pccst503-artificial-intelligence-and-data-science-s5",
+  "code": "PCCST503",
+  "name": "MACHINE LEARNING",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t1",
+          "title": "Introduction to ML: Machine Learning vs. Traditional Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t2",
+          "title": "Machine Learning Paradigms - Supervised, Semi-Supervised, Unsupervised, Reinforcement Learning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t3",
+          "title": "Parameter Estimation - Maximum Likelihood Estimation (MLE) and Maximum Aposteriori Estimation (MAP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t4",
+          "title": "Bayesian Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t5",
+          "title": "Supervised Learning: Feature Representation and Problem Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t6",
+          "title": "Role of Loss Functions and Optimization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t7",
+          "title": "Regression - Linear Regression with One Variable",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 1-t8",
+          "title": "Linear Regression with Multiple Variables: Solution Using Gradient Descent Algorithm and Matrix Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t1",
+          "title": "Classification - Logistic Regression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t2",
+          "title": "Naïve Bayes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t3",
+          "title": "Decision Trees - ID3, Generalisation and Overfitting - Idea of Overfitting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t4",
+          "title": "LASSO and RIDGE Regularization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t5",
+          "title": "Idea of Training, Testing, Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t6",
+          "title": "Evaluation Measures - Classification - Precision, Recall, Accuracy, F-Measure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t7",
+          "title": "Receiver Operating Characteristic Curve (ROC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t8",
+          "title": "Area Under Curve (AUC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 2-t9",
+          "title": "Regression - Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R Squared/Coefficient of Determination",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t1",
+          "title": "SVM - Linear SVM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t2",
+          "title": "Idea of Hyperplane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t3",
+          "title": "Maximum Margin Hyperplane",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t4",
+          "title": "Non-linear SVM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t5",
+          "title": "Kernels for Learning Non-linear Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t6",
+          "title": "Neural Networks (NN) - Perceptron",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t7",
+          "title": "Neural Network - Multilayer Feed-Forward Network",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t8",
+          "title": "Activation Functions (Sigmoid, ReLU, Tanh)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 3-t9",
+          "title": "Back Propagation Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 4-t1",
+          "title": "Unsupervised Learning Clustering - Similarity Measures, Hierarchical Clustering - Agglomerative Clustering, Partitional Clustering, K-Means Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 4-t2",
+          "title": "Dimensionality Reduction - Principal Component Analysis, Multidimensional Scaling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 4-t3",
+          "title": "Ensemble Methods - Bagging, Boosting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 4-t4",
+          "title": "Resampling Methods - Bootstrapping, Cross Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-pccst503-mModule 4-t5",
+          "title": "Practical Aspects - Bias-Variance Tradeoff",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

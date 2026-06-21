@@ -1,0 +1,171 @@
+{
+  "id": "peect862-electronics-and-communication-engineering-s8",
+  "code": "PEECT862",
+  "name": "RF ENGINEERING",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 1-t1",
+          "title": "RF Circuit Introduction - Importance of Radio Frequency Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 1-t2",
+          "title": "RF Behaviour of Resistors, Inductors and Capacitors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 1-t3",
+          "title": "Planar Transmission Lines - Microstrip Lines and Striplines - Constructional Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 1-t4",
+          "title": "Impedance Matching Networks - Design of Matching Circuits Using Lumped Elements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 1-t5",
+          "title": "Single Stub Tuning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 1-t6",
+          "title": "Quarter-Wave Transformers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 1-t7",
+          "title": "Multi-Section Transformer - Binomial Transformer",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 2-t1",
+          "title": "RF Filter Design - Filter Design Using Insertion Loss Technique",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 2-t2",
+          "title": "Active RF Components - Bipolar Junction Transistor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 2-t3",
+          "title": "Construction, Functionality, Power Frequency Limitations of High Frequency Transistors, GaAs Devices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 2-t4",
+          "title": "Familiarization of RF Field Effect Transistors and High Electron Mobility Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 2-t5",
+          "title": "Constructional Details, RF Circuit Measurements and Characterization - Using Vector Network Analyser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 2-t6",
+          "title": "S-Parameter, Reflection Coefficient and Insertion Loss Measurement, Modelling and Simulation of RF Circuits Using",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 2-t7",
+          "title": "Open Source or Commercial EM Simulation Software",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 3-t1",
+          "title": "Amplifier Design Using S-Parameters - Characteristics of Amplifier Power Relations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 3-t2",
+          "title": "Stability Considerations - Stability Circles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 3-t3",
+          "title": "Tests for Unconditional Stability, High Frequency Amplifier Design - Single Stage Amplifier Design - Design for Maximum Gain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 3-t4",
+          "title": "Low Noise Amplifier Design",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 4-t1",
+          "title": "Basic Oscillator Model - Feedback Oscillator Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 4-t2",
+          "title": "Negative Resistance Oscillator - Dielectric Resonator Oscillator",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 4-t3",
+          "title": "YIG Tuned Oscillator Mixer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 4-t4",
+          "title": "Basic Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-8-peect862-mModule 4-t5",
+          "title": "Single-Ended Mixer Design, Single-Balanced and Double-Balanced Mixers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

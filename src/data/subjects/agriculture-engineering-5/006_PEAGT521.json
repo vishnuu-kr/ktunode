@@ -1,0 +1,273 @@
+{
+  "id": "peagt521-agriculture-engineering-s5",
+  "code": "PEAGT521",
+  "name": "REMOTE SENSING AND GIS",
+  "branchId": "agriculture-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t1",
+          "title": "Concepts of Remote Sensing and Satellites: Definition, Historical Background and Components of Remote Sensing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t2",
+          "title": "Energy Source and Electromagnetic Spectrum",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t3",
+          "title": "Radiation Laws",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t4",
+          "title": "Platforms and Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t5",
+          "title": "Active and Passive Remote Sensing Satellites",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t6",
+          "title": "Sun Synchronous and Geo Synchronous Remote Sensing Satellites",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t7",
+          "title": "Spectral, Spatial, Radiometric and Temporal Resolution",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t8",
+          "title": "LANDSAT, Sentinel and IRS Satellites",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t9",
+          "title": "Data Acquisition: Spectral Radiance, Digital Number and Reflectance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t10",
+          "title": "Energy Interaction with Earth Surface Features",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t11",
+          "title": "Atmospheric Effects on Remote Sensing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t12",
+          "title": "Spectral Reflectance Curves and Spectral Signatures for Water, Soil and Vegetation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 1-t13",
+          "title": "Vegetation Indices",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 2-t1",
+          "title": "Data Products Based on Level of Processing: Output, Scale, Area/Coverage and Data Availability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 2-t2",
+          "title": "Image Interpretation: Visual Interpretation Elements and Interpretation Key",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 2-t3",
+          "title": "Digital Image Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 2-t4",
+          "title": "Image Enhancement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 2-t5",
+          "title": "Image Classification: Supervised and Unsupervised",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t1",
+          "title": "History and Development of GIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t2",
+          "title": "Definition of GIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t3",
+          "title": "Components of GIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t4",
+          "title": "Characteristics and Elements of Maps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t5",
+          "title": "Map Scale",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t6",
+          "title": "Vector and Raster Data Models and Attribute Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t7",
+          "title": "Map Projections and Coordinate Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t8",
+          "title": "Sources of Spatial Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t9",
+          "title": "Spatial Analysis in GIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 3-t10",
+          "title": "Spatial Interpolation Using GIS",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t1",
+          "title": "Crop Acreage Estimation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t2",
+          "title": "Estimation of Crop Water Requirement Using Thermal Remote Sensing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t3",
+          "title": "Crop Condition Assessment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t4",
+          "title": "Soil Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t5",
+          "title": "Classification of Soil with Digital Numbers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t6",
+          "title": "Soil Erosion Mapping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t7",
+          "title": "Reservoir Sedimentation Using Image Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t8",
+          "title": "Inventory of Water Resources",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t9",
+          "title": "Water Quality Assessment",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t10",
+          "title": "Application of Remote Sensing and GIS in Precision Agriculture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t11",
+          "title": "Monitoring Crop Health",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "agriculture-engineering-5-peagt521-mModule 4-t12",
+          "title": "Management Decision Support Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

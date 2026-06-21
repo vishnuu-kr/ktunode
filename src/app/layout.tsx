@@ -7,7 +7,7 @@ import Script from "next/script";
 import { headers, cookies } from "next/headers";
 import LockdownGate from "@/components/ui/LockdownGate";
 import DismissibleBanner from "@/components/ui/DismissibleBanner";
-import { parseKeywords, readSiteConfig, SITE_URL } from "@/lib/siteConfig";
+import { readSiteConfig } from "@/lib/siteConfig";
 import { logEnvironmentStatus } from "@/lib/envValidation";
 import { siteConfig as seoSiteConfig } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";

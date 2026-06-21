@@ -1,0 +1,81 @@
+{
+  "id": "oecst831-artificial-intelligence-and-data-science-s8",
+  "code": "OECST831",
+  "name": "INTRODUCTION TO ALGORITHMS",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 1-t1",
+          "title": "Solution of Recurrence Equations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 1-t2",
+          "title": "Iteration Method and Recursion Tree Methods",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t1",
+          "title": "Trees - Binary Trees: level and height of the tree, complete-binary tree representation using array, tree traversals (Recursive and non-recursive), applications. Binary Search Tree: creation, insertion, deletion, and search operations, applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t2",
+          "title": "Graphs: representation of graphs, BFS and DFS (analysis not required), Topological Sorting",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t3",
+          "title": "Divide and Conquer: Control Abstraction, Finding Maximum and Minimum, costs associated with element comparisons and index comparisons, Binary Search, Quick Sort, Merge Sort - Refinements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t4",
+          "title": "Greedy Strategy: Control Abstraction, Fractional Knapsack Problem, Minimum Cost Spanning Trees - PRIM’s Algorithm, Kruskal’s Algorithm, Single Source Shortest Path Algorithm - Dijkstra’s Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t5",
+          "title": "Dynamic Programming: The Control Abstraction, The Optimality Principle, Matrix Chain Multiplication, Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t6",
+          "title": "All Pairs Shortest Path Algorithm - Floyd-Warshall Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t7",
+          "title": "Backtracking: The Control Abstraction - The N-Queens Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-oecst831-mModule 2-t8",
+          "title": "Branch and Bound Algorithm for Travelling Salesman Problem",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

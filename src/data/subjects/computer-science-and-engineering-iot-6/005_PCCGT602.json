@@ -1,0 +1,297 @@
+{
+  "id": "pccgt602-computer-science-and-engineering-iot-s6",
+  "code": "PCCGT602",
+  "name": "INTERNET OF THINGS AND SMART COMPUTING.",
+  "branchId": "computer-science-and-engineering-iot",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t1",
+          "title": "Internet of Things",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t2",
+          "title": "IoT Conceptual Framework",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t3",
+          "title": "IoT Architectural View",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t4",
+          "title": "Technology behind IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t5",
+          "title": "Sources of IoT - IoT Development Boards",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t6",
+          "title": "Role of RFID",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t7",
+          "title": "WSN - M2M Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t8",
+          "title": "Examples of IoT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 1-t9",
+          "title": "Modified OSI Model for IoT/M2M Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t1",
+          "title": "Communication Technologies - Wireless Communication Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t2",
+          "title": "Near-Field Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t3",
+          "title": "RFID",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t4",
+          "title": "Bluetooth BR/EDR and Bluetooth Low Energy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t5",
+          "title": "ZigBee IP/ZigBee SE 2.0",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t6",
+          "title": "Wi-Fi",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t7",
+          "title": "GPRS/GSM Cellular Networks - Mobile Internet",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t8",
+          "title": "Wired Communication - Serial Peripheral Interface",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 2-t9",
+          "title": "UART/USART Serial Communication",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t1",
+          "title": "IoT Sensors: Analog & Digital Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t2",
+          "title": "Sensors for Measuring Temperature",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t3",
+          "title": "Humidity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t4",
+          "title": "Distance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t5",
+          "title": "Light",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t6",
+          "title": "Sound",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t7",
+          "title": "PIR Motion Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t8",
+          "title": "Pressure Sensor and Moisture Sensor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t9",
+          "title": "IoT Actuators: Servo Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t10",
+          "title": "DC Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 3-t11",
+          "title": "Relay",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t1",
+          "title": "IoT Application Layer Terminologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t2",
+          "title": "Data Acquiring and Storage - Data Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t3",
+          "title": "Data Acquisition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t4",
+          "title": "Data Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t5",
+          "title": "Data Categorization for Storage",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t6",
+          "title": "Assembly Software for the Events",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t7",
+          "title": "Data Store",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t8",
+          "title": "Data Centre Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t9",
+          "title": "Server Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t10",
+          "title": "Smart IoT Systems Case Study: Smart Farming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t11",
+          "title": "Home Automation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t12",
+          "title": "IoT in Health",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t13",
+          "title": "Automation in Industries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t14",
+          "title": "IoT in Vehicles - Connected Car",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "computer-science-and-engineering-iot-6-pccgt602-mModule 4-t15",
+          "title": "Smart Grid",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

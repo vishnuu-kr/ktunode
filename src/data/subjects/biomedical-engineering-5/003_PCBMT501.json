@@ -1,0 +1,225 @@
+{
+  "id": "pcbmt501-biomedical-engineering-s5",
+  "code": "PCBMT501",
+  "name": "BIOMEDICAL SIGNAL PROCESSING",
+  "branchId": "biomedical-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t1",
+          "title": "Signals and Signal Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t2",
+          "title": "Characterization and Classification of Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t3",
+          "title": "Elementary Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t4",
+          "title": "Typical Signal Processing Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t5",
+          "title": "Examples of Biomedical Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t6",
+          "title": "Analog-to-Digital Conversion (Block Diagram Only)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t7",
+          "title": "Discrete-Time Signals - Typical Sequences and Sequence Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 1-t8",
+          "title": "Discrete-Time Systems - Classification of Discrete-Time Systems",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t1",
+          "title": "Discrete-Time Fourier Transform (DTFT) - Definition and Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t2",
+          "title": "Discrete Fourier Transform (DFT) - Definition and Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t3",
+          "title": "Fast Fourier Transform (FFT) - Decimation-in-Time and Decimation-in-Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t4",
+          "title": "z-Transform - Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t5",
+          "title": "Poles and Zeros",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t6",
+          "title": "Inversion of the z-Transform Using Partial Fraction Expansion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t7",
+          "title": "Analysis of Linear Time-Invariant Systems in the z-Domain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t8",
+          "title": "Transfer Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 2-t9",
+          "title": "Frequency Response",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t1",
+          "title": "LTI Systems as Frequency Selective Filters - Ideal Filter Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t2",
+          "title": "Simple Digital Filter Design - Preliminary Considerations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t3",
+          "title": "Design of Linear-Phase FIR Filter Using Windows (Bartlett) and Frequency Sampling Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t4",
+          "title": "IIR Filter Design - Approximation of Derivatives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t5",
+          "title": "Impulse Invariance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t6",
+          "title": "Bilinear Transform Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t7",
+          "title": "Analog Filter Approximation - Butterworth Approximation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 3-t8",
+          "title": "Frequency Transformations (Analog and Digital Domain)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 4-t1",
+          "title": "Periodogram - Averaged Periodogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 4-t2",
+          "title": "QRS Detection in ECG",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 4-t3",
+          "title": "Analysis of Heart Rate Variability Using Periodogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 4-t4",
+          "title": "Adaptive Filters - Principle of Wiener Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 4-t5",
+          "title": "Principle of Adaptive Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 4-t6",
+          "title": "Principle of Adaptive Noise Cancellation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "biomedical-engineering-5-pcbmt501-mModule 4-t7",
+          "title": "Cancellation of 50 Hz Interference in ECG",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

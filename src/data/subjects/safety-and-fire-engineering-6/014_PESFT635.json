@@ -1,0 +1,483 @@
+{
+  "id": "pesft635-safety-and-fire-engineering-s6",
+  "code": "PESFT635",
+  "name": "FUNCTIONAL SAFETY",
+  "branchId": "safety-and-fire-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t1",
+          "title": "Deterministic Approach and Probabilistic Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t2",
+          "title": "Introduction to Functional Safety",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t3",
+          "title": "Overview",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t4",
+          "title": "History and Application of Relevant Standards (IEC 61508, ISO 26262, IEC 61511)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t5",
+          "title": "Scope of IEC 61508 in Electrical/Electronic/Programmable Electronics (E/E/PE)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t6",
+          "title": "Random Hardware Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t7",
+          "title": "Systematic Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t8",
+          "title": "Common Cause and Common Mode Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t9",
+          "title": "Safety Instrumented Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t10",
+          "title": "Safety Instrumented System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t11",
+          "title": "Safety Integrity Level",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t12",
+          "title": "Systematic Capability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t13",
+          "title": "Probability of Failure on Demand (PFD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t14",
+          "title": "Probability of Failure per Hour (PFH)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 1-t15",
+          "title": "Process Safety Time (PST)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t1",
+          "title": "IEC 61511 General Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t2",
+          "title": "Risk Reduction and Layers of Protection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t3",
+          "title": "Evacuation Procedures Internal Emergency Plan (IEP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t4",
+          "title": "Emergency Services External Emergency Plan (EEP)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t5",
+          "title": "SIS Safety Life-Cycle Phases",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t6",
+          "title": "Risk Assessment Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t7",
+          "title": "Risk Reduction Factor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t8",
+          "title": "Tolerable Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t9",
+          "title": "Inductive and Deductive Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t10",
+          "title": "HAZOP",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t11",
+          "title": "Bow Tie Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t12",
+          "title": "Prevention Safeguard and Protection Safeguard",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t13",
+          "title": "Exercise on HAZOP and Bow Tie, Allocation of Safety Functions to the Protection Layer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t14",
+          "title": "Low Demand Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t15",
+          "title": "High Demand Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t16",
+          "title": "Continuous Mode",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t17",
+          "title": "Determination of SIL for Every SIF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t18",
+          "title": "Risk Assessment Matrix",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t19",
+          "title": "SIL Allocation/Determination of SIF Using Risk Graph and LOPA Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 2-t20",
+          "title": "Exercise on QRA",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t1",
+          "title": "SIS Safety Requirement Specifications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t2",
+          "title": "Independency of the Protective Layers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t3",
+          "title": "Demand Rate and Operational Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t4",
+          "title": "SIF Structure Redundancies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t5",
+          "title": "Workshop Reliability and Acceptable Level of Spurious Trip, Design and Realization of SIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t6",
+          "title": "SIS Safety Plan",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t7",
+          "title": "Verification and Validation Plan",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t8",
+          "title": "Safety Requirement Specification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t9",
+          "title": "SIS Failure Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t10",
+          "title": "Failure Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t11",
+          "title": "Fail-Safe Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t12",
+          "title": "Dangerous Failures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t13",
+          "title": "Safe Failure Fraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t14",
+          "title": "Hardware Fault Tolerance (HFT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t15",
+          "title": "Prior in Use Requirements",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t16",
+          "title": "Analysis and Fault Detection - Basic Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t17",
+          "title": "Choice Safety",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t18",
+          "title": "Choice Availability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 3-t19",
+          "title": "Mixed Choice",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t1",
+          "title": "V Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t2",
+          "title": "Software Design Documentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t3",
+          "title": "Installation and Validation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t4",
+          "title": "Nominal Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t5",
+          "title": "Outside Limit Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t6",
+          "title": "Performance Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t7",
+          "title": "Interface Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t8",
+          "title": "Operation and Maintenance of SIS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t9",
+          "title": "Proof Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t10",
+          "title": "Impact of Periodic Tests",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t11",
+          "title": "Test Coverage/Depth",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t12",
+          "title": "Importance of Test Depth in PFD Calculation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t13",
+          "title": "Bypass Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t14",
+          "title": "Process Demand",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t15",
+          "title": "Trip Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t16",
+          "title": "Spurious Trip",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t17",
+          "title": "Failures and Process States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t18",
+          "title": "Decommissioning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t19",
+          "title": "Verification and Audits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t20",
+          "title": "Functional Safety Assessment (FSA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "safety-and-fire-engineering-6-pesft635-mModule 4-t21",
+          "title": "Independence Level",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

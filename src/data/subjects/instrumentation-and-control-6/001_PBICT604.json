@@ -1,0 +1,123 @@
+{
+  "id": "pbict604-instrumentation-and-control-s6",
+  "code": "PBICT604",
+  "name": "MODERN CONTROL ENGINEERING",
+  "branchId": "instrumentation-and-control",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 1-t1",
+          "title": "Design of Cascade Compensators and Dominant Pole",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 1-t2",
+          "title": "Realisation of Basic Compensators: Lead, Lag, and Lag-Lead Compensators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 1-t3",
+          "title": "Cascade Compensation Using Root Locus: Lead, Lag, and Lead-Lag Compensation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 1-t4",
+          "title": "Cascade Compensation Using Bode Plot: Lag, Lead, and Lag-Lead Compensation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 2-t1",
+          "title": "Controllable Canonical Form, Observable Canonical Form, and Jordan Canonical Form",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 3-t1",
+          "title": "State Variable Analysis of Continuous LTI Systems and Solution of State Equation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 3-t2",
+          "title": "State Transition Matrix and Its Properties; Computation of the State Transition Matrix Using Lyapunov's Method and Cayley-Hamilton Theorem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 3-t3",
+          "title": "Response of Homogeneous and Non-Homogeneous State-Space Model; Concept of Controllability and Observability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 3-t4",
+          "title": "Kalman Test",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 4-t1",
+          "title": "State Variable Design (Continuous): Design of State Variable Feedback if the Given Model is in the Controllable Canonical Form",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 4-t2",
+          "title": "Design of Arbitrary State Variable Feedback if the Given Model is Not in Controllable Canonical Form; Design of Full Order State Observer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 4-t3",
+          "title": "Application of Duality Principle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 4-t4",
+          "title": "Concept of Reduced Order State Observer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 4-t5",
+          "title": "Stability Analysis of Continuous LTI Systems Using Phase Plane Method: Singular Points and Classification of Singular Points",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-6-pbict604-mModule 4-t6",
+          "title": "Suggestion on Project Topics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

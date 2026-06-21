@@ -1,0 +1,183 @@
+{
+  "id": "peebt741-electronics-and-biomedical-engineering-s7",
+  "code": "PEEBT741",
+  "name": "POWER ELECTRONICS & APPLICATIONS",
+  "branchId": "electronics-and-biomedical-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t1",
+          "title": "Power Diodes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t2",
+          "title": "Power Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t3",
+          "title": "MOSFETs and IGBTs: Structure, Fabrication, Regions of Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t4",
+          "title": "Switching Characteristics: Turn-On and Turn-Off Switching Waveforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t5",
+          "title": "Safe Operating Area",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t6",
+          "title": "Paralleling of Transistors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t7",
+          "title": "Thyristor Family: SCRs, DIAC, TRIAC and GTOs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t8",
+          "title": "V-I Characteristics of SCR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t9",
+          "title": "Classification of Power Electronic Circuits: AC-DC, DC-DC, DC-AC and AC-AC Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 1-t10",
+          "title": "Applications of Power Devices in Renewable Energy Systems and Electric Vehicles",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 2-t1",
+          "title": "Single Phase Controlled Rectifiers: Half-Wave, Full-Wave, Half-Controlled and Fully Controlled",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 2-t2",
+          "title": "Typical Waveforms with R, RL with Diode and RL with Voltage Source",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 2-t3",
+          "title": "Voltage and Current Equations for Half-Wave Controlled Rectifier",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 2-t4",
+          "title": "Three Phase Half-Wave and Full-Wave Controlled Rectifier with R Load and Waveforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 3-t1",
+          "title": "Basic Chopper Operation Using Semiconductor Switches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 3-t2",
+          "title": "Buck, Boost and Buck-Boost Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 3-t3",
+          "title": "Selection of Devices, Electrical and Thermal Stress",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 3-t4",
+          "title": "Isolated Converters: Half Bridge and Full Bridge Converters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 3-t5",
+          "title": "Governing Equations and Switching Waveforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 3-t6",
+          "title": "DC-AC Inverters: Square Wave Operations, Half Bridge and Full Bridge Inverters",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 4-t1",
+          "title": "Solar Power Plants: On-Grid and Off-Grid Types",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 4-t2",
+          "title": "Traction Control in EVs: Forward Motoring and Generating Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 4-t3",
+          "title": "PWM Control Techniques: Voltage Mode, Current Mode and Gated Oscillator Controls",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 4-t4",
+          "title": "Closed Loop Responses and Stabilization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-biomedical-engineering-7-peebt741-mModule 4-t5",
+          "title": "Gate Driver Circuits: Isolated and Non-Isolated Types",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

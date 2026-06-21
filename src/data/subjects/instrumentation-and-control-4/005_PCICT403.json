@@ -1,0 +1,213 @@
+{
+  "id": "pcict403-instrumentation-and-control-s4",
+  "code": "PCICT403",
+  "name": "SIGNALS AND SYSTEMS",
+  "branchId": "instrumentation-and-control",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 1-t1",
+          "title": "Definitions and Classification of Signals (Continuous-time and Discrete-time, Periodic and Aperiodic, Even and Odd, Energy and Power)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 1-t2",
+          "title": "Basic Operations on Signals (Scaling, Shifting, Folding)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 1-t3",
+          "title": "Systems: Definitions and Classification (Linear and Nonlinear, Time-Invariant and Time-Variant, Causal and Non-Causal, Stable and Unstable)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 1-t4",
+          "title": "Examples of Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 1-t5",
+          "title": "Linear Time-Invariant (LTI) Systems: Properties, Stability, and Causality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 1-t6",
+          "title": "Representation of Systems: Differential Equation (Continuous-time) and Difference Equation (Discrete-time)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 1-t7",
+          "title": "Discrete-time LTI Systems and Linear Convolution",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 2-t1",
+          "title": "Representation of Periodic Signals: Fourier Series and Convergence",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 2-t2",
+          "title": "Continuous-Time Fourier Transform (CTFT) and its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 2-t3",
+          "title": "Review of Laplace Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 2-t4",
+          "title": "Region of Convergence (ROC): Properties, Stability, and Causality Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 2-t5",
+          "title": "Relation between Fourier and Laplace Transforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 3-t1",
+          "title": "Discrete-Time Fourier Series (DTFS) and its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 3-t2",
+          "title": "Discrete-Time Fourier Transform (DTFT) and its Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 3-t3",
+          "title": "Analysis of Discrete-Time LTI Systems using DTFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 3-t4",
+          "title": "Z-Transform: Mapping of s-plane to Z-plane, Inverse Transform, and Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 3-t5",
+          "title": "Relation between DTFT and Z-Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 3-t6",
+          "title": "Analysis of Discrete-Time LTI Systems using Z-Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 3-t7",
+          "title": "Stability and Causality using Z-Transform",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t1",
+          "title": "Sampling: Definition and Importance in Signal Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t2",
+          "title": "Nyquist-Shannon Sampling Theorem and Conditions for Perfect Reconstruction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t3",
+          "title": "Aliasing: Definition, Causes, Effects of Undersampling, and Methods of Prevention",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t4",
+          "title": "Ideal vs. Practical Sampling (Impulse Sampling, Zero-Order Hold, First-Order Hold)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t5",
+          "title": "Quantization: Process, Quantization Error, Uniform and Non-uniform Quantization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t6",
+          "title": "Reconstruction of Continuous-time Signals from Discrete-time Samples",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t7",
+          "title": "Interpolation Methods (Zero-Order Hold, First-Order Hold, Sinc Interpolation)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t8",
+          "title": "Oversampling and Undersampling: Benefits, Conditions, and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t9",
+          "title": "Sampling in the Frequency Domain and Sampling of Band-Pass Signals",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t10",
+          "title": "Introduction to Multi-rate Systems: Decimation and Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "instrumentation-and-control-4-pcict403-mModule 4-t11",
+          "title": "Applications of Sampling in Digital Signal Processing",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

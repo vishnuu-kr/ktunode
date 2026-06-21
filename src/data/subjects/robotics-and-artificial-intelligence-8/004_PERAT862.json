@@ -1,0 +1,225 @@
+{
+  "id": "perat862-robotics-and-artificial-intelligence-s8",
+  "code": "PERAT862",
+  "name": "CO-OPERATIVE ROBOTICS",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t1",
+          "title": "Components",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t2",
+          "title": "Odometry",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t3",
+          "title": "Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t4",
+          "title": "Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t5",
+          "title": "Finite State Machines as Robot Controllers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t6",
+          "title": "State Transitions Based on Robot-Robot Interactions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t7",
+          "title": "Early Micro-Macro Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t8",
+          "title": "Macroscopic Perspective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 1-t9",
+          "title": "Expected Macroscopic Dynamics and Feedback",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t1",
+          "title": "Consensus Achievement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t2",
+          "title": "The Best-of-n Problem",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t3",
+          "title": "Overview of Current Design Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t4",
+          "title": "Bottom-Up Design Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t5",
+          "title": "Top-Down Design Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t6",
+          "title": "Consensus Algorithms in Cooperative Control: Fundamental Consensus Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t7",
+          "title": "Convergence Analysis of Consensus Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t8",
+          "title": "Synthesis and Extensions of Consensus Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 2-t9",
+          "title": "Design of Coordination Strategies via Consensus Algorithms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t1",
+          "title": "Coupling in Cooperative Control Problems: Objective Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t2",
+          "title": "Local Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t3",
+          "title": "Full Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t4",
+          "title": "Dynamic Coupling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t5",
+          "title": "Approach to Distributed Cooperative Control Problems with an Optimization Objective: Cooperation Constraints and Objectives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t6",
+          "title": "Coordination Variables and Coordination Functions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t7",
+          "title": "Centralized Cooperation Scheme",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t8",
+          "title": "Consensus Building Approach to Distributed Cooperative Control Problems Without an Optimization Objective: Coordination Variable Constituted by a Group-level Reference State",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 3-t9",
+          "title": "Coordination Variable Constituted by Vehicle States",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 4-t1",
+          "title": "Applications to Multivehicle Cooperative Control: Rendezvous and Axial Alignment with Multiple Wheeled Mobile Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 4-t2",
+          "title": "Distributed Formation Control of Multiple Wheeled Mobile Robots with a Virtual Leader",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 4-t3",
+          "title": "Deep Space Spacecraft Formation Flying",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 4-t4",
+          "title": "Cooperative Fire Monitoring with Multiple UAVs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-8-perat862-mModule 4-t5",
+          "title": "Cooperative Surveillance with Multiple UAVs",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

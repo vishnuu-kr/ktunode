@@ -1,0 +1,279 @@
+{
+  "id": "pceot501-electrical-and-computer-engineering-s5",
+  "code": "PCEOT501",
+  "name": "MICROCONTROLLERS AND EMBEDDED SYSTEMS",
+  "branchId": "electrical-and-computer-engineering",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 1-t1",
+          "title": "Microcontroller Architecture: I/O Port Structure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 1-t2",
+          "title": "Register Organization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 1-t3",
+          "title": "General Purpose RAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 1-t4",
+          "title": "Bit Addressable RAM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 1-t5",
+          "title": "Special Function Registers (SFRs)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t1",
+          "title": "Introduction to 8051 Assembly Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t2",
+          "title": "Data Types and Assembler Directives",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t3",
+          "title": "8051 Addressing Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t4",
+          "title": "Simple Assembly Language Programs (Data Transfer and Arithmetic Operations)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t5",
+          "title": "8051 Programming in C: Data Types and Time Delay in 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t6",
+          "title": "I/O Programming in 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t7",
+          "title": "8051 Timer/Counter Programming in Embedded C: Programming 8051 Timers",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 2-t8",
+          "title": "Counter Programming",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t1",
+          "title": "Basics of Serial Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t2",
+          "title": "8051 Connections to RS232",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t3",
+          "title": "Serial Port Programming in 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t4",
+          "title": "8051 Interrupt Programming in Embedded C: 8051 Interrupts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t5",
+          "title": "External Hardware and Serial Communication Interrupt",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t6",
+          "title": "Interrupt Priority in 8051",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t7",
+          "title": "Interrupt Programming in C",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t8",
+          "title": "Interfacing: LCD",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t9",
+          "title": "ADC & DAC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t10",
+          "title": "Motor Control: Relays and Stepper Motor Interfacing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 3-t11",
+          "title": "DC Motor Interfacing and PWM using 8051",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t1",
+          "title": "Introduction to ARM Processors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t2",
+          "title": "ARM Core",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t3",
+          "title": "ARM Microcontroller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t4",
+          "title": "RISC vs CISC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t5",
+          "title": "Advanced Features of ARM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t6",
+          "title": "Architecture Versions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t7",
+          "title": "ARM Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t8",
+          "title": "Instruction Set Architecture",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t9",
+          "title": "Operating Modes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t10",
+          "title": "Register Set",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t11",
+          "title": "General Purpose Registers - Mode Switching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t12",
+          "title": "Conditional Flags",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t13",
+          "title": "Simple ALP Programs on Arithmetic & Logical Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t14",
+          "title": "Addition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t15",
+          "title": "Subtraction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t16",
+          "title": "Multiplication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-computer-engineering-5-pceot501-mModule 4-t17",
+          "title": "Division and Factorial",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

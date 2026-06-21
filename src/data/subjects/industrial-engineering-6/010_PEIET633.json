@@ -1,0 +1,273 @@
+{
+  "id": "peiet633-industrial-engineering-s6",
+  "code": "PEIET633",
+  "name": "INDUSTRIAL SCHEDULING",
+  "branchId": "industrial-engineering",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t1",
+          "title": "Definition of Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t2",
+          "title": "Role of Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t3",
+          "title": "Terminologies Involved in Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t4",
+          "title": "Classification of Scheduling Models - Graham et al. α/β/γ Notations to Classify Scheduling Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t5",
+          "title": "Performance Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t6",
+          "title": "Relationship Between Performance Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t7",
+          "title": "Theorems Related to Performance Measures (Proof and Problems). Classes of Schedules - Non-Delay Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t8",
+          "title": "Active Schedules and Semi-Active Schedules. Single Machine Models Without Due Dates (Proof of Theorems and Problems) - Permutation Schedules Theorems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t9",
+          "title": "Shortest Processing Time (SPT) Rule",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 1-t10",
+          "title": "Weighted Shortest Processing Time (WSPT) Rule",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t1",
+          "title": "Problems with Due Dates",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t2",
+          "title": "Minimizing Total Lateness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t3",
+          "title": "Minimizing Maximum Lateness and Maximum Tardiness",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t4",
+          "title": "Minimizing the Number of Tardy Jobs - Moore and Hodgson Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t5",
+          "title": "Minimizing Mean Tardiness - Wilkerson-Irwin Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t6",
+          "title": "Minimizing Regular Performance Measures with Precedence Constraints - Lawler's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t7",
+          "title": "Application of Smith's Algorithm. General Purpose Methodologies for Single Machine Problem - Neighborhood Search Techniques",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t8",
+          "title": "Dynamic Programming Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 2-t9",
+          "title": "Branch & Bound Approach",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 3-t1",
+          "title": "Parallel Identical Processors and Independent Jobs with Preemptions and Without Preemptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 3-t2",
+          "title": "Parallel Identical Processors and Dependent Jobs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 3-t3",
+          "title": "Permutation Schedule - Johnson's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 3-t4",
+          "title": "Two Jobs and m Machine Problems - Aker's Graphical Method. Special Cases of Three-Machine Problem - Extension of Johnson's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 3-t5",
+          "title": "Branch & Bound Algorithms for Makespan Problems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 3-t6",
+          "title": "Heuristic Approaches - Palmer's Algorithm",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 3-t7",
+          "title": "CDS Algorithm and Insertion Heuristics",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t1",
+          "title": "Types of Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t2",
+          "title": "Schedule Generation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t3",
+          "title": "Heuristic Procedure - Shifting Bottleneck Procedure",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t4",
+          "title": "Integer Programming Formulation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t5",
+          "title": "Simulation Studies of the Dynamic Job Shop (Overview Only). Stochastic Models - Preliminaries",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t6",
+          "title": "Stochastic Based on Expectation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t7",
+          "title": "Stochastic Dominance Based on Variance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t8",
+          "title": "Impact of Randomness on Fixed Schedules",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t9",
+          "title": "Classes of Policies - Non-Preemptive Static List Policy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t10",
+          "title": "Preemptive Static List Policy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t11",
+          "title": "Non-Preemptive Dynamic Policy and Preemptive Dynamic Policy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t12",
+          "title": "Stochastic Single Machine Models - Arbitrary Distributions Without Preemptions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t13",
+          "title": "Arbitrary Distributions with Preemptions - the Gittins Index",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "industrial-engineering-6-peiet633-mModule 4-t14",
+          "title": "Likelihood Ratio Ordered Distributions and Exponential Distributions",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

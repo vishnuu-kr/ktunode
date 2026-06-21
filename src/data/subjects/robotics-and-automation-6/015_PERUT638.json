@@ -1,0 +1,213 @@
+{
+  "id": "perut638-robotics-and-automation-s6",
+  "code": "PERUT638",
+  "name": "COMPILER DESIGN AND OPERATING SYSTEMS",
+  "branchId": "robotics-and-automation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t1",
+          "title": "Introduction to Compilers - Phases of Compiler",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t2",
+          "title": "The Role of the Lexical Analyzer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t3",
+          "title": "Role of the Parser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t4",
+          "title": "Basic Parsing Approaches - Eliminating Left Recursion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t5",
+          "title": "Left Factoring. Top-Down Parsing - Recursive Descent Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t6",
+          "title": "Non-Recursive Predictive Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t7",
+          "title": "Bottom-Up Parsing - Shift Reduce Parsing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t8",
+          "title": "Simple LR Parser",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 1-t9",
+          "title": "More Powerful LR Parsers",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 2-t1",
+          "title": "Syntax-Directed Definitions - Inherited and Synthesized Attributes. S-Attributed Definitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 2-t2",
+          "title": "L-Attributed Definitions. Intermediate Code Generation - Variants of Syntax Tree. Three-Address Code - Quadruple",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 2-t3",
+          "title": "Triple. Run Time Environments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 2-t4",
+          "title": "Local Optimizations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 2-t5",
+          "title": "Principal Sources of Optimizations",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 3-t1",
+          "title": "Process States",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 3-t2",
+          "title": "Process Control Block",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 3-t3",
+          "title": "Threads",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 3-t4",
+          "title": "Scheduling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 3-t5",
+          "title": "Inter-Process Communication - Shared Memory Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 3-t6",
+          "title": "Message Passing Systems. Process Scheduling: Basic Concepts - Scheduling Criteria - Scheduling Algorithms - First Come First Served",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 3-t7",
+          "title": "Round Robin Scheduling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t1",
+          "title": "Race Conditions - Critical Section Problem - Peterson's Solution - Semaphores - Synchronization Problems - Producer Consumer",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t2",
+          "title": "Deadlocks: Necessary Conditions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t3",
+          "title": "Resource Allocation Graphs - Deadlock Avoidance - Banker's Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t4",
+          "title": "Memory Management: Concept of Address Spaces",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t5",
+          "title": "Contiguous Memory Allocation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t6",
+          "title": "Fixed and Variable Partitions",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t7",
+          "title": "File System: File Concept - Attributes",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t8",
+          "title": "Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-perut638-mModule 4-t9",
+          "title": "Types",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

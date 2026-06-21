@@ -1,0 +1,261 @@
+{
+  "id": "peeet746-electrical-and-electronics-engineering-s7",
+  "code": "PEEET746",
+  "name": "DIGITAL IMAGE PROCESSING",
+  "branchId": "electrical-and-electronics-engineering",
+  "semester": 7,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t1",
+          "title": "Image Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t2",
+          "title": "Types of Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t3",
+          "title": "Elements of DIP System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t4",
+          "title": "Basic Relationship Between Pixels",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t5",
+          "title": "Distance Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t6",
+          "title": "Simple Image Formation Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t7",
+          "title": "Brightness, Contrast, and Saturation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t8",
+          "title": "Mach Band Effect",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t9",
+          "title": "Colour Image Fundamentals - RGB",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t10",
+          "title": "HIS Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 1-t11",
+          "title": "2D Sampling and Quantization",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t1",
+          "title": "Properties",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t2",
+          "title": "Walsh Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t3",
+          "title": "Hadamard Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t4",
+          "title": "Haar Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t5",
+          "title": "KL Transform and Singular Value Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t6",
+          "title": "Image Compression Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t7",
+          "title": "Lossy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t8",
+          "title": "Lossless Compression",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t9",
+          "title": "Concept of Transform Coding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 2-t10",
+          "title": "JPEG Image Compression Standard",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t1",
+          "title": "Basic Gray Level Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t2",
+          "title": "Histogram Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t3",
+          "title": "Enhancement Using Arithmetic/Logic Operations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t4",
+          "title": "Basics of Spatial Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t5",
+          "title": "Smoothing Spatial Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t6",
+          "title": "Sharpening Spatial Filters",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t7",
+          "title": "Low Pass Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t8",
+          "title": "High Pass Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 3-t9",
+          "title": "Homomorphic Filtering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t1",
+          "title": "Degradation Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t2",
+          "title": "Inverse Filtering - Removal of Blur Caused by Uniform Linear Motion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t3",
+          "title": "Minimum Mean Square Error (Wiener) Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t4",
+          "title": "Image Segmentation: Region Based Approach",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t5",
+          "title": "Clustering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t6",
+          "title": "Segmentation Based on Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t7",
+          "title": "Edge Based Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electrical-and-electronics-engineering-7-peeet746-mModule 4-t8",
+          "title": "Hough Transform",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

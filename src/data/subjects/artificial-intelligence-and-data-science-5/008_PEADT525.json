@@ -1,0 +1,411 @@
+{
+  "id": "peadt525-artificial-intelligence-and-data-science-s5",
+  "code": "PEADT525",
+  "name": "FUNDAMENTALS OF DIGITAL IMAGE PROCESSING",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 5,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 1-t1",
+          "title": "The Image, Its Representation and Properties - Image Representations, Image Digitization, Sampling, Quantization, Digital Image Properties, Metric and Topological Properties of Digital Images, Histograms, Entropy, Visual Perception of the Image - Contrast, Acuity, Image Quality, Noise in Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 1-t2",
+          "title": "Color Images - Physics of Color, Color Perceived by Humans, Color Spaces, Color Constancy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 1-t3",
+          "title": "Data Structures for Image Analysis - Levels of Image Data Representation, Traditional Image Data Structures - Matrices, Chains, Topological Data Structures - Relational Structures, Hierarchical Data Structures, Pyramids, Quadtrees, Other Pyramidal Structures",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t1",
+          "title": "Pixel Brightness Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t2",
+          "title": "Position-Dependent Brightness Correction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t3",
+          "title": "Gray-Scale Transformation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t4",
+          "title": "Geometric Transformations - Pixel Coordinate Transformations",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t5",
+          "title": "Brightness Interpolation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t6",
+          "title": "Local Pre-Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t7",
+          "title": "Image Smoothing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t8",
+          "title": "Edge Detectors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t9",
+          "title": "Zero-Crossings of the Second Derivative",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t10",
+          "title": "Scale in Image Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t11",
+          "title": "Canny Edge Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t12",
+          "title": "Parametric Edge Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t13",
+          "title": "Edges in Multi-Spectral Images",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t14",
+          "title": "Line Detection by Local Pre-Processing Operators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t15",
+          "title": "Detection of Corners (Interest Points)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t16",
+          "title": "Image Restoration - Degradations That Are Easy to Restore",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t17",
+          "title": "Inverse Filtering",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 2-t18",
+          "title": "Wiener Filtering",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t1",
+          "title": "Image Segmentation - Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t2",
+          "title": "Threshold Detection Methods - Optimal Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t3",
+          "title": "Multi-Spectral Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t4",
+          "title": "Edge-Based Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t5",
+          "title": "Edge Image Thresholding",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t6",
+          "title": "Edge Relaxation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t7",
+          "title": "Border Tracing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t8",
+          "title": "Border Detection as Graph Searching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t9",
+          "title": "Border Detection as Dynamic Programming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t10",
+          "title": "Hough Transforms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t11",
+          "title": "Border Detection Using Border Location Information",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t12",
+          "title": "Region Construction from Borders",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t13",
+          "title": "Region-Based Segmentation - Region Merging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t14",
+          "title": "Region Splitting - Splitting and Merging",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t15",
+          "title": "Watershed Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t16",
+          "title": "Mean Shift Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t17",
+          "title": "Fuzzy Connectivity",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t18",
+          "title": "Introduction to 3D Graph-Based Image Segmentation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t19",
+          "title": "Matching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t20",
+          "title": "Template Matching",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t21",
+          "title": "Control Strategies Templating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 3-t22",
+          "title": "Evaluation Issues in Segmentation",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t1",
+          "title": "Image Transforms - 2D Fourier Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t2",
+          "title": "Discrete Cosine Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t3",
+          "title": "Wavelet Transform",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t4",
+          "title": "Eigen-Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t5",
+          "title": "Singular Value Decomposition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t6",
+          "title": "Principal Component Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t7",
+          "title": "Image Texture - Statistical Texture Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t8",
+          "title": "Methods Based on Spatial Frequencies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t9",
+          "title": "Co-Occurrence Matrices",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t10",
+          "title": "Edge Frequency",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t11",
+          "title": "Primitive Length (Runlength)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t12",
+          "title": "Texture Energy Measures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t13",
+          "title": "Local Binary Patterns (LBPs)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t14",
+          "title": "Fractal Texture Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t15",
+          "title": "Other Statistical Methods of Texture Description",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t16",
+          "title": "Introduction to Object Recognition - Knowledge Representation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t17",
+          "title": "Statistical Pattern Recognition",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t18",
+          "title": "Classification Principles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t19",
+          "title": "Minimum Distance Classifier Learning and Classification",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-5-peadt525-mModule 4-t20",
+          "title": "Nearest Neighbor Search with K-D Trees",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

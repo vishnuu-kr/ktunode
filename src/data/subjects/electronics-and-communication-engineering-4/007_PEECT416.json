@@ -1,0 +1,147 @@
+{
+  "id": "peect416-electronics-and-communication-engineering-s4",
+  "code": "PEECT416",
+  "name": "DIGITAL SYSTEM DESIGN",
+  "branchId": "electronics-and-communication-engineering",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 1-t1",
+          "title": "Clocked Synchronous Networks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 1-t2",
+          "title": "Analysis of Clocked Synchronous Sequential Networks (CSSN)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 1-t3",
+          "title": "Modeling of CSSN",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 1-t4",
+          "title": "State Assignment and Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 1-t5",
+          "title": "Design of CSSN",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 2-t1",
+          "title": "ASM Chart and its Realization",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 2-t2",
+          "title": "Asynchronous Sequential Circuits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 2-t3",
+          "title": "Analysis of Asynchronous Sequential Circuits (ASC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 2-t4",
+          "title": "Flow Table Reduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 2-t5",
+          "title": "Races in ASC",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 2-t6",
+          "title": "State Assignment Problem and the Transition Table",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 3-t1",
+          "title": "Fault Table Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 3-t2",
+          "title": "Path Sensitization Method",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 3-t3",
+          "title": "Boolean Difference Method",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 4-t1",
+          "title": "Design Entry: Schematic",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 4-t2",
+          "title": "Data Types and Objects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 4-t3",
+          "title": "Different Modelling Styles in VHDL - Dataflow",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 4-t4",
+          "title": "Behavioural and Structural Modelling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "electronics-and-communication-engineering-4-peect416-mModule 4-t5",
+          "title": "VHDL Constructs and Codes for Combinational and Sequential Circuits",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

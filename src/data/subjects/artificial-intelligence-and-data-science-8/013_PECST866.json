@@ -1,0 +1,177 @@
+{
+  "id": "pecst866-artificial-intelligence-and-data-science-s8",
+  "code": "PECST866",
+  "name": "SPEECH AND AUDIO PROCESSING",
+  "branchId": "artificial-intelligence-and-data-science",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t1",
+          "title": "Speech Production - Acoustic Theory of Speech Production",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t2",
+          "title": "Source/Filter Model - Pitch, Formant",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t3",
+          "title": "Spectrogram - Wide and Narrow Band Spectrogram",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t4",
+          "title": "Discrete Model for Speech Production",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t5",
+          "title": "Short-Time Speech Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t6",
+          "title": "Windowing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t7",
+          "title": "STFT",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t8",
+          "title": "Time Domain Parameters - Short Time Energy, Short Time Zero Crossing Rate, ACF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t9",
+          "title": "Frequency Domain Parameters - Filter Bank Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 1-t10",
+          "title": "STFT Analysis",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 2-t1",
+          "title": "Mel-Frequency Cepstral Coefficient (MFCC) - Computation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 2-t2",
+          "title": "Pitch Estimation - ACF/AMDF Approaches",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 2-t3",
+          "title": "Cepstral Analysis - Pitch and Formant Estimation Using Cepstral Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 2-t4",
+          "title": "LPC Analysis - LPC Model",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 2-t5",
+          "title": "Autocorrelation Method - Levinson-Durbin Algorithm",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 3-t1",
+          "title": "Speech Enhancement - Spectral Subtraction and Filtering, Harmonic Filtering, Parametric Resynthesis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 3-t2",
+          "title": "Speech Coding - Fundamentals, Class of Coders: Time Domain/Spectral Domain/Vocoders, Sub-Band Coding, Adaptive Transform Coding, Phase Vocoder",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 3-t3",
+          "title": "Speaker Recognition - Speaker Verification and Speaker Identification, Log-Likelihood",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 3-t4",
+          "title": "Language Identification - Implicit and Explicit Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 3-t5",
+          "title": "Machine Learning Models in Speaker Recognition",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 4-t1",
+          "title": "Signal Processing Models of Audio Perception - Basic Anatomy of Hearing System, Basilar Membrane Behaviour",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 4-t2",
+          "title": "Sound Perception - Auditory Filter Banks, Critical Band Structure, Absolute Threshold of Hearing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 4-t3",
+          "title": "Masking - Simultaneous Masking, Temporal Masking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "artificial-intelligence-and-data-science-8-pecst866-mModule 4-t4",
+          "title": "Models of Speech Perception",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "id": "pemut865-mechanical-automobile-engineering-s8",
+  "code": "PEMUT865",
+  "name": "ADVANCED DRIVER ASSISTANCE SYSTEMS AND AUTONOMOUS VEHICLES",
+  "branchId": "mechanical-automobile-engineering",
+  "semester": 8,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t1",
+          "title": "Lane Keeping Assist",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t2",
+          "title": "Adaptive Cruise Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t3",
+          "title": "Automated Parking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t4",
+          "title": "Benefits and Challenges of ADAS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t5",
+          "title": "Fundamentals of Autonomous Driving - Levels of Vehicle Autonomy (SAE Levels 0-5)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t6",
+          "title": "Key Components of Autonomous Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t7",
+          "title": "Overview of Autonomous Vehicle Architectures",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t8",
+          "title": "Vehicle Communication and Networking - In-vehicle Networking (CAN, FlexRay)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t9",
+          "title": "Vehicle-to-Everything (V2X) Communication",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 1-t10",
+          "title": "Role of Wireless Technology in Autonomous Driving",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t1",
+          "title": "Radar and Lidar Systems - Basics of Radar Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t2",
+          "title": "Applications and Limitations of Radar in Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t3",
+          "title": "Fundamentals of Lidar Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t4",
+          "title": "Lidar Applications in 3D Mapping and Obstacle Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t5",
+          "title": "Camera Systems and Image Processing - Types of Cameras Used in ADAS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t6",
+          "title": "Image Processing Techniques for Vehicle Safety",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t7",
+          "title": "Night Vision Technology and Applications",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t8",
+          "title": "Ultrasonic and Infrared Sensors - Principles of Ultrasonic Sensor Operation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t9",
+          "title": "Applications in Parking Assist and Obstacle Detection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t10",
+          "title": "Infrared Sensors and Their Role in ADAS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t11",
+          "title": "Sensor Data Fusion - Introduction to Sensor Data Fusion",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t12",
+          "title": "Techniques for Combining Data from Different Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 2-t13",
+          "title": "Benefits of Sensor Fusion in Enhancing System Accuracy and Reliability",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t1",
+          "title": "ROS (Robot Operating System)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t2",
+          "title": "Autoware",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t3",
+          "title": "Apollo",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t4",
+          "title": "Software Development and Simulation Tools",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t5",
+          "title": "Path Planning and Control Systems - Fundamentals of Path Planning Algorithms",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t6",
+          "title": "Control Systems for Vehicle Stability and Navigation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t7",
+          "title": "Real-time Decision-making and Obstacle Avoidance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t8",
+          "title": "Cloud Computing and Edge Processing - Role of Cloud Computing in Autonomous Vehicle Ecosystems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t9",
+          "title": "Edge Processing for Real-time Data Handling",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 3-t10",
+          "title": "Examples of Cloud-based Autonomous Driving Platforms",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t1",
+          "title": "System Integration and Calibration - Integration of ADAS Components into Vehicle Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t2",
+          "title": "Calibration Techniques for Sensors and Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t3",
+          "title": "Challenges in System Integration",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t4",
+          "title": "Testing and Validation - Testing Methodologies for Autonomous and ADAS Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t5",
+          "title": "Simulation Environments and Test Tracks",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t6",
+          "title": "Validation Processes and Safety Assessments",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t7",
+          "title": "Maintenance and Troubleshooting - Common Issues in ADAS and Autonomous Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t8",
+          "title": "Diagnostic Tools and Software",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t9",
+          "title": "Maintenance Best Practices for Autonomous Vehicles",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t10",
+          "title": "Case Studies and Future Trends - Case Studies of Leading Autonomous Vehicle Projects",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t11",
+          "title": "Emerging Trends in Autonomous Driving and ADAS Technology",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "mechanical-automobile-engineering-8-pemut865-mModule 4-t12",
+          "title": "Future Directions and Research Opportunities",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "id": "oerut611-robotics-and-automation-s6",
+  "code": "OERUT611",
+  "name": "FUNDAMENTALS OF ROBOTICS",
+  "branchId": "robotics-and-automation",
+  "semester": 6,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 1-t1",
+          "title": "Definitions - Robots, Robotics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 1-t2",
+          "title": "Types of Robots - Manipulators, Mobile Robots - Wheeled & Legged Robots, Aerial Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 1-t3",
+          "title": "Anatomy of a Robotic Manipulator - Links, Joints, Actuators, Sensors, Controller",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 1-t4",
+          "title": "Open Kinematic vs Closed Kinematic Chain",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 1-t5",
+          "title": "Degrees of Freedom",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 1-t6",
+          "title": "Robot Considerations for an Application - Number of Axes, Work Volume, Capacity & Speed, Stroke & Reach, Repeatability, Precision and Accuracy, Operating Environment, Point to Point Control or Continuous Path Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 1-t7",
+          "title": "Robot Applications - Medical, Mining, Space, Defense, Security, Domestic, Entertainment, Industrial Applications - Material Handling, Welding, Spray Painting, Machining",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t1",
+          "title": "Sensors and Actuators: Sensor Classification - Touch, Force, Proximity, Vision Sensors; Internal Sensors - Position Sensors, Velocity Sensors, Acceleration Sensors, Force Sensors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t2",
+          "title": "External Sensors - Contact Type, Non-contact Type",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t3",
+          "title": "Vision - Elements of Vision Sensor, Image Acquisition, Image Processing",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t4",
+          "title": "Selection of Sensors; Actuators for Robots - Classification - Electric, Hydraulic, Pneumatic Actuators",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t5",
+          "title": "Their Advantages and Disadvantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t6",
+          "title": "Electric Actuators - Stepper Motors, DC Motors, DC Servo Motors and Their Drivers, AC Motors, Linear Actuators, Selection of Motors",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t7",
+          "title": "Hydraulic Actuators - Components and Typical Circuit, Advantages and Disadvantages",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 2-t8",
+          "title": "Pneumatic Actuators - Components and Typical Circuit, Advantages and Disadvantages",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 3-t1",
+          "title": "Robotic Configurations and End Effectors: Robot Configurations - PPP, RPP, RRP, RRR",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 3-t2",
+          "title": "Features of SCARA, PUMA Robots",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 3-t3",
+          "title": "Classification of Robots Based on Motion Control Methods and Drive Technologies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 3-t4",
+          "title": "3R Concurrent Wrist",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 3-t5",
+          "title": "Classification of End Effectors - Mechanical Grippers, Special Tools, Magnetic Grippers, Vacuum Grippers, Adhesive Grippers, Active and Passive Grippers, Selection and Design Considerations of Grippers in Robot",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 4-t1",
+          "title": "Kinematics: Robot Coordinate Systems - Fundamental and Composite Rotations, Homogeneous Co-ordinates and Transformations, Kinematic Parameters, D-H Representation, Direct Kinematics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 4-t2",
+          "title": "The Arm Equation - Forward Kinematic Analysis of a Typical Robot up to 3 DOF",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 4-t3",
+          "title": "Motion Planning - Joint Space Trajectory Planning - Cubic Polynomial, Linear Trajectory with Parabolic Blends",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-automation-6-oerut611-mModule 4-t4",
+          "title": "Cartesian Space Planning, Point to Point vs Continuous Path Planning",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

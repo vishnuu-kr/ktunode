@@ -1,0 +1,75 @@
+{
+  "id": "pcral308-robotics-and-artificial-intelligence-s4",
+  "code": "PCRAL308",
+  "name": "MICROCONTROLLERS AND EMBEDDED SYSTEMS LAB",
+  "branchId": "robotics-and-artificial-intelligence",
+  "semester": 4,
+  "modules": [
+    {
+      "id": "mExperiment 2",
+      "title": "Module Experiment 2",
+      "topics": [
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t1",
+          "title": "Interface a simple Switch and display its status through LED",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t2",
+          "title": "Display the Hex digits 0 to F on a 7-segment LED interface, with an appropriate delay in between",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t3",
+          "title": "Demonstrate the use of an external interrupt to toggle an LED On/Off",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t4",
+          "title": "Display 'Hello World' message using Internal UART",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t5",
+          "title": "Using the Internal PWM module of ARM controller generate PWM and vary its duty cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t6",
+          "title": "Interface a simple Switch and display its status through LED using mbed OS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t7",
+          "title": "Control the brightness of LED using PWM with mbed OS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t8",
+          "title": "Measure Ambient temperature with a sensor and SPI ADC IC using mbed OS",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t9",
+          "title": "Interface and Control a DC Motor",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "robotics-and-artificial-intelligence-4-pcral308-mExperiment 2-t10",
+          "title": "Interface a Stepper motor and rotate it in clockwise and anti-clockwise direction",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+{
+  "id": "pepet415-production-engineering-s3",
+  "code": "PEPET415",
+  "name": "STATISTICAL QUALITY CONTROL",
+  "branchId": "production-engineering",
+  "semester": 3,
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "topics": [
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t1",
+          "title": "Meaning of Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t2",
+          "title": "Quality of Design",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t3",
+          "title": "Quality of Conformance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t4",
+          "title": "Quality of Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t5",
+          "title": "Quality Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t6",
+          "title": "Goal Post View of Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t7",
+          "title": "Other Aspects of Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t8",
+          "title": "Quality and Profitability",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t9",
+          "title": "Quality Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t10",
+          "title": "Quality Characteristics",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t11",
+          "title": "Cost of Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t12",
+          "title": "Optimum Cost of Performance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t13",
+          "title": "Value of Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t14",
+          "title": "Balance Between Cost of Quality and Value of Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t15",
+          "title": "Specification of Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t16",
+          "title": "Quality Control and Inspection",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t17",
+          "title": "Quality Policy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t18",
+          "title": "Statistical Quality Control (SQC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t19",
+          "title": "Role of Feedback in Quality Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t20",
+          "title": "Quality Perspective",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t21",
+          "title": "Quality Assurance Manual",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t22",
+          "title": "Field Complaints",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t23",
+          "title": "Quality Rating of Outgoing Product",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t24",
+          "title": "Quality Survey or Quality Audit",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t25",
+          "title": "Executive Report on Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t26",
+          "title": "Inspection Planning",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t27",
+          "title": "Quality Budget",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t28",
+          "title": "Vendor Quality Rating",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t29",
+          "title": "Organization for Quality Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t30",
+          "title": "Organization for Acceptance",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t31",
+          "title": "Manufacturing Planning for Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t32",
+          "title": "Planning for Process Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t33",
+          "title": "Statistical Process Control (SPC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t34",
+          "title": "Quality Function Deployment (QFD)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 1-t35",
+          "title": "Quality Policy Deployment",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "topics": [
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t1",
+          "title": "Total Quality Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t2",
+          "title": "Need for Management of Product Quality",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t3",
+          "title": "Concept of Total Quality Management (TQM)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t4",
+          "title": "TQM Philosophies",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t5",
+          "title": "Taguchi Philosophy",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t6",
+          "title": "Concept of Loss Function",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t7",
+          "title": "Orthogonal Arrays",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t8",
+          "title": "Linear Graphs",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t9",
+          "title": "Analysis of Variance (ANOVA)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t10",
+          "title": "Signal to Noise (S/N) Ratio",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t11",
+          "title": "Crosby's Fourteen Steps",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t12",
+          "title": "TQM Models",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t13",
+          "title": "Training for Quality Management",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t14",
+          "title": "ISO 9000 and TQM",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t15",
+          "title": "Benchmarking",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t16",
+          "title": "Kaizen and Kairyo Systems",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t17",
+          "title": "Tools and Techniques of Kaizen",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t18",
+          "title": "Brainstorming",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t19",
+          "title": "DMAIC Cycle",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t20",
+          "title": "Poka-Yoke",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t21",
+          "title": "JIDOKA",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t22",
+          "title": "Waste Control",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t23",
+          "title": "5S for Improvement",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t24",
+          "title": "Just in Time Manufacturing (JIT)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 2-t25",
+          "title": "Total Quality Management for Excellence (TQMEX)",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "topics": [
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t1",
+          "title": "Concept of Variation",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t2",
+          "title": "Distinction Between Variables and Attribute Data",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t3",
+          "title": "Theory of Control Charts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t4",
+          "title": "Definition of Control Chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t5",
+          "title": "Relationship Between",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t6",
+          "title": "Relationship Between",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t7",
+          "title": "Relationship Between",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t8",
+          "title": "Choice of Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t9",
+          "title": "Basics of Sub-grouping",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t10",
+          "title": "Size and Frequency of Subgroups",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t11",
+          "title": "Control Limits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t12",
+          "title": "Chance of Making an Error",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t13",
+          "title": "Starting the Control Charts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t14",
+          "title": "Conclusions from Control Charts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t15",
+          "title": "Control Chart Patterns",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t16",
+          "title": "Run Sum Test",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t17",
+          "title": "Revising Control Limits",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t18",
+          "title": "Process Capability Analysis",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t19",
+          "title": "Control Chart for Attributes: Limitations of Control Chart for Variables",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t20",
+          "title": "Attribute Charts",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t21",
+          "title": "Comparison of",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t22",
+          "title": "Control Limits on P Chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t23",
+          "title": "Choice Between P Chart and NP Chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t24",
+          "title": "Periodic Review and Revision of P Chart",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 3-t25",
+          "title": "Control Charts for Defects",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "topics": [
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t1",
+          "title": "Introduction",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t2",
+          "title": "Sampling Methods",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t3",
+          "title": "Operating Characteristic Curve (OCC)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t4",
+          "title": "Producer's Risk and Consumer's Risk",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t5",
+          "title": "Quality Indices for Acceptance Sampling Plans",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t6",
+          "title": "Average Outgoing Quality Limit (AOQL)",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t7",
+          "title": "Steps in the Design of an Acceptance Plan",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t8",
+          "title": "Sampling Plans",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t9",
+          "title": "Average Total Inspection (ATI) Curve",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t10",
+          "title": "Dodge-Romig System",
+          "content": "",
+          "pyqs": []
+        },
+        {
+          "id": "production-engineering-3-pepet415-mModule 4-t11",
+          "title": "Use Excel/SPSS to Plot Control Charts and to Solve Problems in Sampling",
+          "content": "",
+          "pyqs": []
+        }
+      ]
+    }
+  ]
+}
