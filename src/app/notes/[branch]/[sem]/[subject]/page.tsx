@@ -1,7 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import DashboardPage from "@/app/dashboard/page";
-import { mockSubjects } from "@/lib/mockData";
+import { getSubjectOnDemand } from "@/lib/mockData";
 import { SITE_URL } from "@/lib/siteConfig";
 
 interface PageProps {
@@ -25,13 +25,7 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
   const topicId = resolvedSearchParams.topic;
 
   // Search by either ID or Code (case-insensitive)
-  const subject = mockSubjects.find(
-    (s) =>
-      s.branchId === branch &&
-      s.semester === semNum &&
-      (s.id.toLowerCase() === subjectIdOrCode.toLowerCase() ||
-        s.code.toLowerCase() === subjectIdOrCode.toLowerCase())
-  );
+  const subject = getSubjectOnDemand(branch, semNum, subjectIdOrCode);
 
   const subjectTitle = subject ? subject.name : subjectIdOrCode.toUpperCase();
   const subjectCode = subject ? subject.code.toUpperCase() : subjectIdOrCode.toUpperCase();

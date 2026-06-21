@@ -68,7 +68,29 @@ export async function GET(request: NextRequest) {
   try {
     let relativePath = readTopicPathMap()[id];
     if (!relativePath) {
-      return json({ error: "Note not found in lookup mapping" }, 404);
+      const match = id.match(/^([a-z0-9-]+)-([1-8])-([a-z0-9-]+)-m([1-5])-t([0-9]+)$/i);
+      if (match) {
+        const [_, branch, sem, subjectCode, modNum, topicIdx] = match;
+        const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
+        const folderPath = path.join(subjectsDir, `${branch}-${sem}`);
+        if (fs.existsSync(folderPath) && fs.statSync(folderPath).isDirectory()) {
+          const files = fs.readdirSync(folderPath);
+          const matchedFile = files.find(f => f.toUpperCase().endsWith(`_${subjectCode.toUpperCase()}.json`));
+          if (matchedFile) {
+            const subjectData = JSON.parse(fs.readFileSync(path.join(folderPath, matchedFile), "utf8"));
+            const modId = `m${modNum}`;
+            const targetMod = subjectData.modules?.find((m: any) => m.id === modId || m.id === `mModule ${modNum}`);
+            if (targetMod && targetMod.topics) {
+              const idx = parseInt(topicIdx, 10) - 1;
+              const topic = targetMod.topics[idx];
+              if (topic && topic.content) {
+                return json({ content: topic.content, path: `/api/notes?id=${id}` });
+              }
+            }
+          }
+        }
+      }
+      return json({ error: "Note not found in lookup mapping or subjects" }, 404);
     }
 
     if (relativePath.startsWith("public/")) {

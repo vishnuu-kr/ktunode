@@ -38,7 +38,21 @@ export async function GET(request: NextRequest) {
         .readdirSync(folderPath)
         .filter((name) => name.endsWith(".json"))
         .sort()
-        .map((name) => JSON.parse(fs.readFileSync(path.join(folderPath, name), "utf8")));
+        .map((name) => {
+          const subject = JSON.parse(fs.readFileSync(path.join(folderPath, name), "utf8"));
+          if (subject.modules) {
+            subject.modules = subject.modules.map((mod: any) => {
+              if (mod.topics) {
+                mod.topics = mod.topics.map((t: any) => ({
+                  ...t,
+                  content: ""
+                }));
+              }
+              return mod;
+            });
+          }
+          return subject;
+        });
       return json(subjects);
     }
 
@@ -48,7 +62,25 @@ export async function GET(request: NextRequest) {
       return json([]);
     }
 
-    return json(JSON.parse(fs.readFileSync(filePath, "utf8")));
+    const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    if (Array.isArray(data)) {
+      const stripped = data.map((subject: any) => {
+        if (subject.modules) {
+          subject.modules = subject.modules.map((mod: any) => {
+            if (mod.topics) {
+              mod.topics = mod.topics.map((t: any) => ({
+                ...t,
+                content: ""
+              }));
+            }
+            return mod;
+          });
+        }
+        return subject;
+      });
+      return json(stripped);
+    }
+    return json(data);
   } catch (error: any) {
     console.error("Error loading subject metadata:", error);
     return json({ error: "Internal Server Error" }, 500);
