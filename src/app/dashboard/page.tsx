@@ -567,7 +567,7 @@ function DashboardContent() {
       }
 
       // Hide/show navbar on scroll inside the topic view
-      if (scrollTop > lastScrollTop && scrollTop > 80) {
+      if (scrollTop > lastScrollTop && scrollTop > 250) {
         setHideNavbar(true);
       } else if (scrollTop < lastScrollTop || scrollTop <= 10) {
         setHideNavbar(false);
@@ -2312,7 +2312,7 @@ function DashboardContent() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 40 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1 lg:pt-28 lg:scroll-pt-28 scrollbar-none"
+              className="w-full max-w-4xl mx-auto h-auto lg:h-full lg:overflow-y-auto pb-32 px-1 lg:pt-6 lg:scroll-pt-6 scrollbar-none"
             >
               <div className="flex items-center justify-between mb-8 pt-5 lg:pt-0">
                 <button

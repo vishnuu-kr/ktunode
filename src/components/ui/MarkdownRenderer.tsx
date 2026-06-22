@@ -308,7 +308,7 @@ function MathSpan({ latex, block = false }: { latex: string; block?: boolean }) 
 function parseInline(text: string): React.ReactNode[] {
   const nodes: React.ReactNode[] = [];
   // Match **bold**, *italic*, `code`, $$math$$, $math$, ![alt](src), <sup>sup</sup>, and <sub>sub</sub>
-  const regex = /(\*\*(.+?)\*\*|\*(.+?)\*|`(.+?)`|\$\$(.+?)\$\$|\$(.+?)\$|!\[(.+?)\]\((.+?)\)|<sup>(.+?)<\/sup>|<sub>(.+?)<\/sub>)/g;
+  const regex = /(\*\*([\s\S]+?)\*\*|\*([\s\S]+?)\*|`([\s\S]+?)`|\$\$([\s\S]+?)\$\$|\$([\s\S]+?)\$|!\[([\s\S]*?)\]\((.+?)\)|<sup>([\s\S]+?)<\/sup>|<sub>([\s\S]+?)<\/sub>)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
@@ -1294,7 +1294,7 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
 
       {/* Floating Checkpoints Trigger */}
       {headings.length > 1 && (
-        <div ref={menuRef} className="fixed bottom-6 right-6 z-[70]">
+        <div ref={menuRef} className="fixed bottom-24 md:bottom-10 right-4 md:right-8 z-[70]">
           {menuOpen && (
             <div className="absolute bottom-full right-0 mb-3 w-72 bg-white/95 dark:bg-slate-950/95 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-2xl p-3 backdrop-blur-xl max-h-96 overflow-y-auto z-[71] animate-in fade-in slide-in-from-bottom-2 duration-200 origin-bottom-right">
               <div className="px-2 py-1.5 mb-2 border-b border-slate-100 dark:border-slate-900/60 flex items-center justify-between">
@@ -1336,9 +1336,9 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex items-center gap-2 px-4.5 py-3 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold text-xs tracking-tight shadow-xl hover:shadow-2xl border border-slate-800/10 dark:border-slate-200/10 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95 group"
+            className="flex items-center gap-2 px-4.5 py-3 rounded-full bg-white/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 backdrop-blur-xl font-bold text-xs tracking-tight shadow-xl hover:shadow-2xl border border-slate-200/80 dark:border-slate-700 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95 group"
           >
-            <LayoutList className="w-4 h-4 transition-transform group-hover:rotate-6 text-white dark:text-slate-900 shrink-0" />
+            <LayoutList className="w-4 h-4 transition-transform group-hover:rotate-6 text-slate-800 dark:text-slate-200 shrink-0" />
             <span>Sections</span>
           </button>
         </div>

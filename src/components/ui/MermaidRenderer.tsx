@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { Maximize2, X } from "lucide-react";
 
 interface MermaidRendererProps {
   chart: string;
@@ -9,6 +10,7 @@ interface MermaidRendererProps {
 export default function MermaidRenderer({ chart }: MermaidRendererProps) {
   const [svg, setSvg] = useState<string>("");
   const [error, setError] = useState<boolean>(false);
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
 
   useEffect(() => {
     let active = true;
@@ -80,9 +82,36 @@ export default function MermaidRenderer({ chart }: MermaidRendererProps) {
   }
 
   return (
-    <div 
-      className="my-8 flex justify-center p-5 bg-white dark:bg-slate-950/20 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 shadow-sm overflow-x-auto max-w-full select-none"
-      dangerouslySetInnerHTML={{ __html: svg }}
-    />
+    <>
+      {isFullscreen && (
+        <div className="fixed inset-0 z-[120] bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl flex flex-col p-4 overflow-auto">
+          <div className="flex justify-end p-4">
+            <button 
+              onClick={() => setIsFullscreen(false)} 
+              className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            >
+              <X className="w-6 h-6 text-slate-700 dark:text-slate-300" />
+            </button>
+          </div>
+          <div 
+            className="flex-1 flex items-center justify-center p-4 min-w-max min-h-max scale-125 origin-center"
+            dangerouslySetInnerHTML={{ __html: svg }} 
+          />
+        </div>
+      )}
+      <div className="relative group my-8">
+        <button 
+          onClick={() => setIsFullscreen(true)}
+          className="absolute top-3 right-3 p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/50 dark:border-slate-700/50 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity z-10 hover:bg-slate-50 dark:hover:bg-slate-800"
+          title="View Fullscreen"
+        >
+          <Maximize2 className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+        </button>
+        <div 
+          className="flex justify-center p-5 bg-white dark:bg-slate-950/20 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 shadow-sm overflow-x-auto max-w-full select-none"
+          dangerouslySetInnerHTML={{ __html: svg }}
+        />
+      </div>
+    </>
   );
 }
