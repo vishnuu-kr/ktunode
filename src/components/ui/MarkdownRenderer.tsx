@@ -3,7 +3,7 @@
 import React from "react";
 import DOMPurify from "dompurify";
 import dynamic from "next/dynamic";
-import { Bookmark } from "lucide-react";
+import { Bookmark, LayoutList } from "lucide-react";
 
 const MermaidRenderer = dynamic(() => import("./MermaidRenderer"), {
   loading: () => <div className="animate-pulse h-40 bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl flex items-center justify-center text-xs text-slate-400 font-medium">Loading diagram engine...</div>,
@@ -14,6 +14,118 @@ function sanitize(html: string): string {
   return DOMPurify.sanitize(html, {
     ALLOWED_TAGS: ["b", "i", "em", "strong", "code", "br", "sup", "sub", "span", "div", "pre", "p", "h1", "h2", "h3", "h4", "h5", "h6", "ul", "ol", "li", "blockquote", "table", "thead", "tbody", "tr", "th", "td", "a", "img", "hr"],
     ALLOWED_ATTR: ["class", "href", "src", "alt", "title", "colspan", "rowspan", "align", "valign"],
+  });
+}
+
+function getEmojiIcon(emoji: string): React.ReactNode | null {
+  switch (emoji) {
+    case "✅":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="3.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </span>
+      );
+    case "⚡":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
+          <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </span>
+      );
+    case "⚠️":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="3.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+          </svg>
+        </span>
+      );
+    case "❌":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="3.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </span>
+      );
+    case "💀":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4.5 h-4.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-650 dark:text-slate-400">
+          <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2C7.03 2 3 6.03 3 11c0 2.48 1.01 4.73 2.65 6.35C6.54 18.23 7.82 19.5 9 20v2h6v-2c1.18-.5 2.46-1.77 3.35-2.65C19.99 15.73 21 13.48 21 11c0-4.97-4.03-9-9-9zm-3 8a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm5 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+          </svg>
+        </span>
+      );
+    case "💡":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-yellow-100 dark:bg-yellow-950/60 text-yellow-600 dark:text-yellow-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 10.5a3 3 0 116 0v.75H9v-.75z" />
+          </svg>
+        </span>
+      );
+    case "🔍":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-slate-100 dark:bg-slate-800 text-slate-655 dark:text-slate-405">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </span>
+      );
+    case "📌":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-blue-100 dark:bg-blue-955/60 text-blue-600 dark:text-blue-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
+        </span>
+      );
+    case "🎯":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+        </span>
+      );
+    case "🚀":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-indigo-100 dark:bg-indigo-950/60 text-indigo-650 dark:text-indigo-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 0M12 14.25a15 15 0 00-3.3-7.5m6.6 0a15 15 0 00-3.3 7.5M10.25 21.75L12 20.25l1.75 1.5M10.25 18H13.75" />
+          </svg>
+        </span>
+      );
+    case "📝":
+    case "✏️":
+      return (
+        <span className="inline-flex items-center justify-center shrink-0 align-middle mx-1 w-4 h-4 rounded bg-sky-100 dark:bg-sky-955/60 text-sky-600 dark:text-sky-400">
+          <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+          </svg>
+        </span>
+      );
+    default:
+      return null;
+  }
+}
+
+function processEmojiText(text: string): React.ReactNode[] {
+  const emojiRegex = /(✅|⚡|⚠️|❌|💀|💡|🔍|📌|🎯|🚀|📝|✏️)/g;
+  const parts = text.split(emojiRegex);
+  if (parts.length === 1) return [text];
+
+  return parts.map((part, idx) => {
+    if (idx % 2 === 0) {
+      return part;
+    }
+    return <React.Fragment key={idx}>{getEmojiIcon(part) || part}</React.Fragment>;
   });
 }
 
@@ -202,7 +314,7 @@ function parseInline(text: string): React.ReactNode[] {
 
   while ((match = regex.exec(text)) !== null) {
     if (match.index > lastIndex) {
-      nodes.push(text.slice(lastIndex, match.index));
+      nodes.push(...processEmojiText(text.slice(lastIndex, match.index)));
     }
     if (match[2]) {
       nodes.push(<strong key={match.index} className="font-black text-slate-900 dark:text-slate-100">{parseInline(match[2])}</strong>);
@@ -249,7 +361,7 @@ function parseInline(text: string): React.ReactNode[] {
   }
 
   if (lastIndex < text.length) {
-    nodes.push(text.slice(lastIndex));
+    nodes.push(...processEmojiText(text.slice(lastIndex)));
   }
 
   return nodes;
@@ -295,6 +407,12 @@ function parseBlocks(content: string): Block[] {
 
     // Empty line - skip
     if (line.trim() === "") {
+      i++;
+      continue;
+    }
+
+    // HTML Comment - skip
+    if (line.trim().startsWith("<!--") && line.trim().endsWith("-->")) {
       i++;
       continue;
     }
@@ -446,6 +564,7 @@ function parseBlocks(content: string): Block[] {
     while (
       i < lines.length && 
       lines[i].trim() !== "" && 
+      !lines[i].trim().startsWith("<!--") && 
       !/^(#{1,6})\s/.test(lines[i]) && 
       !lines[i].startsWith(">") && 
       !listItemRegex.test(lines[i]) && 
@@ -477,19 +596,35 @@ function renderList(nodes: ListNode[]) {
     if (type === "ul") {
       elements.push(
         <ul key={key} className="space-y-2 my-2 ml-1">
-          {items.map((node, i) => (
-            <li key={i} className="flex flex-col text-slate-700 dark:text-slate-300 font-normal leading-relaxed">
-              <div className="flex items-start gap-2.5">
-                <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5" />
-                <span>{parseInline(node.text)}</span>
-              </div>
-              {node.children.length > 0 && (
-                <div className="pl-6 mt-2">
-                  {renderList(node.children)}
+          {items.map((node, i) => {
+            const trimmedText = node.text.trim();
+            let bullet: React.ReactNode = <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5" />;
+            let itemText = node.text;
+
+            const emojiMatch = trimmedText.match(/^(✅|❌|⚡|⚠️|💀|💡|🔍|📌|🎯|🚀|📝|✏️)/);
+            if (emojiMatch) {
+              const emoji = emojiMatch[1];
+              const customIcon = getEmojiIcon(emoji);
+              if (customIcon) {
+                bullet = <span className="shrink-0 mt-0.5">{customIcon}</span>;
+                itemText = node.text.replace(new RegExp(`^\\s*${emoji}\\s*`), "");
+              }
+            }
+
+            return (
+              <li key={i} className="flex flex-col text-slate-700 dark:text-slate-300 font-normal leading-relaxed">
+                <div className="flex items-start gap-2.5">
+                  {bullet}
+                  <span className="flex-1">{parseInline(itemText)}</span>
                 </div>
-              )}
-            </li>
-          ))}
+                {node.children.length > 0 && (
+                  <div className="pl-6 mt-2">
+                    {renderList(node.children)}
+                  </div>
+                )}
+              </li>
+            );
+          })}
         </ul>
       );
     } else {
@@ -543,74 +678,307 @@ function getLanguageDotColor(lang: string): string {
   return "bg-slate-500";
 }
 
+function highlightHtml(code: string): string {
+  let i = 0;
+  let result = "";
+  
+  const escapeHtml = (str: string) => {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  };
+
+  while (i < code.length) {
+    // 1. Comments
+    if (code.startsWith("<!--", i)) {
+      let comment = "";
+      while (i < code.length && !code.startsWith("-->", i)) {
+        comment += code[i];
+        i++;
+      }
+      if (code.startsWith("-->", i)) {
+        comment += "-->";
+        i += 3;
+      }
+      result += `<span class="text-slate-500 italic">${escapeHtml(comment)}</span>`;
+      continue;
+    }
+
+    // 2. Tags
+    if (code[i] === "<") {
+      let tag = "<";
+      i++;
+      // Read until close of tag
+      while (i < code.length && code[i] !== ">") {
+        tag += code[i];
+        i++;
+      }
+      if (code[i] === ">") {
+        tag += ">";
+        i++;
+      }
+      
+      const tagMatch = tag.match(/^<\/?([a-zA-Z0-9:-]+)/);
+      if (tagMatch) {
+        const tagName = tagMatch[1];
+        let highlightedTag = tag.replace(tagName, `<span class="text-pink-400">${tagName}</span>`);
+        
+        highlightedTag = highlightedTag.replace(/(\s[a-zA-Z0-9:-]+=)(["'])([\s\S]*?)\2/g, (_, attr, quote, val) => {
+          return `${attr}<span class="text-emerald-400">${quote}${escapeHtml(val)}${quote}</span>`;
+        });
+        
+        result += highlightedTag.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      } else {
+        result += escapeHtml(tag);
+      }
+      continue;
+    }
+
+    result += escapeHtml(code[i]);
+    i++;
+  }
+  return result;
+}
+
+function highlightCss(code: string): string {
+  let i = 0;
+  let result = "";
+  
+  const escapeHtml = (str: string) => {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  };
+
+  while (i < code.length) {
+    if (code.startsWith("/*", i)) {
+      let comment = "/*";
+      i += 2;
+      while (i < code.length) {
+        if (code.startsWith("*/", i)) {
+          comment += "*/";
+          i += 2;
+          break;
+        }
+        comment += code[i];
+        i++;
+      }
+      result += `<span class="text-slate-500 italic">${escapeHtml(comment)}</span>`;
+      continue;
+    }
+
+    if (code[i] === "{") {
+      result += `<span class="text-sky-400">{</span>`;
+      i++;
+      let declBlock = "";
+      while (i < code.length && code[i] !== "}") {
+        declBlock += code[i];
+        i++;
+      }
+      
+      let declResult = "";
+      let j = 0;
+      while (j < declBlock.length) {
+        if (/[a-zA-Z-]/.test(declBlock[j])) {
+          let prop = "";
+          while (j < declBlock.length && declBlock[j] !== ":" && declBlock[j] !== ";" && declBlock[j] !== "}") {
+            prop += declBlock[j];
+            j++;
+          }
+          if (declBlock[j] === ":") {
+            declResult += `<span class="text-sky-300">${escapeHtml(prop.trim())}</span>: `;
+            j++;
+            let val = "";
+            while (j < declBlock.length && declBlock[j] !== ";") {
+              val += declBlock[j];
+              j++;
+            }
+            declResult += `<span class="text-emerald-300">${escapeHtml(val.trim())}</span>`;
+            if (declBlock[j] === ";") {
+              declResult += ";";
+              j++;
+            }
+          } else {
+            declResult += escapeHtml(prop);
+          }
+        } else {
+          declResult += escapeHtml(declBlock[j]);
+          j++;
+        }
+      }
+      
+      result += declResult;
+      if (code[i] === "}") {
+        result += `<span class="text-sky-400">}</span>`;
+        i++;
+      }
+      continue;
+    }
+
+    if (/[a-zA-Z0-9#.-]/.test(code[i])) {
+      let selector = "";
+      while (i < code.length && code[i] !== "{" && code[i] !== "}") {
+        selector += code[i];
+        i++;
+      }
+      result += `<span class="text-pink-400 font-semibold">${escapeHtml(selector.trim())}</span> `;
+      continue;
+    }
+
+    result += escapeHtml(code[i]);
+    i++;
+  }
+  return result;
+}
+
+function highlightCodeLanguages(code: string, lang: string): string {
+  let i = 0;
+  let result = "";
+  
+  const isLetterOrDigit = (char: string) => /[a-zA-Z0-9_]/.test(char);
+  const isDigit = (char: string) => /[0-9]/.test(char);
+  
+  let keywords = new Set<string>();
+  if (lang === "js" || lang === "javascript" || lang === "ts" || lang === "typescript" || lang === "json") {
+    keywords = new Set(["const", "let", "var", "function", "return", "if", "else", "for", "while", "do", "switch", "case", "break", "continue", "export", "import", "from", "default", "class", "extends", "new", "this", "async", "await", "try", "catch", "finally", "throw", "typeof", "instanceof", "interface", "type", "public", "private", "protected", "readonly", "implements", "as", "any", "string", "number", "boolean", "void", "null", "undefined", "true", "false"]);
+  } else if (lang === "py" || lang === "python") {
+    keywords = new Set(["def", "return", "if", "elif", "else", "for", "while", "break", "continue", "import", "from", "as", "class", "try", "except", "finally", "raise", "assert", "with", "lambda", "yield", "global", "nonlocal", "pass", "in", "is", "not", "and", "or", "True", "False", "None"]);
+  } else if (lang === "c" || lang === "cpp" || lang === "c++" || lang === "java" || lang === "go") {
+    keywords = new Set(["int", "float", "double", "char", "void", "long", "short", "unsigned", "signed", "struct", "class", "union", "enum", "typedef", "sizeof", "if", "else", "for", "while", "do", "switch", "case", "default", "break", "continue", "return", "const", "static", "extern", "volatile", "register", "inline", "public", "private", "protected", "new", "delete", "this", "friend", "virtual", "override", "package", "import", "func", "go", "chan", "map", "select", "range", "nil", "true", "false"]);
+  }
+
+  const escapeHtml = (str: string) => {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  };
+
+  while (i < code.length) {
+    const char = code[i];
+
+    if (
+      (lang !== "py" && lang !== "python") && 
+      char === "/" && code[i + 1] === "/"
+    ) {
+      let comment = "";
+      while (i < code.length && code[i] !== "\n") {
+        comment += code[i];
+        i++;
+      }
+      result += `<span class="text-slate-500 italic">${escapeHtml(comment)}</span>`;
+      continue;
+    }
+
+    if (
+      (lang !== "py" && lang !== "python") && 
+      char === "/" && code[i + 1] === "*"
+    ) {
+      let comment = "/*";
+      i += 2;
+      while (i < code.length) {
+        if (code[i] === "*" && code[i + 1] === "/") {
+          comment += "*/";
+          i += 2;
+          break;
+        }
+        comment += code[i];
+        i++;
+      }
+      result += `<span class="text-slate-500 italic">${escapeHtml(comment)}</span>`;
+      continue;
+    }
+
+    if (
+      (lang === "py" || lang === "python") && 
+      char === "#"
+    ) {
+      let comment = "";
+      while (i < code.length && code[i] !== "\n") {
+        comment += code[i];
+        i++;
+      }
+      result += `<span class="text-slate-500 italic">${escapeHtml(comment)}</span>`;
+      continue;
+    }
+
+    if (char === '"' || char === "'" || (char === "`" && (lang === "js" || lang === "javascript" || lang === "ts" || lang === "typescript"))) {
+      const quote = char;
+      let str = quote;
+      i++;
+      while (i < code.length) {
+        const nextChar = code[i];
+        if (nextChar === "\\") {
+          str += nextChar + (code[i + 1] || "");
+          i += 2;
+          continue;
+        }
+        if (nextChar === quote) {
+          str += quote;
+          i++;
+          break;
+        }
+        str += nextChar;
+        i++;
+      }
+      result += `<span class="text-emerald-400">${escapeHtml(str)}</span>`;
+      continue;
+    }
+
+    if ("{}[]()".includes(char)) {
+      result += `<span class="text-sky-400">${escapeHtml(char)}</span>`;
+      i++;
+      continue;
+    }
+
+    if (isDigit(char)) {
+      let num = "";
+      while (i < code.length && (isDigit(code[i]) || code[i] === "." || code[i].toLowerCase() === "x" || (num.length > 0 && /[a-fA-F]/.test(code[i])))) {
+        num += code[i];
+        i++;
+      }
+      result += `<span class="text-violet-400">${escapeHtml(num)}</span>`;
+      continue;
+    }
+
+    if (isLetterOrDigit(char)) {
+      let word = "";
+      while (i < code.length && isLetterOrDigit(code[i])) {
+        word += code[i];
+        i++;
+      }
+      if (keywords.has(word)) {
+        result += `<span class="text-pink-400 font-semibold">${escapeHtml(word)}</span>`;
+      } else {
+        result += escapeHtml(word);
+      }
+      continue;
+    }
+
+    result += escapeHtml(char);
+    i++;
+  }
+
+  return result;
+}
+
 function highlightCode(code: string, language: string): string {
-  let html = code
+  const lang = (language || "").toLowerCase();
+  
+  if (lang === "html" || lang === "xml" || lang === "svg") {
+    return highlightHtml(code);
+  }
+  if (lang === "css" || lang === "scss") {
+    return highlightCss(code);
+  }
+  if (
+    lang === "js" || lang === "javascript" ||
+    lang === "ts" || lang === "typescript" ||
+    lang === "json" ||
+    lang === "py" || lang === "python" ||
+    lang === "c" || lang === "cpp" || lang === "c++" ||
+    lang === "java" || lang === "go"
+  ) {
+    return highlightCodeLanguages(code, lang);
+  }
+
+  return code
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
-
-  const lang = (language || "").toLowerCase();
-  
-  const commentTokens: string[] = [];
-  const stringTokens: string[] = [];
-  
-  if (lang === "js" || lang === "javascript" || lang === "ts" || lang === "typescript" || lang === "c" || lang === "cpp" || lang === "c++" || lang === "java" || lang === "go" || lang === "css" || lang === "scss") {
-    html = html.replace(/(\/\*[\s\S]*?\*\/)/g, (match) => {
-      commentTokens.push(match);
-      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
-    });
-    html = html.replace(/(\/\/.*)/g, (match) => {
-      commentTokens.push(match);
-      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
-    });
-  } else if (lang === "py" || lang === "python") {
-    html = html.replace(/(#.*)/g, (match) => {
-      commentTokens.push(match);
-      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
-    });
-  } else if (lang === "html" || lang === "xml" || lang === "svg") {
-    html = html.replace(/(&lt;!--[\s\S]*?--&gt;)/g, (match) => {
-      commentTokens.push(match);
-      return `___TOKEN_COMMENT_${commentTokens.length - 1}___`;
-    });
-  }
-
-  if (lang !== "html" && lang !== "xml" && lang !== "svg") {
-    html = html.replace(/(["'`])([\s\S]*?)\1/g, (match) => {
-      stringTokens.push(match);
-      return `___TOKEN_STRING_${stringTokens.length - 1}___`;
-    });
-  }
-
-  if (lang === "js" || lang === "javascript" || lang === "ts" || lang === "typescript" || lang === "json") {
-    const keywords = /\b(const|let|var|function|return|if|else|for|while|do|switch|case|break|continue|export|import|from|default|class|extends|new|this|async|await|try|catch|finally|throw|typeof|instanceof|interface|type|public|private|protected|readonly|implements|as|any|string|number|boolean|void|null|undefined|true|false)\b/g;
-    html = html.replace(keywords, '<span class="text-pink-400 font-semibold">$1</span>');
-  } else if (lang === "py" || lang === "python") {
-    const keywords = /\b(def|return|if|elif|else|for|while|break|continue|import|from|as|class|try|except|finally|raise|assert|with|lambda|yield|global|nonlocal|pass|in|is|not|and|or|True|False|None)\b/g;
-    html = html.replace(keywords, '<span class="text-pink-400 font-semibold">$1</span>');
-  } else if (lang === "c" || lang === "cpp" || lang === "c++" || lang === "java" || lang === "go") {
-    const keywords = /\b(int|float|double|char|void|long|short|unsigned|signed|struct|class|union|enum|typedef|sizeof|if|else|for|while|do|switch|case|default|break|continue|return|const|static|extern|volatile|register|inline|public|private|protected|new|delete|this|friend|virtual|override|package|import|func|go|chan|map|select|range|nil|true|false)\b/g;
-    html = html.replace(keywords, '<span class="text-pink-400 font-semibold">$1</span>');
-  } else if (lang === "html" || lang === "xml" || lang === "svg") {
-    html = html.replace(/(&lt;\/?[a-zA-Z0-9:-]+)/g, '<span class="text-pink-400">$1</span>');
-    html = html.replace(/(\s[a-zA-Z0-9:-]+=)(["'])(.*?)\2/g, '$1<span class="text-emerald-400">$2$3$2</span>');
-  } else if (lang === "css" || lang === "scss") {
-    html = html.replace(/([^{}\n]+)\s*(?=\{)/g, '<span class="text-pink-400 font-semibold">$1</span>');
-    html = html.replace(/([a-zA-Z-]+)\s*:\s*([^;]+);/g, '<span class="text-sky-300">$1</span>: <span class="text-emerald-300">$2</span>;');
-  }
-
-  html = html.replace(/\b(\d+)\b/g, '<span class="text-violet-400">$1</span>');
-  html = html.replace(/([{}[\]()])/g, '<span class="text-sky-400">$1</span>');
-
-  stringTokens.forEach((str, idx) => {
-    html = html.replace(`___TOKEN_STRING_${idx}___`, `<span class="text-emerald-400">${str}</span>`);
-  });
-
-  commentTokens.forEach((comment, idx) => {
-    html = html.replace(`___TOKEN_COMMENT_${idx}___`, `<span class="text-slate-500 italic">${comment}</span>`);
-  });
-
-  return html;
 }
 
 function CodeBlock({ code, language }: { code: string; language: string }) {
@@ -700,6 +1068,23 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
   // Strip duplicate Topic headings
   processedContent = processedContent.replace(/^#{2,3}\s+Topic:\s*.+\n*/gmi, "");
 
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const menuRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    }
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
   const blocks = React.useMemo(() => {
     return parseBlocks(processedContent);
   }, [processedContent]);
@@ -709,46 +1094,7 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
   }, [blocks]);
 
   return (
-    <div className="max-w-3xl mx-auto px-1">
-      {/* Checkpoints Quick Navigation */}
-      {headings.length > 1 && (
-        <div className="mb-10 p-4 bg-slate-50/60 dark:bg-slate-950/30 rounded-2xl border border-slate-200/40 dark:border-slate-800/40">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">
-              Checkpoints
-            </span>
-            <div className="h-px flex-1 bg-slate-200/60 dark:bg-slate-800/60" />
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {headings.map((h, i) => {
-              const hId = getHeadingId(h.text);
-              const displayTitle = h.text
-                .replace(/^SECTION\s+\d+:\s*/i, "")
-                .replace(/^\d+(\.\d+)*\s*/, "")
-                .trim();
-              
-              const sectionNum = h.text.match(/^(?:SECTION\s+)?(\d+)/i)?.[1] || (i + 1);
-
-              return (
-                <button
-                  key={i}
-                  onClick={() => {
-                    const el = document.getElementById(hId);
-                    if (el) {
-                      el.scrollIntoView({ behavior: "smooth" });
-                    }
-                  }}
-                  className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl bg-white dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-blue-500 dark:hover:text-blue-400 hover:border-blue-500/30 dark:hover:border-blue-400/30 shadow-sm cursor-pointer transition-all duration-200 active:scale-95"
-                >
-                  <Bookmark className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" />
-                  <span>{displayTitle}</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
+    <div className="max-w-3xl mx-auto px-1 relative">
       {blocks.map((block, idx) => {
         switch (block.type) {
           case "code":
@@ -879,20 +1225,20 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
 
             return (
               <div key={idx} className={`my-8 rounded-2xl border border-l-4 p-5 ${activeStyle.wrapper}`}>
-                <div className="flex items-start gap-3">
+                <div className="flex items-center gap-2.5 mb-3">
                   <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center shadow-sm ${activeStyle.iconBg}`}>
                     {activeStyle.icon}
                   </div>
-                  <div className="text-sm font-semibold text-slate-700 dark:text-slate-300 leading-relaxed space-y-1">
-                    {isAlert && (
-                      <span className={`block text-[10px] font-black uppercase tracking-wider mb-1 ${activeStyle.titleText}`}>
-                        {activeStyle.title}
-                      </span>
-                    )}
-                    {block.lines.map((line, i) => (
-                      <p key={i}>{parseInline(line)}</p>
-                    ))}
-                  </div>
+                  {isAlert && (
+                    <span className={`text-[11px] font-black uppercase tracking-wider ${activeStyle.titleText}`}>
+                      {activeStyle.title}
+                    </span>
+                  )}
+                </div>
+                <div className="text-sm font-semibold text-slate-700 dark:text-slate-300 leading-relaxed space-y-2 pl-0.5">
+                  {block.lines.map((line, i) => (
+                    <p key={i}>{parseInline(line)}</p>
+                  ))}
                 </div>
               </div>
             );
@@ -945,6 +1291,58 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
             return null;
         }
       })}
+
+      {/* Floating Checkpoints Trigger */}
+      {headings.length > 1 && (
+        <div ref={menuRef} className="fixed bottom-6 right-6 z-[70]">
+          {menuOpen && (
+            <div className="absolute bottom-full right-0 mb-3 w-72 bg-white/95 dark:bg-slate-950/95 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-2xl p-3 backdrop-blur-xl max-h-96 overflow-y-auto z-[71] animate-in fade-in slide-in-from-bottom-2 duration-200 origin-bottom-right">
+              <div className="px-2 py-1.5 mb-2 border-b border-slate-100 dark:border-slate-900/60 flex items-center justify-between">
+                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+                  Table of Contents
+                </span>
+                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
+                  {headings.length} Sections
+                </span>
+              </div>
+              <div className="space-y-1">
+                {headings.map((h, i) => {
+                  const hId = getHeadingId(h.text);
+                  const displayTitle = h.text
+                    .replace(/^SECTION\s+\d+:\s*/i, "")
+                    .replace(/^\d+(\.\d+)*\s*/, "")
+                    .trim();
+                  
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => {
+                        const el = document.getElementById(hId);
+                        if (el) {
+                          el.scrollIntoView({ behavior: "smooth" });
+                        }
+                        setMenuOpen(false);
+                      }}
+                      className="w-full text-left flex items-start gap-2.5 px-2.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-900/50 hover:text-blue-500 dark:hover:text-blue-400 hover:pl-3.5 transition-all duration-200 cursor-pointer"
+                    >
+                      <Bookmark className="w-3.5 h-3.5 mt-0.5 text-slate-400 dark:text-slate-500 shrink-0" />
+                      <span className="line-clamp-2">{displayTitle}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="flex items-center gap-2 px-4.5 py-3 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold text-xs tracking-tight shadow-xl hover:shadow-2xl border border-slate-800/10 dark:border-slate-200/10 cursor-pointer transition-all duration-200 hover:scale-105 active:scale-95 group"
+          >
+            <LayoutList className="w-4 h-4 transition-transform group-hover:rotate-6 text-white dark:text-slate-900 shrink-0" />
+            <span>Sections</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }
