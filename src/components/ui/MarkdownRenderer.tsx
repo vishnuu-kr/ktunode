@@ -2,6 +2,13 @@
 
 import React from "react";
 import DOMPurify from "dompurify";
+import dynamic from "next/dynamic";
+import { Bookmark } from "lucide-react";
+
+const MermaidRenderer = dynamic(() => import("./MermaidRenderer"), {
+  loading: () => <div className="animate-pulse h-40 bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl flex items-center justify-center text-xs text-slate-400 font-medium">Loading diagram engine...</div>,
+  ssr: false
+});
 
 function sanitize(html: string): string {
   return DOMPurify.sanitize(html, {
@@ -19,7 +26,7 @@ type Block =
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
   | { type: "hr" }
-  | { type: "blockquote"; lines: string[] }
+  | { type: "blockquote"; lines: string[]; alertType?: string }
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "list"; items: ListNode[] }
   | { type: "p"; text: string }
@@ -173,14 +180,14 @@ function MathSpan({ latex, block = false }: { latex: string; block?: boolean }) 
       <div 
         onPointerDownCapture={(e) => e.stopPropagation()}
         onTouchStartCapture={(e) => e.stopPropagation()}
-        className="my-6 text-center font-mono text-base text-slate-800 dark:text-slate-200 bg-slate-50/80 dark:bg-slate-800/80 rounded-2xl py-4 px-6 border border-slate-200/60 dark:border-slate-700/60 overflow-x-auto max-w-full"
+        className="my-6 text-center font-serif text-lg text-slate-900 dark:text-slate-100 py-6 px-8 bg-slate-50/20 dark:bg-slate-950/20 border-y border-slate-100 dark:border-slate-800/60 overflow-x-auto max-w-full leading-relaxed select-all"
         dangerouslySetInnerHTML={{ __html: formatted }}
       />
     );
   }
   return (
     <span 
-      className="font-mono text-sm text-slate-800 dark:text-slate-200 bg-slate-50 dark:bg-slate-800 px-1.5 py-0.5 rounded border border-slate-200/40 dark:border-slate-700/40 whitespace-nowrap"
+      className="font-serif italic text-[1.05em] antialiased text-slate-900 dark:text-slate-100 mx-0.5 whitespace-nowrap"
       dangerouslySetInnerHTML={{ __html: formatted }}
     />
   );
@@ -356,7 +363,19 @@ function parseBlocks(content: string): Block[] {
         quoteLines.push(lines[i].replace(/^>\s?/, ""));
         i++;
       }
-      blocks.push({ type: "blockquote", lines: quoteLines });
+      
+      // Check for alert style
+      let alertType: string | undefined = undefined;
+      if (quoteLines.length > 0) {
+        const firstLine = quoteLines[0].trim();
+        const alertMatch = firstLine.match(/^\[!(NOTE|INFO|TIP|IMPORTANT|WARNING|CAUTION)\]$/i);
+        if (alertMatch) {
+          alertType = alertMatch[1].toUpperCase();
+          quoteLines.shift(); // Remove the [!TYPE] line from lines to be rendered
+        }
+      }
+      
+      blocks.push({ type: "blockquote", lines: quoteLines, alertType } as any);
       continue;
     }
 
@@ -662,6 +681,14 @@ function CodeBlock({ code, language }: { code: string; language: string }) {
 }
 
 
+function getHeadingId(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "") // remove special characters
+    .trim()
+    .replace(/\s+/g, "-"); // replace spaces with hyphens
+}
+
 function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
   let processedContent = content.trim();
 
@@ -677,26 +704,78 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
     return parseBlocks(processedContent);
   }, [processedContent]);
 
+  const headings = React.useMemo(() => {
+    return blocks.filter(b => b.type === "h2");
+  }, [blocks]);
+
   return (
     <div className="max-w-3xl mx-auto px-1">
+      {/* Checkpoints Quick Navigation */}
+      {headings.length > 1 && (
+        <div className="mb-10 p-4 bg-slate-50/60 dark:bg-slate-950/30 rounded-2xl border border-slate-200/40 dark:border-slate-800/40">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+              Checkpoints
+            </span>
+            <div className="h-px flex-1 bg-slate-200/60 dark:bg-slate-800/60" />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {headings.map((h, i) => {
+              const hId = getHeadingId(h.text);
+              const displayTitle = h.text
+                .replace(/^SECTION\s+\d+:\s*/i, "")
+                .replace(/^\d+(\.\d+)*\s*/, "")
+                .trim();
+              
+              const sectionNum = h.text.match(/^(?:SECTION\s+)?(\d+)/i)?.[1] || (i + 1);
+
+              return (
+                <button
+                  key={i}
+                  onClick={() => {
+                    const el = document.getElementById(hId);
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl bg-white dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-blue-500 dark:hover:text-blue-400 hover:border-blue-500/30 dark:hover:border-blue-400/30 shadow-sm cursor-pointer transition-all duration-200 active:scale-95"
+                >
+                  <Bookmark className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" />
+                  <span>{displayTitle}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {blocks.map((block, idx) => {
         switch (block.type) {
           case "code":
+            if (block.language === "mermaid") {
+              return (
+                <MermaidRenderer key={idx} chart={block.code} />
+              );
+            }
             return (
               <CodeBlock key={idx} code={block.code} language={block.language} />
             );
-          case "h2":
+          case "h2": {
+            const hId = getHeadingId(block.text);
             return (
-              <h2 key={idx} className={`text-2xl font-black text-slate-900 dark:text-slate-100 ${idx === 0 ? "mt-2" : "mt-12"} mb-4 tracking-tight`}>
+              <h2 id={hId} key={idx} className={`text-2xl font-black text-slate-900 dark:text-slate-100 ${idx === 0 ? "mt-2" : "mt-12"} mb-4 tracking-tight scroll-mt-24`}>
                 {parseInline(block.text)}
               </h2>
             );
-          case "h3":
+          }
+          case "h3": {
+            const hId = getHeadingId(block.text);
             return (
-              <h3 key={idx} className={`text-xl font-bold text-slate-800 dark:text-slate-200 ${idx === 0 ? "mt-2" : "mt-8"} mb-3 tracking-tight`}>
+              <h3 id={hId} key={idx} className={`text-xl font-bold text-slate-800 dark:text-slate-200 ${idx === 0 ? "mt-2" : "mt-8"} mb-3 tracking-tight scroll-mt-24`}>
                 {parseInline(block.text)}
               </h3>
             );
+          }
           case "hr":
             return (
               <div key={idx} className="my-10 flex items-center gap-4">
@@ -709,14 +788,107 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
             return (
               <MathSpan key={idx} latex={block.text} block />
             );
-          case "blockquote":
+          case "blockquote": {
+            const isAlert = !!block.alertType;
+            const type = block.alertType || "NOTE";
+            
+            const config: Record<string, {
+              wrapper: string;
+              iconBg: string;
+              iconText: string;
+              titleText: string;
+              title: string;
+              icon: React.ReactNode;
+            }> = {
+              NOTE: {
+                wrapper: "bg-blue-50/40 dark:bg-blue-950/10 border-blue-200/40 dark:border-blue-800/20 border-l-blue-500 dark:border-l-blue-400",
+                iconBg: "bg-blue-500 text-white",
+                iconText: "text-blue-600 dark:text-blue-400",
+                titleText: "text-blue-800 dark:text-blue-200",
+                title: "Note",
+                icon: (
+                  <svg className="w-3.5 h-3.5 animate-pulse" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                  </svg>
+                )
+              },
+              INFO: {
+                wrapper: "bg-blue-50/40 dark:bg-blue-950/10 border-blue-200/40 dark:border-blue-800/20 border-l-blue-500 dark:border-l-blue-400",
+                iconBg: "bg-blue-500 text-white",
+                iconText: "text-blue-600 dark:text-blue-400",
+                titleText: "text-blue-800 dark:text-blue-200",
+                title: "Info",
+                icon: (
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                  </svg>
+                )
+              },
+              TIP: {
+                wrapper: "bg-emerald-50/40 dark:bg-emerald-950/10 border-emerald-200/40 dark:border-emerald-800/20 border-l-emerald-500 dark:border-l-emerald-400",
+                iconBg: "bg-emerald-500 text-white",
+                iconText: "text-emerald-600 dark:text-emerald-400",
+                titleText: "text-emerald-800 dark:text-emerald-200",
+                title: "Tip",
+                icon: (
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 10.5a3 3 0 116 0v.75H9v-.75z" />
+                  </svg>
+                )
+              },
+              IMPORTANT: {
+                wrapper: "bg-indigo-50/40 dark:bg-indigo-950/10 border-indigo-200/40 dark:border-indigo-800/20 border-l-indigo-500 dark:border-l-indigo-400",
+                iconBg: "bg-indigo-500 text-white",
+                iconText: "text-indigo-600 dark:text-indigo-400",
+                titleText: "text-indigo-800 dark:text-indigo-200",
+                title: "Important",
+                icon: (
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                )
+              },
+              WARNING: {
+                wrapper: "bg-amber-50/40 dark:bg-amber-950/10 border-amber-200/40 dark:border-amber-800/20 border-l-amber-500 dark:border-l-amber-400",
+                iconBg: "bg-amber-500 text-white",
+                iconText: "text-amber-600 dark:text-amber-400",
+                titleText: "text-amber-800 dark:text-amber-200",
+                title: "Warning",
+                icon: (
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                  </svg>
+                )
+              },
+              CAUTION: {
+                wrapper: "bg-rose-50/40 dark:bg-rose-950/10 border-rose-200/40 dark:border-rose-800/20 border-l-rose-500 dark:border-l-rose-400",
+                iconBg: "bg-rose-500 text-white",
+                iconText: "text-rose-600 dark:text-rose-400",
+                titleText: "text-rose-800 dark:text-rose-200",
+                title: "Caution",
+                icon: (
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                  </svg>
+                )
+              }
+            };
+            
+            const activeStyle = config[type] || config.NOTE;
+
             return (
-              <div key={idx} className="my-8 rounded-2xl bg-blue-50/80 dark:bg-blue-950/20 border border-blue-200/60 dark:border-blue-900/40 border-l-4 border-l-blue-500 p-5">
+              <div key={idx} className={`my-8 rounded-2xl border border-l-4 p-5 ${activeStyle.wrapper}`}>
                 <div className="flex items-start gap-3">
-                  <div className="shrink-0 w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-black mt-0.5">
-                    !
+                  <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center shadow-sm ${activeStyle.iconBg}`}>
+                    {activeStyle.icon}
                   </div>
                   <div className="text-sm font-semibold text-slate-700 dark:text-slate-300 leading-relaxed space-y-1">
+                    {isAlert && (
+                      <span className={`block text-[10px] font-black uppercase tracking-wider mb-1 ${activeStyle.titleText}`}>
+                        {activeStyle.title}
+                      </span>
+                    )}
                     {block.lines.map((line, i) => (
                       <p key={i}>{parseInline(line)}</p>
                     ))}
@@ -724,29 +896,30 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
                 </div>
               </div>
             );
+          }
           case "table":
             return (
               <div 
                 key={idx} 
                 onPointerDownCapture={(e) => e.stopPropagation()}
                 onTouchStartCapture={(e) => e.stopPropagation()}
-                className="my-8 overflow-x-auto rounded-2xl border border-slate-200/80 dark:border-slate-800 -mx-1 max-w-full"
+                className="my-8 overflow-x-auto rounded-2xl border border-slate-200/50 dark:border-slate-800/80 shadow-sm bg-white dark:bg-slate-950/20 -mx-1 max-w-full"
               >
                 <table className="w-full text-sm min-w-[400px]">
-                  <thead className="bg-slate-50/80 dark:bg-slate-800/80">
+                  <thead className="bg-slate-50/80 dark:bg-slate-900/40">
                     <tr>
                       {block.headers.map((h, i) => (
-                        <th key={i} className="px-4 py-3 text-left text-xs font-black text-slate-600 dark:text-slate-400 uppercase tracking-wider border-b border-slate-200/80 dark:border-slate-800 whitespace-nowrap">
+                        <th key={i} className="px-4 py-3.5 text-left text-xs font-black text-slate-500 dark:text-slate-400 uppercase tracking-wider border-b border-slate-200/60 dark:border-slate-800 whitespace-nowrap">
                           {parseInline(h)}
                         </th>
                       ))}
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800/40">
                     {block.rows.map((row, ri) => (
-                      <tr key={ri}>
+                      <tr key={ri} className="odd:bg-slate-50/20 even:bg-white dark:odd:bg-slate-900/10 dark:even:bg-slate-950/20 hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors duration-150">
                         {row.map((cell, ci) => (
-                          <td key={ci} className="px-4 py-3 text-sm font-normal text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800">
+                          <td key={ci} className="px-4 py-3 text-sm font-normal text-slate-700 dark:text-slate-350">
                             {parseInline(cell)}
                           </td>
                         ))}

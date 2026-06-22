@@ -14,7 +14,7 @@ const ThemeToggle = dynamic(() => import("@/components/ThemeToggle"), {
   ssr: false
 });
 
-export default function Navbar() {
+export default function Navbar({ forceHide = false }: { forceHide?: boolean }) {
   const pathname = usePathname();
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
@@ -192,7 +192,7 @@ export default function Navbar() {
     <div className="fixed top-0 left-0 right-0 z-[60] w-full pt-2 pb-1.5 sm:pt-4 sm:pb-3 transition-all duration-300 pointer-events-none ios-safe-top">
       <motion.header
         initial={{ y: -100 }}
-        animate={{ y: visible ? 0 : -100 }}
+        animate={{ y: (visible && !forceHide) ? 0 : -100 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className={`pointer-events-auto relative mx-auto flex w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl items-center justify-between rounded-full transition-all duration-300 overflow-visible ${
           scrolled ? "px-3 py-1.5 sm:px-5 sm:py-2" : "px-3.5 py-2.5 sm:px-6 sm:py-3"

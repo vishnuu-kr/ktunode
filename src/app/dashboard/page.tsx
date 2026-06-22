@@ -338,6 +338,7 @@ function DashboardContent() {
   const [loadingSubjects, setLoadingSubjects] = useState(true);
   const [noteContent, setNoteContent] = useState<string>("");
   const [loadingNote, setLoadingNote] = useState(false);
+  const [hideNavbar, setHideNavbar] = useState(false);
 
   // Edit Mode states
   const [isEditMode, setIsEditMode] = useState(false);
@@ -543,10 +544,13 @@ function DashboardContent() {
 
   // Scroll progress tracker for topic view state
   useEffect(() => {
+    setHideNavbar(false); // Reset when view or topic changes
     if (view !== "topic") {
       setScrollProgress(0);
       return;
     }
+
+    let lastScrollTop = 0;
 
     const handleScroll = (e: Event) => {
       const target = e.currentTarget as HTMLElement | null;
@@ -561,6 +565,14 @@ function DashboardContent() {
       } else {
         setScrollProgress(0);
       }
+
+      // Hide/show navbar on scroll inside the topic view
+      if (scrollTop > lastScrollTop && scrollTop > 80) {
+        setHideNavbar(true);
+      } else if (scrollTop < lastScrollTop || scrollTop <= 10) {
+        setHideNavbar(false);
+      }
+      lastScrollTop = scrollTop;
     };
 
     const topicEl = topicScrollContainerRef.current;
@@ -1701,7 +1713,7 @@ function DashboardContent() {
         Skip to main content
       </a>
 
-      <Navbar />
+      <Navbar forceHide={hideNavbar} />
 
       {view === "topic" && (
         <div 
@@ -2597,11 +2609,13 @@ function DashboardContent() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
                     >
-                      <AudioNoteReader
-                        content={noteContent}
-                        topicTitle={selectedTopic.title}
-                        triggerHaptic={triggerHaptic}
-                      />
+                      <div className={`sticky top-0 z-30 transition-all duration-300 md:top-2 px-1 mb-6 ${hideNavbar ? "-translate-y-24 opacity-0 pointer-events-none" : "translate-y-0 opacity-100"}`}>
+                        <AudioNoteReader
+                          content={noteContent}
+                          topicTitle={selectedTopic.title}
+                          triggerHaptic={triggerHaptic}
+                        />
+                      </div>
                       <MarkdownRenderer content={noteContent} stripH1={true} />
                     </motion.div>
                   )}
