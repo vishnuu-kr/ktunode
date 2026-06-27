@@ -170,8 +170,9 @@ export default function ExamCommandPanel({
 
   // Clean up audio on unmount
   useEffect(() => {
+    const audioElements = audioRefs.current;
     return () => {
-      Object.values(audioRefs.current).forEach(audio => {
+      Object.values(audioElements).forEach(audio => {
         if (audio) audio.pause();
       });
     };

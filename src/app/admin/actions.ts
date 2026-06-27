@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
-import { fileExists, readJsonFile, readTextFile, readDir, statIsDir } from "@/lib/fsHelper";
+import { fileExists, readJsonFile, readDir, statIsDir } from "@/lib/fsHelper";
 import { normalizeSiteConfig, readSiteConfig, writeSiteConfig } from "@/lib/siteConfig";
 import { writeToKV, readFromKV } from "@/lib/github";
 import { safeEqual } from "@/lib/crypto";

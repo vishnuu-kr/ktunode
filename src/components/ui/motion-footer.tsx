@@ -358,7 +358,10 @@ export function CinematicFooter() {
                   Privacy Policy
                 </Link>
                 <Link href="/terms" className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Terms of Service
+                  Terms of Use
+                </Link>
+                <Link href="/disclaimer" className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  Disclaimer
                 </Link>
               </div>
             </div>

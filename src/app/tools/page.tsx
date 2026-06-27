@@ -204,9 +204,11 @@ export default function ToolsPage() {
         enabledTabs.push("microtools");
         enabledTabs.push("missioncontrol");
 
-        if (!enabledTabs.includes(activeWorkspaceTab)) {
-          setActiveWorkspaceTab(enabledTabs[0] as any);
-        }
+        setActiveWorkspaceTab((currentTab) =>
+          enabledTabs.includes(currentTab)
+            ? currentTab
+            : enabledTabs[0] as typeof currentTab
+        );
       })
       .catch(err => console.error("Error loading config:", err));
 
@@ -315,10 +317,19 @@ export default function ToolsPage() {
     let defaultSubjects: Subject[] = [];
     try {
       const res = await fetch(`/api/subjects?branch=${currentBranch}&sem=${currentSem}`);
-      defaultSubjects = await res.json();
+      const data: unknown = await res.json();
+      if (!res.ok || !Array.isArray(data)) {
+        throw new Error(
+          typeof data === "object" && data !== null && "error" in data
+            ? String(data.error)
+            : `Subject API returned ${res.status}`
+        );
+      }
+      defaultSubjects = data as Subject[];
       setSubjects(defaultSubjects);
     } catch (err) {
       console.error("Failed to load subjects for tools:", err);
+      setSubjects([]);
     }
 
     // Load attendance
@@ -411,6 +422,7 @@ export default function ToolsPage() {
   };
 
   const calculateCGPA = useMemo(() => {
+    void gpaUpdateTrigger;
     if (typeof window === "undefined") return "0.00";
     const activeTab = localStorage.getItem("ktunode_gpa_active_tab") || "presets";
     const selectedBranch = localStorage.getItem("ktunode_gpa_selected_branch") || "Computer Science and Engineering";
@@ -438,9 +450,10 @@ export default function ToolsPage() {
       }
     }
     return grandCredits > 0 ? (grandPoints / grandCredits).toFixed(2) : "0.00";
-  }, [gpaUpdateTrigger, branch, sem]);
+  }, [gpaUpdateTrigger]);
 
   const calculateSGPA = useMemo(() => {
+    void gpaUpdateTrigger;
     if (typeof window === "undefined") return "0.00";
     const activeTab = localStorage.getItem("ktunode_gpa_active_tab") || "presets";
     const selectedBranch = localStorage.getItem("ktunode_gpa_selected_branch") || "Computer Science and Engineering";
@@ -468,7 +481,7 @@ export default function ToolsPage() {
       }
     }
     return semCredits > 0 && gradedCount > 0 ? (semPoints / semCredits).toFixed(2) : "0.00";
-  }, [gpaUpdateTrigger, branch, sem]);
+  }, [gpaUpdateTrigger, sem]);
 
   return (
     <div

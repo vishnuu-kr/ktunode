@@ -1306,7 +1306,8 @@ export default function MicroToolsGrid({ branch: _branch, sem: _sem, triggerNoti
     foreCurrent, foreSems, foreTarget, cramHours, cramModules, bunkSubject, bunkReason,
     revalGrade, revalCie, condPct, condTimes, degCgpa, degBacklogs, convType, convGpa,
     convPct, ectsKtuCredits, graceCertType, germanCgpa, revalPaperCount, revalScrutiny,
-    revalPhoto, moocDuration, moocScore, internDuration, ectsWorkload, slotLetter
+    revalPhoto, moocDuration, moocScore, internDuration, ectsWorkload, slotLetter,
+    triggerNotification
   ]);
 
   // Filter tools based on search and active category

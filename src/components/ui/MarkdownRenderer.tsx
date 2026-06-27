@@ -3,7 +3,7 @@
 import React from "react";
 import DOMPurify from "dompurify";
 import dynamic from "next/dynamic";
-import { Bookmark, LayoutList } from "lucide-react";
+import { LayoutList, ChevronLeft, ChevronRight, Check } from "lucide-react";
 
 const MermaidRenderer = dynamic(() => import("./MermaidRenderer"), {
   loading: () => <div className="animate-pulse h-40 bg-slate-50/50 dark:bg-slate-900/30 rounded-2xl flex items-center justify-center text-xs text-slate-400 font-medium">Loading diagram engine...</div>,
@@ -132,10 +132,13 @@ function processEmojiText(text: string): React.ReactNode[] {
 interface MarkdownRendererProps {
   content: string;
   stripH1?: boolean;
+  /** When true and the note has multiple H2 sections, show one section at a
+   *  time with a progress bar and Prev/Next navigation (mobile-friendly). */
+  paged?: boolean;
 }
 
 type Block =
-  | { type: "h2"; text: string }
+  | { type: "h2"; text: string; level: number }
   | { type: "h3"; text: string }
   | { type: "hr" }
   | { type: "blockquote"; lines: string[]; alertType?: string }
@@ -158,8 +161,82 @@ interface ListBlockItem {
   text: string;
 }
 
+// Replace a LaTeX command that takes one brace-delimited argument, respecting
+// nested braces (e.g. \boxed{\frac{a}{b}}). `render` receives the raw inner text.
+function replaceBalancedCommand(
+  input: string,
+  command: string,
+  render: (inner: string) => string
+): string {
+  const token = `\\${command}{`;
+  let result = "";
+  let i = 0;
+  while (i < input.length) {
+    const idx = input.indexOf(token, i);
+    if (idx === -1) {
+      result += input.slice(i);
+      break;
+    }
+    result += input.slice(i, idx);
+    let depth = 1;
+    let j = idx + token.length;
+    let inner = "";
+    while (j < input.length && depth > 0) {
+      const ch = input[j];
+      if (ch === "{") depth++;
+      else if (ch === "}") {
+        depth--;
+        if (depth === 0) break;
+      }
+      inner += ch;
+      j++;
+    }
+    result += render(inner);
+    i = j + 1;
+  }
+  return result;
+}
+
 function formatMathHTML(latex: string): string {
   let html = latex;
+
+  // Multi-line / aligned environments: render each row on its own line,
+  // dropping the `&` alignment markers (we center instead of column-align).
+  html = html.replace(
+    /\\begin\{(aligned|align\*?|alignat\*?|gathered|gather\*?|cases|split|array)\}(?:\{[^{}]*\})?([\s\S]+?)\\end\{\1\}/g,
+    (_match: string, _env: string, body: string) => {
+      const rows = body
+        .split("\\\\")
+        .map((row: string) => formatMathHTML(row.replace(/&/g, " ").trim()))
+        .filter((row: string) => row.length > 0);
+      return `<span class="inline-flex flex-col items-center gap-y-1.5 align-middle my-1">${rows
+        .map((r: string) => `<span class="leading-tight">${r}</span>`)
+        .join("")}</span>`;
+    }
+  );
+
+  // Boxed expressions \boxed{...} -> bordered highlight (balanced braces)
+  html = replaceBalancedCommand(
+    html,
+    "boxed",
+    (inner) =>
+      `<span class="inline-block border-2 border-slate-300 dark:border-slate-600 bg-slate-50/60 dark:bg-slate-900/40 rounded-lg px-3 py-1.5 my-1 font-semibold">${formatMathHTML(
+        inner
+      )}</span>`
+  );
+
+  // Labeled arrows: \xrightarrow[below]{above} and \xleftarrow[below]{above}
+  html = html.replace(
+    /\\(xrightarrow|xleftarrow)(?:\[([^\]]*)\])?\{([^{}]*)\}/g,
+    (_m: string, dir: string, below: string | undefined, above: string) => {
+      const arrow = dir === "xleftarrow" ? "←" : "→";
+      const top = above ? formatMathHTML(above) : "";
+      const bot = below ? formatMathHTML(below) : "";
+      return `<span class="inline-flex flex-col items-center align-middle mx-1.5 leading-none"><span class="text-[0.6em] pb-0.5">${top}</span><span class="text-[1.1em]">${arrow}</span>${
+        bot ? `<span class="text-[0.6em] pt-0.5">${bot}</span>` : ""
+      }</span>`;
+    }
+  );
 
   // Clean up bracket auto-sizing
   html = html.replaceAll("\\left(", "(");
@@ -264,7 +341,11 @@ function formatMathHTML(latex: string): string {
   html = html.replace(/\\underline\{([^{}]+)\}/g, '<span class="underline">$1</span>');
   html = html.replace(/\\text\{([^{}]+)\}/g, '<span class="font-sans font-normal">$1</span>');
   html = html.replace(/\\boldsymbol\{([^{}]+)\}/g, '<strong class="font-extrabold">$1</strong>');
+  html = html.replaceAll("\\qquad", '<span class="mx-3"></span>');
   html = html.replaceAll("\\quad", '<span class="mx-2"></span>');
+  // Thin / medium spacing commands
+  html = html.replace(/\\[,;:]/g, '<span class="mx-0.5"></span>');
+  html = html.replace(/\\!/g, "");
 
   // Handle bar, hat, vec
   html = html.replace(/\\bar\{([^{}]+)\}/g, '<span class="overline">$1</span>');
@@ -292,7 +373,7 @@ function MathSpan({ latex, block = false }: { latex: string; block?: boolean }) 
       <div 
         onPointerDownCapture={(e) => e.stopPropagation()}
         onTouchStartCapture={(e) => e.stopPropagation()}
-        className="my-6 text-center font-serif text-lg text-slate-900 dark:text-slate-100 py-6 px-8 bg-slate-50/20 dark:bg-slate-950/20 border-y border-slate-100 dark:border-slate-800/60 overflow-x-auto max-w-full leading-relaxed select-all"
+        className="my-3 md:my-5 text-center font-serif text-base md:text-lg text-slate-900 dark:text-slate-100 py-3 md:py-5 px-4 md:px-8 bg-slate-50/20 dark:bg-slate-950/20 border-y border-slate-100 dark:border-slate-800/60 overflow-x-auto max-w-full leading-relaxed select-all"
         dangerouslySetInnerHTML={{ __html: formatted }}
       />
     );
@@ -338,6 +419,8 @@ function parseInline(text: string): React.ReactNode[] {
       // Image ![alt](src)
       nodes.push(
         <span key={match.index} className="block my-6 text-center max-w-full">
+          {/* Markdown notes can reference arbitrary remote images without known dimensions. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src={match[8]} 
             alt={match[7]} 
@@ -430,7 +513,7 @@ function parseBlocks(content: string): Block[] {
       const level = headingMatch[1].length;
       const text = headingMatch[2];
       if (level <= 2) {
-        blocks.push({ type: "h2", text });
+        blocks.push({ type: "h2", text, level });
       } else {
         blocks.push({ type: "h3", text });
       }
@@ -1057,7 +1140,7 @@ function getHeadingId(text: string): string {
     .replace(/\s+/g, "-"); // replace spaces with hyphens
 }
 
-function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
+function MarkdownRenderer({ content, stripH1 = true, paged = false }: MarkdownRendererProps) {
   let processedContent = content.trim();
 
   // Strip the first H1 if requested
@@ -1089,13 +1172,81 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
     return parseBlocks(processedContent);
   }, [processedContent]);
 
-  const headings = React.useMemo(() => {
-    return blocks.filter(b => b.type === "h2");
+  // Group blocks into reader "pages". We break at the author's top-level
+  // headings (e.g. the H1 "parts") so subsections stay together, and never
+  // start a new page on a heading that has no body yet — a heading-only run
+  // is merged forward until the page holds real content. This avoids the
+  // "too many tiny/empty sections" problem of splitting on every H2.
+  const sections = React.useMemo(() => {
+    const MIN_CONTENT = 3; // substantive blocks required before a page break
+
+    // Decide which heading level starts a new page.
+    const headingLevels = blocks
+      .filter((b): b is Extract<Block, { type: "h2" }> => b.type === "h2")
+      .map(b => b.level);
+    const topLevel = headingLevels.length > 0 ? Math.min(...headingLevels) : 2;
+    const topLevelCount = headingLevels.filter(l => l === topLevel).length;
+    // Use top-level headings as page breaks only if there are at least two of
+    // them; otherwise fall back to breaking on every heading (with merge).
+    const breakLevel = topLevelCount >= 2 ? topLevel : Math.max(...headingLevels, 2);
+
+    const isSubstantive = (b: Block) =>
+      b.type !== "h2" && b.type !== "h3" && b.type !== "hr";
+
+    const secs: { title: string | null; items: { block: Block; idx: number }[] }[] = [];
+    let current: { title: string | null; items: { block: Block; idx: number }[] } | null = null;
+    let contentCount = 0;
+
+    blocks.forEach((block, idx) => {
+      const isBreakHeading =
+        block.type === "h2" && (block as Extract<Block, { type: "h2" }>).level <= breakLevel;
+
+      if (isBreakHeading && current && contentCount >= MIN_CONTENT) {
+        secs.push(current);
+        current = null;
+        contentCount = 0;
+      }
+
+      if (!current) {
+        current = {
+          title: block.type === "h2" ? block.text : null,
+          items: [],
+        };
+        secs.push(current);
+      } else if (current.title === null && block.type === "h2") {
+        current.title = block.text;
+      }
+
+      current.items.push({ block, idx });
+      if (isSubstantive(block)) contentCount++;
+    });
+
+    return secs;
   }, [blocks]);
 
-  return (
-    <div className="max-w-3xl mx-auto px-1 relative">
-      {blocks.map((block, idx) => {
+  const pagerActive = paged && sections.length > 1;
+
+  const [section, setSection] = React.useState(0);
+  const topRef = React.useRef<HTMLDivElement>(null);
+
+  // Reset to the first section whenever the note content changes
+  React.useEffect(() => {
+    setSection(0);
+  }, [processedContent]);
+
+  const clampedSection = Math.min(section, Math.max(0, sections.length - 1));
+  const progressPct = sections.length > 0 ? ((clampedSection + 1) / sections.length) * 100 : 0;
+
+  const goToSection = React.useCallback((next: number) => {
+    setSection(next);
+    if (typeof window !== "undefined") {
+      window.requestAnimationFrame(() => {
+        topRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, []);
+
+  const renderBlock = (block: Block, idx: number, isFirst: boolean): React.ReactNode => {
         switch (block.type) {
           case "code":
             if (block.language === "mermaid") {
@@ -1109,7 +1260,7 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
           case "h2": {
             const hId = getHeadingId(block.text);
             return (
-              <h2 id={hId} key={idx} className={`text-2xl font-black text-slate-900 dark:text-slate-100 ${idx === 0 ? "mt-2" : "mt-12"} mb-4 tracking-tight scroll-mt-24`}>
+              <h2 id={hId} key={idx} className={`text-2xl font-black text-slate-900 dark:text-slate-100 ${isFirst ? "mt-2" : "mt-8 md:mt-11"} mb-3 md:mb-4 tracking-tight scroll-mt-24`}>
                 {parseInline(block.text)}
               </h2>
             );
@@ -1117,14 +1268,14 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
           case "h3": {
             const hId = getHeadingId(block.text);
             return (
-              <h3 id={hId} key={idx} className={`text-xl font-bold text-slate-800 dark:text-slate-200 ${idx === 0 ? "mt-2" : "mt-8"} mb-3 tracking-tight scroll-mt-24`}>
+              <h3 id={hId} key={idx} className={`text-xl font-bold text-slate-800 dark:text-slate-200 ${isFirst ? "mt-2" : "mt-8"} mb-3 tracking-tight scroll-mt-24`}>
                 {parseInline(block.text)}
               </h3>
             );
           }
           case "hr":
             return (
-              <div key={idx} className="my-10 flex items-center gap-4">
+              <div key={idx} className="my-6 md:my-8 flex items-center gap-4">
                 <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-800 to-transparent" />
                 <div className="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-slate-700" />
                 <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-800 to-transparent" />
@@ -1224,7 +1375,7 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
             const activeStyle = config[type] || config.NOTE;
 
             return (
-              <div key={idx} className={`my-8 rounded-2xl border border-l-4 p-5 ${activeStyle.wrapper}`}>
+              <div key={idx} className={`my-5 md:my-7 rounded-2xl border border-l-4 p-4 md:p-5 ${activeStyle.wrapper}`}>
                 <div className="flex items-center gap-2.5 mb-3">
                   <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center shadow-sm ${activeStyle.iconBg}`}>
                     {activeStyle.icon}
@@ -1249,7 +1400,7 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
                 key={idx} 
                 onPointerDownCapture={(e) => e.stopPropagation()}
                 onTouchStartCapture={(e) => e.stopPropagation()}
-                className="my-8 overflow-x-auto rounded-2xl border border-slate-200/50 dark:border-slate-800/80 shadow-sm bg-white dark:bg-slate-950/20 -mx-1 max-w-full"
+                className="my-5 md:my-7 overflow-x-auto rounded-2xl border border-slate-200/50 dark:border-slate-800/80 shadow-sm bg-white dark:bg-slate-950/20 -mx-1 max-w-full"
               >
                 <table className="w-full text-sm min-w-[400px]">
                   <thead className="bg-slate-50/80 dark:bg-slate-900/40">
@@ -1283,17 +1434,81 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
             );
           case "p":
             return (
-              <p key={idx} className="mb-5 text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
+              <p key={idx} className="mb-3.5 md:mb-4 text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
                 {parseInline(block.text)}
               </p>
             );
           default:
             return null;
         }
-      })}
+  };
+
+  return (
+    <div ref={topRef} className="max-w-3xl mx-auto px-1 relative scroll-mt-24">
+      {pagerActive && (
+        <div className="mb-5">
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 line-clamp-1 pr-2">
+              {sections[clampedSection].title
+                ? sections[clampedSection].title!
+                    .replace(/^SECTION\s+\d+:\s*/i, "")
+                    .replace(/^\d+(\.\d+)*\s*/, "")
+                    .trim()
+                : "Introduction"}
+            </span>
+            <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 shrink-0">
+              {clampedSection + 1} / {sections.length}
+            </span>
+          </div>
+          <div className="h-1.5 w-full rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+            <div
+              className="h-full rounded-full bg-blue-500 transition-all duration-300"
+              style={{ width: `${progressPct}%` }}
+            />
+          </div>
+        </div>
+      )}
+
+      {(pagerActive ? sections[clampedSection].items : blocks.map((block, idx) => ({ block, idx }))).map(
+        ({ block, idx }, pos) => (
+          <React.Fragment key={idx}>{renderBlock(block, idx, pos === 0)}</React.Fragment>
+        )
+      )}
+
+      {pagerActive && (
+        <div className="mt-8 mb-2 flex items-center gap-3 border-t border-slate-100 dark:border-slate-800/60 pt-5">
+          <button
+            type="button"
+            onClick={() => clampedSection > 0 && goToSection(clampedSection - 1)}
+            disabled={clampedSection === 0}
+            className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700"
+          >
+            <ChevronLeft className="w-4 h-4 shrink-0" />
+            Prev
+          </button>
+          <div className="flex-1 text-center text-[11px] font-bold text-slate-400 dark:text-slate-500">
+            {clampedSection + 1} of {sections.length}
+          </div>
+          {clampedSection < sections.length - 1 ? (
+            <button
+              type="button"
+              onClick={() => goToSection(clampedSection + 1)}
+              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-200 active:scale-95 bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-600/20"
+            >
+              Next
+              <ChevronRight className="w-4 h-4 shrink-0" />
+            </button>
+          ) : (
+            <span className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-sm font-bold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-200/60 dark:border-emerald-900/40">
+              <Check className="w-4 h-4 shrink-0" />
+              End
+            </span>
+          )}
+        </div>
+      )}
 
       {/* Floating Checkpoints Trigger */}
-      {headings.length > 1 && (
+      {sections.length > 1 && (
         <div ref={menuRef} className="fixed bottom-24 md:bottom-10 right-4 md:right-8 z-[70]">
           {menuOpen && (
             <div className="absolute bottom-full right-0 mb-3 w-72 bg-white/95 dark:bg-slate-950/95 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl shadow-2xl p-3 backdrop-blur-xl max-h-96 overflow-y-auto z-[71] animate-in fade-in slide-in-from-bottom-2 duration-200 origin-bottom-right">
@@ -1302,30 +1517,47 @@ function MarkdownRenderer({ content, stripH1 = true }: MarkdownRendererProps) {
                   Table of Contents
                 </span>
                 <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
-                  {headings.length} Sections
+                  {sections.length} Sections
                 </span>
               </div>
               <div className="space-y-1">
-                {headings.map((h, i) => {
-                  const hId = getHeadingId(h.text);
-                  const displayTitle = h.text
-                    .replace(/^SECTION\s+\d+:\s*/i, "")
-                    .replace(/^\d+(\.\d+)*\s*/, "")
-                    .trim();
-                  
+                {sections.map((sec, i) => {
+                  const rawTitle = sec.title ?? "Introduction";
+                  const displayTitle =
+                    rawTitle
+                      .replace(/^SECTION\s+\d+:\s*/i, "")
+                      .replace(/^\d+(\.\d+)*\s*/, "")
+                      .trim() || "Introduction";
+                  const isCurrent = pagerActive && i === clampedSection;
                   return (
                     <button
                       key={i}
                       onClick={() => {
-                        const el = document.getElementById(hId);
-                        if (el) {
-                          el.scrollIntoView({ behavior: "smooth" });
+                        if (pagerActive) {
+                          goToSection(i);
+                        } else if (sec.title) {
+                          const el = document.getElementById(getHeadingId(sec.title));
+                          if (el) {
+                            el.scrollIntoView({ behavior: "smooth" });
+                          }
                         }
                         setMenuOpen(false);
                       }}
-                      className="w-full text-left flex items-start gap-2.5 px-2.5 py-2 text-xs font-semibold rounded-xl text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-900/50 hover:text-blue-500 dark:hover:text-blue-400 hover:pl-3.5 transition-all duration-200 cursor-pointer"
+                      className={`w-full text-left flex items-center gap-2.5 px-2.5 py-2 text-xs font-semibold rounded-xl transition-all duration-200 cursor-pointer hover:pl-3.5 ${
+                        isCurrent
+                          ? "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400"
+                          : "text-slate-600 dark:text-slate-350 hover:bg-slate-50 dark:hover:bg-slate-900/50 hover:text-blue-500 dark:hover:text-blue-400"
+                      }`}
                     >
-                      <Bookmark className="w-3.5 h-3.5 mt-0.5 text-slate-400 dark:text-slate-500 shrink-0" />
+                      <span
+                        className={`shrink-0 w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-black ${
+                          isCurrent
+                            ? "bg-blue-500 text-white"
+                            : "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400"
+                        }`}
+                      >
+                        {i + 1}
+                      </span>
                       <span className="line-clamp-2">{displayTitle}</span>
                     </button>
                   );

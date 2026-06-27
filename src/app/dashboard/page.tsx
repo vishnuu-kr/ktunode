@@ -2616,13 +2616,13 @@ function DashboardContent() {
                           triggerHaptic={triggerHaptic}
                         />
                       </div>
-                      <MarkdownRenderer content={noteContent} stripH1={true} />
+                      <MarkdownRenderer content={noteContent} stripH1={true} paged={true} />
                     </motion.div>
                   )}
                 </div>
 
                 {selectedTopic.pyqs && selectedTopic.pyqs.length > 0 && (
-                  <div className="mt-10 md:mt-12 mx-4 sm:mx-6 md:mx-auto max-w-3xl bg-gradient-to-br from-indigo-50 to-white dark:from-indigo-950/20 dark:to-slate-900/60 border border-indigo-200/70 dark:border-indigo-900/30 rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-[0_8px_30px_rgba(99,102,241,0.08)] dark:shadow-none relative overflow-hidden mb-6 md:mb-8">
+                  <div className="mt-6 md:mt-8 mx-4 sm:mx-6 md:mx-auto max-w-3xl bg-gradient-to-br from-indigo-50 to-white dark:from-indigo-950/20 dark:to-slate-900/60 border border-indigo-200/70 dark:border-indigo-900/30 rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-[0_8px_30px_rgba(99,102,241,0.08)] dark:shadow-none relative overflow-hidden mb-6 md:mb-8">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 relative z-10 border-b border-indigo-100/50 dark:border-indigo-900/30 pb-3">
                       <div className="flex items-center gap-2">
                         <div className="w-6 h-6 rounded-lg bg-indigo-500 text-white flex items-center justify-center shadow-sm shrink-0">

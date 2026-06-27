@@ -7,6 +7,13 @@ export const dynamic = "force-dynamic";
 
 const allowedBranches = new Set<string>(VALID_BRANCHES);
 const subjectsDir = path.join(process.cwd(), "src", "data", "subjects");
+const branchAliases: Record<string, string> = {
+  cs: "computer-science-and-engineering",
+  ec: "electronics-and-communication-engineering",
+  me: "mechanical-engineering",
+  ce: "civil-engineering",
+  ee: "electrical-and-electronics-engineering",
+};
 
 function json(data: unknown, status = 200) {
   return Response.json(data, {
@@ -21,12 +28,11 @@ export async function GET(request: NextRequest) {
   const rawBranch = request.nextUrl.searchParams.get("branch")?.toLowerCase();
   const semParam = request.nextUrl.searchParams.get("sem")?.replace("sem-", "");
   const sem = Number(semParam);
+  const branch = rawBranch ? (branchAliases[rawBranch] ?? rawBranch) : undefined;
 
-  if (!rawBranch || !allowedBranches.has(rawBranch) || !Number.isInteger(sem) || sem < 1 || sem > 8) {
+  if (!branch || !allowedBranches.has(branch) || !Number.isInteger(sem) || sem < 1 || sem > 8) {
     return json({ error: "Missing or invalid branch or sem parameters" }, 400);
   }
-
-  const branch = rawBranch;
 
   try {
     // Preferred layout: one folder per branch-sem, one file per subject.

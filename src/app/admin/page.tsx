@@ -153,7 +153,7 @@ function runSyllabusAudit(allowedBranches: string[]): AuditResult {
             }
           }
         }
-      } catch (innerError) {
+      } catch (_innerError) {
         // skip corrupt files/folders
       }
     }

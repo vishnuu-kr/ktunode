@@ -103,7 +103,7 @@ function main() {
             }
           }
         }
-      } catch (e) {
+      } catch (_e) {
         // Ignore
       }
     }

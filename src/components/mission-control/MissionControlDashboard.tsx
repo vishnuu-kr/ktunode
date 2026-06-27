@@ -85,23 +85,17 @@ export default function MissionControlDashboard({ branch, sem, gpa = "8.42", sub
   useEffect(() => {
     if (subjects && subjects.length > 0) {
       const defaultSlots = ["A", "B", "C", "D", "E", "F"];
-      const updated = { ...onboardingSlots };
-      defaultSlots.forEach((slotLetter, idx) => {
-        if (subjects[idx]) {
+      setOnboardingSlots((currentSlots) => {
+        const updated = { ...currentSlots };
+        defaultSlots.forEach((slotLetter, idx) => {
           updated[slotLetter] = {
-            subject: subjects[idx].name,
+            subject: subjects[idx]?.name ?? `Course Slot ${slotLetter}`,
             professor: "Staff",
             vibe: "robot",
           };
-        } else {
-          updated[slotLetter] = {
-            subject: `Course Slot ${slotLetter}`,
-            professor: "Staff",
-            vibe: "robot",
-          };
-        }
+        });
+        return updated;
       });
-      setOnboardingSlots(updated);
     }
   }, [subjects]);
 

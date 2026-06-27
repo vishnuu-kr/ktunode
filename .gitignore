@@ -44,4 +44,9 @@ next-env.d.ts
 /scratch
 /__MACOSX
 
+# serena / agent tooling + scratch scripts
+.serena/
+/tmp_*.mjs
+/architecture-map.html
+
 .env.local
