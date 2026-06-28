@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --webpack",
     "prebuild": "node scripts/build-topic-index.mjs",
-    "build": "next build",
+    "build": "next build --webpack",
+    "build:turbopack": "next build",
     "start": "next start",
     "lint": "eslint"
   },
