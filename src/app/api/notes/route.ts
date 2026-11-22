@@ -82,11 +82,20 @@ function stripFrontmatter(content: string): string {
 async function fetchStaticFile(relativePath: string): Promise<string | null> {
   try {
     const res = await fetch(`${NOTES_CDN_URL}/${relativePath}`, { cache: "no-store" });
-    if (!res.ok) return null;
-    return await res.text();
+    if (res.ok) return await res.text();
+  } catch {
+    // Fall through to fallback
+  }
+
+  try {
+    const fallbackUrl = `https://raw.githubusercontent.com/vishnuu-kr/ktunode-notes/main/${relativePath}`;
+    const res = await fetch(fallbackUrl, { cache: "no-store" });
+    if (res.ok) return await res.text();
   } catch {
     return null;
   }
+
+  return null;
 }
 
 /**
@@ -106,11 +115,20 @@ async function fetchNoteStore(subjectCode: string): Promise<any | null> {
 
   try {
     const res = await fetch(`${NOTES_CDN_URL}/data/notes/${subjectCode.toUpperCase()}.json`, { cache: "no-store" });
-    if (!res.ok) return null;
-    return await res.json();
+    if (res.ok) return await res.json();
+  } catch {
+    // Fall through to fallback
+  }
+
+  try {
+    const fallbackUrl = `https://raw.githubusercontent.com/vishnuu-kr/ktunode-notes/main/data/notes/${subjectCode.toUpperCase()}.json`;
+    const res = await fetch(fallbackUrl, { cache: "no-store" });
+    if (res.ok) return await res.json();
   } catch {
     return null;
   }
+
+  return null;
 }
 
 export async function GET(request: NextRequest) {
