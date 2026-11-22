@@ -55,6 +55,11 @@ function getTopicIndex() {
   return {};
 }
 
+const NOTES_CDN_URL = (
+  process.env.NOTES_CDN_URL ||
+  "https://cdn.jsdelivr.net/gh/vishnuu-kr/ktunode-notes@main"
+).replace(/\/$/, "");
+
 function validateNotePath(relativePath: string): boolean {
   if (!relativePath.startsWith("notes/")) {
     return false;
@@ -75,9 +80,8 @@ function stripFrontmatter(content: string): string {
 }
 
 async function fetchStaticFile(relativePath: string): Promise<string | null> {
-  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.com").replace(/\/$/, "");
   try {
-    const res = await fetch(`${siteUrl}/${relativePath}`, { cache: "no-store" });
+    const res = await fetch(`${NOTES_CDN_URL}/${relativePath}`, { cache: "no-store" });
     if (!res.ok) return null;
     return await res.text();
   } catch {
@@ -90,7 +94,6 @@ async function fetchStaticFile(relativePath: string): Promise<string | null> {
  * Returns the parsed JSON or null if not found.
  */
 async function fetchNoteStore(subjectCode: string): Promise<any | null> {
-  const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://ktunode.com").replace(/\/$/, "");
   try {
     // Try local filesystem first (works in dev and during build on Vercel)
     const localPath = path.join(process.cwd(), "public", "data", "notes", `${subjectCode.toUpperCase()}.json`);
@@ -102,7 +105,7 @@ async function fetchNoteStore(subjectCode: string): Promise<any | null> {
   }
 
   try {
-    const res = await fetch(`${siteUrl}/data/notes/${subjectCode.toUpperCase()}.json`, { cache: "no-store" });
+    const res = await fetch(`${NOTES_CDN_URL}/data/notes/${subjectCode.toUpperCase()}.json`, { cache: "no-store" });
     if (!res.ok) return null;
     return await res.json();
   } catch {
