@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
-import { Calendar, Clock, AlertCircle } from "lucide-react";
+import { Calendar, Clock, CircleAlert } from "lucide-react";
 import { format, parseISO } from "date-fns";
 
 export interface ExamSlot {
@@ -144,7 +144,7 @@ function TimetableWidget({ timetable, sem, branch }: TimetableWidgetProps) {
           </div>
         ) : (
           <div className="relative z-10 flex flex-col items-center justify-center py-6 text-center">
-            <AlertCircle className="w-8 h-8 text-slate-300 mb-2" />
+            <CircleAlert className="w-8 h-8 text-slate-300 mb-2" />
             <p className="text-sm font-black text-slate-700 dark:text-slate-300">Exam window complete</p>
             <p className="text-xs font-bold text-slate-400/80 max-w-[200px] mt-1 leading-snug">
               No upcoming exams found in this timetable. Ready to party?
